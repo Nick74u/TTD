@@ -18,7 +18,7 @@ focus_tree = {
 		x = 8
 		y = 1
 		
-		cost = 2
+		cost = 2.284
 		
 		available = {
 
@@ -536,7 +536,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_national_mapping_institute
+	    id = BHU_national_mapping_initiative
 		icon = focus_From_Mountains_to_Cities
 		x = 1
 		y = 1
@@ -569,10 +569,10 @@ focus_tree = {
 		icon = focus_From_Mountains_to_Cities
 		x = 0
 		y = 1
-		relative_position_id = BHU_national_mapping_institute
+		relative_position_id = BHU_national_mapping_initiative
 		cost = 5
 		
-		prerequisite = { focus = BHU_national_mapping_institute }
+		prerequisite = { focus = BHU_national_mapping_initiative }
 		available = {
 
 		}
@@ -742,8 +742,8 @@ focus_tree = {
 	focus = {
 	    id = BHU_a_new_bhutan
 		icon = focus_From_Mountains_to_Cities
-		x = 0
-		y = 2
+		x = -3
+		y = 3
 		relative_position_id = BHU_Organizing_the_armed_forces
 		cost = 5
 		

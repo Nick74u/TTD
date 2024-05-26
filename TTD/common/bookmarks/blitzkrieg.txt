@@ -413,6 +413,7 @@ bookmarks = {
 			ideas = {
 				BHU_Transitional_Military_Occupation 
 				BHU_Bhotamuzh_Resistance 
+				BHU_The_hunt_for_wangchuk
 			}
 			focuses = {
 			    BHU_From_Mountains_to_Cities

@@ -12,7 +12,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { # paperwork!
-		name = Another Year in this Place
+		name = bhutan.focus_event.1.a
 		ai_chance = { factor = 90 }
 	}
 }

@@ -1,0 +1,121 @@
+﻿l_english:
+
+# GUI functionality
+
+ CountryInfo_pls_click_on_entry: "==Click on an entry to the left=="
+
+ CountryInfo_Folder_button_tt: "§F§GClick§! to toggle displaying entries of '§Y[CountryInfo_GET_Folder_Country]§!'§!"
+ CountryInfo_Content_button_tt: "§F§GClick§! to display the entry titled '§Y[CountryInfo_GET_Content_Country]§!'§!"
+
+# Close button text
+TNO_COUNTRY_INFO_BUTTON_TT: "§YDestiny lies ahead.§!"
+
+ TNO_COUNTRY_INFO_BUTTON_TEXT_BHU: "BHUTAN!"
+ 
+### COUNTRY OPENING ###
+CountryInfo_tab_name_country: "Country Overview"
+ 
+ ### Bhutan
+  BHU_CountryInfo_Folder.101: "Calcutta Calling"
+  BHU_CountryInfo_Folder.102: "An Underground Resistance"
+ 
+  # 101
+  BHU_CountryInfo_Content.1: "The Invasion"
+  BHU_CountryInfo_Content_desc.1: "Bla bla burgers and stuff"
+ 
+  BHU_CountryInfo_Content.2: "The Occupation"
+  BHU_CountryInfo_Content_desc.2: "This took a while"
+  BHU_CountryInfo_Content.3: "Rebellion"
+  BHU_CountryInfo_Content_desc.3: "This took a while"
+  BHU_CountryInfo_Content.4: "Tragedy"
+  BHU_CountryInfo_Content_desc.4: "This took a while"
+  BHU_CountryInfo_Content.5: "Desparation"
+  BHU_CountryInfo_Content_desc.5: "This took a while"
+ 
+  # 102
+  BHU_CountryInfo_Content.6: "Monarchy"
+  BHU_CountryInfo_Content_desc.6: "King"
+  
+  BHU_CountryInfo_Content.7: "Anti-Sphere"
+  BHU_CountryInfo_Content_desc.7: "DESTROY JAPAN"
+
+### ECONOMIC DATA
+  CountryInfo_tab_name_economic: "Economic Data"
+  CountryInfo_Economic.1: "Economic Data"
+  CountryInfo_Economic.2: "Overview"
+ 
+  CountryInfo_Economic_Overview_GER: "Econ broke"
+  CountryInfo_Economic_Overview_ITA: "As 1962 begins, the §nItalian Empire§! finds itself in a difficult situation.\n\nItaly's §Wcorporatist§! economy, while undoubtedly more lively than the twitching corpse that is the §rGerman§! one after the market crash of the Fifties, is plagued by §Robsolete§! production methods, §Rlack§! of private investment, as well as §Rcorruption§! and §Rcronyism§! in the supervision organs. Unemployment is on the rise, and while the oil from the Gulf fields maintains the budget afloat, and allows Italy to afford massive subsidization programs, public debt grows at an §Ralarming rate§!."
+  CountryInfo_Economic_Overview_IRE: "Ireland's Economy is that of a §fFree Market Economy§!. This is a system where corporate enterprise is allowed to run with either no or few checks from the Government. Depending on the government, this system will have varying amounts of regulation ensuring that corporations are kept in check. More importantly for Ireland, it is a Bündnispartner. The Irish Economy has a series of ties with that of the Reich. With German mistreatment of Irish workers in factories, the influence that the Reich has over Ireland is getting more strained by the day. However, German influence also has meant investment. The §pAufsichtsrat der Wehrwirtschaftsführer in Irland§! - or just the Adwil - is the main board in charge of German investment in Ireland, also being Germany's main mode of influencing the Economy. One one hand, the Adwil is a "free" source of funds, which Ireland can use to fund national projects. On the other, displease the investors too much and they may pull out, leaving us destitute."
+  CountryInfo_Economic_Overview_IBR: "Iberia's Economy operates on the principles of Dirigisme - a system where the state is the unchecked maestro of the economy it benefits from. In this case, Iberia is responsible for building and managing it's projects using quotas and forecasts alongside deep co-operation with the many corporations that make up the state.\n\nAgriculture is in shambles, due to the stagnation that the repression has caused. Much of the population still toils in the countryside, which hurts industrialisation. Conditions in the rural areas are varied, however the poorest areas suffer from crippling poverty and lack of basic, governmental services. Spain serves as the Industrial Heartland of the Union, with most corporations being in Madrid's orbit. However, Portugal still remains as the main heart of global trade, although it's a role that has diminished in importance with Iberia's retreat from the Globe."
+
+  CountryInfo_Economic_Overview_JAP: "The Empire of Japan operates under the principle of §hDirigisme§!. This principle - literally to "direct" - is a state of development where the government enforces its will upon the free market and directs the players inside it to bend to its will. This isn't to say that it is a planned economy, like the sort that Stalin envisioned inside the former §VSoviet Union§!, because the private sector is as important - if not more - to the Dirigisme Economy compared to a Free Market State.\n\nIn Japan, this has led to the rise of the §KZaibatsu§! such as §xMitsubishi§! - near-dynastic corporations that control vertical monopolies over huge sectors of the economy - taking prominence inside the economy, with considerable influence. In return, alliances of "small" businesses in Japan have formed loose alliances called the §dKeiretsus§! to combat the Zaibatsu's rampant control of the economy."
+
+  CountryInfo_Economic_Overview_ENG: "The Kingdom of England is a §KFree Market Economy§!, where corporations are allowed to do most of their activities and business with very few to no regulations. While the level of regulation differs from nation to nation and government to government, it is generally much more laissez-faire.\n\nIn England's case, it's economy has remained mostly intact from the pre-Occupation days. However, the biggest issue in the English economic sphere is §Jrebuilding§! what is left. During the Second World War, England was subject to the largest strategic bombing campaign - called §YThe Blitz§! - in European History, with Luftwaffe planes leaving very little English industry untouched. The lack of significant reconstruction has led to even more §Bresentment§! towards the government and high levels of unemployment inside England."
+
+  CountryInfo_Economic_Overview_SVR: "Sverdlovsk operates under the §gMilitary-Directed Economic§! model. This is a model where the military, due to its §gunchecked grip§! on the state, has the ability to completely command and direct the economy. It is not a command economy similar to that in the former §VSoviet Union§!, because private enterprise is allowed to exist in the state, but the military regime has the §Rfinal say§! over all directives inside the nation.\n\nIn Sverdlovsk's case, the military regime commands what is left of the industry that was moved west by §CBukharin§! and §eStalin§! into the Siberian plains, and was not damaged during the §LLuftwaffe Terror Bombings§! in the 50's and 60's. Compared to other states, it still has a fairly hefty industry and is able to project economic power further than the other warlord states."
+  #- Place Economic Overviews here -#
+    
+  ##Guangdong
+  CountryInfo_Economic_Overview_GNG: "§SGuangdong's economy§! operates as a §SCorporate Oligarchy§! - a polity where both the economic and political spheres have been subsumed under the direction of large corporations, in this case the §YFour Companies§! of §YYasuda§!, §VSony§!, §WMatsushita§!, and §mFujitsu§!.\n\nSocial and labor protections are intentionally kept weak - weaker than on the §jHome Islands§! themselves - to enable the maximization of profit, with the Four Companies given essentially free reign to do as they please. While Guangdong maintains the minimum necessary to maintain the pretense of a functional government, the withering away of the state has afforded even more opportunities for §Rcorruption§! or §Ycorporate interests§! to insert themselves into public life.\n\nGuangdong's economic performance is also intimately tied to the §melectronics product cycle§! - a competition to win the hearts and wallets of consumers with the §Kbest product§! at the §Kcheapest price§!."
+
+  CountryInfo_Economic_Overview_GRO: "Reichskommissariat Ostafrika's Economy is that of the §oGelenkte Wirtschaft§! model. This model tries to balance between the command economy of the former §RSoviet Union§! and the free market capitalism of the §iUnited States of America§! by combining a use of state-directed initiatives and cooperation with private enterprise and selecting a few trusted and proven corporations to serve the state in a fashion that suits both parties.\n\nIn §jOstafrika§!'s case, the state runs on African branches and subsidiaries of German corporations within Europe. However, it is most similar to §EBurgundy§! in the fact that it heavily relies on slave labour and an incredibly repressed underclass to serve the §rselect few§! chosen inside the colony, that can barely eek out a living themselves in the harsh conditions of Eastern Africa."
+
+  CountryInfo_Economic_Overview_ANG: "Reichskommissariat Südwestafrika's Economy is that of the §oGelenkte Wirtschaft§! model. This model tries to balance between the command economy of the former §RSoviet Union§! and the free market capitalism of the §iUnited States of America§! by combining a use of state-directed initiatives and cooperation with private enterprise and selecting a few trusted and proven corporations to serve the state in a fashion that suits both parties.\n\nHowever, §mSüdwestafrika§!'s economy doesn't so much pretend to Germanise what parts of the colony it fully controls, but is more content to waste it's money on building Luftwaffe infrastructure inside Namibia, trying to justify it by pointing to the §JSouth African§! powderkeg. In reality, it's Luftwaffe officials pocketing the cash for themselves and going on half-hearted missions to prove that they deserve the funding more than the rest."
+
+  CountryInfo_Economic_Overview_COG: "Reichskommissariat Zentralafrika's Economy is that of the §oGelenkte Wirtschaft§! model. This model tries to balance between the command economy of the former §RSoviet Union§! and the free market capitalism of the §iUnited States of America§! by combining a use of state-directed initiatives and cooperation with private enterprise and selecting a few trusted and proven corporations to serve the state in a fashion that suits both parties.\n\nThe reality on the ground is that Zentralafrika is run more like Müller's §ysweetshop§! than anything else. The entire colony is littered with shell companies of Western and other §oforeign-based corporations§! who pay Müller a hefty fee to sap what resources haven't been drowned by the §BCongo Lake§! - with the Reichskommissar away to hunt down big game and leaving the economic paperwork to his underlings."
+
+### TUTORIALS ###
+CountryInfo_tab_name_tutorials: "Mod Info"
+
+ CountryInfo_Tutorial_Folder.101: "The New Order" # fuck you
+
+ CountryInfo_Tutorial_Content.1: "The Cold War"
+ CountryInfo_Tutorial_Content_desc.1: "§WThe New Order: Last Days of Europe§! answers the question of what a §BCold War§! would look like in the scenario of an §WAxis§! victory in the Second World War. Mirroring its real life counterpart, the world of §WTNO§! is locked in a three-way standoff between the remaining powers of the Second World War: the §qGreater German Reich§!, the §eEmpire of Japan§!, and the §aUnited States of America§!.\n\n§YGlobal domination§! is no longer fought directly within the battlefield between great powers seeking nothing but the §xdemise of the others§!, rather it is sought after through §Ybackroom dealings§!, §Cinternational manipulation§!, §Geconomic competition§!, and §Yexpansion of a superpower's sphere of influence§!, §WTNO§!'s gameplay differs greatly from the vanilla experience with the use of unique gameplay aspects that are discussed below."
+
+ CountryInfo_Tutorial_Content.3: "Proxy Wars"
+ CountryInfo_Tutorial_Content_desc.3: "It does not mean that war is uncommon in §WThe New Order§!. On the contrary, war is actually §Gextremely common§! and you will fight several as almost every nation. However, wars are not normally expressed through direct conflict, but instead as §RProxy Wars§!. §RProxy Wars§! are wars between two nations, who are backed by two larger nations using their conflict as a way to battle one another without an outright battle. These can also occur during §RCivil Wars§!, which are also exceedingly common.\n\nDuring a §RProxy War§!, nations at war with one another may find themselves being supported by an outside power. If nobody is playing as the backing power, then units will be gifted to the nation fighting the war. If a player is the backing power, however, they will be able to support their side via the §WVolunteer System§! as in vanilla §WHearts of Iron IV§!."
+
+ CountryInfo_Tutorial_Content.4: "The Cold War Interface"
+ CountryInfo_Tutorial_Content_desc.4: "Of course, there is a way to measure and keep track of the contenders to global domination. The button in the shape of the nuclear symbol in the top bar will lead you to the §YCold War Interface§!. It will tell you everything you need to know about those competing in the §BCold War§!, which is currently winning by how much, and in what ways, along with other useful informations.\n\nThe §Yrankings§! tab shows you which country is currently in the lead, calculated by factors such as their §Rmilitary§! and §Geconomic§! power. The §Rtensions§! tab records the palpability of relations between great powers, as well as the incidents that led to this development of tension. The §Gspheres§! tab highlights the economic sphere of the major powers, showing their raw economic power and influence amongst other nations.\n\nFinally, the §xNukes§! tab, discussed in the next entry."
+ 
+ CountryInfo_Tutorial_Content.5: "Nuclear Warfare"
+ CountryInfo_Tutorial_Content_desc.5: "§WThe New Order: Last Days of Europe§! ultimately takes place during a Cold War, and not a World War. Each of the major three nations: §Wthe United States§!, §WGermany§!, and §WJapan§!, enjoy full §Rnuclear triad capabilities§! as of 1962; locking the world under the fear of §Rnuclear holocaust§!.\n\nAs such, nations are ultimately at the whim of the §Gsuperpowers§! of the world, and they are forever locked against one another without the means to secure an easy victory. Any war between the three §Gsuperpowers§! will inevitably be §RWorld War III§!.\n\nWhen §RWorld War III§! is fought, it can not end well. The sides will fight until one side begins to falter. If a nation feels that it is about to collapse, is unable to continue a war, or has their core territory overwhelmingly threatened then §Rnuclear war§! is an inevitability. If a nuclear strike is launched, it will be a matter of days until thousands of nuclear weapons are deployed in the war. If this happens, it is §Rgame over§!!"
+ 
+ CountryInfo_Tutorial_Folder.102: "Mechanics"
+ 
+ CountryInfo_Tutorial_Content.6: "The Economy"
+ CountryInfo_Tutorial_Content_desc.6: "§WThe New Order: Last Days of Europe§! features a complex §Weconomy§! mechanic. You can access your economic overview by clicking upon the §Wglobe sign§! in between the §Wresearch§! and §WCold War§! tabs. The foundation of your national economy is your §GGDP§!, which will be the key to the economic prosperity of your state. Your §GGDP§! needs to be balanced out with your §Rdebt§!. Every year, interest upon your §Rdebt§! will be deducted as an expense, and ending up with too high of a §RDebt§! to §GGDP§! ratio could spell financial ruin.\n\nTo avoid troubling economic times, keep a watchful eye upon your §Gincome§! and your §Yexpenditures§!. Your §Gincome§! is determined by multiple factors, the most obvious of which being your §GGDP§!. Many other factors come to play, however, such as your industry, poverty rate, academia, and much more! On the other hand, you have your §Yexpenditures§!, the bane of any economist. §YExpenditures§! are a measure of factors such as military upkeep, social securities, construction projects, and more."
+ 
+ CountryInfo_Tutorial_Content.7: "Laws and Social Development"
+ CountryInfo_Tutorial_Content_desc.7: "Taking inspiration from the law system of Victoria 2, §WThe New Order: Last Days of Europe§! features a detailed law system to express the specific §Ypolicies§! of your nation, providing greater immersion and complexity. Your §Ypolicies§! are located under the §Wpolitical§! tab, and includes a wide range of §Ypolicies§! to consider during the course of your playthrough. Each §Ypolicy§! has its own effects on various game variables, with both pros and cons to each §Ypolicy§!.\n\nFurthermore, each §Ypolicy§! has §Yeffectiveness§! which can improve or worsen as the game goes on, with some being determined by buildings and funding. This determines the effects gained by a §Ypolicy§! and the more effective a §Ypolicy§!, the better the effects.\n\nFinally, §Ysocietal development§! represents the progress of your country and can trend towards positive progress or negative progress, §Gupgrading§! or §Rdowngrading§! throughout your playthrough."
+ 
+ CountryInfo_Tutorial_Content.8: "Country Specific Mechanics"
+ CountryInfo_Tutorial_Content_desc.8: "Many of the countries in §WThe New Order§! feature expansive §GScripted GUIs§! designed to add more depth to your §Rgameplay experience§!, and make peacetime gameplay more interactive. §GDecision Scripted GUIs§! are built directly into the §Ydecisions tab§!, and can be accessed simply by opening the tab. This includes the §WTomsk Duma GUI§!, the §WSouth African Referendum GUI§!, and §Rmany§! others!\n\nOn the other hand, §GFull Scripted GUIs§! are accessed via the §Ypolitics tab§!, using a button located below your §Wcountry leader's portrait§!, next to the §WHead of Government's portrait§!. These §GFull Scripted GUIs§! tend to be much more in-depth, and are oftentimes vital to a country's §Rgameplay experience§!. This includes the §WUnited States Voting GUI§!, the §WSpeer Zollverein GUI§!, the §WJapan Legislature GUI§!, and §Rseveral§! others. Furthermore, most §GScripted GUIs§! also feature an §Yinfo button§!, which, when §Rhovered over or clicked on§!, will display helpful information on how the interface works and other features of the §Rintegrated mechanic§!."
+ 
+### Development ###
+CountryInfo_tab_name_development: "Mod Development"
+ 
+ CountryInfo_Development_Folder.101: "Social Media"
+ 
+ CountryInfo_Development_Content.1: "Follow TNO Development!"
+ CountryInfo_Development_Content_desc.1: "\nYou can find our various social media pages §Ybelow§!.\n\nMake sure to keep yourself up-to-date with our latest development news!"
+ 
+ CountryInfo_Development_Folder.102: "The Ruin Team"
+ 
+ CountryInfo_Development_Content.2: "Credits 1"
+ CountryInfo_Development_Content.3: "Credits 2"
+ CountryInfo_Development_Content.4: "Credits 3"
+ CountryInfo_Development_Content.5: "Credits 4"
+
+ CountryInfo_Development_Content_desc.2: "2970, Admiral Ackbar, Afrandez, Albert Himself, AlbertSphere, Alexmaths, Alexmikli, All_names_were_took, Alseber•Linyahu, Ameto17, AnActualFan, Anarcho-Reactionary Leninist, AnarchoNerd, anna.rose, Antarctic Bassist, Antiochus, ANZAC, Arashi89, ArgoniaElTinieblas, ArthurS, Ashley, Atom_Heart_Mother, AtomicFalco, Auskommissar, Averaiden, AvGeekboy, AztechnologyPR, Bababooey, Bagouda, Baguettecommissar, Bak, Baron, Beige, Best Wizard, Blase, Blaze921, Blissenobiarella, Bob69elysium, BomberMonkey, Braxton, BreenChat, Bruhingrad91, Brutalism, Call of the Clock, Calph, Camarade M, CarthAntilles, Catbutr, CGS, Chaosservant, Chatterbox, ChrisProvidence, Chrisuam, Chromonkey, Cimmaron, Clickaholic, Coda, Con, Concommie, Corn, Critical Existence Failure, CrookDoodle, Crys7aL_L1nE, Curvinghawk_5, D3ash, DadJuice, Daffy, Dafid25, Dapowar, DapperT, Deathgriffin, detribulator, diceycloth, DiocletianFanBoy, Dispenser, DJ ZOTA, Dread, DruimNanDeur, Edgar Harford, ElectronicMars, ElWatan, Emmettmcglynn, Englishrocker97, Erich Lukacs,"
+ CountryInfo_Development_Content_desc.3: "Eternal Iberian, Fausting, Femkultra, Fillmore48th, Fischer, Flesh Being, Foka, Foxwmv, frost, GameGuy, Garth Hillsborough, GDIFIREHAWK, Georgius_Agricola, Georgy, Gordy, Grek, Happy Warrior, Harroi, Haruhi is Waifuhi, Heboulang, Herennius, Heroin Chic-Fil-a, HIMDogson, Hiyajo Maho, Hkrrm, Hochi, Holiday_in_Cambodia1, Hystiklopp, I Like Cake Too, Imaginary_Reimu, IngJon, INGSOC, Internetismean, IPain, Itsandyru, JadedFanatic, Jag, Jake Zakkarad, Janey, Jazzbro23, Jimmy Carter 80', Johnny Come Home, Jormad, JustAsPlanned, jyano1, KaiserLink, Kaisernut, KapnKetchup, Keisis236, KingDragon, KingOfPandas, Kingquayle, Koovaek, Koyama, Krieg, Krone Ironforger, Kuzunoha, Kvesir, Lady Fortuna, Lamounier, leoJ, Leonskye, Libaton, Lightknight, li kuo jan, Lilian, Local Tory, Losos2408, Maedhros, Makerd, Mango, Manuun, Marethyu, Marxivi, Masterbobli, Matsuo_Basho, matto, McBungus, Me123849, Mic2, Miki Hiiro, Missold_PPI, Mister_cellophane, Mnike, Monogram, Motharchoddar, Na kanapie siedzi Lenin, Nedtheindecisive, Nekronion, Nexerus,"
+ CountryInfo_Development_Content_desc.4: "Ngp3, Nick Cutter, Nicolas_B, Nihil, NIKA, NobitaNobi, Noey, NonUnifiedMemoryArchitecture, NotHere, NothingHere, NotMrZ, NukeGaming, Numbers, Oby, OKIKMW, Omega, OPAsian, Orbbri, Ordiel2417, Paradoxicah2, Pedrocomepalomas, PhoenixDefender, Pikeman, Pjero, Pluto, Poobix, Poon Senook, Powism, Professional Bad Person, PrussianBlue, Quétrab, QuoProQuid, Raoultastisch, Rapop101, Raptor, Reccetin, Red_CV6, Rei!, RemyRat, Riko, RobinMukyu, Rooin, Rose Colored Ryan, ruler968, Runelead00, Sableavi, Sakuya, Salic, Sapphireonice, Sausage Man, Scoop, Scrubaverse, Sennylowkey, Shawn, Shift, Shukla, Sick and Restless, Sid McMath, SilverImperator, Sintchdiz, Small-Pinky, SmokedDuck, SomeRandom Texan, SomethingLikeALawyer, Southern Cross, Spughatti, Squee, Starly, StereoRapier, Story, Tanaka Gang, Tannenberg, °*Tarepa*°, Targai, Tarn, TeenSpirit, Tenente Góis, Term, Texan Arms Dealer, ThatGuyNamedSeth, The Fresh Prince, The Wild West Pyro, The WIZARD, The_BlackTiger, TheMountainKing, Theo, ThePingusDingus, TheRedKing247,"
+ CountryInfo_Development_Content_desc.5: "TheTortle, TheYugoHOI4Patcher, Thiagosilver, TQR114514, Trun, Tyman, Uglidoll, Vinicioart4, Volkov_Su55, Walmart Employee, Warl0rd13, Wendell, Whyyoumad, Wilzy, Xabiar, Xalas, xFullNelsonx, Yesnttt, Yui, Yveltal, Zarusen, Zerogamer, Zhaba\n\nIn memory of §Lsoftboy anarchist§! and §LLecon_Basin§!"
+
+ CountryInfo_Development_Folder.103: "Legal Information"
+ CountryInfo_Development_Content.6: "Fair Use Statement"
+ CountryInfo_Development_Content_desc.6: "The New Order: Last Days of Europe ("This Mod") may contain copyrighted material.\n\nThis Mod makes copyrighted materials, if any, available to promote the understanding of the danger of fascism, Nazism, and other forms extremism. This Mod currently does not, and will not attempt to, generate profit via its use of copyrighted materials. Hence, This Mod believes that this constitutes a "fair use" of the copyrighted material as provided for in Title 17, Section 107 of the United States Code or comparative laws in other applicable jurisdictions.\n\nIf you wish to use copyrighted materials for purposes of your own that go beyond "fair use" (or its equivalence in your jurisdiction), you must obtain permission from the copyright owner."
+### COUNTRY ENDING ###
+CountryInfo_tab_name_ending: "Afterthought"
+ 

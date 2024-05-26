@@ -1,4 +1,11 @@
 ﻿  l_english:
+########Ideas##################
+  BHU_The_hunt_for_wangchuk: "The Hunt For Wangchuk"
+  BHU_The_hunt_for_wangchuk_desc: ""
+  BHU_ina_purge: "INA Purge"
+  BHU_ina_purge_desc: ""
+  BHU_singh_paranoia: "Singh's Paranoia"
+  BHU_singh_paranoia_desc: ""
 ########FOCUS#############
   BHU_From_Mountains_to_Cities: "From Mountains to Cities"
   BHU_From_Mountains_to_Cities_desc: "BHUTAN NUMBA ONE!!"
@@ -36,8 +43,8 @@
   BHU_investors_from_manchuria_desc: ""
   BHU_experts_from_japan: "Experts From Japan"
   BHU_experts_from_japan_desc: ""
-  BHU_national_mapping_institute: "National Mapping Institute"
-  BHU_national_mapping_institute_desc: ""
+  BHU_national_mapping_initiative: "National Mapping Initiative"
+  BHU_national_mapping_initiative_desc: ""
   BHU_developing_rural_communities: "Developing Rural Communities"
   BHU_developing_rural_communities_desc: ""
   BHU_expanding_our_cottage_industries: "Expanding Our Cottage Industries"
@@ -55,3 +62,6 @@
 ########EVENTS##################
   bhutan.focus_event.1.t:0 "Stuck In this High Place"
   bhutan.focus_event.1.d:0 "Kanwal Singh was waiting for his greatest reward yet ever since he invaded and occupied Bhutan. But he didn't quite expect to be the one who actually has to manage it around and make sure dissent is at check. Now, he has to keep Bhutan under the Azad Hind's thumb and it will be painstakingly annoying for him to do it all.  Also something about the economy and stuff and also if you are reading this that means no picture here in this event :D"
+  bhutan.focus_event.1.a:0 "Another Year In This Place"
+  #########Decisions###
+  BHU_in_the_halls_of_the_mountain_category: "In The Halls of the Mountain"
