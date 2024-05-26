@@ -1,0 +1,19 @@
+﻿###########################
+# TTD_Bhutan Events
+###########################
+
+add_namespace = bhutan.focus_event
+
+country_event = {
+	id = bhutan.focus_event.1
+	title = bhutan.focus_event.1.t
+	desc = bhutan.focus_event.1.d
+	
+	is_triggered_only = yes
+	
+	option = { # paperwork!
+		name = Another Year in this Place
+		ai_chance = { factor = 90 }
+	}
+}
+
