@@ -1,0 +1,775 @@
+focus_tree = {
+	id = TTD_Bhutan_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BHU
+		}
+	}
+	
+	default = no
+	
+	focus = {
+	    id = BHU_From_Mountains_to_Cities
+		icon = GFX_goal_from_mountains_to_cities
+		x = 8
+		y = 1
+		
+		cost = 2.284
+		
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+			id = bhutan.focus_event.1
+			hours = 6
+			}
+		}
+	}
+	focus = {
+	    id = BHU_The_Bhutanese_Renaissance
+		icon = focus_From_Mountains_to_Cities
+		x = -2
+		y = 1
+		relative_position_id = BHU_From_Mountains_to_Cities
+		cost = 5
+		
+		prerequisite = { focus = BHU_From_Mountains_to_Cities }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_someone_ate_this_focus
+		icon = focus_From_Mountains_to_Cities
+		x = -4
+		y = 1
+		relative_position_id = BHU_The_Bhutanese_Renaissance
+		cost = 5
+		
+		prerequisite = { focus = BHU_The_Bhutanese_Renaissance }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_someone_ate_this_focus_2
+		icon = focus_From_Mountains_to_Cities
+		x = -1
+		y = 1
+		relative_position_id = BHU_someone_ate_this_focus
+		cost = 5
+		
+		prerequisite = { focus = BHU_someone_ate_this_focus }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_someone_ate_this_focus_3
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_someone_ate_this_focus_2
+		cost = 5
+		
+		prerequisite = { focus = BHU_someone_ate_this_focus_2 }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_someone_ate_this_focus_4
+		icon = focus_From_Mountains_to_Cities
+		x = 1
+		y = 1
+		relative_position_id = BHU_someone_ate_this_focus
+		cost = 5
+		
+		prerequisite = { focus = BHU_someone_ate_this_focus }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_someone_ate_this_focus_5
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_someone_ate_this_focus_4
+		cost = 5
+		
+		prerequisite = { focus = BHU_someone_ate_this_focus_4 }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_someone_ate_this_focus_6
+		icon = focus_From_Mountains_to_Cities
+		x = -1
+		y = 1
+		relative_position_id = BHU_someone_ate_this_focus_5
+		cost = 5
+		
+		prerequisite = { focus = BHU_someone_ate_this_focus_3 }
+		prerequisite = { focus = BHU_someone_ate_this_focus_5 }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_Military_Rejuvenation
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_The_Bhutanese_Renaissance
+		cost = 5
+		
+		prerequisite = { focus = BHU_The_Bhutanese_Renaissance }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_The_Himalayas_Vigilance
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_Military_Rejuvenation
+		cost = 5
+		
+		prerequisite = { focus = BHU_Military_Rejuvenation }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_Tanks_from_kawasaki
+		icon = focus_From_Mountains_to_Cities
+		x = -1
+		y = 1
+		relative_position_id = BHU_The_Himalayas_Vigilance
+		cost = 5
+		
+		mutually_exclusive = { focus = BHU_Arming_the_peasantry }
+		prerequisite = { focus = BHU_The_Himalayas_Vigilance }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_Soldiers_from_malaya
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_Tanks_from_kawasaki
+		cost = 5
+		
+		prerequisite = { focus = BHU_Tanks_from_kawasaki }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_Arming_the_peasantry
+		icon = focus_From_Mountains_to_Cities
+		x = 1
+		y = 1
+		relative_position_id = BHU_The_Himalayas_Vigilance
+		cost = 5
+		
+		mutually_exclusive = { focus = BHU_Tanks_from_kawasaki }
+		prerequisite = { focus = BHU_The_Himalayas_Vigilance }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_Organizing_the_armed_forces
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_Arming_the_peasantry
+		cost = 5
+		
+		prerequisite = { focus = BHU_Arming_the_peasantry }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_the_first_five_year_plan
+		icon = focus_From_Mountains_to_Cities
+		x = 3
+		y = 1
+		relative_position_id = BHU_From_Mountains_to_Cities
+		cost = 5
+		
+		prerequisite = { focus = BHU_From_Mountains_to_Cities }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_loans_from_yasuda
+		icon = focus_From_Mountains_to_Cities
+		x = -1
+		y = 1
+		relative_position_id = BHU_the_first_five_year_plan
+		cost = 5
+		
+		prerequisite = { focus = BHU_the_first_five_year_plan }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_investors_from_manchuria
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_loans_from_yasuda
+		cost = 5
+		
+		prerequisite = { focus = BHU_loans_from_yasuda }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_experts_from_japan
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_investors_from_manchuria
+		cost = 5
+		
+		prerequisite = { focus = BHU_investors_from_manchuria }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_national_mapping_initiative
+		icon = focus_From_Mountains_to_Cities
+		x = 1
+		y = 1
+		relative_position_id = BHU_the_first_five_year_plan
+		cost = 5
+		
+		prerequisite = { focus = BHU_the_first_five_year_plan }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_developing_rural_communities
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_national_mapping_initiative
+		cost = 5
+		
+		prerequisite = { focus = BHU_national_mapping_initiative }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_expanding_our_cottage_industries
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_developing_rural_communities
+		cost = 5
+		
+		prerequisite = { focus = BHU_developing_rural_communities }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_a_solid_stable_foundation
+		icon = GFX_goal_stable_foundation
+		x = 1
+		y = 1
+		relative_position_id = BHU_experts_from_japan
+		cost = 5
+		
+		prerequisite = { focus = BHU_expanding_our_cottage_industries }
+		prerequisite = { focus = BHU_experts_from_japan }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_agricultural_expansion
+		icon = focus_From_Mountains_to_Cities
+		x = -2
+		y = 1
+		relative_position_id = BHU_a_solid_stable_foundation
+		cost = 5
+		
+		prerequisite = { focus = BHU_a_solid_stable_foundation }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_exploiting_our_mineral_reserves
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_a_solid_stable_foundation
+		cost = 5
+		
+		prerequisite = { focus = BHU_a_solid_stable_foundation }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_electrifying_the_country
+		icon = focus_From_Mountains_to_Cities
+		x = 2
+		y = 1
+		relative_position_id = BHU_a_solid_stable_foundation
+		cost = 5
+		
+		prerequisite = { focus = BHU_a_solid_stable_foundation }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_a_new_bhutan
+		icon = focus_From_Mountains_to_Cities
+		x = -3
+		y = 3
+		relative_position_id = BHU_Organizing_the_armed_forces
+		cost = 5
+		
+		prerequisite = { focus = BHU_someone_ate_this_focus_6 }
+		prerequisite = { focus = BHU_Soldiers_from_malaya focus = BHU_Organizing_the_armed_forces }
+		prerequisite = { focus = BHU_agricultural_expansion }
+		prerequisite = { focus = BHU_exploiting_our_mineral_reserves }
+		prerequisite = { focus = BHU_electrifying_the_country }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+}
