@@ -38,6 +38,18 @@ ideas = {
 				political_power_factor = -0.10
 			}
 		}
+		BHU_No_hope_in_the_east = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_No_hope_in_the_east" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				stability_weekly_factor = -0.002
+			}
+		}
 		BHU_ina_purge = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_ina_purge" }
 
