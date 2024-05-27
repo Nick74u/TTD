@@ -1,5 +1,7 @@
 ﻿  l_english:
 ########Ideas##################
+  BHU_No_hope_in_the_east: "No Hope in the East
+  BHU_No_hope_in_the_east_desc: "Following the 2nd World War and the withdrawl of British forces in india, the Azad Hind Government seized many Tibetan majority regions in north-eastern India. Following a deal in 1952, the western part of Arunachal was gifted to the Autonomous Province of Bhutan following general Kanwal Singh's participation in the invasion of the region. 10 years later and west Arunachal has turned into a hub for the formidible "
   BHU_The_hunt_for_wangchuk: "The Hunt For Wangchuk"
   BHU_The_hunt_for_wangchuk_desc: ""
   BHU_ina_purge: "INA Purge"
@@ -60,8 +62,8 @@
   BHU_a_new_bhutan: "A New Bhutan In A New Age"
   BHU_a_new_bhutan_desc: ""
 ########EVENTS##################
-  bhutan.focus_event.1.t:0 "Stuck In this High Place"
-  bhutan.focus_event.1.d:0 "Kanwal Singh was waiting for his greatest reward yet ever since he invaded and occupied Bhutan. But he didn't quite expect to be the one who actually has to manage it around and make sure dissent is at check. Now, he has to keep Bhutan under the Azad Hind's thumb and it will be painstakingly annoying for him to do it all.  Also something about the economy and stuff and also if you are reading this that means no picture here in this event :D"
-  bhutan.focus_event.1.a:0 "Another Year In This Place"
+bhutan.focus_event.1.t:0 "A Fine Dine For a Fine Passage"
+  bhutan.focus_event.1.d:0 "Kanwal's eyes scanned the vast mountain range. His eyes darted to the high peaks, then to the shallow valley. Waiting wasn't his speciality. Singhs fine leather shoes eagerly tapped against the fine floorboards of the palace-like structure. As kanwal rearranged the cutlery and plate of apetizers on his table, preparing it to be his newest pillow, the silouette of a man had begun to form out of the corner of his gloomy eyes. The last thing Singh wished for was to be forced to talk to another high ranking official in his govermment. Kanwal's urges got the best of him and he slowly rested his head on the stiff table."
+  bhutan.focus_event.1.a:0 " "Mr Singh!" "
   #########Decisions###
   BHU_in_the_halls_of_the_mountain_category: "In The Halls of the Mountain"
