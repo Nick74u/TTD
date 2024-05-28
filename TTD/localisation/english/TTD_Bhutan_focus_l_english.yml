@@ -93,10 +93,15 @@
 
  #########ToolTips###
   BHU_no_hope_in_the_east_tt:0 "Cannot train units, disband units, or edit unit templates.!"
-  BHU_with_bose_tt:0 "We Have Decided to go with our friends in Azad Hind"
   BHU_singh_goes_alone:0 "We have decided that we will take our chances"
   BHU_Singh:0 "We have decided that only Kanwal can secure our future!"
   BHU_bose:0 "We have decided to go with Bose"
   BHU_poverty:0 "We will undergo the process to take down poverty"
   BHU_tackle_poverty:0 "We are tackling poverty"
-  
+  BHU_went_with_bose:0 "We Have Decided to go with our friends in Azad Hind"
+  BHU_tackle_success:0 "Our Plans Were Successful"
+  BHU_tackle_failure:0 "We Will Have To Reevaluate Our Plans"
+  BHU_negotiations_success:0 "We Have Made The Greatest Deal!"
+  BHU_negotiations_failure:0 "The Meeting Was A Disaster"
+  BHU_singh_failure:0 "Our Overconfidence Got to the best of us"
+  BHU_singh_success:0 "Kanwal Managed To Persuade Tokyo"

@@ -417,7 +417,8 @@ bookmarks = {
 			}
 			focuses = {
 			    BHU_From_Mountains_to_Cities
-				BHU_a_solid_stable_foundation
+				BHU_a_meeting_with_the_rising_sun
+				BHU_bhutan_age
 			}
 		}
 		## CPS ##

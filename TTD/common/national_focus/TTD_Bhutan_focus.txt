@@ -165,7 +165,6 @@ focus_tree = {
 		prerequisite = { focus = BHU_a_hook_to_a_bad_economic_face }
 		available = {
 			has_country_flag = BHU_tackle_poverty
-			custom_effect_tooltip = BHU_poverty
 		}
 		
 		bypass = {
@@ -223,7 +222,6 @@ focus_tree = {
 		mutually_exclusive = { focus = BHU_singh_is_all_we_need }
 		prerequisite = { focus = BHU_a_meeting_with_the_rising_sun }
 		available = {
-			custom_effect_tooltip = BHU_with_bose_tt
 			has_country_flag = BHU_went_with_bose 
 		}
 		
@@ -255,7 +253,6 @@ focus_tree = {
 		prerequisite = { focus = BHU_a_meeting_with_the_rising_sun }
 		available = {
 			has_country_flag = BHU_singh_goes_alone
-			custom_effect_tooltip = BHU_Singh
 		}
 		
 		bypass = {
@@ -337,7 +334,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_singh_is_all_we_need
-		cost = 1
+		cost = 8
 		
 		prerequisite = { focus = BHU_singh_is_all_we_need }
 		available = {
@@ -371,7 +368,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BHU_a_welcomed_success }
 		prerequisite = { focus = BHU_in_tokyo }
 		available = {
-
+			has_country_flag = BHU_singh_failure
 		}
 		
 		bypass = {
@@ -401,7 +398,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BHU_failure_anticipated }
 		prerequisite = { focus = BHU_in_tokyo }
 		available = {
-
+			has_country_flag = BHU_singh_success
 		}
 		
 		bypass = {
@@ -489,7 +486,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BHU_opportunity_missed }
 		prerequisite = { focus = BHU_war_against_poverty }
 		available = {
-
+			has_country_flag = BHU_tackle_success
 		}
 		
 		bypass = {
@@ -519,7 +516,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BHU_the_head_decapitated }
 		prerequisite = { focus = BHU_war_against_poverty }
 		available = {
-
+			has_country_flag = BHU_tackle_failure
 		}
 		
 		bypass = {
@@ -637,7 +634,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BHU_calcutta_catastrophe }
 		prerequisite = { focus = BHU_the_departure }
 		available = {
-
+			has_country_flag = BHU_negotiations_success
 		}
 		
 		bypass = {
@@ -667,7 +664,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BHU_music_to_our_ears }
 		prerequisite = { focus = BHU_the_departure }
 		available = {
-
+			has_country_flag = BHU_negotiations_failure
 		}
 		
 		bypass = {
@@ -813,7 +810,6 @@ focus_tree = {
 		prerequisite = { focus = BHU_The_Bhutanese_Renaissance }
 		available = {
 			has_country_flag = BHU_tackle_poverty
-			custom_effect_tooltip = BHU_poverty
 		}
 		
 		bypass = {
