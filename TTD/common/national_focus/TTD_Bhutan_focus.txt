@@ -13,11 +13,40 @@ focus_tree = {
 	default = no
 	
 	focus = {
-	    id = BHU_the_chained_dragon
+	    id = BHU_modernize_bhutan
 		icon = GFX_
-		x = 11
+		x = 7
 		y = 0
 		
+		cost = 0.724
+		
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+			id = bhutan.focus_event.1
+			hours = 6
+			}
+		}
+	}
+	focus = {
+	    id = BHU_the_chained_dragon
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = BHU_modernize_bhutan
+		
+		prerequisite = { focus = BHU_modernize_bhutan }
 		cost = 0.724
 		
 		available = {
@@ -135,7 +164,8 @@ focus_tree = {
 		
 		prerequisite = { focus = BHU_a_hook_to_a_bad_economic_face }
 		available = {
-
+			has_country_flag = BHU_tackle_poverty
+			custom_effect_tooltip = BHU_poverty
 		}
 		
 		bypass = {
@@ -147,10 +177,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
+			country_event = {
+			id = bhutan.focus_event.2
+			hours = 6
 			}
 		}
 	}
@@ -194,7 +223,8 @@ focus_tree = {
 		mutually_exclusive = { focus = BHU_singh_is_all_we_need }
 		prerequisite = { focus = BHU_a_meeting_with_the_rising_sun }
 		available = {
-
+			custom_effect_tooltip = BHU_with_bose_tt
+			has_country_flag = BHU_went_with_bose 
 		}
 		
 		bypass = {
@@ -224,7 +254,8 @@ focus_tree = {
 		mutually_exclusive = { focus = BHU_securing_bose_vouch }
 		prerequisite = { focus = BHU_a_meeting_with_the_rising_sun }
 		available = {
-
+			has_country_flag = BHU_singh_goes_alone
+			custom_effect_tooltip = BHU_Singh
 		}
 		
 		bypass = {
@@ -265,10 +296,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
+			country_event = {
+			id = bhutan.focus_event.3
+			hours = 6
 			}
 		}
 	}
@@ -782,7 +812,8 @@ focus_tree = {
 		
 		prerequisite = { focus = BHU_The_Bhutanese_Renaissance }
 		available = {
-
+			has_country_flag = BHU_tackle_poverty
+			custom_effect_tooltip = BHU_poverty
 		}
 		
 		bypass = {
@@ -1100,12 +1131,12 @@ focus_tree = {
 	focus = {
 	    id = BHU_bhutan_age
 		icon = focus_From_Mountains_to_Cities
-		x = 0
-		y = 3
+		x = -1
+		y = 1
 		relative_position_id = BHU_the_finishing_touches
 		cost = 1.45
 		
-		prerequisite = { focus = BHU_the_finishing_touches }
+		prerequisite = { focus = BHU_the_finishing_touches focus = BHU_we_have_done_what_we_could }
 		available = {
 
 		}

@@ -16,4 +16,45 @@ country_event = {
 		ai_chance = { factor = 90 }
 	}
 }
+country_event = {
+	id = bhutan.focus_event.2
+	title = bhutan.focus_event.2.t
+	desc = bhutan.focus_event.2.d
+	
+	is_triggered_only = yes
+	
+	option = { # Bose Has Our Back!
+		name = bhutan.focus_event.2.a
+		ai_chance = { factor = 90 }
+		custom_effect_tooltip = BHU_bose
+		set_country_flag = BHU_went_with_bose
+		hidden_effect = {
+		    complete_national_focus = BHU_securing_bose_vouch
+		}
+	}
+	option = { # Singh Goes Alone!
+		name = bhutan.focus_event.2.b
+		ai_chance = { factor = 90 }
+		custom_effect_tooltip = BHU_Singh
+		set_country_flag = BHU_singh_goes_alone
+		hidden_effect = {
+		    complete_national_focus = BHU_singh_is_all_we_need
+		}
+	}
+}
+country_event = {
+	id = bhutan.focus_event.3
+	title = bhutan.focus_event.3.t
+	desc = bhutan.focus_event.3.d
+	
+	is_triggered_only = yes
+	
+	option = { # paperwork!
+		name = bhutan.focus_event.3.a
+		custom_effect_tooltip = BHU_poverty
+		set_country_flag = BHU_tackle_poverty
+		ai_chance = { factor = 90 }
+	}
+}
+
 

@@ -13,7 +13,7 @@ recruit_character = BHU_Jigme_Dorji_Wangchuck
 recruit_character = BHU_Khaled_Mosharraf
 
 
-oob = "BHU_1962"
+oob = "TTD_BHU_1962"
 
 set_politics = {
 	ruling_party = despotism
@@ -31,7 +31,8 @@ set_cosmetic_tag = BHU_AZH
 
 
 set_country_flag = TNO_eliminate_military_spending
-
+country_lock_all_division_template = yes
+complete_national_focus = BHU_modernize_bhutan
 add_ideas = {
 	#DIPLO
 	Sphere_Coequal
@@ -93,4 +94,13 @@ add_ideas = {
 	tno_academic_base_mass_illiteracy
 	tno_army_professionalism_professional
 	tno_admin_efficiency_deficient_administrative_systems
+}
+set_technology = {
+	basic_train = 1
+	trains_1955 = 1 
+
+	##INFANTRY##
+	# infantry_equipment_0 = 1
+	infantry_weapons_1 = 1
+	night_vision_1 = 1
 }
