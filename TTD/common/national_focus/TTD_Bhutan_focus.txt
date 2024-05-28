@@ -616,10 +616,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
+			country_event = {
+			id = bhutan.focus_event.4
+			hours = 6
 			}
 		}
 	}
