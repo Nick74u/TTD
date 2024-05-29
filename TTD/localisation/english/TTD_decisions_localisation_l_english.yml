@@ -1,0 +1,9 @@
+﻿l_english:
+ simple_category:0 "Singh's Poverty Plan"
+ simple_decision:0 "Send Monetary Aid"
+ simple_timeout_mission:0 "Azad Hind's Deadline"
+ simple_category_with_picture:0 "Singh's Poverty Plan"
+ simple_category_with_picture_desc:0 "Just some text to show the picutre of the category."
+ 
+ #####DECISION TOOLTIP######
+ azad_hind_poverty_time:0 "Azad Hind Will Inspect Our Current State"

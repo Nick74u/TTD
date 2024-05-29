@@ -33,10 +33,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = {
-			id = bhutan.focus_event.1
-			hours = 6
-			}
+			custom_effect_tooltip = BHU_modernize_bhutan_tt
 		}
 	}
 	focus = {
@@ -62,9 +59,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = {
-			id = bhutan.focus_event.1
-			hours = 6
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
 			}
 		}
 	}
@@ -297,6 +295,8 @@ focus_tree = {
 			id = bhutan.focus_event.3
 			hours = 6
 			}
+			custom_effect_tooltip = BHU_poverty_singh
+		    set_country_flag = BHU_poverty_singh_show
 		}
 	}
 	focus = {
@@ -457,66 +457,6 @@ focus_tree = {
 		prerequisite = { focus = BHU_failure_anticipated }
 		available = {
 
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
-		}
-	}
-	focus = {
-	    id = BHU_the_head_decapitated
-		icon = focus_From_Mountains_to_Cities
-		x = -1
-		y = 1
-		relative_position_id = BHU_war_against_poverty
-		cost = 0.724
-		
-		mutually_exclusive = { focus = BHU_opportunity_missed }
-		prerequisite = { focus = BHU_war_against_poverty }
-		available = {
-			has_country_flag = BHU_tackle_success
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
-		}
-	}
-	focus = {
-	    id = BHU_opportunity_missed
-		icon = focus_From_Mountains_to_Cities
-		x = 1
-		y = 1
-		relative_position_id = BHU_war_against_poverty
-		cost = 0.724
-		
-		mutually_exclusive = { focus = BHU_the_head_decapitated }
-		prerequisite = { focus = BHU_war_against_poverty }
-		available = {
-			has_country_flag = BHU_tackle_failure
 		}
 		
 		bypass = {

@@ -1,5 +1,5 @@
 ﻿  l_english:
-  ########EVENTS##################
+  ########COUNTRY EVENTS##################
   bhutan.focus_event.1.t:0 "A Fine Dine For a Fine Passage"
   bhutan.focus_event.1.d:0 "Kanwal's eyes scanned the vast mountain range. His eyes darted to the high peaks, then to the shallow valley. Waiting wasn't his speciality. Singhs fine leather shoes eagerly tapped against the fine floorboards of the palace-like structure.\n\nAs Kanwal rearranged the cutlery and plate of apetizers on his table, preparing it to be his newest pillow, the silouette of a man had begun to form out of the corner of his gloomy eyes. The last thing Singh wished for was to be forced to talk to another high ranking official in his govermment. Kanwal's urges got the best of him and he slowly rested his head on the stiff table."
   bhutan.focus_event.1.a:0 " "Mr Singh!" "
@@ -23,4 +23,10 @@
   bhutan.focus_event.7.t:0 "They said yes"
   bhutan.focus_event.7.d:0 "wohoo"
   bhutan.focus_event.7.a:0 "we live"
-  
+  azad_event.1.t:0 "war"
+  azad_event.1.d:0 "war"
+  azad_event.1.a:0 "war"
+  ########NEWS EVENTS##################
+  TTD_news.1.t: "Azad Hind Declares War on Free India!"
+  TTD_news.1.d: "warmongers lol"
+  news.1.a: "The Humanity!"

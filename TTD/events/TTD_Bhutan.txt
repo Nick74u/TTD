@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = bhutan.focus_event
+add_namespace = azad_event
 
 country_event = {
 	id = bhutan.focus_event.1
@@ -83,7 +84,7 @@ country_event = { #Bose meeting
 	
 	option = { # Success!
 		name = bhutan.focus_event.5.a
-		ai_chance = { factor = 80 }
+		ai_chance = { factor = 90 }
 	    BHU = { 
 			country_event = {
 				days = 1
@@ -93,7 +94,7 @@ country_event = { #Bose meeting
 	}
 	option = { # Failure!
 		name = bhutan.focus_event.5.b
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 10 }
 		BHU = { 
 			country_event = {
 				days = 1
@@ -132,7 +133,27 @@ country_event = { #THEY SAID YES
 		}
 	}
 }
-
+country_event = {
+	id = azad_event.1
+	title = azad_event.1.t
+	desc = azad_event.1.d
+	
+	is_triggered_only = yes
+	
+	option = { # attack!
+		name = azad_event.1.a
+        declare_war_on = {
+            target = IND
+            type = annex_everything
+        }
+		news_event = {
+            id = TTD_news.1
+        }
+		leave_faction = yes
+		create_faction = Azad_Front
+		ai_chance = { factor = 90 }
+	}
+}
 
 
 

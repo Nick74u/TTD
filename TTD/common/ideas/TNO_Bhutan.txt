@@ -49,6 +49,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = BHU_no_hope_in_the_east_tt
 				stability_weekly_factor = -0.002
+				military_expenditures_factor = 0.3
 			}
 		}
 		BHU_ina_purge = {

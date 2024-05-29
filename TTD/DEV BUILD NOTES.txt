@@ -1,0 +1,5 @@
+fix state lore
+fix bhutan economy
+fix unit names
+fix the decisions
+leader name change
