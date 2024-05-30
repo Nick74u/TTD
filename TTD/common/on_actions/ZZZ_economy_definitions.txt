@@ -2353,7 +2353,10 @@ on_actions = {
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.0 }
 				set_variable = { base_inflation_rate = 4.53 }
-
+                set_temp_variable = { temp_credit_rating = 4 }
+				set_temp_variable = { temp_credit_rating_min = 3 }
+				set_temp_variable = { temp_credit_rating_max = 5 }
+				econ_initialize_credit_rating_system = yes
 				initiate_display_vars = yes
 			}
 
