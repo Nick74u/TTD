@@ -1065,7 +1065,7 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_bhutan_age
-		icon = focus_From_Mountains_to_Cities
+		icon = GFX_goal_stable_foundation
 		x = -1
 		y = 1
 		relative_position_id = BHU_the_finishing_touches

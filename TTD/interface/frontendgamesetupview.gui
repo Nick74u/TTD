@@ -970,11 +970,7 @@ guiTypes = {
 			spriteType = "GFX_country_selection_clickcover_singleentry"
 		}
 
-		iconType = {
-			name = "countries_clickcover_sphere_2"
-			position = { x = 855 y = 284 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"
-		}
+
 
 		## Info
 		instantTextBoxType = {

@@ -1,5 +1,17 @@
-fix state lore - DONE BY SHADOWW
-fix bhutan economy
-fix unit names
-fix the decisions
+#####Writers######
+Focus descriptions, Idea Descriptions
+#fix state lore - DONE BY SHADOWW
+
+
+###Art Squad
+go make a custom GFX with the provinces of Bhutan (someone pls make an art with the map of the current state of bhutan)
+make the focus gfx
+
+
+
+
+
+####Coder man will do the Job###
 leader name change
+actually make the decisions
+fix bhutan economy

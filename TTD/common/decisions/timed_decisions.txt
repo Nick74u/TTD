@@ -15,7 +15,9 @@ simple_category = {		#Name of category that decisions will appear under, decisio
 		is_good = no		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
 		custom_effect_tooltip = "azad_hind_poverty_time"
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
-		
+		activation = {
+			has_completed_focus = BHU_war_against_poverty
+		}
 		available = {		#Conditions that will allow the player/AI to click the mission and execute its effect.
 			has_variable = { poverty_rate = 63 }
 		}

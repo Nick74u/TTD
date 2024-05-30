@@ -404,7 +404,21 @@ bookmarks = {
 				GNG_chief_executive_ibuka
 			}
 		}
-		"ZZZ" = { minor = yes history = "" }
+		"YUN" = {
+			minor = yes
+			history = "YUN_THENEWORDER_DESC"
+			ideology = despotism
+			ideas = {
+				#YUN_bandit_holdouts
+				YUN_hidden_potential_0
+				YUN_army_of_the_southwest
+			}
+			focuses = {
+				YUN_evict_he_yingqin
+				YUN_xinan_insurgency
+				YUN_we_are_not_enemies
+			}
+		}
 	
         "BHU" = {
 			minor = yes
