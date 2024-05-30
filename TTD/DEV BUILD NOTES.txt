@@ -1,4 +1,4 @@
-fix state lore
+fix state lore - DONE BY SHADOWW
 fix bhutan economy
 fix unit names
 fix the decisions
