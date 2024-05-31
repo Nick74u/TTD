@@ -1,6 +1,5 @@
 #####Writers######
-Focus descriptions, Idea aDescriptions
-events (give the draft and how the event story goes, ill handle the coding -Coder man)
+Focus descriptions, Idea Descriptions
 #fix state lore - DONE BY SHADOWW
 
 
@@ -16,3 +15,4 @@ make the focus gfx
 leader name change
 actually make the decisions
 fix bhutan economy
+will finish gui decision

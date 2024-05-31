@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_BHU_Map_Outline"
+		texturefile = "gfx/interface/bhutan_gui/BHU_map_outline.dds"
+	}
+}

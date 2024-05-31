@@ -1,0 +1,18 @@
+guiTypes = {
+	containerWindowType = {
+		name = "BHU_Map_GUI"
+		size = { width = 500 height = 650 }
+		position = { x = 0 y = 0 }
+		
+		background = {
+		    name = "Bhutan_background"
+			quadTextureSprite = "GFX_BHU_Map_Outline"
+		}
+		iconType = {
+			name = "Info"
+			spriteType = "GFX_Burgundy_GUI_Info_Button"
+			position = { x = 456 y = -10 } 
+			pdx_tooltip = TTD_BHU_Map_Info_tt
+		}
+	}
+}

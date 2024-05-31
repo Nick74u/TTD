@@ -1,0 +1,11 @@
+scripted_gui = {
+	BHU_Map_GUI = {
+		context_type = decision_category
+		window_name = "BHU_Map_GUI"
+		dirty = GNG_map_dirty_variable
+
+		visible = {
+			has_country_flag = BHU_poverty_singh_show
+		}
+	}
+}

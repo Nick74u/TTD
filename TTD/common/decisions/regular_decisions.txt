@@ -3,8 +3,8 @@
 # ID's must not include spaces!
 # Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
 #####################################################################################################################
-simple_category = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
-	simple_decision = {		#ID of the decision, must not contain spaces!
+bhutan_provinces_category = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+	bhutan_provinces_decision = {		#ID of the decision, must not contain spaces!
 
 		icon = GFX_decision_generic_document		#The left side icon to show for this decision.
 		
@@ -25,7 +25,6 @@ simple_category = {		#Name of category that decisions will appear under, decisio
 		# EFFECTS OF THIS DECISION/MISSION
 
 		complete_effect = {		#The effects to execute once the envelope icon is clicked.
-			custom_effect_tooltip = "DECISION_EFFECT_YAY"
 			hidden_effect = {
 				add_political_power = 500
 			}
