@@ -1,5 +1,5 @@
 #####Writers######
-Focus descriptions, Idea Descriptions
+Focus descriptions, Idea aDescriptions
 events (give the draft and how the event story goes, ill handle the coding -Coder man)
 #fix state lore - DONE BY SHADOWW
 
