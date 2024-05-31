@@ -2342,8 +2342,8 @@ on_actions = {
 			}
 
 			BHU = {
-				set_variable = { GDP = 0.102 } #in billions
-				set_variable = { GDP_growth = 4.957 }
+				set_variable = { GDP = 0.101 } #in billions
+				set_variable = { GDP_growth = 0.729 }
 				set_variable = { income_tax_rate = 0.125 }
 				set_variable = { business_tax_rate = 0.10 }
 				set_variable = { poverty_rate = 67.12 }
@@ -2352,12 +2352,16 @@ on_actions = {
 				set_variable = { national_debt = 0.012 } #in billions
 				set_variable = { misc_income = 0.0 }
 				set_variable = { misc_costs = 0.0 }
-				set_variable = { base_inflation_rate = 4.53 }
+				set_variable = { base_inflation_rate = 0.421 }
                 set_temp_variable = { temp_credit_rating = 4 }
 				set_temp_variable = { temp_credit_rating_min = 3 }
 				set_temp_variable = { temp_credit_rating_max = 5 }
 				econ_initialize_credit_rating_system = yes
 				initiate_display_vars = yes
+				
+				2016 = { set_variable = { defined_state_value = 5 } }
+				324 = { set_variable = { defined_state_value = 80 } }
+				1962 = { set_variable = { defined_state_value = 16 } }
 			}
 
 			TIB = {

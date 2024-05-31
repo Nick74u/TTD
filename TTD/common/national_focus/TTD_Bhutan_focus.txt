@@ -160,6 +160,7 @@ focus_tree = {
 		relative_position_id = BHU_a_hook_to_a_bad_economic_face
 		cost = 1.45
 		
+		cancelable = no
 		prerequisite = { focus = BHU_a_hook_to_a_bad_economic_face }
 		available = {
 			has_country_flag = BHU_tackle_poverty
@@ -336,6 +337,7 @@ focus_tree = {
 		relative_position_id = BHU_singh_is_all_we_need
 		cost = 8
 		
+		cancelable = no
 		prerequisite = { focus = BHU_singh_is_all_we_need }
 		available = {
 

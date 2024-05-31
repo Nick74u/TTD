@@ -10,7 +10,7 @@ state={
 		owner = BHU
 		buildings = {
 			infrastructure = 2
-
+            thermoelectric_plant = 1
 		}
 		victory_points = {
 			8010 10
