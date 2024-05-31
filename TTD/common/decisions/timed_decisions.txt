@@ -3,12 +3,12 @@
 # ID's must not include spaces!
 # Decisions MUST be visible for the AI to execute them, if in doubt, switch tag to the AI country and check if they can see/execute the mission.
 #####################################################################################################################
-simple_category = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+bhutan_provinces_category = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
 	###############################################
 	#### DECISIONS WITH TIMERS BECOME MISSIONS ####
 	###############################################
 	
-	simple_timeout_mission = {		#ID of the mission, must not contain spaces!
+	bhutan_provinces_mission = {		#ID of the mission, must not contain spaces!
 
 		icon = GFX_decision_generic_document		#The left side icon to show for this mission.
 		days_mission_timeout = 275	#The amount of days remaining until the mission is removed.
