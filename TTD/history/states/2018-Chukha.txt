@@ -1,0 +1,22 @@
+state={
+	id=2018
+	name="STATE_2018"
+	history={
+		owner = BHU
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			16132 5 
+		}
+		add_core_of = BHU
+
+	}
+	provinces={
+		16132 
+	}
+	manpower=24000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

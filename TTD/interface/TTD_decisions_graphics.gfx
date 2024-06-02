@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_category_image_template"
+		texturefile = "gfx/interface/decisions/category_image_template.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_generic"
+		texturefile = "gfx/interface/decisions/decision_category_generic.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_document"
+		texturefile = "gfx/interface/decisions/decision_generic_document.dds"
+	}
+}

@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_BHU_Thimphu_Outline"
+		texturefile = "gfx/interface/bhutan_gui/BHU_Thimphu_outline.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_Chukha_Outline"
+		texturefile = "gfx/interface/bhutan_gui/BHU_Chukha_outline.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_send_soldiers"
+		texturefile = "gfx/interface/bhutan_gui/BHU_send_soldiers.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_send_spies"
+		texturefile = "gfx/interface/bhutan_gui/BHU_send_spies.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_Thimphu_button"
+		texturefile = "gfx/interface/bhutan_gui/BHU_Thimphu_button.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_Chukha_button"
+		texturefile = "gfx/interface/bhutan_gui/BHU_Chukha_button.dds"
+	}
+}

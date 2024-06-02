@@ -1,0 +1,48 @@
+guiTypes = {
+	containerWindowType = {
+		name = "BHU_Map_GUI"
+		size = { width = 500 height = 650 }
+		position = { x = 0 y = 0 }
+		orientation = center
+		click_to_front = no
+		
+		iconType = {
+			name = "Bhutan_Thimphu_outline"
+			spriteType = "GFX_BHU_Thimphu_Outline"
+			position = { x = -25 y = 25 } 
+		}
+		iconType = {
+			name = "Bhutan_Chukha_outline"
+			spriteType = "GFX_BHU_Chukha_Outline"
+			position = { x = -25 y = 143 } 
+		}
+		iconType = {
+			name = "Info"
+			spriteType = "GFX_Burgundy_GUI_Info_Button"
+			position = { x = 456 y = 0 } 
+			pdx_tooltip = TTD_BHU_Map_Info_tt
+		}
+		buttonType = {
+			name = "Army"
+			spriteType = "GFX_BHU_send_soldiers"
+			position = { x = 100 y = 350 } 
+			pdx_tooltip = TTD_BHU_send_soldiers_tt
+		}
+		buttonType = {
+			name = "Spies"
+			spriteType = "GFX_BHU_send_spies"
+			position = { x = 300 y = 350 } 
+			pdx_tooltip = TTD_BHU_send_spies_tt
+		}
+		buttonType = {
+			name = "BHU_Thimphu"
+			quadTextureSprite = "GFX_BHU_Thimphu_button"
+			position = { x = 25 y = 30 } 
+		}
+		buttonType = {
+			name = "BHU_Chukha"
+			quadTextureSprite = "GFX_BHU_Chukha_button"
+			position = { x = -25 y = 143 } 
+		}
+	}
+}
