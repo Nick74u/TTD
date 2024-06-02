@@ -1,22 +1,12 @@
 scripted_gui = {	
 
-	TTD_indian_wars_supervent = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+	TTD_indian_wars_superevent = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
 		context_type = player_context
-		window_name = "TTD_indian_wars_supervent_window"
+		window_name = "TTD_indian_wars_superevent"
 
 		visible = {
 			has_country_flag = indian_wars ### this country flag triggers the #superevent
 		}
-	}
-
-	TTD_event_frame_indian_wars_supervent = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
-		context_type = player_context
-		window_name = "TTD_event_frame_indian_wars_supervent"
-
-		visible = {
-			has_country_flag = indian_wars
-		}
-
 		effects = {
 			Option_click = {
 				clr_country_flag = indian_wars ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
