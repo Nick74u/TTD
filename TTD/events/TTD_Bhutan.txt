@@ -149,6 +149,7 @@ country_event = {
 		news_event = {
             id = TTD_news.1
         }
+		set_country_flag = indian_wars
 		leave_faction = yes
 		create_faction = Azad_Front
 		ai_chance = { factor = 90 }
