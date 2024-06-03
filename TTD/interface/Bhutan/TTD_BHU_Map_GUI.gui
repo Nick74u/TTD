@@ -1,20 +1,32 @@
 guiTypes = {
 	containerWindowType = {
 		name = "BHU_Map_GUI"
-		size = { width = 500 height = 650 }
+		size = { width = 250 height = 350 }
 		position = { x = 0 y = 0 }
+		Orientation = center
+		Origo = center
 		orientation = center
 		click_to_front = no
 		
 		iconType = {
 			name = "Bhutan_Thimphu_outline"
 			spriteType = "GFX_BHU_Thimphu_Outline"
-			position = { x = -25 y = 25 } 
+			position = { x = 35 y = 35 } 
 		}
 		iconType = {
 			name = "Bhutan_Chukha_outline"
 			spriteType = "GFX_BHU_Chukha_Outline"
-			position = { x = -25 y = 143 } 
+			position = { x = -15 y = 143 } 
+		}
+		iconType = {
+			name = "Bhutan_Mongar_outline"
+			spriteType = "GFX_BHU_Mongar_Outline"
+			position = { x = 250 y = 35 } 
+		}
+        iconType = {
+			name = "Bhutan_Trashigang_outline"
+			spriteType = "GFX_BHU_Trashigang_Outline"
+			position = { x = 250 y = 35 } 
 		}
 		iconType = {
 			name = "Info"

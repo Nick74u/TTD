@@ -1,6 +1,6 @@
 characters = {
-	BHU_Kanwal_Singh = {
-		name = BHU_Kanwal_Singh
+	BHU_Kanwal_Singh_Dalal = {
+		name = BHU_Kanwal_Singh_Dalal
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/BHU/Portrait_Bhutan_Kanwal_Singh.dds"
@@ -25,19 +25,6 @@ characters = {
 			ideology = despotism_military_junta_subtype
 			traits = {}
 			id = -1
-		}
-		advisor = {
-			slot = head_of_government
-			idea_token = BHU_Kanwal_Singh_hog
-			allowed = { original_tag = BHU }
-			traits = {
-				head_of_government
-				hog_respected_war_hero
-			}
-			ledger = civilian
-			cost = -1
-			can_be_fired = no
-			ai_will_do = { factor = 0 }
 		}
 	}
 	BHU_Ian_Cardozo = {
@@ -69,17 +56,50 @@ characters = {
 			}
 		}
 		advisor = {
-			slot = foreign_minister
-			idea_token = BHU_Piru_Singh_for
+			slot = head_of_government
+			idea_token = BHU_Piru_Singh_hog
 			allowed = { original_tag = BHU }
 			traits = {
-				foreign_minister
-				for_iron_fisted_brute
+				head_of_government
 			}
 			ledger = civilian
 			cost = -1
 			can_be_fired = no
 			ai_will_do = { factor = 0 }
+		}
+	}
+	BHU_Khaled_Mosharraf = {
+		name = BHU_Khaled_Mosharraf
+		portraits = {
+		    civilian = {
+				small = "GFX_idea_BHU_Khaled_Mosharraf"
+			}
+			army = {
+				large = "gfx/leaders/BHU/Portrait_Bhutan_Khaled_Mosharraf.dds"
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = BHU_Khaled_Mosharraf_for
+			allowed = { original_tag = BHU }
+			traits = {
+				foreign_minister
+				for_iron_fisted_brute
+			}
+			
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+		corps_commander = {
+			traits = { fortress_buster organizer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id = 3121
 		}
 	}
 	BHU_Hussain_Muhammad_Ershad = {
@@ -158,23 +178,6 @@ characters = {
 			ideology = paternalism_subtype
 			traits = {}
 			id = -1
-		}
-	}
-	BHU_Khaled_Mosharraf = {
-		name = BHU_Khaled_Mosharraf
-		portraits = {
-			army = {
-				large = "gfx/leaders/BHU/Portrait_Bhutan_Khaled_Mosharraf.dds"
-			}
-		}
-		corps_commander = {
-			traits = { fortress_buster organizer }
-			skill = 2
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 1
-			logistics_skill = 3
-			legacy_id = 3121
 		}
 	}
 }

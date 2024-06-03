@@ -2,9 +2,43 @@
 # TTD_Bhutan Events
 ###########################
 
+add_namespace = bhutan_flavor
 add_namespace = bhutan.focus_event
 add_namespace = azad_event
 
+country_event = {    ####IDK BUT THIS IS THE START OF FLAVOR CHAIN, IT STARTS 5 DAYS AFTER GAME STARTS
+	id = bhutan_flavor.1
+	title = bhutan_flavor.1.t
+	desc = bhutan_flavor.1.d
+	
+	is_triggered_only = yes
+	
+	option = { # paperwork!
+		name = bhutan_flavor.1.a
+		ai_chance = { factor = 90 }
+		hidden_effect = {
+		    BHU = { 
+			    country_event = {
+				    days = 12
+				    id = bhutan_flavor.2
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = bhutan_flavor.2
+	title = bhutan_flavor.2.t
+	desc = bhutan_flavor.2.d
+	
+	is_triggered_only = yes
+	
+	option = { # paperwork!
+		name = bhutan_flavor.1.a
+		ai_chance = { factor = 90 }
+		
+	}
+}
 country_event = {
 	id = bhutan.focus_event.1
 	title = bhutan.focus_event.1.t
@@ -149,7 +183,7 @@ country_event = {
 		news_event = {
             id = TTD_news.1
         }
-		set_country_flag = indian_wars
+		set_global_flag = indian_wars
 		leave_faction = yes
 		create_faction = Azad_Front
 		ai_chance = { factor = 90 }

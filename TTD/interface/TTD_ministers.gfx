@@ -1,0 +1,13 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_Mr_Placeholder_the_Third"
+		texturefile = "gfx/interface/ideas/minister_Mr_Placeholder_the_Third.dds"
+	}
+	##########
+	##BHUTAN##
+	##########
+	spriteType = {
+		name = "GFX_idea_BHU_Khaled_Mosharraf"
+		texturefile = "gfx/interface/ideas/ministers/BHU/BHU_minister_Khaled_Mosharraf.dds"
+	}
+}

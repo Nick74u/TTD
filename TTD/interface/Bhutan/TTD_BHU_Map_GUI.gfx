@@ -8,6 +8,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/bhutan_gui/BHU_Chukha_outline.dds"
 	}
 	spriteType = {
+		name = "GFX_BHU_Mongar_Outline"
+		texturefile = "gfx/interface/bhutan_gui/BHU_Mongar_outline.dds"
+	}
+        spriteType = {
+		name = "GFX_BHU_Trashigang_Outline"
+		texturefile = "gfx/interface/bhutan_gui/BHU_Trashigang_outline.dds"
+	}
+	spriteType = {
 		name = "GFX_BHU_send_soldiers"
 		texturefile = "gfx/interface/bhutan_gui/BHU_send_soldiers.dds"
 	}

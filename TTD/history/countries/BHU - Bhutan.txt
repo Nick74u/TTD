@@ -3,14 +3,15 @@ capital = 324
 # Vacant
 recruit_character = BHU_Generic_Vacant
 
-recruit_character = BHU_Kanwal_Singh
+recruit_character = BHU_Kanwal_Singh_Dalal
 recruit_character = BHU_Ian_Cardozo
+recruit_character = BHU_Khaled_Mosharraf
 recruit_character = BHU_Piru_Singh
 recruit_character = BHU_Hussain_Muhammad_Ershad
 recruit_character = BHU_Dasho_Kesang
 recruit_character = BHU_Lhendup_Dorji
 recruit_character = BHU_Jigme_Dorji_Wangchuck
-recruit_character = BHU_Khaled_Mosharraf
+
 
 
 oob = "TTD_BHU_1962"
@@ -44,9 +45,9 @@ add_ideas = {
 	BHU_ina_purge
 	BHU_singh_paranoia
 	#MINISTERS
-	BHU_Kanwal_Singh_hog
+	BHU_Khaled_Mosharraf_for
 	BHU_Ian_Cardozo_eco
-	BHU_Piru_Singh_for
+	BHU_Piru_Singh_hog
 	BHU_Hussain_Muhammad_Ershad_sec
 	#POLITICAL
 	tno_political_parties_one_party_state
