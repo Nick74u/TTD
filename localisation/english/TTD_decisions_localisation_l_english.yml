@@ -1,0 +1,11 @@
+﻿l_english:
+ bhutan_provinces_category:0 "The Provinces Of Bhutan"
+ bhutan_provinces_decision:0 "Send Soldiers"
+ bhutan_poverty_mission:0 "Azad Hind's Deadline"
+ bhutan_poverty_decision:0 "Provide Relief"
+ bhutan_poverty_category:0 "Azad Hind's Demand"
+ simple_category_with_picture:0 "Singh's Poverty Plan"
+ simple_category_with_picture_desc:0 "Just some text to show the picutre of the category."
+ 
+ #####DECISION TOOLTIP######
+ azad_hind_poverty_time:0 "Azad Hind Will Inspect Our Current State"
