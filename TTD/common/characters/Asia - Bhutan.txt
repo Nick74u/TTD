@@ -56,11 +56,11 @@ characters = {
 			}
 		}
 		advisor = {
-			slot = head_of_government
-			idea_token = BHU_Piru_Singh_hog
+			slot = security_minister
+			idea_token = BHU_Piru_Singh_sec
 			allowed = { original_tag = BHU }
 			traits = {
-				head_of_government
+				security_minister
 			}
 			ledger = civilian
 			cost = -1
@@ -122,11 +122,11 @@ characters = {
 			legacy_id = 3122
 		}
 		advisor = {
-			slot = security_minister
-			idea_token = BHU_Hussain_Muhammad_Ershad_sec
+			slot = head_of_government
+			idea_token = BHU_Hussain_Muhammad_Ershad_hog
 			allowed = { original_tag = BHU }
 			traits = {
-				security_minister
+				head_of_government
 				sec_back_stabber
 			}
 			ledger = civilian

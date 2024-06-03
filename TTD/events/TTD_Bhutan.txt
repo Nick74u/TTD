@@ -36,7 +36,14 @@ country_event = {
 	option = { # paperwork!
 		name = bhutan_flavor.1.a
 		ai_chance = { factor = 90 }
-		
+		hidden_effect = {
+		    AZH = { 
+			    country_event = {
+				    days = 1
+				    id = azad_event.1
+				}
+			}
+		}
 	}
 }
 country_event = {

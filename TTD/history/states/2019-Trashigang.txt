@@ -1,0 +1,26 @@
+
+state={
+	id=2019
+	name="STATE_2019"
+
+	history={
+		owner = BHU
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			16134 1 
+		}
+		add_core_of = BHU
+
+	}
+
+	provinces={
+		16134 
+	}
+	manpower=12809
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

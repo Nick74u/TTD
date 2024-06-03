@@ -2360,7 +2360,8 @@ on_actions = {
 				initiate_display_vars = yes
 				
 				2016 = { set_variable = { defined_state_value = 7 } }
-				2017 = { set_variable = { defined_state_value = 6 } }
+				2017 = { set_variable = { defined_state_value = 4 } }
+				2019 = { set_variable = { defined_state_value = 2 } }
 				2018 = { set_variable = { defined_state_value = 10 } }
 				324 = { set_variable = { defined_state_value = 63 } }
 				1962 = { set_variable = { defined_state_value = 7 } }

@@ -1630,6 +1630,7 @@ TNO_setup_cultures = {
 	set_variable = { 2016.nationality = 215 }
 	set_variable = { 2017.nationality = 215 }
 	set_variable = { 2018.nationality = 215 }
+	set_variable = { 2019.nationality = 215 }
 
 	#Nepalese
 	set_variable = { 323.nationality = 216 }

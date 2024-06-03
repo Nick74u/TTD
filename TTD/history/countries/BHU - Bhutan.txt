@@ -47,8 +47,8 @@ add_ideas = {
 	#MINISTERS
 	BHU_Khaled_Mosharraf_for
 	BHU_Ian_Cardozo_eco
-	BHU_Piru_Singh_hog
-	BHU_Hussain_Muhammad_Ershad_sec
+	BHU_Piru_Singh_sec
+	BHU_Hussain_Muhammad_Ershad_hog
 	#POLITICAL
 	tno_political_parties_one_party_state
 	tno_religious_rights_suppression_of_churches
