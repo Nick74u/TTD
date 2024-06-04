@@ -18,35 +18,40 @@ guiTypes = {
 			name = "BHU_Map_GUI_Assets"
 			size = { width = 0 height = 0 }
 			position = { x = 0 y = 0 }
+			#iconType = {
+	    	#	name = "Bhutan_Map_outline"
+	    	#	spriteType = "GFX_BHU_Map_Outline"
+	    	#	position = { x = 0 y = 35 } 
+	    	#}
 	    	iconType = {
 	    		name = "Bhutan_Thimphu_outline"
 	    		spriteType = "GFX_BHU_Thimphu_Outline"
-	    		position = { x = 35 y = 35 } 
+	    		position = { x = 28 y = 28 } 
 	    	}
 	    	iconType = {
 	    		name = "Bhutan_Chukha_outline"
 	    		spriteType = "GFX_BHU_Chukha_Outline"
-	    		position = { x = 10 y = 93 } 
+	    		position = { x = -2 y = 105 } 
 	    	}
 	    	iconType = {
 	    		name = "Bhutan_Bumthang_outline"
 	    		spriteType = "GFX_BHU_Bumthang_Outline"
-	    		position = { x = 92 y = 58 } 
+	    		position = { x = 120 y = 59 } 
 	    	}
             iconType = {
-	    		name = "Bhutan_Trashiyangtze_outline"
-	    		spriteType = "GFX_BHU_Trashiyangtze_Outline"
-	    		position = { x = 143 y = 55 } 
+	    		name = "Bhutan_Trashiyangtse_outline"
+	    		spriteType = "GFX_BHU_Trashiyangtse_Outline"
+	    		position = { x = 186 y = 55 } 
 	        	}
 	        	iconType = {
 	    		name = "Bhutan_Trashigang_outline"
 	    		spriteType = "GFX_BHU_Trashigang_Outline"
-	    		position = { x = 163 y = 102 } 
+	    		position = { x = 210 y = 120 } 
 	    	}
 	    	iconType = {
 	    		name = "Bhutan_Mtsho_outline"
 	    		spriteType = "GFX_BHU_Mtsho_Outline"
-	    		position = { x = 197 y = 35 } 
+	    		position = { x = 267 y = 35 } 
 	    	}
 	    	buttonType = {
 	    		name = "Army"

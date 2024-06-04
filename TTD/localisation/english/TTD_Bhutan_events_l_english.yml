@@ -33,6 +33,7 @@
   azad_event.1.d:0 "war"
   azad_event.1.a:0 "war"
   ########NEWS EVENTS##################
-  TTD_news.1.t: "India Embroiled in War!"
+  # IF YOU ARE MAKING NEWS EVENTS, MAKE SURE TO PUT [Get_newspaper_header] AT THE START IN THE TITLE PART OR IT WON'T WORK PROPERLY!!!
+  TTD_news.1.t: "[Get_newspaper_header]India Embroiled in War!" 
   TTD_news.1.d: "Last week, reports had begun to flood out of the Indian Subcontinent regarding the issue and fear of an escalation of the recent border skirmish near Nepal. The Subcontinents greatest fears have been confirmed true as 100,000 troops from the Azad Hind Government have crossed over the border in the north.\n\nThe Calcutta Government's goal and reasoning is currently unknown but many in the Sphere and OFN theorize this is in direct responce with the Attack on Subhas Chandra Bose's life. Whilst the Dalai Lama has announced the creation of temporary refugee camps along their Southern borders, Afghanistan in the West, more particularly Mohammed Zhahir Shah, eye the Republic of India's Western territories, looking more eager to join ever passing day."
   news.1.a: "The Humanity!"

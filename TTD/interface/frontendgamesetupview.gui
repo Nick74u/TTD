@@ -942,7 +942,13 @@ guiTypes = {
 		}
         
 		# Sphere
-
+        iconType = { # Bhutan NEW
+			name = "country_selection_new_bhutan"
+			position = { x = 900 y = 280 }
+			spriteType = "GFX_country_selection_new_shine"
+			pdx_tooltip = "BOOKMARK_BHUTAN_BLOCKER"
+			pdx_tooltip_delayed = "BOOKMARK_BHUTAN_BLOCKER_DELAYED"
+		}
 		# Triumvirate
 		iconType = { # GREECE BLOCKED ENTRY
 			name = "countries_blocker_triumvirate_1_2_entry"

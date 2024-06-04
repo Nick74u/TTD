@@ -2342,16 +2342,16 @@ on_actions = {
 			}
 
 			BHU = {
-				set_variable = { GDP = 0.093 } #in billions
+				set_variable = { GDP = 0.171 } #in billions
 				set_variable = { GDP_growth = 0.729 }
-				set_variable = { income_tax_rate = 0.125 }
-				set_variable = { business_tax_rate = 0.10 }
+				set_variable = { income_tax_rate = 0.4 }
+				set_variable = { business_tax_rate = 0.2 }
 				set_variable = { poverty_rate = 67.12 }
 				set_variable = { poverty_monthly_change = 0.1 }
 				set_variable = { money_reserves = 0.0 } #in billions
 				set_variable = { national_debt = 0.012 } #in billions
-				set_variable = { misc_income = 0.0 }
-				set_variable = { misc_costs = 0.0 }
+				set_variable = { misc_income = 4.637 }
+				set_variable = { misc_costs = 2.634 }
 				set_variable = { base_inflation_rate = 0.421 }
                 set_temp_variable = { temp_credit_rating = 4 }
 				set_temp_variable = { temp_credit_rating_min = 3 }
@@ -2359,12 +2359,12 @@ on_actions = {
 				econ_initialize_credit_rating_system = yes
 				initiate_display_vars = yes
 				
-				2016 = { set_variable = { defined_state_value = 7 } }
-				2017 = { set_variable = { defined_state_value = 4 } }
-				2019 = { set_variable = { defined_state_value = 2 } }
+				2016 = { set_variable = { defined_state_value = 18 } }
+				2017 = { set_variable = { defined_state_value = 16 } }
+				2019 = { set_variable = { defined_state_value = 11 } }
 				2018 = { set_variable = { defined_state_value = 10 } }
-				324 = { set_variable = { defined_state_value = 63 } }
-				1962 = { set_variable = { defined_state_value = 7 } }
+				324 = { set_variable = { defined_state_value = 97 } }
+				1962 = { set_variable = { defined_state_value = 19 } }
 			}
 
 			TIB = {

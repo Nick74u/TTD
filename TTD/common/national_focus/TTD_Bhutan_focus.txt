@@ -153,43 +153,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_a_meeting_with_the_rising_sun
-		icon = focus_From_Mountains_to_Cities
-		x = -2
-		y = 1
-		relative_position_id = BHU_a_hook_to_a_bad_economic_face
-		cost = 1.45
-		
-		cancelable = no
-		prerequisite = { focus = BHU_a_hook_to_a_bad_economic_face }
-		available = {
-			has_country_flag = BHU_tackle_poverty
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			country_event = {
-			id = bhutan.focus_event.2
-			hours = 6
-			}
-		}
-	}
-	focus = {
 	    id = BHU_addressing_the_unemployment
 		icon = focus_From_Mountains_to_Cities
 		x = 2
 		y = 1
-		relative_position_id = BHU_a_hook_to_a_bad_economic_face
+		relative_position_id = BHU_The_Bhutanese_Renaissance
 		cost = 1
 		
-		prerequisite = { focus = BHU_a_hook_to_a_bad_economic_face }
+		prerequisite = { focus = BHU_The_Bhutanese_Renaissance }
 		available = {
 
 		}
@@ -211,8 +182,68 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_securing_bose_vouch
+	    id = BHU_war_against_poverty
 		icon = focus_From_Mountains_to_Cities
+		x = -2
+		y = 1
+		relative_position_id = BHU_addressing_the_unemployment
+		cost = 2.89
+		
+		prerequisite = { focus = BHU_addressing_the_unemployment }
+		prerequisite = { focus = BHU_a_hook_to_a_bad_economic_face }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+			id = bhutan.focus_event.3
+			hours = 6
+			}
+			custom_effect_tooltip = BHU_poverty_singh
+		    set_country_flag = BHU_poverty_singh_show
+		}
+	}
+	focus = {
+	    id = BHU_a_meeting_with_the_rising_sun
+		icon = GFX_goal_a_meeting_with_the_rising_sun
+		x = -4
+		y = 1
+		relative_position_id = BHU_war_against_poverty
+		cost = 1.45
+		
+		cancelable = no
+		prerequisite = { focus = BHU_war_against_poverty }
+		available = {
+			has_country_flag = BHU_tackle_poverty
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+			id = bhutan.focus_event.2
+			hours = 6
+			}
+		}
+	}
+	focus = {
+	    id = BHU_securing_bose_vouch
+		icon = GFX_goal_securing_bose_confirmation
 		x = -2
 		y = 1
 		relative_position_id = BHU_a_meeting_with_the_rising_sun
@@ -268,36 +299,6 @@ focus_tree = {
 				type = puppet_wargoal_focus
 				expire = 0
 			}
-		}
-	}
-	focus = {
-	    id = BHU_war_against_poverty
-		icon = focus_From_Mountains_to_Cities
-		x = 0
-		y = 1
-		relative_position_id = BHU_addressing_the_unemployment
-		cost = 2.89
-		
-		prerequisite = { focus = BHU_addressing_the_unemployment }
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			country_event = {
-			id = bhutan.focus_event.3
-			hours = 6
-			}
-			custom_effect_tooltip = BHU_poverty_singh
-		    set_country_flag = BHU_poverty_singh_show
 		}
 	}
 	focus = {
@@ -745,10 +746,10 @@ focus_tree = {
 		icon = focus_From_Mountains_to_Cities
 		x = 4
 		y = 1
-		relative_position_id = BHU_The_Bhutanese_Renaissance
+		relative_position_id = BHU_war_against_poverty
 		cost = 1
 		
-		prerequisite = { focus = BHU_The_Bhutanese_Renaissance }
+		prerequisite = { focus = BHU_war_against_poverty }
 		available = {
 			has_country_flag = BHU_tackle_poverty
 		}

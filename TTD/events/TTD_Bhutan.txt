@@ -34,16 +34,8 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { # paperwork!
-		name = bhutan_flavor.1.a
+		name = bhutan_flavor.2.a
 		ai_chance = { factor = 90 }
-		hidden_effect = {
-		    AZH = { 
-			    country_event = {
-				    days = 1
-				    id = azad_event.1
-				}
-			}
-		}
 	}
 }
 country_event = {

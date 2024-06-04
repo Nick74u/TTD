@@ -99,7 +99,7 @@ bhutan_provinces_category = {		#Name of category that decisions will appear unde
 		cost = 0		#The cost to execute the decision, by default its political powers
 		# EFFECTS OF THIS DECISION/MISSION
 
-		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.ssssssssssssssssssssssssssssssssssssssssssss
 			hidden_effect = {
 				add_political_power = 20
 			}

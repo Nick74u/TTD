@@ -1,0 +1,16 @@
+﻿l_english:
+
+# Icon tooltip
+TNO_ugly_american_icon_tt: "§RThe Thunder Dragon§!"
+TNO_ugly_american_icon_tt_delayed: "§F"Dragon Rawr""
+####=== The tooltips that are shown when hovering over the menu pictures ===####
+###- TNO v1.5.0 - The Ruin, September 29th 2023
+
+## SINGLE PLAYER
+TNO_menupic_tooltip_1: "§FThe house of §Rdelusions§! is §Gcheap§! to build but §Bdrafty§! to live in.§!"
+
+## MULTIPLAYER
+TNO_menupic_tooltip_2: "§FI, a §Rstranger and afraid§!, in a §Bworld§! I never made.§!"
+
+## QUIT
+TNO_menupic_tooltip_3: "§FShoulder the §Bsky§!, my lad, and drink your §Yale§!.§!"

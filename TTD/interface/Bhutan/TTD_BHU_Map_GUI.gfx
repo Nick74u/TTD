@@ -11,17 +11,21 @@ spriteTypes = {
 		name = "GFX_BHU_Bumthang_Outline"
 		texturefile = "gfx/interface/bhutan_gui/BHU_Bumthang_outline.dds"
 	}
-        spriteType = {
-		name = "GFX_BHU_Trashiyangtze_Outline"
-		texturefile = "gfx/interface/bhutan_gui/BHU_Trashiyangtze_outline.dds"
+    spriteType = {
+		name = "GFX_BHU_Trashiyangtse_Outline"
+		texturefile = "gfx/interface/bhutan_gui/BHU_Trashiyangtse_outline.dds"
 	}
-        spriteType = {
+    spriteType = {
 		name = "GFX_BHU_Trashigang_Outline"
 		texturefile = "gfx/interface/bhutan_gui/BHU_Trashigang_outline.dds"
 	}
-        spriteType = {
+    spriteType = {
 		name = "GFX_BHU_Mtsho_Outline"
 		texturefile = "gfx/interface/bhutan_gui/BHU_Mtsho_outline.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_Map_Outline"
+		texturefile = "gfx/interface/bhutan_gui/BHU_Map_Outline.dds"
 	}
 	spriteType = {
 		name = "GFX_BHU_send_soldiers"

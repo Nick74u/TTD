@@ -11,7 +11,7 @@ recruit_character = BHU_Hussain_Muhammad_Ershad
 recruit_character = BHU_Dasho_Kesang
 recruit_character = BHU_Lhendup_Dorji
 recruit_character = BHU_Jigme_Dorji_Wangchuck
-
+add_manpower = 40000
 
 
 oob = "TTD_BHU_1962"
@@ -31,9 +31,9 @@ set_popularities = {
 set_cosmetic_tag = BHU_AZH
 
 set_stability = .98
-set_country_flag = TNO_eliminate_military_spending
 country_lock_all_division_template = yes
 complete_national_focus = BHU_modernize_bhutan
+set_variable = { TNO_economy_type = token:Econ_Type_Planned }
 add_ideas = {
 	#DIPLO
 	Sphere_Coequal

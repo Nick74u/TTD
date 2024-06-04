@@ -4,18 +4,16 @@
 
 add_namespace = TTD_news
 
-# Marco Polo Bridge I
-news_event = {
+news_event = { # Indian Wars
 	id = TTD_news.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.1" }
 	title = TTD_news.1.t
 	desc = TTD_news.1.d
-	picture = GFX_news_event_001
-	
-	major = yes
-	
+	picture = GFX_news_event_USA_hawaiian_missile_crisis
+
 	is_triggered_only = yes
-	
+
 	option = {
-	    name = news.1.a
+		name = TTD_news.1.a
 	}
 }

@@ -3,7 +3,14 @@ spriteTypes = {
 	name = "GFX_goal_from_mountains_to_cities"
 	texturefile = "gfx/interface/goals/focus_From_Mountains_to_Cities.dds"			
 	}	
-	
+	SpriteType = {
+	name = "GFX_goal_securing_bose_confirmation"
+	texturefile = "gfx/interface/goals/focus_secure_bose_confirmation.dds"			
+	}	
+	SpriteType = {
+	name = "GFX_goal_a_meeting_with_the_rising_sun"
+	texturefile = "gfx/interface/goals/focus_a_meeting_with_the_rising_sun.dds"			
+	}	
 	SpriteType = {
 	name = "GFX_goal_stable_foundation"
 	texturefile = "gfx/interface/goals/focus_Stable_Foundation.dds"			
