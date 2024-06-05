@@ -153,7 +153,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_addressing_the_unemployment
+	    id = BHU_a_road_map_for_the_future
 		icon = focus_From_Mountains_to_Cities
 		x = 2
 		y = 1
@@ -182,14 +182,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_war_against_poverty
+	    id = BHU_laying_the_groundworks
 		icon = focus_From_Mountains_to_Cities
 		x = -2
 		y = 1
-		relative_position_id = BHU_addressing_the_unemployment
+		relative_position_id = BHU_a_road_map_for_the_future
 		cost = 2.89
 		
-		prerequisite = { focus = BHU_addressing_the_unemployment }
+		prerequisite = { focus = BHU_a_road_map_for_the_future }
 		prerequisite = { focus = BHU_a_hook_to_a_bad_economic_face }
 		available = {
 
@@ -217,11 +217,11 @@ focus_tree = {
 		icon = GFX_goal_a_meeting_with_the_rising_sun
 		x = -4
 		y = 1
-		relative_position_id = BHU_war_against_poverty
+		relative_position_id = BHU_laying_the_groundworks
 		cost = 1.45
 		
 		cancelable = no
-		prerequisite = { focus = BHU_war_against_poverty }
+		prerequisite = { focus = BHU_laying_the_groundworks }
 		available = {
 			has_country_flag = BHU_tackle_poverty
 		}
@@ -746,10 +746,10 @@ focus_tree = {
 		icon = focus_From_Mountains_to_Cities
 		x = 4
 		y = 1
-		relative_position_id = BHU_war_against_poverty
+		relative_position_id = BHU_laying_the_groundworks
 		cost = 1
 		
-		prerequisite = { focus = BHU_war_against_poverty }
+		prerequisite = { focus = BHU_laying_the_groundworks }
 		available = {
 			has_country_flag = BHU_tackle_poverty
 		}
