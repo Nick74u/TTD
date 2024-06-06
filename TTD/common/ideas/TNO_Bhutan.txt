@@ -22,7 +22,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = -0.15
-				political_power_factor = -0.50
+				political_power_factor = -0.05
 			}
 		}
 		BHU_The_hunt_for_wangchuk = {
@@ -49,7 +49,6 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = BHU_no_hope_in_the_east_tt
 				stability_weekly_factor = -0.002
-				military_expenditures_factor = 0.3
 			}
 		}
 		BHU_ina_purge = {
@@ -61,7 +60,6 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				stability_factor = -0.10
 				conscription_factor = -0.20
 				war_support_factor = -0.10
 			}

@@ -1,0 +1,21 @@
+﻿l_english:
+### Country Names ###
+ BHU: "Bhutan"
+ BHU_DEF: "the Autonomous Province of Bhutan"
+ BHU_ADJ: "Bhutanese"
+ FBH: "Bhutan"
+ FBH_DEF: "Bhutan"
+ FBH_ADJ: "Bhutanese"
+ ### Parties ###
+ FBH_paternalism_party: "Bhotamuzh - PSMD"
+ FBH_paternalism_party_long: "Bhotani Muzhamat - Patan-Srung Mak-De"
+ ### Characters ###
+ BHU_Kanwal_Singh_Dalal: "Kanwal Singh Dalal"
+ FBH_Jigme_Dorji_Wangchuck: "Jigme Dorji Wangchuck"
+
+ ## Leader Descs ##
+ 
+ ### Ideas ###
+ BHU_rough_himalayan_terrain: "Rough Himalayan Terrain"
+ BHU_rough_himalayan_terrain_desc: "Who knew that fighting on mountains is really hard for some reason"
+ 

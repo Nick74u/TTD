@@ -5,6 +5,7 @@
 add_namespace = bhutan_flavor
 add_namespace = bhutan.focus_event
 add_namespace = azad_event
+add_namespace = bhutan_civil_war
 
 country_event = {    ####IDK BUT THIS IS THE START OF FLAVOR CHAIN, IT STARTS 5 DAYS AFTER GAME STARTS
 	id = bhutan_flavor.1
@@ -183,11 +184,147 @@ country_event = {
             id = TTD_news.1
         }
 		set_global_flag = indian_wars
+		set_global_flag = azad_war
 		leave_faction = yes
 		create_faction = Azad_Front
 		ai_chance = { factor = 90 }
 	}
 }
-
+country_event = {
+	id = bhutan_civil_war.0
+	title = bhutan_civil_war.0.t
+	desc = bhutan_civil_war.0.d
+	
+	fire_only_once = yes
+	trigger = {
+	    tag = BHU
+	    has_global_flag = azad_war
+	}
+	
+	mean_time_to_happen = {
+	    days = 4
+    }
+	option = { # paperwork!
+		name = bhutan_civil_war.0.a
+		ai_chance = { factor = 90 }
+		country_event = {
+			days = 1
+			id = bhutan_civil_war.1
+		}
+		BHU = {
+		    leave_faction = yes
+		}
+		AZH = { 
+			set_autonomy = {
+			    target = BHU
+				autonomous_state = autonomy_free
+			}
+		}
+	}
+}
+country_event = {
+	id = bhutan_civil_war.1
+	title = bhutan_civil_war.1.t
+	desc = bhutan_civil_war.1.d
+	
+	is_triggered_only = yes
+	trigger = {
+	    tag = BHU
+	}
+	option = { # paperwork!
+		name = bhutan_civil_war.1.a
+		ai_chance = { factor = 90 }
+		country_event = {
+		    days = 1
+		    id = bhutan_civil_war.2
+	    }
+		hidden_effect = {
+		    1962 = {
+		        set_demilitarized_zone = yes
+			}
+		}
+	}
+}
+country_event = {
+	id = bhutan_civil_war.2
+	title = bhutan_civil_war.2.t
+	desc = bhutan_civil_war.2.d
+	
+	is_triggered_only = yes
+	trigger = {
+	    tag = BHU
+	}
+	option = { # paperwork!
+		name = bhutan_civil_war.2.a
+		ai_chance = { factor = 90 }
+		country_event = {
+		    days = 1
+		    id = bhutan_civil_war.3
+	    }
+		hidden_effect = {
+		    2016 = {
+		        set_demilitarized_zone = yes
+			}
+		    2017 = {
+		        set_demilitarized_zone = yes
+			}
+		    2019 = {
+		        set_demilitarized_zone = yes
+			}
+		    2018 = {
+		        set_demilitarized_zone = yes
+			}
+		}
+	}
+}
+country_event = {
+	id = bhutan_civil_war.3
+	title = bhutan_civil_war.3.t
+	desc = bhutan_civil_war.3.d
+	
+	is_triggered_only = yes
+	trigger = {
+	    tag = BHU
+	}
+	option = { # paperwork!
+		name = bhutan_civil_war.3.a
+		ai_chance = { factor = 90 }
+		FBH = { 
+		    hidden_effect = {
+			    add_state_core = 2019
+			    add_state_core = 2018
+			    add_state_core = 2017
+			    add_state_core = 2016
+			    add_state_core = 324
+			    add_state_core = 1962
+				transfer_state = 1962
+				set_capital = {
+				    state = 1962
+				}
+				1962 = {
+		            set_demilitarized_zone = no
+				}
+				2016 = {
+		            set_demilitarized_zone = no
+				}
+		        2017 = {
+		            set_demilitarized_zone = no
+				}
+		        2019 = {
+		            set_demilitarized_zone = no
+				}
+		        2018 = {
+		            set_demilitarized_zone = no
+				}
+			}
+		}
+		FBH = {
+		    declare_war_on = {
+			    target = BHU
+				type = civil_war
+			}
+		}
+	}
+}
 
 

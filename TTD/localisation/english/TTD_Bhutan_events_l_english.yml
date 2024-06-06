@@ -32,6 +32,15 @@
   azad_event.1.t:0 "war"
   azad_event.1.d:0 "war"
   azad_event.1.a:0 "war"
+  bhutan_civil_war.1.t: "A Call for the masses"
+  bhutan_civil_war.1.d: ""It's time we rise up against the occupiers of our beloved country, it's time to shake off the chains on which we were imprisoned, it's time, for our beloved country to be free!" \n\nReports indicate a total collapse of order from the eastern provinces of Bhutan, the rebels have occupied some small towns and are now mobilizing their militia."
+  bhutan_civil_war.1.a: "Those traitors will all be hanged"
+  bhutan_civil_war.2.t: "Order has collapsed!"
+  bhutan_civil_war.2.d: ""
+  bhutan_civil_war.2.a: "The Dragon wants to be freed, but for how long?"
+  bhutan_civil_war.3.t: "The Drums of War"
+  bhutan_civil_war.3.d: ""
+  bhutan_civil_war.3.a: "The spark has been lit"
   ########NEWS EVENTS##################
   # IF YOU ARE MAKING NEWS EVENTS, MAKE SURE TO PUT [Get_newspaper_header] AT THE START IN THE TITLE PART OR IT WON'T WORK PROPERLY!!!
   TTD_news.1.t: "[Get_newspaper_header]India Embroiled in War!" 

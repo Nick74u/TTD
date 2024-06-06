@@ -65,11 +65,11 @@ guiTypes = {
 	    		position = { x = 300 y = 350 } 
 	    		pdx_tooltip = TTD_BHU_send_spies_tt
 	    	}
-	    	#buttonType = {
-	    	#	name = "BHU_Thimphu"
-	    	#	quadTextureSprite = "GFX_BHU_Thimphu_button"
-	    	#	position = { x = 25 y = 30 } 
-	    	#}
+	    	buttonType = {
+	    		name = "BHU_Thimphu"
+	    		quadTextureSprite = "GFX_BHU_Thimphu_button"
+	    		position = { x = 28 y = 28 } 
+	    	}
 	    	#buttonType = {
 	    	#	name = "BHU_Chukha"
 	    	#	quadTextureSprite = "GFX_BHU_Chukha_button"

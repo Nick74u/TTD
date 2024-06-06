@@ -1,0 +1,23 @@
+capital = 324
+
+# Vacant
+recruit_character = BHU_Generic_Vacant
+recruit_character = FBH_Jigme_Dorji_Wangchuck
+add_manpower = 40000
+
+
+oob = "TTD_BHU_1962"
+
+set_politics = {
+	ruling_party = paternalism
+	last_election = "1962.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	paternalism = 100
+}
+
+set_stability = .98
+country_lock_all_division_template = yes
