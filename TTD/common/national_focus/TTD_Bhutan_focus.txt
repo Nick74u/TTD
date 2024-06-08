@@ -208,8 +208,9 @@ focus_tree = {
 			id = bhutan.focus_event.3
 			hours = 6
 			}
-			custom_effect_tooltip = BHU_poverty_singh
-		    set_country_flag = BHU_poverty_singh_show
+			custom_effect_tooltip = BHU_unlocks_bhutan_maps_gui
+			set_country_flag = BHU_laying_the_groundworks
+		    set_country_flag = BHU_map_gui_show
 		}
 	}
 	focus = {

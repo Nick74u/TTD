@@ -27,6 +27,7 @@ guiTypes = {
 	    		name = "Bhutan_Thimphu_outline"
 	    		spriteType = "GFX_BHU_Thimphu_Outline"
 	    		position = { x = 28 y = 28 } 
+				alwaystransparent = yes
 	    	}
 	    	iconType = {
 	    		name = "Bhutan_Chukha_outline"
@@ -54,27 +55,28 @@ guiTypes = {
 	    		position = { x = 267 y = 35 } 
 	    	}
 	    	buttonType = {
-	    		name = "Army"
+	    		name = "INA"
 	    		spriteType = "GFX_BHU_send_soldiers"
 	    		position = { x = 100 y = 350 } 
-	    		pdx_tooltip = TTD_BHU_send_soldiers_tt
+	    		pdx_tooltip = TTD_BHU_INA_tt
 	    	}
 	    	buttonType = {
-	    		name = "Spies"
+	    		name = "Bhotamuzh"
 	    		spriteType = "GFX_BHU_send_spies"
 	    		position = { x = 300 y = 350 } 
-	    		pdx_tooltip = TTD_BHU_send_spies_tt
+	    		pdx_tooltip = TTD_BHU_bhotamuzh_tt
 	    	}
 	    	buttonType = {
 	    		name = "BHU_Thimphu"
-	    		quadTextureSprite = "GFX_BHU_Thimphu_button"
-	    		position = { x = 28 y = 28 } 
+	    		spriteType = "GFX_BHU_Thimphu_button"
+	    		position = { x = 40 y = 28 } 
+				pdx_tooltip = BHU_map_324_tooltip
 	    	}
-	    	#buttonType = {
-	    	#	name = "BHU_Chukha"
-	    	#	quadTextureSprite = "GFX_BHU_Chukha_button"
-	    	#	position = { x = -25 y = 143 } 
-			#}
+	    	buttonType = {
+	    		name = "BHU_Chukha"
+	    		quadTextureSprite = "GFX_BHU_Chukha_button"
+	    		position = { x = -25 y = 143 } 
+			}
 		}
 	}
 }

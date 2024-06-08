@@ -34,6 +34,7 @@ set_stability = .98
 country_lock_all_division_template = yes
 complete_national_focus = BHU_modernize_bhutan
 set_variable = { TNO_economy_type = token:Econ_Type_Planned }
+set_variable = { BHU_map_selected_province = 0 }
 add_ideas = {
 	#DIPLO
 	Sphere_Coequal

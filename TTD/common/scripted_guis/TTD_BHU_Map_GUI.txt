@@ -2,16 +2,30 @@ scripted_gui = {
 	BHU_Map_GUI = {
 		context_type = decision_category
 		window_name = "BHU_Map_GUI"
-		dirty = BHU_map_dirty_variable
+		dirty = BHU_map_dirty_variable #this updates gui btw
 
 		visible = {
-			has_country_flag = BHU_poverty_singh_show
+			has_country_flag = BHU_map_gui_show
 		}
 		effects = {
 			BHU_Thimphu_click = {
 				set_country_flag = BHU_Map_Thimphu_selected
 				set_variable = { BHU_map_selected_province = 324 }
-	        }
+				add_to_variable = { BHU_map_dirty_variable = 0.01 }
+			}
+			BHU_Chukha_click = {
+				set_country_flag = BHU_Map_Chukha_selected
+				set_variable = { BHU_map_selected_province = 2018 }
+				add_to_variable = { BHU_map_dirty_variable = 0.01 }
+			}
+		}
+		triggers = {
+			Bhutan_Thimphu_outline_visible = {
+				check_variable = { BHU_map_selected_province = 324 }
+			}
+			Bhutan_Chukha_outline_visible = {
+				check_variable = { BHU_map_selected_province = 2018 }
+			}
 		}
 	}
 }
