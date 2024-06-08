@@ -15,12 +15,11 @@ CountryInfo_tab_name_country: "Country Overview"
   BHU_CountryInfo_Folder.102: "An Underground Resistance"
  
   # 101
-  BHU_CountryInfo_Content.1: "Operation: Thunder"
-  BHU_CountryInfo_Content_desc.1: "Bla bla burgers and stuff"
- 
-  BHU_CountryInfo_Content.2: "The Occupation"
-  BHU_CountryInfo_Content_desc.2: "This took a while"
-  BHU_CountryInfo_Content.3: "Rebellion"
+  BHU_CountryInfo_Content.1: "The End of WW2"
+  BHU_CountryInfo_Content_desc.1: "When the Second World War ended and with the total change of the world order, Bhutan was relatively unchanged due to its isolationist and landlocked land that they own.\n The mountains would be the natural defense of Bhutan since time immemorial, and the Druk Gyalpo knows it"
+  BHU_CountryInfo_Content.2: "Bose's Flight East"
+  BHU_CountryInfo_Content_desc.2: "When the Afghna-Indian war resulted in a humiliating lost for the Republic of India and Subhas Chandra Bose getting all the blame for it, he then fled east with his other contemporaries collectively called the Azad Hind which is aligned to Sphere.\n\n Bhutan has a new neighbor down south and only the years following it, they will know what their attitude is towards the fledging state of Bhutan"
+  BHU_CountryInfo_Content.3: "Invasion"
   BHU_CountryInfo_Content_desc.3: "This took a while"
   BHU_CountryInfo_Content.4: "Tragedy"
   BHU_CountryInfo_Content_desc.4: "This took a while"

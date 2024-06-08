@@ -252,6 +252,12 @@ focus_tree = {
 		
 		mutually_exclusive = { focus = BHU_singh_is_all_we_need }
 		prerequisite = { focus = BHU_a_meeting_with_the_rising_sun }
+
+		allow_branch = {
+			NOT = {
+				has_completed_focus = BHU_singh_is_all_we_need
+			}
+		}
 		available = {
 			has_country_flag = BHU_went_with_bose 
 		}
@@ -270,6 +276,9 @@ focus_tree = {
 				type = puppet_wargoal_focus
 				expire = 0
 			}
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
 		}
 	}
 	focus = {
@@ -282,6 +291,11 @@ focus_tree = {
 		
 		mutually_exclusive = { focus = BHU_securing_bose_vouch }
 		prerequisite = { focus = BHU_a_meeting_with_the_rising_sun }
+		allow_branch = {
+			NOT = {
+				has_completed_focus = BHU_securing_bose_vouch
+			}
+		}
 		available = {
 			has_country_flag = BHU_singh_goes_alone
 		}
@@ -299,6 +313,9 @@ focus_tree = {
 			    target = JAP
 				type = puppet_wargoal_focus
 				expire = 0
+			}
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
 			}
 		}
 	}
@@ -353,6 +370,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
+        select_effect = {
+		    hidden_effect = {
+			    country_event = {
+			    	id = bhutan_flavor.2 #placeholder
+		    		days = 7
+				}
+	    	}
+    	}
 		completion_reward = {
 			create_wargoal = {
 			    target = JAP
@@ -822,6 +847,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = BHU_The_hunt_for_wangchuck
 			create_wargoal = {
 			    target = JAP
 				type = puppet_wargoal_focus

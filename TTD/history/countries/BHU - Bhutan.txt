@@ -39,12 +39,11 @@ add_ideas = {
 	#DIPLO
 	Sphere_Coequal
 	#STARTING
-	BHU_Transitional_Military_Occupation
-	BHU_Bhotamuzh_Resistance
-	BHU_The_hunt_for_wangchuk
-	BHU_No_hope_in_the_east
-	BHU_ina_purge
-	BHU_singh_paranoia
+	BHU_Under_the_Azad_Hind_boot
+	BHU_A_Dragon_Restless
+	BHU_The_Neverending_war_in_the_East
+	BHU_The_Northern_Frontier
+	BHU_INA_Keeping_Order
 	#MINISTERS
 	BHU_Khaled_Mosharraf_for
 	BHU_Ian_Cardozo_eco
