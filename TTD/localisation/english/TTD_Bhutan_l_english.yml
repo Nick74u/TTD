@@ -123,6 +123,8 @@ BHU_Laws_Inexistent_Central_Economy_desc:0 "Our economy is trash"
   BHU_poverty_singh:0 "We will have decisions to tackle Poverty"
   BHU_unlocks_bhutan_maps_gui: "Unlocks the §SDistricts of Bhutan§! GUI in the £decision_icon_small §Ydecisions§! tab."
   BHU_map_324_tooltip: "The Province of Thimphu, Our Capital"
+  BHU_azad_faction: "Click to select actions for the §GINA§!"
+  BHU_azad_selected: "We are selecting actions for the §GINA§!"
   ####FACTION NAME###
   Azad_Front:0 "Indian Liberation Front"
   enemy_attrition:0 "Enemy Attrition"

@@ -116,6 +116,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			gdp_growth_modifier = 0.10
 			create_wargoal = {
 			    target = JAP
 				type = puppet_wargoal_focus

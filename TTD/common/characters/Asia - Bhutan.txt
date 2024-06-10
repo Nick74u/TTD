@@ -39,6 +39,7 @@ characters = {
 			idea_token = BHU_Ian_Cardozo_eco
 			allowed = { original_tag = BHU }
 			traits = {
+                eco_apolitical_technocrat
 				economy_minister
 				eco_military_entrepreneur
 			}

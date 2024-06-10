@@ -39,10 +39,53 @@ spriteTypes = {
 		name = "GFX_BHU_Thimphu_button"
 		texturefile = "gfx/interface/bhutan_gui/BHU_Thimphu_button.dds"
 		transparencecheck = yes
-		noOfFrames = 2
 	}
 	spriteType = {
 		name = "GFX_BHU_Chukha_button"
 		texturefile = "gfx/interface/bhutan_gui/BHU_Chukha_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BHU_Bumthang_button"
+		texturefile = "gfx/interface/bhutan_gui/BHU_Bumthang_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BHU_Trashiyangtse_button"
+		texturefile = "gfx/interface/bhutan_gui/BHU_Trashiyangtse_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BHU_Trashigang_button"
+		texturefile = "gfx/interface/bhutan_gui/BHU_Trashigang_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BHU_Mtsho_button"
+		texturefile = "gfx/interface/bhutan_gui/BHU_Mtsho_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BHU_azad"
+		texturefile = "gfx/interface/bhutan_gui/BHU_GUI_AZD.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BHU_azad_selected"
+		texturefile = "gfx/interface/bhutan_gui/BHU_GUI_AZD_selected.dds"
+		transparencecheck = yes
+	}
+	progressbartype = {
+		name = GFX_BHU_Chukha
+		textureFile1 = "gfx/interface/bhutan_gui/BHU_Chukha.dds"
+		textureFile2 = "gfx/interface/guangdong_gui/map_gui/colors.dds"
+		color = { 0.010 0.0 0.0 0.10 }
+		colortwo = { 0.226 0.169 1 1 }
+		size = { 
+			x = 226
+			y = 169
+		}
+		effectFile = "gfx/FX/gng_map_fill.lua"
+		steps = 10000
 	}
 }

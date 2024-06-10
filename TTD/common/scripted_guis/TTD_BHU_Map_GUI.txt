@@ -5,17 +5,41 @@ scripted_gui = {
 		dirty = BHU_map_dirty_variable #this updates gui btw
 
 		visible = {
-			has_country_flag = BHU_map_gui_show
+			
 		}
 		effects = {
-			BHU_Thimphu_click = {
+			BHU_Thimphu_button_click = {
 				set_country_flag = BHU_Map_Thimphu_selected
 				set_variable = { BHU_map_selected_province = 324 }
 				add_to_variable = { BHU_map_dirty_variable = 0.01 }
 			}
-			BHU_Chukha_click = {
+			BHU_Chukha_button_click = {
 				set_country_flag = BHU_Map_Chukha_selected
 				set_variable = { BHU_map_selected_province = 2018 }
+				add_to_variable = { BHU_map_dirty_variable = 0.01 }
+			}
+			BHU_Bumthang_button_click = {
+				set_country_flag = BHU_Map_Bumthang_selected
+				set_variable = { BHU_map_selected_province = 2016 }
+				add_to_variable = { BHU_map_dirty_variable = 0.01 }
+			}
+			BHU_Trashiyangtse_button_click = {
+				set_country_flag = BHU_Map_Trashiyangtse_selected
+				set_variable = { BHU_map_selected_province = 2017 }
+				add_to_variable = { BHU_map_dirty_variable = 0.01 }
+			}
+			BHU_Trashigang_button_click = {
+				set_country_flag = BHU_Map_Trashigang_selected
+				set_variable = { BHU_map_selected_province = 2019 }
+				add_to_variable = { BHU_map_dirty_variable = 0.01 }
+			}
+			BHU_Mtsho_button_click = {
+				set_country_flag = BHU_Map_Mtsho_selected
+				set_variable = { BHU_map_selected_province = 1962 }
+				add_to_variable = { BHU_map_dirty_variable = 0.01 }
+			}
+			azad_button_click = {
+				set_variable = { BHU_faction_select = 1 }
 				add_to_variable = { BHU_map_dirty_variable = 0.01 }
 			}
 		}
@@ -25,6 +49,29 @@ scripted_gui = {
 			}
 			Bhutan_Chukha_outline_visible = {
 				check_variable = { BHU_map_selected_province = 2018 }
+			}
+			Bhutan_Bumthang_outline_visible = {
+				check_variable = { BHU_map_selected_province = 2016 }
+			}
+			Bhutan_Trashiyangtse_outline_visible = {
+				check_variable = { BHU_map_selected_province = 2017 }
+			}
+			Bhutan_Trashigang_outline_visible = {
+				check_variable = { BHU_map_selected_province = 2019 }
+			}
+			Bhutan_Mtsho_outline_visible = {
+				check_variable = { BHU_map_selected_province = 1962 }
+			}
+			azad_button_visible = {
+				NOT = { check_variable = { BHU_faction_select = 1 } }
+			}
+			azad_selected_visible = {
+				check_variable = { BHU_faction_select = 1 }
+			}
+		}
+		properties = {
+			Bhutan_Chukha_display = {
+				frame = 2018:gui_display_frame
 			}
 		}
 	}

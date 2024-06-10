@@ -38,22 +38,32 @@ guiTypes = {
 	    		name = "Bhutan_Bumthang_outline"
 	    		spriteType = "GFX_BHU_Bumthang_Outline"
 	    		position = { x = 120 y = 59 } 
+				alwaystransparent = yes
 	    	}
             iconType = {
 	    		name = "Bhutan_Trashiyangtse_outline"
 	    		spriteType = "GFX_BHU_Trashiyangtse_Outline"
 	    		position = { x = 186 y = 55 } 
+				alwaystransparent = yes
 	        	}
 	        	iconType = {
 	    		name = "Bhutan_Trashigang_outline"
 	    		spriteType = "GFX_BHU_Trashigang_Outline"
 	    		position = { x = 210 y = 120 } 
+				alwaystransparent = yes
 	    	}
 	    	iconType = {
 	    		name = "Bhutan_Mtsho_outline"
 	    		spriteType = "GFX_BHU_Mtsho_Outline"
 	    		position = { x = 267 y = 35 } 
+				alwaystransparent = yes
 	    	}
+			#iconType = {
+			#	name = "Bhutan_Chukha_display"
+			#	quadTextureSprite = "GFX_BHU_Chukha"
+			#	position = { x = -2 y = 105 }
+			#	alwaystransparent = yes
+			#}
 	    	buttonType = {
 	    		name = "INA"
 	    		spriteType = "GFX_BHU_send_soldiers"
@@ -67,15 +77,52 @@ guiTypes = {
 	    		pdx_tooltip = TTD_BHU_bhotamuzh_tt
 	    	}
 	    	buttonType = {
-	    		name = "BHU_Thimphu"
+	    		name = "BHU_Thimphu_button"
 	    		spriteType = "GFX_BHU_Thimphu_button"
-	    		position = { x = 40 y = 28 } 
+	    		position = { x = 28 y = 28 } 
 				pdx_tooltip = BHU_map_324_tooltip
 	    	}
 	    	buttonType = {
-	    		name = "BHU_Chukha"
+	    		name = "BHU_Chukha_button"
 	    		quadTextureSprite = "GFX_BHU_Chukha_button"
-	    		position = { x = -25 y = 143 } 
+	    		position = { x = -2 y = 105 } 
+			}
+			buttonType = {
+	    		name = "BHU_Bumthang_button"
+	    		quadTextureSprite = "GFX_BHU_Bumthang_button"
+	    		position = { x = 120 y = 59 } 
+			}
+			buttonType = {
+	    		name = "BHU_Trashiyangtse_button"
+	    		quadTextureSprite = "GFX_BHU_Trashiyangtse_button"
+	    		position = { x = 186 y = 55 } 
+			}
+			buttonType = {
+	    		name = "BHU_Trashigang_button"
+	    		quadTextureSprite = "GFX_BHU_Trashigang_button"
+	    		position = { x = 210 y = 120 } 
+			}
+			buttonType = {
+	    		name = "BHU_Mtsho_button"
+	    		quadTextureSprite = "GFX_BHU_Mtsho_button"
+	    		position = { x = 267 y = 35 } 
+			}
+		}
+		containerWindowType = {
+			name = "buttons"
+			position = { x = 20 y = 530 }
+
+			buttonType = {
+				name = "azad_button"
+				spriteType = "GFX_BHU_azad"
+				position = { x = 0 y = 5 }
+				pdx_tooltip = BHU_azad_faction
+			}
+			iconType = {
+				name = "azad_selected"
+				spriteType = "GFX_BHU_azad_selected"
+				position = { x = 0 y = 5 }
+				pdx_tooltip = BHU_azad_selected
 			}
 		}
 	}
