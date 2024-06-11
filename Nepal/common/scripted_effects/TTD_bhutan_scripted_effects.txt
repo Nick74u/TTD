@@ -1,5 +1,0 @@
-BHU_dynamic_modifiers_setup = {
-	add_dynamic_modifier = { modifier = BHU_leap_forward_dynamic_modifier }
-	set_variable = { BHU_gdp_growth_modifier = 0.00 }
-	set_variable = { BHU_production_units_to_GDP_ratio_modifier = 0.000 }
-}
