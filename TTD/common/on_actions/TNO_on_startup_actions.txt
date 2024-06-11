@@ -481,7 +481,9 @@ on_actions = {
 			# Bhutan
 			BHU = {
 				country_event = { id = bhutan_flavor.1 days = 4 }		# Introduction
+				BHU_dynamic_modifiers_setup = yes
 			}
+			
 			# Chile
 			CHL = { add_political_power = 69 }
 

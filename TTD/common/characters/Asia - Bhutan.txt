@@ -39,7 +39,6 @@ characters = {
 			idea_token = BHU_Ian_Cardozo_eco
 			allowed = { original_tag = BHU }
 			traits = {
-                eco_apolitical_technocrat
 				economy_minister
 				eco_military_entrepreneur
 			}
@@ -57,11 +56,11 @@ characters = {
 			}
 		}
 		advisor = {
-			slot = security_minister
-			idea_token = BHU_Piru_Singh_sec
+			slot = foreign_minister
+			idea_token = BHU_Piru_Singh_for
 			allowed = { original_tag = BHU }
 			traits = {
-				security_minister
+				foreign_minister
 			}
 			ledger = civilian
 			cost = -1
@@ -80,11 +79,11 @@ characters = {
 			}
 		}
 		advisor = {
-			slot = foreign_minister
-			idea_token = BHU_Khaled_Mosharraf_for
+			slot = security_minister
+			idea_token = BHU_Khaled_Mosharraf_sec
 			allowed = { original_tag = BHU }
 			traits = {
-				foreign_minister
+				security_minister
 				for_iron_fisted_brute
 			}
 			

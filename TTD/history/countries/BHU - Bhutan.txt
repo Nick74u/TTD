@@ -45,9 +45,9 @@ add_ideas = {
 	BHU_The_Northern_Frontier
 	BHU_INA_Keeping_Order
 	#MINISTERS
-	BHU_Khaled_Mosharraf_for
+	BHU_Khaled_Mosharraf_sec
 	BHU_Ian_Cardozo_eco
-	BHU_Piru_Singh_sec
+	BHU_Piru_Singh_for
 	BHU_Hussain_Muhammad_Ershad_hog
 	#POLITICAL
 	tno_political_parties_one_party_state

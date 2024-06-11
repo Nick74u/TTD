@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		BHU_Under_the_Azad_Hind_boot = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_Transitional_Military_Occupation" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_Under_the_Azad_Hind_boot" }
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes } #{ #has_government = yes }
@@ -13,7 +13,7 @@ ideas = {
 			}
 		}
 		BHU_A_Dragon_Restless = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_Bhotamuzh_Resistance" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_A_Dragon_Restless" }
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes } #{ #has_government = yes }
@@ -39,7 +39,7 @@ ideas = {
 			}
 		}
 		BHU_The_Neverending_war_in_the_East = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_No_hope_in_the_east" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_The_Neverending_war_in_the_East" }
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes } #{ #has_government = yes }
@@ -52,7 +52,7 @@ ideas = {
 			}
 		}
 		BHU_The_Northern_Frontier = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_ina_purge" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_The_Northern_Frontier" }
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes } #{ #has_government = yes }
@@ -65,7 +65,7 @@ ideas = {
 			}
 		}
 		BHU_INA_Keeping_Order = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_singh_paranoia" }
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_INA_Keeping_Order" }
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes } #{ #has_government = yes }
@@ -76,6 +76,17 @@ ideas = {
 				stability_factor = 0.20
 				war_support_factor = 0.10
 				army_cost_modifier = 0.15
+			}
+		}
+		BHU_leap_forward = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_Transitional_Military_Occupation" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
 			}
 		}
 	}

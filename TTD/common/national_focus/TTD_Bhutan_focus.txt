@@ -59,11 +59,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -116,7 +112,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			gdp_growth_modifier = 0.10
 			create_wargoal = {
 			    target = JAP
 				type = puppet_wargoal_focus
@@ -849,11 +844,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = BHU_The_hunt_for_wangchuck
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
 		}
 	}
 	focus = {
@@ -1055,10 +1045,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
+			
+			hidden_effect = {
+                add_dynamic_modifier = {
+                    modifier = BHU_leap_forward_dynamic_modifier
+			    }
 			}
 		}
 	}
@@ -1116,11 +1107,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			add_ideas = BHU_leap_forward
+			custom_effect_tooltip = BHU_bhutan_age_tt
+            add_to_variable = { BHU_gdp_growth_modifier = 0.02 }
+	        add_to_variable = { BHU_production_units_to_GDP_ratio_modifier = 0.025 }
 		}
 	}
 	focus = {
