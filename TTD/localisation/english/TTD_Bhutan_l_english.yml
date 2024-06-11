@@ -13,7 +13,7 @@
   BHU_INA_Keeping_Order: "INA: Keeping Order"
   BHU_INA_Keeping_Order_desc: ""
   BHU_leap_forward: "A Leap Forward"
-  BHU_leap_forward_desc:0 "§FGDP Growth: [?BHU_gdp_growth_modifier|%+=]\n£GFX_tt_prod_unit Production Units to GDP ratio modifier: [?BHU_production_units_to_GDP_ratio_modifier|%+=]\n--------------\n§!"
+  BHU_leap_forward_desc:0 "§FGDP Growth: [?BHU_gdp_growth_modifier|+=]§G%§!\n£GFX_tt_prod_unit Production Units to GDP ratio modifier: [?BHU_production_units_to_GDP_ratio_modifier|%+=]\n--------------\n§!"
 ########FOCUS#############
   ##First Part##
   BHU_modernize_bhutan: "Modernizing Bhutan"
