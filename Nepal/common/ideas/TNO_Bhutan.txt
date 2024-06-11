@@ -1,0 +1,93 @@
+ideas = {
+	country = {
+		BHU_Under_the_Azad_Hind_boot = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_Under_the_Azad_Hind_boot" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				custom_modifier_tooltip = BHU_Transitional_Military_Occupation_tt
+			}
+		}
+		BHU_A_Dragon_Restless = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_A_Dragon_Restless" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_bhotamuzh_resistance
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.05
+			}
+		}
+		BHU_The_hunt_for_wangchuck = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_The_hunt_for_wangchuk" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.03
+				political_power_factor = -0.10
+			}
+		}
+		BHU_The_Neverending_war_in_the_East = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_The_Neverending_war_in_the_East" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				custom_modifier_tooltip = BHU_no_hope_in_the_east_tt
+				stability_weekly_factor = -0.002
+			}
+		}
+		BHU_The_Northern_Frontier = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_The_Northern_Frontier" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.20
+				war_support_factor = -0.10
+			}
+		}
+		BHU_INA_Keeping_Order = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_INA_Keeping_Order" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.20
+				war_support_factor = 0.10
+				army_cost_modifier = 0.15
+			}
+		}
+		BHU_leap_forward = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_Transitional_Military_Occupation" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+	}
+}

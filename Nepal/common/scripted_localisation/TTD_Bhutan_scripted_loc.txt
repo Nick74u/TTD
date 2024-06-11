@@ -1,0 +1,31 @@
+################################################# TNO_assorted_laws_display^i
+#                   Misc Laws                   #
+#################################################
+
+defined_text = {
+	name = GetAssortedLawsBHU
+	text = { # Archaic Province System
+		trigger = { check_variable = { v = 1 } }
+		localization_key = "BHU_Laws_Archaic_Province_System"
+	}
+	text = { # Inexistent Central Economy
+		trigger = { check_variable = { v = 2 } }
+		localization_key = "BHU_Laws_Inexistent_Central_Economy"
+	}
+}
+
+defined_text = {
+	name = GetAssortedLawsDescBHU
+	text = { # Archaic Province System
+		trigger = { 
+			check_variable = { v = 1 }
+		}
+		localization_key = BHU_Laws_Archaic_Province_System_desc
+	}
+	text = { # Inexistent Central Economy
+		trigger = {
+			check_variable = { v = 2 }
+		}
+		localization_key = BHU_Laws_Inexistent_Central_Economy_desc
+	}
+}

@@ -1,0 +1,1146 @@
+focus_tree = {
+	id = TTD_Bhutan_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BHU
+		}
+	}
+	
+	default = no
+	
+	focus = {
+	    id = BHU_modernize_bhutan
+		icon = GFX_
+		x = 7
+		y = 0
+		
+		cost = 0.724
+		
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = BHU_modernize_bhutan_tt
+		}
+	}
+	focus = {
+	    id = BHU_the_chained_dragon
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = BHU_modernize_bhutan
+		
+		prerequisite = { focus = BHU_modernize_bhutan }
+		cost = 0.724
+		
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+	    id = BHU_From_Mountains_to_Cities
+		icon = GFX_goal_from_mountains_to_cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_the_chained_dragon
+		cost = 2
+		
+		prerequisite = { focus = BHU_the_chained_dragon }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+			id = bhutan.focus_event.1
+			hours = 6
+			}
+		}
+	}
+	focus = {
+	    id = BHU_The_Bhutanese_Renaissance
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_From_Mountains_to_Cities
+		cost = 1.45
+		
+		prerequisite = { focus = BHU_From_Mountains_to_Cities }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_a_hook_to_a_bad_economic_face
+		icon = focus_From_Mountains_to_Cities
+		x = -2
+		y = 1
+		relative_position_id = BHU_The_Bhutanese_Renaissance
+		cost = 1
+		
+		prerequisite = { focus = BHU_The_Bhutanese_Renaissance }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_a_road_map_for_the_future
+		icon = focus_From_Mountains_to_Cities
+		x = 2
+		y = 1
+		relative_position_id = BHU_The_Bhutanese_Renaissance
+		cost = 1
+		
+		prerequisite = { focus = BHU_The_Bhutanese_Renaissance }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_laying_the_groundworks
+		icon = focus_From_Mountains_to_Cities
+		x = -2
+		y = 1
+		relative_position_id = BHU_a_road_map_for_the_future
+		cost = 2.89
+		
+		prerequisite = { focus = BHU_a_road_map_for_the_future }
+		prerequisite = { focus = BHU_a_hook_to_a_bad_economic_face }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+			id = bhutan.focus_event.3
+			hours = 6
+			}
+			custom_effect_tooltip = BHU_unlocks_bhutan_maps_gui
+			set_country_flag = BHU_laying_the_groundworks
+		    set_country_flag = BHU_map_gui_show
+		}
+	}
+	focus = {
+	    id = BHU_a_meeting_with_the_rising_sun
+		icon = GFX_goal_a_meeting_with_the_rising_sun
+		x = -4
+		y = 1
+		relative_position_id = BHU_laying_the_groundworks
+		cost = 1.45
+		
+		cancelable = no
+		prerequisite = { focus = BHU_laying_the_groundworks }
+		available = {
+			has_country_flag = BHU_tackle_poverty
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+			id = bhutan.focus_event.2
+			hours = 6
+			}
+		}
+	}
+	focus = {
+	    id = BHU_securing_bose_vouch
+		icon = GFX_goal_securing_bose_confirmation
+		x = -2
+		y = 1
+		relative_position_id = BHU_a_meeting_with_the_rising_sun
+		cost = 5
+		
+		mutually_exclusive = { focus = BHU_singh_is_all_we_need }
+		prerequisite = { focus = BHU_a_meeting_with_the_rising_sun }
+
+		allow_branch = {
+			NOT = {
+				has_completed_focus = BHU_singh_is_all_we_need
+			}
+		}
+		available = {
+			has_country_flag = BHU_went_with_bose 
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	}
+	focus = {
+	    id = BHU_singh_is_all_we_need
+		icon = focus_From_Mountains_to_Cities
+		x = 1
+		y = 1
+		relative_position_id = BHU_a_meeting_with_the_rising_sun
+		cost = 5
+		
+		mutually_exclusive = { focus = BHU_securing_bose_vouch }
+		prerequisite = { focus = BHU_a_meeting_with_the_rising_sun }
+		allow_branch = {
+			NOT = {
+				has_completed_focus = BHU_securing_bose_vouch
+			}
+		}
+		available = {
+			has_country_flag = BHU_singh_goes_alone
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+			hidden_effect = {
+				mark_focus_tree_layout_dirty = yes
+			}
+		}
+	}
+	focus = {
+	    id = BHU_the_venue
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_securing_bose_vouch
+		cost = 1.45
+		
+		prerequisite = { focus = BHU_securing_bose_vouch }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_in_tokyo
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_singh_is_all_we_need
+		cost = 8
+		
+		cancelable = no
+		prerequisite = { focus = BHU_singh_is_all_we_need }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+        select_effect = {
+		    hidden_effect = {
+			    country_event = {
+			    	id = bhutan_flavor.2 #placeholder
+		    		days = 7
+				}
+	    	}
+    	}
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_failure_anticipated
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 2
+		relative_position_id = BHU_in_tokyo
+		cost = 5
+		
+		mutually_exclusive = { focus = BHU_a_welcomed_success }
+		prerequisite = { focus = BHU_in_tokyo }
+		available = {
+			has_country_flag = BHU_singh_failure
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_a_welcomed_success
+		icon = focus_From_Mountains_to_Cities
+		x = 2
+		y = 2
+		relative_position_id = BHU_in_tokyo
+		cost = 5
+		
+		mutually_exclusive = { focus = BHU_failure_anticipated }
+		prerequisite = { focus = BHU_in_tokyo }
+		available = {
+			has_country_flag = BHU_singh_success
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_miracle_sphere
+		icon = focus_From_Mountains_to_Cities
+		x = 3
+		y = 3
+		relative_position_id = BHU_a_welcomed_success
+		cost = 3.50
+		
+		prerequisite = { focus = BHU_a_welcomed_success }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_disaster
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 5
+		relative_position_id = BHU_failure_anticipated
+		cost = 0.724
+		
+		prerequisite = { focus = BHU_failure_anticipated }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_our_lines
+		icon = focus_From_Mountains_to_Cities
+		x = -1
+		y = 1
+		relative_position_id = BHU_the_venue
+		cost = 1.45
+		
+		prerequisite = { focus = BHU_the_venue }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_our_tone
+		icon = focus_From_Mountains_to_Cities
+		x = 1
+		y = 1
+		relative_position_id = BHU_the_venue
+		cost = 1.45
+		
+		prerequisite = { focus = BHU_the_venue }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_the_departure
+		icon = focus_From_Mountains_to_Cities
+		x = 1
+		y = 1
+		relative_position_id = BHU_our_lines
+		cost = 2.88
+		
+		prerequisite = { focus = BHU_our_lines }
+		prerequisite = { focus = BHU_our_tone }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = {
+			id = bhutan.focus_event.4
+			hours = 6
+			}
+		}
+	}
+	focus = {
+	    id = BHU_music_to_our_ears
+		icon = focus_From_Mountains_to_Cities
+		x = -1
+		y = 1
+		relative_position_id = BHU_the_departure
+		cost = 5
+		
+		mutually_exclusive = { focus = BHU_calcutta_catastrophe }
+		prerequisite = { focus = BHU_the_departure }
+		available = {
+			has_country_flag = BHU_negotiations_success
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_calcutta_catastrophe
+		icon = focus_From_Mountains_to_Cities
+		x = 1
+		y = 1
+		relative_position_id = BHU_the_departure
+		cost = 5
+		
+		mutually_exclusive = { focus = BHU_music_to_our_ears }
+		prerequisite = { focus = BHU_the_departure }
+		available = {
+			has_country_flag = BHU_negotiations_failure
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_bhutan_boom
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_music_to_our_ears
+		cost = 0.724
+		
+		prerequisite = { focus = BHU_music_to_our_ears }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_the_dragon_scratched
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_calcutta_catastrophe
+		cost = 0.724
+		
+		prerequisite = { focus = BHU_calcutta_catastrophe }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_parties_and_celebration
+		icon = focus_From_Mountains_to_Cities
+		x = 1
+		y = 2
+		relative_position_id = BHU_bhutan_boom
+		cost = 2.90
+		
+		prerequisite = { focus = BHU_bhutan_boom }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_singh_nightmare
+		icon = focus_From_Mountains_to_Cities
+		x = 5
+		y = 3
+		relative_position_id = BHU_the_dragon_scratched
+		cost = 0.724
+		
+		prerequisite = { focus = BHU_the_dragon_scratched }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_acknowledging_the_eastern_issue
+		icon = focus_From_Mountains_to_Cities
+		x = 4
+		y = 1
+		relative_position_id = BHU_laying_the_groundworks
+		cost = 1
+		
+		prerequisite = { focus = BHU_laying_the_groundworks }
+		available = {
+			has_country_flag = BHU_tackle_poverty
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_militarize_our_police_force
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_acknowledging_the_eastern_issue
+		cost = 1.45
+		
+		prerequisite = { focus = BHU_acknowledging_the_eastern_issue }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_subsidize_the_hunt_for_wangchuk
+		icon = focus_From_Mountains_to_Cities
+		x = -1
+		y = 1
+		relative_position_id = BHU_militarize_our_police_force
+		cost = 1.45
+		
+		prerequisite = { focus = BHU_militarize_our_police_force }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = BHU_The_hunt_for_wangchuck
+		}
+	}
+	focus = {
+	    id = BHU_the_army_is_your_friend
+		icon = focus_From_Mountains_to_Cities
+		x = 1
+		y = 1
+		relative_position_id = BHU_militarize_our_police_force
+		cost = 1.45
+		
+		prerequisite = { focus = BHU_militarize_our_police_force }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_a_snowy_day_in_thimphu
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_subsidize_the_hunt_for_wangchuk
+		cost = 1.45
+		
+		prerequisite = { focus = BHU_subsidize_the_hunt_for_wangchuk }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_a_curfew_in_the_east
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_the_army_is_your_friend
+		cost = 1.45
+		
+		prerequisite = { focus = BHU_the_army_is_your_friend }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_a_bounty_on_the_head
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 2
+		relative_position_id = BHU_a_snowy_day_in_thimphu
+		cost = 0.724
+		
+		prerequisite = { focus = BHU_a_snowy_day_in_thimphu }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_centralize_authority
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 1
+		relative_position_id = BHU_a_curfew_in_the_east
+		cost = 1
+		
+		prerequisite = { focus = BHU_a_curfew_in_the_east }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_expand_agricultural_sector
+		icon = focus_From_Mountains_to_Cities
+		x = 2
+		y = 1
+		relative_position_id = BHU_centralize_authority
+		cost = 2
+		
+		prerequisite = { focus = BHU_centralize_authority }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_the_finishing_touches
+		icon = focus_From_Mountains_to_Cities
+		x = -1
+		y = 7
+		relative_position_id = BHU_expand_agricultural_sector
+		cost = 3.65
+		
+		mutually_exclusive = {focus = BHU_we_have_done_what_we_could}
+		prerequisite = { focus = BHU_expand_agricultural_sector  }
+		prerequisite = { focus = BHU_miracle_sphere focus = BHU_parties_and_celebration}
+		prerequisite = { focus = BHU_a_bounty_on_the_head }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+			hidden_effect = {
+                add_dynamic_modifier = {
+                    modifier = BHU_leap_forward_dynamic_modifier
+			    }
+			}
+		}
+	}
+	focus = {
+	    id = BHU_we_have_done_what_we_could
+		icon = focus_From_Mountains_to_Cities
+		x = -2
+		y = 0
+		relative_position_id = BHU_the_finishing_touches
+		cost = 3
+		
+		mutually_exclusive = {focus = BHU_the_finishing_touches}
+		prerequisite = { focus = BHU_expand_agricultural_sector  }
+		prerequisite = { focus = BHU_a_rainy_day_in_a_gloomy_city}
+		prerequisite = { focus = BHU_a_bounty_on_the_head }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+	focus = {
+	    id = BHU_bhutan_age
+		icon = GFX_goal_stable_foundation
+		x = -1
+		y = 1
+		relative_position_id = BHU_the_finishing_touches
+		cost = 1.45
+		
+		prerequisite = { focus = BHU_the_finishing_touches focus = BHU_we_have_done_what_we_could }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = BHU_leap_forward
+			custom_effect_tooltip = BHU_bhutan_age_tt
+            add_to_variable = { BHU_gdp_growth_modifier = 0.02 }
+	        add_to_variable = { BHU_production_units_to_GDP_ratio_modifier = 0.025 }
+		}
+	}
+	focus = {
+	    id = BHU_a_rainy_day_in_a_gloomy_city
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 3
+		relative_position_id = BHU_miracle_sphere
+		cost = 1.45
+		
+		prerequisite = { focus = BHU_singh_nightmare focus = BHU_disaster}
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_wargoal = {
+			    target = JAP
+				type = puppet_wargoal_focus
+				expire = 0
+			}
+		}
+	}
+}
+	

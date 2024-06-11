@@ -1,0 +1,29 @@
+BHU_rough_himalayan_terrain = { # for nodes with no connection, goes to 2
+	enable = { always = yes }
+	icon = "GFX_idea_MAD_hostile_territory"
+	local_supplies = -0.45
+	mobilization_speed = -0.45
+	disable_strategic_redeployment = 1
+	enemy_attrition = 0.2
+	local_org_regain = -0.4
+	local_supply_impact_factor = 0.2
+	army_speed_factor_for_controller = -0.4
+}
+
+BHU_Unmaintained_himalayan_roads = { # stage 0
+	enable = { always = yes }
+	icon = "GFX_idea_MAD_no_authority"
+	local_supplies = -0.50
+	mobilization_speed = -0.70
+	disable_strategic_redeployment = 1
+	compliance_growth = -0.70
+	attrition_for_controller = 1.5
+	local_org_regain = -0.70
+	local_supply_impact_factor = 0.50
+	army_speed_factor_for_controller = -0.5
+}
+BHU_leap_forward_dynamic_modifier = {
+	enable = { always = yes }
+	production_units_to_GDP_ratio_modifier = BHU_production_units_to_GDP_ratio_modifier
+	gdp_growth_modifier = BHU_gdp_growth_modifier
+}
