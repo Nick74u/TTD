@@ -15,7 +15,7 @@ add_manpower = 40000
 
 
 oob = "TTD_BHU_1962"
-
+set_country_flag = tno_playable_country
 set_politics = {
 	ruling_party = despotism
 	last_election = "1962.1.1"
@@ -24,8 +24,8 @@ set_politics = {
 }
 
 set_popularities = {
-	paternalism = 30
-	despotism = 70
+	paternalism = 13
+	despotism = 87
 }
 
 set_cosmetic_tag = BHU_AZH

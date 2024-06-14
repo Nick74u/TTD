@@ -205,6 +205,7 @@ country_event = {
 	    days = 4
     }
 	option = { # paperwork!
+		
 		name = bhutan_civil_war.0.a
 		ai_chance = { factor = 90 }
 		country_event = {

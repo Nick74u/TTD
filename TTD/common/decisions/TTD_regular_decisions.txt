@@ -151,8 +151,8 @@ bhutan_meeting_category = {		#Name of category that decisions will appear under,
 		cost = 30		#The cost to execute the decision, by default its political power.
 
 		complete_effect = {		#The effects to execute once the envelope icon is clicked.
-		    add_to_variable = { BHU_demand_req = 1 }
-			add_to_variable = { BHU_persuasion_power = 1 }
+		    add_to_variable = { BHU_demand_req = 0.1 }
+			add_to_variable = { BHU_persuasion_power = 0.1 }
 		}
 		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
 			factor = 75		

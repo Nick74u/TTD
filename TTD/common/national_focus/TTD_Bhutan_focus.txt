@@ -235,7 +235,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_variable = { BHU_demand_req = 0 }
-			set_variable = { BHU_persuasion_power = 0 }
+			set_variable = { BHU_persuasion_power = 0.5 }
 			country_event = {
 			id = bhutan.focus_event.2
 			hours = 6
@@ -272,12 +272,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			custom_effect_tooltip = BHU_bose_plan_tt
 			hidden_effect = {
+				add_to_variable = { BHU_demand_req = 1 }
+				add_to_variable = { BHU_persuasion_power = 0.25 }
 				mark_focus_tree_layout_dirty = yes
 			}
 		}
@@ -310,12 +308,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			custom_effect_tooltip = BHU_singh_plan_tt
 			hidden_effect = {
+				add_to_variable = { BHU_demand_req = 3 }
+				add_to_variable = { BHU_persuasion_power = -0.25 }
 				mark_focus_tree_layout_dirty = yes
 			}
 		}
