@@ -6,6 +6,9 @@
  bhutan_poverty_category:0 "Paving Bhutan"
  simple_category_with_picture:0 "Singh's Poverty Plan"
  simple_category_with_picture_desc:0 "Just some text to show the picutre of the category."
- 
+ bhutan_meeting_category: "Economic Meeting"
+ bhutan_meeting_category_desc: "§YRequest: [?BHU_demand_req|+-=%]§!\n\n§GSuccess Chance: [?BHU_persuasion_power|+=%]§!\n\nPLACEHOLDER §Rfail§!!"
+ bhutan_demand_investment_decision: "Demand Investment"
+ bhutan_demand_investment_decision_desc: "This will increase our §YRequests§!"
  #####DECISION TOOLTIP######
  azad_hind_poverty_time:0 "Azad Hind Will Inspect Our Current State"

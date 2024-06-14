@@ -1,0 +1,22 @@
+SpriteTypes = {
+	SpriteType = {
+		name = "GFX_idea_NEP_Between_Two_Worlds"
+		texturefile = "gfx/interface/ideas/national_spirits/Asia/NEP/idea_NEP_Between_Two_Worlds.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_NEP_Congressional_Riots"
+		texturefile = "gfx/interface/ideas/national_spirits/Asia/NEP/idea_NEP_Congressional_Riots.dds"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

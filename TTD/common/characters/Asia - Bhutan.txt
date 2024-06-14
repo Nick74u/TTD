@@ -23,7 +23,7 @@ characters = {
 			desc = "POLITICS_KANWAL_SINGH_DESC"
 			expire = "1999.1.1"
 			ideology = despotism_military_junta_subtype
-			traits = {}
+			traits = { bhutans_warden }
 			id = -1
 		}
 	}

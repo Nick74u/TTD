@@ -204,6 +204,8 @@ focus_tree = {
 			id = bhutan.focus_event.3
 			hours = 6
 			}
+			set_temp_variable = { gdp_growth_temp = 0.2 }
+	    	econ_gdp_growth_change = yes
 			custom_effect_tooltip = BHU_unlocks_bhutan_maps_gui
 			set_country_flag = BHU_laying_the_groundworks
 		    set_country_flag = BHU_map_gui_show
@@ -232,10 +234,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_variable = { BHU_demand_req = 0 }
+			set_variable = { BHU_persuasion_power = 0 }
 			country_event = {
 			id = bhutan.focus_event.2
 			hours = 6
 			}
+			set_country_flag = BHU_meeting
 		}
 	}
 	focus = {

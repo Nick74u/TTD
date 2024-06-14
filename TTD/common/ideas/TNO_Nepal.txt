@@ -17,7 +17,7 @@ ideas = {
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes } #{ #has_government = yes }
-			picture = BHU_transitional_military_occupation
+			picture = NEP_Congressional_Riots
 			removal_cost = -1
 
 			modifier = {
@@ -68,7 +68,7 @@ ideas = {
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes } #{ #has_government = yes }
-			picture = BHU_transitional_military_occupation
+			picture = NEP_Between_Two_Worlds
 			removal_cost = -1
 
             modifier = {

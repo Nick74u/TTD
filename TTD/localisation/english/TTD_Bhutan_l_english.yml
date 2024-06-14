@@ -131,3 +131,8 @@ BHU_Laws_Inexistent_Central_Economy_desc:0 "Our economy is trash"
   ####FACTION NAME###
   Azad_Front:0 "Indian Liberation Front"
   enemy_attrition:0 "Enemy Attrition"
+  
+  ###TRAITS###
+   bhutans_warden: "Bhutan's Warden"
+   
+   #########VARIABLES#########
