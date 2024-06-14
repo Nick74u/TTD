@@ -31,10 +31,8 @@ add_ideas = {
 	#STARTING
 	NEP_Dictatorship_With_the_Face_of_Democracy
 	NEP_Congressional_riots
-	NEP_Raja_Mahendra
 	NEP_Second_Sat_Salko_Kranti
 	NEP_Between_Two_Worlds
-	NEP_Legacy_of_Transtitional_Authority
 	#MINISTERS
 	NEP_Birendra_Bir_Bikram_Shah_hog
 	NEP_Surya_Bahadur_Thapa_eco
