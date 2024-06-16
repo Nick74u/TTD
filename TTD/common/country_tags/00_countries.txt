@@ -52,7 +52,6 @@ SGR = "countries/Germany - Proper.txt"			# Speer's Germany
 BGR = "countries/Germany - Proper.txt"			# Bormann's Germany
 GGR = "countries/Germany - Proper.txt"			# Goering's Germany
 HGR = "countries/Germany - Proper.txt"			# Heydrich's Germany
-RNW = "countries/Germany - Proper.txt"			# Schörner's Germany
 CZE = "countries/Germany - Proper.txt"			# Wehrkreis XIX
 CRN = "countries/Germany - Proper.txt"			# Cornwall Garrison
 HOL = "countries/Germany - Europe.txt"			# Netherlands
@@ -90,7 +89,6 @@ FHH = "countries/Germany - Proper.txt"			# Deutsches Reich - Gehlen
 # /// Reich - Eastern Europe /// #
 GGN = "countries/Germany - Europe.txt"			# Generalgouvernement
 POL = "countries/East Europe - Former RK.txt"	# Poland
-#GAC = "countries/East Europe - Former RK.txt"	# Dystrykt Galychyna
 SLO = "countries/East Europe - Pakt.txt"		# Slovakia
 HUN = "countries/East Europe - Pakt.txt"		# Hungary
 ROM = "countries/East Europe - Pakt.txt"		# Romania
@@ -115,7 +113,6 @@ UKR = "countries/Germany - Europe.txt"			# RK Ukraine
 FUK = "countries/East Europe - Former RK.txt"	# UNRA Ukraine
 BOV = "countries/East Europe - Former RK.txt"	# UPA Ukraine
 UKS = "countries/East Europe - Former RK.txt"	# U-SSR Ukraine
-HEE = "countries/Germany - Europe.txt"			# Heerema's Ukraine
 
 MCW = "countries/Germany - Europe.txt"			# Moskowien
 TVR = "countries/East Europe - Former RK.txt"	# Tver Autonomy
@@ -154,7 +151,6 @@ WAL = "countries/England.txt"					# Wales
 IRE = "countries/Ireland.txt"					# Ireland
 ULS = "countries/Ireland.txt"					# Northern Ireland
 FRS = "countries/France.txt"					# French State
-BRT = "countries/France.txt"					# Brittany - Currently Unused
 FRM = "countries/France.txt"					# OAS France - Poujade/Sidos CW tag
 FRD = "countries/France.txt"					# French Resistance - Poujade/Sidos CW tag
 FMM = "countries/France.txt"					# Milice Française - Sidos CW tag
@@ -162,15 +158,12 @@ FRV = "countries/France.txt"					# French Revolutionaries - Sidos CW tag
 FGR = "countries/France.txt"					# Germany-aligned France - Sidos CW tag
 FIT = "countries/France.txt"					# Italy-aligned France - Sidos CW tag
 
-# /// Nothrn Eupe  /// #
+# /// Nothern Europe  /// #
 SWE = "countries/West Europe.txt"				# Sweden
-GTL = "countries/West Europe.txt"				# Gotland - Unused in Current Version
 FIN = "countries/East Europe.txt"				# Finland
 RFI = "countries/East Europe.txt"				# Red Finland - Finnish CW
 KRL = "countries/East Europe.txt"				# Karelia - Unused with MPR addition
 MPR = "countries/West Russia.txt"				# Murmansk People's Republic
-#SWN = "countries/West Europe.txt"
-#SWG = "countries/West Europe.txt"
 
 # /// Southern Europe /// #
 ITA = "countries/Italy.txt"						# Italy
@@ -282,20 +275,13 @@ SHO = "countries/Japan - Overseas.txt"			# Shonan
 MLY = "countries/Asia.txt"						# UMAJF Malaya
 JHR = "countries/Asia - Sphere.txt"				# Johor - for partial Japanese defeat
 MAL = "countries/Asia.txt"						# Malaysia - Unused
-
 BUR = "countries/Asia - Sphere.txt"				# Burma
-SHA = "countries/Asia - Sphere.txt"				# Shan - Currently Unused CW Tag
-ARA = "countries/Asia - Sphere.txt"				# Arakan - Currently Unused CW Tag
-RAM = "countries/Asia - Sphere.txt"				# Mon - Currently Unused CW Tag
-KAC = "countries/Asia - Sphere.txt"				# Kachin - Currently Unused CW Tag
-KAR = "countries/Asia - Sphere.txt"				# Karen - Currently Unused CW Tag
-CHN = "countries/Asia - Sphere.txt"				# Chin - Currently Unused CW Tag
-CBR = "countries/Asia - Sphere.txt"				# Burmese Communists - Currently Unused CW Tag
 
 # /// India /// #
 AZH = "countries/Asia - Sphere.txt"				# Azad Hind
 BHU = "countries/Asia - Sphere.txt"				# Bhutan
-FBH = "countries/Asia - Himalayas.txt"	
+FBH = "countries/Asia - Himalayas.txt"
+SIK = "countries/Asia - Sphere.txt"
 CYL = "countries/Asia.txt"						# Ceylon
 IND = "countries/Asia.txt"						# India
 NEP = "countries/Asia.txt"						# Nepal
@@ -358,13 +344,7 @@ VIL = "countries/Far East.txt"					# Vilyuy - OMO Breakaway/AM Anarchy
 SOR = "countries/Far East.txt"					# Soviet Remnants in Manchukuo - Resistance Tag
 
 # /// Kazakhstan /// #
-ARL = "countries/Central Asia.txt"				# Aktobe
-AKT = "countries/Central Asia.txt"				# Aktau - Deprecated Besides Minor Use in AM
-DER = "countries/Central Asia.txt"				# Kostanay
 KAZ = "countries/Central Asia.txt"				# Kazakh SSR
-KOK = "countries/Central Asia.txt"				# Kokshetau
-NPL = "countries/Central Asia.txt"				# Nowa Polska
-PAV = "countries/Central Asia.txt"				# Pavlodar
 KZR = "countries/Central Asia.txt"				# Russian Kazakhstan
 
 # /// Central Asia /// #
@@ -671,4 +651,5 @@ PKT = "countries/West Europe.txt"				# Zollverein - Sphere Tag
 OFN = "countries/West Europe.txt"				# OFN - Unused?
 ADN = "countries/West Europe.txt"				# Andean Pact - Sphere Tag
 CME = "countries/West Europe.txt"				# COMECON - Sphere Tag
+
 ZZZ = "countries/West Europe.txt"				# Anarchy - SHOULD BE LAST TAG ALWAYS

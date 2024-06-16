@@ -1,0 +1,16 @@
+﻿l_english:
+
+ ### Parties ###
+
+ ### Characters ###
+ CYL_JR_Jayewardene: "JR Jayewardene"
+ CYL_IMRA_Iriyagolle: "IMRA Iriyagolle"
+ CYL_MD_Banda: "MD Banda"
+ CYL_EJ_Cooray: "EJ Cooray"
+ ## Leader Descs ##
+ CYL_JR_Jayewardene_hog_desc: "§YHead of Government\nNational Conservatism§!"
+ CYL_CYL_MD_Banda_eco_desc: "§YMinister of Agriculture and Lands\nMinister of Food, Commerce and Trade\nAgrarianism§!"
+ CYL_EJ_Cooray_sec_desc: "§YMinister of Justice\nPaternalistic Conservatism§!"
+ CYL_IMRA_Iriyagolle_for_desc: "§YMinister of Education and Cultural Affairs\nProgressive Conservatism§!"
+
+ 

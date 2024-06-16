@@ -1,0 +1,138 @@
+characters = {
+	CYL_Dudley_Senanayake = {
+		name = CYL_Dudley_Senanayake
+		portraits = {
+			civilian = { large = "gfx/leaders/CYL/Portrait_CYL_Dudley_Senanayake.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_DUDLEY_SENANAYAKE_DESC"
+			expire = "1999.1.1"
+			ideology = conservatism_paternalistic_conservatism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	CYL_SWRD_Bandaranaike = {
+		name = CYL_SWRD_Bandaranaike
+		portraits = {
+			civilian = { large = "gfx/leaders/CYL/Portrait_CYL_SWRD_Bandaranaike.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_Bandaranaike_DESC"
+			expire = "1999.1.1"
+			ideology = progressivism_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	CYL_NM_Perera = {
+		name = CYL_NM_Perera
+		portraits = {
+			civilian = { large = "gfx/leaders/CYL/Portrait_CYL_NM_Perera.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_Perera_DESC"
+			expire = "1999.1.1"
+			ideology = socialist_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	CYL_Bala_Tampoe = {
+		name = CYL_Bala_Tampoe
+		portraits = {
+			civilian = { large = "gfx/leaders/CYL/Portrait_CYL_Bala_Tampoe.dds" }
+		}
+		country_leader = {
+			#desc = "POLITICS_Bala_Tampoee_DESC"
+			expire = "1999.1.1"
+			ideology = communist_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	CYL_EJ_Cooray = {
+		name = CYL_EJ_Cooray
+		portraits = {
+			civilian = { 
+		    	small = "GFX_idea_CYL_EJ_Cooray" 
+			}
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = CYL_EJ_Cooray_sec
+			allowed = { original_tag = CYL }
+			traits = {
+				security_minister
+			}
+			
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	CYL_JR_Jayewardene = {
+		name = CYL_JR_Jayewardene
+		portraits = {
+			civilian = { 
+		    	small = "GFX_idea_CYL_JR_Jayewardene" 
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = CYL_JR_Jayewardene_hog
+			allowed = { original_tag = CYL }
+			traits = {
+				head_of_government
+			}
+			
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	CYL_MD_Banda = {
+		name = CYL_MD_Banda
+		portraits = {
+			civilian = { 
+		    	small = "GFX_idea_CYL_MD_Banda" 
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = CYL_CYL_MD_Banda_eco
+			allowed = { original_tag = CYL }
+			traits = {
+				economy_minister
+			}
+			
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	CYL_IMRA_Iriyagolle = {
+		name = CYL_IMRA_Iriyagolle
+		portraits = {
+			civilian = { 
+		    	small = "GFX_idea_CYL_IMRA_Iriyagolle" 
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = CYL_IMRA_Iriyagolle_for
+			allowed = { original_tag = CYL }
+			traits = {
+				foreign_minister
+			}
+			
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+}

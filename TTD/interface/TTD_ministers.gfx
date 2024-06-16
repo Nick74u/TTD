@@ -10,4 +10,20 @@ spriteTypes = {
 		name = "GFX_idea_BHU_Khaled_Mosharraf"
 		texturefile = "gfx/interface/ideas/ministers/BHU/BHU_minister_Khaled_Mosharraf.dds"
 	}
+	spriteType = { ###Ceylon###
+		name = "GFX_idea_CYL_EJ_Cooray"
+		texturefile = "gfx/interface/ideas/ministers/CYL/CYL_minister_EJ_Cooray.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CYL_IMRA_Iriyagolle"
+		texturefile = "gfx/interface/ideas/ministers/CYL/CYL_minister_IMRA_Iriyagolle.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CYL_JR_Jayewardene"
+		texturefile = "gfx/interface/ideas/ministers/CYL/CYL_minister_JR_Jayewardene.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CYL_MD_Banda"
+		texturefile = "gfx/interface/ideas/ministers/CYL/CYL_minister_MD_Banda.dds"
+	}
 }
