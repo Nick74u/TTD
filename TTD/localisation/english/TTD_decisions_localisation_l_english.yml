@@ -5,7 +5,7 @@
  bhutan_poverty_decision:0 "Provide Relief"
  bhutan_poverty_category:0 "Paving Bhutan"
  bhutan_meeting_category: "Economic Meeting"
- bhutan_meeting_category_desc: "§YRequest: [?BHU_demand_req|+-=]§!\n\n§GSuccess Chance: [?BHU_persuasion_power|%=]§!\n\nPLACEHOLDER §Rfail§!!"
+ bhutan_meeting_category_desc: "§YRequest: [?BHU_demand_req|+=%%]§!\n\n§GSuccess Chance: [?BHU_persuasion_power|+%=]§!\n\nPLACEHOLDER §Rfail§!!"
  bhutan_demand_investment_decision: "Demand Investment"
  bhutan_demand_investment_decision_desc: "This will increase our §YRequests§!"
  #####DECISION TOOLTIP######

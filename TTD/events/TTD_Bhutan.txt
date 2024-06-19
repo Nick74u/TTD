@@ -101,69 +101,144 @@ country_event = { #Meeting Talk
 	option = { # paperwork!
 		name = bhutan.focus_event.4.a
 		ai_chance = { factor = 90 }
-		AZH = { 
-			country_event = {
-				days = 1
-				id = bhutan.focus_event.5
+		hidden_effect = {
+		    if = {
+			    limit = {
+				    has_completed_focus = BHU_singh_is_all_we_need
+				}
+				AZH = { 
+		        	country_event = {
+		        		days = 1
+		        		id = bhutan.focus_event.6
+					}
+				}
 			}
-		}
+			else = {
+			    AZH = { 
+		        	country_event = {
+		        		days = 1
+		        		id = bhutan.focus_event.5
+					}
+				}
+			}
+		}	
 	}
 }
-country_event = { #Bose meeting
+country_event = { #Bose meeting but cooperation
 	id = bhutan.focus_event.5
 	title = bhutan.focus_event.5.t
 	desc = bhutan.focus_event.5.d
 	
 	is_triggered_only = yes
 	
-	option = { # Success!
-		name = bhutan.focus_event.5.a
-		ai_chance = { factor = 90 }
-	    BHU = { 
-			country_event = {
-				days = 1
-				id = bhutan.focus_event.7
+	option = { #AAAAAAAAAA
+	    name = bhutan.focus_event.5.a
+		random_list = {
+		    var:BHU.BHU_demand_req = {
+			    BHU = { 
+		           	country_event = {
+		      	     	days = 1
+		    	    	id = bhutan.focus_event.7
+					}
+				}
 			}
-		}
-	}
-	option = { # Failure!
-		name = bhutan.focus_event.5.b
-		ai_chance = { factor = 10 }
-		BHU = { 
-			country_event = {
-				days = 1
-				id = bhutan.focus_event.6
+			var:BHU.BHU_persuasion_power = {
+			    BHU = { 
+		          	country_event = {
+		      	   	days = 1
+		    	   	id = bhutan.focus_event.8
+					}
+		    	}
 			}
 		}
 	}
 }
-country_event = { #THEY SAID NO
+country_event = { #singh alone
 	id = bhutan.focus_event.6
 	title = bhutan.focus_event.6.t
 	desc = bhutan.focus_event.6.d
 	
 	is_triggered_only = yes
 	
-	option = { # They said No!
-		name = bhutan.focus_event.6.a
-		ai_chance = { factor = 90 }
-		hidden_effect = {
-		    complete_national_focus = BHU_calcutta_catastrophe
+	option = { # Failure/success!
+	    name = bhutan.focus_event.6.a
+		random_list = {
+		    var:BHU.BHU_demand_req = {
+			    BHU = { 
+		           	country_event = {
+		      	   	days = 1
+		    	   	id = bhutan.focus_event.9
+					}
+				}
+			}
+			var:BHU.BHU_persuasion_power = {
+			    BHU = { 
+		          	country_event = {
+		      	   	days = 1
+		    	   	id = bhutan.focus_event.10
+					}
+		    	}
+			}
 		}
 	}
 }
-country_event = { #THEY SAID YES
+country_event = { #THEY SAID NO - Azad cooperation
 	id = bhutan.focus_event.7
 	title = bhutan.focus_event.7.t
 	desc = bhutan.focus_event.7.d
 	
 	is_triggered_only = yes
 	
-	option = { # They said YES!
+	option = { # They said No!
 		name = bhutan.focus_event.7.a
 		ai_chance = { factor = 90 }
 		hidden_effect = {
+		    complete_national_focus = BHU_calcutta_catastrophe
+		}
+	}
+}
+country_event = { #THEY SAID YES - Azad cooperation
+	id = bhutan.focus_event.8
+	title = bhutan.focus_event.8.t
+	desc = bhutan.focus_event.8.d
+	
+	is_triggered_only = yes
+	
+	option = { # They said YES!
+		name = bhutan.focus_event.8.a
+		ai_chance = { factor = 90 }
+		hidden_effect = {
 		    complete_national_focus = BHU_music_to_our_ears
+		}
+	}
+}
+country_event = { #THEY SAID NO - Kanwal gambler
+	id = bhutan.focus_event.9
+	title = bhutan.focus_event.9.t
+	desc = bhutan.focus_event.9.d
+	
+	is_triggered_only = yes
+	
+	option = { # They said YES!
+		name = bhutan.focus_event.9.a
+		ai_chance = { factor = 90 }
+		hidden_effect = {
+		    complete_national_focus = BHU_failure_anticipated
+		}
+	}
+}
+country_event = { #THEY SAID YES - Kanwal gambler
+	id = bhutan.focus_event.10
+	title = bhutan.focus_event.10.t
+	desc = bhutan.focus_event.10.d
+	
+	is_triggered_only = yes
+	
+	option = { # They said YES!
+		name = bhutan.focus_event.10.a
+		ai_chance = { factor = 90 }
+		hidden_effect = {
+		    complete_national_focus = BHU_a_welcomed_success
 		}
 	}
 }
@@ -180,9 +255,15 @@ country_event = {
             target = IND
             type = annex_everything
         }
-		news_event = {
-            id = TTD_news.1
-        }
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_news.1
+					hours = 1
+				}
+			}
+		}	
 		set_global_flag = indian_wars
 		set_global_flag = azad_war
 		leave_faction = yes

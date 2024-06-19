@@ -44,7 +44,7 @@ focus_tree = {
 		relative_position_id = BHU_modernize_bhutan
 		
 		prerequisite = { focus = BHU_modernize_bhutan }
-		cost = 0.724
+		cost = 2.24
 		
 		available = {
 
@@ -68,7 +68,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_the_chained_dragon
-		cost = 2
+		cost = 4.34
 		
 		prerequisite = { focus = BHU_the_chained_dragon }
 		available = {
@@ -96,7 +96,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_From_Mountains_to_Cities
-		cost = 1.45
+		cost = 4.34
 		
 		prerequisite = { focus = BHU_From_Mountains_to_Cities }
 		available = {
@@ -125,7 +125,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = BHU_The_Bhutanese_Renaissance
-		cost = 1
+		cost = 2.24
 		
 		prerequisite = { focus = BHU_The_Bhutanese_Renaissance }
 		available = {
@@ -154,7 +154,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = BHU_The_Bhutanese_Renaissance
-		cost = 1
+		cost = 2.24
 		
 		prerequisite = { focus = BHU_The_Bhutanese_Renaissance }
 		available = {
@@ -446,7 +446,7 @@ focus_tree = {
 	focus = {
 	    id = BHU_miracle_sphere
 		icon = focus_From_Mountains_to_Cities
-		x = 3
+		x = 0
 		y = 3
 		relative_position_id = BHU_a_welcomed_success
 		cost = 3.50
@@ -476,9 +476,9 @@ focus_tree = {
 	    id = BHU_disaster
 		icon = focus_From_Mountains_to_Cities
 		x = 0
-		y = 5
+		y = 3
 		relative_position_id = BHU_failure_anticipated
-		cost = 0.724
+		cost = 3.50
 		
 		prerequisite = { focus = BHU_failure_anticipated }
 		available = {
@@ -582,10 +582,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = {
-			id = bhutan.focus_event.4
-			hours = 6
-			}
 		}
 	}
 	focus = {
@@ -709,8 +705,8 @@ focus_tree = {
 	focus = {
 	    id = BHU_parties_and_celebration
 		icon = focus_From_Mountains_to_Cities
-		x = 1
-		y = 2
+		x = 0
+		y = 1
 		relative_position_id = BHU_bhutan_boom
 		cost = 2.90
 		
@@ -738,10 +734,10 @@ focus_tree = {
 	focus = {
 	    id = BHU_singh_nightmare
 		icon = focus_From_Mountains_to_Cities
-		x = 5
-		y = 3
+		x = 0
+		y = 1
 		relative_position_id = BHU_the_dragon_scratched
-		cost = 0.724
+		cost = 2.90
 		
 		prerequisite = { focus = BHU_the_dragon_scratched }
 		available = {
@@ -770,7 +766,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = BHU_laying_the_groundworks
-		cost = 1
+		cost = 2.89
 		
 		prerequisite = { focus = BHU_laying_the_groundworks }
 		available = {
@@ -799,7 +795,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_acknowledging_the_eastern_issue
-		cost = 1.45
+		cost = 2.89
 		
 		prerequisite = { focus = BHU_acknowledging_the_eastern_issue }
 		available = {
@@ -826,9 +822,9 @@ focus_tree = {
 	    id = BHU_subsidize_the_hunt_for_wangchuk
 		icon = focus_From_Mountains_to_Cities
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = BHU_militarize_our_police_force
-		cost = 1.45
+		cost = 2.89
 		
 		prerequisite = { focus = BHU_militarize_our_police_force }
 		available = {
@@ -851,9 +847,9 @@ focus_tree = {
 	    id = BHU_the_army_is_your_friend
 		icon = focus_From_Mountains_to_Cities
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = BHU_militarize_our_police_force
-		cost = 1.45
+		cost = 2.89
 		
 		prerequisite = { focus = BHU_militarize_our_police_force }
 		available = {
@@ -882,7 +878,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_subsidize_the_hunt_for_wangchuk
-		cost = 1.45
+		cost = 2.89
 		
 		prerequisite = { focus = BHU_subsidize_the_hunt_for_wangchuk }
 		available = {
@@ -911,7 +907,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_the_army_is_your_friend
-		cost = 1.45
+		cost = 2.89
 		
 		prerequisite = { focus = BHU_the_army_is_your_friend }
 		available = {
@@ -938,9 +934,9 @@ focus_tree = {
 	    id = BHU_a_bounty_on_the_head
 		icon = focus_From_Mountains_to_Cities
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = BHU_a_snowy_day_in_thimphu
-		cost = 0.724
+		cost = 2.89
 		
 		prerequisite = { focus = BHU_a_snowy_day_in_thimphu }
 		available = {
@@ -969,7 +965,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_a_curfew_in_the_east
-		cost = 1
+		cost = 2.89
 		
 		prerequisite = { focus = BHU_a_curfew_in_the_east }
 		available = {
@@ -995,12 +991,15 @@ focus_tree = {
 	focus = {
 	    id = BHU_expand_agricultural_sector
 		icon = focus_From_Mountains_to_Cities
-		x = 2
-		y = 1
+		x = -1
+		y = 3
 		relative_position_id = BHU_centralize_authority
-		cost = 2
+		cost = 5
 		
-		prerequisite = { focus = BHU_centralize_authority }
+		prerequisite = { 
+			focus = BHU_centralize_authority 
+		    focus = BHU_a_bounty_on_the_head
+		}
 		available = {
 
 		}
@@ -1024,15 +1023,13 @@ focus_tree = {
 	focus = {
 	    id = BHU_the_finishing_touches
 		icon = focus_From_Mountains_to_Cities
-		x = -1
-		y = 7
-		relative_position_id = BHU_expand_agricultural_sector
+		x = 4
+		y = 1
+		relative_position_id = BHU_parties_and_celebration
 		cost = 3.65
 		
 		mutually_exclusive = {focus = BHU_we_have_done_what_we_could}
-		prerequisite = { focus = BHU_expand_agricultural_sector  }
 		prerequisite = { focus = BHU_miracle_sphere focus = BHU_parties_and_celebration}
-		prerequisite = { focus = BHU_a_bounty_on_the_head }
 		available = {
 
 		}
@@ -1057,15 +1054,16 @@ focus_tree = {
 	focus = {
 	    id = BHU_we_have_done_what_we_could
 		icon = focus_From_Mountains_to_Cities
-		x = -2
-		y = 0
-		relative_position_id = BHU_the_finishing_touches
-		cost = 3
+		x = 2
+		y = 1
+		relative_position_id = BHU_parties_and_celebration
+		cost = 3.65
 		
 		mutually_exclusive = {focus = BHU_the_finishing_touches}
-		prerequisite = { focus = BHU_expand_agricultural_sector  }
-		prerequisite = { focus = BHU_a_rainy_day_in_a_gloomy_city}
-		prerequisite = { focus = BHU_a_bounty_on_the_head }
+		prerequisite = { 
+			focus = BHU_disaster
+		    focus = BHU_singh_nightmare
+		}
 		available = {
 
 		}
@@ -1089,12 +1087,13 @@ focus_tree = {
 	focus = {
 	    id = BHU_bhutan_age
 		icon = GFX_goal_stable_foundation
-		x = -1
+		x = 3
 		y = 1
 		relative_position_id = BHU_the_finishing_touches
 		cost = 1.45
 		
 		prerequisite = { focus = BHU_the_finishing_touches focus = BHU_we_have_done_what_we_could }
+		prerequisite = { focus = BHU_expand_agricultural_sector }
 		available = {
 
 		}
@@ -1112,35 +1111,6 @@ focus_tree = {
 			custom_effect_tooltip = BHU_bhutan_age_tt
             add_to_variable = { BHU_gdp_growth_modifier = 0.02 }
 	        add_to_variable = { BHU_production_units_to_GDP_ratio_modifier = 0.025 }
-		}
-	}
-	focus = {
-	    id = BHU_a_rainy_day_in_a_gloomy_city
-		icon = focus_From_Mountains_to_Cities
-		x = 0
-		y = 3
-		relative_position_id = BHU_miracle_sphere
-		cost = 1.45
-		
-		prerequisite = { focus = BHU_singh_nightmare focus = BHU_disaster}
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
 		}
 	}
 }

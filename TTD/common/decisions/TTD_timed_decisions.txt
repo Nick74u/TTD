@@ -39,6 +39,50 @@ bhutan_poverty_category = {		#Name of category that decisions will appear under,
 		}
 	}
 }
+bhutan_meeting_category = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+	bhutan_meeting_end_mission = {		#ID of the mission, must not contain spaces!
+
+		icon = GFX_decision_generic_document		#The left side icon to show for this mission.
+		days_mission_timeout = 100	#The amount of days remaining until the mission is removed.
+		is_good = no		#Determines if the timeout bar will be red or green, cosmetic setting only, has no actual impact on the mission
+		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
+
+		activation = {
+			has_completed_focus = BHU_laying_the_groundworks
+		}
+		available = {		#Conditions that will allow the player/AI to click the mission and execute its effect.
+		    always = no
+		}
+		
+		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
+
+		visible = {		#Conditionsssssss to make this mission visible, can be left blank to make it always appear.
+			has_country_flag = BHU_laying_the_groundworks
+		}
+
+		# EFFECTS OF THIS DECISION/MISSION
+
+		timeout_effect = {		#The effects to execute once the mission timer expires.
+		    BHU = { 
+			    country_event = {
+				    days = 1
+				    id = bhutan.focus_event.4
+				}
+			}
+			custom_effect_tooltip = "azad_hind_poverty_time"
+		}
+		
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			
+		}
+		
+		# AI LOGIC FOR THIS DECISION/MISSION
+
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the mission.
+			factor = 0
+		}
+	}
+}
 	#########################################################################################
 	#### MISIONS CAN HAVE A SECONDARY PHASE AFTER THEY ARE REMOVED WHICH USES A MODIFIER ####
 	#########################################################################################
