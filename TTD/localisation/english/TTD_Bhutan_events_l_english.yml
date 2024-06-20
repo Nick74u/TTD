@@ -1,5 +1,6 @@
 ﻿  l_english:
   ########COUNTRY EVENTS##################
+  ###Bhutan
   bhutan.focus_event.1.t:0 "A Fine Dine For a Fine Passage"
   bhutan.focus_event.1.d:0 "Kanwal's eyes scanned the vast mountain range. His eyes darted to the high peaks, then to the shallow valley. Waiting wasn't his speciality. Singhs fine leather shoes eagerly tapped against the fine floorboards of the palace-like structure.\n\nAs Kanwal rearranged the cutlery and plate of apetizers on his table, preparing it to be his newest pillow, the silouette of a man had begun to form out of the corner of his gloomy eyes. The last thing Singh wished for was to be forced to talk to another high ranking official in his govermment. Kanwal's urges got the best of him and he slowly rested his head on the stiff table."
   bhutan.focus_event.1.a:0 " "Mr Singh!" "
@@ -37,9 +38,7 @@
   bhutan_flavor.2.t: "Frozen in Ice"
   bhutan_flavor.2.d: "Sven "
   bhutan_flavor.2.a: "ok"
-  azad_event.1.t:0 "war"
-  azad_event.1.d:0 "war"
-  azad_event.1.a:0 "war"
+ 
   bhutan_civil_war.1.t: "A Call for the masses"
   bhutan_civil_war.1.d: ""It's time we rise up against the occupiers of our beloved country, it's time to shake off the chains on which we were imprisoned, it's time, for our beloved country to be free!" \n\nReports indicate a total collapse of order from the eastern provinces of Bhutan, the rebels have occupied some small towns and are now mobilizing their militia."
   bhutan_civil_war.1.a: "Those traitors will all be hanged"
@@ -49,8 +48,19 @@
   bhutan_civil_war.3.t: "The Drums of War"
   bhutan_civil_war.3.d: ""
   bhutan_civil_war.3.a: "The spark has been lit"
+  
+  ###AZAD
+  azad_event.1.t:0 "war"
+  azad_event.1.d:0 "war"
+  azad_event.1.a:0 "war"
+  azad_event.2.t: "Taking too long"
+  azad_event.2.d: "AHHH"
+  azad_event.2.a: "peace out"
   ########NEWS EVENTS##################
   # IF YOU ARE MAKING NEWS EVENTS, MAKE SURE TO PUT [Get_newspaper_header] AT THE START IN THE TITLE PART OR IT WON'T WORK PROPERLY!!!
   TTD_news.1.t: "[Get_newspaper_header]India Embroiled in War!" 
   TTD_news.1.d: "Last week, reports had begun to flood out of the Indian Subcontinent regarding the issue and fear of an escalation of the recent border skirmish near Nepal. The Subcontinents greatest fears have been confirmed true as 100,000 troops from the Azad Hind Government have crossed over the border in the north.\n\nThe Calcutta Government's goal and reasoning is currently unknown but many in the Sphere and OFN theorize this is in direct responce with the Attack on Subhas Chandra Bose's life. Whilst the Dalai Lama has announced the creation of temporary refugee camps along their Southern borders, Afghanistan in the West, more particularly Mohammed Zhahir Shah, eye the Republic of India's Western territories, looking more eager to join ever passing day."
   TTD_news.1.a: "The Humanity!"
+  TTD_news.2.t: "[Get_newspaper_header]Ceasefire In South Asia" 
+  TTD_news.2.d: "took too long" 
+  TTD_news.2.a: "war end" 

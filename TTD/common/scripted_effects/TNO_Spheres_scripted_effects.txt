@@ -163,16 +163,16 @@ TNO_Spheres_init = {
 		set_variable = { ECON_SPHERE_LEADER = ARG }
 	}
 	### INDIA SPHERE##
-	IND = { set_country_flag = HAS_ECON_SPHERE }
-	every_country = {
-		limit = {
-			OR = {
-				tag = IND
-				tag = CYL
-			}
-		}
-		set_variable = { ECON_SPHERE_LEADER = IND }
-	}
+	#IND = { set_country_flag = HAS_ECON_SPHERE }
+	#every_country = {
+	#	limit = {
+	#		OR = {
+	#			tag = IND
+	#			tag = CYL
+	#		}
+	#	}
+	#	set_variable = { ECON_SPHERE_LEADER = IND }
+	#}
 }
 
 econ_recompile_all_spheres = {
