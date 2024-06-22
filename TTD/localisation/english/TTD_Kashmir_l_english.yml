@@ -1,0 +1,36 @@
+l_english:
+ ### Country Names ###
+ KSH: "Jammu and Kashmir"
+ KSH_DEF: "The United Principalities of Jammu and Kashmir"
+ KSH_ADJ: "Kashmiri"
+ 
+ KSH_AZH: "Jammu and Kashmir"
+ KSH_AZH_DEF: "The Independent Mandate of Jammu and Kashmir"
+ KSH_AZH_ADJ: "Kasmiri"
+
+ ### Parties ###
+ KSH_communist_party: "CPI Remnants"
+ KSH_communist_party_long: "Communist Party of India Remnants"
+ KSH_Socialist_party: "INC-G Remnants"
+ KSH_Socialist_party_long: "Indian National Congress - Gandhian Remnants"
+ KSH_progressivism_party: "INC-N Remnants"
+ KSH_progressivism_party_long: "Indian National Congress - Nehruvian Remnants"
+ KSH_despotism_party: "AHF - FHJK"
+ KSH_despotism_party_long: "Azad Hind Fauj - Fauj Intizamia Jammoo aur Kashmeer"
+ KSH_partnelism_party: "
+
+
+ ### Characters ###
+ KSH_Bakshi_Ghulam_Mohammad: "Bakshi Ghulam Mohammed"
+ KSH_Khwaja_Shamsuddin: "Khwaja Shams-ud-Din"
+ KSH_Ghulam_Mohammed_Sadiq: "Ghulam Mohammed Sadiq"
+
+ ## Leader Descs ##
+ KSH_Bakshi_Ghulam_Mohammad_desc: "Bakshi Ghulam Mohammad is a man of humble origins and steadfast dedication to public service. Born in 1907 in the picturesque town of Bhaderwah, his upbringing amidst the rugged landscapes of the region instilled in him a deep appreciation for the cultural fabric of Kashmir.\n\nEducated at the esteemed Prince of Wales College in Jammu, Ghulam demonstrated early academic excellence and a keen interest in socio-political issues affecting the Raj. His rise through the ranks of public service was swift, propelled by his integrity and tireless efforts in addressing the concerns of the people.\n\nBefore assuming the highest office, Ghulam distinguished himself within the National Conference, emerging as a key figure in shaping the region's political discourse. His leadership during this era was characterized by a pragmatic approach, focusing on development initiatives aimed at improving infrastructure, education, and healthcare.\n\nNow as Head Governor, Bakshi's tenure promises to build upon his earlier successes, fostering unity and progress in Jammu and Kashmir. His commitment to public welfare and his ability to navigate complex political landscapes are seen as crucial assets in guiding our state through the challenges and opportunities of the 1960s.\n\nIn the eyes of many, Bakshi Ghulam Mohammad represents hope for a brighter future, grounded in his deep-rooted connection to the land and its people. His journey from Bhaderwah to the pinnacle of political leadership underscores the potential for transformative change under his stewardship, paving the way for a prosperous and harmonious Jammu and Kashmir."
+ KSH_Khwaja_Shamsuddin_desc: ""
+ KSH_Ghulam_Mohammed_Sadiq_desc: ""
+ 
+ ### Ideas ###
+ KSH_Independence_in_Nothing_but_Name: ""
+ KSH_Independence_in_Nothing_but_Name_desc: ""
+ 

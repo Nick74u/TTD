@@ -282,6 +282,7 @@ AZH = "countries/Asia - Sphere.txt"				# Azad Hind
 BHU = "countries/Asia - Sphere.txt"				# Bhutan
 FBH = "countries/Asia - Himalayas.txt"
 SIK = "countries/Asia - Sphere.txt"
+KSH = "countries/Asia - Kashmir.txt				# Jammu and Kashmir
 CYL = "countries/Asia.txt"						# Ceylon
 IND = "countries/Asia.txt"						# India
 NEP = "countries/Asia.txt"						# Nepal

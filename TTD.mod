@@ -7,4 +7,4 @@ dependencies={
 	"The New Order: Last Days of Europe"
 }
 supported_version="Bolivar v1.14.4.44c7"
-path="C:/Users/Admin/Documents/Paradox Interactive/Hearts of Iron IV/mod/TTD"
+path="mod/TTD"

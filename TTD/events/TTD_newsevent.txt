@@ -66,3 +66,29 @@ news_event = { # Azad victory
 		name = TTD_news.4.a
 	}
 }
+news_event = { # Everest Defeated
+	id = TTD_news.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.5" }
+	title = TTD_news.5.t
+	desc = TTD_news.5.d
+	picture = GFX_news_event_USA_hawaiian_missile_crisis
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_news.5.a
+	}
+}
+news_event = { # Kathmandu Catastrophe
+	id = TTD_news.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.6" }
+	title = TTD_news.6.t
+	desc = TTD_news.6.d
+	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_news.6.a
+	}
+}

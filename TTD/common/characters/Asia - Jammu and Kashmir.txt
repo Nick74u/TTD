@@ -1,0 +1,28 @@
+characters = {
+	KSH_Bakshi_Ghulam_Mohammad = {
+		name = KSH_Bakshi_Ghulam_Mohammad
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KSH/Portrait_Bakshi_Ghulam_Mohammad.dds"
+			}
+			army = {
+				large = "gfx/leaders/KSH/Portrait_Bakshi_Ghulam_Mohammad_Bakshi_Ghulam_Mohammad.dds"
+			}
+		}
+		field_marshal = {
+			traits = { harsh_leader inflexible_strategist unyielding_defender }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader = { 
+			desc = "KSH_Bakshi_Ghulam_Mohammad_desc"
+			expire = "1999.1.1"
+			ideology = despotism_interim_government_subtype
+			traits = { }
+			id = -1
+		}
+	}
+}
