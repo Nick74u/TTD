@@ -1,0 +1,218 @@
+﻿###########################
+# TTD_India_war Events
+###########################
+
+add_namespace = azad_event
+add_namespace = afghan
+
+country_event = {
+	id = azad_event.1
+	title = azad_event.1.t
+	desc = azad_event.1.d
+	
+	is_triggered_only = yes
+	
+	option = { # attack!
+		name = azad_event.1.a
+        declare_war_on = {
+            target = IND
+            type = annex_everything
+        }
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_news.1
+					hours = 1
+				}
+			}
+		}
+		set_global_flag = indian_wars
+		set_global_flag = azad_war
+		leave_faction = yes
+		create_faction = Azad_Front
+ 
+        AFG = {
+		    country_event = {
+		      	days = 2
+		    	id = afghan.1
+			}
+		}
+		JAP = {
+		    set_country_flag = may_send_volunteers
+			set_temp_variable = { target = AZH }
+			set_temp_variable = { number = 1 }
+			TNO_set_num_volunteers = yes
+		}
+		USA = {
+		    set_country_flag = may_send_volunteers
+			set_temp_variable = { target = IND }
+			set_temp_variable = { number = 1 }
+			TNO_set_num_volunteers = yes
+		}
+		add_timed_idea = {
+		    idea = AZH_on_the_offensive
+			days = 150
+		}
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		load_oob = "AZH_1962"
+		IND = {
+		    load_oob = "IND_1962"
+		}
+		AFG = {
+		    load_oob = "AFG_1962"
+			load_oob = "AFG_1962"
+		}
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = { #Ceasefire azad leaning
+	id = azad_event.2
+	title = azad_event.2.t
+	desc = azad_event.2.d
+	
+	fire_only_once = yes
+	trigger = {
+	    tag = AZH
+	    has_global_flag = azad_war
+		IND = {
+		    surrender_progress > 0.2
+		}
+		
+		AZH = {
+		    NOT = {
+	    	    has_idea = AZH_on_the_offensive
+			}
+		    surrender_progress < 0.2
+		}
+	}
+	
+	option = { # Its taking way too long
+		name = azad_event.2.a
+        hidden_effect = {
+		    India_war_azad_leaning = yes
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_news.2
+					days = 1
+				}
+			}	
+        }
+	}
+}
+country_event = { #azad total victory
+	id = azad_event.3
+	title = azad_event.3.t
+	desc = azad_event.3.d
+	
+	fire_only_once = yes
+	trigger = {
+	    tag = AZH
+	    has_global_flag = azad_war
+		IND = {
+		    surrender_progress > 0.4
+		}
+		AZH = {
+		    controls_state = 980
+		    surrender_progress < 0.2
+		}
+	}
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = { # sweep
+		name = azad_event.3.a
+        hidden_effect = {
+		    debug_azad_hind_victory = yes
+        }
+	}
+}
+country_event = { #whitepeace
+	id = azad_event.4
+	title = azad_event.4.t
+	desc = azad_event.4.d
+	
+	fire_only_once = yes
+	trigger = {
+	    tag = AZH
+	    has_global_flag = azad_war
+		IND = {
+		    surrender_progress < 0.2
+		}
+		AZH = {
+		    NOT = {
+	    	    has_idea = AZH_on_the_offensive
+			}
+		    surrender_progress < 0.2
+		}
+	}
+	mean_time_to_happen = {
+	    days = 1
+	}
+	
+	option = { # whitepeace
+		name = azad_event.4.a
+        AZH = { white_peace = IND }
+	    AFG = { white_peace = IND }
+        }
+	}
+}
+country_event = {
+	id = afghan.1
+	title = afghan.1.t
+	desc = afghan.1.d
+	
+	is_triggered_only = yes
+	
+	option = { # attack!
+		name = afghan.1.a
+        declare_war_on = {
+            target = IND
+            type = annex_everything
+        }
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_news.3
+					hours = 1
+				}
+			}
+		}
+		create_faction = Afghan_Front
+
+		GER = {
+		    set_country_flag = may_send_volunteers
+			set_temp_variable = { target = AFG }
+			set_temp_variable = { number = 1 }
+			TNO_set_num_volunteers = yes
+		}
+		add_timed_idea = {
+		    idea = AZH_on_the_offensive
+			days = 150
+		}
+		ai_chance = { factor = 90 }
+	}
+}

@@ -1,0 +1,197 @@
+India_war_azad_leaning = {
+	log = "[GetDateText]: [Root.GetTag]: India_war_azad_leaning; Executing." # Ceaefire but azad leaning
+	clr_global_flag = azad_war
+	india_azad_war_closing = yes
+    
+	AZH = {
+	    add_state_core = 767
+		transfer_state = 767
+		add_state_core = 426
+		transfer_state = 426
+		add_state_core = 1943
+		transfer_state = 1943
+		add_state_core = 1941
+		transfer_state = 1941
+		add_state_core = 1955
+		transfer_state = 1955
+		add_state_core = 1954
+		transfer_state = 1954
+		add_state_core = 1953
+		transfer_state = 1953
+		add_state_core = 423
+		transfer_state = 423
+		add_state_core = 429
+		transfer_state = 429
+		add_state_core = 248
+		transfer_state = 248
+		add_state_core = 1936
+		transfer_state = 1936
+		add_state_core = 1945
+		transfer_state = 1945
+	}
+	IND = {
+        every_owned_state = {
+            limit = {
+                any_neighbor_state = {
+                    is_owned_by = AZH
+                }
+		    }
+			set_state_flag = to_be_transferred_azh
+		}
+		every_owned_state = {
+            limit = { has_state_flag = to_be_transferred_azh }
+            transfer_state_to = AZH
+			add_core_of = AZH
+        }
+    }
+    IND = {
+        every_owned_state = {
+            limit = {
+                any_neighbor_state = {
+                    is_owned_by = KLT
+                }
+		    }
+			set_state_flag = to_be_transferred_kalat
+		}
+		every_owned_state = {
+            limit = { has_state_flag = to_be_transferred_kalat }
+            transfer_state_to = KLT
+			add_core_of = KLT
+        }
+    }
+    IND = {
+        every_owned_state = {
+            limit = {
+                any_neighbor_state = {
+                    is_owned_by = MFP
+                }
+		    }
+			set_state_flag = to_be_transferred_frontier
+		}
+		every_owned_state = {
+            limit = { has_state_flag = to_be_transferred_frontier }
+            transfer_state_to = MFP
+			add_core_of = MFP
+        }
+    }
+	IND = {
+        every_owned_state = {
+            limit = {
+                any_neighbor_state = {
+                    is_owned_by = MFP
+                }
+		    }
+			set_state_flag = to_be_transferred_frontier
+		}
+		every_owned_state = {
+            limit = { has_state_flag = to_be_transferred_frontier }
+            transfer_state_to = MFP
+			add_core_of = MFP
+        }
+    }
+
+   
+	JAP = {
+	    add_to_faction = AZH
+	}
+	every_country = {
+		limit = { is_ai = no }
+		news_event = {
+			id = TTD_news.2
+			days = 1
+		}
+	}
+}
+india_azad_war_closing = {
+	log = "[GetDateText]: [Root.GetTag]: india_azad_war_closing; Executing."
+	AZH = { white_peace = IND }
+	AFG = { white_peace = IND }
+}
+debug_azad_hind_victory = {
+	log = "[GetDateText]: [Root.GetTag]: debug_azad_hind_victory; Executing." 
+	IND = {
+		save_global_event_target_as = losing_country
+	}
+	AZH = {
+		save_global_event_target_as = winning_country
+	}
+	azad_hind_victory = yes
+    india_azad_war_closing = yes
+	
+
+	log = "war_won"
+	set_global_flag = war_won
+	set_global_flag = show_peace_popup_alert
+	add_to_variable = { global.peace_popup_dirty = 1 }
+}
+azad_hind_victory = {
+	log = "[GetDateText]: [Root.GetTag]: azad_hind_victory; Executing." # Azad wins
+	india_azad_war_closing = yes
+
+    IND = {
+        every_owned_state = {
+            limit = {
+                any_neighbor_state = {
+                    is_owned_by = KLT
+                }
+		    }
+			set_state_flag = to_be_transferred_kalat
+		}
+		every_owned_state = {
+            limit = { has_state_flag = to_be_transferred_kalat }
+            transfer_state_to = KLT
+			add_core_of = KLT
+        }
+    }
+    IND = {
+        every_owned_state = {
+            limit = {
+                any_neighbor_state = {
+                    is_owned_by = MFP
+                }
+		    }
+			set_state_flag = to_be_transferred_frontier
+		}
+		every_owned_state = {
+            limit = { has_state_flag = to_be_transferred_frontier }
+            transfer_state_to = MFP
+			add_core_of = MFP
+        }
+    }
+	IND = {
+        every_owned_state = {
+            limit = {
+                any_neighbor_state = {
+                    is_owned_by = MFP
+                }
+		    }
+			set_state_flag = to_be_transferred_frontier
+		}
+		every_owned_state = {
+            limit = { has_state_flag = to_be_transferred_frontier }
+            transfer_state_to = MFP
+			add_core_of = MFP
+        }
+    }
+
+	AZH = {
+		annex_country = {
+			target = IND
+			transfer_troops = no
+		}
+		every_owned_state = {
+            limit = { is_core_of = IND }
+			add_core_of = AZH
+        }
+		set_capital = {
+		    state = 980
+		}
+	}
+	every_country = {
+		limit = { is_ai = no }
+		news_event = {
+			id = TTD_news.4
+			days = 1
+		}
+	}
+}

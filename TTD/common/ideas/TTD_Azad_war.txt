@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		AZH_on_the_offensive = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea AZH_on_the_offensive" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.2
+				army_org = 2
+				supply_consumption_factor = -0.10
+			}
+		}
+	}
+}

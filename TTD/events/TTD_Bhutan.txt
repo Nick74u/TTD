@@ -4,7 +4,6 @@
 
 add_namespace = bhutan_flavor
 add_namespace = bhutan.focus_event
-add_namespace = azad_event
 add_namespace = bhutan_civil_war
 
 country_event = {    ####IDK BUT THIS IS THE START OF FLAVOR CHAIN, IT STARTS 5 DAYS AFTER GAME STARTS
@@ -243,84 +242,6 @@ country_event = { #THEY SAID YES - Kanwal gambler
 	}
 }
 country_event = {
-	id = azad_event.1
-	title = azad_event.1.t
-	desc = azad_event.1.d
-	
-	is_triggered_only = yes
-	
-	option = { # attack!
-		name = azad_event.1.a
-        declare_war_on = {
-            target = IND
-            type = annex_everything
-        }
-		hidden_effect = {
-			every_country = {
-				limit = { is_ai = no }
-				news_event = {
-					id = TTD_news.1
-					hours = 1
-				}
-			}
-		}
-		set_global_flag = indian_wars
-		set_global_flag = azad_war
-		leave_faction = yes
-		create_faction = Azad_Front
-		AZH = { 
-			country_event = {
-				days = 1
-				id = azad_event.2
-			}
-		}
-		JAP = {
-		    set_country_flag = may_send_volunteers
-			set_temp_variable = { target = AZH }
-			set_temp_variable = { number = 1 }
-			TNO_set_num_volunteers = yes
-		}
-		USA = {
-		    set_country_flag = may_send_volunteers
-			set_temp_variable = { target = IND }
-			set_temp_variable = { number = 1 }
-			TNO_set_num_volunteers = yes
-		}
-		ai_chance = { factor = 90 }
-	}
-}
-country_event = { #Ceasefire azad leaning
-	id = azad_event.2
-	title = azad_event.2.t
-	desc = azad_event.2.d
-	
-	fire_only_once = yes
-	trigger = {
-	    tag = AZH
-	    has_global_flag = azad_war
-		IND = {
-		    surrender_progress > 0.2
-		}
-		AZH = {
-		    surrender_progress < 0.2
-		}
-	}
-	
-	option = { # Its taking way too long
-		name = azad_event.2.a
-        hidden_effect = {
-		    India_war_azad_leaning = yes
-			every_country = {
-				limit = { is_ai = no }
-				news_event = {
-					id = TTD_news.2
-					days = 1
-				}
-			}	
-        }
-	}
-}
-country_event = {
 	id = bhutan_civil_war.0
 	title = bhutan_civil_war.0.t
 	desc = bhutan_civil_war.0.d
@@ -338,6 +259,7 @@ country_event = {
 		
 		name = bhutan_civil_war.0.a
 		ai_chance = { factor = 90 }
+		BHU = { white_peace = IND }
 		country_event = {
 			days = 1
 			id = bhutan_civil_war.1
@@ -350,6 +272,9 @@ country_event = {
 			    target = BHU
 				autonomous_state = autonomy_free
 			}
+		}
+		FBH = {
+		    load_oob = "TTD_FBH_1962"
 		}
 	}
 }
