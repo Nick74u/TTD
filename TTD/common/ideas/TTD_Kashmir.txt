@@ -1,0 +1,49 @@
+﻿ideas = {
+	country = {
+		KIR_Indepence_Nothing_but_Name = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KIR_Indepence_Nothing_but_Name" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				politcal_power_factor = -15
+				gdp_growth_modifier = -0.25
+				custom_modifier_tooltip = KIR_Indepence_Nothing_but_Name_tt
+			}
+		}
+		KIR_ROI_Remains = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KIR_ROI_Remains" }
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				communism_drift = 0.02
+				socialism_drift = 0.02
+				progressivism_drift = 0.02
+				custom_modifier_tooltip = KIR_ROI_Remnants_tt
+			}
+		}
+			KIR_Forced_Union = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KIR_Forced_Union" }
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = CRO_bosnian_autonomy
+			removal_cost = -1
+
+			modifier = {
+				conscription = -0.05
+				war_support_factor = -0.05
+
+			}
+		}
+	}
+}
+			

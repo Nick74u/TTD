@@ -26,6 +26,13 @@
  #KSH_Ghulam_Mohammed_Sadiq_desc: ""
  
  ### Ideas ###
- #KSH_Independence_in_Nothing_but_Name: ""
- #KSH_Independence_in_Nothing_but_Name_desc: ""
+ KIR_ROI_Remains: "The RoI's Remains"
+ KIR_ROI_Remains_desc: "Theyre still here"
+ KIR_Indepence_Nothing_but_Name: "Independence in Nothing but Name"
+ KIR_Indepence_Nothing_but_Name_desc: "We are not independent because of Bose's Ghost"
+ KIR_Forced_Union: "A Forced Union"
+ KIR_Forced_Union_desc: "Similarly to that of a forced marrige, the two regions of Jammu and Kashmir have been forced into an independent mandate by the two nations of Afghanistan and the Former Azad Hind Governate."
  
+ ### Tooltips ###
+ KIR_Indepence_Nothing_but_Name_tt:0 "§RCannot Edit, Train, or Disband Units and Templates§!"
+ KIR_ROI_Remnants_tt:0 "The regions of Jammu and Kashmir are still heavily influenced by what remains of the §BRoI§!. In the case of the collapse of the union, those loyal to the §BOld Government§! may §Rrise up§! against the §Gnew one§!"
