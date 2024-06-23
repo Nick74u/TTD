@@ -893,9 +893,9 @@ SIK = {
 	color = rgb { 255 175 79 }
 	color_ui = rgb { 255 175 79 }	
 }
-KSH = {
+KIR = {
 	color = rgb { 153 81 255 }
-	color_ui = rgb { 153 81 255 }
+	color_ui = rgb { 153 81 255 }	
 }
 CYL = {
 	color = rgb { 87 8 37 }

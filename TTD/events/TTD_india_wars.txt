@@ -176,7 +176,6 @@ country_event = { #whitepeace
 		name = azad_event.4.a
         AZH = { white_peace = IND }
 	    AFG = { white_peace = IND }
-        }
 	}
 }
 country_event = {

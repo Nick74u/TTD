@@ -64,10 +64,10 @@
   TTD_news.2.t: "[Get_newspaper_header]Ceasefire In South Asia" 
   TTD_news.2.d: "took too long" 
   TTD_news.2.a: "war end"
-  TTD_news.3.a: "[Get_newspaper_header]The Second Hindu-Afghan War"
+  TTD_news.3.t: "[Get_newspaper_header]The Second Hindu-Afghan War"
   TTD_news.3.d: "Pew Pew Pew Afgan"
-  TTD_news.3.d: "Afghanistan is Back for Blood"
-  TTD_news.4.t: "[Get_newspaper_header]The RoI Defeated
+  TTD_news.3.a: "Afghanistan is Back for Blood"
+  TTD_news.4.t: "[Get_newspaper_header]The RoI Defeated"
   TTD_news.4.d: "AZH WINS"
   TTD_news.4.a: "The Torch of Democracy Extinguishes in Asia"
   TTD_news.5.t: "[Get_newspaper_header] Mount Everest Defeated!"

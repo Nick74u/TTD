@@ -1,12 +1,12 @@
 characters = {
-	KSH_Bakshi_Ghulam_Mohammad = {
-		name = KSH_Bakshi_Ghulam_Mohammad
+	KIR_Bakshi_Ghulam_Mohammad = {
+		name = KIR_Bakshi_Ghulam_Mohammad
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/KSH/Portrait_Bakshi_Ghulam_Mohammad.dds"
+				large = "gfx/leaders/KIR/Portrait_Bakshi_Ghulam_Mohammad.dds"
 			}
 			army = {
-				large = "gfx/leaders/KSH/Portrait_Bakshi_Ghulam_Mohammad_Bakshi_Ghulam_Mohammad.dds"
+				large = "gfx/leaders/KIR/Portrait_Bakshi_Ghulam_Mohammad.dds"
 			}
 		}
 		field_marshal = {
@@ -18,7 +18,7 @@ characters = {
 			logistics_skill = 1
 		}
 		country_leader = { 
-			desc = "KSH_Bakshi_Ghulam_Mohammad_desc"
+			desc = "KIR_Bakshi_Ghulam_Mohammad_desc"
 			expire = "1999.1.1"
 			ideology = despotism_interim_government_subtype
 			traits = { }

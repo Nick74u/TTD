@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_news_event_Nepal_Kathmandu_catastrophe"
+		texturefile = "gfx/event_pictures/Asia/Nepal/GFX_news_event_Nepal_Kathmandu_catastrophe.dds"
+	}
+}

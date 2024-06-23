@@ -1,0 +1,5 @@
+# South Asia
+			
+FBH= "countries/Free Bhutan.txt"
+SIK= "countries/Sikkim.txt"
+KIR= "countries/Kashmir.txt"		

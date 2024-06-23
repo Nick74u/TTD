@@ -1,7 +1,7 @@
 ﻿capital = 1341
 
 # Vacant
-recruit_character = NEP_Generic_Vacant
+recruit_character = SIK_Generic_Vacant
 
 recruit_character = SIK_Tashi_Namgyal
 

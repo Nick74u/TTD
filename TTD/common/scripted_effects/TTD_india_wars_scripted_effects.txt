@@ -154,11 +154,11 @@ azad_hind_victory = {
 		}
 		every_owned_state = {
             limit = { has_state_flag = to_be_transferred_frontier }
-            transfer_state_to = MFP
-			add_core_of = MFP
+            transfer_state_to = KIR
+			add_core_of = KIR
         }
     }
-	IND = {
+	AZH = {
         every_owned_state = {
             limit = {
                 any_neighbor_state = {
@@ -169,8 +169,8 @@ azad_hind_victory = {
 		}
 		every_owned_state = {
             limit = { has_state_flag = to_be_transferred_frontier }
-            transfer_state_to = MFP
-			add_core_of = MFP
+            transfer_state_to = KIR
+			add_core_of = KIR
         }
     }
 
@@ -185,6 +185,34 @@ azad_hind_victory = {
         }
 		set_capital = {
 		    state = 980
+		}
+		puppet = KIR
+	}
+	KIR = {
+	    kill_country_leader = yes
+		
+		set_politics = {
+			ruling_party = despotism
+			last_election = "1962.1.1"
+			election_frequency = 2
+			elections_allowed = no
+		}
+
+		set_popularities = {
+			socialist = 6
+			progressivism = 36
+			despotism = 58
+		}
+		add_country_leader_role = {
+			character = KIR_Bakshi_Ghulam_Mohammad
+			promote_leader = yes
+			country_leader = {
+				desc = "KIR_Bakshi_Ghulam_Mohammad_desc"
+				expire = "1999.7.14"
+				ideology = despotism_interim_government_subtype
+				traits = { }
+				id = -1
+			}
 		}
 	}
 	every_country = {

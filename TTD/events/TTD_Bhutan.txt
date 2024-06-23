@@ -380,6 +380,9 @@ country_event = {
 				type = civil_war
 			}
 		}
+		FBH = {
+		    load_oob = "TTD_FBH_1962"
+		}
 	}
 }
 
