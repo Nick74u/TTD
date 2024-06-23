@@ -4,8 +4,9 @@ capital = 1962
 recruit_character = KIR_Generic_Vacant
 
 recruit_character = KIR_Bakshi_Ghulam_Mohammad
-#recruit_character = KSH_Khwaja_Shamsuddin
+recruit_character = KIR_Khwaja_Shamsuddin
 #recruit_character = KSH_Ghulam_Mohammed_Sadiq
+#recruit_character = KIR_Karan_Singh
 
 
 oob = "TTD_KIR_1962"
@@ -31,9 +32,10 @@ set_popularities = {
 
 add_ideas = {
 	#STARTING
-	
+	KIR_Forced_Union
+	KIR_ROI_Remains
 	#MINISTERS
-	
+	KIR_Khwaja_Shamsuddin_hog
 	#POLITICAL
 	tno_political_parties_controlled_opposition
 	tno_religious_rights_state_atheism

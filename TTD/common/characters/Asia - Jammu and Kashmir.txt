@@ -25,4 +25,25 @@ characters = {
 			id = -1
 		}
 	}
+	KIR_Khwaja_Shamsuddin = {
+		name = KIR_Khwaja_Shamsuddin
+			portraits = {
+				civilian = { 
+					small = "GFX_idea_KIR_Khwaja_Shamsuddin" 
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = KIR_Khwaja_Shamsuddin
+			allowed = { original_tag = KIR }
+			traits = {
+				head_of_government
+			}
+			
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
 }
