@@ -9,6 +9,9 @@
  SIK: "Sikkim"
  SIK_DEF: "the Kingdom of Sikkim"
  SIK_ADJ: "Sikkimese"
+ AZH_PRH: "People's Republic of Hindustan"
+ AZH_PRH_DEF: "People's Republic of Hindustan"
+ AZH_PRH_ADJ: "Hindustani"
  ### Parties ###
  FBH_paternalism_party: "Bhotamuzh - PSMD"
  FBH_paternalism_party_long: "Bhotani Muzhamat - Patan-Srung Mak-De"

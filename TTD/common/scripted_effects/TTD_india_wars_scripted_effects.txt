@@ -128,52 +128,37 @@ azad_hind_victory = {
 	log = "[GetDateText]: [Root.GetTag]: azad_hind_victory; Executing." # Azad wins
 	india_azad_war_closing = yes
 
-    IND = {
-        every_owned_state = {
-            limit = {
-                any_neighbor_state = {
-                    is_owned_by = KLT
-                }
-		    }
-			set_state_flag = to_be_transferred_kalat
-		}
-		every_owned_state = {
-            limit = { has_state_flag = to_be_transferred_kalat }
-            transfer_state_to = KLT
-			add_core_of = KLT
-        }
-    }
-    IND = {
-        every_owned_state = {
-            limit = {
-                any_neighbor_state = {
-                    is_owned_by = MFP
-                }
-		    }
-			set_state_flag = to_be_transferred_frontier
-		}
-		every_owned_state = {
-            limit = { has_state_flag = to_be_transferred_frontier }
-            transfer_state_to = KIR
-			add_core_of = KIR
-        }
-    }
-	IND = {
-        every_owned_state = {
-            limit = {
-                any_neighbor_state = {
-                    is_owned_by = KIR
-                }
-		    }
-			set_state_flag = to_be_transferred_kir
-		}
-		every_owned_state = {
-            limit = { has_state_flag = to_be_transferred_kir }
-            transfer_state_to = KIR
-			add_core_of = KIR
-        }
-    }
-
+	#IND = {
+    #    every_owned_state = {
+    #        limit = {
+    #            any_neighbor_state = {
+    #                is_owned_by = KIR
+    #            }
+	#	    }
+	#		set_state_flag = to_be_transferred_kir
+	#	}
+	#	every_owned_state = {
+    #        limit = { has_state_flag = to_be_transferred_kir }
+    #        transfer_state_to = KIR
+	#		add_core_of = KIR
+    #    }
+    #}
+    KIR = {
+		add_state_core = 1318
+		transfer_state = 1318
+		add_state_core = 441
+		transfer_state = 441
+		add_state_core = 236
+		transfer_state = 236
+		add_state_core = 927
+		transfer_state = 927
+	}
+	MFP = {
+		add_state_core = 433
+		transfer_state = 433
+		add_state_core = 928
+		transfer_state = 928
+	}
 	AZH = {
 		annex_country = {
 			target = IND
@@ -187,6 +172,7 @@ azad_hind_victory = {
 		    state = 980
 		}
 		puppet = KIR
+		set_cosmetic_tag = AZH_PRH
 	}
 	KIR = {
 	    kill_country_leader = yes
@@ -219,7 +205,7 @@ azad_hind_victory = {
 			KIR_ROI_Remains
 		}	
 		set_capital = {
-		    state = 1318
+		    state = 441
 		}
 		every_owned_state = {
 			add_core_of = KIR
