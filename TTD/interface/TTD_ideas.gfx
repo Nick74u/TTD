@@ -7,6 +7,14 @@ SpriteTypes = {
 		name = "GFX_idea_NEP_Congressional_Riots"
 		texturefile = "gfx/interface/ideas/national_spirits/Asia/NEP/idea_NEP_Congressional_Riots.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_NEP_Second_Sat_Salko_Kranti"
+		texturefile = "gfx/interface/ideas/national_spirits/Asia/NEP/idea_NEP_Second_Sat_Salko_Kranti.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_NEP_Dictatorship_With_the_Face_of_Democracy"
+		texturefile = "gfx/interface/ideas/national_spirits/Asia/NEP/idea_NEP_Dictatorship_With_the_Face_of_Democracy.dds"
+	}
 }
 
 

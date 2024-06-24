@@ -106,6 +106,9 @@ country_event = { #Ceasefire azad leaning
 		    surrender_progress < 0.2
 		}
 	}
+	mean_time_to_happen = {
+	    days = 1
+	}
 	
 	option = { # Its taking way too long
 		name = azad_event.2.a
@@ -134,6 +137,7 @@ country_event = { #azad total victory
 		    surrender_progress > 0.4
 		}
 		AZH = {
+			has_idea = AZH_on_the_offensive
 		    controls_state = 980
 		    surrender_progress < 0.2
 		}

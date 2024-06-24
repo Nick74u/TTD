@@ -5,7 +5,7 @@ ideas = {
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes } #{ #has_government = yes }
-			picture = BHU_transitional_military_occupation
+			picture = NEP_Dictatorship_With_the_Face_of_Democracy
 			removal_cost = -1
 
 			modifier = {
@@ -44,7 +44,7 @@ ideas = {
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes } #{ #has_government = yes }
-			picture = BHU_transitional_military_occupation
+			picture = NEP_Second_Sat_Salko_Kranti
 			removal_cost = -1
 
 			modifier = {
