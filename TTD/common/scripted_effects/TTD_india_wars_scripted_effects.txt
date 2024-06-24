@@ -158,17 +158,17 @@ azad_hind_victory = {
 			add_core_of = KIR
         }
     }
-	AZH = {
+	IND = {
         every_owned_state = {
             limit = {
                 any_neighbor_state = {
-                    is_owned_by = MFP
+                    is_owned_by = KIR
                 }
 		    }
-			set_state_flag = to_be_transferred_frontier
+			set_state_flag = to_be_transferred_kir
 		}
 		every_owned_state = {
-            limit = { has_state_flag = to_be_transferred_frontier }
+            limit = { has_state_flag = to_be_transferred_kir }
             transfer_state_to = KIR
 			add_core_of = KIR
         }
@@ -214,6 +214,16 @@ azad_hind_victory = {
 				id = -1
 			}
 		}
+		add_ideas = {
+			KIR_Forced_Union
+			KIR_ROI_Remains
+		}	
+		set_capital = {
+		    state = 1318
+		}
+		every_owned_state = {
+			add_core_of = KIR
+        }
 	}
 	every_country = {
 		limit = { is_ai = no }

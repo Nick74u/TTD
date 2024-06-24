@@ -34,7 +34,7 @@ characters = {
 		}
 		advisor = {
 			slot = head_of_government
-			idea_token = KIR_Khwaja_Shamsuddin
+			idea_token = KIR_Khwaja_Shamsuddin_hog
 			allowed = { original_tag = KIR }
 			traits = {
 				head_of_government

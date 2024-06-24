@@ -885,18 +885,6 @@ BHU = {
 	color = rgb { 194 151 77 }
 	color_ui = rgb { 194 151 77 }
 }
-FBH = {
-	color = rgb { 255 181 10 }
-	color_ui = rgb { 255 181 10 }
-}
-SIK = {
-	color = rgb { 255 175 79 }
-	color_ui = rgb { 255 175 79 }	
-}
-KIR = {
-	color = rgb { 153 81 255 }
-	color_ui = rgb { 153 81 255 }	
-}
 CYL = {
 	color = rgb { 87 8 37 }
 	color_ui = rgb { 87 8 37 }
@@ -2257,4 +2245,16 @@ CME = {
 ZZZ = {
 	color = rgb { 0 0 0 }
 	color_ui = rgb { 0 0 0 }
+}
+FBH = {
+	color = rgb { 255 181 10 }
+	color_ui = rgb { 255 181 10 }
+}
+SIK = {
+	color = rgb { 255 175 79 }
+	color_ui = rgb { 255 175 79 }
+}
+KIR = {
+	color = rgb { 99 143 83 }
+	color_ui = rgb { 99 143 83 }	
 }

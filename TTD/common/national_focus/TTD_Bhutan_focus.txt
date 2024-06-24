@@ -254,11 +254,7 @@ focus_tree = {
 		mutually_exclusive = { focus = BHU_singh_is_all_we_need }
 		prerequisite = { focus = BHU_a_meeting_with_the_rising_sun }
 
-		allow_branch = {
-			NOT = {
-				has_completed_focus = BHU_singh_is_all_we_need
-			}
-		}
+		
 		available = {
 			has_country_flag = BHU_went_with_bose 
 		}
@@ -290,11 +286,7 @@ focus_tree = {
 		
 		mutually_exclusive = { focus = BHU_securing_bose_vouch }
 		prerequisite = { focus = BHU_a_meeting_with_the_rising_sun }
-		allow_branch = {
-			NOT = {
-				has_completed_focus = BHU_securing_bose_vouch
-			}
-		}
+		
 		available = {
 			has_country_flag = BHU_singh_goes_alone
 		}
@@ -822,7 +814,7 @@ focus_tree = {
 	    id = BHU_subsidize_the_hunt_for_wangchuk
 		icon = focus_From_Mountains_to_Cities
 		x = -1
-		y = 2
+		y = 1
 		relative_position_id = BHU_militarize_our_police_force
 		cost = 2.89
 		
@@ -847,7 +839,7 @@ focus_tree = {
 	    id = BHU_the_army_is_your_friend
 		icon = focus_From_Mountains_to_Cities
 		x = 1
-		y = 2
+		y = 1
 		relative_position_id = BHU_militarize_our_police_force
 		cost = 2.89
 		
@@ -876,7 +868,7 @@ focus_tree = {
 	    id = BHU_a_snowy_day_in_thimphu
 		icon = focus_From_Mountains_to_Cities
 		x = 0
-		y = 1
+		y = 1.5
 		relative_position_id = BHU_subsidize_the_hunt_for_wangchuk
 		cost = 2.89
 		
@@ -905,7 +897,7 @@ focus_tree = {
 	    id = BHU_a_curfew_in_the_east
 		icon = focus_From_Mountains_to_Cities
 		x = 0
-		y = 1
+		y = 1.5
 		relative_position_id = BHU_the_army_is_your_friend
 		cost = 2.89
 		
@@ -934,7 +926,7 @@ focus_tree = {
 	    id = BHU_a_bounty_on_the_head
 		icon = focus_From_Mountains_to_Cities
 		x = 0
-		y = 1
+		y = 1.5
 		relative_position_id = BHU_a_snowy_day_in_thimphu
 		cost = 2.89
 		
@@ -963,7 +955,7 @@ focus_tree = {
 	    id = BHU_centralize_authority
 		icon = focus_From_Mountains_to_Cities
 		x = 0
-		y = 1
+		y = 1.5
 		relative_position_id = BHU_a_curfew_in_the_east
 		cost = 2.89
 		
@@ -996,10 +988,9 @@ focus_tree = {
 		relative_position_id = BHU_centralize_authority
 		cost = 5
 		
-		prerequisite = { 
-			focus = BHU_centralize_authority 
-		    focus = BHU_a_bounty_on_the_head
-		}
+		prerequisite = {  focus = BHU_centralize_authority }
+		prerequisite = { focus = BHU_a_bounty_on_the_head }	
+		
 		available = {
 
 		}

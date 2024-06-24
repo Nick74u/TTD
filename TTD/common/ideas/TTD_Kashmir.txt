@@ -1,4 +1,4 @@
-﻿ideas = {
+ideas = {
 	country = {
 		KIR_Indepence_Nothing_but_Name = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KIR_Indepence_Nothing_but_Name" }
@@ -9,7 +9,7 @@
 			removal_cost = -1
 
 			modifier = {
-				politcal_power_factor = -15
+				political_power_factor = -15
 				gdp_growth_modifier = -0.25
 				custom_modifier_tooltip = KIR_Indepence_Nothing_but_Name_tt
 			}
@@ -24,13 +24,13 @@
 
 			modifier = {
 				stability_factor = -0.15
-				communism_drift = 0.02
-				socialism_drift = 0.02
+				communist_drift = 0.02
+				socialist_drift = 0.02
 				progressivism_drift = 0.02
 				custom_modifier_tooltip = KIR_ROI_Remnants_tt
 			}
 		}
-			KIR_Forced_Union = {
+		KIR_Forced_Union = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KIR_Forced_Union" }
 			
 			allowed = { always = no }
@@ -46,4 +46,3 @@
 		}
 	}
 }
-			
