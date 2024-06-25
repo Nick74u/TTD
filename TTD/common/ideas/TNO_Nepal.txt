@@ -83,5 +83,44 @@ ideas = {
 				trade_opinion_factor = 0.75
 			}
 		}
+		NEP_Kathmandu_Catastrophe = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea NEP_Legacy_of_Transtitional_Authority" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.40
+				war_support_factor = -0.1
+			}
+		}
+		NEP_Congressional_Violence = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea NEP_Congressional_Violence" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = NEP_Congressional_Riots
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				gdp_growth_modifier = -1.25
+			}
+		}
+		NEP_Congressional_Crisis = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea NEP_Congressional_Crisis" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = NEP_Congressional_Riots
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.20
+				gdp_growth_modifier = -1.75
+			}
+		}
 	}
 }
