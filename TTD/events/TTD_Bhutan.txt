@@ -242,6 +242,18 @@ country_event = { #THEY SAID YES - Kanwal gambler
 	}
 }
 country_event = {
+	id = bhutan.focus_event.16
+	title = bhutan.focus_event.16.t
+	desc = bhutan.focus_event.16.d
+	
+	is_triggered_only = yes
+	
+	option = { # paperwork!
+		name = bhutan.focus_event.16.a
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = {
 	id = bhutan_civil_war.0
 	title = bhutan_civil_war.0.t
 	desc = bhutan_civil_war.0.d

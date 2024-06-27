@@ -76,8 +76,10 @@ country_event = {
 		load_oob = "AZH_1962"
 		load_oob = "AZH_1962"
 		load_oob = "AZH_1962"
+		add_ideas = SOA_indian_wars
 		IND = {
 		    load_oob = "IND_1962"
+			add_ideas = SOA_indian_wars
 		}
 		AFG = {
 		    load_oob = "AFG_1962"
@@ -216,6 +218,7 @@ country_event = {
 		    idea = AZH_on_the_offensive
 			days = 150
 		}
+		add_ideas = SOA_indian_wars
 		ai_chance = { factor = 90 }
 	}
 }

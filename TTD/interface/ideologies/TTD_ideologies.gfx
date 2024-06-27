@@ -1,0 +1,7 @@
+spriteTypes = {
+	# --- Subideologies --- #
+	spriteType = {
+		name = "GFX_ideology_paternalism_stratocratic_subhasism_subtype"
+		texturefile = "gfx/interface/ideologies/paternalism_stratocratic_subhasism_subtype.dds"
+	}
+}

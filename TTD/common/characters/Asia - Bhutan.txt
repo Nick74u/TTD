@@ -22,7 +22,7 @@ characters = {
 		country_leader = {
 			desc = "POLITICS_KANWAL_SINGH_DESC"
 			expire = "1999.1.1"
-			ideology = despotism_military_junta_subtype
+			ideology = paternalism_stratocratic_subhasism_subtype
 			traits = { bhutans_warden }
 			id = -1
 		}
@@ -101,6 +101,13 @@ characters = {
 			logistics_skill = 3
 			legacy_id = 3121
 		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = ultranationalism_ultramilitarism_subtype
+			traits = { bhutans_warden }
+			id = -1
+		}
 	}
 	BHU_Hussain_Muhammad_Ershad = {
 		name = BHU_Hussain_Muhammad_Ershad
@@ -175,7 +182,7 @@ characters = {
 		country_leader = {
 			#desc = "POLITICS_JIGME_DORJI_WANGCHUCK_DESC"
 			expire = "1999.1.1"
-			ideology = paternalism_subtype
+			ideology = paternalism_2_subtype
 			traits = {}
 			id = -1
 		}

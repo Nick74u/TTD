@@ -236,7 +236,7 @@ add_opinion_modifier = { target = CYL modifier = AZH_acl_sucks }
 
 set_autonomy = {
 	target = BHU
-	autonomous_state = autonomy_puppet
+	autonomous_state = autonomy_military_district
 }
 set_autonomy = {
 	target = SIK

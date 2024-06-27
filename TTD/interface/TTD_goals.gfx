@@ -20,4 +20,4 @@ spriteTypes = {
 	name = "GFX_goal_continuous_reduce_training_time"
 	texturefile = "gfx/interface/goals/goal_continuous_reduce_training_time.dds"			
 	}	
-	
+}

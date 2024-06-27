@@ -13,14 +13,28 @@
  AZH_PRH_DEF: "People's Republic of Hindustan"
  AZH_PRH_ADJ: "Hindustani"
  ### Parties ###
+ BHU_paternalism_party: "AZF - FAB"
+ BHU_paternalism_party_long: "Fauj Intizamia Bhotan"
+ BHU_ultranationalism_party: "The military dudes"
+ BHU_ultranationalism_party_long: "We are soldiers"
+ BHU_paternalism_2_party: "Bhotamuzh - PSMD"
+ BHU_paternalism_2_party_long: "Bhotani Muzhamat - Patan-Srung Mak-De"
  FBH_paternalism_party: "Bhotamuzh - PSMD"
  FBH_paternalism_party_long: "Bhotani Muzhamat - Patan-Srung Mak-De"
  ### Characters ###
  BHU_Kanwal_Singh_Dalal: "Kanwal Singh Dalal"
  FBH_Jigme_Dorji_Wangchuck: "Jigme Dorji Wangchuck"
  SIK_Tashi_Namgyal: "Tashi Namgyal"
- ## Leader Descs ##
+ BHU_Hussain_Muhammad_Ershad_hog_desc: "§YHead of Government\nDeputy Commander of the Bhutan Military District\nStratocratic Subhasism\n(Paternalism)§!"
+ BHU_Ian_Cardozo_eco_desc: "§YSecretary of Finance\nStratocratic Subhasism\n(Paternalism)§!"
+ BHU_Khaled_Mosharraf_sec_desc: "§YSecretary of Defence\nUltramilitarism\n(Ultranationalism)§!"
+ BHU_Piru_Singh_for_desc: "§YSecretary of External Affairs\nRight-Wing Populism\n(Paternalism)§!"
+
  
+ ## Leader Descs ##
+ ##Ideology
+ paternalism_stratocratic_subhasism_subtype: "Stratocratic Subhasism"
+ paternalism_stratocratic_subhasism_subtype_desc: "insert text here"
  ### Ideas ###
  BHU_rough_himalayan_terrain: "Rough Himalayan Terrain"
  BHU_rough_himalayan_terrain_desc: "Who knew that fighting on mountains is really hard for some reason"
