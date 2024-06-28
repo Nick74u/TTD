@@ -12,6 +12,10 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/focus_a_meeting_with_the_rising_sun.dds"			
 	}	
 	SpriteType = {
+	name = "GFX_goal_a_chained_dragon"
+	texturefile = "gfx/interface/goals/focus_a_chained_dragon.dds"			
+	}	
+	SpriteType = {
 	name = "GFX_goal_stable_foundation"
 	texturefile = "gfx/interface/goals/focus_Stable_Foundation.dds"			
 	}	

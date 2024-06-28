@@ -2251,8 +2251,8 @@ FBH = {
 	color_ui = rgb { 255 181 10 }
 }
 SIK = {
-	color = rgb { 255 175 79 }
-	color_ui = rgb { 255 175 79 }
+	color = rgb { 22 145 10 }
+	color_ui = rgb { 22 145 10 }
 }
 KIR = {
 	color = rgb { 99 143 83 }

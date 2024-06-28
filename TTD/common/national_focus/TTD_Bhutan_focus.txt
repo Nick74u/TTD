@@ -38,7 +38,7 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_the_chained_dragon
-		icon = GFX_
+		icon = GFX_goal_a_chained_dragon
 		x = 0
 		y = 1
 		relative_position_id = BHU_modernize_bhutan

@@ -1,3 +1,63 @@
+india_war_start = {
+	log = "[GetDateText]: [Root.GetTag]: india_war_start; Executing." 
+    AFG = {
+        country_event = {
+		    days = 2
+		    id = afghan.1
+		}
+	}
+	JAP = {
+		set_country_flag = may_send_volunteers
+		set_temp_variable = { target = AZH }
+		set_temp_variable = { number = 1 }
+		TNO_set_num_volunteers = yes
+		set_temp_variable = { Victory_ID = 37 }
+		Cold_War_GUI_AddVictory = yes
+	}
+	USA = {
+		set_country_flag = may_send_volunteers
+		set_temp_variable = { target = IND }
+		set_temp_variable = { number = 1 }
+		TNO_set_num_volunteers = yes
+		set_temp_variable = { Victory_ID = 37 }
+		Cold_War_GUI_AddVictory = yes
+	}
+	add_timed_idea = {
+		idea = AZH_on_the_offensive
+		days = 150
+	}
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	load_oob = "AZH_1962"
+	add_ideas = SOA_indian_wars
+	IND = {
+		load_oob = "IND_1962"
+		add_ideas = SOA_indian_wars
+	}
+	AFG = {
+		load_oob = "AFG_1962"
+		load_oob = "AFG_1962"
+	}
+}
 India_war_azad_leaning = {
 	log = "[GetDateText]: [Root.GetTag]: India_war_azad_leaning; Executing." # Ceaefire but azad leaning
 	clr_global_flag = azad_war
@@ -93,6 +153,22 @@ India_war_azad_leaning = {
    
 	JAP = {
 	    add_to_faction = AZH
+		hidden_effect = {
+			set_temp_variable = { Victory_ID = 37 }
+			set_temp_variable = { Victory_Outcome = 4 }
+			set_temp_variable = { Victory_Points = 150 }
+			Cold_War_GUI_ManipulateVictory = yes
+
+		}
+	}
+	USA = {
+		hidden_effect = {
+			set_temp_variable = { Victory_ID = 37 }
+			set_temp_variable = { Victory_Outcome = 2 }
+			set_temp_variable = { Victory_Points = -150 }
+			Cold_War_GUI_ManipulateVictory = yes
+
+		}
 	}
 	every_country = {
 		limit = { is_ai = no }
@@ -224,6 +300,25 @@ azad_hind_victory = {
 			add_core_of = KIR
         }
 	}
+	JAP = {
+		hidden_effect = {
+			set_temp_variable = { Victory_ID = 37 }
+			set_temp_variable = { Victory_Outcome = 5 }
+			set_temp_variable = { Victory_Points = 300 }
+			Cold_War_GUI_ManipulateVictory = yes
+
+		}
+	}
+	USA = {
+		hidden_effect = {
+			set_temp_variable = { Victory_ID = 37 }
+			set_temp_variable = { Victory_Outcome = 1 }
+			set_temp_variable = { Victory_Points = -300 }
+			Cold_War_GUI_ManipulateVictory = yes
+
+		}
+	}
+
 	every_country = {
 		limit = { is_ai = no }
 		news_event = {

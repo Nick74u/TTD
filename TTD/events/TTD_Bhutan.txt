@@ -285,9 +285,6 @@ country_event = {
 				autonomous_state = autonomy_free
 			}
 		}
-		FBH = {
-		    load_oob = "TTD_FBH_1962"
-		}
 	}
 }
 country_event = {
@@ -394,7 +391,15 @@ country_event = {
 		}
 		FBH = {
 		    load_oob = "TTD_FBH_1962"
+			add_ideas = FBH_our_last_chance
+			fill_empty_minister_nochecks = yes
 		}
+		remove_ideas = {
+			BHU_A_Dragon_Restless
+			BHU_The_hunt_for_wangchuck
+			BHU_The_Neverending_war_in_the_East
+		}
+		country_lock_all_division_template = no
 	}
 }
 

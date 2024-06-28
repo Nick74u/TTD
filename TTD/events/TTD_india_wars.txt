@@ -31,60 +31,8 @@ country_event = {
 		set_global_flag = azad_war
 		leave_faction = yes
 		create_faction = Azad_Front
- 
-        AFG = {
-		    country_event = {
-		      	days = 2
-		    	id = afghan.1
-			}
-		}
-		JAP = {
-		    set_country_flag = may_send_volunteers
-			set_temp_variable = { target = AZH }
-			set_temp_variable = { number = 1 }
-			TNO_set_num_volunteers = yes
-		}
-		USA = {
-		    set_country_flag = may_send_volunteers
-			set_temp_variable = { target = IND }
-			set_temp_variable = { number = 1 }
-			TNO_set_num_volunteers = yes
-		}
-		add_timed_idea = {
-		    idea = AZH_on_the_offensive
-			days = 150
-		}
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		load_oob = "AZH_1962"
-		add_ideas = SOA_indian_wars
-		IND = {
-		    load_oob = "IND_1962"
-			add_ideas = SOA_indian_wars
-		}
-		AFG = {
-		    load_oob = "AFG_1962"
-			load_oob = "AFG_1962"
-		}
+        india_war_start = yes
+		
 		ai_chance = { factor = 90 }
 	}
 }
