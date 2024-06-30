@@ -1,27 +1,37 @@
-﻿  l_english:
-########Ideas##################
-  NEP_Dictatorship_With_the_Face_of_Democracy: "A Façade of Democracy"
-  NEP_Dictatorship_With_the_Face_of_Democracy_desc: "In the dawn of the 1960s, the grand Kingdom of Nepal grappeled with a political paradox, epitomizing a dictatorship veiled in the trappings of democracy. Under the reign of King Mahendra, who ascended the throne in 1955, the Panchayat system emerged as the cornerstone of governance, ostensibly embracing democratic principles while consolidating power within the monarchy's grasp.\n\nOn the surface, the Panchayat system featured periodic elections and a semblance of political participation. However, true opposition was stifled, dissent crushed, and the monarch's authority remained unchallenged. Political parties were outlawed, and dissential voices were swiftly silenced, perpetuating a facade of democratic governance while tightening the grip of authoritarian rule.\n\nBeneath this veneer of false democracy, the spirit of genuine political pluralism  struggled to survive. Despite the oppressive political climate, those who still yearn for true democracy and an end to the royal tyranny will not stop until their dream becomes a reality."
-  NEP_Congressional_riots: "Congressional Riots"
-  NEP_Congressional_riots_desc: "Following the royal coup in 1961 and the dissolution of the Nepali multiparty system, the leftists, who call themselves the Nepali Congress have been rioting and mobbing the streets of Kathmandu and other major cities. Despite King Mahendra's efforts to quell the riots in late 1961, the Nepali Congress simply will not stop until they are the ones under control of the nation. Since the end of 1961, the Congress have mostly retreated from the streets with the current protests being a meer shadow of what they used to be.\n\nMany high ups within the King's government debate what the current intentions of the Congress are,\n\nbut those amongst the §Rdissidential populace§! are sure to know their §Rtrue intentions...§!"
-  NEP_Raja_Mahendra: "Raja Mahendra"
-  NEP_Raja_Mahendra_desc: ""
-  NEP_Second_Sat_Salko_Kranti: "A Second Kranti?"
-  NEP_Second_Sat_Salko_Kranti_desc: "The echoes of the 1951 uprising against the Rana regime still linger, but this time, the target is the Shah monarchy. Years of dissatisfaction with royal rule, marked by nepotism and neglect, have fuelled a growing movement of anti monarchists, all with one main goal, the dissolution of the Kingdom.  The authoritarian regime responds with repression, but for every arrest, public execution or disappearance, three more join the cause. \n\nAs the Kingdom teeters on the edge of change, the outcome lies in the hands of the people. The streets of Kathmandu reverberate with the chants of protesters, their voices echoing the collective yearning for freedom and justice. Despite the Raja's attempts to quash dissent, the flame of resistance burns brighter with each act of brutality, igniting hope in the hearts of the oppressed."
-  NEP_Monarchist_Unrest: "Monarchist Unrest"
-  NEP_Monarchist_Unrest_desc: ""
-  NEP_Legacy_of_Transtitional_Authority: "Legacy of the Transitional Government"
-  NEP_Legacy_of_Transtitional_Authority_desc: ""
-  NEP_Between_Two_Worlds: "Between the Elephant and the Tiger"
-  NEP_Between_Two_Worlds_desc: "We are in the middle of them btw"
-  NEP_Congressional_Violence: "Congressional Violence"
-  NEP_Congressional_Violence_desc: "Theyre being very violent"
-  NEP_Congressional_Crisis: "Congressional Crisis"
-  NEP_Congressional_Crisis_desc: "We're in crisis"
-  NEP_Kathmandu_Catastrophe: "Kathmandu Catastrophe"
-  NEP_Kathmandu_Catastrophe_desc: "Lots of people dead"
+﻿l_english:
+### Country Names ###
+ NEP: "Nepal"
+ NEP_DEF: "the Kingdom of Nepal"
+ NEP_ADJ: "Nepalese"
   
-  #########ToolTips###
-  NEP_dictatorship_face_democracy_tt:0 ""
-  NEP_Second_Sat_Salko_Kranti_tt:0 "The Sat Salko Kranti spelt the end of the Rana dynasty. Will this happen to the Shah's? or is it a distant memory, doomed to be stuck in past?"
-  NEP_Between_Two_Worlds_tt:0 "Our Nation sits between the §BRepubic of India§! in the West, and the §GAzad Hind Government§! in the East, we are a vital part of the Subcontinent and serve as a major trading partner for §Bboth§! §Gsides§! !"
+ NEP_IND: "Nepalese Military District"
+ NEP_IND_DEF: "the Military Occupation Zone of Nepal"
+ NEP_IND_ADJ: "Nepalese"
+ 
+### Leader Descs ### 
+########Ideas##################
+ NEP_Dictatorship_With_the_Face_of_Democracy: "A Façade of Democracy"
+ NEP_Dictatorship_With_the_Face_of_Democracy_desc: "In the dawn of the 1960s, the grand Kingdom of Nepal grappeled with a political paradox, epitomizing a dictatorship veiled in the trappings of democracy. Under the reign of King Mahendra, who ascended the throne in 1955, the Panchayat system emerged as the cornerstone of governance, ostensibly embracing democratic principles while consolidating power within the monarchy's grasp.\n\nOn the surface, the Panchayat system featured periodic elections and a semblance of political participation. However, true opposition was stifled, dissent crushed, and the monarch's authority remained unchallenged. Political parties were outlawed, and dissential voices were swiftly silenced, perpetuating a facade of democratic governance while tightening the grip of authoritarian rule.\n\nBeneath this veneer of false democracy, the spirit of genuine political pluralism  struggled to survive. Despite the oppressive political climate, those who still yearn for true democracy and an end to the royal tyranny will not stop until their dream becomes a reality."
+ NEP_Congressional_riots: "Congressional Riots"
+ NEP_Congressional_riots_desc: "Following the royal coup in 1961 and the dissolution of the Nepali multiparty system, the leftists, who call themselves the Nepali Congress have been rioting and mobbing the streets of Kathmandu and other major cities. Despite King Mahendra's efforts to quell the riots in late 1961, the Nepali Congress simply will not stop until they are the ones under control of the nation. Since the end of 1961, the Congress have mostly retreated from the streets with the current protests being a meer shadow of what they used to be.\n\nMany high ups within the King's government debate what the current intentions of the Congress are,\n\nbut those amongst the §Rdissidential populace§! are sure to know their §Rtrue intentions...§!"
+ NEP_Raja_Mahendra: "Raja Mahendra"
+ NEP_Raja_Mahendra_desc: ""
+ NEP_Second_Sat_Salko_Kranti: "A Second Kranti?"
+ NEP_Second_Sat_Salko_Kranti_desc: "The echoes of the 1951 uprising against the Rana regime still linger, but this time, the target is the Shah monarchy. Years of dissatisfaction with royal rule, marked by nepotism and neglect, have fuelled a growing movement of anti monarchists, all with one main goal, the dissolution of the Kingdom.  The authoritarian regime responds with repression, but for every arrest, public execution or disappearance, three more join the cause. \n\nAs the Kingdom teeters on the edge of change, the outcome lies in the hands of the people. The streets of Kathmandu reverberate with the chants of protesters, their voices echoing the collective yearning for freedom and justice. Despite the Raja's attempts to quash dissent, the flame of resistance burns brighter with each act of brutality, igniting hope in the hearts of the oppressed."
+ NEP_Monarchist_Unrest: "Monarchist Unrest - Fuck Tonne"
+ NEP_Monarchist_Unrest_desc: ""
+ NEP_Legacy_of_Transtitional_Authority: "Legacy of the Transitional Government"
+ NEP_Legacy_of_Transtitional_Authority_desc: ""
+ NEP_Between_Two_Worlds: "Between the Elephant and the Tiger"
+ NEP_Between_Two_Worlds_desc: "We are in the middle of them btw"
+ NEP_Congressional_Violence: "Congressional Violence"
+ NEP_Congressional_Violence_desc: "Theyre being very violent"
+ NEP_Congressional_Crisis: "Congressional Crisis"
+ NEP_Congressional_Crisis_desc: "We're in crisis"
+ NEP_Kathmandu_Catastrophe: "Kathmandu Catastrophe"
+ NEP_Kathmandu_Catastrophe_desc: "Lots of people dead"
+  
+#########ToolTips###
+ NEP_dictatorship_face_democracy_tt:0 ""
+ NEP_Second_Sat_Salko_Kranti_tt:0 "The 1951 Kranti spelt the end of the Rana dynasty. Will this happen to the Shah's? or is it a distant memory, doomed to be stuck in past?"
+ NEP_Between_Two_Worlds_tt:0 "Our Nation sits between the §BRepubic of India§! in the West, and the §GAzad Hind Government§! in the East, we are a vital part of the Subcontinent and serve as a major trading partner for §Bboth§! §Gsides§! !"
