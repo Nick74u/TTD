@@ -57,7 +57,7 @@ bhutan_meeting_category = {		#Name of category that decisions will appear under,
 		fire_only_once = yes		#If set to yes, the decision will only appear once, after execution will not appear again.
 
 		visible = {		#Conditionsssssss to make this mission visible, can be left blank to make it always appear.
-			has_country_flag = BHU_laying_the_groundworks
+			has_country_flag = BHU_meeting
 		}
 
 		# EFFECTS OF THIS DECISION/MISSION

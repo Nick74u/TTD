@@ -426,7 +426,7 @@ bookmarks = {
 			ideology = despotism
 			ideas = {
 				BHU_Under_the_Azad_Hind_boot 
-				BHU_The_Neverending_war_in_the_East 
+				BHU_a_general_and_his_army 
 				BHU_A_Dragon_Restless
 			}
 			focuses = {

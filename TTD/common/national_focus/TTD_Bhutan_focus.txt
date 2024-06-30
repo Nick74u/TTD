@@ -13,7 +13,7 @@ focus_tree = {
 	default = no
 	
 	focus = {
-	    id = BHU_modernize_bhutan
+	    id = BHU_pacifying_bhutan
 		icon = GFX_
 		x = 7
 		y = 0
@@ -41,9 +41,9 @@ focus_tree = {
 		icon = GFX_goal_a_chained_dragon
 		x = 0
 		y = 1
-		relative_position_id = BHU_modernize_bhutan
+		relative_position_id = BHU_pacifying_bhutan
 		
-		prerequisite = { focus = BHU_modernize_bhutan }
+		prerequisite = { focus = BHU_pacifying_bhutan }
 		cost = 2.24
 		
 		available = {
@@ -112,11 +112,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -141,11 +137,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -170,11 +162,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -222,7 +210,7 @@ focus_tree = {
 		cancelable = no
 		prerequisite = { focus = BHU_laying_the_groundworks }
 		available = {
-			has_country_flag = BHU_tackle_poverty
+
 		}
 		
 		bypass = {
@@ -235,7 +223,7 @@ focus_tree = {
 
 		completion_reward = {
 			set_variable = { BHU_demand_req = 0 }
-			set_variable = { BHU_persuasion_power = 0.5 }
+			set_variable = { BHU_persuasion_power = 50 }
 			country_event = {
 			id = bhutan.focus_event.2
 			hours = 6
@@ -271,8 +259,7 @@ focus_tree = {
 			custom_effect_tooltip = BHU_bose_plan_tt
 			hidden_effect = {
 				add_to_variable = { BHU_demand_req = 1 }
-				add_to_variable = { BHU_persuasion_power = 0.25 }
-				mark_focus_tree_layout_dirty = yes
+				add_to_variable = { BHU_persuasion_power = 12 }
 			}
 		}
 	}
@@ -303,8 +290,7 @@ focus_tree = {
 			custom_effect_tooltip = BHU_singh_plan_tt
 			hidden_effect = {
 				add_to_variable = { BHU_demand_req = 3 }
-				add_to_variable = { BHU_persuasion_power = -0.25 }
-				mark_focus_tree_layout_dirty = yes
+				add_to_variable = { BHU_persuasion_power = -20 }
 			}
 		}
 	}
@@ -330,11 +316,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -368,11 +350,7 @@ focus_tree = {
 	    	}
     	}
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -398,11 +376,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -428,11 +402,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -457,11 +427,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -486,11 +452,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -515,11 +477,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -544,11 +502,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -599,11 +553,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -629,11 +579,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -658,11 +604,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -687,11 +629,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -716,11 +654,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -745,11 +679,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -762,7 +692,7 @@ focus_tree = {
 		
 		prerequisite = { focus = BHU_laying_the_groundworks }
 		available = {
-			has_country_flag = BHU_tackle_poverty
+
 		}
 		
 		bypass = {
@@ -774,11 +704,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -803,11 +729,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -857,11 +779,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -886,11 +804,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -915,11 +829,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -944,11 +854,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -973,11 +879,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
-			}
+			
 		}
 	}
 	focus = {
@@ -1112,10 +1014,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
+			hidden_effect = {
+                add_dynamic_modifier = {
+                    modifier = BHU_leap_forward_dynamic_modifier
+			    }
 			}
 		}
 	}
@@ -1152,11 +1054,11 @@ focus_tree = {
 				limit = {
 					has_completed_focus = BHU_the_finishing_touches
 				}
-				add_to_variable = { BHU_gdp_growth_modifier = 0.15 }
-	      		add_to_variable = { BHU_production_units_to_GDP_ratio_modifier = 0.100 }
+				add_to_variable = { BHU_gdp_growth_modifier = 0.40 }
+	      		add_to_variable = { BHU_production_units_to_GDP_ratio_modifier = 0.4 }
 			}
 			else = {
-				add_to_variable = { BHU_gdp_growth_modifier = 0.5 }
+				add_to_variable = { BHU_gdp_growth_modifier = 0.15 }
 	      		add_to_variable = { BHU_production_units_to_GDP_ratio_modifier = 0.020 }
 			}
 		}

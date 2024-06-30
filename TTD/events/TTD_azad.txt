@@ -1,7 +1,4 @@
-﻿###########################
-# TTD_India_war Events
-###########################
-
+﻿###Azad Hind Events
 add_namespace = azad
 
 country_event = {

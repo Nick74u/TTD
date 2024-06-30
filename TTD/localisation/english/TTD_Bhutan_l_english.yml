@@ -13,11 +13,11 @@
   BHU_INA_Keeping_Order: "INA: Keeping Order"
   BHU_INA_Keeping_Order_desc: ""
   BHU_leap_forward: "A Leap Forward"
-  BHU_leap_forward_desc:0 "§FGDP Growth: [?BHU_gdp_growth_modifier|+=]§G%§!\n£GFX_tt_prod_unit Production Units to GDP ratio modifier: [?BHU_production_units_to_GDP_ratio_modifier|%%+=]\n--------------\n§!"
+  BHU_leap_forward_desc:0 "§FGDP Growth: [?BHU_gdp_growth_modifier|+%%=]\n£GFX_tt_prod_unit Production Units to GDP ratio modifier: [?BHU_production_units_to_GDP_ratio_modifier|%%+=]\n--------------\n§!"
 ########FOCUS#############
   ##First Part##
-  BHU_modernize_bhutan: "Modernizing Bhutan"
-  BHU_modernize_bhutan_desc: "As the 60s dawn upon us, it is our task to rapidly develop Bhutan to a modern and successful state. The country's age old tools and machineries won't cut it for today's world. \n\nAnd so, with the support back home at Calcutta. It is our job to introduce modernization programs to Bhutan, and make sure it becomes an economically, politically, and militarily strong state, just like our brothers in the south would want one of their future states to be.\nWe won't let it remain a backwards, agrarian society and thus, shall transform it into what could be the wealthiest state of the Himalayas!\n\n§R Or die trying...§!"
+  BHU_pacifying_bhutan: "The General and His State"
+  BHU_pacifying_bhutan_desc: ""
   BHU_the_chained_dragon: "The Chained Dragon"
   BHU_the_chained_dragon_desc: "The locals tend to think that we are occupiers, that we will enslave and persecute their people, and that we will partake in "mass murder" or "genocide".  They want us to immediately go back to where we came from. But, we are not the monsters that they think we are.\n\n We will teach them the benefits of being so closely connected to the economic powerhouses which are Azad Hind and Japan. We will teach them about the dark side of their previous rulers, the monarchs of the Wangchuck Dynasty, and how they oppressed them and blocked them from the prosperity Bhutan could've had. We will undo the wrongdoings done by the those who ruled them in the past, and shall let Bhutan enter a new, definite future, which is to embrace their newfound partners down south, and become one, with Hindustan.. Bhutan shall be reborn with a new image, a new history, and a new national identity...\n\nAnd if §Yanyone§! tries to resist, §Rthey already know what's coming for them§!"
   BHU_From_Mountains_to_Cities: "From Mountains to Cities"

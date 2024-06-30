@@ -1,0 +1,16 @@
+characters = {
+	
+	AZH_Subhas_Chandra_Bose = {
+		name = AZH_Subhas_Chandra_Bose
+		portraits = {
+			civilian = { large = "gfx/leaders/AZH/Portrait_Azad_Hind_Subhas_Chandra_Bose.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_SUBHAS_CHANDRA_BOSE_DESC"
+			ideology = paternalism_subhasism_subtype
+			traits = { }
+			expire = "1999.1.1"
+			id = -1
+		}
+	}
+}
