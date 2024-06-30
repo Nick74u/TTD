@@ -38,8 +38,8 @@ ideas = {
 				political_power_factor = -0.10
 			}
 		}
-		BHU_The_Neverending_war_in_the_East = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_The_Neverending_war_in_the_East" }
+		BHU_a_general_and_his_army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_a_general_and_his_army" }
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes } #{ #has_government = yes }
@@ -48,7 +48,7 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = BHU_no_hope_in_the_east_tt
-				stability_weekly_factor = -0.002
+				stability_weekly_factor = 0.002
 			}
 		}
 		BHU_The_Northern_Frontier = {

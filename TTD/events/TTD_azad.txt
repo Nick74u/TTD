@@ -1,0 +1,78 @@
+﻿###########################
+# TTD_India_war Events
+###########################
+
+add_namespace = azad
+
+country_event = {
+	id = azad.1
+	title = azad.1.t
+	desc = azad.1.d
+	
+	is_triggered_only = yes
+	
+	option = { # attack!
+		name = azad.1.a
+		BHU = { 
+		    country_event = {
+		        days = 5
+		        id = bhutan_flavor.3
+			}
+		}
+		TIB = {
+			1963 = {
+				set_demilitarized_zone = no
+			}
+			1962 = {
+				set_demilitarized_zone = no
+			}
+		}
+		
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = {
+	id = azad.2
+	title = azad.2.t
+	desc = azad.2.d
+	
+	is_triggered_only = yes
+	
+	option = { # attack!
+		name = azad.2.a
+		
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 1339
+				num_provinces = 4
+				on_win = azad.3
+			}
+			defender = {
+				state = 1963
+				num_provinces = 3
+			}
+		}
+		set_border_war_data = {
+			attacker = 1339
+			defender = 1963
+			defender_modifier = -1
+		}
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = {
+	id = azad.3
+	title = azad.3.t
+	desc = azad.3.d
+	
+	is_triggered_only = yes
+	
+	option = { # we won ezzrzrzrzrzrzrzrzs!
+		name = azad.3.a
+		transfer_state = 1963
+		add_state_core = 1963
+		ai_chance = { factor = 90 }
+	}
+}
+

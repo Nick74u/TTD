@@ -39,6 +39,39 @@ country_event = {
 	}
 }
 country_event = {
+	id = bhutan_flavor.3
+	title = bhutan_flavor.3.t
+	desc = bhutan_flavor.3.d
+	
+	is_triggered_only = yes
+	
+	option = { # paperwork!
+		name = bhutan_flavor.3.a
+		custom_effect_tooltip = BHU_mtsho_border_war
+		set_country_flag = BHU_azad_hind_approves
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = {
+	id = bhutan_flavor.5
+	title = bhutan_flavor.5.t
+	desc = bhutan_flavor.5.d
+	
+	is_triggered_only = yes
+	
+	option = { # attack!
+		name = bhutan_flavor.5.a
+		transfer_state = 1962
+		AZH = { 
+		    country_event = {
+		        days = 1
+		        id = azad.2
+			}
+		}
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = {
 	id = bhutan.focus_event.1
 	title = bhutan.focus_event.1.t
 	desc = bhutan.focus_event.1.d
@@ -239,6 +272,24 @@ country_event = { #THEY SAID YES - Kanwal gambler
 		hidden_effect = {
 		    complete_national_focus = BHU_a_welcomed_success
 		}
+	}
+}
+country_event = {
+	id = bhutan.focus_event.15
+	title = bhutan.focus_event.15.t
+	desc = bhutan.focus_event.15.d
+	
+	is_triggered_only = yes
+	
+	option = { # paperwork!
+		name = bhutan.focus_event.15.a
+		AZH = { 
+		    country_event = {
+		        days = 6
+		        id = azad.1
+			}
+		}
+		ai_chance = { factor = 90 }
 	}
 }
 country_event = {

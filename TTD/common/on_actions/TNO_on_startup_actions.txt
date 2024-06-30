@@ -484,6 +484,7 @@ on_actions = {
 				BHU_dynamic_modifiers_setup = yes
 			}
 			AZH = {
+				country_event = { id = azad.1 days = 279 }
 				country_event = { id = azad_event.1 days = 1223 }		# Azad-India War
 			}
 			

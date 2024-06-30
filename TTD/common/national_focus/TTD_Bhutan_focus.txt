@@ -782,7 +782,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_militarize_our_police_force
+	    id = BHU_reports_from_our_men
 		icon = focus_From_Mountains_to_Cities
 		x = 0
 		y = 1
@@ -815,10 +815,10 @@ focus_tree = {
 		icon = focus_From_Mountains_to_Cities
 		x = -1
 		y = 1
-		relative_position_id = BHU_militarize_our_police_force
+		relative_position_id = BHU_reports_from_our_men
 		cost = 2.89
 		
-		prerequisite = { focus = BHU_militarize_our_police_force }
+		prerequisite = { focus = BHU_reports_from_our_men }
 		available = {
 
 		}
@@ -840,10 +840,10 @@ focus_tree = {
 		icon = focus_From_Mountains_to_Cities
 		x = 1
 		y = 1
-		relative_position_id = BHU_militarize_our_police_force
+		relative_position_id = BHU_reports_from_our_men
 		cost = 2.89
 		
-		prerequisite = { focus = BHU_militarize_our_police_force }
+		prerequisite = { focus = BHU_reports_from_our_men }
 		available = {
 
 		}
@@ -952,7 +952,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_centralize_authority
+	    id = BHU_consulting_army_groups
 		icon = focus_From_Mountains_to_Cities
 		x = 0
 		y = 1.5
@@ -981,14 +981,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_expand_agricultural_sector
+	    id = BHU_road_to_arunachal
 		icon = focus_From_Mountains_to_Cities
 		x = -1
-		y = 3
-		relative_position_id = BHU_centralize_authority
-		cost = 5
+		y = 2
+		relative_position_id = BHU_consulting_army_groups
+		cost = 2
 		
-		prerequisite = {  focus = BHU_centralize_authority }
+		prerequisite = {  focus = BHU_consulting_army_groups }
 		prerequisite = { focus = BHU_a_bounty_on_the_head }	
 		
 		available = {
@@ -1004,10 +1004,54 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-			    target = JAP
-				type = puppet_wargoal_focus
-				expire = 0
+			country_event = {
+		        days = 1
+		        id = bhutan.focus_event.15
+			}
+		}
+	}
+	focus = {
+	    id = BHU_strike_now
+		icon = focus_From_Mountains_to_Cities
+		x = 0
+		y = 2
+		relative_position_id = BHU_road_to_arunachal
+		cost = 2
+		
+		prerequisite = {  focus = BHU_road_to_arunachal }
+		
+		available = {
+			has_country_flag = BHU_azad_hind_approves
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 2019
+					num_provinces = 1
+					on_win = bhutan_flavor.5
+				}
+				defender = {
+					state = 1962
+					num_provinces = 2
+				}
+				
+			}
+			hidden_effect = {
+				set_border_war_data = {
+					attacker = 2019
+					defender = 1962
+					defender_modifier = -1
+				}
 			}
 		}
 	}
@@ -1084,7 +1128,7 @@ focus_tree = {
 		cost = 1.45
 		
 		prerequisite = { focus = BHU_the_finishing_touches focus = BHU_we_have_done_what_we_could }
-		prerequisite = { focus = BHU_expand_agricultural_sector }
+		prerequisite = { focus = BHU_strike_now }
 		available = {
 
 		}
