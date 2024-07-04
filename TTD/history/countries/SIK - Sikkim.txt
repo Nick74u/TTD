@@ -4,6 +4,7 @@
 recruit_character = SIK_Generic_Vacant
 
 recruit_character = SIK_Tashi_Namgyal
+recruit_character = SIK_Palden_Namgyal
 
 
 oob = "NEP_1962"

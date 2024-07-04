@@ -1,0 +1,17 @@
+﻿###sikkim Events
+add_namespace = sikkim
+
+country_event = {
+	id = sikkim.1
+	title = sikkim.1.t
+	desc = sikkim.1.d
+	
+	is_triggered_only = yes
+	
+	option = { # attack!
+		name = sikkim.1.a
+		kill_country_leader = yes
+		
+		ai_chance = { factor = 90 }
+	}
+}

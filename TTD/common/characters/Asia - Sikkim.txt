@@ -10,7 +10,33 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = { harsh_leader inflexible_strategist unyielding_defender }
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = despotism_absolute_monarchy_subtype
+			traits = { }
+			id = -1
+		}
+	}
+	SIK_Palden_Namgyal = {
+		name = SIK_Palden_Namgyal
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SIK/Portrait_Palden_Namgyal.dds"
+			}
+			army = {
+				large = "gfx/leaders/SIK/Portrait_Palden_Namgyal.dds"
+			}
+		}
+		corps_commander = {
+			traits = { }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 4

@@ -6,9 +6,6 @@
  FBH: "Bhutan"
  FBH_DEF: "The Constitutional Kingdom of Bhutan"
  FBH_ADJ: "Bhutanese"
- SIK: "Sikkim"
- SIK_DEF: "the Kingdom of Sikkim"
- SIK_ADJ: "Sikkimese"
  AZH_PRH: "People's Republic of Hindustan"
  AZH_PRH_DEF: "People's Republic of Hindustan"
  AZH_PRH_ADJ: "Hindustani"
@@ -24,7 +21,6 @@
  ### Characters ###
  BHU_Kanwal_Singh_Dalal: "Kanwal Singh Dalal"
  FBH_Jigme_Dorji_Wangchuck: "Jigme Dorji Wangchuck"
- SIK_Tashi_Namgyal: "Tashi Namgyal"
  BHU_Hussain_Muhammad_Ershad_hog_desc: "§YHead of Government\nDeputy Commander of the Bhutan Military District\nStratocratic Subhasism\n(Paternalism)§!"
  BHU_Ian_Cardozo_eco_desc: "§YSecretary of Finance\nStratocratic Subhasism\n(Paternalism)§!"
  BHU_Khaled_Mosharraf_sec_desc: "§YSecretary of Defence\nUltramilitarism\n(Ultranationalism)§!"
