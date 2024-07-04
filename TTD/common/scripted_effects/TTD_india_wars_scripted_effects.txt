@@ -51,6 +51,7 @@ india_war_start = {
 	add_ideas = SOA_indian_wars
 	IND = {
 		load_oob = "IND_1962"
+		load_oob = "IND_1962"
 		add_ideas = SOA_indian_wars
 	}
 	AFG = {
@@ -195,6 +196,16 @@ india_azad_war_closing = {
 		set_temp_variable = { target = AFG }
 		TNO_clear_num_volunteers = yes
 	}
+	clr_global_flag = azad_war
+	IND = {
+		remove_ideas = SOA_indian_wars
+	}
+	AZH = {
+		remove_ideas = SOA_indian_wars
+	}
+	AFG = {
+		remove_ideas = SOA_indian_wars
+	}
 }
 debug_azad_hind_victory = {
 	log = "[GetDateText]: [Root.GetTag]: debug_azad_hind_victory; Executing." 
@@ -264,8 +275,6 @@ azad_hind_victory = {
 		set_cosmetic_tag = AZH_PRH
 	}
 	KIR = {
-	    kill_country_leader = yes
-		
 		set_politics = {
 			ruling_party = despotism
 			last_election = "1962.1.1"

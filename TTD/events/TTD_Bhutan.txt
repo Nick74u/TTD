@@ -64,7 +64,7 @@ country_event = {
 		transfer_state = 1962
 		AZH = { 
 		    country_event = {
-		        days = 1
+		        days = 8
 		        id = azad.2
 			}
 		}
@@ -281,12 +281,22 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { # paperwork!
+	option = { # send a letter to azad for arunachal
 		name = bhutan.focus_event.15.a
 		AZH = { 
 		    country_event = {
 		        days = 6
 		        id = azad.1
+			}
+		}
+		hidden_effect = {
+			TIB = {
+				1963 = {
+					set_demilitarized_zone = no
+				}
+				1962 = {
+					set_demilitarized_zone = no
+				}
 			}
 		}
 		ai_chance = { factor = 90 }
