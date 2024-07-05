@@ -2,15 +2,15 @@
 
 # Icon tooltip
 TNO_ugly_american_icon_tt: "§RThe Thunder Dragon§!"
-TNO_ugly_american_icon_tt_delayed: "§F"Dragon Rawr"§!"
+TNO_ugly_american_icon_tt_delayed: "§F"Dragon Roars"§!"
 ####=== The tooltips that are shown when hovering over the menu pictures ===####
 ###- TNO v1.5.0 - The Ruin, September 29th 2023
 
 ## SINGLE PLAYER
-TNO_menupic_tooltip_1: "§FIn my homeland, I possess one hundred horses, yet if I go, I go on foot.§!"
+TNO_menupic_tooltip_1: "§FIn my homeland, I possess§! §Lone hundred horses,§! §Fyet if I go,§! §RI go on foot.§!"
 
 ## MULTIPLAYER
-TNO_menupic_tooltip_2: "§FIt is our duty to pay for our liberty with our own blood.§!"
+TNO_menupic_tooltip_2: "§FIt is our duty to pay for our§! §4liberty§! §Fwith our own§! §Rblood.§!"
 
 ## QUIT
-TNO_menupic_tooltip_3: "§FThe future depends on what we do in the present.§!"
+TNO_menupic_tooltip_3: "§FThe§! §Bfuture§! §Fdepends on what we do§! §Rin the present.§!"
