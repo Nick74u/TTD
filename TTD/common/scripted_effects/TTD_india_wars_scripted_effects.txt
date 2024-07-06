@@ -244,6 +244,34 @@ azad_hind_victory = {
 	#		add_core_of = KIR
     #    }
     #}
+	NEP = {
+		if = {
+			limit = {
+				any_allied_country = {
+				AZH
+			}
+			transfer_state = 1948
+			transfer_state = 1949
+			set_compliance = 60 1948
+			set_compliance = 60 1949
+			set_resistance = 10 1948
+			set_resistance = 10 1949
+			}
+			limit = {
+				any_enemy_country = {
+				AZH
+			}
+			AZH = {
+			puppet = NEP
+			set_politics = {
+				
+			}
+			}
+		}
+	}
+}
+			
+			
     KIR = {
 		add_state_core = 1318
 		transfer_state = 1318

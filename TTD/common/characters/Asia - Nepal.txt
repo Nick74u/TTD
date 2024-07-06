@@ -37,7 +37,7 @@ characters = {
 		country_leader = {
 			desc = ""
 			expire = "1999.1.1"
-			ideology = despotism_aristocratic_conservatism_subtype
+			ideology = paternalism_semi_constitutional_monarchy_subtype
 			traits = {}
 			id = -1
 		}
@@ -113,9 +113,9 @@ characters = {
 			}
 		}
 		country_leader = {
-			#desc = "POLITICS_BP_KOIRALA_DESC"
+			desc = "POLITICS_BP_KOIRALA_DESC"
 			expire = "1999.1.1"
-			ideology = progressivism_subtype
+			ideology = progressivism_liberal_socialism_subtype
 			traits = {}
 			id = -1
 		}

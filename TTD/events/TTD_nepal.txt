@@ -2,6 +2,7 @@
 add_namespace = NEP_skeleton
 add_namespace = NEP_GIWM # Monarchist Path
 add_namespace = NEP_GIW # Leftist Path
+add_namespace = NEP_elec # Elections 
 
 country_event = { # Congressional Riots goes worse
 	id = NEP_skeleton.1
@@ -329,7 +330,7 @@ country_event = { # For monarchist path, joining AZH
 	
 	fire_only_once = yes
 	trigger = {
-	    tag = NEP
+	    tag = AZH
 	    has_global_flag = azad_war
 		IND = {
 		    surrender_progress > 0.5
@@ -358,7 +359,7 @@ country_event = { # For monarchist path, joining IND
 	
 	fire_only_once = yes
 	trigger = {
-	    tag = NEP
+	    tag = AZH
 	    has_global_flag = azad_war
 		AZH = {
 		    surrender_progress > 0.5
@@ -373,3 +374,16 @@ country_event = { # For monarchist path, joining IND
         }
 	}
 }
+
+country_event = { # Setting up post war elections - happen in 90 days from this event
+	id = NEP_elec.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_elec.1" }
+	title = NEP_elec.1.t
+	desc = NEP_elec.1.d
+	
+	fire_only_once = yes
+	trigger = {
+		
+		}
+	}
+		
