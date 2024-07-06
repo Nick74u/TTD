@@ -8,7 +8,21 @@
  NEP_IND_DEF: "the Military Occupation Zone of Nepal"
  NEP_IND_ADJ: "Nepalese"
  
-### Leader Descs ### 
+ ### Parties ###
+ NEP_communist_party: "NKP"
+ NEP_communist_party_long: "Nēpāla Kamyunista Pārtī"
+ NEP_progressivism_party: "NK"
+ NEP_progressivism_party_long: "Nēpālī Kāngrēsa"
+ NEP_liberalism_party: "NPP"
+ NEP_liberalism_party_long: "Nepal Praja Parishad"
+ NEP_paternalism_party: "GP"
+ NEP_paternalism_party_long: "Gorkha Parishad"
+ NEP_despotism_party: "Shah Dynasty"
+ NEP_despotism_party_long: "Shah Dynasty"
+ 
+### Characters ###
+NEP_BP_Koirala: "Bishweshwar 'B.P.' Koirala"
+ 
 ########Ideas##################
  NEP_Dictatorship_With_the_Face_of_Democracy: "A Façade of Democracy"
  NEP_Dictatorship_With_the_Face_of_Democracy_desc: "In the dawn of the 1960s, the grand Kingdom of Nepal grappeled with a political paradox, epitomizing a dictatorship veiled in the trappings of democracy. Under the reign of King Mahendra, who ascended the throne in 1955, the Panchayat system emerged as the cornerstone of governance, ostensibly embracing democratic principles while consolidating power within the monarchy's grasp.\n\nOn the surface, the Panchayat system featured periodic elections and a semblance of political participation. However, true opposition was stifled, dissent crushed, and the monarch's authority remained unchallenged. Political parties were outlawed, and dissential voices were swiftly silenced, perpetuating a facade of democratic governance while tightening the grip of authoritarian rule.\n\nBeneath this veneer of false democracy, the spirit of genuine political pluralism  struggled to survive. Despite the oppressive political climate, those who still yearn for true democracy and an end to the royal tyranny will not stop until their dream becomes a reality."
