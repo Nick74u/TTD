@@ -30,6 +30,10 @@
  NEP_Congressional_Crisis_desc: "We're in crisis"
  NEP_Kathmandu_Catastrophe: "Kathmandu Catastrophe"
  NEP_Kathmandu_Catastrophe_desc: "Lots of people dead"
+ NEP_Second_Kranti: "The Second Kranti"
+ NEP_Second_Kranti_desc: "Revolution time!!!!"
+ NEP_memory_kathmandu: "Memories of Kathmandu"
+ NEP_memory_kathmandu_desc: "Lots of people died. we are sad."
   
 #########ToolTips###
  NEP_dictatorship_face_democracy_tt:0 ""

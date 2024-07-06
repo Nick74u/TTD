@@ -1,0 +1,360 @@
+﻿### The Beautiful Nation of Nepal ###
+add_namespace = NEP_skeleton
+add_namespace = NEP_GIWM # Monarchist Path
+add_namespace = NEP_GIW # Leftist Path
+
+country_event = { # Congressional Riots goes worse
+	id = NEP_skeleton.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_skeleton.1" }
+	title = NEP_skeleton.1.t
+	desc = NEP_skeleton.1.d
+	
+	fire_only_once = yes
+	trigger = {
+	    tag = AZH
+	    has_global_flag = azad_war
+	}
+	
+	
+	option = {
+		name = NEP_skeleton.1.a
+		swap_ideas = {
+			remove_idea = NEP_Congressional_riots
+			add_idea = NEP_Congressional_Violence
+		}
+		hidden_effect = {
+			country_event = {
+				id = NEP_skeleton.2
+				days = 14
+			}
+		}
+	}
+
+country_event = { # Holy Fuck the Riots are even worse
+	id = NEP_skeleton.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_skeleton.2" }
+	title = NEP_skeleton.2.t
+	desc = NEP_skeleton.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = NEP_skeleton.2.a
+		swap_ideas = {
+			remove_idea = NEP_Congressional_Violence
+			add_idea = NEP_Congressional_Crisis
+		}
+		hidden_effect = {
+			country_event
+				id = NEP_skeleton.3
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = { # Lots of dead rioters. Not our problem. right?
+	id = NEP_skeleton.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_skeleton.3" }
+	title = NEP_skeleton.3.t
+	desc = NEP_skeleton.3.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = NEP_skeleton.3.a
+		add_ideas = NEP_Kathmandu_Catastrophe	
+		hidden_effect = {
+			country_event = {
+				id = NEP_skeleton.4
+				days = 21
+			}
+		}
+	}
+}
+
+country_event = { # Soooooo, the king abdicated
+	id = NEP_skeleton.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_skeleton.4" }
+	title = NEP_skeleton.4.t
+	desc = NEP_skeleton.4.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = NEP_skeleton.4.a
+		retire_character = NEP_Mahendra_Bir_Bikram_Shah
+		promote_character = NEP_Birendra_Bir_Bikram_Shah
+		hidden_effect = {
+			country_event = {
+				id = NEP_skeleton.5
+				days = 7
+			}
+		}
+	}
+}
+	
+country_event = { # Coup or no coup?
+	id = NEP_skeleton.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_skeleton.5" }
+	title = NEP_skeleton.5.t
+	desc = NEP_skeleton.5.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { # Congress Coups/King Finds out
+		name = NEP_skeleton.5.a
+		random_list = {
+			var:NEP.NEP_coup_happens = {
+				NEP = {
+					country_event = {
+					days = 7
+					id = NEP_skeleton.6
+					}
+				}
+			}
+			var:NEP.NEP_king_stops_coup = {
+				NEP = {
+					country_event = {
+					days = 7
+					id = NEP_skeleton.7
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NEP_skeleton.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_skeleton.6" }
+	title = NEP_skeleton.6.t
+	desc = NEP_skeleton.6.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { # KOIRALA BROS ARE IN POWER!!!!
+		name = NEP_skeleton.6.a
+		set_politics = {
+			ruling_party = progressivism
+			elections_allowed = yes
+			last_election = 1959.4.3 # 1959 Nepali general elections
+			election_frequency = 84
+		}
+		remove_idea = NEP_Kathmandu_Catastrophe
+		remove_idea = NEP_Congressional_Crisis
+		add_ideas = NEP_Second_Kranti
+		hidden_effect = {
+			set_popularities = {
+				communist = 13
+				socialist = 16
+				progressivism = 37
+				liberalism = 19
+				liberal_conservatism = 0
+				conservatism = 0
+				paternelism = 3
+				despotism = 11
+				ultranationalism = 0
+				facism = 0
+				national_socialism = 0
+			}
+		}
+		country_event = {
+		days = 31
+		NEP_GIW.1
+		
+	}
+}
+
+country_event = {
+	id = NEP_skeleton.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_skeleton.7" }
+	title = NEP_skeleton.7.t
+	desc = NEP_skeleton.7.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { # SIGMA BIHRENDRA STAYS IN POWER!!!!!
+		name = NEP_skeleton.7.a
+		add_idea = NEP_Birendra_Bir_Bikram_Shah_hog
+		hidden_effect = {
+			set_popularities = {
+				communist = 9
+				socialist = 3
+				progressivism = 14
+				liberalism = 15
+				liberal_conservatism = 0
+				conservatism = 0
+				paternelism = 3
+				despotism = 56
+				ultranationalism = 0
+				facism = 0
+				national_socialism = 0
+			}
+		}
+		country_event = {
+		id = NEP_GIWM.1
+		days = 31
+		}
+	}
+}
+
+country_event = { # Gives AZH military access
+	id = NEP_GIW.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_GIW.1" }
+	title = NEP_GIW.1.t
+	desc = NEP.GIW.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { # Yo phone linging, its azad hind
+		name = NEP_GIW.1.a
+		give_military_access = AZH
+		gdp_growth_modifier = 1.25
+		hidden_effect = {
+			country_event = {
+			id = NEP_GIW.2
+			days = 62
+			}
+		}
+	}
+}
+
+country_event = { # we gon join the war now
+	id = NEP_GIW.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_GIW.2" }
+	title = NEP_GIW.t.t
+	desc = NEP.GIW.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { # pretty please azh give us Sikkim and we can help btw azh you dont have a choice
+		name = NEP_GIW.2.a
+		AZH = { 
+		add_to_faction = NEP
+		}
+		declare_war_on = {
+			target = IND
+			type = annex_everything
+        }
+		add_state_claim = 1949 1948 # closest states to Nepal
+	}
+}
+
+country_event = { # We are negotiating with the rioters
+	id = NEP_GIWM.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_GIWM.1" }
+	title = NEP_GIWM.1.t
+	desc = NEP_GIWM.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { # good/bad
+		name = NEP_GIWM.1.a
+		random_list = {
+			var:NEP.NEP_good_negotiations = {
+				NEP = {
+					country_event = {
+					days = 7
+					id = NEP_GIWM.2
+					}
+				}
+			}
+			var:NEP.NEP_bad_negotiations = {
+				NEP = {
+					country_event = {
+					days = 7
+					id = NEP_GIWM.3 
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { # BP Koirala is now chill wit the king
+	id = NEP_GIWM.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_GIWM.2" }
+	title = NEP_GIWM.2.t
+	desc = NEP_GIWM.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = NEP_GIWM.2.a
+		swap_ideas = {
+			remove_idea = NEP_Kathmandu_Catastrophe
+			add_idea = NEP_memory_kathmandu
+		}
+		swap ideas = {
+			remove_idea = NEP_Congressional_Crisis
+			add_idea = NEP_Congressional_riots
+		}
+	}
+}
+
+country_event = { # Bad Negotiations
+	id = NEP_GIWM.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_GIWM.3" }
+	title = NEP_GIWM.3.t
+	desc = NEP_GIWM.3.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { # Nothing rlly happens bc everyone already hates the king
+		name = NEP_GIWM.3.a
+	}
+}
+		
+
+county_event = { # For monarchist path, joining AZH
+	id = NEP_GIWM.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_GIWM.4" }
+	title = NEP_GIWM.4.t
+	desc = NEP_GIWM.4.d
+	
+	fire_only_once = yes
+	trigger = {
+	    tag = AZH
+	    has_global_flag = azad_war
+		IND = {
+		    surrender_progress > 0.5
+		}
+	}
+	
+	option = {
+		name = NEP_GIWM.4.a
+		declare_war_on = {
+            target = IND
+            type = annex_everything
+        }
+		AZH = { 
+		add_to_faction = NEP
+		}
+		add_state_claim = 1948 1949
+	}
+}
+
+county_event = { # For monarchist path, joining IND
+	id = NEP_GIWM.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_GIWM.5" }
+	title = NEP_GIWM.5.t
+	desc = NEP_GIWM.5.d
+	
+	fire_only_once = yes
+	trigger = {
+	    tag = AZH
+	    has_global_flag = azad_war
+		AZH = {
+		    surrender_progress > 0.5
+		}
+	}
+	
+	option = {
+		name = NEP_GIWM.5.a
+		declare_war_on = {
+            target = AZH
+            type = annex_everything
+        }
+	}
+}

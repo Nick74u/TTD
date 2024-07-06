@@ -122,5 +122,31 @@ ideas = {
 				gdp_growth_modifier = -1.75
 			}
 		}
+		NEP_memory_kathmandu = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea NEP_memory_kathmandu" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = NEP_Congressional_Riots
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.05
+			}
+		}
+		NEP_Second_Kranti = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea NEP_Second_Kranti" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = NEP_Second_Sat_Salko_Kranti
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.15
+			}
+		}
 	}
 }
+	
