@@ -11,7 +11,7 @@ country_event = { # Congressional Riots goes worse
 	
 	fire_only_once = yes
 	trigger = {
-	    tag = AZH
+	    tag = NEP
 	    has_global_flag = azad_war
 	}
 	
@@ -29,6 +29,7 @@ country_event = { # Congressional Riots goes worse
 			}
 		}
 	}
+}
 
 country_event = { # Holy Fuck the Riots are even worse
 	id = NEP_skeleton.2
@@ -45,7 +46,7 @@ country_event = { # Holy Fuck the Riots are even worse
 			add_idea = NEP_Congressional_Crisis
 		}
 		hidden_effect = {
-			country_event
+			country_event = {
 				id = NEP_skeleton.3
 				days = 7
 			}
@@ -84,11 +85,20 @@ country_event = { # Soooooo, the king abdicated
 	option = {
 		name = NEP_skeleton.4.a
 		retire_character = NEP_Mahendra_Bir_Bikram_Shah
-		promote_character = NEP_Birendra_Bir_Bikram_Shah
+		promote_character = NEP_Birendra_Bir_Bikram_Shah            #NOT GONNA WORK SINCE HE DOESN"T HAVE ANY PORTRAIT AT THIS MOMENT
 		hidden_effect = {
 			country_event = {
 				id = NEP_skeleton.5
 				days = 7
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_news.6       #Kathmandu catastrophe world news event
+					days = 8
+				}
 			}
 		}
 	}
@@ -105,7 +115,7 @@ country_event = { # Coup or no coup?
 	option = { # Congress Coups/King Finds out
 		name = NEP_skeleton.5.a
 		random_list = {
-			var:NEP.NEP_coup_happens = {
+			80 = {
 				NEP = {
 					country_event = {
 					days = 7
@@ -113,7 +123,7 @@ country_event = { # Coup or no coup?
 					}
 				}
 			}
-			var:NEP.NEP_king_stops_coup = {
+			20 = {
 				NEP = {
 					country_event = {
 					days = 7
@@ -133,7 +143,7 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { # KOIRALA BROS ARE IN POWER!!!!
+	option = { # KOIRALA BROS ARE IN POWER!!!!        #WHY THE HELL DOES THIS DUDE HAVE A PORTRAIT!?!?
 		name = NEP_skeleton.6.a
 		set_politics = {
 			ruling_party = progressivism
@@ -141,9 +151,12 @@ country_event = {
 			last_election = 1959.4.3 # 1959 Nepali general elections
 			election_frequency = 84
 		}
-		remove_idea = NEP_Kathmandu_Catastrophe
-		remove_idea = NEP_Congressional_Crisis
-		add_ideas = NEP_Second_Kranti
+		remove_ideas = NEP_Kathmandu_Catastrophe
+		remove_ideas = NEP_Congressional_Crisis
+		swap_ideas = {
+			remove_idea = NEP_Second_Sat_Salko_Kranti
+			add_idea = NEP_Second_Kranti
+		}
 		hidden_effect = {
 			set_popularities = {
 				communist = 13
@@ -152,17 +165,17 @@ country_event = {
 				liberalism = 19
 				liberal_conservatism = 0
 				conservatism = 0
-				paternelism = 3
-				despotism = 11
+				paternalism = 3
+				despotism = 12
 				ultranationalism = 0
-				facism = 0
+				fascism = 0
 				national_socialism = 0
 			}
 		}
 		country_event = {
-		days = 31
-		NEP_GIW.1
-		
+			days = 31
+			id = NEP_GIW.1
+		}
 	}
 }
 
@@ -176,7 +189,7 @@ country_event = {
 	
 	option = { # SIGMA BIHRENDRA STAYS IN POWER!!!!!
 		name = NEP_skeleton.7.a
-		add_idea = NEP_Birendra_Bir_Bikram_Shah_hog
+		add_ideas = NEP_Birendra_Bir_Bikram_Shah_hog         #WHY ARE YOU ADDING THIS!?!??! he is already hog
 		hidden_effect = {
 			set_popularities = {
 				communist = 9
@@ -185,10 +198,10 @@ country_event = {
 				liberalism = 15
 				liberal_conservatism = 0
 				conservatism = 0
-				paternelism = 3
+				paternalism = 3
 				despotism = 56
 				ultranationalism = 0
-				facism = 0
+				fascism = 0
 				national_socialism = 0
 			}
 		}
@@ -210,11 +223,12 @@ country_event = { # Gives AZH military access
 	option = { # Yo phone linging, its azad hind
 		name = NEP_GIW.1.a
 		give_military_access = AZH
-		gdp_growth_modifier = 1.25
+		set_temp_variable = { gdp_growth_temp = 1.25 }
+		econ_gdp_growth_change = yes
 		hidden_effect = {
 			country_event = {
-			id = NEP_GIW.2
-			days = 62
+				id = NEP_GIW.2
+				days = 62
 			}
 		}
 	}
@@ -228,16 +242,17 @@ country_event = { # we gon join the war now
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { # pretty please azh give us Sikkim and we can help btw azh you dont have a choice
+	option = { # pretty please azh give us Sikkim and we can help btw azh you dont have a choice      #yeah, because you didn't code them if they can say yes or no
 		name = NEP_GIW.2.a
 		AZH = { 
-		add_to_faction = NEP
+			add_to_faction = NEP
 		}
 		declare_war_on = {
 			target = IND
 			type = annex_everything
         }
-		add_state_claim = 1949 1948 # closest states to Nepal
+		add_state_claim = 1949 # closest states to Nepal
+		add_state_claim = 1948
 	}
 }
 
@@ -252,19 +267,19 @@ country_event = { # We are negotiating with the rioters
 	option = { # good/bad
 		name = NEP_GIWM.1.a
 		random_list = {
-			var:NEP.NEP_good_negotiations = {
+			50 = {
 				NEP = {
 					country_event = {
-					days = 7
-					id = NEP_GIWM.2
+						days = 7
+						id = NEP_GIWM.2
 					}
 				}
 			}
-			var:NEP.NEP_bad_negotiations = {
+			50 = {
 				NEP = {
 					country_event = {
-					days = 7
-					id = NEP_GIWM.3 
+						days = 7
+						id = NEP_GIWM.3 
 					}
 				}
 			}
@@ -286,7 +301,7 @@ country_event = { # BP Koirala is now chill wit the king
 			remove_idea = NEP_Kathmandu_Catastrophe
 			add_idea = NEP_memory_kathmandu
 		}
-		swap ideas = {
+		swap_ideas = {
 			remove_idea = NEP_Congressional_Crisis
 			add_idea = NEP_Congressional_riots
 		}
@@ -305,9 +320,8 @@ country_event = { # Bad Negotiations
 		name = NEP_GIWM.3.a
 	}
 }
-		
 
-county_event = { # For monarchist path, joining AZH
+country_event = { # For monarchist path, joining AZH
 	id = NEP_GIWM.4
 	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_GIWM.4" }
 	title = NEP_GIWM.4.t
@@ -315,7 +329,7 @@ county_event = { # For monarchist path, joining AZH
 	
 	fire_only_once = yes
 	trigger = {
-	    tag = AZH
+	    tag = NEP
 	    has_global_flag = azad_war
 		IND = {
 		    surrender_progress > 0.5
@@ -329,13 +343,14 @@ county_event = { # For monarchist path, joining AZH
             type = annex_everything
         }
 		AZH = { 
-		add_to_faction = NEP
+			add_to_faction = NEP
 		}
-		add_state_claim = 1948 1949
+		add_state_claim = 1948 
+		add_state_claim = 1949
 	}
 }
 
-county_event = { # For monarchist path, joining IND
+country_event = { # For monarchist path, joining IND
 	id = NEP_GIWM.5
 	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_GIWM.5" }
 	title = NEP_GIWM.5.t
@@ -343,7 +358,7 @@ county_event = { # For monarchist path, joining IND
 	
 	fire_only_once = yes
 	trigger = {
-	    tag = AZH
+	    tag = NEP
 	    has_global_flag = azad_war
 		AZH = {
 		    surrender_progress > 0.5

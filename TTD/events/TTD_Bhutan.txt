@@ -416,6 +416,7 @@ country_event = {
 		name = bhutan_civil_war.3.a
 		ai_chance = { factor = 90 }
 		FBH = { 
+			set_cosmetic_tag = FBH_REB
 		    hidden_effect = {
 			    add_state_core = 2019
 			    add_state_core = 2018

@@ -3518,6 +3518,23 @@ defined_text = {
 		}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_AZH
 	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = BHU
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_BHU
+	}
+
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = FBH
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_FBH
+	}
 
 	text = {
 		localization_key = TNO_PEACE_POPUP_FLAVOR_DEFAULT

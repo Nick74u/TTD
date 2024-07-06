@@ -924,6 +924,10 @@ focus_tree = {
 		
 		available = {
 			has_country_flag = BHU_azad_hind_approves
+			divisions_in_state = {
+				size > 1
+				state = 2019
+			}
 		}
 		
 		bypass = {

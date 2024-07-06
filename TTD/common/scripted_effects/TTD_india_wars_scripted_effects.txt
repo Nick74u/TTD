@@ -52,6 +52,7 @@ india_war_start = {
 	IND = {
 		load_oob = "IND_1962"
 		load_oob = "IND_1962"
+		load_oob = "IND_1962"
 		add_ideas = SOA_indian_wars
 	}
 	AFG = {
@@ -333,6 +334,49 @@ azad_hind_victory = {
 		news_event = {
 			id = TTD_news.4
 			days = 1
+		}
+	}
+}
+bhutan_war_end = { #doesn't trigger in game right now
+	log = "[GetDateText]: [Root.GetTag]: bhutan_war_end; Executing." # bhutanwar end
+	
+	BHU = {
+		if = {
+			limit = {
+				FBH = {
+					exists = no
+				}
+			}
+			every_owned_state = {
+				remove_core_of = FBH
+			}
+			AZH = {
+				add_to_faction = BHU
+			}
+		}
+	}
+	FBH = {
+		drop_cosmetic_tag = yes
+		remove_ideas = {
+			FBH_our_last_chance
+		}
+		if = {
+			limit = {
+				BHU = {
+					exists = no
+				}
+			}
+			every_owned_state = {
+				remove_core_of = BHU
+			}
+			set_popularities = {
+				communist = 3
+				socialist = 8
+				progressivism = 5
+				conservatism = 15
+				paternalism = 45
+				despotism = 24
+			}
 		}
 	}
 }

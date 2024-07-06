@@ -7,7 +7,7 @@ state={
 			infrastructure = 2
 		}
 		victory_points = {
-			16132 5 
+			16132 3
 		}
 		add_core_of = BHU
 

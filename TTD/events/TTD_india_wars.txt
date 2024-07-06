@@ -45,6 +45,7 @@ country_event = { #Ceasefire azad leaning
 	trigger = {
 	    tag = AZH
 	    has_global_flag = azad_war
+		date > 1966.04.27
 		IND = {
 		    surrender_progress > 0.2
 		}
@@ -84,10 +85,9 @@ country_event = { #azad total victory
 	    tag = AZH
 	    has_global_flag = azad_war
 		IND = {
-		    surrender_progress > 0.4
+		    surrender_progress > 0.8
 		}
 		AZH = {
-			has_idea = AZH_on_the_offensive
 		    controls_state = 980
 		    surrender_progress < 0.2
 		}
@@ -112,6 +112,7 @@ country_event = { #whitepeace
 	trigger = {
 	    tag = AZH
 	    has_global_flag = azad_war
+		date > 1967.04.27
 		IND = {
 		    surrender_progress < 0.2
 		}

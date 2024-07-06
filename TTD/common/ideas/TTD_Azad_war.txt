@@ -9,8 +9,8 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				army_attack_factor = 0.3
-				army_org = 20
+				army_attack_factor = 0.1
+				army_org = 10
 			}
 		}
 		SOA_indian_wars = {
