@@ -10,6 +10,7 @@ recruit_character = NEP_Tulsi_Giri
 recruit_character = NEP_Kaiser_Shumsher_Jang_Bahadur_Rana
 recruit_character = NEP_BP_Koirala
 recruit_character = NEP_Keshar_Jung_Rayamajhi
+recruit_character = NEP_TP_Acharya
 
 
 oob = "NEP_1962"

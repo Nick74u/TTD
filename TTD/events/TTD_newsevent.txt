@@ -92,3 +92,16 @@ news_event = { # Kathmandu Catastrophe
 		name = TTD_news.6.a
 	}
 }
+news_event = { # Congress gets re-election
+	id = TTD_news.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.11" }
+	title = TTD_news.11.t
+	desc = TTD_news.11.d
+	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_news.11.a
+	}
+}

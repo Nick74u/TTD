@@ -130,9 +130,26 @@ characters = {
 		country_leader = {
 			#desc = "POLITICS_KESHAR_RAYAMAJHI_DESC"
 			expire = "1999.1.1"
-			ideology = communist_subtype
+			ideology = communist_mao_zedong_thought_subtype
 			traits = {}
 			id = -1
 		}
 	}
+	NEP_TP_Acharya = {
+		name = NEP_TP_Acharya
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Portrait_Mr_Placeholder_the_Third.dds"
+				
+			}
+		}
+		country_leader = {
+			#desc = "POLITICS_TP_ACHARYA_DESC"
+			expire = "1999.1.1
+			ideology = liberalism_progressive_liberalism_subtype
+			traits = {}
+			id = -1
+		}
+	}
+	
 }
