@@ -308,6 +308,19 @@ country_event = { # BP Koirala is now chill wit the king
 			add_idea = NEP_Congressional_riots
 		}
 		set_cosmetic_tag = NEP_CON
+		set_politics = {
+			ruling_party = paternalism
+		}
+		hidden_effect = {
+			set_popularities = {
+				communist = 9
+				progressivism = 16
+				liberalism = 13
+				conservatism = 7
+				paternalism = 43
+				despotism = 12
+			}
+		}
 	}
 }
 
