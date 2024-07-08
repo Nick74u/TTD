@@ -220,8 +220,8 @@ debug_azad_hind_victory = {
     india_azad_war_closing = yes
 	
 
-	log = "war_won"
-	set_global_flag = war_won
+	log = "azad_war_won"
+	set_global_flag = azad_war_won
 	set_global_flag = show_peace_popup_alert
 	add_to_variable = { global.peace_popup_dirty = 1 }
 }
@@ -248,30 +248,35 @@ azad_hind_victory = {
 		if = {
 			limit = {
 				any_allied_country = {
-				AZH
+					AZH = {
+						is_faction_leader = yes
+					}
+				}	
 			}
-			transfer_state = 1948
-			transfer_state = 1949
-			set_compliance = 60 1948
-			set_compliance = 60 1949
-			set_resistance = 10 1948
-			set_resistance = 10 1949
+			NEP = {
+				transfer_state = 1948
+				transfer_state = 1949
 			}
+			1948 = {
+				add_compliance = 60 
+				add_resistance = 10 
+			}
+			1949 = {
+				add_compliance = 60 
+				add_resistance = 10 
+			}
+		}
+		else_if ={
 			limit = {
 				any_enemy_country = {
-				AZH
+					tag = AZH
+				}
 			}
 			AZH = {
-			puppet = NEP
-			set_politics = {
-				
-			}
+				puppet = NEP
 			}
 		}
 	}
-}
-			
-			
     KIR = {
 		add_state_core = 1318
 		transfer_state = 1318
