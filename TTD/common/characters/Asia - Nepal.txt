@@ -19,6 +19,7 @@ characters = {
 		portraits = {
 			civilian = {
 				small = "GFX_idea_NEP_Birendra_Bir_Bikram_Shah_hog"
+				large = "gfx/leaders/NEP/Portrait_Nepal_Birendra_Bir_Bikram_Shah.dds"
 			}
 		}
 		advisor = {
@@ -38,6 +39,13 @@ characters = {
 			desc = ""
 			expire = "1999.1.1"
 			ideology = paternalism_semi_constitutional_monarchy_subtype
+			traits = {}
+			id = -1
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = despotism_aristocratic_conservatism_subtype
 			traits = {}
 			id = -1
 		}

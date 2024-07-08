@@ -86,14 +86,14 @@ country_event = { # Soooooo, the king abdicated
 	option = {
 		name = NEP_skeleton.4.a
 		retire_character = NEP_Mahendra_Bir_Bikram_Shah
-		promote_character = NEP_Birendra_Bir_Bikram_Shah            #NOT GONNA WORK SINCE HE DOESN"T HAVE ANY PORTRAIT AT THIS MOMENT
+		promote_character = NEP_Birendra_Bir_Bikram_Shah 
+	
 		hidden_effect = {
+	
 			country_event = {
 				id = NEP_skeleton.5
 				days = 7
 			}
-		}
-		hidden_effect = {
 			every_country = {
 				limit = { is_ai = no }
 				news_event = {
@@ -158,6 +158,7 @@ country_event = {
 			remove_idea = NEP_Second_Sat_Salko_Kranti
 			add_idea = NEP_Second_Kranti
 		}
+		set_cosmetic_tag = NEP_REP
 		hidden_effect = {
 			set_popularities = {
 				communist = 13
@@ -306,6 +307,7 @@ country_event = { # BP Koirala is now chill wit the king
 			remove_idea = NEP_Congressional_Crisis
 			add_idea = NEP_Congressional_riots
 		}
+		set_cosmetic_tag = NEP_CON
 	}
 }
 
@@ -332,6 +334,10 @@ country_event = { # For monarchist path, joining AZH
 	trigger = {
 	    tag = NEP
 	    has_global_flag = azad_war
+		OR = {
+			has_government = despotism
+			has_government = paternalism
+		}
 		IND = {
 		    surrender_progress > 0.5
 		}
@@ -361,6 +367,10 @@ country_event = { # For monarchist path, joining IND
 	trigger = {
 	    tag = NEP
 	    has_global_flag = azad_war
+		OR = {
+			has_government = despotism
+			has_government = paternalism
+		}
 		AZH = {
 		    surrender_progress > 0.5
 		}
@@ -385,6 +395,7 @@ country_event = { # Setting up post war elections - happen in 90 days from this 
 	trigger = {
 		tag = NEP
 		has_global_flag = azad_war_won
+		has_government = progressivism
 	}
 	
 	option = {

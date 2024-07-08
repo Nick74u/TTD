@@ -4,6 +4,14 @@
  NEP_DEF: "the Kingdom of Nepal"
  NEP_ADJ: "Nepalese"
   
+ NEP_REP: "Republic of Nepal"
+ NEP_REP_DEF: "the Republic of Nepal"
+ NEP_REP_ADJ: "Nepalese"
+ 
+ NEP_CON: "Nepal"
+ NEP_CON_DEF: "the Constitutional Kingdom of Nepal"
+ NEP_CON_ADJ: "Nepalese"
+ 
  NEP_IND: "Nepalese Military District"
  NEP_IND_DEF: "the Military Occupation Zone of Nepal"
  NEP_IND_ADJ: "Nepalese"
