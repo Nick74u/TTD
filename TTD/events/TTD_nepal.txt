@@ -455,7 +455,7 @@ country_event = { # Elections
 		name = NEP_elec.2.b
 		set_cosmetic_tag = NEP_PRN
 		set_politics = {
-			ruling_party = communism
+			ruling_party = communist
 		}
 		set_popularities = {
 			communist = 46
@@ -476,10 +476,3 @@ country_event = { # Elections
 		}
 	}
 }
-		
-		
-	
-			
-	
-		
-		
