@@ -5,20 +5,30 @@
  NEP_ADJ: "Nepalese"
   
  NEP_REP: "Republic of Nepal"
- NEP_REP_DEF: "the Republic of Nepal"
+ NEP_REP_DEF: "the Federal Republic of Nepal"
  NEP_REP_ADJ: "Nepalese"
  
  NEP_CON: "Nepal"
  NEP_CON_DEF: "the Constitutional Kingdom of Nepal"
  NEP_CON_ADJ: "Nepalese"
  
- NEP_IND: "Nepalese Military District"
- NEP_IND_DEF: "the Military Occupation Zone of Nepal"
- NEP_IND_ADJ: "Nepalese"
+ NEP_MIL: "District of Nepal"
+ NEP_MIL_DEF: "the Military Occupation Zone of Nepal"
+ NEP_MIL_ADJ: "Nepalese"
+ 
+ NEP_HIM: "Himmalaya"
+ NEP_HIM_DEF: "the Himmalayan Federation
+ NEP_HIM_ADJ: "Himmalayan" 
+
+ NEP_PRN: "People's Republic of Nepal"
+ NEP_PRN_DEF: "the People's Republic of Nepal"
+ NEP_PRN_ADJ: "Nepalese"
  
  ### Parties ###
  NEP_communist_party: "NKP"
- NEP_communist_party_long: "Nēpāla Kamyunista Pārtī" 
+ NEP_communist_party_long: "Nēpāla Kamyunista Pārtī"
+ NEP_socialist_party: "NSP"
+ NEP_socialist_party_long: "Nēpāla Samājavādī Pārtī"
  NEP_progressivism_party: "NK"
  NEP_progressivism_party_long: "Nēpālī Kāngrēsa"
  NEP_liberalism_party: "NPP"
@@ -33,13 +43,14 @@ NEP_BP_Koirala: "Bishweshwar 'B.P.' Koirala"
 NEP_TP_Acharya: "Tanka Prasad Acharya"
 
 ### Leader Descs ###
-POLITICS_BP_KOIRALA_DESC: "Bishweshwar Prasad Koirala, the first democratically elected president of Nepal. The only man who can say truly he is the sovereign leader of Nepal. Born in 1914 during his family's exile in Bihar, India, Koirala's early thoughts and political views were shaped mainly by his father's involvement in India's independence movement, molding his view on social rights from a young age.\n\nReturning to Nepal in the late 1930s after his education in India, Koirala co-founded the Nēpālī Kāngrēsa (Nepali Congress) in 1946 alongside his 2 Brothers and a member of the Rana family living in exile in Calcutta. This proved a pivotal moment in Nepal's path toward liberalism. Koirala's advocacy for more western and liberal principles led to imprisonment by the corrupt Rana oligarchy in 1947, though he was released following Nepal's 1951 uprising against the same government which had imprisoned him.\n\nIn his first election in 1959, Koirala became easily the most favoured candidate since he championed democracy, equality and modernization. He also gained international respect due to his pro western and OFN views despite being a country in Asia. His tenure was cut short in 1960 when King Mahendra staged a royal coup d'état, halting democratic progress and gaining progress toward imprisoning Koirala alongside other leaders.\n\nThroughout, Koirala's literary contributions, including novels like "Sumnima" and "Tin Ghumti,", he reflected his deep rooted understanding and love for Nepali society yep also acknowledging its need for reform. As of now, his legacy stands as a beacon of hope for Nepal's continued journey towards democratization and social justice, inspiring those within the Nepali populace and also those around him who live in secret within the Kingdom of Nepal."
+POLITICS_BP_KOIRALA_DESC: "Bishweshwar Prasad Koirala, the first democratically elected president of Nepal. The only man who can say truly he is the sovereign leader of Nepal. Born in 1914 during his family's exile in Bihar, India, Koirala's early thoughts and political views were shaped mainly by his father's involvement in India's independence movement, molding his view on social rights from a young age.\n\nReturning to Nepal in the late 1930s after his education in India, Koirala co-founded the Nēpālī Kāngrēsa (Nepali Congress) in 1946 alongside his 2 Brothers and a member of the Rana family living in exile in Calcutta. This proved a pivotal moment in Nepal's path toward liberalism. Koirala's advocacy for more western and liberal principles led to imprisonment by the corrupt Rana oligarchy in 1947, though he was released following Nepal's 1951 uprising against the same government which had imprisoned him.\n\nIn his first election in 1959, Koirala became easily the most favoured candidate since he championed democracy, equality and modernization. He also gained international respect due to his pro western and OFN views despite being a country in Asia. His tenure was cut short in 1960 when King Mahendra staged a royal coup d'état, halting democratic progress and gaining progress toward imprisoning Koirala alongside other leaders.\n\nThroughout, Koirala's literary contributions, including novels like "Sumnima" and "Tin Ghumti,", he reflected his deep rooted understanding and love for Nepalese society yep also acknowledging its need for reform. As of now, his legacy stands as a beacon of hope for Nepal's continued journey towards democratization and social justice, inspiring those within the Nepalese populace and also those around him who live in secret within the Kingdom of Nepal."
 POLITICS_TP_ACHARYA_DESC: "Ill write it later"
+POLITICS_KESHAR_RAYAMAJHI_DESC: "THIS MF HAS A PORTRAIT WTH"
 ########Ideas##################
  NEP_Dictatorship_With_the_Face_of_Democracy: "A Façade of Democracy"
  NEP_Dictatorship_With_the_Face_of_Democracy_desc: "In the dawn of the 1960s, the Nepalese Kingdom struggled with a political paradox, it's unrighteous autocratic government supporting a royal dictatorship under the reign of King Mahendra, who ascended the throne in 1955. Mahendra's Panchayat system emerged as the cornerstone of governance, meticulously embracing democratic principles whilst consolidating power within the monarchy's grasp.\n\nOn the surface, the Panchayat system featured periodic elections and a semblance of political participation. However, true opposition was stifled, dissent crushed, and the monarch's authority remained unchallenged. Political parties were outlawed, and voices of dissident were swiftly silenced, demonstrating a facade of democratic governance while tightening the grip of authoritarian rule, one which was almost completely hidden from the public eye.\n\nBeneath this veneer of false democracy, the spirit of genuine political pluralism  struggled to survive. Despite the oppressive political climate, those who still strive for true democracy and an end to the royal tyranny will not stop until their dream becomes a reality, one which will unite all of §BN§!§Re§!§Gp§!§Ra§!§Bl§!."
  NEP_Congressional_riots: "Congressional Riots"
- NEP_Congressional_riots_desc: "Following the royal coup in 1961 and the dissolution of the Nepali multiparty system, the leftists, who call themselves the Nepali Congress have been rioting and mobbing the streets of Kathmandu and other major cities. Despite King Mahendra's efforts to quell the riots in late 1961, the Nepali Congress simply will not stop until they are the ones under control of the nation. Since the end of 1961, the Congress have mostly retreated from the streets with the current protests being a meer shadow of what they used to be.\n\nMany high ups within the King's government debate what the current intentions of the Congress are,\n\nbut those amongst the §Rdissidential populace§! are sure to know their §Rtrue intentions...§!"
+ NEP_Congressional_riots_desc: "Following the royal coup in 1961 and the dissolution of the Nepalese multiparty system, the leftists, who call themselves the Nepali Congress have been rioting and mobbing the streets of Kathmandu and other major cities. Despite King Mahendra's efforts to quell the riots in late 1961, the Nepali Congress simply will not stop until they are the ones under control of the nation. Since the end of 1961, the Congress have mostly retreated from the streets with the current protests being a meer shadow of what they used to be.\n\nMany high ups within the King's government debate what the current intentions of the Congress are,\n\nbut those amongst the §Rdissidential populace§! are sure to know their §Rtrue intentions...§!"
  NEP_Raja_Mahendra: "Raja Mahendra"
  NEP_Raja_Mahendra_desc: ""
  NEP_Second_Sat_Salko_Kranti: "A Second Kranti?"
@@ -63,7 +74,7 @@ POLITICS_TP_ACHARYA_DESC: "Ill write it later"
  NEP_Second_Kranti: "The Second Kranti"
  NEP_Second_Kranti_desc: "Revolution time!!!!"
  NEP_memory_kathmandu: "Memories of Kathmandu"
- NEP_memory_kathmandu_desc: "Lots of people died. we are sad."
+ NEP_memory_kathmandu_desc: "Lots of people died. we are sad but they forgive us"
   
 #########ToolTips###
  NEP_dictatorship_face_democracy_tt:0 ""

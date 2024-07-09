@@ -269,17 +269,17 @@ country_event = { # We are negotiating with the rioters
 	option = { # good/bad
 		name = NEP_GIWM.1.a
 		random_list = {
-			50 = {
+			70 = {
 				NEP = {
-					country_event = {
+					country_event = { #GOOD
 						days = 7
 						id = NEP_GIWM.2
 					}
 				}
 			}
-			50 = {
+			30 = {
 				NEP = {
-					country_event = {
+					country_event = { #BAD
 						days = 7
 						id = NEP_GIWM.3 
 					}
@@ -430,8 +430,16 @@ country_event = { # Elections
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = {
+	option = { # Congress
 		name = NEP_elec.2.a
+		set_popularities = {
+			communist = 21
+			progressivism = 47
+			liberalism = 16
+			conservatism = 0
+			paternalism = 11
+			despotism = 5
+		}
 		hidden_effect = {
 			every_country = {
 				limit = { is_ai = no }
@@ -443,8 +451,20 @@ country_event = { # Elections
 		}
 	}
 
-	option = {
+	option = { # Communist
 		name = NEP_elec.2.b
+		set_cosmetic_tag = NEP_PRN
+		set_politics = {
+			ruling_party = communism
+		}
+		set_popularities = {
+			communist = 46
+			progressivism = 27
+			liberalism = 11
+			conservatism = 0
+			paternalism = 12
+			despotism = 4
+		}
 		hidden_effect = {
 			every_country = {
 				limit = { is_ai = no }

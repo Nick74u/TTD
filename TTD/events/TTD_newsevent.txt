@@ -92,6 +92,58 @@ news_event = { # Kathmandu Catastrophe
 		name = TTD_news.6.a
 	}
 }
+news_event = { # NEP Joins AZH
+	id = TTD_news.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.7" }
+	title = TTD_news.7.t
+	desc = TTD_news.7.d
+	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_news.7.a
+	}
+}
+news_event = { # Siege of Peshawar
+	id = TTD_news.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.8" }
+	title = TTD_news.8.t
+	desc = TTD_news.8.d
+	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_news.8.a
+	}
+}
+news_event = { # Afghanistan Breaks the Siege
+	id = TTD_news.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.9" }
+	title = TTD_news.9.t
+	desc = TTD_news.9.d
+	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_news.9.a
+	}
+}
+news_event = { # Peshawar in Anarchy
+	id = TTD_news.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.10" }
+	title = TTD_news.10.t
+	desc = TTD_news.10.d
+	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_news.10.a
+	}
+}
 news_event = { # Congress gets re-election
 	id = TTD_news.11
 	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.11" }
@@ -103,5 +155,31 @@ news_event = { # Congress gets re-election
 
 	option = {
 		name = TTD_news.11.a
+	}
+}
+news_event = { # Communist gets election
+	id = TTD_news.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.12" }
+	title = TTD_news.12.t
+	desc = TTD_news.12.d
+	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_news.12.a
+	}
+}
+news_event = { # NEP Joins RoI
+	id = TTD_news.13
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.13" }
+	title = TTD_news.13.t
+	desc = TTD_news.13.d
+	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_news.13.a
 	}
 }

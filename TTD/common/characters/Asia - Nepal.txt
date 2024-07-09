@@ -136,7 +136,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			#desc = "POLITICS_KESHAR_RAYAMAJHI_DESC"
+			desc = "POLITICS_KESHAR_RAYAMAJHI_DESC"
 			expire = "1999.1.1"
 			ideology = communist_mao_zedong_thought_subtype
 			traits = {}
