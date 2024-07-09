@@ -36,45 +36,45 @@ country_event = {
 		ai_chance = { factor = 90 }
 	}
 }
-country_event = { #Ceasefire azad leaning
-	id = azad_event.2
-	title = azad_event.2.t
-	desc = azad_event.2.d
-	
-	fire_only_once = yes
-	trigger = {
-	    tag = AZH
-	    has_global_flag = azad_war
-		date > 1966.04.27
-		IND = {
-		    surrender_progress > 0.2
-		}
-		
-		AZH = {
-		    NOT = {
-	    	    has_idea = AZH_on_the_offensive
-			}
-		    surrender_progress < 0.2
-		}
-	}
-	mean_time_to_happen = {
-	    days = 1
-	}
-	
-	option = { # Its taking way too long
-		name = azad_event.2.a
-        hidden_effect = {
-		    India_war_azad_leaning = yes
-			every_country = {
-				limit = { is_ai = no }
-				news_event = {
-					id = TTD_news.2
-					days = 1
-				}
-			}	
-        }
-	}
-}
+#country_event = { #Tagged for now
+#	id = azad_event.2
+#	title = azad_event.2.t
+#	desc = azad_event.2.d
+#	
+#	fire_only_once = yes
+#	trigger = {
+#	    tag = AZH
+#	    has_global_flag = azad_war
+#		date > 1966.04.27
+#		IND = {
+#		    surrender_progress > 0.2
+#		}
+#		
+#		AZH = {
+#		    NOT = {
+#	    	    has_idea = AZH_on_the_offensive
+#			}
+#		    surrender_progress < 0.2
+#		}
+#	}
+#	mean_time_to_happen = {
+#	    days = 1
+#	}
+#	
+#	option = { # Its taking way too long
+#		name = azad_event.2.a
+#        hidden_effect = {
+#		    India_war_azad_leaning = yes
+#			every_country = {
+#				limit = { is_ai = no }
+#				news_event = {
+#					id = TTD_news.2
+#					days = 1
+#				}
+#			}	
+#        }
+#	}
+#}
 country_event = { #azad total victory
 	id = azad_event.3
 	title = azad_event.3.t
@@ -101,36 +101,6 @@ country_event = { #azad total victory
         hidden_effect = {
 		    debug_azad_hind_victory = yes
         }
-	}
-}
-country_event = { #whitepeace
-	id = azad_event.4
-	title = azad_event.4.t
-	desc = azad_event.4.d
-	
-	fire_only_once = yes
-	trigger = {
-	    tag = AZH
-	    has_global_flag = azad_war
-		date > 1967.04.27
-		IND = {
-		    surrender_progress < 0.2
-		}
-		AZH = {
-		    NOT = {
-	    	    has_idea = AZH_on_the_offensive
-			}
-		    surrender_progress < 0.2
-		}
-	}
-	mean_time_to_happen = {
-	    days = 1
-	}
-	
-	option = { # whitepeace
-		name = azad_event.4.a
-        AZH = { white_peace = IND }
-	    AFG = { white_peace = IND }
 	}
 }
 country_event = {

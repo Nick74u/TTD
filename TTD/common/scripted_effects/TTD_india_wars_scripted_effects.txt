@@ -60,8 +60,8 @@ india_war_start = {
 		load_oob = "AFG_1962"
 	}
 }
-India_war_azad_leaning = {
-	log = "[GetDateText]: [Root.GetTag]: India_war_azad_leaning; Executing." # Ceaefire but azad leaning
+India_war_azad_leaning = { #DOES NOTHING 
+	log = "[GetDateText]: [Root.GetTag]: India_war_azad_leaning; Executing." # Ceasefire but azad leaning
 	clr_global_flag = azad_war
 	india_azad_war_closing = yes
     
