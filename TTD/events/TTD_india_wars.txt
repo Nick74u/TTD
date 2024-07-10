@@ -22,7 +22,7 @@ country_event = {
 			every_country = {
 				limit = { is_ai = no }
 				news_event = {
-					id = TTD_news.1
+					id = TTD_Indian_war_news.1
 					hours = 1
 				}
 			}
@@ -68,7 +68,7 @@ country_event = {
 #			every_country = {
 #				limit = { is_ai = no }
 #				news_event = {
-#					id = TTD_news.2
+#					id = TTD_Indian_war_news.2
 #					days = 1
 #				}
 #			}	
@@ -120,7 +120,7 @@ country_event = {
 			every_country = {
 				limit = { is_ai = no }
 				news_event = {
-					id = TTD_news.3
+					id = TTD_Indian_war_news.3
 					hours = 1
 				}
 			}

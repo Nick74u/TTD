@@ -2,19 +2,23 @@
 # TTD_news Events
 ###########################
 
-add_namespace = TTD_news
+add_namespace = TTD_Indian_war_news  							#Self explanatory
+add_namespace = TTD_news 								#Misc events and stuff
+add_namespace = TTD_nepal_news 					#News about nepal
+add_namespace = TTD_pak_news 					#news about Pakistan
+add_namespace = TTD_bhutan_news                 #news about Bhutan
 
 news_event = { # Indian Wars
-	id = TTD_news.1
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.1" }
-	title = TTD_news.1.t
-	desc = TTD_news.1.d
+	id = TTD_Indian_war_news.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_Indian_war_news.1" }
+	title = TTD_Indian_war_news.1.t
+	desc = TTD_Indian_war_news.1.d
 	picture = GFX_news_event_USA_hawaiian_missile_crisis
 
 	is_triggered_only = yes
 
 	option = {
-		name = TTD_news.1.a
+		name = TTD_Indian_war_news.1.a
 		if = {
 			limit = { is_ai = no }
 			hidden_effect = {
@@ -28,158 +32,172 @@ news_event = { # Indian Wars
 	}
 }
 news_event = { # Ceasefire
-	id = TTD_news.2
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.2" }
-	title = TTD_news.2.t
-	desc = TTD_news.2.d
+	id = TTD_Indian_war_news.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_Indian_war_news.2" }
+	title = TTD_Indian_war_news.2.t
+	desc = TTD_Indian_war_news.2.d
 	picture = GFX_news_event_USA_hawaiian_missile_crisis
 
 	is_triggered_only = yes
 
 	option = {
-		name = TTD_news.2.a
+		name = TTD_Indian_war_news.2.a
 	}
 }
 news_event = { # Afghanistan joins in the rumble
-	id = TTD_news.3
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.3" }
-	title = TTD_news.3.t
-	desc = TTD_news.3.d
+	id = TTD_Indian_war_news.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_Indian_war_news.3" }
+	title = TTD_Indian_war_news.3.t
+	desc = TTD_Indian_war_news.3.d
 	picture = GFX_news_event_USA_hawaiian_missile_crisis
 
 	is_triggered_only = yes
 
 	option = {
-		name = TTD_news.3.a
+		name = TTD_Indian_war_news.3.a
 	}
 }
 news_event = { # Azad victory
-	id = TTD_news.4
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.4" }
-	title = TTD_news.4.t
-	desc = TTD_news.4.d
+	id = TTD_Indian_war_news.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_Indian_war_news.4" }
+	title = TTD_Indian_war_news.4.t
+	desc = TTD_Indian_war_news.4.d
 	picture = GFX_news_event_USA_hawaiian_missile_crisis
 
 	is_triggered_only = yes
 
 	option = {
-		name = TTD_news.4.a
+		name = TTD_Indian_war_news.4.a
 	}
 }
 news_event = { # Everest Defeated
-	id = TTD_news.5
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.5" }
-	title = TTD_news.5.t
-	desc = TTD_news.5.d
+	id = TTD_news.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.1" }
+	title = TTD_news.1.t
+	desc = TTD_news.1.d
 	picture = GFX_news_event_USA_hawaiian_missile_crisis
 
 	is_triggered_only = yes
 
 	option = {
-		name = TTD_news.5.a
+		name = TTD_news.1.a
 	}
 }
 news_event = { # Kathmandu Catastrophe
-	id = TTD_news.6
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.6" }
-	title = TTD_news.6.t
-	desc = TTD_news.6.d
+	id = TTD_nepal_news.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_nepal_news.1" }
+	title = TTD_nepal_news.1.t
+	desc = TTD_nepal_news.1.d
 	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
 
 	is_triggered_only = yes
 
 	option = {
-		name = TTD_news.6.a
+		name = TTD_nepal_news.1.a
 	}
 }
 news_event = { # NEP Joins AZH
-	id = TTD_news.7
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.7" }
-	title = TTD_news.7.t
-	desc = TTD_news.7.d
+	id = TTD_nepal_news.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_nepal_news.2" }
+	title = TTD_nepal_news.2.t
+	desc = TTD_nepal_news.2.d
 	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
 
 	is_triggered_only = yes
 
 	option = {
-		name = TTD_news.7.a
-	}
-}
-news_event = { # Siege of Peshawar
-	id = TTD_news.8
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.8" }
-	title = TTD_news.8.t
-	desc = TTD_news.8.d
-	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
-
-	is_triggered_only = yes
-
-	option = {
-		name = TTD_news.8.a
-	}
-}
-news_event = { # Afghanistan Breaks the Siege
-	id = TTD_news.9
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.9" }
-	title = TTD_news.9.t
-	desc = TTD_news.9.d
-	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
-
-	is_triggered_only = yes
-
-	option = {
-		name = TTD_news.9.a
-	}
-}
-news_event = { # Peshawar in Anarchy
-	id = TTD_news.10
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.10" }
-	title = TTD_news.10.t
-	desc = TTD_news.10.d
-	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
-
-	is_triggered_only = yes
-
-	option = {
-		name = TTD_news.10.a
+		name = TTD_nepal_news.2.a
 	}
 }
 news_event = { # Congress gets re-election
-	id = TTD_news.11
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.11" }
-	title = TTD_news.11.t
-	desc = TTD_news.11.d
+	id = TTD_nepal_news.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_nepal_news.3" }
+	title = TTD_nepal_news.3.t
+	desc = TTD_nepal_news.3.d
 	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
 
 	is_triggered_only = yes
 
 	option = {
-		name = TTD_news.11.a
+		name = TTD_nepal_news.3.a
 	}
 }
 news_event = { # Communist gets election
-	id = TTD_news.12
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.12" }
-	title = TTD_news.12.t
-	desc = TTD_news.12.d
+	id = TTD_nepal_news.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_nepal_news.4" }
+	title = TTD_nepal_news.4.t
+	desc = TTD_nepal_news.4.d
 	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
 
 	is_triggered_only = yes
 
 	option = {
-		name = TTD_news.12.a
+		name = TTD_nepal_news.4.a
 	}
 }
-news_event = { # NEP Joins RoI
-	id = TTD_news.13
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.13" }
-	title = TTD_news.13.t
-	desc = TTD_news.13.d
+news_event = { # NEP Joins RoI #monarchist
+	id = TTD_nepal_news.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_nepal_news.5" }
+	title = TTD_nepal_news.5.t
+	desc = TTD_nepal_news.5.d
 	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
 
 	is_triggered_only = yes
 
 	option = {
-		name = TTD_news.13.a
+		name = TTD_nepal_news.5.a
+	}
+}
+
+news_event = { # Siege of Peshawar
+	id = TTD_pak_news.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.1" }
+	title = TTD_pak_news.1.t
+	desc = TTD_pak_news.1.d
+	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_pak_news.1.a
+	}
+}
+news_event = { # Afghanistan Breaks the Siege
+	id = TTD_pak_news.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.2" }
+	title = TTD_pak_news.2.t
+	desc = TTD_pak_news.2.d
+	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_pak_news.2.a
+	}
+}
+news_event = { # Peshawar in Anarchy
+	id = TTD_pak_news.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.3" }
+	title = TTD_pak_news.3.t
+	desc = TTD_pak_news.3.d
+	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_pak_news.3.a
+	}
+}
+news_event = { # Skirmishes near Arunachal
+	id = TTD_bhutan_news.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_bhutan_news.1" }
+	title = TTD_bhutan_news.1.t
+	desc = TTD_bhutan_news.1.d
+	picture = GFX_news_event_arunachal_skirmishes
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_bhutan_news.1.a
 	}
 }

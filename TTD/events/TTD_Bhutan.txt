@@ -68,6 +68,15 @@ country_event = {
 		        id = azad.2
 			}
 		}
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_bhutan_news.1      #skirmishes in Mcmahon line
+					days = 1
+				}
+			}
+		}
 		ai_chance = { factor = 90 }
 	}
 }

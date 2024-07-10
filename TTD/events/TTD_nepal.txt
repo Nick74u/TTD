@@ -97,7 +97,7 @@ country_event = { # Soooooo, the king abdicated
 			every_country = {
 				limit = { is_ai = no }
 				news_event = {
-					id = TTD_news.6       #Kathmandu catastrophe world news event
+					id = TTD_nepal_news.1       #Kathmandu catastrophe world news event
 					days = 8
 				}
 			}
@@ -255,6 +255,13 @@ country_event = { # we gon join the war now
         }
 		add_state_claim = 1949 # closest states to Nepal
 		add_state_claim = 1948
+		every_country = {
+			limit = { is_ai = no }
+			news_event = {
+				id = TTD_nepal_news.2       #Republican Nepal joins AZH world news
+				days = 8
+			}
+		}
 	}
 }
 
@@ -367,6 +374,13 @@ country_event = { # For monarchist path, joining AZH
 		}
 		add_state_claim = 1948 
 		add_state_claim = 1949
+		every_country = {
+			limit = { is_ai = no }
+			news_event = {
+				id = TTD_nepal_news.2       #Placeholder until Monarchist join event appears
+				days = 8
+			}
+		}
 	}
 }
 
@@ -395,6 +409,15 @@ country_event = { # For monarchist path, joining IND
             target = AZH
             type = annex_everything
         }
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_nepal_news.5      #re-election world news
+					days = 1
+				}
+			}
+		}
 	}
 }
 
@@ -444,7 +467,7 @@ country_event = { # Elections
 			every_country = {
 				limit = { is_ai = no }
 				news_event = {
-					id = TTD_news.11       #re-election world news
+					id = TTD_nepal_news.3      #re-election world news
 					days = 1
 				}
 			}
@@ -469,7 +492,7 @@ country_event = { # Elections
 			every_country = {
 				limit = { is_ai = no }
 				news_event = {
-					id = TTD_news.12       #re-election world news
+					id = TTD_nepal_news.4      #re-election world news
 					days = 1
 				}
 			}
