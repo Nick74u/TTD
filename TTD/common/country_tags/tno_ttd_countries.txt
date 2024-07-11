@@ -3,6 +3,8 @@
 FBH= "countries/Free Bhutan.txt"
 SIK= "countries/Sikkim.txt"
 KIR= "countries/Kashmir.txt"		
+SPU= "countries/South Punjab.txt"	
+BAR= "countries/South Punjab.txt"	
 
 # DONT DELETE BELOW OR KASHMIR WILL DESTROY THE MOD!! THIS IS THE ONLY THING HOLDING BACK KASHMIR'S POWER!!!
 #SPENT a DAY figuring it out and it was this

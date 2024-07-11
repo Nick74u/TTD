@@ -1,0 +1,57 @@
+﻿division_template = {
+	name = "PAKISTANMILITIA"
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+	}
+}
+
+units = {
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 16006 # capital
+		division_template = "PAKISTANMILITIA"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 16006 # capital
+		division_template = "PAKISTANMILITIA" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 16006 # capital
+		division_template = "PAKISTANMILITIA"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 16006 # capital
+		division_template = "PAKISTANMILITIA" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+}

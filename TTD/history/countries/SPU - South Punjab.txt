@@ -1,28 +1,11 @@
-﻿capital = 1341
+﻿capital = 1894
 
 # Vacant
-recruit_character = SIK_Generic_Vacant
-
-recruit_character = SIK_Tashi_Namgyal
-recruit_character = SIK_Palden_Namgyal
-
-
-oob = "NEP_1962"
-
-set_politics = {
-	ruling_party = despotism
-	last_election = "1962.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-
-set_popularities = {
-	despotism = 100
-}
+recruit_character = SPU_Generic_Vacant
 
 add_ideas = {
 	#STARTING
-	Sphere_Coequal
+	
 	#MINISTERS
 	#POLITICAL
 	tno_political_parties_one_party_state

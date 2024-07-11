@@ -1,0 +1,161 @@
+PAK_SPU_victory = {
+	log = "[GetDateText]: [Root.GetTag]: PAK_SPU_victory; Executing." 
+	clr_global_flag = pak_west_war
+    SPU = {
+		annex_country = {
+			target = KLT
+			transfer_troops = no
+		}
+       every_owned_state = {
+            limit = { is_core_of = KLT }
+			add_core_of = SPU
+        }
+	}
+	KLT = {
+		add_state_core = 445
+		transfer_state = 445
+		add_state_core = 444
+		transfer_state = 444
+		add_state_core = 1533
+		transfer_state = 1533
+	}
+	AFG = {
+		country_event = {
+			id = pakistan.9
+			days = 1
+		}
+	}
+	set_global_flag = pak_spu_victory  #eventually, this will be in use
+	KLT_vs_SPU_closing = yes
+	
+}
+PAK_KLT_victory = {
+	log = "[GetDateText]: [Root.GetTag]: PAK_KLT_victory; Executing." 
+	clr_global_flag = pak_west_war
+    KLT = {
+       every_owned_state = {
+            limit = { is_core_of = SPU }
+			add_core_of = KLT
+        }
+	}
+	PAK = {
+		country_event = {
+			id = pakistan.12
+			days = 1
+		}
+	}
+	set_global_flag = pak_klt_victory  #eventually, this will be in use
+	KLT_vs_SPU_closing = yes
+	
+}
+KLT_vs_SPU_closing = {
+	log = "[GetDateText]: [Root.GetTag]: KLT_vs_SPU_closing; Executing."
+	SPU = { white_peace = KLT }
+	PAK = {
+		remove_ideas = PAK_defend_our_revolt
+	}
+	SPU = {
+		remove_ideas = SPU_kill_em_all
+	}
+}
+PAK_BAR_victory = {
+	log = "[GetDateText]: [Root.GetTag]: PAK_BAR_victory; Executing."
+	PAK = {
+       every_owned_state = {
+            limit = { is_core_of = BAR }
+			add_core_of = PAK
+        }
+	}
+}
+SoPfail_AFG_victory = {
+	log = "[GetDateText]: [Root.GetTag]: SoPfail_PAK_victory; Executing."
+	AFG = {
+		every_owned_state = {
+            limit = { is_core_of = PAK }
+			transfer_state_to = MFP
+        }
+	}
+	MFP = {
+		every_owned_state = {
+            limit = { is_core_of = PAK }
+			remove_core_of = PAK
+        }
+	}
+}
+SoPfail_PAK_victory = {
+	log = "[GetDateText]: [Root.GetTag]: SoPfail_PAK_victory; Executing."
+	PAK = {
+		annex_country = {
+			target = MFP
+			transfer_troops = yes
+		}
+	}
+	PAK = {
+       every_owned_state = {
+            limit = { is_core_of = MFP }
+			add_core_of = PAK
+        }
+		country_event = {
+			id = pakistan.19
+			days = 27
+		}
+	}
+	PAK = {
+		remove_ideas = PAK_bloodied_but_not_defeated
+		remove_ideas = PAK_bloodied_but_not_defeated_2
+	}
+	clr_global_flag = sopfailpakwar
+}
+PvA_PAK_victory = {
+	log = "[GetDateText]: [Root.GetTag]: PvA_PAK_victory; Executing."
+	AFG = { white_peace = PAK }
+	AFG = { white_peace = SPU }
+	MFP = {
+		transfer_state = 442
+		transfer_state = 1894
+		transfer_state = 1895
+		transfer_state = 1896
+		transfer_state = 1897
+		transfer_state = 1898	
+		transfer_state = 1899	
+		set_cosmetic_tag = MFP_AFG
+	}
+	AFG = {
+		set_autonomy = {
+			target = MFP
+			autonomous_state = autonomy_military_district
+		}
+	}
+	SPU = {
+		transfer_state = 1892
+		transfer_state = 1893
+		transfer_state = 1534
+		transfer_state = 1891
+		transfer_state = 749
+		set_cosmetic_tag = SPU_AFG
+	}
+	AFG = {
+		set_autonomy = {
+			target = SPU
+			autonomous_state = autonomy_military_district
+		}
+	}
+	IND = {
+		add_state_core = 265
+		transfer_state = 265
+		add_state_core = 928
+		transfer_state = 928
+		add_state_core = 1914
+		transfer_state = 1914	
+	}
+	country_event = {
+		id = pakistan.19
+		days = 27
+	}
+	PAK = {
+		remove_ideas = PAK_bloodied_but_not_defeated
+		remove_ideas = PAK_bloodied_but_not_defeated_2
+	}
+}
+
+

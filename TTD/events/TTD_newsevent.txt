@@ -13,7 +13,7 @@ news_event = { # Indian Wars
 	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_Indian_war_news.1" }
 	title = TTD_Indian_war_news.1.t
 	desc = TTD_Indian_war_news.1.d
-	picture = GFX_news_event_USA_hawaiian_missile_crisis
+	picture = GFX_news_event_india_wars
 
 	is_triggered_only = yes
 
@@ -44,12 +44,12 @@ news_event = { # Ceasefire
 		name = TTD_Indian_war_news.2.a
 	}
 }
-news_event = { # Afghanistan joins in the rumble
+news_event = { # Pakistan Joins war
 	id = TTD_Indian_war_news.3
 	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_Indian_war_news.3" }
 	title = TTD_Indian_war_news.3.t
 	desc = TTD_Indian_war_news.3.d
-	picture = GFX_news_event_USA_hawaiian_missile_crisis
+	picture = GFX_news_event_pakistan_joins_war
 
 	is_triggered_only = yes
 
@@ -62,7 +62,7 @@ news_event = { # Azad victory
 	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_Indian_war_news.4" }
 	title = TTD_Indian_war_news.4.t
 	desc = TTD_Indian_war_news.4.d
-	picture = GFX_news_event_USA_hawaiian_missile_crisis
+	picture = GFX_news_event_Azad_victory
 
 	is_triggered_only = yes
 
@@ -154,7 +154,7 @@ news_event = { # Siege of Peshawar
 	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.1" }
 	title = TTD_pak_news.1.t
 	desc = TTD_pak_news.1.d
-	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
+	picture = GFX_news_event_siege_of_peshawar
 
 	is_triggered_only = yes
 
@@ -167,7 +167,7 @@ news_event = { # Afghanistan Breaks the Siege
 	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.2" }
 	title = TTD_pak_news.2.t
 	desc = TTD_pak_news.2.d
-	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
+	picture = GFX_news_event_afghanistan_breaks_siege
 
 	is_triggered_only = yes
 
@@ -180,7 +180,7 @@ news_event = { # Peshawar in Anarchy
 	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.3" }
 	title = TTD_pak_news.3.t
 	desc = TTD_pak_news.3.d
-	picture = GFX_news_event_Nepal_Kathmandu_catastrophe
+	picture = GFX_news_event_peshawar_devolves_anarchy
 
 	is_triggered_only = yes
 

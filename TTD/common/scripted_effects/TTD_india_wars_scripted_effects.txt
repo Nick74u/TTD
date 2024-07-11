@@ -1,9 +1,16 @@
 india_war_start = {
 	log = "[GetDateText]: [Root.GetTag]: india_war_start; Executing." 
-    AFG = {
-        country_event = {
-		    days = 2
-		    id = afghan.1
+    if = {
+		limit = {
+			country_exists = PAK
+		}
+		PAK = {
+			country_event = {
+				id = afghan.1
+				days = 21
+			}
+			load_oob = "TTD_PAK"
+			load_oob = "TTD_PAK"
 		}
 	}
 	JAP = {
@@ -54,10 +61,6 @@ india_war_start = {
 		load_oob = "IND_1962"
 		load_oob = "IND_1962"
 		add_ideas = SOA_indian_wars
-	}
-	AFG = {
-		load_oob = "AFG_1962"
-		load_oob = "AFG_1962"
 	}
 }
 India_war_azad_leaning = { #DOES NOTHING 
@@ -194,7 +197,7 @@ india_azad_war_closing = {
 		TNO_clear_num_volunteers = yes
 	}
 	GER = {
-		set_temp_variable = { target = AFG }
+		set_temp_variable = { target = PAK }
 		TNO_clear_num_volunteers = yes
 	}
 	clr_global_flag = azad_war
@@ -204,7 +207,7 @@ india_azad_war_closing = {
 	AZH = {
 		remove_ideas = SOA_indian_wars
 	}
-	AFG = {
+	PAK = {
 		remove_ideas = SOA_indian_wars
 	}
 }
@@ -277,22 +280,46 @@ azad_hind_victory = {
 			}
 		}
 	}
-    KIR = {
-		add_state_core = 1318
-		transfer_state = 1318
-		add_state_core = 441
-		transfer_state = 441
-		add_state_core = 236
-		transfer_state = 236
-		add_state_core = 927
-		transfer_state = 927
+	if = {
+		limit = {
+			country_exists = PAK
+		}
+		KIR = {
+			add_state_core = 1318
+			transfer_state = 1318
+			add_state_core = 441
+			transfer_state = 441
+			add_state_core = 927
+			transfer_state = 927
+		}
+		PAK = {
+			add_state_core = 433
+			transfer_state = 433
+			add_state_core = 928
+			transfer_state = 928
+			add_state_core = 236
+			transfer_state = 236
+		}
 	}
-	MFP = {
-		add_state_core = 433
-		transfer_state = 433
-		add_state_core = 928
-		transfer_state = 928
+	else = {
+		KIR = {
+			add_state_core = 1318
+			transfer_state = 1318
+			add_state_core = 441
+			transfer_state = 441
+			add_state_core = 236
+			transfer_state = 236
+			add_state_core = 927
+			transfer_state = 927
+		}
+		MFP = {
+			add_state_core = 433
+			transfer_state = 433
+			add_state_core = 928
+			transfer_state = 928
+		}
 	}
+   
 	AZH = {
 		annex_country = {
 			target = IND

@@ -125,11 +125,11 @@ country_event = {
 				}
 			}
 		}
-		create_faction = Afghan_Front
+		create_faction = Pakistan_Front
 
 		GER = {
 		    set_country_flag = may_send_volunteers
-			set_temp_variable = { target = AFG }
+			set_temp_variable = { target = PAK }
 			set_temp_variable = { number = 1 }
 			TNO_set_num_volunteers = yes
 		}

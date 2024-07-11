@@ -12,6 +12,9 @@ on_actions = {
 			SIK = {
 				country_event = { id = sikkim.1 days = 700 } #Death of Tashi Namgyal
 			}
+			MFP = {
+				country_event = { id = pakistan.1 days = 624 } #SOP initiate
+			}
 		}
 	}
 }

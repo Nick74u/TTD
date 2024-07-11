@@ -1,0 +1,782 @@
+﻿###PAK Events
+####Made by:          ########
+                   #### ######                ### #   #  ###
+				   #### #    #               #    #   # #
+				   #### ######                ##  #   #  ##
+				   ####	     #                  # #   #    #
+					 ##      #               ###   ###  ###
+					 #########
+add_namespace = pakistan
+
+country_event = { ##### Demilitarize event 1 October 7, 1963
+	id = pakistan.1
+	title = pakistan.1.t
+	desc = pakistan.1.d
+	
+	is_triggered_only = yes
+	
+	option = { # peshawar gets demi
+		name = pakistan.1.a
+		1896 = {
+			set_demilitarized_zone = yes
+		}
+		hidden_effect = {
+			country_event = {
+				id = pakistan.2
+				days = 12
+			}
+		}
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = { ##### Demilitarize event 2
+	id = pakistan.2
+	title = pakistan.2.t
+	desc = pakistan.2.d
+	
+	is_triggered_only = yes
+	
+	option = { #countryside gets demi
+		name = pakistan.2.a
+		1898 = {
+			set_demilitarized_zone = yes
+		}
+		1897 = {
+			set_demilitarized_zone = yes
+		}
+		hidden_effect = {
+			country_event = {
+				id = pakistan.3
+				days = 12
+			}
+		}
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = { ##### Siege of Peshawar
+	id = pakistan.3
+	title = pakistan.3.t
+	desc = pakistan.3.d
+	
+	is_triggered_only = yes
+	
+	option = { #Siege of pesh moment
+		name = pakistan.3.a
+		1899 = {
+			set_demilitarized_zone = yes
+		}
+		every_owned_state = {
+            limit = { is_core_of = MFP }
+			add_core_of = PAK
+        }
+		hidden_effect = {
+			country_event = {
+				id = pakistan.4
+				days = 21
+			}
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_pak_news.1       #Siege of pesh world news
+					days = 8
+				}
+			}
+		}
+		
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = { ##### gambling if siege break or not
+	id = pakistan.4
+	title = pakistan.4.t
+	desc = pakistan.4.d
+	
+	is_triggered_only = yes
+	
+	option = { #do you like gambling?
+		name = pakistan.4.a
+		random_list = {
+			50 = {
+				country_event = {
+					days = 7
+					id = pakistan.5    #Pak success
+				}
+			}
+			50 = {
+				country_event = {
+					days = 7
+					id = pakistan.13  #afghanistan breaks siege
+				}
+			}
+		}
+	}
+}
+country_event = { ##### Peshawar turns to anarchy, MFP collapses
+	id = pakistan.5
+	title = pakistan.5.t
+	desc = pakistan.5.d
+	
+	is_triggered_only = yes
+	
+	option = { #anarchy
+		name = pakistan.5.a
+	
+		every_owned_state = {
+			set_demilitarized_zone = yes
+        }
+		hidden_effect = {
+			country_event = {
+				id = pakistan.6
+				days = 14
+			}
+		}
+		
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = { ##### Pakistan eats up MFP
+	id = pakistan.6
+	title = pakistan.6.t
+	desc = pakistan.6.d
+	
+	is_triggered_only = yes
+	
+	option = { #Siege of pesh moment
+		name = pakistan.6.a
+		MFP = {
+			every_owned_state = {
+				set_demilitarized_zone = no
+			}
+		}
+		PAK = {
+			annex_country = {
+				target = MFP
+				transfer_troops = no
+			}
+			set_capital = {
+				state = 1896
+			}
+			load_oob = "TTD_PAK"
+			set_cosmetic_tag = PAK_REB
+			hidden_effect = {
+				IND = {
+					country_event = {
+						id = pakistan.7
+						days = 27
+					}
+				}
+			}
+		}
+		PAK = { change_tag_from = MFP }
+		
+		every_country = {
+			limit = { is_ai = no }
+			news_event = {
+				id = TTD_pak_news.3       #Siege of pesh world news
+				days = 8
+			}
+		}
+		
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = { ##### Indian-Afghani Non-aggression deal
+	id = pakistan.7
+	title = pakistan.7.t
+	desc = pakistan.7.d
+	
+	is_triggered_only = yes
+	
+	option = { #peace in our time
+		name = pakistan.7.a
+		
+		diplomatic_relation = {
+			country = AFG
+			relation = non_aggression_pact
+			active = yes
+		}
+		#every_country = {
+		#	limit = { is_ai = no }
+		#	#news_event = {
+		#	#	id = TTD_pak_news.3      nothing happens as of now
+		#	#	days = 8
+		#	#}
+		#}
+		hidden_effect = {
+			PAK = {
+				country_event = {
+					id = pakistan.8
+					days = 5
+				}
+			}
+		}
+		
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = { ##### AFG ANGRY!! South Punjab goes to kill Kalat
+	id = pakistan.8
+	title = pakistan.8.t
+	desc = pakistan.8.d
+	
+	is_triggered_only = yes
+	
+	option = { #GRR
+		name = pakistan.8.a
+		set_global_flag = pak_west_war
+		SPU = {
+			add_state_core = 1894
+			transfer_state = 1894
+			add_state_core = 1890
+			transfer_state = 1890
+			add_state_core = 1893
+			transfer_state = 1893	
+			set_capital = {
+				state = 1894
+			}
+			load_oob = "TTD_SPU"
+			every_owned_state = {
+				limit = { is_core_of = AFG }
+				add_core_of = SPU
+			}
+		}
+		AFG = { 
+			set_autonomy = {
+			    target = KLT
+				autonomous_state = autonomy_free
+			}
+		}
+		AFG = {
+		    declare_war_on = {
+			    target = PAK
+				type = annex_everything
+			}
+		}
+		SPU = {
+		    declare_war_on = {
+			    target = KLT
+				type = annex_everything
+			}
+		}
+		IND = {
+			every_owned_state = {
+				limit = {
+					any_neighbor_state = {
+						OR = {
+							is_owned_by = KLT
+							is_owned_by = SPU
+						}
+					}
+				}
+				set_state_flag = to_be_demil
+			}
+			every_owned_state = {
+				limit = { has_state_flag = to_be_demil }
+				set_demilitarized_zone = yes
+			}
+		}
+		SPU = {
+			add_ideas = SPU_kill_em_all
+		}
+		PAK = {
+			add_ideas = PAK_defend_our_revolt
+		}
+		
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = { ##### For Afghanistan: KALAT LOST, ALSO PAK STILL AINT DEAD
+	id = pakistan.9
+	title = pakistan.9.t
+	desc = pakistan.9.d
+	
+	is_triggered_only = yes
+	
+	option = { #this was not my idea
+		name = pakistan.9.a
+	
+		AFG = { white_peace = PAK }
+		PAK = {
+			add_state_core = 1889
+			transfer_state = 1889
+			add_state_core = 929
+			transfer_state = 929
+		}
+		#TAJ = {
+		#	add_state_core = 1465
+		#	transfer_state = 1465
+		#}
+		hidden_effect = {
+			PAK = {
+				country_event = {
+					id = pakistan.10
+					days = 14
+				}
+			}
+		}
+		
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = { ##### Leadership change
+	id = pakistan.10
+	title = pakistan.10.t
+	desc = pakistan.10.d
+	
+	is_triggered_only = yes
+	
+	option = { #Pak elections placeholder
+		name = pakistan.10.a
+		
+		#Where are the candidates? -idk, probably on vacation
+		annex_country = {
+			target = SPU
+			transfer_troops = no
+		}
+		every_owned_state = {
+            limit = { is_core_of = SPU }
+			add_core_of = PAK
+        }
+		drop_cosmetic_tag = yes
+		BAR = {
+			annex_country = {
+				target = KLT
+				transfer_troops = no
+			}
+			every_owned_state = {
+				limit = { is_core_of = KLT }
+				add_core_of = SPU
+			}
+			load_oob = "TTD_BAR"
+		}
+		hidden_effect = {
+			country_event = {
+				id = pakistan.11
+				days = 84
+			}
+		}
+		
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = { ##### murder west kalat now
+	id = pakistan.11
+	title = pakistan.11.t
+	desc = pakistan.11.d
+	
+	is_triggered_only = yes
+	
+	option = { #WE KILL NOW
+		name = pakistan.11.a
+		PAK = {
+		    declare_war_on = {
+			    target = BAR
+				type = annex_everything
+			}
+		}
+	}
+}
+####KLT VS SPU, SPU LOSES
+country_event = { ##### rip
+	id = pakistan.12
+	title = pakistan.12.t
+	desc = pakistan.12.d
+	
+	is_triggered_only = yes
+	
+	option = { #PEACE!!!!!!!!!!!!!!!!!!
+		name = pakistan.12.a
+		PAK = { white_peace = AFG }
+		drop_cosmetic_tag = yes
+		set_politics = {
+			ruling_party = despotism
+		}
+		set_popularities = {
+			conservatism = 10
+			paternalism = 26
+			despotism = 64
+		}
+		AFG = { 
+			set_autonomy = {
+			    target = KLT
+				autonomous_state = autonomy_satellite
+			}
+		}
+	}
+}
+####Afghanistan breaks the siege!
+country_event = { ##### wop
+	id = pakistan.13
+	title = pakistan.13.t
+	desc = pakistan.13.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pakistan.13.a
+		1896 = {
+			set_demilitarized_zone = no
+		}
+		hidden_effect = {
+			country_event = {
+				id = pakistan.14
+				days = 12
+			}
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_pak_news.2       #Afghans break siege world news
+					days = 1
+				}
+			}
+		}
+	}
+}
+country_event = { ##### spacing
+	id = pakistan.14
+	title = pakistan.14.t
+	desc = pakistan.14.d
+	
+	is_triggered_only = yes
+	
+	option = { #
+		name = pakistan.14.a
+		
+		hidden_effect = {
+			country_event = {
+				id = pakistan.15
+				days = 12
+			}
+		}
+	}
+}
+country_event = { ##### Pak moves north
+	id = pakistan.15
+	title = pakistan.15.t
+	desc = pakistan.15.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pakistan.15.a
+		1899 = {
+			set_demilitarized_zone = no
+		}
+		1897 = {
+			set_demilitarized_zone = no
+		}
+		1898 = {
+			set_demilitarized_zone = no
+		}
+		PAK = {
+			add_state_core = 1899
+			transfer_state = 1899
+			add_state_core = 1897
+			transfer_state = 1897
+			add_state_core = 1898
+			transfer_state = 1898
+			set_capital = {
+				state = 1899
+			}
+			set_cosmetic_tag = PAK_REB
+			add_ideas = PAK_bloodied_but_not_defeated
+		}
+		PAK = { change_tag_from = MFP }
+		hidden_effect = {
+			country_event = {
+				id = pakistan.16
+				days = 12
+			}
+		}
+	}
+}
+country_event = { ##### countdown till afghanistan murders Pak
+	id = pakistan.16
+	title = pakistan.16.t
+	desc = pakistan.16.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pakistan.16.a
+		
+		PAK = {
+			load_oob = "TTD_PAK_sopfail"
+		}
+		hidden_effect = {
+			country_event = {
+				id = pakistan.17
+				days = 42
+			}
+		}
+	}
+}
+country_event = { ##### Knock knock Pakistan
+	id = pakistan.17
+	title = pakistan.17.t
+	desc = pakistan.17.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pakistan.17.a
+		
+		AFG = {
+		    declare_war_on = {
+			    target = PAK
+				type = annex_everything
+			}
+			create_faction = Kill_pak
+		}
+		KLT = {
+			add_ideas = KLT_sleeping
+		}
+		set_global_flag = sopfailpakwar
+	}
+}
+#Pakistan defends itself (must survive for 80 days, and capitulate FP)
+country_event = { ##### Pak ceasefire till round 2
+	id = pakistan.18
+	title = pakistan.18.t
+	desc = pakistan.18.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pakistan.18.a
+		
+		AFG = { white_peace = PAK }
+		SoPfail_PAK_victory = yes
+		hidden_effect = {
+			country_event = {
+				id = pakistan.19
+				days = 31
+			}
+		}
+	}
+}
+country_event = { ##### West india revolt
+	id = pakistan.19
+	title = pakistan.19.t
+	desc = pakistan.19.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pakistan.19.a
+		IND = {
+			265 = {
+				set_demilitarized_zone = yes
+			}
+			928 = {
+				set_demilitarized_zone = yes
+			}
+			1914 = {
+				set_demilitarized_zone = yes
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = pakistan.20
+				days = 42
+			}
+		}
+	}
+}
+country_event = { ##### SPU appears
+	id = pakistan.20
+	title = pakistan.20.t
+	desc = pakistan.20.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pakistan.20.a
+		IND = {
+			265 = {
+				set_demilitarized_zone = no
+			}
+			928 = {
+				set_demilitarized_zone = no
+			}
+			1914 = {
+				set_demilitarized_zone = no
+			}
+		}
+		SPU = {
+			add_state_core = 265
+			transfer_state = 265
+			add_state_core = 928
+			transfer_state = 928
+			add_state_core = 1914
+			transfer_state = 1914	
+			add_state_core = 1893
+			transfer_state = 1893	
+			set_capital = {
+				state = 265
+			}
+			load_oob = "TTD_SPU"
+			every_owned_state = {
+				add_core_of = SPU
+			}
+		}
+		
+		hidden_effect = {
+			country_event = {
+				id = pakistan.21
+				days = 21
+			}
+		}
+	}
+}
+country_event = { ##### KLT vs SPU post west india revolt
+	id = pakistan.21
+	title = pakistan.21.t
+	desc = pakistan.21.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pakistan.21.a
+		AFG = { 
+			set_autonomy = {
+			    target = KLT
+				autonomous_state = autonomy_free
+			}
+			remove_from_faction = KLT
+		}
+		SPU = {
+		    declare_war_on = {
+			    target = KLT
+				type = annex_everything
+			}
+			add_ideas = SPU_kill_em_all
+		}
+		hidden_effect = {
+			country_event = {
+				id = pakistan.22
+				days = 21
+			}
+		}
+	}
+}
+country_event = { ##### Ok, ROUND 2
+	id = pakistan.22
+	title = pakistan.22.t
+	desc = pakistan.22.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pakistan.22.a
+		PAK = { 
+			set_autonomy = {
+			    target = SPU
+				autonomous_state = autonomy_military_district
+			}
+		}
+		AFG = {
+		    declare_war_on = {
+			    target = PAK
+				type = annex_everything
+			}
+			load_oob = "AFG_1962"
+		}
+		PAK = {
+			create_faction = Pak_front
+			add_to_faction = SPU
+		}
+		AFG = {
+			add_to_faction = KLT
+		}
+		KLT = {
+			remove_ideas = KLT_sleeping
+		}
+		set_global_flag = PakvsAFG2
+	}
+}
+country_event = { ##### Pakistan and SPU wins against AFG
+	id = pakistan.23
+	title = pakistan.23.t
+	desc = pakistan.23.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pakistan.23.a
+		AFG = { white_peace = PAK }
+		PAK = {
+			transfer_state = 929
+			transfer_state = 1889
+			transfer_state = 1890
+			add_state_core = 929
+			add_state_core = 1889
+			add_state_core = 1890
+		}
+		SPU = {
+			annex_country = {
+				target = KLT
+				transfer_troops = no
+			}
+		}
+		PAK = {
+			annex_country = {
+				target = SPU
+				transfer_troops = yes
+			}
+			every_owned_state = {
+				limit = { is_core_of = SPU }
+				add_core_of = PAK
+			}
+		}
+		BAR = {
+			transfer_state = 445
+			transfer_state = 444
+			transfer_state = 1533
+		}
+		clr_global_flag = PakvsAFG2
+		hidden_effect = {
+			AFG = {
+				country_event = {
+					id = pakistan.24
+					days = 21
+				}
+			}
+			country_event = {
+				id = pakistan.25
+				days = 21
+			}
+		}
+	}
+}
+country_event = { ##### Tajikistan gets their land back
+	id = pakistan.24
+	title = pakistan.24.t
+	desc = pakistan.24.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pakistan.24.a
+		TAJ = {
+		    transfer_state = 1465
+		}
+	}
+}
+country_event = { ##### Post war shimmy ba bob
+	id = pakistan.25
+	title = pakistan.25.t
+	desc = pakistan.25.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = pakistan.25.a
+		drop_cosmetic_tag = yes
+		PAK = {
+			transfer_state = 236
+			add_state_core = 236
+		}
+	}
+}
+###############END OF PAKISTAN SKELETON TILL 1965###################

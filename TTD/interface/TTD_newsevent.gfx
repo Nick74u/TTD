@@ -8,4 +8,28 @@ spriteTypes = {
 		name = "GFX_news_event_arunachal_skirmishes"
 		texturefile = "gfx/event_pictures/Asia/GFX_news_event_arunachal_skirmishes.dds"
 	}
+	spriteType = {
+		name = "GFX_news_event_siege_of_peshawar"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_siege_of_peshawar.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_peshawar_devolves_anarchy"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_peshawar_devolves_anarchy.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_afghanistan_breaks_siege"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_afghanistan_breaks_siege.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_india_wars"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_india_wars.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_pakistan_joins_war"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_pakistan_joins_war.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_Azad_victory"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_Azad_victory.dds"
+	}
 }

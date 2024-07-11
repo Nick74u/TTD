@@ -1,0 +1,18 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+#####################################################################################################################
+pak_category = {		#ID of category
+	priority = 9		#Determiness the order of display in the decisions tab, the higher the number, the higher it will show up.
+	icon = GFX_BHU_decision_category_districts	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
+	
+	allowed = {
+		tag = PAK
+	}
+	visible = {
+		OR = {
+			has_global_flag = PakvsAFG2
+			has_global_flag = sopfailpakwar
+		}
+	}
+}

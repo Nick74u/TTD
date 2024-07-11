@@ -1,0 +1,82 @@
+ideas = {
+	country = {
+		SPU_kill_em_all = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SPU_kill_em_all" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				army_attack_factor = 0.2
+				ai_focus_aggressive_factor = 10
+			}
+		}
+		PAK_bloodied_but_not_defeated = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAK_bloodied_but_not_defeated" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.1
+				supply_consumption_factor = 0.25
+				industrial_capacity_factory = -0.3
+				ai_focus_defense_factor = 1
+			}
+		}
+		PAK_bloodied_but_not_defeated_2 = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAK_bloodied_but_not_defeated" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.1
+				supply_consumption_factor = 0.15
+				industrial_capacity_factory = -0.1
+				ai_focus_aggressive_factor = 10
+			}
+			targeted_modifier = {
+				tag = MFP
+				attack_bonus_against = 0.3
+				defense_bonus_against = 0.3
+			}
+			targeted_modifier = {
+				tag = AFG
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.3
+			}
+		}
+		PAK_defend_our_revolt = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAK_defend_our_revolt" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				army_core_defence_factor = 0.15
+				ai_focus_defense_factor = 1
+			}
+		}
+		KLT_sleeping = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KLT_sleeping" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				ai_join_ally_desire_factor = -10000
+			}
+		}
+	}
+}
