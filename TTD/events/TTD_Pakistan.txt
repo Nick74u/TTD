@@ -265,6 +265,7 @@ country_event = { ##### AFG ANGRY!! South Punjab goes to kill Kalat
 			    target = KLT
 				type = annex_everything
 			}
+			add_manpower = 100000
 		}
 		IND = {
 			every_owned_state = {
@@ -289,7 +290,13 @@ country_event = { ##### AFG ANGRY!! South Punjab goes to kill Kalat
 		PAK = {
 			add_ideas = PAK_defend_our_revolt
 		}
-		
+		KLT = {
+			every_owned_state = {
+				limit = { is_core_of = KLT }
+				add_core_of = SPU
+			}
+			add_manpower = 100000
+		}
 		ai_chance = { factor = 90 }
 	}
 }
@@ -510,6 +517,7 @@ country_event = { ##### countdown till afghanistan murders Pak
 		
 		PAK = {
 			load_oob = "TTD_PAK_sopfail"
+			add_manpower = 100000
 		}
 		hidden_effect = {
 			country_event = {
@@ -627,6 +635,7 @@ country_event = { ##### SPU appears
 			every_owned_state = {
 				add_core_of = SPU
 			}
+			add_manpower = 100000
 		}
 		
 		hidden_effect = {

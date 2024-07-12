@@ -34,7 +34,6 @@ SPU_war_rush = {
 		tag = SPU
 	}
 	enable = {
-		surrender_progress < 0.1
 		has_war_with = KLT
 	}
 	
@@ -83,7 +82,6 @@ KLT_war_rush = {
 		tag = KLT
 	}
 	enable = {
-		surrender_progress < 0.1
 		has_war_with = SPU
 	}
 	
