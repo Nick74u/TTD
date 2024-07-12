@@ -29,3 +29,44 @@ defined_text = {
 		localization_key = BHU_Laws_Inexistent_Central_Economy_desc
 	}
 }
+
+defined_text = {
+	name = BHU_garrison_text
+	text = {
+		trigger = {
+			check_variable = { Meter_garrison_bar_value < 20 }
+		}
+		localization_key = BHU_garrison_text_insuff
+	}
+	text = {
+		trigger = {
+			check_variable = { Meter_garrison_bar_value < 40 }
+		}
+		localization_key = BHU_garrison_text_low
+	}
+	text = {
+		trigger = {
+			check_variable = { Meter_garrison_bar_value < 60 }
+		}
+		localization_key = BHU_garrison_text_aver
+	}
+	text = {
+		trigger = {
+			check_variable = { Meter_garrison_bar_value < 80 }
+		}
+		localization_key = BHU_garrison_text_med
+	}
+	text = {
+		trigger = {
+			check_variable = { Meter_garrison_bar_value < 101 }
+		}
+		localization_key = BHU_garrison_text_high
+	}
+}
+
+defined_text = {
+	name = BHU_garrison_upper_text
+	text = {
+		localization_key = BHU_garrison_text_up
+	}
+}

@@ -1,0 +1,16 @@
+spriteTypes = {
+	spritetype = {
+		name = "GFX_BHU_Meter_container"
+		texturefile = "gfx/interface/bhutan_gui/garrison/Progbar_garrison_meter.dds"
+	}
+	progressbartype = {
+		name = GFX_BHU_Garrison_Bar
+		textureFile1 = "gfx/interface/bhutan_gui/garrison/Progbar_content_garrison.dds"
+		textureFile2 = "gfx/interface/blank.dds"
+		size = { 
+			x = 393
+			y = 224
+		}
+		effectFile = "gfx/FX/gng_map_fill.lua"
+	}
+}

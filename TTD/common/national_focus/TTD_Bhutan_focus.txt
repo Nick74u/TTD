@@ -59,7 +59,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			set_country_flag = BHU_show_garrison_gui
+			custom_effect_tooltip = BHU_unlocks_garrison_gui
 		}
 	}
 	focus = {

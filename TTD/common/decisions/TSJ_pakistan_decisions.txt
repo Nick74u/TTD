@@ -16,7 +16,7 @@ pak_category = {
 			tag = PAK
 			has_global_flag = sopfailpakwar
 		}
-		cost = 0		#The cost to execute the decision, by default its political power.
+				
 		timeout_effect = {	
 			set_country_flag = PAK_we_hold_out
 			swap_ideas = {

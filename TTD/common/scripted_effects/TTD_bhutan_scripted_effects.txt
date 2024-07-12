@@ -2,4 +2,101 @@ BHU_dynamic_modifiers_setup = {
 	add_dynamic_modifier = { modifier = BHU_leap_forward_dynamic_modifier }
 	set_variable = { BHU_gdp_growth_modifier = 0.00 }
 	set_variable = { BHU_production_units_to_GDP_ratio_modifier = 0.000 }
+	set_variable = { Meter_garrison_bar_value = 50 }
+}
+BHU_add_garrison_var= {
+	clamp_variable = {
+		var = Meter_garrison_bar_value
+		min = 0
+		max = 100
+	}
+}	
+BHU_calculate_garrison= {
+	if = {
+		limit = {
+			check_variable = {
+				Meter_garrison_bar_value < 20
+			}
+		}
+		set_temp_variable = { BHU_garrison_strength_var_temp = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				Meter_garrison_bar_value < 40
+			}
+		}
+		set_temp_variable = { BHU_garrison_strength_var_temp = 1 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				Meter_garrison_bar_value < 60
+			}
+		}
+		set_temp_variable = { BHU_garrison_strength_var_temp = 2 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				Meter_garrison_bar_value < 80
+			}
+		}
+		set_temp_variable = { BHU_garrison_strength_var_temp = 3 }
+	}
+	else = {
+		set_temp_variable = { BHU_garrison_strength_var_temp = 4 }
+	}
+	BHU_update_garrison = yes
+}
+BHU_update_garrison = {
+	set_variable = { BHU_garrison_strength_var = BHU_garrison_strength_var_temp }
+	hidden_effect = {
+		remove_ideas = {
+			BHU_INA_0
+			BHU_INA_1
+			BHU_INA_2
+			BHU_INA_3
+			BHU_INA_4
+		}
+		if = {
+			limit = {
+				check_variable = {
+					BHU_garrison_strength_var = 4
+				}
+			}
+			add_ideas = BHU_INA_4
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					BHU_garrison_strength_var = 3
+				}
+			}
+			add_ideas = BHU_INA_3
+			
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					BHU_garrison_strength_var = 2
+				}
+			}
+			add_ideas = BHU_INA_2
+			
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					BHU_garrison_strength_var = 1
+				}
+			}
+			add_ideas = BHU_INA_1
+			
+		}
+		else = {
+			add_ideas = BHU_INA_0
+		}
+	}
+	add_to_variable = { BHU_garrison_dirty_variable = 0.01 }
 }

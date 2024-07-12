@@ -1,0 +1,26 @@
+scripted_gui = {
+	BHU_Garrison_GUI = {
+		context_type = decision_category
+		window_name = "BHU_Garrison_GUI"
+		dirty = BHU_garrison_dirty_variable #this updates gui btw
+
+		visible = {
+			
+		}
+		effects = {
+			#azad_button_click = {
+			#	set_variable = { BHU_faction_select = 1 }
+			#	add_to_variable = { BHU_map_dirty_variable = 0.01 }
+			#}
+		}
+		triggers = {
+			
+			#azad_selected_visible = {
+			#	check_variable = { BHU_faction_select = 1 }
+			#}
+		}
+		properties = {
+			Meter_garrison_bar = { frame = Meter_garrison_bar_value }
+		}
+	}
+}

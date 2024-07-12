@@ -1,0 +1,57 @@
+guiTypes = {
+	containerWindowType = {
+		name = "BHU_Garrison_GUI"
+		size = { width = 200 height = 350 }
+		position = { x = 0 y = 0 }
+		Orientation = center
+		Origo = center
+		orientation = center
+		click_to_front = no
+		
+		iconType = {
+			name = "Garrison_info"
+			spriteType = "GFX_Burgundy_GUI_Info_Button"
+			position = { x = 456 y = 0 } 
+			pdx_tooltip = TTD_BHU_garrison_Info_tt
+		}
+		containerWindowType = {
+			name = "BHU_Garrison_box"
+			position = { x = 17 y = 90 }
+				
+			#iconType = {
+			#	name = "Meter_container"
+			#	spriteType = "GFX_BHU_Meter_container"
+			#	position = { x = 0 y = 0 } 
+			#}
+			iconType = {
+				name = "Meter_garrison_bar"
+				spriteType = "GFX_Philippines_Reconstruction_Bar"
+				position = { x = 26 y = 0 } 
+			}	
+			iconType = {
+				name = "garrison_outline"
+				spriteType = "GFX_TT_Philippines_Supply_Frame"
+				position = { x = 25 y = 0 }
+			}
+		}
+		
+		instantTextBoxType = {
+			name = "BhutanGarrisonName"
+			position = { x = 25 y = 8 }
+			maxWidth = 345
+			maxHeight = 20
+			format = center 
+			font = "aldrich_24_outline"
+			text = [BHU_garrison_upper_text]
+		}
+		instantTextBoxType = {
+			name = "BhutanGarrisonStatus"
+			position = { x = 25 y = 145 }
+			maxWidth = 345
+			maxHeight = 20
+			format = center 
+			font = "aldrich_24_outline"
+			text = [BHU_garrison_text]
+		}
+	}
+}

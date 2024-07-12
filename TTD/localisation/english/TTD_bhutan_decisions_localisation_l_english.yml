@@ -8,5 +8,10 @@
  bhutan_meeting_category_desc: "§YRequest: [?BHU_demand_req|+=%%]§!\n\n§GSuccess Chance: [?BHU_persuasion_power|+%%=]§!\n\nPLACEHOLDER §Rfail§!!"
  bhutan_demand_investment_decision: "Demand Investment"
  bhutan_demand_investment_decision_desc: "This will increase our §YRequests§!"
+ bhutan_garrison_category: "State of the Garrison"
+ BHU_garrison_decision_1: "Reinforce our Garrisons"
+ BHU_monthly_garrison_check: "Quarterly Garrison Check"
+ BHU_garrison_decision_2: "Request Troops from Azad Hind"
+ BHU_wangchuck_causes_trouble: "The Resistance acts...."
  #####DECISION TOOLTIP######
  azad_hind_poverty_time:0 "Azad Hind Will Inspect Our Current State"

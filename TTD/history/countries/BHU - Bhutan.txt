@@ -44,7 +44,6 @@ add_ideas = {
 	BHU_A_Dragon_Restless
 	BHU_a_general_and_his_army
 	BHU_The_Northern_Frontier
-	BHU_INA_Keeping_Order
 	#MINISTERS
 	BHU_Khaled_Mosharraf_sec
 	BHU_Ian_Cardozo_eco

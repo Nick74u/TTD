@@ -164,6 +164,14 @@ country_event = { ##### Pakistan eats up MFP
 			}
 			load_oob = "TTD_PAK"
 			set_cosmetic_tag = PAK_REB
+			set_politics = {
+				ruling_party = despotism
+			}
+			set_popularities = {
+				conservatism = 10
+				paternalism = 26
+				despotism = 64
+			}
 			hidden_effect = {
 				IND = {
 					country_event = {
@@ -266,6 +274,11 @@ country_event = { ##### AFG ANGRY!! South Punjab goes to kill Kalat
 				type = annex_everything
 			}
 			add_manpower = 100000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = PAK
+			}
 		}
 		IND = {
 			every_owned_state = {
@@ -296,6 +309,11 @@ country_event = { ##### AFG ANGRY!! South Punjab goes to kill Kalat
 				add_core_of = SPU
 			}
 			add_manpower = 100000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = AFG
+			}
 		}
 		ai_chance = { factor = 90 }
 	}
@@ -403,14 +421,7 @@ country_event = { ##### rip
 		name = pakistan.12.a
 		PAK = { white_peace = AFG }
 		drop_cosmetic_tag = yes
-		set_politics = {
-			ruling_party = despotism
-		}
-		set_popularities = {
-			conservatism = 10
-			paternalism = 26
-			despotism = 64
-		}
+		
 		AFG = { 
 			set_autonomy = {
 			    target = KLT
@@ -492,6 +503,19 @@ country_event = { ##### Pak moves north
 			transfer_state = 1898
 			set_capital = {
 				state = 1899
+			}
+			set_politics = {
+				ruling_party = despotism
+			}
+			set_popularities = {
+				conservatism = 10
+				paternalism = 26
+				despotism = 64
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = PAK
 			}
 			set_cosmetic_tag = PAK_REB
 			add_ideas = PAK_bloodied_but_not_defeated
@@ -636,6 +660,11 @@ country_event = { ##### SPU appears
 				add_core_of = SPU
 			}
 			add_manpower = 100000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = PAK
+			}
 		}
 		
 		hidden_effect = {
