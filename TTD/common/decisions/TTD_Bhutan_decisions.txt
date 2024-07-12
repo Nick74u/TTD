@@ -169,6 +169,7 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		days_re_enable = 1	
 
 		visible = {		
+			has_country_flag = BHU_show_garrison_gui
 		}		
 
 		cost = 0		
@@ -196,6 +197,7 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		days_re_enable = 1	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
 
 		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			has_country_flag = BHU_show_garrison_gui
 		}		
 
 		cost = 45		#The cost to execute the decision, by default its political powers
@@ -224,6 +226,7 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		}
 		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.ssssssss
 			tag = BHU
+			has_country_flag = BHU_show_garrison_gui
 		}
 		timeout_effect = {	
 			BHU_calculate_garrison = yes
@@ -248,6 +251,7 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		}
 		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.sssssss
 			tag = BHU
+			has_country_flag = BHU_show_garrison_gui
 		}
 		timeout_effect = {	
 			add_to_variable = { Meter_garrison_bar_value = -10 } 

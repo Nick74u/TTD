@@ -42,12 +42,9 @@ bhutan_garrison_category = {		#ID of categorysssss
 	
 	allowed = {
 		original_tag = BHU
-		has_country_flag = BHU_show_garrison_gui
 	}
 	scripted_gui = BHU_Garrison_GUI
 	visible = {		#Determines what makes this category visibssle, if a category is invisible decisions under that category also will not be visible to the AI/player.
-	   	original_tag = BHU
-
 	}
 	visible_when_empty = yes
 }

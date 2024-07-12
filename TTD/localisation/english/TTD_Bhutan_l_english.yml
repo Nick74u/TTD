@@ -147,7 +147,7 @@ BHU_Laws_Inexistent_Central_Economy_desc:0 "Our economy is trash"
   BHU_mtsho_border_war:0 "We must prepare for the upcoming skirmishes"
   BHU_azad_hind_approves: "Azad Hind gave the greenlight to our war plans"
   TTD_BHU_garrison_number_tt: "Current Garrison strength is [?Meter_garrison_bar_value]"
-  TTD_BHU_garrison_Info_tt: "Keep it up or die"
+  TTD_BHU_garrison_Info_tt: "Kanwal Singh Dalal and his garrison are directly supplied with all of the essentials for their survival within the harsh foreign nation of Bhutan. The junta revieves a monthly convoy from the Kolkota government in order to prepare the Province of Bhutan for statehood in Azad Hind, a tedious process which requires the total elimination of Bhutanese nationalism and hope for self determination. Though Singh is supplied straight from one of the most influential nations in South Asia, him and his garrison still find themselves and most importantly their supplies being harraswed by the Bhotamuzh almost monthly as their supply convoys are required to travel through harsh Himalayan terrain.\n\nThe fate of Bhutan's integration lies not only within the choices of the junta but also that of the resistance.."
   ####FACTION NAME###
   Azad_Front:0 "Indian Liberation Front"
   enemy_attrition:0 "Enemy Attrition"
