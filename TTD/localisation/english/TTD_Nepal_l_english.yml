@@ -1,27 +1,27 @@
 ﻿l_english:
 ### Country Names ###
- NEP: "Nepal"
- NEP_DEF: "the Kingdom of Nepal"
+ NEP: "Kingdom of Nepal"
+ NEP_DEF: "The Kingdom of Nepal"
  NEP_ADJ: "Nepalese"
   
  NEP_REP: "Republic of Nepal"
- NEP_REP_DEF: "the Federal Republic of Nepal"
+ NEP_REP_DEF: "The Socialist Federal Republic of Nepal"
  NEP_REP_ADJ: "Nepalese"
  
- NEP_CON: "Nepal"
- NEP_CON_DEF: "the Constitutional Kingdom of Nepal"
+ NEP_CON: "Kingdom of Nepal"
+ NEP_CON_DEF: "The Constitutional Kingdom of Nepal"
  NEP_CON_ADJ: "Nepalese"
  
  NEP_MIL: "District of Nepal"
- NEP_MIL_DEF: "the Military Occupation Zone of Nepal"
+ NEP_MIL_DEF: "The Military Occupation Zone of Nepal"
  NEP_MIL_ADJ: "Nepalese"
  
  NEP_HIM: "Himalaya"
- NEP_HIM_DEF: "the Himalayan Federation
+ NEP_HIM_DEF: "The Himalayan Federation
  NEP_HIM_ADJ: "Himalayan" 
 
  NEP_PRN: "People's Republic of Nepal"
- NEP_PRN_DEF: "the People's Republic of Nepal"
+ NEP_PRN_DEF: "The People's Republic of Nepal"
  NEP_PRN_ADJ: "Nepalese"
  
  ### Parties ###
@@ -75,8 +75,8 @@ POLITICS_KESHAR_RAYAMAJHI_DESC: "THIS MF HAS A PORTRAIT WTH"
  NEP_Second_Kranti_desc: "Revolution time!!!!"
  NEP_memory_kathmandu: "Memories of Kathmandu"
  NEP_memory_kathmandu_desc: "Lots of people died. we are sad but they forgive us"
- NEP_political_scandal: "Politcal Scandal"
- NEP_political_scandal_desc: "Silly Rana guy in cabinet"
+ NEP_political_scandal: "Rana Scheme"
+ NEP_political_scandal_desc: "The Gorkha Parishad are the last remnants of the Rana dynasty and we have reason to believe that one of the members of the sovreign king himself's cabinet is siphoning government and civillian funds into the GP in secret. If this ends up being true, Kaiser Shumsher Jung Bahadur Rana would be facing the §Rdeath Penalty§! at the least..."
   
 #########ToolTips###
  NEP_dictatorship_face_democracy_tt:0 ""

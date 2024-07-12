@@ -2,7 +2,58 @@
 add_namespace = NEP_skeleton
 add_namespace = NEP_GIWM # Monarchist Path
 add_namespace = NEP_GIW # Leftist Path
-add_namespace = NEP_elec # Elections 
+add_namespace = NEP_elec # Elections
+add_namespace = NEP_ever # Mt everest skeleton
+
+country_event = { # Start of Political scandal
+	id = NEP_skeleton.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_skeleton.8" }
+	title = NEP_skeleton.8.t
+	desc = NEP_skeleton.8.d
+	is_triggered_only
+	fire_only_once = yes
+	
+	option = {
+		name = NEP_skeleton.8.a
+		add_ideas = NEP_political_scandal
+		hidden_effect = {
+			country_event = {
+				id = NEP_skeleton.9
+				days = 428
+			}
+		}
+	}
+}
+
+country_event = { NEP_skeleton.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_skeleton.9" }
+	title = NEP_skeleton.9.t
+	desc = NEP_skeleton.9.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { # Whos gonna climb mount everest!
+		name = NEP_skeleton.9.a
+		random_list = {
+			80 = {
+				NEP = {
+					country_event = {
+					days = 7
+					id = NEP_ever.1
+					}
+				}
+			}
+			20 = {
+				NEP = {
+					country_event = {
+					days = 7
+					id = NEP_ever.2
+					}
+				}
+			}
+		}
+	}
+}
 
 country_event = { # Congressional Riots goes worse
 	id = NEP_skeleton.1
