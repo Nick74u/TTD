@@ -32,4 +32,8 @@ spriteTypes = {
 		name = "GFX_news_event_Azad_victory"
 		texturefile = "gfx/event_pictures/Asia/GFX_news_event_Azad_victory.dds"
 	}
+	spriteType = {
+		name = "GFX_news_event_afghan_roi_cooperation"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_afghan_roi_cooperation.dds"
+	}
 }
