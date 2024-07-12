@@ -115,6 +115,9 @@
   TTD_pak_news.3.t: "[Get_newspaper_header]Peshawar Devolves into Anarchy!"
   TTD_pak_news.3.d: "Pakistan beat Afghanistan so now they are angry. grrrr"
   TTD_pak_news.3.a: "1453 in the Indian Subcontinent"
+  TTD_pak_news.4.t: "[Get_newspaper_header]India and Afghanistan Announce Co-Operation!"
+  TTD_pak_news.4.d: "Yipe! Best Friends for ever!"
+  TTD_pak_news.4.a: "Former Enemies now Turned Allies"
   ## bhutan
   TTD_bhutan_news.1.t: "[Get_newspaper_header]Skirmishes in the McMahon Line"
   TTD_bhutan_news.1.d: "Reports have flooded in of an active strike against Tibet by the Azad Hind Government."

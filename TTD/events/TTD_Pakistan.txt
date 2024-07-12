@@ -15,9 +15,12 @@ country_event = { ##### Demilitarize event 1 October 7, 1963
 	
 	is_triggered_only = yes
 	
-	option = { # peshawar gets demi
+	option = { # North FP becomes demil
 		name = pakistan.1.a
-		1896 = {
+		1899 = {
+			set_demilitarized_zone = yes
+		}
+		1898 = {
 			set_demilitarized_zone = yes
 		}
 		hidden_effect = {
@@ -36,11 +39,8 @@ country_event = { ##### Demilitarize event 2
 	
 	is_triggered_only = yes
 	
-	option = { #countryside gets demi
+	option = { # Rebellion moves south
 		name = pakistan.2.a
-		1898 = {
-			set_demilitarized_zone = yes
-		}
 		1897 = {
 			set_demilitarized_zone = yes
 		}
@@ -60,9 +60,15 @@ country_event = { ##### Siege of Peshawar
 	
 	is_triggered_only = yes
 	
-	option = { #Siege of pesh moment
+	option = { # Move further south and lay siege to Peshawar
 		name = pakistan.3.a
-		1899 = {
+		1895 = {
+			set_demilitarized_zone = yes
+		}
+		442 = {
+			set_demilitarized_zone = yes
+		}
+		1894 = {
 			set_demilitarized_zone = yes
 		}
 		every_owned_state = {
@@ -93,7 +99,7 @@ country_event = { ##### gambling if siege break or not
 	
 	is_triggered_only = yes
 	
-	option = { #do you like gambling?
+	option = { #do you like gambling? Yes I do!
 		name = pakistan.4.a
 		random_list = {
 			50 = {
@@ -195,13 +201,13 @@ country_event = { ##### Indian-Afghani Non-aggression deal
 			relation = non_aggression_pact
 			active = yes
 		}
-		#every_country = {
-		#	limit = { is_ai = no }
-		#	#news_event = {
-		#	#	id = TTD_pak_news.3      nothing happens as of now
-		#	#	days = 8
-		#	#}
-		#}
+		every_country = {
+			limit = { is_ai = no }
+			news_event = {
+				id = TTD_pak_news.4 # News event!
+				days = 8
+			}
+		}
 		hidden_effect = {
 			PAK = {
 				country_event = {

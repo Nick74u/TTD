@@ -201,3 +201,16 @@ news_event = { # Skirmishes near Arunachal
 		name = TTD_bhutan_news.1.a
 	}
 }
+news_event = { # India-Afg Coop
+	id = TTD_pak_news.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.4" }
+	title = TTD_pak_news.4.t
+	desc = TTD_pak_news.4.d
+	picture = GFX_news_event_arunachal_skirmishes
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_pak_news.4.a
+	}
+}
