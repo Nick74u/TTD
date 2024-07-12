@@ -83,6 +83,7 @@ news_event = { # Everest Defeated
 		name = TTD_news.1.a
 	}
 }
+#Nepal
 news_event = { # Kathmandu Catastrophe
 	id = TTD_nepal_news.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_nepal_news.1" }
@@ -188,6 +189,20 @@ news_event = { # Peshawar in Anarchy
 		name = TTD_pak_news.3.a
 	}
 }
+news_event = { # India-Afg Coop
+	id = TTD_pak_news.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.4" }
+	title = TTD_pak_news.4.t
+	desc = TTD_pak_news.4.d
+	picture = GFX_news_event_afghan_roi_cooperation
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_pak_news.4.a
+	}
+}
+#BHUTAN
 news_event = { # Skirmishes near Arunachal
 	id = TTD_bhutan_news.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_bhutan_news.1" }
@@ -199,18 +214,5 @@ news_event = { # Skirmishes near Arunachal
 
 	option = {
 		name = TTD_bhutan_news.1.a
-	}
-}
-news_event = { # India-Afg Coop
-	id = TTD_pak_news.4
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.4" }
-	title = TTD_pak_news.4.t
-	desc = TTD_pak_news.4.d
-	picture = GFX_news_event_arunachal_skirmishes
-
-	is_triggered_only = yes
-
-	option = {
-		name = TTD_pak_news.4.a
 	}
 }
