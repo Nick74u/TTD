@@ -1,0 +1,20 @@
+######################################################
+##########	TIBET	DEFINATELY				##########
+##########		SKELETON	IS NOT			##########
+##########				CONTENT	   ONE EVENT##########
+######################################################
+add_namespace = TIB_ever
+
+country_event = { # we climbed everest yipee!
+	id = TIB_ever.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TIB_ever.1" }
+	title = TIB_ever.1.t
+	desc = TIB_ever.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = TIB_ever.1.a
+		add_ideas = TIB_victors_of_everest
+	}
+}

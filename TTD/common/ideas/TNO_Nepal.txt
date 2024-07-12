@@ -161,6 +161,31 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+		NEP_battle_for_everest = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea NEP_battle_for_everest" }
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = NEP_Second_Sat_Salko_Kranti
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = TIB
+				attack_bonus_against = 0.5
+				trade_opinion_factor = -0.25
+			}
+		}
+		NEP_victors_of_everest = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea NEP_victors_of_everest" }
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = NEP_Second_Sat_Salko_Kranti
+			removal_cost = -1
+		}
 	}
 }
 	

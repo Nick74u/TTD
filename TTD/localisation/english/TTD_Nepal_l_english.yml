@@ -77,7 +77,10 @@ POLITICS_KESHAR_RAYAMAJHI_DESC: "THIS MF HAS A PORTRAIT WTH"
  NEP_memory_kathmandu_desc: "Lots of people died. we are sad but they forgive us"
  NEP_political_scandal: "Rana Scheme"
  NEP_political_scandal_desc: "The Gorkha Parishad are the last remnants of the Rana dynasty and we have reason to believe that one of the members of the sovreign king himself's cabinet is siphoning government and civillian funds into the GP in secret. If this ends up being true, Kaiser Shumsher Jung Bahadur Rana would be facing the §Rdeath Penalty§! at the least..."
-  
+ NEP_battle_for_everest: "The Battle for Mt Everest"
+ NEP_battle_for_everest_desc: "we are fighting over everest with tibet"
+ NEP_victors_of_everest: "Victors of the Struggle for Everest"
+ NEP_victors_of_everest_desc: "We climbed it faster"
 #########ToolTips###
  NEP_dictatorship_face_democracy_tt:0 ""
  NEP_Second_Sat_Salko_Kranti_tt:0 "The 1951 Kranti spelt the end of the Rana dynasty. Will this happen to the Shah's? or is it a distant memory, doomed to be stuck in past?"

@@ -10,7 +10,7 @@ country_event = { # Start of Political scandal
 	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_skeleton.8" }
 	title = NEP_skeleton.8.t
 	desc = NEP_skeleton.8.d
-	is_triggered_only
+	is_triggered_only = yes
 	fire_only_once = yes
 	
 	option = {
@@ -18,40 +18,100 @@ country_event = { # Start of Political scandal
 		add_ideas = NEP_political_scandal
 		hidden_effect = {
 			country_event = {
-				id = NEP_skeleton.9
+				id = NEP_ever.1
 				days = 428
+				id = NEP_skeleton.9
+				days = 70
 			}
 		}
 	}
 }
 
-country_event = { NEP_skeleton.9
+country_event = { # End of Political scandal - Nepal is now out of a security minister
+	id = NEP_skeleton.9
 	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_skeleton.9" }
 	title = NEP_skeleton.9.t
 	desc = NEP_skeleton.9.d
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { # Whos gonna climb mount everest!
-		name = NEP_skeleton.9.a
-		random_list = {
-			80 = {
-				NEP = {
-					country_event = {
-					days = 7
-					id = NEP_ever.1
-					}
+	option = {
+		name = NEP_skeleton9.a
+		remove_ideas = NEP_political_scandal
+		remove_ideas = NEP_Kaiser_Shumsher_Jang_Bahadur_Rana_sec # He got popped, he was also a REALLY good field marshal so Nepal lost that
+	}
+}
+
+country_event = { # Tibet does some illeagal stuff/the battle for everest
+	id = NEP_ever.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_ever.1" }
+	title = NEP_ever.1.t
+	desc = NEP_ever.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { # Gets battle for everest nat spirit
+		name = NEP_ever.1.a
+		add_ideas = NEP_battle_for_everest
+		hidden_effect = {
+			country_event = {
+				id = NEP_ever.2
+				days = 42
+			}
+			
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_nepal_news.6       #Battle for everest
+					days = 8
 				}
 			}
-			20 = {
-				NEP = {
-					country_event = {
-					days = 7
-					id = NEP_ever.2
+		}
+	}
+}
+
+country_event = { # Who Climbs everest?
+	id = NEP_ever.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_ever.2" }
+	title = NEP_ever.2.t
+	desc = NEP_ever.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = NEP_ever.2.a
+			random_list = {
+				80 = {
+					NEP = { # Im definately not biased
+						country_event = {
+						days = 3
+						id = NEP_ever.3
+						}
+					}
+				}
+				20 = {
+					TIB = {
+						country_event = {
+						days = 3
+						id = TIB_ever.1
 					}
 				}
 			}
 		}
+	}
+}
+	
+country_event = { # We climbed everest!
+	id = NEP_ever.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_ever.3" }
+	title = NEP_ever.3.t
+	desc = NEP_ever.3.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = NEP_ever.3.a
+		add_ideas = NEP_victors_of_everest
 	}
 }
 

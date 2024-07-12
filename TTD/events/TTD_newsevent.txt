@@ -7,6 +7,7 @@ add_namespace = TTD_news 								#Misc events and stuff
 add_namespace = TTD_nepal_news 					#News about nepal
 add_namespace = TTD_pak_news 					#news about Pakistan
 add_namespace = TTD_bhutan_news                 #news about Bhutan
+add_namespace = TTD_tibet_news
 
 news_event = { # Indian Wars
 	id = TTD_Indian_war_news.1
@@ -70,6 +71,7 @@ news_event = { # Azad victory
 		name = TTD_Indian_war_news.4.a
 	}
 }
+### MISC ### 
 news_event = { # Everest Defeated
 	id = TTD_news.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.1" }
@@ -147,6 +149,19 @@ news_event = { # NEP Joins RoI #monarchist
 
 	option = {
 		name = TTD_nepal_news.5.a
+	}
+}
+news_event = { # Battle for everest
+	id = TTD_nepal_news.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_nepal_news.6" }
+	title = TTD_nepal_news.6.t
+	desc = TTD_nepal_news.6.d
+	picture = GFX_news_event_battle_for_everest
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_nepal_news.6.a
 	}
 }
 
