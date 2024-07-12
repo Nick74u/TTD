@@ -231,6 +231,8 @@ country_event = { ##### AFG ANGRY!! South Punjab goes to kill Kalat
 			transfer_state = 1890
 			add_state_core = 1893
 			transfer_state = 1893	
+			add_state_core = 1914
+			transfer_state = 1914
 			set_capital = {
 				state = 1894
 			}
@@ -331,7 +333,7 @@ country_event = { ##### Leadership change
 		#Where are the candidates? -idk, probably on vacation
 		annex_country = {
 			target = SPU
-			transfer_troops = no
+			transfer_troops = yes
 		}
 		every_owned_state = {
             limit = { is_core_of = SPU }

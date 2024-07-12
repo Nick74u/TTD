@@ -1,0 +1,238 @@
+SPU_war_strat = {
+	allowed = {
+		tag = SPU
+	}
+	enable = {
+		has_war_with = KLT
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = conquer
+		id = KLT
+		value = 100
+	}
+	ai_strategy = {
+		type = garrison
+		value = -100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = KLT
+		value = 300
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = AFG
+		value = -10000
+	}
+}
+
+SPU_war_rush = {
+	allowed = {
+		tag = SPU
+	}
+	enable = {
+		surrender_progress < 0.1
+		has_war_with = KLT
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = consider_weak
+		id = KLT
+		value = 200
+	}
+}
+
+KLT_war_strat = {
+	allowed = {
+		tag = KLT
+	}
+	enable = {
+		has_war_with = SPU
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = conquer
+		id = SPU
+		value = 100
+	}
+	ai_strategy = {
+		type = garrison
+		value = -100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = SPU
+		value = 300
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = AFG
+		value = -10000
+	}
+}
+
+KLT_war_rush = {
+	allowed = {
+		tag = KLT
+	}
+	enable = {
+		surrender_progress < 0.1
+		has_war_with = SPU
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = consider_weak
+		id = SPU
+		value = 200
+	}
+}
+
+SPU_KLT_end_war = {
+	allowed = {
+		tag = SPU
+		tag = KLT
+	}
+	enable = {
+		has_war = yes
+		date > 1964.2.1
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		tag = SPU
+		tag = KLT
+		execution_type = rush
+		execute_order = yes
+		manual_attack = no
+	}
+}
+BHU_war_strat = {
+	allowed = {
+		tag = BHU
+	}
+	enable = {
+		has_war_with = FBH
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = conquer
+		id = FBH
+		value = 100
+	}
+	ai_strategy = {
+		type = garrison
+		value = -100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = FBH
+		value = 300
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = AZH
+		value = -10000
+	}
+}
+
+BHU_war_rush = {
+	allowed = {
+		tag = BHU
+	}
+	enable = {
+		surrender_progress < 0.1
+		has_war_with = FBH
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = consider_weak
+		id = FBH
+		value = 200
+	}
+}
+
+FBH_war_strat = {
+	allowed = {
+		tag = FBH
+	}
+	enable = {
+		has_war_with = BHU
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = conquer
+		id = FBH
+		value = 100
+	}
+	ai_strategy = {
+		type = garrison
+		value = -100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = FBH
+		value = 300
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = AZH
+		value = -10000
+	}
+}
+
+FBH_war_rush = {
+	allowed = {
+		tag = FBH
+	}
+	enable = {
+		surrender_progress < 0.1
+		has_war_with = BHU
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = consider_weak
+		id = BHU
+		value = 200
+	}
+}
+
+FBH_BHU_end_war = {
+	allowed = {
+		tag = FBH
+		tag = BHU
+	}
+	enable = {
+		has_war = yes
+		date > 1965.10.1
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_control
+		tag = FBH
+		tag = BHU
+		execution_type = rush
+		execute_order = yes
+		manual_attack = no
+	}
+}
