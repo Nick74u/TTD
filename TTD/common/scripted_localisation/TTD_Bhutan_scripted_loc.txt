@@ -70,3 +70,16 @@ defined_text = {
 		localization_key = BHU_garrison_text_up
 	}
 }
+
+defined_text = {
+	name = BHU_road_text
+	text = {
+		trigger = {
+			has_country_flag = BHU_attacking_the_resistance
+		}
+		localization_key = BHU_roads_secured
+	}
+	text = {
+		localization_key = BHU_roads_unsecured
+	}
+}

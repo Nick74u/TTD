@@ -152,7 +152,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			#desc = "POLITICS_TP_ACHARYA_DESC"
+			desc = "POLITICS_TP_ACHARYA_DESC"
 			expire = "1999.1.1"
 			ideology = liberalism_progressive_liberalism_subtype
 			traits = {}

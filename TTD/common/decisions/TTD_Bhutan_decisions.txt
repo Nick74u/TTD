@@ -181,7 +181,7 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		}
 
 		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
-			factor = 0			
+			factor = 100			
 		}
 	}
 	BHU_garrison_decision_2 = {		#ID of the decision, must not contain spaces!
@@ -209,7 +209,7 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		}
 
 		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
-			factor = 0			
+			factor = 150			
 		}
 	}
 	BHU_Safeguard_the_roads = {
@@ -235,6 +235,7 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		}
 
 		days_remove = 30
+		days_re_enable = 60
 		fire_only_once = no
 
 		remove_effect = {
@@ -269,9 +270,6 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		complete_effect = {		#The effects to execute once the envelope icon is clicked.
 			custom_effect_tooltip = "BHU_garrison_check"
 		}
-		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
-			factor = 75		
-		}
 	}	
 	BHU_wangchuck_causes_trouble = {		
 
@@ -292,6 +290,9 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		timeout_effect = {	
 			if = {
 				limit = {
+					not = {
+						has_country_flag = BHU_mtsho_obtained
+					}
 					has_country_flag = BHU_attacking_the_resistance
 				}
 				random_list = {
@@ -309,11 +310,53 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 					}
 				}
 			}
+			else_if = {
+				limit = {
+					not = {
+						has_country_flag = BHU_attacking_the_resistance
+					}
+					has_country_flag = BHU_mtsho_obtained
+				}
+				random_list = {
+					33.3 = {
+						add_to_variable = { Meter_garrison_bar_value = -10 } 
+						custom_effect_tooltip = "wangchuck_causes_trouble_10"
+					}
+					33.3 = {
+						add_to_variable = { Meter_garrison_bar_value = -7 } 
+						custom_effect_tooltip = "wangchuck_causes_trouble_7"
+					}
+					33.4 = {
+						add_to_variable = { Meter_garrison_bar_value = -5 }
+						custom_effect_tooltip = "wangchuck_causes_trouble_5"					
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = BHU_mtsho_obtained
+					has_country_flag = BHU_attacking_the_resistance
+				}
+				random_list = {
+					33.3 = {
+						add_to_variable = { Meter_garrison_bar_value = -7 } 
+						custom_effect_tooltip = "wangchuck_causes_trouble_7"
+					}
+					33.3 = {
+						add_to_variable = { Meter_garrison_bar_value = -5 } 
+						custom_effect_tooltip = "wangchuck_causes_trouble_5"
+					}
+					33.4 = {
+						add_to_variable = { Meter_garrison_bar_value = -3 }
+						custom_effect_tooltip = "wangchuck_causes_trouble_3"					
+					}
+				}
+			}
 			else = {
 				random_list = {
 					33.3 = {
 						add_to_variable = { Meter_garrison_bar_value = -5 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble"
+						custom_effect_tooltip = "wangchuck_causes_trouble_5"
 					}
 					33.3 = {
 						add_to_variable = { Meter_garrison_bar_value = -3 } 
@@ -332,9 +375,6 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		complete_effect = {		#The effects to execute once the envelope icon is clicked.
 			
 			
-		}
-		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
-			factor = 75		
 		}
 	}	
 }

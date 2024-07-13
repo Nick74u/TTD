@@ -53,5 +53,14 @@ guiTypes = {
 			font = "aldrich_24_outline"
 			text = [BHU_garrison_text]
 		}
+		instantTextBoxType = {
+			name = "BhutanRoadStatus"
+			position = { x = 25 y = 245 }
+			maxWidth = 345
+			maxHeight = 20
+			format = center 
+			font = "aldrich_24_outline"
+			text = [BHU_road_text]
+		}
 	}
 }

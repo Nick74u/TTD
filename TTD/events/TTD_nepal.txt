@@ -20,6 +20,8 @@ country_event = { # Start of Political scandal
 			country_event = {
 				id = NEP_ever.1
 				days = 428
+			}
+			country_event = {
 				id = NEP_skeleton.9
 				days = 70
 			}
@@ -81,15 +83,15 @@ country_event = { # Who Climbs everest?
 	option = {
 		name = NEP_ever.2.a
 			random_list = {
-				80 = {
-					NEP = { # Im definately not biased
+				50 = {
+					NEP = { # Im definately not biased - Nah, *50/50s the randomlist
 						country_event = {
 						days = 3
 						id = NEP_ever.3
 						}
 					}
 				}
-				20 = {
+				50 = {
 					TIB = {
 						country_event = {
 						days = 3
