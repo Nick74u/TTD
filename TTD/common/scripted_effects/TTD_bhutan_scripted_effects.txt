@@ -10,6 +10,7 @@ BHU_add_garrison_var= {
 		min = 0
 		max = 100
 	}
+	add_to_variable = { BHU_garrison_dirty_variable = 0.01 }
 }	
 BHU_calculate_garrison= {
 	if = {

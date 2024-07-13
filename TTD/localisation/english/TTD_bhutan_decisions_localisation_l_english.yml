@@ -10,8 +10,9 @@
  bhutan_demand_investment_decision_desc: "This will increase our §YRequests§!"
  bhutan_garrison_category: "State of the Garrison"
  BHU_garrison_decision_1: "Reinforce our Garrisons"
- BHU_monthly_garrison_check: "Quarterly Garrison Check"
+ BHU_monthly_garrison_check: "Monthly Garrison Check"
  BHU_garrison_decision_2: "Request Troops from Azad Hind"
  BHU_wangchuck_causes_trouble: "The Resistance acts...."
+ BHU_Safeguard_the_roads: "Safeguard the Roads"
  #####DECISION TOOLTIP######
  azad_hind_poverty_time:0 "Azad Hind Will Inspect Our Current State"

@@ -171,8 +171,7 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		visible = {		
 			has_country_flag = BHU_show_garrison_gui
 		}		
-
-		cost = 0		
+	
 
 		complete_effect = {		#The effects to execute once the envelope icon is sclickedssssssssssss
 			custom_effect_tooltip = "garrison_decision_1"
@@ -200,7 +199,7 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 			has_country_flag = BHU_show_garrison_gui
 		}		
 
-		cost = 45		#The cost to execute the decision, by default its political powers
+		cost = 25		#The cost to execute the decision, by default its political powers
 
 		complete_effect = {		#The effects to execute once the envelope icon is sclickedssssssssssss
 			custom_effect_tooltip = "garrison_decision_2"
@@ -213,6 +212,40 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 			factor = 0			
 		}
 	}
+	BHU_Safeguard_the_roads = {
+
+		icon = GFX_decision_generic_document
+
+		visible = {
+			has_country_flag = BHU_show_garrison_gui
+			
+		}
+
+		available = {
+			NOT = {
+				has_country_flag = BHU_attacking_the_resistance
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = BHU_attacking_the_resistance
+			add_to_variable = { Meter_garrison_bar_value = -15 } 
+			BHU_add_garrison_var = yes
+			custom_effect_tooltip = "BHU_atr_garrison"
+		}
+
+		days_remove = 30
+		fire_only_once = no
+
+		remove_effect = {
+			clr_country_flag = BHU_attacking_the_resistance
+			
+		}
+		ai_will_do = {
+			factor = 5000
+		}
+	}
+
 	BHU_monthly_garrison_check = {		
 
 		icon = GFX_decision_generic_document		
@@ -224,12 +257,14 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		available = {		
 			always = no
 		}
+		fire_only_once = yes	
 		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.ssssssss
 			tag = BHU
 			has_country_flag = BHU_show_garrison_gui
 		}
 		timeout_effect = {	
 			BHU_calculate_garrison = yes
+			activate_mission = BHU_monthly_garrison_check
 		}
 		complete_effect = {		#The effects to execute once the envelope icon is clicked.
 			custom_effect_tooltip = "BHU_garrison_check"
@@ -249,16 +284,54 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		available = {		
 			always = no
 		}
+		fire_only_once = yes		
 		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.sssssss
 			tag = BHU
 			has_country_flag = BHU_show_garrison_gui
 		}
 		timeout_effect = {	
-			add_to_variable = { Meter_garrison_bar_value = -10 } 
+			if = {
+				limit = {
+					has_country_flag = BHU_attacking_the_resistance
+				}
+				random_list = {
+					33.3 = {
+						add_to_variable = { Meter_garrison_bar_value = 7 } 
+						custom_effect_tooltip = "wangchuck_causes_trouble_atr_7"
+					}
+					33.3 = {
+						add_to_variable = { Meter_garrison_bar_value = 5 } 
+						custom_effect_tooltip = "wangchuck_causes_trouble_atr_5"
+					}
+					33.4 = {
+						add_to_variable = { Meter_garrison_bar_value = 3 }
+						custom_effect_tooltip = "wangchuck_causes_trouble_atr_3"					
+					}
+				}
+			}
+			else = {
+				random_list = {
+					33.3 = {
+						add_to_variable = { Meter_garrison_bar_value = -5 } 
+						custom_effect_tooltip = "wangchuck_causes_trouble"
+					}
+					33.3 = {
+						add_to_variable = { Meter_garrison_bar_value = -3 } 
+						custom_effect_tooltip = "wangchuck_causes_trouble_3"
+					}
+					33.4 = {
+						add_to_variable = { Meter_garrison_bar_value = -1 }
+						custom_effect_tooltip = "wangchuck_causes_trouble_1"					
+					}
+				}
+			}
+			
+			BHU_add_garrison_var = yes
+			activate_mission = BHU_wangchuck_causes_trouble
 		}
 		complete_effect = {		#The effects to execute once the envelope icon is clicked.
-			custom_effect_tooltip = "wangchuck_causes_trouble"
-			BHU_add_garrison_var = yes
+			
+			
 		}
 		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
 			factor = 75		
