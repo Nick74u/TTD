@@ -63,7 +63,7 @@ country_event = { # Tibet does some illeagal stuff/the battle for everest
 				limit = { is_ai = no }
 				news_event = {
 					id = TTD_nepal_news.6       #Battle for everest
-					days = 8
+					days = 3
 				}
 			}
 		}
@@ -112,6 +112,15 @@ country_event = { # We climbed everest!
 	option = {
 		name = NEP_ever.3.a
 		add_ideas = NEP_victors_of_everest
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_news.1
+					days = 7
+				}
+			}
+		}
 	}
 }
 

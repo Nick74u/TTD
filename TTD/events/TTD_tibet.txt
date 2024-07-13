@@ -16,5 +16,15 @@ country_event = { # we climbed everest yipee!
 	option = {
 		name = TIB_ever.1.a
 		add_ideas = TIB_victors_of_everest
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_news.2
+					days = 7
+				}
+			}
+		}
 	}
 }
+

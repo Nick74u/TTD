@@ -71,8 +71,8 @@ news_event = { # Azad victory
 		name = TTD_Indian_war_news.4.a
 	}
 }
-### MISC ### 
-news_event = { # Everest Defeated
+### EVEREST ### 
+news_event = { # Everest Defeated | Nepal
 	id = TTD_news.1
 	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.1" }
 	title = TTD_news.1.t
@@ -83,6 +83,19 @@ news_event = { # Everest Defeated
 
 	option = {
 		name = TTD_news.1.a
+	}
+}
+news_event = { # Everest Defeated | Tibet
+	id = TTD_news.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_news.2" }
+	title = TTD_news.2.t
+	desc = TTD_news.2.d
+	picture = GFX_news_event_USA_hawaiian_missile_crisis
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_news.2.a
 	}
 }
 #Nepal
