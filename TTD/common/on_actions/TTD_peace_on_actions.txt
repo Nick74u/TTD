@@ -162,6 +162,31 @@ on_actions = {
 					PvA_PAK_victory = yes
 					set_global_flag = skip_default_capitulation
 				}
+				##BHUTAN VS FREE BHUTAN
+				else_if = { # total government vic
+					limit = {
+						FROM = {
+							tag = BHU
+						}
+						ROOT = {
+							tag = FBH
+						}
+					}
+					bhutan_war_gov_win = yes
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { # total wangchuck vic
+					limit = {
+						FROM = {
+							tag = FBH
+						}
+						ROOT = {
+							tag = BHU
+						}
+					}
+					bhutan_war_wang_win = yes
+					set_global_flag = skip_default_capitulation
+				}
 				#Capitulation block
 				set_global_flag = war_continuing
 			}

@@ -170,4 +170,37 @@ india_wars_equipment_category = {		#Name of category that decisions will appear 
 			factor = 75		
 		}
 	}	
+	PAK_india_wars_equipment_decision = {		#ID of the decision, must not contain spaces!
+
+		icon = GFX_decision_generic_document		#The left side icon to show for this decision.
+		
+		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+			tag = PAK
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 14	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			tag = PAK
+		}
+		cost = 25		#The cost to execute the decision, by default its political power.
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1250
+				producer = GER
+			}
+			set_temp_variable = { debt_temp = 0.020 }
+			econ_national_debt_change = yes
+			GER = {
+				set_temp_variable = { money_reserves_temp = 0.020 }
+				econ_money_reserves_change_raw_money = yes
+			}
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 75		
+		}
+	}	
 }

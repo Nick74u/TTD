@@ -9,6 +9,11 @@ india_war_start = {
 				id = afghan.1
 				days = 21
 			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = PAK
+			}
 			load_oob = "TTD_PAK"
 			load_oob = "TTD_PAK"
 		}
@@ -186,7 +191,7 @@ India_war_azad_leaning = { #DOES NOTHING
 india_azad_war_closing = {
 	log = "[GetDateText]: [Root.GetTag]: india_azad_war_closing; Executing."
 	AZH = { white_peace = IND }
-	AFG = { white_peace = IND }
+	PAK = { white_peace = IND }
 	
 	JAP = {
 		set_temp_variable = { target = AZH }
@@ -394,49 +399,6 @@ azad_hind_victory = {
 		news_event = {
 			id = TTD_Indian_war_news.4
 			days = 1
-		}
-	}
-}
-bhutan_war_end = { #doesn't trigger in game right now
-	log = "[GetDateText]: [Root.GetTag]: bhutan_war_end; Executing." # bhutanwar end
-	
-	BHU = {
-		if = {
-			limit = {
-				FBH = {
-					exists = no
-				}
-			}
-			every_owned_state = {
-				remove_core_of = FBH
-			}
-			AZH = {
-				add_to_faction = BHU
-			}
-		}
-	}
-	FBH = {
-		drop_cosmetic_tag = yes
-		remove_ideas = {
-			FBH_our_last_chance
-		}
-		if = {
-			limit = {
-				BHU = {
-					exists = no
-				}
-			}
-			every_owned_state = {
-				remove_core_of = BHU
-			}
-			set_popularities = {
-				communist = 3
-				socialist = 8
-				progressivism = 5
-				conservatism = 15
-				paternalism = 45
-				despotism = 24
-			}
 		}
 	}
 }

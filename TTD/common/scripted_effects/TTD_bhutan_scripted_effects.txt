@@ -118,3 +118,36 @@ BHU_update_garrison = {
 	}
 	add_to_variable = { BHU_garrison_dirty_variable = 0.01 }
 }
+bhutan_war_gov_win = { #doesn't trigger in game right now
+	log = "[GetDateText]: [Root.GetTag]: bhutan_war_gov_win; Executing." # bhutanwar end
+	
+	BHU = {
+		every_owned_state = {
+			remove_core_of = FBH
+		}
+		AZH = {
+			add_to_faction = BHU
+		}
+	}
+}
+bhutan_war_wang_win = { #doesn't trigger in game right now
+	log = "[GetDateText]: [Root.GetTag]: bhutan_war_wang_win; Executing." # bhutanwar end
+	
+	FBH = {
+		drop_cosmetic_tag = yes
+		remove_ideas = {
+			FBH_our_last_chance
+		}
+		every_owned_state = {
+			remove_core_of = BHU
+		}
+		set_popularities = {
+			communist = 3
+			socialist = 8
+			progressivism = 5
+			conservatism = 15
+			paternalism = 45
+			despotism = 24
+		}
+	}
+}

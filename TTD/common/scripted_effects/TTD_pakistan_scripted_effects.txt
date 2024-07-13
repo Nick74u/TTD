@@ -60,9 +60,13 @@ KLT_vs_SPU_closing = {
 }
 PAK_BAR_victory = {
 	log = "[GetDateText]: [Root.GetTag]: PAK_BAR_victory; Executing."
+	PAK = { white_peace = BAR }
 	PAK = {
-       every_owned_state = {
-            limit = { is_core_of = BAR }
+		annex_country = {
+			target = BAR
+			transfer_troops = no
+		}
+        every_owned_state = {
 			add_core_of = PAK
         }
 	}

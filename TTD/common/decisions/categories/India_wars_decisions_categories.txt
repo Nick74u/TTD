@@ -10,6 +10,7 @@ india_wars_equipment_category = {		#ID of category
 		OR = {
 			tag = IND
 			tag = AZH
+			tag = PAK
 		}
 	}
 	visible = {

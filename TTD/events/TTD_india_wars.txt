@@ -27,6 +27,15 @@ country_event = {
 				}
 			}
 		}
+		IND = {
+			every_owned_state = {
+				limit = {
+					has_state_flag = to_be_demil
+				}
+				transfer_state_to = PAK
+				add_core_of = PAK
+			}
+		}
 		set_global_flag = indian_wars
 		set_global_flag = azad_war
 		leave_faction = yes
@@ -120,6 +129,11 @@ country_event = {
             target = AZH
             type = annex_everything
         }
+		load_oob = "TTD_PAK"
+		load_oob = "TTD_PAK"
+		load_oob = "TTD_PAK"
+		load_oob = "TTD_PAK"
+		load_oob = "TTD_PAK"
 		hidden_effect = {
 			every_country = {
 				limit = { is_ai = no }

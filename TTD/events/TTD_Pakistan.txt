@@ -308,6 +308,11 @@ country_event = { ##### AFG ANGRY!! South Punjab goes to kill Kalat
 		}
 		PAK = {
 			add_ideas = PAK_defend_our_revolt
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 5000
+				producer = PAK
+			}
 		}
 		KLT = {
 			every_owned_state = {

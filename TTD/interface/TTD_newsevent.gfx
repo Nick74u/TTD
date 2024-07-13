@@ -40,4 +40,12 @@ spriteTypes = {
 		name = "GFX_news_event_afghan_roi_cooperation"
 		texturefile = "gfx/event_pictures/Asia/GFX_news_event_afghan_roi_cooperation.dds"
 	}
+	spriteType = {
+		name = "GFX_news_event_everest_nepal"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_everest_nepal.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_everest_tibet"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_everest_tibet.dds"
+	}
 }
