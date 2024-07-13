@@ -255,6 +255,12 @@ country_event = { ##### AFG ANGRY!! South Punjab goes to kill Kalat
 				limit = { is_core_of = AFG }
 				add_core_of = SPU
 			}
+			set_politics = {
+				ruling_party = despotism
+			}
+			set_popularities = {
+				despotism = 100
+			}
 		}
 		AFG = { 
 			set_autonomy = {
@@ -443,6 +449,12 @@ country_event = { ##### wop
 		1896 = {
 			set_demilitarized_zone = no
 		}
+		1899 = {
+			set_demilitarized_zone = no
+		}
+		1897 = {
+			set_demilitarized_zone = no
+		}
 		hidden_effect = {
 			country_event = {
 				id = pakistan.14
@@ -485,24 +497,15 @@ country_event = { ##### Pak moves north
 	
 	option = { 
 		name = pakistan.15.a
-		1899 = {
-			set_demilitarized_zone = no
-		}
-		1897 = {
-			set_demilitarized_zone = no
-		}
+		
 		1898 = {
 			set_demilitarized_zone = no
 		}
 		PAK = {
-			add_state_core = 1899
-			transfer_state = 1899
-			add_state_core = 1897
-			transfer_state = 1897
 			add_state_core = 1898
 			transfer_state = 1898
 			set_capital = {
-				state = 1899
+				state = 1898
 			}
 			set_politics = {
 				ruling_party = despotism
@@ -511,6 +514,18 @@ country_event = { ##### Pak moves north
 				conservatism = 10
 				paternalism = 26
 				despotism = 64
+			}
+			kill_country_leader = yes
+			add_country_leader_role = {
+				character = PAK_Mohammed_Ayub_Khan_pm
+				promote_leader = yes
+				country_leader = {
+					desc = "POLITICS_MOHAMMAD_AYUB_KHAN_DESC"
+					expire = "1999.7.14"
+					ideology = despotism_partisan_movement_subtype
+					traits = { }
+					id = -1
+				}
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -664,6 +679,12 @@ country_event = { ##### SPU appears
 				type = infantry_equipment
 				amount = 5000
 				producer = PAK
+			}
+			set_politics = {
+				ruling_party = despotism
+			}
+			set_popularities = {
+				despotism = 100
 			}
 		}
 		

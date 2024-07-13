@@ -15,7 +15,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 16006 # capital
+		location = 16005 # capital
 		division_template = "PAKISTANMILITIA"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -26,7 +26,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 16006 # capital
+		location = 16005 # capital
 		division_template = "PAKISTANMILITIA" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -37,7 +37,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 16006 # capital
+		location = 16005 # capital
 		division_template = "PAKISTANMILITIA"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
@@ -48,7 +48,29 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 16006 # capital
+		location = 16005 # capital
+		division_template = "PAKISTANMILITIA" 
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 16005 # capital
+		division_template = "PAKISTANMILITIA"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 16005 # capital
 		division_template = "PAKISTANMILITIA" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 1

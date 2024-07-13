@@ -1,0 +1,28 @@
+characters = {
+	SPU_Muhammad_Musa = {
+		name = SPU_Muhammad_Musa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SPU/Portrait_Muhammad_Musa.dds"
+			}
+			army = {
+				large = "gfx/leaders/SPU/Portrait_Muhammad_Musa.dds"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = despotism_partisan_movement_subtype
+			traits = { }
+			id = -1
+		}
+	}
+}

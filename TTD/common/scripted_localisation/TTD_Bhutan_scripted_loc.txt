@@ -83,3 +83,19 @@ defined_text = {
 		localization_key = BHU_roads_unsecured
 	}
 }
+
+defined_text = {
+	name = BHU_morale_text
+	text = {
+		localization_key = BHU_morale_number
+	}
+}
+
+
+defined_text = {
+	name = BHU_supply_text
+	text = {
+		localization_key = BHU_supply_number
+	}
+}
+

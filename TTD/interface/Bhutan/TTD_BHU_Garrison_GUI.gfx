@@ -1,7 +1,25 @@
 spriteTypes = {
 	spritetype = {
-		name = "GFX_BHU_Meter_container"
-		texturefile = "gfx/interface/bhutan_gui/garrison/Progbar_garrison_meter.dds"
+		name = "GFX_BHU_Meter_outline"
+		texturefile = "gfx/interface/bhutan_gui/garrison/supply_frame.dds"
+	}
+	progressbartype = {
+		name = "GFX_BHU_garrison_supply_bar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/reich/bormann_kartenhaus_gui/Kartenhaus_FactionLoyalty_Bar_Militarist.dds"
+		textureFile2 = "gfx/interface/reich/bormann_kartenhaus_gui/Kartenhaus_FactionLoyalty_Bar_Empty.dds"
+		size = { x = 360 y = 42 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_BHU_garrison_morale_bar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/reich/bormann_kartenhaus_gui/Kartenhaus_FactionLoyalty_Bar_Conservative.dds"
+		textureFile2 = "gfx/interface/reich/bormann_kartenhaus_gui/Kartenhaus_FactionLoyalty_Bar_Empty.dds"
+		size = { x = 360 y = 42 }
+		effectFile = "gfx/FX/progress.lua"
 	}
 	progressbartype = {
 		name = GFX_BHU_Garrison_Bar

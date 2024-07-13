@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "BHU_Garrison_GUI"
-		size = { width = 200 height = 350 }
+		size = { width = 200 height = 600 }
 		position = { x = 0 y = 0 }
 		Orientation = center
 		Origo = center
@@ -25,19 +25,39 @@ guiTypes = {
 			#}
 			iconType = {
 				name = "Meter_garrison_bar"
-				spriteType = "GFX_Philippines_Reconstruction_Bar"
-				position = { x = 26 y = 0 } 
+				spriteType = "GFX_Philippines_Reconstruction_Bar"	
+				position = { x = 36 y = 0 } 
+			}	
+			iconType = {
+				name = "Meter_garrison_supply"
+				spriteType = "GFX_BHU_garrison_supply_bar"	
+				position = { x = 36 y = 300 } 
+			}	
+			iconType = {
+				name = "Meter_garrison_morale"
+				spriteType = "GFX_BHU_garrison_morale_bar"	
+				position = { x = 36 y = 175 } 
 			}	
 			iconType = {
 				name = "garrison_outline"
 				spriteType = "GFX_TT_Philippines_Supply_Frame"
-				position = { x = 25 y = 0 }
+				position = { x = 35 y = 0 }
+			}
+			iconType = {
+				name = "garrison_supply_outline"
+				spriteType = "GFX_TT_Philippines_Supply_Frame"
+				position = { x = 35 y = 300 }
+			}
+			iconType = {
+				name = "garrison_morale_outline"
+				spriteType = "GFX_TT_Philippines_Supply_Frame"
+				position = { x = 35 y = 175 }
 			}
 		}
 		
 		instantTextBoxType = {
 			name = "BhutanGarrisonName"
-			position = { x = 25 y = 8 }
+			position = { x = 50 y = 45 }
 			maxWidth = 345
 			maxHeight = 20
 			format = center 
@@ -46,7 +66,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "BhutanGarrisonStatus"
-			position = { x = 25 y = 145 }
+			position = { x = 50 y = 145 }
 			maxWidth = 345
 			maxHeight = 20
 			format = center 
@@ -54,8 +74,26 @@ guiTypes = {
 			text = [BHU_garrison_text]
 		}
 		instantTextBoxType = {
+			name = "BhutansupplyStatus"
+			position = { x = 50 y = 440 }
+			maxWidth = 345
+			maxHeight = 20
+			format = center 
+			font = "aldrich_24_outline"
+			text = [BHU_supply_text]
+		}
+		instantTextBoxType = {
+			name = "BhutanmoraleStatus"
+			position = { x = 50 y = 325 }
+			maxWidth = 345
+			maxHeight = 20
+			format = center 
+			font = "aldrich_24_outline"
+			text = [BHU_morale_text]
+		}
+		instantTextBoxType = {
 			name = "BhutanRoadStatus"
-			position = { x = 25 y = 245 }
+			position = { x = 50 y = 500 }
 			maxWidth = 345
 			maxHeight = 20
 			format = center 

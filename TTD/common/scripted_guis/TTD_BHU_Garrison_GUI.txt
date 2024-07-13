@@ -22,5 +22,11 @@ scripted_gui = {
 		properties = {
 			Meter_garrison_bar = { frame = Meter_garrison_bar_value }
 		}
+		properties = {
+			Meter_garrison_supply = { frame = Meter_garrison_bar_supply_value }
+		}
+		properties = {
+			Meter_garrison_morale = { frame = Meter_garrison_bar_morale_value }
+		}
 	}
 }

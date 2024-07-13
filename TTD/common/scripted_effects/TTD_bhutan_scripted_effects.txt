@@ -2,9 +2,24 @@ BHU_dynamic_modifiers_setup = {
 	add_dynamic_modifier = { modifier = BHU_leap_forward_dynamic_modifier }
 	set_variable = { BHU_gdp_growth_modifier = 0.00 }
 	set_variable = { BHU_production_units_to_GDP_ratio_modifier = 0.000 }
-	set_variable = { Meter_garrison_bar_value = 50 }
+	set_variable = { Meter_garrison_bar_supply_value = 50 }
+	set_variable = { Meter_garrison_bar_morale_value = 50 }
+	BHU_add_garrison_var = yes
 }
 BHU_add_garrison_var= {
+	clamp_variable = {
+		var = Meter_garrison_bar_supply_value
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = Meter_garrison_bar_morale_value
+		min = 0
+		max = 100
+	}
+	set_variable = { Meter_garrison_bar_value = Meter_garrison_bar_supply_value }
+	add_to_variable = { Meter_garrison_bar_value = Meter_garrison_bar_morale_value }
+	divide_variable = { Meter_garrison_bar_value = 2 }
 	clamp_variable = {
 		var = Meter_garrison_bar_value
 		min = 0
@@ -13,6 +28,8 @@ BHU_add_garrison_var= {
 	add_to_variable = { BHU_garrison_dirty_variable = 0.01 }
 }	
 BHU_calculate_garrison= {
+	
+	
 	if = {
 		limit = {
 			check_variable = {

@@ -5,6 +5,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/Asia/Nepal/GFX_news_event_Nepal_Kathmandu_catastrophe.dds"
 	}
 	spriteType = {
+		name = "GFX_news_event_battle_for_everest"
+		texturefile = "gfx/event_pictures/Asia/Nepal/GFX_news_event_battle_for_everest.dds"
+	}
+	spriteType = {
 		name = "GFX_news_event_arunachal_skirmishes"
 		texturefile = "gfx/event_pictures/Asia/GFX_news_event_arunachal_skirmishes.dds"
 	}

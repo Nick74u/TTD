@@ -116,6 +116,10 @@ country_event = {
             target = IND
             type = annex_everything
         }
+		declare_war_on = {
+            target = AZH
+            type = annex_everything
+        }
 		hidden_effect = {
 			every_country = {
 				limit = { is_ai = no }

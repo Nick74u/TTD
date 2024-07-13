@@ -1,66 +1,25 @@
-﻿capital = 1894
+capital = 1316
 
 # Vacant
-recruit_character = SPU_Generic_Vacant
+recruit_character = PAK_Generic_Vacant
+fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 
-recruit_character = SPU_Muhammad_Musa
-add_ideas = {
-	#STARTING
-	
-	#MINISTERS
-	#POLITICAL
-	tno_political_parties_one_party_state
-	tno_religious_rights_state_religion
-	tno_trade_unions_illegal
-	tno_immigration_quota_immigration
-	tno_slavery_penal_labor
-	tno_public_meetings_regulated
-	tno_press_rights_censored_press
-	tno_vote_franchise_elite_voting
-	#MILITARY
-	tno_conscription_limited_conscription
-	tno_military_supervision_rules_of_engagement
-	tno_training_advanced_training_methods
-	tno_draft_exemptions_civil_service_deferment
-	#SOCIAL
-	tno_health_care_low_income_protections
-	tno_education_public_education
-	tno_penal_system_harsh_penal_code
-	tno_gender_rights_gender_equality
-	tno_security_oppressive_police
-	tno_regulations_moderate_regulations
-	#ECONOMIC
-	tno_trade_laws_export_focus
-	tno_income_taxation_high_income_weighted
-	tno_minimum_wage_low_minimum_wage
-	tno_max_workhours_12_hour_work_day
-	tno_pensions_acceptable_pensions
-	tno_unemployment_trinket_subsidies
-	#MISC
-	tno_refugees_skilled
-	tno_women_banned
-	tno_racial_integration_segregated_regiments
-	tno_safety_limited_regulations
-	tno_pollution_few_regulations
-	tno_lgbt_rights_lgbt_outlawed
-	tno_minorities_equal_rights
-	tno_child_labor_illegal
-	#DEVELOPMENT#
-	tno_industrial_expertise_experienced
-	tno_industrial_equipment_factory_complexes
-	tno_healthcare_rudimentary
-	tno_agriculture_basic_mechanized
-	tno_research_facilities_outdated
-	tno_academic_base_mass_illiteracy
-	tno_army_professionalism_professional
-	tno_admin_efficiency_functional_administrative_systems
-}
+recruit_character = PAK_Hassan_Nasir
+recruit_character = PAK_Zulfikar_Ali_Bhutto
+recruit_character = PAK_Fatima_Jinnah
+recruit_character = PAK_Feroz_Khan_Noon
+recruit_character = PAK_Mohammed_Ayub_Khan
+recruit_character = PAK_Mohammed_Ayub_Khan_pm
+recruit_character = PAK_Yahya_Khan
+recruit_character = PAK_Mahmud_Ahmed
+
+oob = "PAK_1962"
 set_technology = {
 	basic_train = 1
 
 	# shipbuild_basics = 1
 	electronic_mechanical_engineering = 1
-
+	
 	transport = 1
 	motorized_infantry = 1
 	support_weapons = 1
@@ -90,6 +49,7 @@ set_technology = {
 	motorized_infantry = 1
 	marines = 1
 	#
+	tech_special_forces = 1
 	tech_mountaineers = 1
 	#
 	paratroopers = 1
@@ -98,9 +58,22 @@ set_technology = {
 	IFV_1945 = 1
 	antiair_1945 = 1
 	artillery_1945 = 1
+	basic_frigate = 1
+	ww2_destroyer = 1
+	basic_destroyer = 1
+	ww2_cruiser = 1
+	ww2_battleship = 1
+	ww2_submarine = 1
+	transport = 1
+	early_fighter = 1
+	fighter_1945 = 1
+	CAS_1945 = 1
+	tac_bomber1 = 1
+	strategic_bomber1 = 1
+	heavy_air_1945 = 1
+	
 
-
-	###THE SUPER SPECIAL BLOCK OF DEATH###
+	###THE BLOCK OF DEATH###
 	infantry_weapons_improvements_mine_1 = 1
 	infantry_kit_3 = 1
 	infantry_weapons_improvements_ammo_1 = 1
@@ -117,11 +90,10 @@ set_technology = {
 	night_vision_3 = 1
 	infantry_kit_4 = 1
 	paratroopers2 = 1
-
-
-
+	
+	
+	
 	motorized_rocket_unit = 1
-	tech_special_forces = 1
 	specialist_weapons1 = 1
 	specialist_training1 = 1
 	artillery_1950 = 1
@@ -145,7 +117,6 @@ set_technology = {
 	tech_mountaineers2 = 1
 	motorized_infantry_1 = 1
 	APC_1945 = 1
-	MBT_1945 = 1
 	APC_1950 = 1
 	APC_1950_basic_turret = 1
 	IFV_1950 = 1
@@ -153,28 +124,14 @@ set_technology = {
 	MBT_1950 = 1
 	MBT_1950_basic_turret = 1
 	AC_1945 = 1
-	AC_1950 = 1	
+	AC_1950 = 1
 	infantry_at = 1
 
 	###BLOCK OF DEATH###
+	
 
 
 
-
-	artillery_1945 = 1
-	basic_frigate = 1
-	ww2_destroyer = 1
-	basic_destroyer = 1
-	ww2_cruiser = 1
-	ww2_battleship = 1
-	ww2_submarine = 1
-	transport = 1
-	early_fighter = 1
-	fighter_1945 = 1
-	CAS_1945 = 1
-	tac_bomber1 = 1
-	strategic_bomber1 = 1
-	heavy_air_1945 = 1
 	transport_air1 = 1
 	transport_air_1945 = 1
 	electronic_mechanical_engineering = 1
@@ -198,23 +155,93 @@ set_technology = {
 	decryption_1950 = 1
 	energy_technology_1 = 1
 	social_construction_1 = 1
-
-	resource_extraction_methods = 1
-	excavation0 = 1
-
-
+	
+	
 	helicopter_engines = 1
 	jet_engines = 1
 	#ww_2_rocketry = 1
 	#SRBM_0 = 1
+		resource_extraction_methods = 1
+	excavation0 = 1
+
 	ww2_line_production = 1
-	mass_production_1 = 1
+	batch_production_1 = 1
 	building_construction_1 = 1
 	production_unit_gain_1 = 1
 	administration_construction_1 = 1
 	excavation1 = 1
 	military_construction_1 = 1
 	prison_construction_1 = 1
-	very_early_helicopter = 1
-	early_helicopter = 1
 }
+
+set_politics = {
+	ruling_party = conservatism
+	last_election = "1962.2.1"
+	election_frequency = 57
+	elections_allowed = no
+}
+
+set_popularities = {
+	communist = 0
+	socialist = 0
+	progressivism = 8
+	liberalism = 30
+	liberal_conservatism = 0
+	conservatism = 42
+	paternalism = 20
+	despotism = 0
+	fascism = 0
+	national_socialism = 0
+	ultranationalism = 0
+}
+
+add_ideas = {
+	#POLITICAL
+	tno_political_parties_multiparty_system
+	tno_religious_rights_pluralism
+	tno_trade_unions_nonsocialist_allowed
+	tno_immigration_quota_immigration
+	tno_slavery_outlawed
+	tno_public_meetings_regulated
+	tno_press_rights_censored_press
+	tno_vote_franchise_universal
+	#MILITARY
+	tno_conscription_volunteer_only
+	tno_military_supervision_rules_of_engagement
+	tno_training_basic_training
+	tno_draft_exemptions_educational_deferment
+	#SOCIAL
+	tno_health_care_low_income_protections
+	tno_education_public_education
+	tno_penal_system_incarceration
+	tno_gender_rights_women_in_the_workplace
+	tno_security_regulated_police
+	tno_regulations_moderate_regulations
+	#ECONOMIC
+	tno_trade_laws_export_focus
+	tno_income_taxation_low_income_weighted
+	tno_minimum_wage_low_minimum_wage
+	tno_max_workhours_12_hour_work_day
+	tno_pensions_low_pensions
+	tno_unemployment_trinket_subsidies
+	#MISC
+	tno_refugees_vetted_entry
+	tno_women_combat_roles
+	tno_racial_integration_segregated_regiments
+	tno_safety_limited_regulations
+	tno_pollution_few_regulations
+	tno_lgbt_rights_lgbt_outlawed
+	tno_minorities_segregation
+	tno_child_labor_restricted
+	#DEVELOPMENT#
+	tno_industrial_expertise_nascent
+	tno_industrial_equipment_factory_complexes
+	tno_agriculture_basic_mechanized
+	tno_healthcare_nascent
+	tno_research_facilities_outdated
+	tno_academic_base_mass_illiteracy
+	tno_army_professionalism_disgruntled_veterans
+	tno_admin_efficiency_deficient_administrative_systems
+}
+
+TNO_startup_nation = yes

@@ -1,6 +1,9 @@
 ﻿l_english:
 ### Country Names ###
- PAK_REB: "Pakistan National Army"
+ PAK: "Islamic State of Pakistan"
+ PAK_DEF: "the Islamic State of Pakistan"
+ PAK_ADJ: "Pakistani"
+ PAK_REB: "Pakistani National Army"
  PAK_REB_DEF: "the Pakistani Rebellion"
  PAK_REB_ADJ: "Pakistani"
  SPU: "PNA - Southern Command"
@@ -18,7 +21,8 @@
  ### Parties ###
 
 ### Characters ###
-
+ SPU_Muhammad_Musa: "Muhammad Musa"
+ PAK_Mohammed_Ayub_Khan_pm: "Mohammed Ayub Khan"
 ### Leader Descs ###
 
 ########Ideas##################
