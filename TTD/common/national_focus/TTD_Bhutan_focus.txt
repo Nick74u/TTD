@@ -730,7 +730,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			set_temp_variable = { Meter_garrison_bar_supply_temp = 10 }
+			BHU_garrison_supply_change = yes
 		}
 	}
 	focus = {
@@ -911,6 +912,8 @@ focus_tree = {
 		        days = 1
 		        id = bhutan.focus_event.15
 			}
+			set_temp_variable = { Meter_garrison_bar_supply_temp = -45 }
+			BHU_garrison_supply_change = yes
 		}
 	}
 	focus = {

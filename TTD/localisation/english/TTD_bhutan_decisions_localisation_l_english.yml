@@ -20,3 +20,5 @@
  Bhu_mtsho_intensify: "§RThe Resistance radicalizes even more....§!"
  #####DECISION TOOLTIP######
  azad_hind_poverty_time:0 "Azad Hind Will Inspect Our Current State"
+ BHU_garrison_supply_change_increase_tt: "§GIncreases§! garrison §Rsupply§! by §G[?Meter_garrison_bar_supply_temp|2]%§!.\n"
+ BHU_garrison_supply_change_decrease_tt: "§RDecreases§! garrison §Rsupply§! by §R[?Meter_garrison_bar_supply_temp|2]%§!.\n"

@@ -93,6 +93,53 @@ KLT_war_rush = {
 		value = 200
 	}
 }
+PAK_sopfail_war_strat = {
+	allowed = {
+		tag = PAK
+	}
+	enable = {
+		has_war_with = MFP
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = conquer
+		id = MFP
+		value = 100
+	}
+	ai_strategy = {
+		type = garrison
+		value = -100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = MFP
+		value = 300
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = IND
+		value = -10000
+	}
+}
+
+PAK_sopfail_rush = {
+	allowed = {
+		tag = PAK
+	}
+	enable = {
+		has_war_with = MFP
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = consider_weak
+		id = MFP
+		value = 200
+	}
+}
 
 SPU_KLT_end_war = {
 	allowed = {

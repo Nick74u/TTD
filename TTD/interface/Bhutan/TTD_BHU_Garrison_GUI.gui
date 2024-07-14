@@ -31,12 +31,14 @@ guiTypes = {
 			iconType = {
 				name = "Meter_garrison_supply"
 				spriteType = "GFX_BHU_garrison_supply_bar"	
-				position = { x = 36 y = 300 } 
+				position = { x = 36 y = 300 }
+				
 			}	
 			iconType = {
 				name = "Meter_garrison_morale"
 				spriteType = "GFX_BHU_garrison_morale_bar"	
 				position = { x = 36 y = 175 } 
+				
 			}	
 			iconType = {
 				name = "garrison_outline"
@@ -47,11 +49,13 @@ guiTypes = {
 				name = "garrison_supply_outline"
 				spriteType = "GFX_TT_Philippines_Supply_Frame"
 				position = { x = 35 y = 300 }
+				pdx_tooltip = TTD_BHU_garrison_supply_desc_tt
 			}
 			iconType = {
 				name = "garrison_morale_outline"
 				spriteType = "GFX_TT_Philippines_Supply_Frame"
 				position = { x = 35 y = 175 }
+				pdx_tooltip = TTD_BHU_garrison_morale_desc_tt
 			}
 		}
 		

@@ -1,9 +1,9 @@
 ﻿division_template = {
-	name = "PAKISTANMILITIA"
+	name = "Pakistan Infantry"
 
 	regiments = {
-		light_infantry = { x = 0 y = 0 }
-		light_infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 	}
@@ -16,7 +16,7 @@ units = {
 				name_order = 1
 		}
 		location = 12717 # capital
-		division_template = "PAKISTANMILITIA"
+		division_template = "Pakistan Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 
@@ -27,7 +27,7 @@ units = {
 				name_order = 1
 		}
 		location = 12717 # capital
-		division_template = "PAKISTANMILITIA" 
+		division_template = "Pakistan Infantry" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 
@@ -38,7 +38,7 @@ units = {
 				name_order = 1
 		}
 		location = 12717 # capital
-		division_template = "PAKISTANMILITIA"
+		division_template = "Pakistan Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 
@@ -49,7 +49,7 @@ units = {
 				name_order = 1
 		}
 		location = 12717 # capital
-		division_template = "PAKISTANMILITIA" 
+		division_template = "Pakistan Infantry" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 
@@ -60,7 +60,7 @@ units = {
 				name_order = 1
 		}
 		location = 12717 # capital
-		division_template = "PAKISTANMILITIA"
+		division_template = "Pakistan Infantry"
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 
@@ -71,7 +71,7 @@ units = {
 				name_order = 1
 		}
 		location = 12717 # capital
-		division_template = "PAKISTANMILITIA" 
+		division_template = "Pakistan Infantry" 
 		start_experience_factor = 0.1
 		start_equipment_factor = 1
 

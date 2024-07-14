@@ -6,6 +6,20 @@ BHU_dynamic_modifiers_setup = {
 	set_variable = { Meter_garrison_bar_morale_value = 50 }
 	BHU_add_garrison_var = yes
 }
+BHU_garrison_supply_change = {
+	add_to_variable = { Meter_garrison_bar_supply_value = Meter_garrison_bar_supply_temp }
+	if = {
+		limit = {
+			check_variable = {
+				Meter_garrison_bar_supply_temp < 0
+			}
+		}
+		multiply_temp_variable = { Meter_garrison_bar_supply_temp = -1 }
+		custom_effect_tooltip = BHU_garrison_supply_change_decrease_tt
+	}
+	else = { custom_effect_tooltip = BHU_garrison_supply_change_increase_tt }
+	BHU_add_garrison_var = yes
+}
 BHU_add_garrison_var= {
 	clamp_variable = {
 		var = Meter_garrison_bar_supply_value

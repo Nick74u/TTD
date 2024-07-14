@@ -27,15 +27,21 @@ country_event = {
 				}
 			}
 		}
-		IND = {
-			every_owned_state = {
-				limit = {
-					has_state_flag = to_be_demil
+		if = {
+			limit = {
+				has_global_flag = Paksopsuccessvic
+			}
+			IND = {
+				every_owned_state = {
+					limit = {
+						has_state_flag = to_be_demil
+					}
+					transfer_state_to = PAK
+					add_core_of = PAK
 				}
-				transfer_state_to = PAK
-				add_core_of = PAK
 			}
 		}
+		
 		set_global_flag = indian_wars
 		set_global_flag = azad_war
 		leave_faction = yes

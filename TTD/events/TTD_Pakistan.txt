@@ -282,7 +282,7 @@ country_event = { ##### AFG ANGRY!! South Punjab goes to kill Kalat
 			add_manpower = 100000
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 5000
+				amount = 10000
 				producer = PAK
 			}
 		}
@@ -310,7 +310,7 @@ country_event = { ##### AFG ANGRY!! South Punjab goes to kill Kalat
 			add_ideas = PAK_defend_our_revolt
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 5000
+				amount = 8000
 				producer = PAK
 			}
 		}
@@ -325,6 +325,7 @@ country_event = { ##### AFG ANGRY!! South Punjab goes to kill Kalat
 				amount = 5000
 				producer = AFG
 			}
+			add_ideas = KLT_disorganized_defense
 		}
 		ai_chance = { factor = 90 }
 	}
@@ -350,6 +351,7 @@ country_event = { ##### For Afghanistan: KALAT LOST, ALSO PAK STILL AINT DEAD
 		#	add_state_core = 1465
 		#	transfer_state = 1465
 		#}
+		set_global_flag = Paksopsuccessvic
 		hidden_effect = {
 			PAK = {
 				country_event = {
@@ -534,19 +536,20 @@ country_event = { ##### Pak moves north
 			}
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 5000
+				amount = 10000
 				producer = PAK
 			}
 			set_cosmetic_tag = PAK_REB
 			add_ideas = PAK_bloodied_but_not_defeated
-		}
-		PAK = { change_tag_from = MFP }
-		hidden_effect = {
-			country_event = {
-				id = pakistan.16
-				days = 12
+			hidden_effect = {
+				country_event = {
+					id = pakistan.16
+					days = 12
+				}
 			}
 		}
+		PAK = { change_tag_from = MFP }
+		
 	}
 }
 country_event = { ##### countdown till afghanistan murders Pak
@@ -682,7 +685,7 @@ country_event = { ##### SPU appears
 			add_manpower = 100000
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 5000
+				amount = 7500
 				producer = PAK
 			}
 			set_politics = {
@@ -741,12 +744,7 @@ country_event = { ##### Ok, ROUND 2
 	
 	option = { 
 		name = pakistan.22.a
-		PAK = { 
-			set_autonomy = {
-			    target = SPU
-				autonomous_state = autonomy_military_district
-			}
-		}
+		
 		AFG = {
 		    declare_war_on = {
 			    target = PAK
@@ -797,7 +795,6 @@ country_event = { ##### Pakistan and SPU wins against AFG
 				transfer_troops = yes
 			}
 			every_owned_state = {
-				limit = { is_core_of = SPU }
 				add_core_of = PAK
 			}
 		}
