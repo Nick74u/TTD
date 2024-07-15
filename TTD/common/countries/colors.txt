@@ -882,8 +882,8 @@ AZH = {
 	color_ui = rgb { 99 137 83 }
 }
 BHU = {
-	color = rgb { 194 151 77 }
-	color_ui = rgb { 194 151 77 }
+	color = rgb { 72 124 47 }
+	color_ui = rgb { 72 124 47 }
 }
 CYL = {
 	color = rgb { 87 8 37 }

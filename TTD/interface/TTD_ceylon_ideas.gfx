@@ -1,0 +1,26 @@
+SpriteTypes = {
+	SpriteType = {
+		name = "GFX_idea_CYL_Cautious_Nonalignment"
+		texturefile = "gfx/interface/ideas/national_spirits/Asia/CYL/idea_CYL_Cautious_Nonalignment.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_CYL_Plantation_Economy"
+		texturefile = "gfx/interface/ideas/national_spirits/Asia/CYL/idea_CYL_Plantation_Economy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_CYL_Tamil_Status"
+		texturefile = "gfx/interface/ideas/national_spirits/Asia/CYL/idea_CYL_Tamil_Status.dds"
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

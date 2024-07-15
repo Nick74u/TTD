@@ -29,7 +29,6 @@ set_popularities = {
 	ultranationalism = 12
 }
 
-set_cosmetic_tag = BHU_AZH
 
 set_stability = .98
 country_lock_all_division_template = yes

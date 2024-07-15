@@ -15,7 +15,7 @@ recruit_character = CYL_IMRA_Iriyagolle
 set_major = no
 
 oob = ""
-
+country_lock_all_division_template = yes
 add_stability = 0.74
 set_technology = {
 	basic_train = 1
@@ -202,7 +202,9 @@ add_ideas = {
 	# Pakt_Observer
 
 	#STARTING
-
+	CYL_Cautious_Nonalignment
+	CYL_Plantation_Economy
+	CYL_Tamil_Status
 	#MINISTERS
     CYL_JR_Jayewardene_hog
 	CYL_CYL_MD_Banda_eco

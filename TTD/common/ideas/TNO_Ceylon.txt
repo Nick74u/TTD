@@ -1,0 +1,39 @@
+ideas = {
+	country = {
+		CYL_Cautious_Nonalignment = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CYL_Cautious_Nonalignment" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } 
+			picture = CYL_Cautious_Nonalignment
+			removal_cost = -1
+
+			modifier = {
+			}
+		}
+		CYL_Plantation_Economy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CYL_Plantation_Economy" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } 
+			picture = CYL_Plantation_Economy
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+		CYL_Tamil_Status = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CYL_Tamil_Status" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } 
+			picture = CYL_Tamil_Status
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+	}
+}
