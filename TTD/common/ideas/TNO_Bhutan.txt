@@ -49,6 +49,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = BHU_no_hope_in_the_east_tt
 				stability_weekly_factor = 0.002
+				free_production_units_modifier = 3
 			}
 		}
 		BHU_The_Northern_Frontier = {
