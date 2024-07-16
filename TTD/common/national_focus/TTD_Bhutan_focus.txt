@@ -359,7 +359,7 @@ focus_tree = {
 		
 		prerequisite = { focus = BHU_tactics_for_a_troublesome_land }
 		available = {
-			has_country_flag = BHU_singh_failure
+			
 		}
 		
 		bypass = {
@@ -412,7 +412,7 @@ focus_tree = {
 		
 		prerequisite = { focus = BHU_tactics_for_a_troublesome_land }
 		available = {
-			has_country_flag = BHU_singh_failure
+			
 		}
 		
 		bypass = {

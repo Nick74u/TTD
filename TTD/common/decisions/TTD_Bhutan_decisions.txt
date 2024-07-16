@@ -178,7 +178,7 @@ bhutan_meeting_category = {
 
 		timeout_effect = {		#The effects to execute once the mission timer expires.
 		    random_list = {
-				var:BHU.BHU_demand_req = {
+				var:BHU_demand_req = {
 					BHU = { 
 						country_event = {
 							days = 1
@@ -187,7 +187,7 @@ bhutan_meeting_category = {
 					}
 				}
 			
-				var:BHU.BHU_persuasion_power = {
+				50 = {
 					BHU = { 
 						country_event = {
 						days = 1
@@ -343,7 +343,6 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 			has_country_flag = BHU_show_garrison_gui
 		}
 		timeout_effect = {	
-			add_to_variable = { convoy_supply_arrival = 10 } 
 			add_to_variable = { Meter_garrison_bar_supply_value = convoy_supply_arrival }
 			custom_effect_tooltip = "BHU_convoy_arrival"
 			BHU_add_garrison_var = yes
