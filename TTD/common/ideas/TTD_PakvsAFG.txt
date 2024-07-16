@@ -27,6 +27,18 @@ ideas = {
 				surrender_limit = -0.5
 			}
 		}
+		MFP_chaotic_countryside = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea MFP_chaotic_countryside" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+
+			modifier = {
+				surrender_limit = -0.7
+			}
+		}
 		PAK_bloodied_but_not_defeated = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAK_bloodied_but_not_defeated" }
 

@@ -1,16 +1,16 @@
-SPU_war_strat = {
+AZH_prepare_for_india_war = {
 	allowed = {
-		tag = SPU
+		tag = AZH
 	}
 	enable = {
-		has_war_with = KLT
+		always = yes
 	}
 
-	abort_when_not_enabled = yes
+	abort = { always = no }
 
 	ai_strategy = {
 		type = conquer
-		id = KLT
+		id = IND
 		value = 100
 	}
 	ai_strategy = {
@@ -19,16 +19,45 @@ SPU_war_strat = {
 	}
 	ai_strategy = {
 		type = front_unit_request
-		tag = KLT
+		tag = IND
 		value = 300
 	}
 	ai_strategy = {
 		type = front_unit_request
-		tag = AFG
+		tag = TIB
 		value = -10000
 	}
 }
+IND_focus_on_bigger_threat = {
+	allowed = {
+		tag = IND
+	}
+	enable = {
+		has_war_with = AZH
+	}
 
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = conquer
+		id = AZH
+		value = 100
+	}
+	ai_strategy = {
+		type = garrison
+		value = -100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = AZH
+		value = 300
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = PAK
+		value = 50
+	}
+}
 SPU_war_rush = {
 	allowed = {
 		tag = SPU

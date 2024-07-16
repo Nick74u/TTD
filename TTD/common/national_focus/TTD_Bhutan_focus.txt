@@ -13,7 +13,7 @@ focus_tree = {
 	default = no
 	
 	focus = {
-	    id = BHU_pacifying_bhutan
+	    id = BHU_removing_the_rubble
 		icon = GFX_
 		x = 7
 		y = 0
@@ -37,13 +37,37 @@ focus_tree = {
 		}
 	}
 	focus = {
+	    id = BHU_in_azad_hind_vision
+		icon = GFX_goal_in_azad_hind_vision
+		x = 0
+		y = 1
+		relative_position_id = BHU_removing_the_rubble
+		cost = 0.724
+		prerequisite = { focus = BHU_removing_the_rubble }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
 	    id = BHU_the_chained_dragon
 		icon = GFX_goal_a_chained_dragon
 		x = 0
 		y = 1
-		relative_position_id = BHU_pacifying_bhutan
+		relative_position_id = BHU_in_azad_hind_vision
 		
-		prerequisite = { focus = BHU_pacifying_bhutan }
+		prerequisite = { focus = BHU_in_azad_hind_vision }
 		cost = 2.24
 		
 		available = {
@@ -64,7 +88,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_From_Mountains_to_Cities
+	    id = BHU_build_from_the_ground_up
 		icon = GFX_goal_from_mountains_to_cities
 		x = 0
 		y = 1
@@ -96,10 +120,10 @@ focus_tree = {
 		icon = focus_From_Mountains_to_Cities
 		x = 0
 		y = 1
-		relative_position_id = BHU_From_Mountains_to_Cities
+		relative_position_id = BHU_build_from_the_ground_up
 		cost = 4.34
 		
-		prerequisite = { focus = BHU_From_Mountains_to_Cities }
+		prerequisite = { focus = BHU_build_from_the_ground_up }
 		available = {
 
 		}
@@ -117,7 +141,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_a_hook_to_a_bad_economic_face
+	    id = BHU_monitoring_our_economic_health
 		icon = focus_From_Mountains_to_Cities
 		x = -2
 		y = 1
@@ -175,7 +199,7 @@ focus_tree = {
 		cost = 2.89
 		
 		prerequisite = { focus = BHU_a_road_map_for_the_future }
-		prerequisite = { focus = BHU_a_hook_to_a_bad_economic_face }
+		prerequisite = { focus = BHU_monitoring_our_economic_health }
 		available = {
 
 		}
@@ -189,6 +213,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_ideas = BHU_leap_forward
 			country_event = {
 			id = bhutan.focus_event.3
 			hours = 6
@@ -200,52 +225,21 @@ focus_tree = {
 		    set_country_flag = BHU_map_gui_show
 		}
 	}
+	
 	focus = {
-	    id = BHU_a_meeting_with_the_rising_sun
-		icon = GFX_goal_a_meeting_with_the_rising_sun
-		x = -4
+	    id = BHU_the_phone_to_hell
+		icon = GFX_goal_securing_bose_confirmation
+		x = -12
 		y = 1
 		relative_position_id = BHU_laying_the_groundworks
 		cost = 1.45
 		
-		cancelable = no
+		mutually_exclusive = { focus = BHU_kanwal_gamble }
 		prerequisite = { focus = BHU_laying_the_groundworks }
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			set_variable = { BHU_demand_req = 0 }
-			set_variable = { BHU_persuasion_power = 50 }
-			country_event = {
-			id = bhutan.focus_event.2
-			hours = 6
-			}
-			set_country_flag = BHU_meeting
-		}
-	}
-	focus = {
-	    id = BHU_securing_bose_vouch
-		icon = GFX_goal_securing_bose_confirmation
-		x = -2
-		y = 1
-		relative_position_id = BHU_a_meeting_with_the_rising_sun
-		cost = 5
-		
-		mutually_exclusive = { focus = BHU_singh_is_all_we_need }
-		prerequisite = { focus = BHU_a_meeting_with_the_rising_sun }
 
 		
 		available = {
-			has_country_flag = BHU_went_with_bose 
+			
 		}
 		
 		bypass = {
@@ -265,18 +259,18 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_singh_is_all_we_need
+	    id = BHU_kanwal_gamble
 		icon = focus_From_Mountains_to_Cities
-		x = 1
+		x = -6
 		y = 1
-		relative_position_id = BHU_a_meeting_with_the_rising_sun
-		cost = 5
+		relative_position_id = BHU_laying_the_groundworks
+		cost = 1.45
 		
-		mutually_exclusive = { focus = BHU_securing_bose_vouch }
-		prerequisite = { focus = BHU_a_meeting_with_the_rising_sun }
+		mutually_exclusive = { focus = BHU_the_phone_to_hell }
+		prerequisite = { focus = BHU_laying_the_groundworks }
 		
 		available = {
-			has_country_flag = BHU_singh_goes_alone
+			
 		}
 		
 		bypass = {
@@ -296,14 +290,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_the_venue
+	    id = BHU_a_train_to_kolkata
 		icon = focus_From_Mountains_to_Cities
 		x = 0
 		y = 1
-		relative_position_id = BHU_securing_bose_vouch
+		relative_position_id = BHU_the_phone_to_hell
 		cost = 1.45
 		
-		prerequisite = { focus = BHU_securing_bose_vouch }
+		prerequisite = { focus = BHU_the_phone_to_hell }
 		available = {
 
 		}
@@ -321,15 +315,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_in_tokyo
+	    id = BHU_tactics_for_a_troublesome_land
 		icon = focus_From_Mountains_to_Cities
 		x = 0
 		y = 1
-		relative_position_id = BHU_singh_is_all_we_need
-		cost = 8
+		relative_position_id = BHU_kanwal_gamble
+		cost = 1.45
 		
 		cancelable = no
-		prerequisite = { focus = BHU_singh_is_all_we_need }
+		prerequisite = { focus = BHU_kanwal_gamble }
 		available = {
 
 		}
@@ -355,15 +349,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_failure_anticipated
+	    id = BHU_homegrown_supplies
 		icon = focus_From_Mountains_to_Cities
-		x = 0
-		y = 2
-		relative_position_id = BHU_in_tokyo
-		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = BHU_tactics_for_a_troublesome_land
+		cost = 1.45
 		
-		mutually_exclusive = { focus = BHU_a_welcomed_success }
-		prerequisite = { focus = BHU_in_tokyo }
+		
+		prerequisite = { focus = BHU_tactics_for_a_troublesome_land }
 		available = {
 			has_country_flag = BHU_singh_failure
 		}
@@ -381,141 +375,151 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_a_welcomed_success
+	    id = BHU_reaching_out_a_hand_to_the_locals
 		icon = focus_From_Mountains_to_Cities
 		x = 2
-		y = 2
-		relative_position_id = BHU_in_tokyo
-		cost = 5
-		
-		mutually_exclusive = { focus = BHU_failure_anticipated }
-		prerequisite = { focus = BHU_in_tokyo }
-		available = {
-			has_country_flag = BHU_singh_success
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-	    id = BHU_miracle_sphere
-		icon = focus_From_Mountains_to_Cities
-		x = 0
-		y = 3
-		relative_position_id = BHU_a_welcomed_success
-		cost = 3.50
-		
-		prerequisite = { focus = BHU_a_welcomed_success }
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-	    id = BHU_disaster
-		icon = focus_From_Mountains_to_Cities
-		x = 0
-		y = 3
-		relative_position_id = BHU_failure_anticipated
-		cost = 3.50
-		
-		prerequisite = { focus = BHU_failure_anticipated }
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-	    id = BHU_our_lines
-		icon = focus_From_Mountains_to_Cities
-		x = -1
 		y = 1
-		relative_position_id = BHU_the_venue
-		cost = 1.45
-		
-		prerequisite = { focus = BHU_the_venue }
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-	    id = BHU_our_tone
-		icon = focus_From_Mountains_to_Cities
-		x = 1
-		y = 1
-		relative_position_id = BHU_the_venue
-		cost = 1.45
-		
-		prerequisite = { focus = BHU_the_venue }
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-	    id = BHU_the_departure
-		icon = focus_From_Mountains_to_Cities
-		x = 1
-		y = 1
-		relative_position_id = BHU_our_lines
+		relative_position_id = BHU_homegrown_supplies
 		cost = 2.88
 		
-		prerequisite = { focus = BHU_our_lines }
-		prerequisite = { focus = BHU_our_tone }
+		
+		prerequisite = { focus = BHU_homegrown_supplies }
+		prerequisite = { focus = BHU_bhutan_farming_initiative }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+	    id = BHU_bhutan_farming_initiative
+		icon = focus_From_Mountains_to_Cities
+		x = 2
+		y = 1
+		relative_position_id = BHU_tactics_for_a_troublesome_land
+		cost = 1.45
+		
+		
+		prerequisite = { focus = BHU_tactics_for_a_troublesome_land }
+		available = {
+			has_country_flag = BHU_singh_failure
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+	    id = BHU_coordinating_with_the_convoy
+		icon = focus_From_Mountains_to_Cities
+		x = -2
+		y = 1
+		relative_position_id = BHU_a_train_to_kolkata
+		cost = 1.45
+		
+		prerequisite = { focus = BHU_a_train_to_kolkata }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_temp_variable = { convoy_supply_arrival_temp = 3 }
+			BHU_convoy_supply_change = yes
+			add_to_variable = { BHU_garrison_dirty_variable = .1 } 
+		}
+	}
+	focus = {
+	    id = BHU_showcasing_our_troubles
+		icon = focus_From_Mountains_to_Cities
+		x = 2
+		y = 1
+		relative_position_id = BHU_a_train_to_kolkata
+		cost = 1.45
+		
+		prerequisite = { focus = BHU_a_train_to_kolkata }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+	    id = BHU_extending_the_hilda
+		icon = focus_From_Mountains_to_Cities
+		x = 2
+		y = 1
+		relative_position_id = BHU_coordinating_with_the_convoy
+		cost = 2.88
+		
+		prerequisite = { focus = BHU_coordinating_with_the_convoy }
+		prerequisite = { focus = BHU_showcasing_our_troubles }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_temp_variable = { BHU_gdp_growth_modifier_temp = 0.15 }
+			BHU_economy_status_change = yes
+		}
+	}
+	focus = {
+	    id = BHU_tighten_the_leash
+		icon = focus_From_Mountains_to_Cities
+		x = 3
+		y = 1
+		relative_position_id = BHU_extending_the_hilda
+		cost = 1.45
+		
+		prerequisite = {
+				
+			focus =	BHU_reaching_out_a_hand_to_the_locals
+			focus =	BHU_extending_the_hilda
+		}
+		
 		available = {
 
 		}
@@ -532,17 +536,151 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_music_to_our_ears
+	    id = BHU_bhutan_needs_you
 		icon = focus_From_Mountains_to_Cities
+		x = -2
+		y = 1
+		relative_position_id = BHU_tighten_the_leash
+		cost = 1.45
+		
+		
+		prerequisite = { focus = BHU_tighten_the_leash }
+		
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+	    id = BHU_a_warm_welcome
+		icon = focus_From_Mountains_to_Cities
+		x = 2
+		y = 1
+		relative_position_id = BHU_tighten_the_leash
+		cost = 1.45
+		
+		
+		prerequisite = { focus = BHU_tighten_the_leash }
+		
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+	    id = BHU_keeping_the_army_in_place
+		icon = focus_From_Mountains_to_Cities
+		x = 2
+		y = 1
+		relative_position_id = BHU_bhutan_needs_you
+		cost = 1.45
+		
+		
+		prerequisite = { focus = BHU_bhutan_needs_you }
+		prerequisite = { focus = BHU_a_warm_welcome }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+	    id = BHU_the_ministry_of_economic_affairs
+		icon = GFX_
+		x = 0
+		y = 1
+		relative_position_id = BHU_laying_the_groundworks
+		cost =  1.78
+		
+		
+		prerequisite = { focus = BHU_laying_the_groundworks }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+	    id = BHU_bhutan_for_business
+		icon = GFX_
+		x = 0
+		y = 2
+		relative_position_id = BHU_the_ministry_of_economic_affairs
+		cost = 1.45
+		
+		
+		prerequisite = { focus = BHU_the_ministry_of_economic_affairs }
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_country_flag = BHU_meeting
+			activate_mission = bhutan_meeting_end_mission
+		}
+	}
+	focus = {
+	    id = BHU_a_minor_headache
+		icon = GFX_
 		x = -1
 		y = 1
-		relative_position_id = BHU_the_departure
-		cost = 5
+		relative_position_id = BHU_bhutan_for_business
+		cost = 1.45
 		
-		mutually_exclusive = { focus = BHU_calcutta_catastrophe }
-		prerequisite = { focus = BHU_the_departure }
+		mutually_exclusive = {focus = BHU_a_fresh_breeze}
+		prerequisite = { focus = BHU_bhutan_for_business }
 		available = {
-			has_country_flag = BHU_negotiations_success
+			always = no
 		}
 		
 		bypass = {
@@ -558,17 +696,17 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_calcutta_catastrophe
-		icon = focus_From_Mountains_to_Cities
+	    id = BHU_a_fresh_breeze
+		icon = GFX_
 		x = 1
 		y = 1
-		relative_position_id = BHU_the_departure
-		cost = 5
+		relative_position_id = BHU_bhutan_for_business
+		cost = 1.45
 		
-		mutually_exclusive = { focus = BHU_music_to_our_ears }
-		prerequisite = { focus = BHU_the_departure }
+		mutually_exclusive = {focus = BHU_a_minor_headache}
+		prerequisite = { focus = BHU_bhutan_for_business }
 		available = {
-			has_country_flag = BHU_negotiations_failure
+			always = no
 		}
 		
 		bypass = {
@@ -584,14 +722,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_bhutan_boom
-		icon = focus_From_Mountains_to_Cities
-		x = 0
+	    id = BHU_postpone_our_plans
+		icon = GFX_
+		x = -2
 		y = 1
-		relative_position_id = BHU_music_to_our_ears
-		cost = 0.724
+		relative_position_id = BHU_a_minor_headache
+		cost = 1.45
 		
-		prerequisite = { focus = BHU_music_to_our_ears }
+		
+		prerequisite = { focus = BHU_a_minor_headache }
 		available = {
 
 		}
@@ -609,14 +748,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_the_dragon_scratched
-		icon = focus_From_Mountains_to_Cities
-		x = 0
+	    id = BHU_mopping_out_disloyalty
+		icon = GFX_
+		x = 1
 		y = 1
-		relative_position_id = BHU_calcutta_catastrophe
-		cost = 0.724
+		relative_position_id = BHU_a_minor_headache
+		cost = 1.45
 		
-		prerequisite = { focus = BHU_calcutta_catastrophe }
+		
+		prerequisite = { focus = BHU_a_minor_headache focus = BHU_a_fresh_breeze }
 		available = {
 
 		}
@@ -634,14 +774,15 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_parties_and_celebration
-		icon = focus_From_Mountains_to_Cities
-		x = 0
+	    id = BHU_the_first_sign_of_relief
+		icon = GFX_
+		x = 2
 		y = 1
-		relative_position_id = BHU_bhutan_boom
-		cost = 2.90
+		relative_position_id = BHU_a_fresh_breeze
+		cost = 1.45
 		
-		prerequisite = { focus = BHU_bhutan_boom }
+		
+		prerequisite = { focus = BHU_a_fresh_breeze }
 		available = {
 
 		}
@@ -659,14 +800,16 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_singh_nightmare
-		icon = focus_From_Mountains_to_Cities
+	    id = BHU_the_model_province_of_india
+		icon = GFX_
 		x = 0
-		y = 1
-		relative_position_id = BHU_the_dragon_scratched
-		cost = 2.90
+		y = 2
+		relative_position_id = BHU_mopping_out_disloyalty
+		cost = 1.45
 		
-		prerequisite = { focus = BHU_the_dragon_scratched }
+		
+		prerequisite = { focus = BHU_mopping_out_disloyalty }
+		prerequisite = { focus = BHU_postpone_our_plans focus = BHU_the_first_sign_of_relief }
 		available = {
 
 		}
@@ -684,9 +827,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_acknowledging_the_eastern_issue
+	    id = BHU_the_countryside_on_fire
 		icon = focus_From_Mountains_to_Cities
-		x = 4
+		x = 8
 		y = 1
 		relative_position_id = BHU_laying_the_groundworks
 		cost = 2.89
@@ -713,10 +856,10 @@ focus_tree = {
 		icon = GFX_goal_reports_from_our_men
 		x = 0
 		y = 1
-		relative_position_id = BHU_acknowledging_the_eastern_issue
+		relative_position_id = BHU_the_countryside_on_fire
 		cost = 2.89
 		
-		prerequisite = { focus = BHU_acknowledging_the_eastern_issue }
+		prerequisite = { focus = BHU_the_countryside_on_fire }
 		available = {
 
 		}
@@ -735,9 +878,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_subsidize_the_hunt_for_wangchuk
+	    id = BHU_searching_for_the_rebels
 		icon = focus_From_Mountains_to_Cities
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = BHU_reports_from_our_men
 		cost = 2.89
@@ -760,9 +903,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_the_army_is_your_friend
+	    id = BHU_weapons_from_ahof
 		icon = focus_From_Mountains_to_Cities
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = BHU_reports_from_our_men
 		cost = 2.89
@@ -785,14 +928,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_a_snowy_day_in_thimphu
+	    id = BHU_the_loyalist_network
 		icon = focus_From_Mountains_to_Cities
 		x = 0
-		y = 1.5
-		relative_position_id = BHU_subsidize_the_hunt_for_wangchuk
+		y = 1
+		relative_position_id = BHU_searching_for_the_rebels
 		cost = 2.89
 		
-		prerequisite = { focus = BHU_subsidize_the_hunt_for_wangchuk }
+		prerequisite = { focus = BHU_searching_for_the_rebels }
 		available = {
 
 		}
@@ -813,11 +956,11 @@ focus_tree = {
 	    id = BHU_a_curfew_in_the_east
 		icon = focus_From_Mountains_to_Cities
 		x = 0
-		y = 1.5
-		relative_position_id = BHU_the_army_is_your_friend
+		y = 1
+		relative_position_id = BHU_weapons_from_ahof
 		cost = 2.89
 		
-		prerequisite = { focus = BHU_the_army_is_your_friend }
+		prerequisite = { focus = BHU_weapons_from_ahof }
 		available = {
 
 		}
@@ -838,11 +981,11 @@ focus_tree = {
 	    id = BHU_a_bounty_on_the_head
 		icon = focus_From_Mountains_to_Cities
 		x = 0
-		y = 1.5
-		relative_position_id = BHU_a_snowy_day_in_thimphu
+		y = 1
+		relative_position_id = BHU_the_loyalist_network
 		cost = 2.89
 		
-		prerequisite = { focus = BHU_a_snowy_day_in_thimphu }
+		prerequisite = { focus = BHU_the_loyalist_network }
 		available = {
 
 		}
@@ -860,10 +1003,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_consulting_army_groups
+	    id = BHU_securing_our_roads
 		icon = focus_From_Mountains_to_Cities
 		x = 0
-		y = 1.5
+		y = 1
 		relative_position_id = BHU_a_curfew_in_the_east
 		cost = 2.89
 		
@@ -885,14 +1028,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_road_to_arunachal
+	    id = BHU_enforcing_the_mcmahon_line
 		icon = focus_From_Mountains_to_Cities
-		x = -1
-		y = 2
-		relative_position_id = BHU_consulting_army_groups
+		x = -2
+		y = 1
+		relative_position_id = BHU_securing_our_roads
 		cost = 2
 		
-		prerequisite = {  focus = BHU_consulting_army_groups }
+		prerequisite = {  focus = BHU_securing_our_roads }
 		prerequisite = { focus = BHU_a_bounty_on_the_head }	
 		
 		available = {
@@ -917,14 +1060,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_strike_now
+	    id = BHU_blitz_to_arunachal
 		icon = focus_From_Mountains_to_Cities
 		x = 0
-		y = 2
-		relative_position_id = BHU_road_to_arunachal
+		y = 1
+		relative_position_id = BHU_enforcing_the_mcmahon_line
 		cost = 2
 		
-		prerequisite = {  focus = BHU_road_to_arunachal }
+		prerequisite = {  focus = BHU_enforcing_the_mcmahon_line }
 		
 		available = {
 			has_country_flag = BHU_azad_hind_approves
@@ -966,49 +1109,17 @@ focus_tree = {
 		}
 	}
 	focus = {
-	    id = BHU_the_finishing_touches
+	    id = BHU_dream_over_the_thimphu_valley
 		icon = focus_From_Mountains_to_Cities
-		x = 4
-		y = 1
-		relative_position_id = BHU_parties_and_celebration
+		x = 0
+		y = 2
+		relative_position_id = BHU_the_model_province_of_india
 		cost = 3.65
 		
-		mutually_exclusive = {focus = BHU_we_have_done_what_we_could}
-		prerequisite = { focus = BHU_miracle_sphere focus = BHU_parties_and_celebration}
-		available = {
-
-		}
 		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-			hidden_effect = {
-                add_dynamic_modifier = {
-                    modifier = BHU_leap_forward_dynamic_modifier
-			    }
-			}
-		}
-	}
-	focus = {
-	    id = BHU_we_have_done_what_we_could
-		icon = focus_From_Mountains_to_Cities
-		x = 2
-		y = 1
-		relative_position_id = BHU_parties_and_celebration
-		cost = 3.65
-		
-		mutually_exclusive = {focus = BHU_the_finishing_touches}
-		prerequisite = { 
-			focus = BHU_disaster
-		    focus = BHU_singh_nightmare
-		}
+		prerequisite = {  focus = BHU_the_model_province_of_india }
+		prerequisite = {  focus = BHU_blitz_to_arunachal }
+		prerequisite = {  focus = BHU_keeping_the_army_in_place }
 		available = {
 
 		}
@@ -1032,13 +1143,13 @@ focus_tree = {
 	focus = {
 	    id = BHU_bhutan_age
 		icon = GFX_goal_stable_foundation
-		x = 3
-		y = 1
-		relative_position_id = BHU_the_finishing_touches
+		x = 0
+		y = 2
+		relative_position_id = BHU_dream_over_the_thimphu_valley
 		cost = 1.45
 		
-		prerequisite = { focus = BHU_the_finishing_touches focus = BHU_we_have_done_what_we_could }
-		prerequisite = { focus = BHU_strike_now }
+		
+		prerequisite = { focus = BHU_dream_over_the_thimphu_valley }
 		available = {
 
 		}
@@ -1052,7 +1163,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = BHU_leap_forward
 			country_event = {
 				id = bhutan.focus_event.16
 				hours = 6
@@ -1060,15 +1170,16 @@ focus_tree = {
 			custom_effect_tooltip = BHU_bhutan_age_tt
 			if = {
 				limit = {
-					has_completed_focus = BHU_the_finishing_touches
+					has_completed_focus = BHU_a_fresh_breeze
 				}
-				add_to_variable = { BHU_gdp_growth_modifier = 0.40 }
-	      		add_to_variable = { BHU_production_units_to_GDP_ratio_modifier = 0.4 }
+				set_temp_variable = { BHU_gdp_growth_modifier_temp = 0.40 }
+				set_temp_variable = { BHU_production_units_to_GDP_ratio_modifier_temp = 0.4 }
 			}
 			else = {
-				add_to_variable = { BHU_gdp_growth_modifier = 0.15 }
-	      		add_to_variable = { BHU_production_units_to_GDP_ratio_modifier = 0.020 }
+				set_temp_variable = { BHU_gdp_growth_modifier_temp = 0.15 }
+				set_temp_variable = { BHU_production_units_to_GDP_ratio_modifier_temp = 0.020 }
 			}
+			BHU_economy_status_change = yes
 		}
 	}
 }

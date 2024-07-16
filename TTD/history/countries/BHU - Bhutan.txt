@@ -32,7 +32,8 @@ set_popularities = {
 
 set_stability = .98
 country_lock_all_division_template = yes
-complete_national_focus = BHU_pacifying_bhutan
+complete_national_focus = BHU_removing_the_rubble
+complete_national_focus = BHU_in_azad_hind_vision
 set_variable = { TNO_economy_type = token:Econ_Type_Planned }
 set_variable = { BHU_map_selected_province = 0 }
 add_ideas = {

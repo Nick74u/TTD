@@ -6,7 +6,7 @@ add_namespace = bhutan_flavor
 add_namespace = bhutan.focus_event
 add_namespace = bhutan_civil_war
 
-country_event = {    ####IDK BUT THIS IS THE START OF FLAVOR CHAIN, IT STARTS 5 DAYS AFTER GAME STARTS
+country_event = {    ####Temp flavor chain
 	id = bhutan_flavor.1
 	title = bhutan_flavor.1.t
 	desc = bhutan_flavor.1.d
@@ -101,23 +101,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { # Bose Has Our Back!
-		name = bhutan.focus_event.2.a
-		ai_chance = { factor = 90 }
-		custom_effect_tooltip = BHU_bose
-		set_country_flag = BHU_went_with_bose
-		hidden_effect = {
-		    complete_national_focus = BHU_securing_bose_vouch
-		}
-	}
-	option = { # Singh Goes Alone!
-		name = bhutan.focus_event.2.b
-		ai_chance = { factor = 90 }
-		custom_effect_tooltip = BHU_Singh
-		set_country_flag = BHU_singh_goes_alone
-		hidden_effect = {
-		    complete_national_focus = BHU_singh_is_all_we_need
-		}
+	option = { # 
 	}
 }
 country_event = {
@@ -134,98 +118,7 @@ country_event = {
 		ai_chance = { factor = 90 }
 	}
 }
-country_event = { #Meeting Talk
-	id = bhutan.focus_event.4
-	title = bhutan.focus_event.4.t
-	desc = bhutan.focus_event.4.d
-	
-	is_triggered_only = yes
-	
-	option = { # paperwork!
-		name = bhutan.focus_event.4.a
-		ai_chance = { factor = 90 }
-		hidden_effect = {
-		    if = {
-			    limit = {
-				    has_completed_focus = BHU_singh_is_all_we_need
-				}
-				AZH = { 
-		        	country_event = {
-		        		days = 1
-		        		id = bhutan.focus_event.6
-					}
-				}
-			}
-			else = {
-			    AZH = { 
-		        	country_event = {
-		        		days = 1
-		        		id = bhutan.focus_event.5
-					}
-				}
-			}
-		}	
-	}
-}
-country_event = { #Bose meeting but cooperation
-	id = bhutan.focus_event.5
-	title = bhutan.focus_event.5.t
-	desc = bhutan.focus_event.5.d
-	
-	is_triggered_only = yes
-	
-	option = { #AAAAAAAAAA
-	    name = bhutan.focus_event.5.a
-		random_list = {
-		    var:BHU.BHU_demand_req = {
-			    BHU = { 
-		           	country_event = {
-		      	     	days = 1
-		    	    	id = bhutan.focus_event.7
-					}
-				}
-			}
-			var:BHU.BHU_persuasion_power = {
-			    BHU = { 
-		          	country_event = {
-		      	   	days = 1
-		    	   	id = bhutan.focus_event.8
-					}
-		    	}
-			}
-		}
-	}
-}
-country_event = { #singh alone
-	id = bhutan.focus_event.6
-	title = bhutan.focus_event.6.t
-	desc = bhutan.focus_event.6.d
-	
-	is_triggered_only = yes
-	
-	option = { # Failure/success!
-	    name = bhutan.focus_event.6.a
-		random_list = {
-		    var:BHU.BHU_demand_req = {
-			    BHU = { 
-		           	country_event = {
-		      	   	days = 1
-		    	   	id = bhutan.focus_event.9
-					}
-				}
-			}
-			var:BHU.BHU_persuasion_power = {
-			    BHU = { 
-		          	country_event = {
-		      	   	days = 1
-		    	   	id = bhutan.focus_event.10
-					}
-		    	}
-			}
-		}
-	}
-}
-country_event = { #THEY SAID NO - Azad cooperation
+country_event = { #Fail
 	id = bhutan.focus_event.7
 	title = bhutan.focus_event.7.t
 	desc = bhutan.focus_event.7.d
@@ -236,11 +129,11 @@ country_event = { #THEY SAID NO - Azad cooperation
 		name = bhutan.focus_event.7.a
 		ai_chance = { factor = 90 }
 		hidden_effect = {
-		    complete_national_focus = BHU_calcutta_catastrophe
+		    complete_national_focus = BHU_a_minor_headache
 		}
 	}
 }
-country_event = { #THEY SAID YES - Azad cooperation
+country_event = { #Success
 	id = bhutan.focus_event.8
 	title = bhutan.focus_event.8.t
 	desc = bhutan.focus_event.8.d
@@ -251,37 +144,7 @@ country_event = { #THEY SAID YES - Azad cooperation
 		name = bhutan.focus_event.8.a
 		ai_chance = { factor = 90 }
 		hidden_effect = {
-		    complete_national_focus = BHU_music_to_our_ears
-		}
-	}
-}
-country_event = { #THEY SAID NO - Kanwal gambler
-	id = bhutan.focus_event.9
-	title = bhutan.focus_event.9.t
-	desc = bhutan.focus_event.9.d
-	
-	is_triggered_only = yes
-	
-	option = { # They said YES!
-		name = bhutan.focus_event.9.a
-		ai_chance = { factor = 90 }
-		hidden_effect = {
-		    complete_national_focus = BHU_failure_anticipated
-		}
-	}
-}
-country_event = { #THEY SAID YES - Kanwal gambler
-	id = bhutan.focus_event.10
-	title = bhutan.focus_event.10.t
-	desc = bhutan.focus_event.10.d
-	
-	is_triggered_only = yes
-	
-	option = { # They said YES!
-		name = bhutan.focus_event.10.a
-		ai_chance = { factor = 90 }
-		hidden_effect = {
-		    complete_national_focus = BHU_a_welcomed_success
+		    complete_national_focus = BHU_a_fresh_breeze
 		}
 	}
 }

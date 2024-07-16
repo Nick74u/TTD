@@ -4,7 +4,26 @@ BHU_dynamic_modifiers_setup = {
 	set_variable = { BHU_production_units_to_GDP_ratio_modifier = 0.000 }
 	set_variable = { Meter_garrison_bar_supply_value = 50 }
 	set_variable = { Meter_garrison_bar_morale_value = 50 }
+	set_variable = { convoy_supply_arrival = 10 }
 	BHU_add_garrison_var = yes
+}
+BHU_convoy_supply_change = {
+	add_to_variable = { convoy_supply_arrival = convoy_supply_arrival_temp }
+	if = {
+		limit = {
+			check_variable = {
+				convoy_supply_arrival_temp < 0
+			}
+		}
+		multiply_temp_variable = { convoy_supply_arrival_temp = -1 }
+		custom_effect_tooltip = BHU_convoy_supply_change_decrease_tt
+	}
+	else = { custom_effect_tooltip = BHU_convoy_supply_change_increase_tt }
+	clamp_variable = {
+		var = convoy_supply_arrival
+		min = 0
+		max = 100
+	}
 }
 BHU_garrison_supply_change = {
 	add_to_variable = { Meter_garrison_bar_supply_value = Meter_garrison_bar_supply_temp }
@@ -18,6 +37,21 @@ BHU_garrison_supply_change = {
 		custom_effect_tooltip = BHU_garrison_supply_change_decrease_tt
 	}
 	else = { custom_effect_tooltip = BHU_garrison_supply_change_increase_tt }
+	BHU_add_garrison_var = yes
+}
+BHU_economy_status_change = {
+	add_to_variable = { BHU_gdp_growth_modifier = BHU_gdp_growth_modifier_temp }
+	add_to_variable = { BHU_production_units_to_GDP_ratio_modifier = BHU_production_units_to_GDP_ratio_modifier_temp }
+	if = {
+		limit = {
+			check_variable = {
+				BHU_gdp_growth_modifier_temp < 0
+			}
+		}
+		multiply_temp_variable = { BHU_gdp_growth_modifier_temp = -1 }
+		custom_effect_tooltip = BHU_economy_status_change_decrease_tt
+	}
+	else = { custom_effect_tooltip = BHU_economy_status_change_increase_tt }
 	BHU_add_garrison_var = yes
 }
 BHU_add_garrison_var= {

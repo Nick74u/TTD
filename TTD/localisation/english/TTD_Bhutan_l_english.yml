@@ -29,85 +29,74 @@
   BHU_leap_forward_desc:0 "§FGDP Growth: [?BHU_gdp_growth_modifier|+%%=]\n£GFX_tt_prod_unit Production Units to GDP ratio modifier: [?BHU_production_units_to_GDP_ratio_modifier|%%+=]\n--------------\n§!"
 ########FOCUS#############
   ##First Part##
-  BHU_pacifying_bhutan: "The General and His State"
-  BHU_pacifying_bhutan_desc: ""
-  BHU_the_chained_dragon: "The Chained Dragon"
-  BHU_the_chained_dragon_desc: "The locals tend to think that we are occupiers, that we will enslave and persecute their people, and that we will partake in "mass murder" or "genocide".  They want us to immediately go back to where we came from. But, we are not the monsters that they think we are.\n\n We will teach them the benefits of being so closely connected to the economic powerhouses which are Azad Hind and Japan. We will teach them about the dark side of their previous rulers, the monarchs of the Wangchuck Dynasty, and how they oppressed them and blocked them from the prosperity Bhutan could've had. We will undo the wrongdoings done by the those who ruled them in the past, and shall let Bhutan enter a new, definite future, which is to embrace their newfound partners down south, and become one, with Hindustan.. Bhutan shall be reborn with a new image, a new history, and a new national identity...\n\nAnd if §Yanyone§! tries to resist, §Rthey already know what's coming for them§!"
-  BHU_From_Mountains_to_Cities: "From Mountains to Cities"
-  BHU_From_Mountains_to_Cities_desc: "BHUTAN NUMBA ONE!!"
-  BHU_The_Bhutanese_Renaissance: "The Bhutanese Renaissance"
-  BHU_The_Bhutanese_Renaissance_desc: ""
-  BHU_a_hook_to_a_bad_economic_face: "A Hook To A Bad Economic Face"
-  BHU_a_hook_to_a_bad_economic_face_desc: ""
-  BHU_a_meeting_with_the_rising_sun: "A Meeting within the Sphere"
-  BHU_a_meeting_with_the_rising_sun_desc: ""
-  BHU_a_road_map_for_the_future: "A Road Map for the future"
-  BHU_a_road_map_for_the_future_desc: ""
-  BHU_securing_bose_vouch: "Securing Bose's Confirmation"
-  BHU_securing_bose_vouch_desc: ""
-  BHU_singh_is_all_we_need: "Kanwal's Gamble"
-  BHU_singh_is_all_we_need_desc: ""
-  BHU_laying_the_groundworks: "Laying the Groundworks"
-  BHU_laying_the_groundworks_desc: ""
-  BHU_the_venue: "The Meeting Location"
-  BHU_the_venue_desc: ""
-  BHU_in_tokyo: "Kanwal's Arrival In Tokyo"
-  BHU_in_tokyo_desc: ""
-  BHU_failure_anticipated: "A Defeat To Remember"
-  BHU_failure_anticipated_desc: ""
-  BHU_a_welcomed_success: "A Great Success"
-  BHU_a_welcomed_success_desc: ""
-  BHU_miracle_sphere: "The Latest Miracle of the Sphere"
-  BHU_miracle_sphere_desc: ""
-  BHU_disaster: "Our Greatest Failure Yet"
-  BHU_disaster_desc: ""
-  BHU_our_lines: "Rehearsing Our Lines"
-  BHU_our_lines_desc: ""
-  BHU_our_tone: "...Organizing Our Presentation"
-  BHU_our_tone_desc: ""
-  BHU_the_departure: "Embarking On A Journey"
-  BHU_the_departure_desc: ""
-  BHU_music_to_our_ears: "A Quota And A Reward"
-  BHU_music_to_our_ears_desc: ""
-  BHU_calcutta_catastrophe: "A Catastrophe At The Conference"
-  BHU_calcutta_catastrophe_desc: ""
-  BHU_bhutan_boom: "An Economic Miracle"
-  BHU_bhutan_boom_desc: ""
-  BHU_the_dragon_scratched: "Scratches Of The Tiger"
-  BHU_the_dragon_scratched_desc: ""
-  BHU_parties_and_celebration: "Beer,Wine and Parties"
-  BHU_parties_and_celebration_desc: ""
-  BHU_singh_nightmare: "A Fall Of Trust"
-  BHU_singh_nightmare_desc: ""
-  BHU_acknowledging_the_eastern_issue: "The Question Of The East"
-  BHU_acknowledging_the_eastern_issue_desc: ""
-  BHU_reports_from_our_men: "Reports From Our Men"
-  BHU_reports_from_our_men_desc: ""
-  BHU_subsidize_the_hunt_for_wangchuk: "Searching For The Rebels"
-  BHU_subsidize_the_hunt_for_wangchuk_desc: ""
-  BHU_the_army_is_your_friend: "Weapons From AHOF"
-  BHU_the_army_is_your_friend_desc: "Azad Hind Ordinance Factories btw"
-  BHU_a_snowy_day_in_thimphu: "Loyalists In The Snow"
-  BHU_a_snowy_day_in_thimphu_desc: ""
-  BHU_a_curfew_in_the_east: "A Curfew In The Eastern Province"
-  BHU_a_curfew_in_the_east_desc: ""
-  BHU_a_bounty_on_the_head: "A Bounty On Wangchuck's Head"
-  BHU_a_bounty_on_the_head_desc: ""
-  BHU_consulting_army_groups: "The Cliques of our Army"
-  BHU_consulting_army_groups_desc: ""
-  BHU_road_to_arunachal: "The Road to Arunachal"
-  BHU_road_to_arunachal_desc: ""
-  BHU_strike_now: "Strike Now!"
-  BHU_strike_now_desc: ""
-  BHU_the_finishing_touches: "The Finishing Touches"
-  BHU_the_finishing_touches_desc: ""
-  BHU_we_have_done_what_we_could: "We Have Done What We Could"
-  BHU_we_have_done_what_we_could_desc: ""
-  BHU_bhutan_age: "A New Bhutan In A New Age!"
-  BHU_bhutan_age_desc: ""
-  BHU_a_rainy_day_in_a_gloomy_city: "A Gloomy Night At The Central Secretariat"
-  BHU_a_rainy_day_in_a_gloomy_city_desc: ""
-
+ BHU_removing_the_rubble: "Removing The Rubble"
+ BHU_in_azad_hind_vision: "In Azad Hind's Vision"
+ BHU_the_chained_dragon: "The Chained Dragon"
+ BHU_build_from_the_ground_up: "Build From The Ground Up"
+ BHU_The_Bhutanese_Renaissance: "The Bhutanese Renaissance"
+ BHU_monitoring_our_economic_health: "Monitoring Our Economic Health"
+ BHU_a_road_map_for_the_future: "A Road Map For The Future"
+ BHU_laying_the_groundworks: "Laying The Groundworks"
+ 
+ BHU_the_phone_to_hell: "The Phone To Hell"
+ BHU_a_train_to_kolkata: "A Train To Kolkata"
+ BHU_coordinating_with_the_convoy: "Coordinating With The Convoy"
+ BHU_showcasing_our_troubles: "Showcasing Our Troubles"
+ BHU_extending_the_hilda: "Extending The Hilda"
+ 
+ BHU_kanwal_gamble: "Kanwal's Gamble"
+ BHU_tactics_for_a_troublesome_land: "Tactics For A Troublesome Land"
+ BHU_homegrown_supplies: "Homegrown Supplies"
+ BHU_bhutan_farming_initiative: "Bhutan Farming Initiative"
+ BHU_reaching_out_a_hand_to_the_locals: "Reaching Out A Hand To The Locals"
+ 
+ BHU_tighten_the_leash: "Tighten The Leash"
+ BHU_bhutan_needs_you: "Bhutan Needs You!"
+ BHU_a_warm_welcome: "A Warm Welcome"
+ BHU_keeping_the_army_in_place: "Keeping The Army In Place"
+ 
+ 
+ BHU_the_ministry_of_economic_affairs: "The Ministry Of Economic Affairs"
+ BHU_bhutan_for_business: "Bhutan Open For Business"
+ BHU_a_minor_headache: "A Minor Headache"
+ BHU_a_fresh_breeze: "A Fresh Breeze"
+ BHU_postpone_our_plans: "Postpone Our Plans"
+ BHU_mopping_out_disloyalty: "Mopping Out Disloyalty"
+ BHU_the_first_sign_of_relief: "The First Sign Of Relief"
+ BHU_the_model_province_of_india: "The Model Province Of India"
+ 
+ 
+ BHU_the_countryside_on_fire: "The Countryside On Fire"
+ BHU_reports_from_our_men: "Reports From Our Men"
+ BHU_searching_for_the_rebels: "Searching For The Rebels"
+ BHU_the_loyalist_network: "The Loyalist Network"
+ BHU_a_bounty_on_the_head: "Increasing The Bounty On Wangchuck's Head"
+ BHU_weapons_from_ahof: "Weapons From AHOF"
+ BHU_a_curfew_in_the_east: "A Curfew In The Eastern Regions"
+ BHU_securing_our_roads: "Securing Our Roads"
+ BHU_enforcing_the_mcmahon_line: "Enforcing the McMahon Line"
+ BHU_blitz_to_arunachal: "The Blitz To Arunachal"
+ 
+ 
+ BHU_dream_over_the_thimphu_valley: "The Dream Over the Thimphu Valley"
+ BHU_bhutan_age: "A New Bhutan In A New Age"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 ###########ASSORTED LAWS ############
 BHU_add_uncategorised_law_tt:0 "§F§W[GetAssortedLawsBHU]§! will be added to our assorted laws.§!"
 BHU_remove_uncategorised_law_tt:0 "§F§W[GetAssortedLawsBHU]§! will be removed from our assorted laws.§!"
@@ -197,6 +186,7 @@ BHU_Laws_Inexistent_Central_Economy_desc:0 "Our economy is trash"
    BHU_unlocks_garrison_gui: "Unlocks the §OState of the Garrison§! GUI in the £decision_icon_small §Ydecisions§! tab."
    BHU_supply_number: "§RSupply§! is currently: §W[?Meter_garrison_bar_supply_value|2]%§! "
    BHU_morale_number: "§YMorale§! is currently: §W[?Meter_garrison_bar_morale_value|2]%§!"
-   BHU_convoy_arrival: "Convoy will arrive, giving us Supply by §G10%!§!"
+   BHU_convoy_arrival: "Convoy will arrive, giving us Supply by §G[?convoy_supply_arrival|2]%!§!"
    TTD_BHU_garrison_supply_desc_tt: "The bread and butter of any army is how well supplied they are. Logistics is the key to victory, and in our case, the way to pacify Bhutan"
    TTD_BHU_garrison_morale_desc_tt: "No army can win a battle without its men, and not only that, they also must be enthusiastic and able to perform their duty"
+   

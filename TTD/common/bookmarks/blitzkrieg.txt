@@ -430,8 +430,8 @@ bookmarks = {
 				BHU_A_Dragon_Restless
 			}
 			focuses = {
-			    BHU_From_Mountains_to_Cities
-				BHU_a_meeting_with_the_rising_sun
+			    BHU_tighten_the_leash
+				BHU_the_model_province_of_india
 				BHU_bhutan_age
 			}
 		}

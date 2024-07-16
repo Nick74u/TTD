@@ -591,6 +591,9 @@ country_event = { ##### Knock knock Pakistan
 			}
 			create_faction = Kill_pak
 		}
+		MFP = {
+			add_ideas = MFP_chaotic_countryside
+		}
 		KLT = {
 			add_ideas = KLT_sleeping
 		}

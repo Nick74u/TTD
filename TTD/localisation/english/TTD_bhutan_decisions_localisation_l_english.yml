@@ -22,3 +22,8 @@
  azad_hind_poverty_time:0 "Azad Hind Will Inspect Our Current State"
  BHU_garrison_supply_change_increase_tt: "§GIncreases§! garrison §Rsupply§! by §G[?Meter_garrison_bar_supply_temp|2]%§!.\n"
  BHU_garrison_supply_change_decrease_tt: "§RDecreases§! garrison §Rsupply§! by §R[?Meter_garrison_bar_supply_temp|2]%§!.\n"
+    ##ECONOMY MODIFIER
+ BHU_economy_status_change_decrease_tt: "§RDecreases§! Economic §GGrowth§! by §R[?BHU_gdp_growth_modifier_temp|2]%§!.\n"
+ BHU_economy_status_change_increase_tt: "§GIncreases§! Economic GDP §GGrowth§! by §G[?BHU_gdp_growth_modifier_temp|2]%§!.\n"
+ BHU_convoy_supply_change_decrease_tt: "§RDecreases§! Monthly Convoy §RSupply§! by §R[?convoy_supply_arrival_temp|2]%§!.\n"
+ BHU_convoy_supply_change_increase_tt: "§GIncreases§! Monthly Convoy §RSupply§! by §G[?convoy_supply_arrival_temp|2]%§!.\n"

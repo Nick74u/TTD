@@ -23,6 +23,10 @@ spriteTypes = {
 	name = "GFX_goal_reports_from_our_men"
 	texturefile = "gfx/interface/goals/focus_reports_from_our_men.dds"			
 	}	
+	SpriteType = {
+	name = "GFX_goal_in_azad_hind_vision"
+	texturefile = "gfx/interface/goals/focus_BHU_in_azad_hind_vision.dds"			
+	}	
 	
 	SpriteType = {
 	name = "GFX_goal_continuous_reduce_training_time"
