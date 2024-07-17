@@ -90,34 +90,7 @@ country_event = {
 #        }
 #	}
 #}
-country_event = { #azad total victory
-	id = azad_event.3
-	title = azad_event.3.t
-	desc = azad_event.3.d
-	
-	fire_only_once = yes
-	trigger = {
-	    tag = AZH
-	    has_global_flag = azad_war
-		IND = {
-		    surrender_progress > 0.8
-		}
-		AZH = {
-		    controls_state = 980
-		    surrender_progress < 0.2
-		}
-	}
-	mean_time_to_happen = {
-	    days = 1
-	}
-	
-	option = { # sweep
-		name = azad_event.3.a
-        hidden_effect = {
-		    debug_azad_hind_victory = yes
-        }
-	}
-}
+
 country_event = {
 	id = afghan.1
 	title = afghan.1.t

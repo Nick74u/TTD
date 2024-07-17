@@ -3,7 +3,8 @@
 ###########################
 
 add_namespace = bhutan_flavor
-add_namespace = bhutan.focus_event
+add_namespace = bhutan_focus_event
+add_namespace = bhutan_border_skirmish
 add_namespace = bhutan_civil_war
 
 country_event = {    ####Temp flavor chain
@@ -16,51 +17,119 @@ country_event = {    ####Temp flavor chain
 	option = { # paperwork!
 		name = bhutan_flavor.1.a
 		ai_chance = { factor = 90 }
-		hidden_effect = {
-		    BHU = { 
-			    country_event = {
-				    days = 12
-				    id = bhutan_flavor.2
-				}
-			}
-		}
 	}
 }
+
+
 country_event = {
-	id = bhutan_flavor.2
-	title = bhutan_flavor.2.t
-	desc = bhutan_flavor.2.d
+	id = bhutan_focus_event.1
+	title = bhutan_focus_event.1.t
+	desc = bhutan_focus_event.1.d
 	
 	is_triggered_only = yes
 	
 	option = { # paperwork!
-		name = bhutan_flavor.2.a
+		name = bhutan_focus_event.1.a
 		ai_chance = { factor = 90 }
 	}
 }
 country_event = {
-	id = bhutan_flavor.3
-	title = bhutan_flavor.3.t
-	desc = bhutan_flavor.3.d
+	id = bhutan_focus_event.2
+	title = bhutan_focus_event.2.t
+	desc = bhutan_focus_event.2.d
 	
 	is_triggered_only = yes
 	
 	option = { # paperwork!
-		name = bhutan_flavor.3.a
+		name = bhutan_focus_event.2.a
+		custom_effect_tooltip = BHU_poverty
+		set_country_flag = BHU_tackle_poverty
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = { #Fail
+	id = bhutan_focus_event.3
+	title = bhutan_focus_event.3.t
+	desc = bhutan_focus_event.3.d
+	
+	is_triggered_only = yes
+	
+	option = { # They said No!
+		name = bhutan_focus_event.3.a
+		ai_chance = { factor = 90 }
+		hidden_effect = {
+		    complete_national_focus = BHU_a_minor_headache
+		}
+	}
+}
+country_event = { #Success
+	id = bhutan_focus_event.4
+	title = bhutan_focus_event.4.t
+	desc = bhutan_focus_event.4.d
+	
+	is_triggered_only = yes
+	
+	option = { # They said YES!
+		name = bhutan_focus_event.4.a
+		ai_chance = { factor = 90 }
+		hidden_effect = {
+		    complete_national_focus = BHU_a_fresh_breeze
+		}
+	}
+}
+
+
+country_event = {
+	id = bhutan_border_skirmish.1
+	title = bhutan_border_skirmish.1.t
+	desc = bhutan_border_skirmish.1.d
+	
+	is_triggered_only = yes
+	
+	option = { # send a letter to azad for arunachal
+		name = bhutan_border_skirmish.1.a
+		AZH = { 
+		    country_event = {
+		        days = 6
+		        id = azad.1
+			}
+		}
+		hidden_effect = {
+			TIB = {
+				1963 = {
+					set_demilitarized_zone = no
+				}
+				1962 = {
+					set_demilitarized_zone = no
+				}
+			}
+		}
+		ai_chance = { factor = 90 }
+	}
+}
+country_event = {
+	id = bhutan_border_skirmish.2
+	title = bhutan_border_skirmish.2.t
+	desc = bhutan_border_skirmish.2.d
+	
+	is_triggered_only = yes
+	
+	option = { # paperwork!
+		name = bhutan_border_skirmish.2.a
 		custom_effect_tooltip = BHU_mtsho_border_war
 		set_country_flag = BHU_azad_hind_approves
 		ai_chance = { factor = 90 }
 	}
 }
 country_event = {
-	id = bhutan_flavor.5
-	title = bhutan_flavor.5.t
-	desc = bhutan_flavor.5.d
+	id = bhutan_border_skirmish.3
+	title = bhutan_border_skirmish.3.t
+	desc = bhutan_border_skirmish.3.d
 	
 	is_triggered_only = yes
 	
 	option = { # attack!
-		name = bhutan_flavor.5.a
+		name = bhutan_border_skirmish.3.a
 		transfer_state = 1962
 		set_country_flag = BHU_mtsho_obtained
 		custom_effect_tooltip = Bhu_mtsho_intensify
@@ -82,112 +151,7 @@ country_event = {
 		ai_chance = { factor = 90 }
 	}
 }
-country_event = {
-	id = bhutan.focus_event.1
-	title = bhutan.focus_event.1.t
-	desc = bhutan.focus_event.1.d
-	
-	is_triggered_only = yes
-	
-	option = { # paperwork!
-		name = bhutan.focus_event.1.a
-		ai_chance = { factor = 90 }
-	}
-}
-country_event = {
-	id = bhutan.focus_event.2
-	title = bhutan.focus_event.2.t
-	desc = bhutan.focus_event.2.d
-	
-	is_triggered_only = yes
-	
-	option = { # 
-	}
-}
-country_event = {
-	id = bhutan.focus_event.3
-	title = bhutan.focus_event.3.t
-	desc = bhutan.focus_event.3.d
-	
-	is_triggered_only = yes
-	
-	option = { # paperwork!
-		name = bhutan.focus_event.3.a
-		custom_effect_tooltip = BHU_poverty
-		set_country_flag = BHU_tackle_poverty
-		ai_chance = { factor = 90 }
-	}
-}
-country_event = { #Fail
-	id = bhutan.focus_event.7
-	title = bhutan.focus_event.7.t
-	desc = bhutan.focus_event.7.d
-	
-	is_triggered_only = yes
-	
-	option = { # They said No!
-		name = bhutan.focus_event.7.a
-		ai_chance = { factor = 90 }
-		hidden_effect = {
-		    complete_national_focus = BHU_a_minor_headache
-		}
-	}
-}
-country_event = { #Success
-	id = bhutan.focus_event.8
-	title = bhutan.focus_event.8.t
-	desc = bhutan.focus_event.8.d
-	
-	is_triggered_only = yes
-	
-	option = { # They said YES!
-		name = bhutan.focus_event.8.a
-		ai_chance = { factor = 90 }
-		hidden_effect = {
-		    complete_national_focus = BHU_a_fresh_breeze
-		}
-	}
-}
-country_event = {
-	id = bhutan.focus_event.15
-	title = bhutan.focus_event.15.t
-	desc = bhutan.focus_event.15.d
-	
-	is_triggered_only = yes
-	
-	option = { # send a letter to azad for arunachal
-		name = bhutan.focus_event.15.a
-		AZH = { 
-		    country_event = {
-		        days = 6
-		        id = azad.1
-			}
-		}
-		hidden_effect = {
-			TIB = {
-				1963 = {
-					set_demilitarized_zone = no
-				}
-				1962 = {
-					set_demilitarized_zone = no
-				}
-			}
-		}
-		ai_chance = { factor = 90 }
-	}
-}
-country_event = {
-	id = bhutan.focus_event.16
-	title = bhutan.focus_event.16.t
-	desc = bhutan.focus_event.16.d
-	
-	is_triggered_only = yes
-	
-	option = { # paperwork!
-		name = bhutan.focus_event.16.a
-		ai_chance = { factor = 90 }
-	}
-}
+
 country_event = {
 	id = bhutan_civil_war.0
 	title = bhutan_civil_war.0.t

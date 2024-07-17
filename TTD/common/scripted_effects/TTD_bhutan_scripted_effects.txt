@@ -39,6 +39,20 @@ BHU_garrison_supply_change = {
 	else = { custom_effect_tooltip = BHU_garrison_supply_change_increase_tt }
 	BHU_add_garrison_var = yes
 }
+BHU_garrison_morale_change = {
+	add_to_variable = { Meter_garrison_bar_morale_value = Meter_garrison_bar_morale_temp }
+	if = {
+		limit = {
+			check_variable = {
+				Meter_garrison_bar_morale_temp < 0
+			}
+		}
+		multiply_temp_variable = { Meter_garrison_bar_morale_temp = -1 }
+		custom_effect_tooltip = BHU_garrison_morale_change_decrease_tt
+	}
+	else = { custom_effect_tooltip = BHU_garrison_morale_change_increase_tt }
+	BHU_add_garrison_var = yes
+}
 BHU_economy_status_change = {
 	add_to_variable = { BHU_gdp_growth_modifier = BHU_gdp_growth_modifier_temp }
 	add_to_variable = { BHU_production_units_to_GDP_ratio_modifier = BHU_production_units_to_GDP_ratio_modifier_temp }

@@ -169,7 +169,53 @@ PAK_sopfail_rush = {
 		value = 200
 	}
 }
+PAK_india_war_strat = {
+	allowed = {
+		tag = PAK
+	}
+	enable = {
+		has_war_with = IND
+	}
+	
+	abort_when_not_enabled = yes
 
+	ai_strategy = {
+		type = conquer
+		id = IND
+		value = 100
+	}
+	ai_strategy = {
+		type = garrison
+		value = -100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = IND
+		value = 300
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = AFG
+		value = -10000
+	}
+}
+
+PAK_kill_india_rush = {
+	allowed = {
+		tag = PAK
+	}
+	enable = {
+		has_war_with = IND
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = consider_weak
+		id = IND
+		value = 200
+	}
+}
 SPU_KLT_end_war = {
 	allowed = {
 		tag = SPU

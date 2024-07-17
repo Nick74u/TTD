@@ -25,6 +25,7 @@ ideas = {
 				supply_consumption_factor = -0.20
 				army_core_defence_factor = 0.45
 				required_garrison_factor = 1
+				free_production_units_modifier = 13
 			}
 		}
 	}

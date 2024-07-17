@@ -182,7 +182,7 @@ bhutan_meeting_category = {
 					BHU = { 
 						country_event = {
 							days = 1
-							id = bhutan.focus_event.7
+							id = bhutan_focus_event.3
 						}
 					}
 				}
@@ -191,7 +191,7 @@ bhutan_meeting_category = {
 					BHU = { 
 						country_event = {
 						days = 1
-						id = bhutan.focus_event.8
+						id = bhutan_focus_event.4
 						}
 					}
 		    	}

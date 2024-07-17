@@ -162,6 +162,19 @@ on_actions = {
 					PvA_PAK_victory = yes
 					set_global_flag = skip_default_capitulation
 				}
+				##AZH VS ROI
+				else_if = { # AZH WINS
+					limit = {
+						FROM = {
+							tag = AZH
+						}
+						ROOT = {
+							tag = IND
+						}
+					}
+					debug_azad_hind_victory = yes
+					set_global_flag = skip_default_capitulation
+				}
 				##BHUTAN VS FREE BHUTAN
 				else_if = { # total government vic
 					limit = {

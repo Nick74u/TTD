@@ -227,11 +227,6 @@ debug_azad_hind_victory = {
 	azad_hind_victory = yes
     india_azad_war_closing = yes
 	
-
-	log = "azad_war_won"
-	set_global_flag = azad_war_won
-	set_global_flag = show_peace_popup_alert
-	add_to_variable = { global.peace_popup_dirty = 1 }
 }
 azad_hind_victory = {
 	log = "[GetDateText]: [Root.GetTag]: azad_hind_victory; Executing." # Azad wins

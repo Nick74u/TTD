@@ -13,7 +13,7 @@ country_event = {
 		BHU = { 
 		    country_event = {
 		        days = 5
-		        id = bhutan_flavor.3
+		        id = bhutan_border_skirmish.2
 			}
 		}
 		

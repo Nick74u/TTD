@@ -110,7 +110,7 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = {
-			id = bhutan.focus_event.1
+			id = bhutan_focus_event.1
 			hours = 6
 			}
 		}
@@ -137,7 +137,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			TNO_improve_research_facilities_low = yes
 		}
 	}
 	focus = {
@@ -162,7 +162,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			tno_improve_industrial_equipment = yes
 		}
 	}
 	focus = {
@@ -187,7 +187,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			TNO_improve_admin_efficiency_med = yes
 		}
 	}
 	focus = {
@@ -215,7 +215,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = BHU_leap_forward
 			country_event = {
-			id = bhutan.focus_event.3
+			id = bhutan_focus_event.2
 			hours = 6
 			}
 			set_temp_variable = { gdp_growth_temp = 0.2 }
@@ -336,14 +336,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 
-        select_effect = {
-		    hidden_effect = {
-			    country_event = {
-			    	id = bhutan_flavor.2 #placeholder
-		    		days = 7
-				}
-	    	}
-    	}
+       
 		completion_reward = {
 			
 		}
@@ -424,7 +417,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			TNO_improve_agriculture_med = yes
+			set_temp_variable = { BHU_gdp_growth_modifier_temp = 0.35 }
+			BHU_economy_status_change = yes
 		}
 	}
 	focus = {
@@ -449,7 +444,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_temp_variable = { convoy_supply_arrival_temp = 3 }
+			set_temp_variable = { convoy_supply_arrival_temp = 5 }
 			BHU_convoy_supply_change = yes
 			add_to_variable = { BHU_garrison_dirty_variable = .1 } 
 		}
@@ -502,7 +497,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			set_temp_variable = { BHU_gdp_growth_modifier_temp = 0.15 }
+			set_temp_variable = { BHU_gdp_growth_modifier_temp = 0.75 }
 			BHU_economy_status_change = yes
 		}
 	}
@@ -521,7 +516,7 @@ focus_tree = {
 		}
 		
 		available = {
-
+			
 		}
 		
 		bypass = {
@@ -533,6 +528,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			set_temp_variable = { Meter_garrison_bar_morale_temp = 15 }
+			BHU_garrison_morale_change = yes
+			tno_military_supervision_worsen = yes
 		}
 	}
 	focus = {
@@ -559,7 +557,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			tno_conscription_improve = yes
+			tno_training_improve = yes
 		}
 	}
 	focus = {
@@ -639,7 +638,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			#country_event = {
+			#	id = bhutan_focus_event.16
+			#	hours = 6
+			#}
 		}
 	}
 	focus = {
@@ -692,7 +694,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			set_temp_variable = { BHU_gdp_growth_modifier_temp = 0.65 }
+			BHU_economy_status_change = yes
 		}
 	}
 	focus = {
@@ -718,7 +721,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			set_temp_variable = { BHU_gdp_growth_modifier_temp = 1.50 }
+			BHU_economy_status_change = yes
 		}
 	}
 	focus = {
@@ -1053,7 +1057,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 		        days = 1
-		        id = bhutan.focus_event.15
+		        id = bhutan_border_skirmish.1
 			}
 			set_temp_variable = { Meter_garrison_bar_supply_temp = -45 }
 			BHU_garrison_supply_change = yes
@@ -1091,7 +1095,7 @@ focus_tree = {
 				attacker = {
 					state = 2019
 					num_provinces = 1
-					on_win = bhutan_flavor.5
+					on_win = bhutan_border_skirmish.3
 				}
 				defender = {
 					state = 1962
@@ -1163,20 +1167,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			country_event = {
-				id = bhutan.focus_event.16
-				hours = 6
-			}
+			
 			custom_effect_tooltip = BHU_bhutan_age_tt
 			if = {
 				limit = {
 					has_completed_focus = BHU_a_fresh_breeze
 				}
-				set_temp_variable = { BHU_gdp_growth_modifier_temp = 0.40 }
+				set_temp_variable = { BHU_gdp_growth_modifier_temp = 4.35 }
 				set_temp_variable = { BHU_production_units_to_GDP_ratio_modifier_temp = 0.4 }
 			}
 			else = {
-				set_temp_variable = { BHU_gdp_growth_modifier_temp = 0.15 }
+				set_temp_variable = { BHU_gdp_growth_modifier_temp = 1.50 }
 				set_temp_variable = { BHU_production_units_to_GDP_ratio_modifier_temp = 0.020 }
 			}
 			BHU_economy_status_change = yes
