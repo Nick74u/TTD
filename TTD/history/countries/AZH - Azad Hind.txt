@@ -3,7 +3,7 @@ capital = 1349
 # Vacant
 recruit_character = AZH_Generic_Vacant
 
-recruit_character = AZH_Subhas_Chandra_Bose
+recruit_character = AZH_Subhas_Chandra_Bose_patsub
 recruit_character = AZH_Lakshmi_Sahgal
 recruit_character = AZH_John_Thivy
 recruit_character = AZH_Mohan_Singh

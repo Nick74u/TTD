@@ -10,7 +10,6 @@ recruit_character = PAK_Fatima_Jinnah
 recruit_character = PAK_Feroz_Khan_Noon
 recruit_character = PAK_Mohammed_Ayub_Khan
 recruit_character = PAK_Mohammed_Ayub_Khan_pm
-recruit_character = PAK_Yahya_Khan
 recruit_character = PAK_Mahmud_Ahmed
 
 oob = "PAK_1962"

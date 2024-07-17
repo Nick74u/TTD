@@ -1,6 +1,6 @@
 characters = {
 	
-	AZH_Subhas_Chandra_Bose = {
+	AZH_Subhas_Chandra_Bose_patsub = {
 		name = AZH_Subhas_Chandra_Bose
 		portraits = {
 			civilian = { large = "gfx/leaders/AZH/Portrait_Azad_Hind_Subhas_Chandra_Bose.dds" }
