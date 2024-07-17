@@ -1,6 +1,7 @@
 ﻿l_english:
 ### Country Names ###
  PAK: "Islamic State of Pakistan"
+ 
  PAK_DEF: "the Islamic State of Pakistan"
  PAK_ADJ: "Pakistani"
  PAK_REB: "Pakistani National Army"
@@ -18,6 +19,7 @@
  MFP_AFG: "FPRZ"
  MFP_AFG_DEF: "the Frontier Provinces Reconstruction Zone"
  MFP_AFG_ADJ: "Pakistani"
+
  ### Parties ###
 
 ### Characters ###

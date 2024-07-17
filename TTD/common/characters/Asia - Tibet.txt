@@ -2,46 +2,46 @@ characters = {
 	TIB_Tenzin_Gyatso = {
 		name = TIB_Tenzin_Gyatso
 		portraits = {
-			civillian = {
+			civilian = {
 				large = "gfx/leaders/TIB/Portrait_TIB_Tenzin_Gyatso.dds"
 			}
-			country_leader = {
-				desc = "POLITICS_TENZIN_GYATSO_DESC"
-				expire = "1999.1.1"
-				ideology = despotism_theocracy_subtype
-				traits = {}
-				id = -1
+		}
+		country_leader = {
+			desc = "POLITICS_TENZIN_GYATSO_DESC"
+			expire = "1999.1.1"
+			ideology = despotism_theocracy_subtype
+			traits = {}
+			id = -1
 		}
 	}
-}
 	TIB_BGKT_MIL = {
 		name = TIB_BGKT_MIL
 		portraits = {
-			civillian = {
+			civilian = {
 				large = "gfx/leaders/Portrait_Mr_Placeholder_the_Third.dds"
 			}
-			country_leader = {
-				#desc = "POLITICS_BGKT_MIL_DESC"
-				expire = "1999.1.1"
-				ideology = communist_national_communism_subtype
-				traits = {}
-				id = -1
-			}
+		}
+		country_leader = {
+			#desc = "POLITICS_BGKT_MIL_DESC"
+			expire = "1999.1.1"
+			ideology = communist_national_communism_subtype
+			traits = {}
+			id = -1
 		}
 	}
-}
 	TIB_KGGKT_MIL = {
 		name = TIB_KGGKT_MIL
 		portraits = {
-			civillian = {
+			civilian = {
 				large = "gfx/leaders/Portrait_Mr_Placeholder_the_Third.dds"
 			}
-			country_leader = {
-				#desc = "POLITICS_KGGKT_MIL_DESC"
-				expire = "1999.1.1"
-				ideology = communist_national_communism_subtype
-				traits = {}
-				id = -1
+		}
+		country_leader = {
+			#desc = "POLITICS_KGGKT_MIL_DESC"
+			expire = "1999.1.1"
+			ideology = communist_national_communism_subtype
+			traits = {}
+			id = -1
 		}
 	}
 }
