@@ -24,7 +24,17 @@ AZH_prepare_for_india_war = {
 	}
 	ai_strategy = {
 		type = front_unit_request
+		tag = FBH
+		value = -10000
+	}
+	ai_strategy = {
+		type = front_unit_request
 		tag = TIB
+		value = -10000
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = NEP
 		value = -10000
 	}
 }

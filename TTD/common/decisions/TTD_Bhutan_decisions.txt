@@ -1,4 +1,66 @@
+bhutan_debug_category = {		
+	bhutan_garrison_morale_decision = {		
 
+		icon = GFX_decision_generic_document		
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {		
+			
+		}
+		cost = 0		
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			set_temp_variable = { Meter_garrison_bar_morale_temp = 100 }
+			BHU_garrison_morale_change = yes
+		}
+	}	
+	bhutan_debug_rich_decision = {		
+
+		icon = GFX_decision_generic_document		
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {		
+			
+		}
+		cost = 0		
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			set_temp_variable = { gdp_growth_temp = 200.0 }
+	    	econ_gdp_growth_change = yes
+		}
+	}	
+	bhutan_garrison_supply_decision = {		
+
+		icon = GFX_decision_generic_document		
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {		
+			
+		}
+		cost = 0		
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			set_temp_variable = { Meter_garrison_bar_supply_temp = 100 }
+			BHU_garrison_supply_change = yes
+		}
+		
+	}	
+}
 bhutan_poverty_category = {		
 	bhutan_poverty_decision = {		
 

@@ -1,4 +1,11 @@
 ﻿l_english:
+#DEBUG
+bhutan_debug_category: "Kanwal's Bhutan debugger"
+bhutan_debug_category_desc: "Scream if you love Bhutan!!!\n\n Never Gonna Give You Up, Never Gonna Let You Down\n\nCardozo Burgers"
+bhutan_garrison_morale_decision: "Raise morale to 100"
+bhutan_garrison_supply_decision: "Raise supply to 100"
+bhutan_debug_rich_decision: "Make Bhutan the richest country in the world"
+
  bhutan_provinces_category:0 "§YThe Districts Of Bhutan§!"
  bhutan_provinces_decision:0 "Send Soldiers"
  bhutan_poverty_mission:0 "Azad Hind's Deadline"

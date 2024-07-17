@@ -11,4 +11,8 @@ spriteTypes = {
 		name = "GFX_decision_generic_document"
 		texturefile = "gfx/interface/decisions/decision_generic_document.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_bhutan_debug_bose_face"
+		texturefile = "gfx/interface/decisions/decision_bhutan_debug_boseface.dds"
+	}
 }
