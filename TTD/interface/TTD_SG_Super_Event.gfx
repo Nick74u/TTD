@@ -4,6 +4,10 @@ spriteTypes = {
 		name = "GFX_SE_INDIAN_WARS"
 		textureFile = "gfx/superevent_pictures/indian_war.dds"
 	}
+	spriteType = {
+		name = "GFX_SE_BANDIT_WAR"
+		textureFile = "gfx/superevent_pictures/bandit_war.dds"
+	}
 	##USE SUPER_EVENT_MAKER_GUI IN USEFUL PYTHON PROGRAMS TO MAKE NEW SUPER EVENTS##
 }
 

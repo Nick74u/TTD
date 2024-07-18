@@ -239,6 +239,9 @@ ideas = {
 		SE_INDIAN_WARS = { }
 		SE_INDIAN_WARS_D = { }
 		SE_INDIAN_WARS_A = { }
+		SE_BANDIT_WAR = { }
+		SE_BANDIT_WAR_D = { }
+		SE_BANDIT_WAR_A = { }
 	}
 }
 
