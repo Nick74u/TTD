@@ -7,6 +7,7 @@
 					 ##      #               ###   ###  ###
 					 #########
 add_namespace = pakistan
+add_namespace = pakistan_elec
 
 country_event = { ##### Demilitarize event 1 October 7, 1963
 	id = pakistan.1
@@ -371,10 +372,20 @@ country_event = { ##### Leadership change
 	
 	is_triggered_only = yes
 	
-	option = { #Pak elections placeholder
+	option = { #Pak coup
 		name = pakistan.10.a
 		
-		#Where are the candidates? -idk, probably on vacation
+		add_country_leader_role = {
+			character = PAK_Akbar_Khan
+			promote_leader = yes
+			country_leader = {
+				desc = "POLITICS_MOHAMMAD_AYUB_KHAN_DESC"
+				expire = "1999.7.14"
+				ideology = paternalism_national_conservatism_subtype
+				traits = { }
+				id = -1
+			}
+		}
 		annex_country = {
 			target = SPU
 			transfer_troops = yes
@@ -441,6 +452,83 @@ country_event = { ##### rip
 				autonomous_state = autonomy_satellite
 			}
 		}
+		hidden_effect = {
+			PAK = {
+				country_event = {
+					id = pakistan_elec.1
+					days = 23
+				}
+			}
+		}
+	}
+}
+country_event = { ##### Leadership change
+	id = pakistan_elec.1
+	title = pakistan_elec.1.t
+	desc = pakistan_elec.1.d
+	
+	is_triggered_only = yes
+	
+	option = { #Pak coup Akbar
+		name = pakistan_elec.1.a
+		promote_character = PAK_Akbar_Khan_mj
+		
+		hidden_effect = {
+			PAK = {
+				country_event = {
+					id = pakistan_elec.2
+					days = 23
+				}
+			}
+		}
+		ai_chance = { factor = 50 }
+	}
+	option = { #Ayub Stays!
+		name = pakistan_elec.1.b
+		promote_character = PAK_Mohammed_Ayub_Khan
+		
+		hidden_effect = {
+			PAK = {
+				country_event = {
+					id = pakistan_elec.2
+					days = 23
+				}
+			}
+		}
+		
+		ai_chance = { factor = 50 }
+	}
+	option = { #Zulkifar gamer
+		name = pakistan_elec.1.c
+		promote_character = PAK_Zulfikar_Ali_Bhutto
+			
+		hidden_effect = {
+			PAK = {
+				country_event = {
+					id = pakistan_elec.2
+					days = 23
+				}
+			}
+		}
+		
+		ai_chance = { factor = 50 }
+	}
+}
+country_event = { ##### Rawalpindi Take over
+	id = pakistan_elec.2
+	title = pakistan_elec.2.t
+	desc = pakistan_elec.2.d
+	
+	is_triggered_only = yes
+	
+	option = { #Pak coup Akbar
+		name = pakistan_elec.2.a
+		
+		PAK = {
+			add_state_core = 433
+			transfer_state = 433
+		}
+		ai_chance = { factor = 50 }
 	}
 }
 ####Afghanistan breaks the siege!
@@ -522,18 +610,7 @@ country_event = { ##### Pak moves north
 				paternalism = 26
 				despotism = 64
 			}
-			kill_country_leader = yes
-			add_country_leader_role = {
-				character = PAK_Mohammed_Ayub_Khan_pm
-				promote_leader = yes
-				country_leader = {
-					desc = "POLITICS_MOHAMMAD_AYUB_KHAN_DESC"
-					expire = "1999.7.14"
-					ideology = despotism_partisan_movement_subtype
-					traits = { }
-					id = -1
-				}
-			}
+			
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 10000

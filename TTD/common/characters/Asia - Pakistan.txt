@@ -19,7 +19,7 @@ characters = {
 		}
 		country_leader = {
 			desc = "POLITICS_ZULFIKAR_ALI_BHUTTO_DESC"
-			ideology = progressivism_subtype
+			ideology = despotism_aristocratic_republicanism_subtype
 			traits = { }
 			expire = "1999.1.1"
 			id = -1
@@ -58,38 +58,64 @@ characters = {
 		}
 		country_leader = {
 			desc = "POLITICS_MOHAMMAD_AYUB_KHAN_DESC"
+			ideology = despotism_aristocratic_conservatism_subtype
+			traits = { }
+			expire = "1999.1.1"
+			id = -1
+		}
+	}
+	PAK_Mohammed_Ayub_Khan_mj = {
+		name = PAK_Mohammed_Ayub_Khan
+		portraits = {
+			civilian = { large = "gfx/leaders/PAK/Portrait_Pakistan_Mohammed_Ayub_Khan.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_MOHAMMAD_AYUB_KHAN_DESC"
 			ideology = despotism_military_junta_subtype
 			traits = { }
 			expire = "1999.1.1"
 			id = -1
 		}
 	}
-	PAK_Mohammed_Ayub_Khan_pm = {
-		name = PAK_Mohammed_Ayub_Khan_pm
+	PAK_Akbar_Khan_mj = {
+		name = PAK_Akbar_Khan_mj
 		portraits = {
-			civilian = { large = "gfx/leaders/PAK/Portrait_Pakistan_Mohammed_Ayub_Khan.dds" }
+			civilian = { large = "gfx/leaders/PAK/Portrait_Akbar_khan.dds" }
 		}
 		country_leader = {
-			desc = "POLITICS_MOHAMMAD_AYUB_KHAN_DESC"
-			ideology = despotism_partisan_movement_subtype
+			desc = ""
+			ideology = despotism_military_junta_subtype
 			traits = { }
 			expire = "1999.1.1"
 			id = -1
 		}
 	}
-	#PAK_Yahya_Khan = {
-	#	name = PAK_Yahya_Khan
-	#	portraits = {
-	#		civilian = { large = "gfx/leaders/PAK/Portrait_Pakistan_Yahya_Khan.dds" }
-	#	}
-	#	country_leader = {
-	#		desc = "POLITICS_YAHYA_KHAN_DESC"
-	#		ideology = despotism_subtype
-	#		traits = { }
-	#		expire = "1999.1.1"
-	#		id = -1
-	#	}
-	#}
+	PAK_Akbar_Khan = {
+		name = PAK_Akbar_Khan
+		portraits = {
+			civilian = { large = "gfx/leaders/PAK/Portrait_Akbar_khan.dds" }
+		}
+		country_leader = {
+			desc = ""
+			ideology = paternalism_national_conservatism_subtype
+			traits = { }
+			expire = "1999.1.1"
+			id = -1
+		}
+	}
+	PAK_Yahya_Khan = {
+		name = PAK_Yahya_Khan
+		portraits = {
+			civilian = { large = "gfx/leaders/PAK/Portrait_Pakistan_Yahya_Khan.dds" }
+		}
+		country_leader = {
+			desc = "POLITICS_YAHYA_KHAN_DESC"
+			ideology = ultranationalism_ultramilitarism_subtype
+			traits = { }
+			expire = "1999.1.1"
+			id = -1
+		}
+	}
 	PAK_Mahmud_Ahmed = {
 		name = PAK_Mahmud_Ahmed
 		portraits = {

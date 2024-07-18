@@ -5,11 +5,13 @@ recruit_character = PAK_Generic_Vacant
 fill_empty_minister_nochecks = yes # Please remove if you're adding ministers.
 
 recruit_character = PAK_Hassan_Nasir
+recruit_character = PAK_Mohammed_Ayub_Khan_mj
+recruit_character = PAK_Mohammed_Ayub_Khan
+recruit_character = PAK_Akbar_Khan_mj
+recruit_character = PAK_Akbar_Khan
 recruit_character = PAK_Zulfikar_Ali_Bhutto
 recruit_character = PAK_Fatima_Jinnah
 recruit_character = PAK_Feroz_Khan_Noon
-recruit_character = PAK_Mohammed_Ayub_Khan
-recruit_character = PAK_Mohammed_Ayub_Khan_pm
 recruit_character = PAK_Mahmud_Ahmed
 
 oob = "PAK_1962"
