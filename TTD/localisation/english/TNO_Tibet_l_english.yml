@@ -3,6 +3,10 @@
  TIB: "Ganden Phodrang"
  TIB_DEF: "Tibet"
  TIB_ADJ: "Tibetan"
+ 
+ TIB_com: "People's Republic of Tibet"
+ TIB_com_DEF: "the People's Republic of Tibet"
+ TIB_com_ADJ: "Tibetan
 
  ### Parties ###
  TIB_communist_party: "BGKT"
