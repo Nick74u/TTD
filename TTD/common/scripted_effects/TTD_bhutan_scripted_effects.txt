@@ -250,3 +250,47 @@ bhutan_war_wang_win = { #doesn't trigger in game right now
 		}
 	}
 }
+###Economic Meeting shenanigan
+
+BHU_update_meeting_var = {
+	set_temp_variable = { total = BHU_meeting_success_var }
+	add_to_temp_variable = { total = BHU_meeting_failure_var }
+	divide_temp_variable = { total = 100 }
+
+	divide_variable = { BHU_meeting_success_var = total }
+	divide_variable = { BHU_meeting_failure_var = total }
+
+	
+}
+
+# +9 suc
+BHU_success_chance_increase_high = {
+	
+
+	add_to_variable = { BHU_meeting_success_var = 9 }
+	BHU_update_meeting_var = yes
+}
+
+# +5 suc
+BHU_success_chance_increase_med = {
+	
+
+	add_to_variable = { BHU_meeting_success_var = 5 }
+	BHU_update_meeting_var = yes
+}
+
+# +9fail
+BHU_failure_chance_increase_high = {
+
+
+	add_to_variable = { BHU_meeting_failure_var = 9 }
+	BHU_update_meeting_var = yes
+}
+
+# +5 fail
+BHU_failure_chance_increase_med = {
+
+
+	add_to_variable = { BHU_meeting_failure_var = 5 }
+	BHU_update_meeting_var = yes
+}

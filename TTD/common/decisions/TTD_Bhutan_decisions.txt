@@ -211,11 +211,10 @@ bhutan_meeting_category = {
 		cost = 30		#The cost to execute the decision, by default its political power.
 
 		complete_effect = {		#The effects to execute once the envelope icon is clicked.
-		    add_to_variable = { BHU_demand_req = 1 }
-			add_to_variable = { BHU_persuasion_power = 0.1 }
+		    BHU_failure_chance_increase_med = yes
 		}
 		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
-			factor = 75		
+			factor = 1		
 		}
 	}	
 	bhutan_persuade_decision = {		#ID of the decision, must not contain spaces!
@@ -234,11 +233,10 @@ bhutan_meeting_category = {
 		cost = 30		#The cost to execute the decision, by default its political power.
 
 		complete_effect = {		#The effects to execute once the envelope icon is clicked.
-		    add_to_variable = { BHU_demand_req = 1 }
-			add_to_variable = { BHU_persuasion_power = 0.1 }
+		    BHU_success_chance_increase_high = yes
 		}
 		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
-			factor = 75		
+			factor = 2		
 		}
 	}
 	bhutan_meeting_end_mission = {		#ID of the mission, must not contain spaces!
@@ -264,24 +262,22 @@ bhutan_meeting_category = {
 		# EFFECTS OF THIS DECISION/MISSION
 
 		timeout_effect = {		#The effects to execute once the mission timer expires.
-		    random_list = {
-				var:BHU_demand_req = {
-					BHU = { 
-						country_event = {
-							days = 1
-							id = bhutan_focus_event.3
-						}
+			if = {
+				limit = {
+					check_variable = {
+						BHU_meeting_failure_var > 50
 					}
 				}
-			
-				50 = {
-					BHU = { 
-						country_event = {
-						days = 1
-						id = bhutan_focus_event.4
-						}
-					}
-		    	}
+				country_event = {
+					days = 1
+					id = bhutan_focus_event.3
+				}
+			}
+			else = {
+				country_event = {
+					days = 1
+					id = bhutan_focus_event.4
+				}
 			}
 		}
 		

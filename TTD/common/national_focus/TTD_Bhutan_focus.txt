@@ -142,7 +142,7 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_monitoring_our_economic_health
-		icon = focus_From_Mountains_to_Cities
+		icon = GFX_goal_monitor_economic_health
 		x = -2
 		y = 1
 		relative_position_id = BHU_The_Bhutanese_Renaissance
@@ -669,6 +669,12 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = BHU_meeting
 			activate_mission = bhutan_meeting_end_mission
+			set_variable = {
+				BHU_meeting_success_var = 50
+			}
+			set_variable = {
+				BHU_meeting_failure_var = 50
+			}
 		}
 	}
 	focus = {
