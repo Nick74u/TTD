@@ -62,11 +62,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_a_meeting_with_the_rising_sun_shine"
-		texturefile = "gfx/interface/goals/focus_a_meeting_with_the_rising_sun.dds"
+		name = "GFX_goal_warm_welcome_shine"
+		texturefile = "gfx/interface/goals/focus_BHU_warm_welcome.dds"
 				effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_a_meeting_with_the_rising_sun.dds"
+			animationmaskfile = "gfx/interface/goals/focus_BHU_warm_welcome.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -79,7 +79,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_a_meeting_with_the_rising_sun.dds"
+			animationmaskfile = "gfx/interface/goals/focus_BHU_warm_welcome.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

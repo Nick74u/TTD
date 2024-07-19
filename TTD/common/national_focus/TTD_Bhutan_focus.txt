@@ -563,7 +563,7 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_a_warm_welcome
-		icon = focus_From_Mountains_to_Cities
+		icon = GFX_goal_warm_welcome
 		x = 2
 		y = 1
 		relative_position_id = BHU_tighten_the_leash
@@ -585,7 +585,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			country_event = {
+				id = bhutan_focus_event.10
+				hours = 1
+			}
 		}
 	}
 	focus = {
@@ -638,10 +641,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			#country_event = {
-			#	id = bhutan_focus_event.16
-			#	hours = 6
-			#}
+			
 		}
 	}
 	focus = {
@@ -1181,6 +1181,8 @@ focus_tree = {
 				set_temp_variable = { BHU_production_units_to_GDP_ratio_modifier_temp = 0.020 }
 			}
 			BHU_economy_status_change = yes
+			load_focus_tree = BHU_Kanwal_tree_2
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 }

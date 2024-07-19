@@ -1,0 +1,76 @@
+shared_focus = {
+	id = BHU_back_to_the_drawing_board
+	icon = GFX_
+	x = 7
+	y = 0
+		
+	cost = 0.724
+		
+	available = {
+
+	}
+		
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		custom_effect_tooltip = BHU_modernize_bhutan_tt
+	}
+}
+shared_focus = {
+	id = BHU_confrontation_with_the_generals
+	icon = GFX_goal_in_azad_hind_vision
+	x = 0
+	y = 1
+	relative_position_id = BHU_back_to_the_drawing_board
+	cost = 0.724
+	prerequisite = { focus = BHU_back_to_the_drawing_board }
+	available = {
+
+	}
+		
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+			
+	}
+}
+shared_focus = {
+	id = BHU_Walk_the_talk
+	icon = GFX_goal_a_chained_dragon
+	x = 0
+	y = 1
+	relative_position_id = BHU_confrontation_with_the_generals
+		
+	prerequisite = { focus = BHU_confrontation_with_the_generals }
+	cost = 2.24
+		
+	available = {
+
+	}
+		
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		set_country_flag = BHU_show_garrison_gui
+		custom_effect_tooltip = BHU_unlocks_garrison_gui
+	}
+}
+	

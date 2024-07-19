@@ -13,6 +13,10 @@
   bhutan_focus_event.4.t:0 "Success"
   bhutan_focus_event.4.d:0 "ez, didn't have to spend 500 pp"
   bhutan_focus_event.4.a:0 "yesir"
+  
+  bhutan_focus_event.10.t:0 "A Surprising Entrance"
+  bhutan_focus_event.10.d:0 "Two Trucks arrived at Thimphu all bearing the flag of Japan.\n\nKanwal didn't expect nor was informed that guests were coming. Though reluctantly, he had to welcome them as to not get in to trouble\n\n "Good day to you gentleman!" Uttered the one who wore a Japanese General uniform with his winter clothes\n\n"I sure didn't expect to welcome such guests from our long-term allies. What Brings you here?" The room went silent for a solid five seconds when he finally spoke.\n\n"Makoto Matsutani, Japanese attache for South Asia." He paused before continuing "We seek to help Bhutan embrace the Pan-Asianist ideals, Tokyo's orders and also Kolkata's"\n\nKanwal had no choice but to say, "Your help is greatly appreciated...""
+  bhutan_focus_event.10.a:0 "Pan-Asianism spreads to unlikely places"
  
   bhutan_border_skirmish.1.t: "Sitting on the Wartable"
   bhutan_border_skirmish.1.d: "A group of generals sat around a table which displays the map of Arunachal. Today, they were discussing the issue of securing the northern borders of the Azad Hind considering their claim of it. They have proposed to launch a strike in Trashigang, destroy the small Tibetan garrison, and then call the local guard in Upper Assam to coordinate a joint offensive against the state of Me Tog"

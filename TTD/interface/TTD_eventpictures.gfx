@@ -1,0 +1,7 @@
+###BHUTAN####
+spriteTypes = {
+	spriteType = {
+		name = "GFX_Makoto_Matsutani"
+		texturefile = "gfx/event_pictures/Bhutan/event_picture_Makoto_Matsutani.dds"
+	}
+}

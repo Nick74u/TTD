@@ -27,6 +27,10 @@ spriteTypes = {
 	name = "GFX_goal_in_azad_hind_vision"
 	texturefile = "gfx/interface/goals/focus_BHU_in_azad_hind_vision.dds"			
 	}	
+	SpriteType = {
+	name = "GFX_goal_warm_welcome"
+	texturefile = "gfx/interface/goals/focus_BHU_warm_welcome.dds"			
+	}	
 	
 	SpriteType = {
 	name = "GFX_goal_continuous_reduce_training_time"

@@ -77,6 +77,27 @@ country_event = { #Success
 		}
 	}
 }
+country_event = { #Welcoming the Japanese
+	id = bhutan_focus_event.10
+	title = bhutan_focus_event.10.t
+	desc = bhutan_focus_event.10.d
+	picture = GFX_Makoto_Matsutani
+	is_triggered_only = yes
+	
+	option = { # sup Makoto
+		name = bhutan_focus_event.10.a
+		ai_chance = { factor = 90 }
+		add_corps_commander_role = {
+			character = BHU_Makoto_Matsutani
+			traits = {  }
+			skill = 3
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+}
 
 
 country_event = {

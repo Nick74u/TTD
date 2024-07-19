@@ -1,0 +1,13 @@
+
+focus_tree = {
+	id = BHU_Kanwal_tree_2
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BHU
+		}
+	}
+	default = no
+	shared_focus = BHU_back_to_the_drawing_board
+}

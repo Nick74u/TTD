@@ -109,6 +109,14 @@ characters = {
 			id = -1
 		}
 	}
+	BHU_Makoto_Matsutani = {
+		name = BHU_Makoto_Matsutani
+		portraits = {
+			army = {
+				large = "gfx/leaders/BHU/Portrait_Bhutan_Makoto_Matsutani.dds"
+			}
+		}
+	}
 	BHU_Hussain_Muhammad_Ershad = {
 		name = BHU_Hussain_Muhammad_Ershad
 		portraits = {
