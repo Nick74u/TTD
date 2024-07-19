@@ -79,5 +79,37 @@ ideas = {
 				attack_bonus_against = 0.1
 			}
 		}
+		QIN_Last_Stand = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea QIN_Last_Stand" }
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defense_factor_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = XIN
+				army_core_defense_factor_factor = 0.05
+			}
+		}
+		XIK_Last_Stand = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea XIK_Last_Stand" }
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defense_factor_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = XIN
+				army_core_defense_factor_factor = 0.05
+			}
+		}
 	}
 }

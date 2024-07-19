@@ -24,7 +24,7 @@
 
  ## Leader Descs ##
  KIR_Bakshi_Ghulam_Mohammad_desc: "Bakshi Ghulam Mohammad is a man of humble origins and steadfast dedication to public service. Born in 1907 in the picturesque town of Bhaderwah, his upbringing amidst the rugged landscapes of the region instilled in him a deep appreciation for the cultural fabric of Kashmir.\n\nEducated at the esteemed Prince of Wales College in Jammu, Ghulam demonstrated early academic excellence and a keen interest in social and cultural issues plauging the Raj. His rise through the ranks of public service was swift, propelled by his integrity and tireless efforts in addressing the concerns of the people.\n\nBefore assuming the highest office, Ghulam distinguished himself within the National Conference, emerging as a key figure in shaping the region's political discourse. His leadership during this era was characterized by a pragmatic approach, focusing on development initiatives aimed at improving infrastructure, education, and healthcare.\n\nNow as Head Governor, Bakshi's tenure promises to build upon his earlier successes, fostering unity and progress in Jammu and Kashmir. His commitment to public welfare and his ability to navigate complex political landscapes are seen as crucial assets in guiding our state through the challenges and opportunities of the 1960s.\n\nIn the eyes of many, Bakshi Ghulam Mohammad represents hope for a brighter future, grounded in his deep-rooted connection to the land and its people. His journey from Bhaderwah to the pinnacle of political leadership underscores the potential for transformative change under his stewardship, paving the way for a prosperous and harmonious Jammu and Kashmir."
- KIR_Khwaja_Shamsuddin_desc: "He is a Sigma"
+ KIR_Khwaja_Shamsuddin_desc: "Placeholder"
  #KIR_Ghulam_Mohammed_Sadiq_desc: ""
  
  ### Ideas ###
@@ -34,6 +34,8 @@
  KIR_Indepence_Nothing_but_Name_desc: "We are not independent because of Bose's Ghost"
  KIR_Forced_Union: "A Forced Union"
  KIR_Forced_Union_desc: "Similarly to that of a forced marrige, the two regions of Jammu and Kashmir have been forced into an independent mandate by the two nations of Afghanistan and the Former, now turned India, Azad Hind Governate."
+ KIR_Bandit_War: "The Bandit War
+ KIR_Bandit_War_desc: "Placeholder"
  
  ### Tooltips ###
  KIR_Indepence_Nothing_but_Name_tt:0 "§RCannot Edit, Train, or Disband Units and Templates§!"
