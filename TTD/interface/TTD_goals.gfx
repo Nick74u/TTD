@@ -20,6 +20,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_monitor_economic_health.dds"			
 	}
 	SpriteType = {
+		name = "GFX_goal_blitz_to_arunachal"
+		texturefile = "gfx/interface/goals/focus_blitz_to_arunachal.dds"			
+	}
+	SpriteType = {
 		name = "GFX_goal_stable_foundation"
 		texturefile = "gfx/interface/goals/focus_Stable_Foundation.dds"			
 	}	
@@ -39,6 +43,10 @@ spriteTypes = {
 		name = "GFX_goal_the_countryside_on_fire"
 		texturefile = "gfx/interface/goals/focus_the_countryside_on_fire.dds"			
 	}	
+	SpriteType = {
+		name = "GFX_goal_a_train_to_kolkata"
+		texturefile = "gfx/interface/goals/focus_a_train_to_kolkata.dds"			
+	}
 	SpriteType = {
 		name = "GFX_goal_removing_the_rubble"
 		texturefile = "gfx/interface/goals/focus_removing_the_rubble.dds"			

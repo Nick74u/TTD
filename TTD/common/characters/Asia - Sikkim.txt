@@ -20,7 +20,7 @@ characters = {
 		country_leader = {
 			desc = ""
 			expire = "1999.1.1"
-			ideology = despotism_absolute_monarchy_subtype
+			ideology = paternalism_semi_constitutional_monarchy_subtype
 			traits = { }
 			id = -1
 		}
@@ -46,7 +46,7 @@ characters = {
 		country_leader = {
 			desc = ""
 			expire = "1999.1.1"
-			ideology = despotism_absolute_monarchy_subtype
+			ideology = paternalism_semi_constitutional_monarchy_subtype
 			traits = { }
 			id = -1
 		}

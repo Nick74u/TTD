@@ -1,0 +1,43 @@
+ideas = {
+	country = {
+		SIK_a_special_status = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SIK_a_special_status" }
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+			
+			modifier = {
+				custom_modifier_tooltip = SIK_a_special_status_tt
+			}
+		}
+		SIK_rising_pro_accession  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SIK_rising_pro_accession" }
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+			
+			modifier = {
+				socialist_drift = 0.04
+				political_power_factor = -0.15
+			}
+		}
+		SIK_fortune_for_all  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SIK_fortune_for_all" }
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = BHU_transitional_military_occupation
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				free_production_units_modifier = 2
+				gdp_growth_modifier = 0.50
+			}
+		}
+	}
+}

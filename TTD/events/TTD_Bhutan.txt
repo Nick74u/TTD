@@ -59,6 +59,7 @@ country_event = { #Fail
 		ai_chance = { factor = 90 }
 		hidden_effect = {
 		    complete_national_focus = BHU_a_minor_headache
+			clr_country_flag = BHU_meeting
 		}
 	}
 }
@@ -74,6 +75,7 @@ country_event = { #Success
 		ai_chance = { factor = 90 }
 		hidden_effect = {
 		    complete_national_focus = BHU_a_fresh_breeze
+			clr_country_flag = BHU_meeting
 		}
 	}
 }

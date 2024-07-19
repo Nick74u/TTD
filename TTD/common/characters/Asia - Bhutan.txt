@@ -11,10 +11,10 @@ characters = {
 			}
 		}
 		field_marshal = {
-			traits = { harsh_leader inflexible_strategist unyielding_defender }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 4
+			traits = { inflexible_strategist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 3120
@@ -128,12 +128,12 @@ characters = {
 			}
 		}
 		corps_commander = {
-			traits = { fortress_buster organizer }
+			traits = { organizer }
 			skill = 1
-			attack_skill = 2
-			defense_skill = 1
+			attack_skill = 4
+			defense_skill = 5
 			planning_skill = 1
-			logistics_skill = 1
+			logistics_skill = 2
 			legacy_id = 3122
 		}
 		advisor = {

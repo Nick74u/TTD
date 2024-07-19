@@ -291,7 +291,7 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_a_train_to_kolkata
-		icon = focus_From_Mountains_to_Cities
+		icon = GFX_goal_a_train_to_kolkata
 		x = 0
 		y = 1
 		relative_position_id = BHU_the_phone_to_hell
@@ -1071,7 +1071,7 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_blitz_to_arunachal
-		icon = focus_From_Mountains_to_Cities
+		icon = GFX_goal_blitz_to_arunachal
 		x = 0
 		y = 1
 		relative_position_id = BHU_enforcing_the_mcmahon_line
