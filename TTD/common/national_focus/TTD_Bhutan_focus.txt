@@ -14,7 +14,7 @@ focus_tree = {
 	
 	focus = {
 	    id = BHU_removing_the_rubble
-		icon = GFX_
+		icon = GFX_goal_removing_the_rubble
 		x = 7
 		y = 0
 		
@@ -832,7 +832,7 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_the_countryside_on_fire
-		icon = focus_From_Mountains_to_Cities
+		icon = GFX_goal_the_countryside_on_fire
 		x = 8
 		y = 1
 		relative_position_id = BHU_laying_the_groundworks

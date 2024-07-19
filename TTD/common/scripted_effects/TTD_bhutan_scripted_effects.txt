@@ -25,6 +25,43 @@ BHU_convoy_supply_change = {
 		max = 100
 	}
 }
+BHU_garrison_morale_monthly_change= {
+	if = {
+		limit = {
+			check_variable = {
+				Meter_garrison_bar_supply_value < 20
+			}
+		}
+		set_temp_variable = { Meter_garrison_bar_morale_temp = -10 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				Meter_garrison_bar_supply_value < 40
+			}
+		}
+		set_temp_variable = { Meter_garrison_bar_morale_temp = -5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				Meter_garrison_bar_supply_value < 60
+			}
+		}
+		set_temp_variable = { Meter_garrison_bar_morale_temp = 5 }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				Meter_garrison_bar_supply_value < 80
+			}
+		}
+		set_temp_variable = { Meter_garrison_bar_morale_temp = 10 }
+	}
+	else = {
+		set_temp_variable = { Meter_garrison_bar_morale_temp = 15 }
+	}
+}
 BHU_garrison_supply_change = {
 	add_to_variable = { Meter_garrison_bar_supply_value = Meter_garrison_bar_supply_temp }
 	if = {

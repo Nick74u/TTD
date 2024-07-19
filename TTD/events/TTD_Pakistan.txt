@@ -173,6 +173,7 @@ country_event = { ##### Pakistan eats up MFP
 				paternalism = 26
 				despotism = 64
 			}
+			promote_character = PAK_Mohammed_Ayub_Khan_mj
 			hidden_effect = {
 				IND = {
 					country_event = {
@@ -379,7 +380,7 @@ country_event = { ##### Leadership change
 			character = PAK_Akbar_Khan
 			promote_leader = yes
 			country_leader = {
-				desc = "POLITICS_MOHAMMAD_AYUB_KHAN_DESC"
+				desc = ""
 				expire = "1999.7.14"
 				ideology = paternalism_national_conservatism_subtype
 				traits = { }
@@ -471,7 +472,7 @@ country_event = { ##### Leadership change
 	
 	option = { #Pak coup Akbar
 		name = pakistan_elec.1.a
-		promote_character = PAK_Akbar_Khan_mj
+		promote_character = PAK_Akbar_Khan
 		
 		hidden_effect = {
 			PAK = {

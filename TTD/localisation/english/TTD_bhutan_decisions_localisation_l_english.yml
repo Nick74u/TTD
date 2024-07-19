@@ -25,6 +25,8 @@ bhutan_debug_rich_decision: "Make Bhutan the richest country in the world"
  BHU_roads_secured: "The Route to Bhutan is currently: §GSecured§!"
  BHU_roads_unsecured: "The Route to Bhutan is currently: §RUnsecure§!"
  Bhu_mtsho_intensify: "§RThe Resistance radicalizes even more....§!"
+ bhutan_garrison_morale_changes_decision: "The Garrison's Morale changes"
+ bhutan_trigger_paksop_decision: "Trigger Frontier Provinces Chaos"
  #####DECISION TOOLTIP######
  azad_hind_poverty_time:0 "Azad Hind Will Inspect Our Current State"
  BHU_garrison_supply_change_increase_tt: "§GIncreases§! Garrison §RSupply§! by §G[?Meter_garrison_bar_supply_temp|2]%§!.\n"

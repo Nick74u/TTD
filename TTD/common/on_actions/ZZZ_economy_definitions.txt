@@ -2343,7 +2343,7 @@ on_actions = {
 
 			BHU = {
 				set_variable = { GDP = 0.171 } #in billions
-				set_variable = { GDP_growth = 0.729 }
+				set_variable = { GDP_growth = 4.371 }
 				set_variable = { income_tax_rate = 0.4 }
 				set_variable = { business_tax_rate = 0.2 }
 				set_variable = { poverty_rate = 67.12 }

@@ -1,35 +1,47 @@
 spriteTypes = {	
 	SpriteType = {
-	name = "GFX_goal_from_mountains_to_cities"
-	texturefile = "gfx/interface/goals/focus_From_Mountains_to_Cities.dds"			
+		name = "GFX_goal_from_mountains_to_cities"
+		texturefile = "gfx/interface/goals/focus_From_Mountains_to_Cities.dds"			
 	}	
 	SpriteType = {
-	name = "GFX_goal_securing_bose_confirmation"
-	texturefile = "gfx/interface/goals/focus_secure_bose_confirmation.dds"			
+		name = "GFX_goal_securing_bose_confirmation"
+		texturefile = "gfx/interface/goals/focus_secure_bose_confirmation.dds"			
 	}	
 	SpriteType = {
-	name = "GFX_goal_a_meeting_with_the_rising_sun"
-	texturefile = "gfx/interface/goals/focus_a_meeting_with_the_rising_sun.dds"			
+		name = "GFX_goal_a_meeting_with_the_rising_sun"
+		texturefile = "gfx/interface/goals/focus_a_meeting_with_the_rising_sun.dds"			
 	}	
 	SpriteType = {
-	name = "GFX_goal_a_chained_dragon"
-	texturefile = "gfx/interface/goals/focus_a_chained_dragon.dds"			
+		name = "GFX_goal_a_chained_dragon"
+		texturefile = "gfx/interface/goals/focus_a_chained_dragon.dds"			
 	}	
 	SpriteType = {
-	name = "GFX_goal_stable_foundation"
-	texturefile = "gfx/interface/goals/focus_Stable_Foundation.dds"			
+		name = "GFX_goal_stable_foundation"
+		texturefile = "gfx/interface/goals/focus_Stable_Foundation.dds"			
 	}	
 	SpriteType = {
-	name = "GFX_goal_reports_from_our_men"
-	texturefile = "gfx/interface/goals/focus_reports_from_our_men.dds"			
+		name = "GFX_goal_reports_from_our_men"
+		texturefile = "gfx/interface/goals/focus_reports_from_our_men.dds"			
 	}	
 	SpriteType = {
-	name = "GFX_goal_in_azad_hind_vision"
-	texturefile = "gfx/interface/goals/focus_BHU_in_azad_hind_vision.dds"			
+		name = "GFX_goal_in_azad_hind_vision"
+		texturefile = "gfx/interface/goals/focus_BHU_in_azad_hind_vision.dds"			
 	}	
 	SpriteType = {
-	name = "GFX_goal_warm_welcome"
-	texturefile = "gfx/interface/goals/focus_BHU_warm_welcome.dds"			
+		name = "GFX_goal_warm_welcome"
+		texturefile = "gfx/interface/goals/focus_BHU_warm_welcome.dds"			
+	}
+	SpriteType = {
+		name = "GFX_goal_the_countryside_on_fire"
+		texturefile = "gfx/interface/goals/focus_the_countryside_on_fire.dds"			
+	}	
+	SpriteType = {
+		name = "GFX_goal_removing_the_rubble"
+		texturefile = "gfx/interface/goals/focus_removing_the_rubble.dds"			
+	}	
+	SpriteType = {
+		name = "GFX_goal_reports_from_our_men"
+		texturefile = "gfx/interface/goals/focus_reports_from_our_men.dds"			
 	}	
 	
 	SpriteType = {

@@ -59,7 +59,32 @@ bhutan_debug_category = {
 			BHU_garrison_supply_change = yes
 		}
 		
-	}	
+	}
+	bhutan_trigger_paksop_decision = {		
+
+		icon = GFX_decision_generic_document		
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {		
+			
+		}
+		cost = 0		
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			MFP = {
+				country_event = {
+					id = pakistan.1
+					days = 1
+				}
+			}
+		}
+		
+	}
 }
 bhutan_poverty_category = {		
 	bhutan_poverty_decision = {		
@@ -363,7 +388,31 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 			factor = 5000
 		}
 	}
-
+	bhutan_garrison_morale_changes_decision = {		
+		icon = GFX_decision_generic_document		
+		
+		days_mission_timeout = 30	
+		is_good = no
+		activation = {
+		}
+		available = {		
+			always = no
+		}
+		fire_only_once = yes	
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.ssssssss
+			tag = BHU
+			has_country_flag = BHU_show_garrison_gui
+		}
+		timeout_effect = {	
+			BHU_garrison_morale_monthly_change = yes
+			BHU_garrison_morale_change = yes
+			
+			activate_mission = bhutan_garrison_morale_changes_decision
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = "BHU_morale_changes_each_month"
+		}
+	}	
 	BHU_monthly_garrison_check = {		
 
 		icon = GFX_decision_generic_document		
