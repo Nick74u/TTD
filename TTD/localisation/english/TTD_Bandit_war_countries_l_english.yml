@@ -1,11 +1,11 @@
 ﻿l_english:
 #NAVIGATION
-# East Turkestan
-# Kyrgyzstan
-# Ma Clique
-# Tibet
-# Xikang
-# Xinjiang
+# East Turkestan ETR
+# Kyrgyzstan KYR
+# Ma Clique QIN
+# Tibet TIB
+# Xikang XIK
+# Xinjiang XIN
 
 #East Turkestan#
  ### Cosmetic Tags ###
@@ -19,14 +19,14 @@
 
  ### Ideas ###
  ETR_Revolution: "The Turkic Spring"
- ETR_Revolution_desc: "The Uyghurs of Xinjang have been oppressed far too long. Not once have we had a free state run by the Uyghur populace, instead, we have been victims of brutal opression at the hands of the Han and Xinjang Chinese.\n\nThose days will become a thing of the past as the Turks of Xinjang rise against their former overlords. No more will we be the slaves, no more will we be the victims and no more will we be the vanquished! East Turkestan will rise from the ashes of a decemitated Western China and instate her right to rule!\n\n§Don the path to salvation we begin our journey..§!" 
+ ETR_Revolution_desc: "The Uyghurs of Xinjang have been oppressed far too long. only once has there been a free state run by the Uyghur populace, instead, we have been victims of brutal opression at the hands of the Han and Xinjang Chinese.\n\nThose days will become a thing of the past as the Turks of Xinjang rise against their former overlords. No more will we be the slaves, no more will we be the victims and no more will we be the vanquished! East Turkestan will rise from the ashes of a decemitated Western China and instate her right to rule!\n\n§Don the path to salvation we begin our journey..§!" 
 
 ##Kyrgyzstan
  ### Ideas ###
  KYR_Stabilization_Regime: "Stabilization Regime"
  KYR_Stabilization_Regime_desc: "Placeholder"
  KYR_Turkic_Brothers: "Our Turkic Brethren"
- KYR_Turkic_Brothers_desc: "The §*Uyghur Turks§! of §DEast Turkestan§! have been nothing but brothers to the people of §JKyrgystan.§! For longer than history has known, our people have gone through occupation and opression under command of both the §tChinese§! and §nRussians.§!\n\nNow, the §*Turks of Xinjang§! call upon us to assist them in decimating the chains which have restrained them for too long. Though ideological differances seperate us, our brotherhood cohedes us, guiding us towards a future where all §VTurks§! may rejoice in the hills and valleys of our fruitful land.\n\nGlory to the §VPan-Turkic Dream!§!"
+ KYR_Turkic_Brothers_desc: "The §*Uyghur Turks§! of §DEast Turkestan§! have been nothing but brothers to the people of §JKyrgyzstan.§! For longer than history has known, our people have gone through occupation and opression under command of both the §tChinese§! and §nRussians.§!\n\nNow, the §*Turks of Xinjang§! call upon us to assist them in decimating the chains which have restrained them for too long. Though ideological differances seperate us, our brotherhood cohedes us, guiding us towards a future where all §VTurks§! may rejoice in the hills and valleys of our fruitful land.\n\nGlory to the §VPan-Turkic Dream!§!"
 
 ##Ma Clique
  ### IDEAS ###
