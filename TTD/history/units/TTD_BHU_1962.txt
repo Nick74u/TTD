@@ -75,17 +75,6 @@ units = {
 		start_equipment_factor = 0.7
 
 	}
-	division= {	# "1st INA Cavalry Division"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location = 16132 # Thimphu
-		division_template = "INA Cavalry Garrison"  
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-
-	}
 	division= {	# "2nd INA Cavalry Division"
 		division_name = {
 			is_name_ordered = yes
