@@ -103,11 +103,12 @@ BHU_remove_uncategorised_law_tt:0 "§F§W[GetAssortedLawsBHU]§! will be removed
 
 BHU_Laws_Archaic_Province_System:0 "Archaic Province System"
 BHU_Laws_Inexistent_Central_Economy:0 "Inexistent Central Economy"
+BHU_Laws_ministry_of_economic_affairs:0 "Ministry of Economic Affairs"
 
 BHU_get_law_tooltip:0 "[GetAssortedLawsDescBHU]"
 BHU_Laws_Archaic_Province_System_desc:0 "Our administration is trash"
 BHU_Laws_Inexistent_Central_Economy_desc:0 "Our economy is trash"
-
+BHU_Laws_ministry_of_economic_affairs_desc:0 "Cardozo's burger joint"
  #########ToolTips###
   BHU_no_hope_in_the_east_tt:0 "§RCannot train units, disband units, or edit unit templates.!§!"
   TTD_BHU_Map_Info_tt:0 "Bhutan, to say the least, is not a pacified country. Many Provinces that are under our administration are not fully in our hands"
@@ -133,6 +134,7 @@ BHU_Laws_Inexistent_Central_Economy_desc:0 "Our economy is trash"
   BHU_azad_hind_approves: "Azad Hind gave the greenlight to our war plans"
   TTD_BHU_garrison_number_tt: "Current Garrison strength is [?Meter_garrison_bar_value]"
   TTD_BHU_garrison_Info_tt: "Kanwal Singh Dalal and his garrison are directly supplied with all of the essentials for their survival within the harsh foreign nation of Bhutan. The junta revieves a monthly convoy from the Kolkota government in order to prepare the Province of Bhutan for statehood in Azad Hind, a tedious process which requires the total elimination of Bhutanese nationalism and hope for self determination. Though Singh is supplied straight from one of the most influential nations in South Asia, him and his garrison still find themselves and most importantly their supplies being harraswed by the Bhotamuzh almost monthly as their supply convoys are required to travel through harsh Himalayan terrain.\n\nThe fate of Bhutan's integration lies not only within the choices of the junta but also that of the resistance.."
+  BHU_road_lv2_upgrade_tt: "We will receive an §Gupgrade§! for securing the roads..."
   ####FACTION NAME###
   Azad_Front:0 "Indian Liberation Front"
   enemy_attrition:0 "Enemy Attrition"
@@ -173,6 +175,7 @@ BHU_Laws_Inexistent_Central_Economy_desc:0 "Our economy is trash"
 
   
    BHU_atr_garrison: "Our Garrison Morale will decrease by §R15%!§!\n\nBut for §GOne Month§!, we will actively protect the roads which will hinder §Oresistance activity§!"
+   BHU_atr_garrison_2: "Our Garrison Morale will decrease by §R15%!§!\n\nBut for §GOne and a Half Month§!, we will actively protect the roads which will hinder §Oresistance activity§!"
    BHU_attacking_the_resistance: "Protecting the Roads"
    BHU_garrison_check: "The State of our Garrison will affect our §Rsecurity status...§!"
    BHU_morale_changes_each_month: "Depending on how much §RSupply§! we have, the Garrison's §YMorale§! will §Gincrease§! or §Rdecrease§!"

@@ -14,6 +14,9 @@ recruit_character = BHU_Jigme_Dorji_Wangchuck
 recruit_character = BHU_Makoto_Matsutani
 add_manpower = 40000
 
+set_variable = { 
+	BHU_garrison_road_lvl = 1
+}
 load_focus_tree = TTD_Bhutan_focus
 oob = "TTD_BHU_1962"
 set_country_flag = tno_playable_country

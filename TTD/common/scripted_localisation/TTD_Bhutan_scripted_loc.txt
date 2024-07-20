@@ -12,6 +12,10 @@ defined_text = {
 		trigger = { check_variable = { v = 2 } }
 		localization_key = "BHU_Laws_Inexistent_Central_Economy"
 	}
+	text = { # Ministry of Economic Affairs
+		trigger = { check_variable = { v = 3 } }
+		localization_key = "BHU_Laws_ministry_of_economic_affairs"
+	}
 }
 
 defined_text = {
@@ -27,6 +31,12 @@ defined_text = {
 			check_variable = { v = 2 }
 		}
 		localization_key = BHU_Laws_Inexistent_Central_Economy_desc
+	}
+	text = { # Ministry of Economic Affairs
+		trigger = {
+			check_variable = { v = 3 }
+		}
+		localization_key = BHU_Laws_ministry_of_economic_affairs_desc
 	}
 }
 

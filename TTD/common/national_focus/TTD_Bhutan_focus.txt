@@ -624,7 +624,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_laying_the_groundworks
-		cost =  1.78
+		cost =  1
 		
 		
 		prerequisite = { focus = BHU_laying_the_groundworks }
@@ -641,7 +641,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			set_temp_variable = { v = 3 }
+			BHU_add_uncategorised_law = yes
 		}
 	}
 	focus = {
@@ -1034,7 +1035,10 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			add_to_variable = {
+				BHU_garrison_road_lvl = 1
+			}
+			custom_effect_tooltip = BHU_road_lv2_upgrade_tt
 		}
 	}
 	focus = {

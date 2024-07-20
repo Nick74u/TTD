@@ -263,34 +263,48 @@ BHU_update_meeting_var = {
 	
 }
 
-# +9 suc
+# +6 suc
 BHU_success_chance_increase_high = {
 	
 
-	add_to_variable = { BHU_meeting_success_var = 9 }
+	add_to_variable = { BHU_meeting_success_var = 6.27 }
+	add_to_variable = { BHU_meeting_failure_var = -6.27 }
 	BHU_update_meeting_var = yes
 }
 
-# +5 suc
+# +3 suc
 BHU_success_chance_increase_med = {
 	
 
-	add_to_variable = { BHU_meeting_success_var = 5 }
+	add_to_variable = { BHU_meeting_success_var = 3.21 }
+	add_to_variable = { BHU_meeting_failure_var = -3.21 }
 	BHU_update_meeting_var = yes
 }
 
-# +9fail
+# +6fail
 BHU_failure_chance_increase_high = {
 
 
-	add_to_variable = { BHU_meeting_failure_var = 9 }
+	add_to_variable = { BHU_meeting_failure_var = 6.27 }
+	add_to_variable = { BHU_meeting_success_var = -6.27 }
+	
 	BHU_update_meeting_var = yes
 }
 
-# +5 fail
+# +3 fail
 BHU_failure_chance_increase_med = {
 
 
-	add_to_variable = { BHU_meeting_failure_var = 5 }
+	add_to_variable = { BHU_meeting_failure_var = 3.21 }
+	add_to_variable = { BHU_meeting_success_var = -3.21 }
 	BHU_update_meeting_var = yes
+}
+
+## Misc Laws
+# v corresponds to a scripted loc entry you set yourself. Put an entry for your own tag in [GetAssortedLawsGNG]
+# set_temp_variable = { v = VAR }
+BHU_add_uncategorised_law = {
+	add_to_array = { TNO_assorted_laws_display = v }
+	custom_effect_tooltip = BHU_add_uncategorised_law_tt
+	misc_law_array_fix_scrollbar = yes
 }

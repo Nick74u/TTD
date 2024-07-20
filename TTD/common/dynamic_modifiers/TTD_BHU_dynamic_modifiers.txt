@@ -4,7 +4,6 @@ BHU_rough_himalayan_terrain = { # for nodes with no connection, goes to 2
 	local_supplies = -0.45
 	mobilization_speed = -0.45
 	disable_strategic_redeployment = 1
-	enemy_attrition = 0.2
 	local_org_regain = -0.4
 	local_supply_impact_factor = 0.2
 	army_speed_factor_for_controller = -0.4
