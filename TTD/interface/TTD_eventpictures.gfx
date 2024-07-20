@@ -4,4 +4,8 @@ spriteTypes = {
 		name = "GFX_Makoto_Matsutani"
 		texturefile = "gfx/event_pictures/Bhutan/event_picture_Makoto_Matsutani.dds"
 	}
+	spriteType = {
+		name = "GFX_Kolkata_building"
+		texturefile = "gfx/event_pictures/Bhutan/event_picture_Kolkata_building.dds"
+	}
 }

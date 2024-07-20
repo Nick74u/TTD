@@ -133,8 +133,8 @@ country_event = {
 country_event = {
 	id = bhutan_border_skirmish.2
 	title = bhutan_border_skirmish.2.t
-	desc = bhutan_border_skirmish.2.d
-	
+	desc = bhutan_border_skirmish.2.d	
+	picture = GFX_Kolkata_building
 	is_triggered_only = yes
 	
 	option = { # paperwork!
