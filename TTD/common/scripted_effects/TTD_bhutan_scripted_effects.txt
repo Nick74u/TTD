@@ -301,7 +301,7 @@ BHU_failure_chance_increase_med = {
 }
 
 ## Misc Laws
-# v corresponds to a scripted loc entry you set yourself. Put an entry for your own tag in [GetAssortedLawsGNG]
+# v corresponds to a scripted loc entry you set yourself. Put an entry for your own tag in [GetAssortedLawsBHU]
 # set_temp_variable = { v = VAR }
 BHU_add_uncategorised_law = {
 	add_to_array = { TNO_assorted_laws_display = v }

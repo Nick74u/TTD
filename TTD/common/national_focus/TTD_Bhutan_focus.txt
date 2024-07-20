@@ -33,7 +33,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			BHU_removing_rubble_tt	
+			custom_effect_tooltip = BHU_removing_rubble_tt	
 		}
 	}
 	focus = {
