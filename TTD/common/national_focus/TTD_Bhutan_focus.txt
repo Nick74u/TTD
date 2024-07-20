@@ -33,7 +33,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = BHU_modernize_bhutan_tt
+			
 		}
 	}
 	focus = {
@@ -57,7 +57,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			custom_effect_tooltip = BHU_modernize_bhutan_tt
 		}
 	}
 	focus = {

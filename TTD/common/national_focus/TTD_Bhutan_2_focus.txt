@@ -19,12 +19,12 @@ shared_focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		custom_effect_tooltip = BHU_modernize_bhutan_tt
+		
 	}
 }
 shared_focus = {
 	id = BHU_confrontation_with_the_generals
-	icon = GFX_goal_in_azad_hind_vision
+	icon = GFX_
 	x = 0
 	y = 1
 	relative_position_id = BHU_back_to_the_drawing_board
@@ -48,7 +48,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = BHU_Walk_the_talk
-	icon = GFX_goal_a_chained_dragon
+	icon = GFX_
 	x = 0
 	y = 1
 	relative_position_id = BHU_confrontation_with_the_generals
@@ -69,8 +69,7 @@ shared_focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		set_country_flag = BHU_show_garrison_gui
-		custom_effect_tooltip = BHU_unlocks_garrison_gui
+		
 	}
 }
 	

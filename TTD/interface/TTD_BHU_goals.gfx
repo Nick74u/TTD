@@ -33,7 +33,7 @@ spriteTypes = {
 	}	
 	SpriteType = {
 		name = "GFX_goal_in_azad_hind_vision"
-		texturefile = "gfx/interface/goals/focus_BHU_in_azad_hind_vision.dds"			
+		texturefile = "gfx/interface/goals/focus_in_azad_hind_vision.dds"			
 	}	
 	SpriteType = {
 		name = "GFX_goal_warm_welcome"
