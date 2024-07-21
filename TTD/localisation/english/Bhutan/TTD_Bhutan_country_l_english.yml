@@ -1,10 +1,10 @@
 ﻿l_english:
 ### Country Names ###
  BHU: "Bhutan"
- BHU_DEF: "the Autonomous Province of Bhutan"
+ BHU_DEF: "the Provisional Junta for the Integration of Bhutan"
  BHU_ADJ: "Bhutanese"
  FBH_REB: "Drukpa Gloggogpa"
- FBH_REB_DEF: "the Bhutanese Resistance"
+ FBH_REB_DEF: "the United Anti-Junta Resistance Forces in Bhutan"
  FBH_REB_ADJ: "Bhutanese"
  FBH: "Bhutan"
  FBH_DEF: "The Kingdom of Bhutan"
@@ -13,10 +13,12 @@
  AZH_PRH_DEF: "the People's Republic of Hindustan"
  AZH_PRH_ADJ: "Hindustani"
  ### Parties ###
- BHU_paternalism_party: "AZF - FAB"
- BHU_paternalism_party_long: "Fauj Intizamia Bhotan"
- BHU_ultranationalism_party: "The military dudes"
- BHU_ultranationalism_party_long: "We are soldiers"
+ BHU_despotism_party: "AZF - FIB"
+ BHU_despotism_party_long: "Azad Hind Fauj - Fauj Intizamia Bhotan"
+ BHU_ultranationalism_party: "FIB - Surakshavadi"
+ BHU_ultranationalism_party_long: "Fauj Intizamia Bhotan - Surakshavadi"
+ BHU_paternalism_party: "FIB - Sudhaarvadi"
+ BHU_paternalism_party_long: "Fauj Intizamia Bhotan - Sudhaarvadi"
  BHU_paternalism_2_party: "Bhotamuzh - PSMD"
  BHU_paternalism_2_party_long: "Bhotani Muzhamat - Patan-Srung Mak-De"
  FBH_paternalism_party: "Bhotamuzh - PSMD"
@@ -32,9 +34,11 @@
 
  
  ## Leader Descs ##
+ POLITICS_PIRU_SINGH_DESC: ""
+ 
  ##Ideology
  paternalism_stratocratic_subhasism_subtype: "Stratocratic Subhasism"
- paternalism_stratocratic_subhasism_subtype_desc: "Its Kanwal and the gang's ideology!"
+ paternalism_stratocratic_subhasism_subtype_desc: "It's Kanwal and the gang's ideology!"
  paternalism_subhasism_subtype: "Subhasism"
  paternalism_subhasism_subtype_desc: "Forged amidst the flames of the Raj's collapse, Subhasism is, atleast to those in the Indian Subcontinent, a revolutionary ideology, one which seeks to free them from their colonial past and usher in a new era for the region.\n\nThe thought began in the mid 1900s by one Subhas Chandra Bose, a Hindi freedom fighter whose one goal was to remove the British occupiers from India, no matter the cost. His ideology took india by storm as it united both left wing and right wing resistance movements with its salad bowl like though. The Subhasist dream became a reality when an East Indian uprising occured in the early 1940s, culminating in the allied retreat from India in 1943.\n\nSubhasism reached its peak in the 1950s under the INC's coalition party, paving the way for the future of India, Southern Asia and the world."
  ### Ideas ###

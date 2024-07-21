@@ -21,14 +21,15 @@ load_focus_tree = TTD_Bhutan_focus
 oob = "TTD_BHU_1962"
 set_country_flag = tno_playable_country
 set_politics = {
-	ruling_party = paternalism
+	ruling_party = despotism
 	last_election = "1962.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	paternalism = 65
+	despotism = 35
+	paternalism = 20
 	paternalism_2 = 23
 	ultranationalism = 12
 }
