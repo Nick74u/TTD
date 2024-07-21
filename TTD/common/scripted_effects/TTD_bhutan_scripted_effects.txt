@@ -39,29 +39,29 @@ hidden_effect = {
 		}
 		random_list = {
 				33.3 = {
-					set_variable = { Wangchuck_causes_trouble_supply_temp = 3 } 
+					set_variable = { Wangchuck_causes_trouble_supply_temp = 1 } 
 			
 				}
 				33.3 = {
-					set_variable = { Wangchuck_causes_trouble_supply_temp = 1 } 
+					set_variable = { Wangchuck_causes_trouble_supply_temp = -3 } 
 					
 				}
 				33.4 = {
-					set_variable = { Wangchuck_causes_trouble_supply_temp = -3 }	
+					set_variable = { Wangchuck_causes_trouble_supply_temp = -5 }	
 				}
 			}
 
 		random_list = {
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = 3 } 
+				set_variable = { Wangchuck_causes_trouble_morale_temp = 1 } 
 				
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = 1 } 
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -3 } 
 						
 			}
 			33.4 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -3 }
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -5 }
 										
 			}
 		}
@@ -77,29 +77,29 @@ hidden_effect = {
 		}
 		random_list = {
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -7 } 
+				set_variable = { Wangchuck_causes_trouble_supply_temp = -11 } 
 
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -5 } 
+				set_variable = { Wangchuck_causes_trouble_supply_temp = -10 } 
 
 			}
 			33.4 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -3 }
+				set_variable = { Wangchuck_causes_trouble_supply_temp = -9 }
 					
 			}
 		}
 		random_list = {
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -7 } 
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -11 } 
 
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -5 } 
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -10 } 
 
 			}
 			33.4 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -3 }
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -9 }
 				
 			}	
 		}
@@ -117,29 +117,29 @@ hidden_effect = {
 		}
 		random_list = {
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -10 } 
+				set_variable = { Wangchuck_causes_trouble_supply_temp = -15 } 
 				
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -7 } 
+				set_variable = { Wangchuck_causes_trouble_supply_temp = -13 } 
 			
 			}
 			33.4 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -5 }
+				set_variable = { Wangchuck_causes_trouble_supply_temp = -11 }
 				
 			}
 		}
 		random_list = {
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -10 } 
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -15 } 
 
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -7 } 
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -13 } 
 
 			}
 			33.4 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -5 }	
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -11 }	
 			}
 		}		
 	}	
@@ -151,26 +151,26 @@ hidden_effect = {
 		}
 		random_list = {
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -5 } 
+				set_variable = { Wangchuck_causes_trouble_supply_temp = -9 } 
 
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -3 } 
+				set_variable = { Wangchuck_causes_trouble_supply_temp = -7 } 
 
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -1 }				
+				set_variable = { Wangchuck_causes_trouble_supply_temp = -6 }				
 			}
 		}
 		random_list = {
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -5 } 
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -9 } 
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -3 } 
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -7 } 
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -1 }		
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -6 }		
 			}
 		}
 	}

@@ -63,6 +63,7 @@ ideas = {
 			modifier = {
 				conscription_factor = -0.20
 				war_support_factor = -0.10
+				industrial_capacity_factory = -1
 			}
 		}
 		BHU_INA_0 = {
