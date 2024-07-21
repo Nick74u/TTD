@@ -85,6 +85,33 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = BHU_show_garrison_gui
 			custom_effect_tooltip = BHU_unlocks_garrison_gui
+			hidden_effect = {
+				random_list = {
+					33.3 = {
+						set_variable = { Wangchuck_causes_trouble_supply_temp = -5 } 
+					}
+					33.3 = {
+						set_variable = { Wangchuck_causes_trouble_supply_temp = -3 } 
+						
+					}
+					33.3 = {
+						set_variable = { Wangchuck_causes_trouble_supply_temp = -1 }
+						
+					}
+				}
+				random_list = {
+					33.3 = {
+						set_variable = { Wangchuck_causes_trouble_morale_temp = -5 } 
+					}
+					33.3 = {
+						set_variable = { Wangchuck_causes_trouble_morale_temp = -3 } 
+					}
+					33.3 = {
+						set_variable = { Wangchuck_causes_trouble_morale_temp = -1 }		
+					}
+				}
+			}
+			activate_mission = BHU_wangchuck_causes_trouble
 		}
 	}
 	focus = {

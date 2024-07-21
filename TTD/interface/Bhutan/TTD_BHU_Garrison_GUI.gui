@@ -104,5 +104,14 @@ guiTypes = {
 			font = "aldrich_24_outline"
 			text = [BHU_road_text]
 		}
+		instantTextBoxType = {
+			name = "BhutanRoadnumberamount"
+			position = { x = 50 y = 550 }
+			maxWidth = 345
+			maxHeight = 20
+			format = center 
+			font = "aldrich_24_outline"
+			text = [BHU_road_number_text]
+		}
 	}
 }

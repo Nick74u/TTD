@@ -1,7 +1,7 @@
 PAK_SPU_victory = {
 	log = "[GetDateText]: [Root.GetTag]: PAK_SPU_victory; Executing." 
 	clr_global_flag = pak_west_war
-    
+    AFG = { white_peace = PAK }
 	KLT = {
 		add_state_core = 445
 		transfer_state = 445

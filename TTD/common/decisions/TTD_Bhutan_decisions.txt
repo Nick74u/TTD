@@ -303,18 +303,21 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		}
 		
 		fire_only_once = no		
-		days_re_enable = 1	
+		days_re_enable = 10	
 
 		visible = {		
 			has_country_flag = BHU_show_garrison_gui
 		}		
-	
 
 		complete_effect = {		#The effects to execute once the envelope icon is sclickedssssssssssss
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -250
+			}
 			custom_effect_tooltip = "garrison_decision_1"
 			add_to_variable = { Meter_garrison_bar_supply_value = 15 } 
-			add_to_variable = { BHU_garrison_dirty_variable = .1 } 
 			BHU_add_garrison_var = yes
+			add_to_variable = { BHU_garrison_dirty_variable = .1 } 
 		}
 
 		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
@@ -330,14 +333,14 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		}
 		
 		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
-		days_re_enable = 1	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+		days_re_enable = 28	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
 
 		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
 			has_country_flag = BHU_show_garrison_gui
 		}		
 
-		cost = 30		#The cost to execute the decision, by default its political powers
-
+		cost = 50		#The cost to execute the decision, by default its political powers
+		
 		complete_effect = {		#The effects to execute once the envelope icon is sclickedssssssssssss
 			custom_effect_tooltip = "garrison_decision_2"
 			add_to_variable = { Meter_garrison_bar_morale_value = 5 }
@@ -363,6 +366,11 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 			check_variable = {
 				BHU_garrison_road_lvl = 1
 			}
+			NOT = {
+				check_variable = {
+					BHU_attacking_the_resistance > 0
+				}
+			}
 		}
 
 		available = {
@@ -373,18 +381,16 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 
 		complete_effect = {
 			set_country_flag = BHU_attacking_the_resistance
-			add_to_variable = { Meter_garrison_bar_morale_value = -15 } 
+			set_variable = { BHU_attacking_the_resistance = 2 } 
 			BHU_add_garrison_var = yes
 			custom_effect_tooltip = "BHU_atr_garrison"
 		}
 
-		days_remove = 30
 		days_re_enable = 60
 		fire_only_once = no
 
 		remove_effect = {
-			clr_country_flag = BHU_attacking_the_resistance
-			add_to_variable = { BHU_garrison_dirty_variable = .1 } 
+			
 			
 		}
 		ai_will_do = {
@@ -400,6 +406,11 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 			check_variable = {
 				BHU_garrison_road_lvl = 2
 			}
+			NOT = {
+				check_variable = {
+					BHU_attacking_the_resistance > 0
+				}
+			}
 		}
 
 		available = {
@@ -410,7 +421,7 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 
 		complete_effect = {
 			set_country_flag = BHU_attacking_the_resistance
-			add_to_variable = { Meter_garrison_bar_morale_value = -15 } 
+			set_variable = { BHU_attacking_the_resistance = 3 } 
 			BHU_add_garrison_var = yes
 			custom_effect_tooltip = "BHU_atr_garrison_2"
 		}
@@ -539,158 +550,31 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		days_mission_timeout = 14	
 		is_good = no
 		activation = {
+			always = no
 		}
 		available = {		
 			always = no
 		}
 		fire_only_once = yes		
-		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.sssssss
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear
 			tag = BHU
 			has_country_flag = BHU_show_garrison_gui
 		}
 		timeout_effect = {	
-			hidden_effect = {
-				if = {
-					limit = {
-						not = {
-							has_country_flag = BHU_mtsho_obtained
-						}
-						has_country_flag = BHU_attacking_the_resistance
-					}
-					random_list = {
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = 3 } 
-					
-						}
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = 1 } 
-					
-						}
-						33.4 = {
-							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -3 }
-									
-						}
-					}
-
-					random_list = {
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = 3 } 
-				
-						}
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = 1 } 
-						
-						}
-						33.4 = {
-							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -3 }
-										
-						}
-					}
-				
-				}
-				else_if = {
-					limit = {
-						not = {
-							has_country_flag = BHU_attacking_the_resistance
-						}
-						has_country_flag = BHU_mtsho_obtained
-					}
-					random_list = {
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -10 } 
-				
-						}
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -7 } 
 			
-						}
-						33.4 = {
-							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -5 }
-				
-						}
-					}
-					random_list = {
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -10 } 
-
-						}
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -7 } 
-
-						}
-						33.4 = {
-							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -5 }
-					
-						}
-					}
-				
-				}
-				else_if = {
-					limit = {
-						has_country_flag = BHU_mtsho_obtained
-						has_country_flag = BHU_attacking_the_resistance
-					}
-					random_list = {
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -7 } 
-
-						}
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -5 } 
-
-						}
-						33.4 = {
-							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -3 }
-					
-						}
-					}
-					random_list = {
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -7 } 
-
-						}
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -5 } 
-
-						}
-						33.4 = {
-							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -3 }
-				
-						}
-					}
-				
-				}
-				else = {
-					random_list = {
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -5 } 
-
-						}
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -3 } 
-
-						}
-						33.4 = {
-							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -1 }				
-						}
-					}
-					random_list = {
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -5 } 
-						}
-						33.3 = {
-							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -3 } 
-						}
-						33.4 = {
-							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -1 }	
-							
-						}
-					}
-				}
-			}
-			
-			BHU_wangchuck_causes_trouble_change = yes
+			BHU_wangchuck_causes_trouble_morale_change = yes
+			BHU_wangchuck_causes_trouble_supply_change = yes
+			BHU_wangchuck_causes_trouble_roll_change = yes
 			activate_mission = BHU_wangchuck_causes_trouble
+			if = {
+				limit = {
+					check_variable = {
+						BHU_attacking_the_resistance < 1
+					}
+				}
+				clr_country_flag = BHU_attacking_the_resistance
+				add_to_variable = { BHU_garrison_dirty_variable = .1 } 
+			}
 		}
 		complete_effect = {		#The effects to execute once the envelope icon is clicked.
 			

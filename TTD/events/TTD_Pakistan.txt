@@ -342,17 +342,14 @@ country_event = { ##### For Afghanistan: KALAT LOST, ALSO PAK STILL AINT DEAD
 	option = { #this was not my idea
 		name = pakistan.9.a
 	
-		AFG = { white_peace = PAK }
+		
 		PAK = {
 			add_state_core = 1889
 			transfer_state = 1889
 			add_state_core = 929
 			transfer_state = 929
 		}
-		#TAJ = {
-		#	add_state_core = 1465
-		#	transfer_state = 1465
-		#}
+		
 		set_global_flag = Paksopsuccessvic
 		hidden_effect = {
 			PAK = {
