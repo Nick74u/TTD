@@ -25,6 +25,46 @@ BHU_convoy_supply_change = {
 		max = 100
 	}
 }
+BHU_wangchuck_causes_trouble_change = {
+	add_to_variable = { Meter_garrison_bar_supply_value = Wangchuck_causes_trouble_supply_temp }
+	add_to_variable = { Meter_garrison_bar_morale_value = Wangchuck_causes_trouble_morale_temp }
+	if = {
+		limit = {
+			check_variable = {
+				Wangchuck_causes_trouble_supply_temp < 0
+			}
+		}
+		multiply_temp_variable = { Wangchuck_causes_trouble_supply_temp = -1 }
+		custom_effect_tooltip = BHU_wangchuck_trouble_supply_decrease_tt
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				Wangchuck_causes_trouble_supply_temp > 0
+			}
+		}
+		custom_effect_tooltip = BHU_wangchuck_trouble_supply_increase_tt
+	}
+	if = {
+		limit = {
+			check_variable = {
+				Wangchuck_causes_trouble_morale_temp < 0
+			}
+		}
+		multiply_temp_variable = { Wangchuck_causes_trouble_morale_temp = -1 }
+		custom_effect_tooltip = BHU_wangchuck_trouble_morale_decrease_tt
+	}
+	
+	else_if = {
+		limit = {
+			check_variable = {
+				Wangchuck_causes_trouble_morale_temp > 0
+			}
+		}
+		custom_effect_tooltip = BHU_wangchuck_trouble_morale_increase_tt
+	}
+	BHU_add_garrison_var = yes
+}
 BHU_garrison_morale_monthly_change= {
 	if = {
 		limit = {

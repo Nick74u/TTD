@@ -48,6 +48,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_a_train_to_kolkata.dds"			
 	}
 	SpriteType = {
+		name = "GFX_goal_the_bhutanese_renaissance"
+		texturefile = "gfx/interface/goals/focus_the_bhutanese_renaissance.dds"			
+	}
+	SpriteType = {
 		name = "GFX_goal_removing_the_rubble"
 		texturefile = "gfx/interface/goals/focus_removing_the_rubble.dds"			
 	}	

@@ -21,4 +21,16 @@ on_actions = {
 			}
 		}
 	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = azad_war
+					original_tag = IND
+				}
+				SOA_calculate_momentum_var = yes
+				FROM = { SOA_calculate_momentum_var = yes }
+			}
+		}
+	}
 }

@@ -89,8 +89,33 @@ on_actions = {
 				# 		#transfer_GDP = yes
 				# 	}
 				# }
-
-
+				#PAK SOP SUCCESS FAILSAFE
+				if = { # PAK victory
+					limit = {
+						has_global_flag = pak_west_war
+						FROM = {
+							tag = PAK
+						}
+						ROOT = {
+							tag = AFG
+						}
+					}
+					PAK_SPU_victory = yes
+					set_global_flag = skip_default_capitulation
+				}
+				else_if = { # AFG victory
+					limit = {
+						has_global_flag = pak_west_war
+						FROM = {
+							tag = AFG
+						}
+						ROOT = {
+							tag = PAK
+						}
+					}
+					PAK_AFG_caps_Pak_victory = yes
+					set_global_flag = skip_default_capitulation
+				}
 				##KLT VS SPU
 				if = { # SPU victory
 					limit = {

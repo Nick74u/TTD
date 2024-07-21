@@ -453,6 +453,36 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 			custom_effect_tooltip = "BHU_morale_changes_each_month"
 		}
 	}	
+	BHU_secure_cona = {
+
+		icon = GFX_decision_generic_document
+
+		visible = {
+			has_country_flag = BHU_mtsho_obtained
+		}
+
+		available = {
+			
+		}
+
+		complete_effect = {
+			
+		}
+		cost = 30
+		days_remove = 30
+		days_re_enable = 75
+		fire_only_once = no
+
+		remove_effect = {
+			1962 = {
+				add_compliance = 15 
+			}
+			
+		}
+		ai_will_do = {
+			factor = 5000
+		}
+	}
 	BHU_monthly_garrison_check = {		
 
 		icon = GFX_decision_generic_document		
@@ -519,144 +549,147 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 			has_country_flag = BHU_show_garrison_gui
 		}
 		timeout_effect = {	
-			if = {
-				limit = {
-					not = {
-						has_country_flag = BHU_mtsho_obtained
-					}
-					has_country_flag = BHU_attacking_the_resistance
-				}
-				random_list = {
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_supply_value = 7 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_atr_s7"
-					}
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_supply_value = 5 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_atr_s5"
-					}
-					33.4 = {
-						add_to_variable = { Meter_garrison_bar_supply_value = 3 }
-						custom_effect_tooltip = "wangchuck_causes_trouble_atr_s3"					
-					}
-				}
-				random_list = {
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_morale_value = 7 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_atr_m7"
-					}
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_morale_value = 5 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_atr_m5"
-					}
-					33.4 = {
-						add_to_variable = { Meter_garrison_bar_morale_value = 3 }
-						custom_effect_tooltip = "wangchuck_causes_trouble_atr_m3"					
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					not = {
+			hidden_effect = {
+				if = {
+					limit = {
+						not = {
+							has_country_flag = BHU_mtsho_obtained
+						}
 						has_country_flag = BHU_attacking_the_resistance
 					}
-					has_country_flag = BHU_mtsho_obtained
+					random_list = {
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = 3 } 
+					
+						}
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = 1 } 
+					
+						}
+						33.4 = {
+							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -3 }
+									
+						}
+					}
+
+					random_list = {
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = 3 } 
+				
+						}
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = 1 } 
+						
+						}
+						33.4 = {
+							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -3 }
+										
+						}
+					}
+				
 				}
-				random_list = {
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_supply_value = -10 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_s10"
+				else_if = {
+					limit = {
+						not = {
+							has_country_flag = BHU_attacking_the_resistance
+						}
+						has_country_flag = BHU_mtsho_obtained
 					}
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_supply_value = -7 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_s7"
+					random_list = {
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -10 } 
+				
+						}
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -7 } 
+			
+						}
+						33.4 = {
+							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -5 }
+				
+						}
 					}
-					33.4 = {
-						add_to_variable = { Meter_garrison_bar_supply_value = -5 }
-						custom_effect_tooltip = "wangchuck_causes_trouble_s5"					
+					random_list = {
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -10 } 
+
+						}
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -7 } 
+
+						}
+						33.4 = {
+							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -5 }
+					
+						}
 					}
+				
 				}
-				random_list = {
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_morale_value = -10 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_m10"
+				else_if = {
+					limit = {
+						has_country_flag = BHU_mtsho_obtained
+						has_country_flag = BHU_attacking_the_resistance
 					}
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_morale_value = -7 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_m7"
+					random_list = {
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -7 } 
+
+						}
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -5 } 
+
+						}
+						33.4 = {
+							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -3 }
+					
+						}
 					}
-					33.4 = {
-						add_to_variable = { Meter_garrison_bar_morale_value = -5 }
-						custom_effect_tooltip = "wangchuck_causes_trouble_m5"					
+					random_list = {
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -7 } 
+
+						}
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -5 } 
+
+						}
+						33.4 = {
+							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -3 }
+				
+						}
 					}
+				
 				}
-			}
-			else_if = {
-				limit = {
-					has_country_flag = BHU_mtsho_obtained
-					has_country_flag = BHU_attacking_the_resistance
-				}
-				random_list = {
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_supply_value = -7 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_s7"
+				else = {
+					random_list = {
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -5 } 
+
+						}
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -3 } 
+
+						}
+						33.4 = {
+							set_temp_variable = { Wangchuck_causes_trouble_supply_temp = -1 }				
+						}
 					}
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_supply_value = -5 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_s5"
-					}
-					33.4 = {
-						add_to_variable = { Meter_garrison_bar_supply_value = -3 }
-						custom_effect_tooltip = "wangchuck_causes_trouble_s3"					
-					}
-				}
-				random_list = {
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_morale_value = -7 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_m7"
-					}
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_morale_value = -5 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_m5"
-					}
-					33.4 = {
-						add_to_variable = { Meter_garrison_bar_morale_value = -3 }
-						custom_effect_tooltip = "wangchuck_causes_trouble_m3"					
-					}
-				}
-			}
-			else = {
-				random_list = {
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_supply_value = -5 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_s5"
-					}
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_supply_value = -3 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_s3"
-					}
-					33.4 = {
-						add_to_variable = { Meter_garrison_bar_supply_value = -1 }
-						custom_effect_tooltip = "wangchuck_causes_trouble_s1"					
-					}
-				}
-				random_list = {
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_morale_value = -5 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_m5"
-					}
-					33.3 = {
-						add_to_variable = { Meter_garrison_bar_morale_value = -3 } 
-						custom_effect_tooltip = "wangchuck_causes_trouble_m3"
-					}
-					33.4 = {
-						add_to_variable = { Meter_garrison_bar_morale_value = -1 }
-						custom_effect_tooltip = "wangchuck_causes_trouble_m1"					
+					random_list = {
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -5 } 
+						}
+						33.3 = {
+							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -3 } 
+						}
+						33.4 = {
+							set_temp_variable = { Wangchuck_causes_trouble_morale_temp = -1 }	
+							
+						}
 					}
 				}
 			}
 			
-			BHU_add_garrison_var = yes
+			BHU_wangchuck_causes_trouble_change = yes
 			activate_mission = BHU_wangchuck_causes_trouble
 		}
 		complete_effect = {		#The effects to execute once the envelope icon is clicked.

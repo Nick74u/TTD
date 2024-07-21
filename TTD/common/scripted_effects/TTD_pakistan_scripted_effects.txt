@@ -1,16 +1,7 @@
 PAK_SPU_victory = {
 	log = "[GetDateText]: [Root.GetTag]: PAK_SPU_victory; Executing." 
 	clr_global_flag = pak_west_war
-    SPU = {
-		annex_country = {
-			target = KLT
-			transfer_troops = no
-		}
-       every_owned_state = {
-            limit = { is_core_of = KLT }
-			add_core_of = SPU
-        }
-	}
+    
 	KLT = {
 		add_state_core = 445
 		transfer_state = 445
@@ -26,6 +17,40 @@ PAK_SPU_victory = {
 		}
 	}
 	set_global_flag = pak_spu_victory  #eventually, this will be in use
+	KLT_vs_SPU_closing = yes
+	
+}
+PAK_AFG_caps_Pak_victory = {
+	log = "[GetDateText]: [Root.GetTag]: PAK_AFG_caps_Pak_victory; Executing." 
+	clr_global_flag = pak_west_war
+	AFG = { white_peace = PAK }
+	MFP = {
+		annex_country = {
+			target = PAK
+			transfer_troops = no
+		}
+        every_owned_state = {
+            limit = { is_core_of = PAK }
+			add_core_of = MFP
+        }	
+	}
+	AFG = {
+		set_autonomy = {
+			target = MFP
+			autonomous_state = autonomy_military_district
+		}
+	}
+	KLT = {
+		annex_country = {
+			target = SPU
+			transfer_troops = no
+		}
+       every_owned_state = {
+            limit = { is_core_of = SPU }
+			add_core_of = KLT
+        }
+	}
+	set_global_flag = pak_klt_victory  #eventually, this will be in use
 	KLT_vs_SPU_closing = yes
 	
 }

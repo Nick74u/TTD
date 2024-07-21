@@ -1,0 +1,38 @@
+AZH_indian_war_momentum = {
+	remove_trigger = {
+		#d = no
+	}
+
+	army_org_factor = indian_war_org_modifier
+	army_defence_factor = indian_war_combat_modifier
+	army_attack_factor = indian_war_combat_modifier
+	
+	army_speed_factor = indian_war_fast_modifier
+	army_org_regain = indian_war_fast_modifier
+	terrain_penalty_reduction = indian_war_terrain_modifier
+	land_reinforce_rate = indian_war_reinforce_modifier
+}
+
+IND_indian_war_momentum = {
+	
+	army_org_factor = indian_war_org_modifier
+	army_defence_factor = indian_war_combat_modifier
+	army_attack_factor = indian_war_combat_modifier
+	
+	army_speed_factor = indian_war_fast_modifier
+	army_org_regain = indian_war_fast_modifier
+	terrain_penalty_reduction = indian_war_terrain_modifier
+	land_reinforce_rate = indian_war_reinforce_modifier
+}
+
+PAK_indian_war_momentum = {
+	army_org_factor = indian_war_org_modifier
+	army_defence_factor = indian_war_combat_modifier
+	army_attack_factor = indian_war_combat_modifier
+	
+	army_speed_factor = indian_war_fast_modifier
+	army_org_regain = indian_war_fast_modifier
+	terrain_penalty_reduction = indian_war_terrain_modifier
+	land_reinforce_rate = indian_war_reinforce_modifier
+}
+

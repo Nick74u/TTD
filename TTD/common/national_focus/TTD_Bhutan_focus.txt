@@ -117,7 +117,7 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_The_Bhutanese_Renaissance
-		icon = focus_From_Mountains_to_Cities
+		icon = GFX_goal_the_bhutanese_renaissance
 		x = 0
 		y = 1
 		relative_position_id = BHU_build_from_the_ground_up

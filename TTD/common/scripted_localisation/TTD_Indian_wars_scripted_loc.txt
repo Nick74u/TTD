@@ -1,0 +1,25 @@
+defined_text = {
+	name = indian_war_dyn_fast_modifier
+	text = {
+		trigger = {
+			NOT = { check_variable = { indian_war_org_modifier = 0 } }
+		}
+		localization_key = indian_war_dyn_fast_modifier_text
+	}
+	text = {
+		localization_key = empty
+	}
+}
+
+defined_text = {
+	name = indian_war_dyn_combat_modifier
+	text = {
+		trigger = {
+			NOT = { check_variable = { indian_war_combat_modifier = 0 } }
+		}
+		localization_key = indian_war_dyn_combat_modifier_text
+	}
+	text = {
+		localization_key = empty
+	}
+}

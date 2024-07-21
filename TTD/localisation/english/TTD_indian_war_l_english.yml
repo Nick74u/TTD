@@ -2,3 +2,11 @@
 AZH_on_the_offensive: "Surprise Offensive"
 SOA_indian_wars: "The Great Indian War"
 SOA_intensify_foreign_aid_tt: "This button sets volunteers to your country to 5.\n\nEffects apply if you are India, Azad Hind, or Pakistan"
+
+SOA_indian_wars_momentum: "Despite everything that could be done, the fragile peace between the Azad Hind government and the Republic of India was bound to break eventually.\n\nUnfortunately, the only option they have seen is §Rwar.§!\nMay God save India\n\nPS: THIS IS DYNAMIC STOP COMPLAINING! STATS CHANGE DEPENDING ON THE SURRENDER LIMIT\n§W------------§![indian_war_text]§W\n[indian_war_dyn_fast_modifier][indian_war_dyn_combat_modifier][indian_war_dyn_dig_modifier]§!"
+indian_war_dyn_fast_modifier_text: "$indian_war_dyn_fast_modifier_text_last$\n"
+indian_war_dyn_fast_modifier_text_last: "$MODIFIER_ARMY_ORG_FACTOR$: [?THIS.indian_war_org_modifier|=%+]\n$MODIFIER_ARMY_SPEED_FACTOR$: [?THIS.indian_war_fast_modifier|=%+]\n$MODIFIER_ARMY_ORG_REGAIN$: [?THIS.indian_war_fast_modifier|=%+]\n$MODIFIER_TERRAIN_PENALTY_REDUCTION$: [?THIS.indian_war_terrain_modifier|=%+]"
+indian_war_dyn_combat_modifier_text: "$indian_war_dyn_combat_modifier_text_last$\n"
+indian_war_dyn_combat_modifier_text_last: "$MODIFIERS_ARMY_ATTACK_FACTOR$: [?THIS.indian_war_combat_modifier|=%+]\n$MODIFIERS_ARMY_DEFENCE_FACTOR$: [?THIS.indian_war_combat_modifier|=%+]\n$MODIFIER_LAND_REINFORCE_RATE$: [?THIS.indian_war_reinforce_modifier|=%+]"
+
+ 
