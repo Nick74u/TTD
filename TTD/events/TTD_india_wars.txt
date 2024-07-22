@@ -109,10 +109,7 @@ country_event = {
             type = annex_everything
         }
 		load_oob = "TTD_PAK"
-		load_oob = "TTD_PAK"
-		load_oob = "TTD_PAK"
-		load_oob = "TTD_PAK"
-		load_oob = "TTD_PAK"
+
 		hidden_effect = {
 			every_country = {
 				limit = { is_ai = no }

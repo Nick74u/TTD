@@ -15,7 +15,6 @@ india_war_start = {
 				producer = PAK
 			}
 			load_oob = "TTD_PAK"
-			load_oob = "TTD_PAK"
 		}
 	}
 	JAP = {
@@ -39,32 +38,13 @@ india_war_start = {
 		days = 150
 	}
 	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
-	load_oob = "AZH_1962"
+
+	
 	load_oob = "AZH_1962"
 	add_ideas = SOA_indian_wars
 	IND = {
 		load_oob = "IND_1962"
-		load_oob = "IND_1962"
-		load_oob = "IND_1962"
+
 		add_ideas = SOA_indian_wars
 		add_ideas = IND_indian_war_momentum
 		SOA_calculate_momentum_var = yes

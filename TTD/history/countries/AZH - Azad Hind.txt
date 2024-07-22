@@ -249,7 +249,10 @@ add_ideas = {
 	AZH_The_Language_Problem
 	AZH_What_Is_Subhasism
 	#MINISTERS
-	
+	AZH_Mohan_Singh_sec
+	AZH_John_Thivy_eco
+	AZH_Leela_Roy_for
+	AZH_Lakshmi_Sahgal_hog
 	#POLITICAL
 	tno_political_parties_controlled_opposition
 	tno_religious_rights_state_atheism

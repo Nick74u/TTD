@@ -57,7 +57,7 @@ ideas = {
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes } #{ #has_government = yes }
-			picture = BHU_transitional_military_occupation
+			picture = BHU_Northern_frontier
 			removal_cost = -1
 
 			modifier = {

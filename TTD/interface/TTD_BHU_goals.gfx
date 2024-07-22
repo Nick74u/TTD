@@ -52,6 +52,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_the_bhutanese_renaissance.dds"			
 	}
 	SpriteType = {
+		name = "GFX_goal_kanwal_gamble"
+		texturefile = "gfx/interface/goals/focus_kanwal_gamble.dds"			
+	}
+	SpriteType = {
 		name = "GFX_goal_removing_the_rubble"
 		texturefile = "gfx/interface/goals/focus_removing_the_rubble.dds"			
 	}	

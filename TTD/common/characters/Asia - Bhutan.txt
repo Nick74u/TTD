@@ -22,7 +22,7 @@ characters = {
 		country_leader = {
 			desc = "POLITICS_KANWAL_SINGH_DESC"
 			expire = "1999.1.1"
-			ideology = despotism_military_junta_subtype
+			ideology = paternalism_military_mandate_subtype
 			traits = { bhutans_warden }
 			id = -1
 		}
@@ -67,8 +67,7 @@ characters = {
 			can_be_fired = no
 			ai_will_do = { factor = 0 }
 		}
-	}
-	country_leader = {
+		country_leader = {
 		desc = "POLITICS_PIRU_SINGH_DESC"
 		expire = "1999.1.1"
 		ideology = paternalism_stratocratic_subhasism_subtype
@@ -76,6 +75,7 @@ characters = {
 		id = -1
 		}
 	}
+	
 	BHU_Khaled_Mosharraf = {
 		name = BHU_Khaled_Mosharraf
 		portraits = {

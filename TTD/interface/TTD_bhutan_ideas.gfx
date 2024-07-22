@@ -1,6 +1,6 @@
 spriteTypes = {	
 	SpriteType = {
-		name = "GFX_idea_traits_strip"
-		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
-		noOfFrames = 18
+		name = "GFX_idea_BHU_Northern_frontier"
+		texturefile = "gfx/interface/ideas/national_spirits/Asia/BHU/idea_BHU_Northern_frontier.dds"
 	}
+}

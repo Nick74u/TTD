@@ -10,6 +10,10 @@ spriteTypes = {
 		name = "GFX_idea_BHU_Khaled_Mosharraf"
 		texturefile = "gfx/interface/ideas/ministers/BHU/BHU_minister_Khaled_Mosharraf.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_AZH_Leela_Roy"
+		texturefile = "gfx/interface/ideas/ministers/AZH/AZH_minister_Leela_Roy.dds"
+	}
 	spriteType = { ###Ceylon###
 		name = "GFX_idea_CYL_EJ_Cooray"
 		texturefile = "gfx/interface/ideas/ministers/CYL/CYL_minister_EJ_Cooray.dds"
