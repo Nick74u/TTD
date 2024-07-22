@@ -325,6 +325,15 @@ country_event = {
 			BHU_The_Neverending_war_in_the_East
 		}
 		country_lock_all_division_template = no
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_bhutan_news.2
+					hours = 1
+				}
+			}
+		}
 	}
 }
 

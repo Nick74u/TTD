@@ -253,6 +253,110 @@ news_event = { # India-Afg Coop
 		name = TTD_pak_news.4.a
 	}
 }
+news_event = { # SoP fail war start
+	id = TTD_pak_news.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.5" }
+	title = TTD_pak_news.5.t
+	desc = TTD_pak_news.5.d
+	picture = GFX_news_event_pakistansopfailstart
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_pak_news.5.a
+	}
+}
+news_event = { # SoP success war start
+	id = TTD_pak_news.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.6" }
+	title = TTD_pak_news.6.t
+	desc = TTD_pak_news.6.d
+	picture = GFX_news_event_pakistanstartssopsuccess
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_pak_news.6.a
+	}
+}
+news_event = { # SoP fail, Afghans beat pak (FP exists)
+	id = TTD_pak_news.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.7" }
+	title = TTD_pak_news.7.t
+	desc = TTD_pak_news.7.d
+	picture = GFX_news_event_sopfailafghansbeatpak
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_pak_news.7.a
+	}
+}
+news_event = { # SoP fail, Afghan front beats Pak front and establishes Recon zones
+	id = TTD_pak_news.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.8" }
+	title = TTD_pak_news.8.t
+	desc = TTD_pak_news.8.d
+	picture = GFX_news_event_sopfailafghansbeatpakandconstructsrz
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_pak_news.8.a
+	}
+}
+news_event = { # SoP fail, Pak beats afg
+	id = TTD_pak_news.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.9" }
+	title = TTD_pak_news.9.t
+	desc = TTD_pak_news.9.d
+	picture = GFX_news_event_sopfailpakbeatsafg
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_pak_news.9.a
+	}
+}
+news_event = { # SoP fail, PAK beats FP
+	id = TTD_pak_news.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.10" }
+	title = TTD_pak_news.10.t
+	desc = TTD_pak_news.10.d
+	picture = GFX_news_event_sopfailpakistanbeatsfp
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_pak_news.10.a
+	}
+}
+news_event = { # SoP success, AFG defeats PAK
+	id = TTD_pak_news.11
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.11" }
+	title = TTD_pak_news.11.t
+	desc = TTD_pak_news.11.d
+	picture = GFX_news_event_sopsuccessafgdefeatspak
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_pak_news.11.a
+	}
+}
+news_event = { # SoP success, Pak defeats AFG
+	id = TTD_pak_news.12
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_pak_news.12" }
+	title = TTD_pak_news.12.t
+	desc = TTD_pak_news.12.d
+	picture = GFX_news_event_sopsuccesspakdefeatafg
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_pak_news.12.a
+	}
+}
 #BHUTAN
 news_event = { # Skirmishes near Arunachal
 	id = TTD_bhutan_news.1
@@ -265,5 +369,46 @@ news_event = { # Skirmishes near Arunachal
 
 	option = {
 		name = TTD_bhutan_news.1.a
+	}
+}
+news_event = { # Bhutancvstart
+	id = TTD_bhutan_news.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_bhutan_news.2" }
+	title = TTD_bhutan_news.2.t
+	desc = TTD_bhutan_news.2.d
+	picture = GFX_news_event_bhutancwstart
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_bhutan_news.2.a
+	}
+}
+
+news_event = { # Government collab wins
+	id = TTD_bhutan_news.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_bhutan_news.3" }
+	title = TTD_bhutan_news.3.t
+	desc = TTD_bhutan_news.3.d
+	picture = GFX_news_event_govsuccess
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_bhutan_news.3.a
+	}
+}
+
+news_event = { # Resistance wins
+	id = TTD_bhutan_news.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_bhutan_news.4" }
+	title = TTD_bhutan_news.4.t
+	desc = TTD_bhutan_news.4.d
+	picture = GFX_news_event_rebsuccess
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_bhutan_news.4.a
 	}
 }

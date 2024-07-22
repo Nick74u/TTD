@@ -110,6 +110,15 @@ SoPfail_AFG_victory = {
 			remove_core_of = PAK
         }
 	}
+	hidden_effect = {
+		every_country = {
+			limit = { is_ai = no }
+			news_event = {
+				id = TTD_pak_news.7
+				hours = 1
+			}
+		}
+	}
 }
 SoPfail_PAK_victory = {
 	log = "[GetDateText]: [Root.GetTag]: SoPfail_PAK_victory; Executing."
@@ -184,6 +193,15 @@ PvA_PAK_victory = {
 	PAK = {
 		remove_ideas = PAK_bloodied_but_not_defeated
 		remove_ideas = PAK_bloodied_but_not_defeated_2
+	}
+	hidden_effect = {
+		every_country = {
+			limit = { is_ai = no }
+			news_event = {
+				id = TTD_pak_news.8
+				hours = 1
+			}
+		}
 	}
 }
 

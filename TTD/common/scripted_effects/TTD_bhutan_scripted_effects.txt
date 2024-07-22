@@ -399,7 +399,7 @@ BHU_update_garrison = {
 	}
 	add_to_variable = { BHU_garrison_dirty_variable = 0.01 }
 }
-bhutan_war_gov_win = { #doesn't trigger in game right now
+bhutan_war_gov_win = { 
 	log = "[GetDateText]: [Root.GetTag]: bhutan_war_gov_win; Executing." # bhutanwar end
 	
 	BHU = {
@@ -410,8 +410,17 @@ bhutan_war_gov_win = { #doesn't trigger in game right now
 			add_to_faction = BHU
 		}
 	}
+	hidden_effect = {
+		every_country = {
+			limit = { is_ai = no }
+			news_event = {
+				id = TTD_bhutan_news.3
+				hours = 1
+			}
+		}
+	}
 }
-bhutan_war_wang_win = { #doesn't trigger in game right now
+bhutan_war_wang_win = { 
 	log = "[GetDateText]: [Root.GetTag]: bhutan_war_wang_win; Executing." # bhutanwar end
 	
 	FBH = {
@@ -429,6 +438,15 @@ bhutan_war_wang_win = { #doesn't trigger in game right now
 			conservatism = 15
 			paternalism = 45
 			despotism = 24
+		}
+	}
+	hidden_effect = {
+		every_country = {
+			limit = { is_ai = no }
+			news_event = {
+				id = TTD_bhutan_news.4
+				hours = 1
+			}
 		}
 	}
 }

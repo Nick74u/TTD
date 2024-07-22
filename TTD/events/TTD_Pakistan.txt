@@ -329,6 +329,15 @@ country_event = { ##### AFG ANGRY!! South Punjab goes to kill Kalat
 			}
 			add_ideas = KLT_disorganized_defense
 		}
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_pak_news.6
+					hours = 1
+				}
+			}
+		}
 		ai_chance = { factor = 90 }
 	}
 }
@@ -359,7 +368,15 @@ country_event = { ##### For Afghanistan: KALAT LOST, ALSO PAK STILL AINT DEAD
 				}
 			}
 		}
-		
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_pak_news.12
+					hours = 1
+				}
+			}
+		}
 		ai_chance = { factor = 90 }
 	}
 }
@@ -455,6 +472,15 @@ country_event = { ##### rip
 				country_event = {
 					id = pakistan_elec.1
 					days = 23
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_pak_news.11
+					hours = 1
 				}
 			}
 		}
@@ -622,6 +648,7 @@ country_event = { ##### Pak moves north
 					days = 12
 				}
 			}
+			
 		}
 		PAK = { change_tag_from = MFP }
 		
@@ -672,6 +699,15 @@ country_event = { ##### Knock knock Pakistan
 		KLT = {
 			add_ideas = KLT_sleeping
 		}
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+				id = TTD_pak_news.5
+				hours = 1
+				}
+			}
+		}
 		set_global_flag = sopfailpakwar
 	}
 }
@@ -692,6 +728,15 @@ country_event = { ##### Pak ceasefire till round 2
 			country_event = {
 				id = pakistan.19
 				days = 31
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+				id = TTD_pak_news.10
+				hours = 1
+				}
 			}
 		}
 	}
@@ -840,6 +885,7 @@ country_event = { ##### Ok, ROUND 2
 		KLT = {
 			remove_ideas = KLT_sleeping
 		}
+		
 		set_global_flag = PakvsAFG2
 	}
 }
@@ -882,6 +928,15 @@ country_event = { ##### Pakistan and SPU wins against AFG
 			transfer_state = 1533
 		}
 		clr_global_flag = PakvsAFG2
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+				id = TTD_pak_news.9
+				hours = 1
+				}
+			}
+		}
 		hidden_effect = {
 			AFG = {
 				country_event = {

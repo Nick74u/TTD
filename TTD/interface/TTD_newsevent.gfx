@@ -48,4 +48,50 @@ spriteTypes = {
 		name = "GFX_news_event_everest_tibet"
 		texturefile = "gfx/event_pictures/Asia/GFX_news_event_everest_tibet.dds"
 	}
+	spriteType = {
+		name = "GFX_news_event_bhutancwstart"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_bhutancwstart.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_govsuccess"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_govsuccess.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_rebsuccess"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_rebsuccess.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_news_event_pakistansopfailstart"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_pakistansopfailstart.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_pakistanstartssopsuccess"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_pakistanstartssopsuccess.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_sopfailafghansbeatpak"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_sopfailafghansbeatpak.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_sopfailafghansbeatpakandconstructsrz"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_sopfailafghansbeatpakandconstructsrz.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_sopfailpakbeatsafg"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_sopfailpakbeatsafg.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_sopfailpakistanbeatsfp"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_sopfailpakistanbeatsfp.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_sopsuccessafgdefeatspak"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_sopsuccessafgdefeatspak.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_sopsuccesspakdefeatafg"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_sopsuccesspakdefeatafg.dds"
+	}
 }
