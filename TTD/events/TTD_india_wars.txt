@@ -47,6 +47,16 @@ country_event = {
 		leave_faction = yes
 		create_faction = Azad_Front
         india_war_start = yes
+		BHU = {
+		    leave_faction = yes
+		}
+		
+		AZH = { 
+			set_autonomy = {
+			    target = BHU
+				autonomous_state = autonomy_free
+			}
+		}
 		
 		ai_chance = { factor = 90 }
 	}
