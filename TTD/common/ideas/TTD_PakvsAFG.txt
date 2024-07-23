@@ -92,6 +92,19 @@ ideas = {
 				ai_focus_defense_factor = 1
 			}
 		}
+		PAK_the_islamic_rebellion = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PAK_the_islamic_rebellion" }
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = SOA_indian_wars
+			removal_cost = -1
+
+			modifier = {
+				
+				free_production_units_modifier = 8
+			}
+		}
 		KLT_sleeping = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KLT_sleeping" }
 

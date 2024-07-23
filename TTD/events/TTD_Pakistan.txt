@@ -155,6 +155,7 @@ country_event = { ##### Pakistan eats up MFP
 				set_demilitarized_zone = no
 			}
 		}
+		
 		PAK = {
 			annex_country = {
 				target = MFP
@@ -182,6 +183,9 @@ country_event = { ##### Pakistan eats up MFP
 					}
 				}
 			}
+		}
+		PAK = {
+			add_ideas = PAK_the_islamic_rebellion
 		}
 		PAK = { change_tag_from = MFP }
 		
@@ -446,6 +450,12 @@ country_event = { ##### murder west kalat now
 				type = annex_everything
 			}
 		}
+		PAK = {
+			country_event = {
+				id = pakistan_elec.1
+				days = 23
+			}
+		}
 	}
 }
 ####KLT VS SPU, SPU LOSES
@@ -496,6 +506,9 @@ country_event = { ##### Leadership change
 	option = { #Pak coup Akbar
 		name = pakistan_elec.1.a
 		promote_character = PAK_Akbar_Khan
+		set_politics = {
+			ruling_party = paternalism
+		}
 		
 		hidden_effect = {
 			PAK = {
@@ -649,6 +662,9 @@ country_event = { ##### Pak moves north
 				}
 			}
 			
+		}
+		PAK = {
+			add_ideas = PAK_the_islamic_rebellion
 		}
 		PAK = { change_tag_from = MFP }
 		
