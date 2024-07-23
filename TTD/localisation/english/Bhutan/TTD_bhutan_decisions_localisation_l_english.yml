@@ -31,8 +31,8 @@ bhutan_debug_rich_decision: "Make Bhutan the richest country in the world"
  bhutan_trigger_paksop_decision: "Trigger Frontier Provinces Chaos"
  #####DECISION TOOLTIP######
  azad_hind_poverty_time:0 "Azad Hind Will Inspect Our Current State"
- BHU_garrison_supply_change_increase_tt: "§GIncreases§! Garrison §RSupply§! by §G[?Meter_garrison_bar_supply_temp|2]%§!.\n"
- BHU_garrison_supply_change_decrease_tt: "§RDecreases§! Garrison §RSupply§! by §R[?Meter_garrison_bar_supply_temp|2]%§!.\n"
+ BHU_garrison_supply_change_increase_tt: "§GIncreases§! Garrison £GFX_BHU_bhutan_supplies §RSupply§! by §G[?Meter_garrison_bar_supply_temp|2]%§!.\n"
+ BHU_garrison_supply_change_decrease_tt: "§RDecreases§! Garrison £GFX_BHU_bhutan_supplies §RSupply§! by §R[?Meter_garrison_bar_supply_temp|2]%§!.\n"
  BHU_garrison_morale_change_increase_tt: "§GIncreases§! Garrison §YMorale§! by §G[?Meter_garrison_bar_morale_temp|2]%§!.\n"
  BHU_garrison_morale_change_decrease_tt: "§RDecreases§! Garrison §YMorale§! by §R[?Meter_garrison_bar_morale_temp|2]%§!.\n"
  ##ECONOMY MODIFIER

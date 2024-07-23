@@ -11,7 +11,7 @@ ideas = {
 			modifier = {
 				army_attack_factor = 0.5
 				ai_focus_aggressive_factor = 10
-				surrender_limit = -0.5
+				surrender_limit = -0.3
 			}
 		}
 		KLT_disorganized_defense = {

@@ -39,7 +39,7 @@ hidden_effect = {
 		}
 		random_list = {
 				33.3 = {
-					set_variable = { Wangchuck_causes_trouble_supply_temp = 1 } 
+					set_variable = { Wangchuck_causes_trouble_supply_temp = -5 } 
 			
 				}
 				33.3 = {
@@ -47,7 +47,7 @@ hidden_effect = {
 					
 				}
 				33.4 = {
-					set_variable = { Wangchuck_causes_trouble_supply_temp = -5 }	
+					set_variable = { Wangchuck_causes_trouble_supply_temp = -2 }	
 				}
 			}
 
@@ -61,7 +61,7 @@ hidden_effect = {
 						
 			}
 			33.4 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -5 }
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -4 }
 										
 			}
 		}
@@ -77,29 +77,29 @@ hidden_effect = {
 		}
 		random_list = {
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -11 } 
+				set_variable = { Wangchuck_causes_trouble_supply_temp = -12 } 
 
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -10 } 
+				set_variable = { Wangchuck_causes_trouble_supply_temp = -11 } 
 
 			}
 			33.4 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -9 }
+				set_variable = { Wangchuck_causes_trouble_supply_temp = -10 }
 					
 			}
 		}
 		random_list = {
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -11 } 
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -6 } 
 
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -10 } 
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -7 } 
 
 			}
 			33.4 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -9 }
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -8 }
 				
 			}	
 		}
@@ -131,15 +131,15 @@ hidden_effect = {
 		}
 		random_list = {
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -15 } 
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -8 } 
 
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -13 } 
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -9 } 
 
 			}
 			33.4 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -11 }	
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -10 }	
 			}
 		}		
 	}	
@@ -164,13 +164,13 @@ hidden_effect = {
 		}
 		random_list = {
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -9 } 
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -4 } 
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -7 } 
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -3 } 
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -6 }		
+				set_variable = { Wangchuck_causes_trouble_morale_temp = -2 }		
 			}
 		}
 	}

@@ -1,0 +1,18 @@
+spriteTypes = {
+	# Bhutan
+	spriteType = {
+		name = "GFX_BHU_Azadhind_texticon"
+		texturefile = "gfx/texticons/BHU_texticon_azadhind.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_BHU_bhutan_texticon"
+		texturefile = "gfx/texticons/BHU_texticon_bhutan.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_BHU_bhutan_supplies"
+		texturefile = "gfx/texticons/BHU_texticon_supplies.dds"
+		legacy_lazy_load = no
+	}
+}

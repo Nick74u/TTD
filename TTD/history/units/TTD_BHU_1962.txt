@@ -9,6 +9,16 @@
 	}
 }
 division_template = {
+	name = "INA Garrison Second"
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
 	name = "INA Cavalry Garrison"  
 
 	regiments = {
@@ -37,7 +47,7 @@ units = {
 			name_order = 1
 		}
 		location = 8010 # Thimphu
-		division_template = "INA Garrison"
+		division_template = "INA Garrison Second"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 
@@ -70,7 +80,7 @@ units = {
 			name_order = 6
 		}
 		location = 16131 # Bumthang
-		division_template = "INA Garrison"
+		division_template = "INA Garrison Second"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 

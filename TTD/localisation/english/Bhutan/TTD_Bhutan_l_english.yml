@@ -30,7 +30,9 @@
 ########FOCUS#############
   ##First Part##
  BHU_removing_the_rubble: "Removing The Rubble"
+ BHU_removing_the_rubble_desc: "To say that our invasion of Bhutan was clean is an understatement. Buildings are in ruins and the fields are on fire, even the roads have been destroyed.\n\nOur job will be a herculean task and removing the destruction is a start to the swift integration of this land"
  BHU_in_azad_hind_vision: "In Azad Hind's Vision"
+ BHU_in_azad_hind_vision_desc: "As expected, Kolkata has been made aware of our invasion to Bhutan.\n\nThankfully, they didn't condemn or arrest us for invading Bhutan without orders to do so.\n\nInstead,they have sent orders to make sure we will secure control over Bhutan with minimal support in order to not put weight over their finances.\n\nIt's better than nothing I suppose"
  BHU_the_chained_dragon: "The Chained Dragon"
  BHU_build_from_the_ground_up: "Build From The Ground Up"
  BHU_The_Bhutanese_Renaissance: "The Bhutanese Renaissance"
@@ -75,7 +77,9 @@
  BHU_a_curfew_in_the_east: "A Curfew In The Eastern Regions"
  BHU_securing_our_roads: "Securing Our Roads"
  BHU_enforcing_the_mcmahon_line: "Enforcing the McMahon Line"
+ BHU_enforcing_the_mcmahon_line_desc: "Ever since the end of the Second World War, India has been disorganized as it tries to adapt to a world engulf in flames. Not to mention, Bose's split has turned those tensions up.\n\nThose nasty Tibetans and their so called Dalai Lama have took this as an opportunity to steal Arunachal Pradesh off our hands!\n\nIt is time to re-write this and show those Tibetans that the Azad Hind won't ignore their actions.\n\nKanwal has a plan, and so does the INA in Bhutan.\nWe will enforce the McMahon line, whether they like it or not"
  BHU_blitz_to_arunachal: "The Blitz To the Lohit River"
+ BHU_blitz_to_arunachal_desc: "The time is now, there will be no more waiting.\n\nKolkata has given us permission to retake our lands, we will not fail for we have planned this for a very long time.\n\nWe will rejoice as we drive and make quick work of the Tibetans stationed there"
  
  
  BHU_dream_over_the_thimphu_valley: "The Dream Over the Thimphu Valley"
@@ -134,7 +138,7 @@ BHU_Laws_ministry_of_economic_affairs_desc:0 "Cardozo's burger joint"
   BHU_mtsho_border_war:0 "We must prepare for the upcoming skirmishes"
   BHU_azad_hind_approves: "Azad Hind gave the greenlight to our war plans"
   TTD_BHU_garrison_number_tt: "Current Garrison strength is [?Meter_garrison_bar_value]"
-  TTD_BHU_garrison_Info_tt: "Kanwal Singh Dalal and his garrison are directly supplied with all of the essentials for their survival within the harsh foreign nation of Bhutan. The junta revieves a monthly convoy from the Kolkota government in order to prepare the Province of Bhutan for statehood in Azad Hind, a tedious process which requires the total elimination of Bhutanese nationalism and hope for self determination. Though Singh is supplied straight from one of the most influential nations in South Asia, him and his garrison still find themselves and most importantly their supplies being harraswed by the Bhotamuzh almost monthly as their supply convoys are required to travel through harsh Himalayan terrain.\n\nThe fate of Bhutan's integration lies not only within the choices of the junta but also that of the resistance.."
+  TTD_BHU_garrison_Info_tt: "Kanwal Singh Dalal and his garrison are directly supplied with all of the essentials for their survival within the harsh foreign nation of Bhutan. The junta receives a monthly convoy from the Kolkata government in order to prepare the £GFX_BHU_bhutan_texticon §xProvince of Bhutan§! for statehood in £BHU_Azadhind_texticon §nAzad Hind§!, a tedious process which requires the total elimination of Bhutanese nationalism and hope for self determination. Though Singh is supplied straight from one of the most influential nations in South Asia, him and his garrison still find themselves and most importantly their supplies being harrassed by the Bhotamuzh almost monthly as their supply convoys are required to travel through harsh Himalayan terrain.\n\nThe fate of Bhutan's integration lies not only within the choices of the junta but also that of the resistance.."
   BHU_road_lv2_upgrade_tt: "We will receive an §Gupgrade§! for securing the roads..."
   ####FACTION NAME###
   Azad_Front:0 "Indian Liberation Front"
@@ -150,8 +154,8 @@ BHU_Laws_ministry_of_economic_affairs_desc:0 "Cardozo's burger joint"
    BHU_garrison_text_med: "Our Garrison is above the threshold, with a percentage of §G[?Meter_garrison_bar_value|2]%§!"
    BHU_garrison_text_high: "Our Garrison operates at full strength, with a percentage of §G[?Meter_garrison_bar_value|2]%§!"
    #supply
-   BHU_wangchuck_trouble_supply_increase_tt: "Our Garrison Supply will increase by §G[?Wangchuck_causes_trouble_supply_temp|2]%§!"
-   BHU_wangchuck_trouble_supply_decrease_tt: "Our Garrison Supply will decrease by §R[?Wangchuck_causes_trouble_supply_temp|2]%§!"
+   BHU_wangchuck_trouble_supply_increase_tt: "Our Garrison £GFX_BHU_bhutan_supplies Supply will increase by §G[?Wangchuck_causes_trouble_supply_temp|2]%§!"
+   BHU_wangchuck_trouble_supply_decrease_tt: "Our Garrison £GFX_BHU_bhutan_supplies Supply will decrease by §R[?Wangchuck_causes_trouble_supply_temp|2]%§!"
   
    #morale
    BHU_wangchuck_trouble_morale_increase_tt: "Our Garrison Morale will increase by §G[?Wangchuck_causes_trouble_morale_temp|2]%§!"
@@ -164,14 +168,14 @@ BHU_Laws_ministry_of_economic_affairs_desc:0 "Cardozo's burger joint"
    BHU_atr_garrison_2: "Our Garrison Morale will decrease by §R15%!§!\n\nBut for §GOne and a Half Month§!, we will actively protect the roads which will hinder §Oresistance activity§!"
    BHU_attacking_the_resistance: "Protecting the Roads"
    BHU_garrison_check: "The State of our Garrison will affect our §Rsecurity status...§!"
-   BHU_morale_changes_each_month: "Depending on how much §RSupply§! we have, the Garrison's §YMorale§! will §Gincrease§! or §Rdecrease§!"
+   BHU_morale_changes_each_month: "Depending on how much £GFX_BHU_bhutan_supplies §RSupply§! we have, the Garrison's §YMorale§! will §Gincrease§! or §Rdecrease§!"
    garrison_decision_2: "Our Garrison Morale will increase by §G5%!§!"
    garrison_decision_1: "Our Garrison Supply will increase by §G15%!§!"
    BHU_garrison_text_up: "§OTotal Bhutan Garrison Strength§!"
    BHU_unlocks_garrison_gui: "Unlocks the §OState of the Garrison§! GUI in the £decision_icon_small §Ydecisions§! tab."
-   BHU_supply_number: "§RSupply§! is currently: §W[?Meter_garrison_bar_supply_value|2]%§! "
+   BHU_supply_number: "£GFX_BHU_bhutan_supplies §RSupply§! is currently: §W[?Meter_garrison_bar_supply_value|2]%§! "
    BHU_morale_number: "§YMorale§! is currently: §W[?Meter_garrison_bar_morale_value|2]%§!"
-   BHU_convoy_arrival: "Convoy will arrive, giving us Supply by §G[?convoy_supply_arrival|2]%!§!"
+   BHU_convoy_arrival: "Convoy will arrive, giving us £GFX_BHU_bhutan_supplies §RSupply§! by §G[?convoy_supply_arrival|2]%!§!"
    TTD_BHU_garrison_supply_desc_tt: "The bread and butter of any army is how well supplied they are. Logistics is the key to victory, and in our case, the way to pacify Bhutan"
    TTD_BHU_garrison_morale_desc_tt: "No army can win a battle without its men, and not only that, they also must be enthusiastic and able to perform their duty"
    

@@ -198,16 +198,9 @@ country_event = {
 			days = 1
 			id = bhutan_civil_war.1
 		}
-		
-		BHU = {
-			transfer_units_fraction= {
-				target = AZH
-				size = 0.5
-				stockpile_ratio = 0.8
-				army_ratio = 0.5
-				
-			}
-			
+		delete_units = {
+			division_template = "INA Garrison Second"
+			disband = yes
 		}
 	}
 }
