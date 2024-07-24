@@ -1004,6 +1004,96 @@ defined_text = {
 		}
 		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_FRA_CW
 	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = BHU
+			}
+			event_target:losing_country = {
+				original_tag = FBH
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_BCW_BHU_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = FBH
+			}
+			event_target:losing_country = {
+				original_tag = BHU
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_BCW_FBH_WIN
+	}
+	text = {
+		trigger = {
+			has_global_flag = PakvsAFG2
+			event_target:winning_country = {
+				original_tag = PAK
+			}
+			event_target:losing_country = {
+				original_tag = AFG
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_PAKvAFG_PAK_WIN
+	}
+	text = {
+		trigger = {
+		has_global_flag = PakvsAFG2
+			event_target:winning_country = {
+				original_tag = AFG
+			}
+			event_target:losing_country = {
+				original_tag = PAK
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_PAKvAFG_AFG_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = PAK
+			}
+			event_target:losing_country = {
+				original_tag = MFP
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_PAKvMFP_PAK_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = MFP
+			}
+			event_target:losing_country = {
+				original_tag = PAK
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_PAKvMFP_MFP_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = SPU
+			}
+			event_target:losing_country = {
+				original_tag = KLT
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_SPUvKLT_SPU_WIN
+	}
+	text = {
+		trigger = {
+			event_target:winning_country = {
+				original_tag = KLT
+			}
+			event_target:losing_country = {
+				original_tag = SPU
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_SPUvKLT_KLT_WIN
+	}
 	##
 	text = {
 		localization_key = TNO_PEACE_POPUP_WAR_CONCLUSION_DEFAULT
@@ -3526,7 +3616,7 @@ defined_text = {
 		}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_BHU
 	}
-
+	
 	text = {
 		trigger = {
 			event_target:losing_country = {
@@ -3535,8 +3625,24 @@ defined_text = {
 		}
 		localization_key = TNO_PEACE_POPUP_FLAVOR_FBH
 	}
-
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = PAK
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_PAK
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = MFP
+			}
+		}
+		localization_key = TNO_PEACE_POPUP_FLAVOR_MFP
+	}
 	text = {
 		localization_key = TNO_PEACE_POPUP_FLAVOR_DEFAULT
 	}
+	
 }

@@ -184,7 +184,7 @@ on_actions = {
 							tag = PAK
 						}
 					}
-					PvA_PAK_victory = yes
+					PvA_AFG_victory = yes
 					set_global_flag = skip_default_capitulation
 				}
 				##AZH VS ROI

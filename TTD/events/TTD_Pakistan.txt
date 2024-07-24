@@ -905,7 +905,7 @@ country_event = { ##### Ok, ROUND 2
 		set_global_flag = PakvsAFG2
 	}
 }
-country_event = { ##### Pakistan and SPU wins against AFG
+country_event = { ##### Dead slot
 	id = pakistan.23
 	title = pakistan.23.t
 	desc = pakistan.23.d
@@ -914,57 +914,8 @@ country_event = { ##### Pakistan and SPU wins against AFG
 	
 	option = { 
 		name = pakistan.23.a
-		AFG = { white_peace = PAK }
-		PAK = {
-			transfer_state = 929
-			transfer_state = 1889
-			transfer_state = 1890
-			add_state_core = 929
-			add_state_core = 1889
-			add_state_core = 1890
-		}
-		SPU = {
-			annex_country = {
-				target = KLT
-				transfer_troops = no
-			}
-		}
-		PAK = {
-			annex_country = {
-				target = SPU
-				transfer_troops = yes
-			}
-			every_owned_state = {
-				add_core_of = PAK
-			}
-		}
-		BAR = {
-			transfer_state = 445
-			transfer_state = 444
-			transfer_state = 1533
-		}
-		clr_global_flag = PakvsAFG2
-		hidden_effect = {
-			every_country = {
-				limit = { is_ai = no }
-				news_event = {
-				id = TTD_pak_news.9
-				hours = 1
-				}
-			}
-		}
-		hidden_effect = {
-			AFG = {
-				country_event = {
-					id = pakistan.24
-					days = 21
-				}
-			}
-			country_event = {
-				id = pakistan.25
-				days = 21
-			}
-		}
+		
+		
 	}
 }
 country_event = { ##### Tajikistan gets their land back

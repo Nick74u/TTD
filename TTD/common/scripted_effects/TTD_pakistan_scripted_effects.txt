@@ -144,8 +144,8 @@ SoPfail_PAK_victory = {
 	}
 	clr_global_flag = sopfailpakwar
 }
-PvA_PAK_victory = {
-	log = "[GetDateText]: [Root.GetTag]: PvA_PAK_victory; Executing."
+PvA_AFG_victory = {
+	log = "[GetDateText]: [Root.GetTag]: PvA_AFG_victory; Executing."
 	AFG = { white_peace = PAK }
 	AFG = { white_peace = SPU }
 	MFP = {
@@ -200,6 +200,62 @@ PvA_PAK_victory = {
 			news_event = {
 				id = TTD_pak_news.8
 				hours = 1
+			}
+		}
+	}
+}
+PvA_PAK_victory = {
+	log = "[GetDateText]: [Root.GetTag]: PvA_PAK_victory; Executing."
+	AFG = { white_peace = PAK }
+	PAK = {
+		transfer_state = 929
+		transfer_state = 1889
+		transfer_state = 1890
+		add_state_core = 929
+		add_state_core = 1889
+		add_state_core = 1890
+	}
+	SPU = {
+		annex_country = {
+			target = KLT
+			transfer_troops = no
+		}
+	}
+	PAK = {
+		annex_country = {
+			target = SPU
+			transfer_troops = yes
+		}
+		every_owned_state = {
+			add_core_of = PAK
+		}
+	}
+	BAR = {
+		transfer_state = 445
+		transfer_state = 444
+		transfer_state = 1533
+	}
+	clr_global_flag = PakvsAFG2
+	hidden_effect = {
+		every_country = {
+			limit = { is_ai = no }
+			news_event = {
+			id = TTD_pak_news.9
+			hours = 1
+			}
+		}
+	}
+	hidden_effect = {
+		AFG = {
+			country_event = {
+				id = pakistan.24
+				days = 21
+			}
+		}
+		PAK = {
+			country_event = {
+				id = pakistan.25
+				days = 21
 			}
 		}
 	}

@@ -111,6 +111,11 @@ focus_tree = {
 					}
 				}
 			}
+			hidden_effect = {
+				activate_mission = BHU_monthly_garrison_check
+				activate_mission = BHU_monthly_convoy_arrival
+				activate_mission = bhutan_garrison_morale_changes_decision
+			}
 			activate_mission = BHU_wangchuck_causes_trouble
 		}
 	}

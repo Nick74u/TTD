@@ -411,6 +411,7 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		days_mission_timeout = 30	
 		is_good = no
 		activation = {
+			always = no
 		}
 		available = {		
 			always = no
@@ -467,6 +468,7 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		days_mission_timeout = 30	
 		is_good = yes
 		activation = {
+			always = no
 		}
 		available = {		
 			always = no
@@ -491,6 +493,7 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		days_mission_timeout = 30	
 		is_good = yes
 		activation = {
+			always = no
 		}
 		available = {		
 			always = no

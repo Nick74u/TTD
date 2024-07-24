@@ -40,6 +40,7 @@ scripted_gui = {
 			}
 			azad_button_click = {
 				set_variable = { BHU_faction_select = 1 }
+				set_country_flag = BHU_Map_GUI_Info_Window_Visible
 				add_to_variable = { BHU_map_dirty_variable = 0.01 }
 			}
 		}
@@ -69,10 +70,25 @@ scripted_gui = {
 				check_variable = { BHU_faction_select = 1 }
 			}
 		}
-		properties = {
-			Bhutan_Chukha_display = {
-				frame = 2018:gui_display_frame
+	}
+	BHU_Map_GUI_Info_Window = {
+		context_type = player_context
+		window_name = "BHU_Map_GUI_Info_Window"
+
+		visible = {
+			has_country_flag = BHU_Map_GUI_Info_Window_Visible
+		}
+
+		effects = {
+			BHU_Map_GUI_Close_Button_click = {
+				clr_country_flag = BHU_Map_GUI_Info_Window_Visible
+				set_variable = { BHU_faction_select = -1 }
+				add_to_variable = { BHU_map_dirty_variable = 0.01 }
 			}
+		}
+
+		triggers = {
+
 		}
 	}
 }

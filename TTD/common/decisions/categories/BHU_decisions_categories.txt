@@ -19,15 +19,13 @@ bhutan_provinces_category = {		#ID of category
 	icon = GFX_BHU_decision_category_districts	#Icon to be used for the category, defined in decisions_graphics.gfx or other .gfx file you create
 	
 	allowed = {
-		original_tag = BHU
+		tag = BHU
 	}
 	scripted_gui = BHU_Map_GUI
-	visible = {
-		is_debug = yes
+
+	visible = {		
+	    has_country_flag = BHU_map_gui_show
 	}
-	#visible = {		
-	#    has_country_flag = BHU_map_gui_show
-	#}sssssssss
 }
 bhutan_poverty_category = {		#ID of category
 	priority = 10		#Determines the order of display in the decisions tab, the higher the number, the higher it will show up.
@@ -57,9 +55,12 @@ bhutan_garrison_category = {		#ID of categorysssss
 	
 	allowed = {
 		original_tag = BHU
+
 	}
 	scripted_gui = BHU_Garrison_GUI
 	visible = {		#Determines what makes this category visibssle, if a category is invisible decisions under that category also will not be visible to the AI/player.
+		has_country_flag = BHU_show_garrison_gui
+		has_completed_focus = BHU_the_chained_dragon
 	}
 	visible_when_empty = yes
 }
