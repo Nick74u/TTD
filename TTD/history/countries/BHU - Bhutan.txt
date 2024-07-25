@@ -92,7 +92,7 @@ add_ideas = {
 	tno_minorities_segregation
 	tno_child_labor_illegal
 	#DEVELOPMENT#
-	tno_industrial_expertise_incompetent
+	tno_industrial_expertise_pre_industrial
 	tno_industrial_equipment_hand_tools
 	tno_healthcare_rudimentary
 	tno_agriculture_subsistence

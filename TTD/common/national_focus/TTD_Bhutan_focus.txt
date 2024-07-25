@@ -145,6 +145,7 @@ focus_tree = {
 			id = bhutan_focus_event.1
 			hours = 6
 			}
+			tno_improve_industrial_expertise = yes
 		}
 	}
 	focus = {
