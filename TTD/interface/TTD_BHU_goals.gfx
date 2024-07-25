@@ -63,7 +63,14 @@ spriteTypes = {
 		name = "GFX_goal_reports_from_our_men"
 		texturefile = "gfx/interface/goals/focus_reports_from_our_men.dds"			
 	}	
-	
+	SpriteType = {
+		name = "GFX_goal_model_province_of_india"
+		texturefile = "gfx/interface/goals/focus_model_province_of_india.dds"			
+	}	
+	SpriteType = {
+		name = "GFX_goal_searching_for_the_rebels"
+		texturefile = "gfx/interface/goals/focus_searching_for_the_rebels.dds"			
+	}	
 	SpriteType = {
 	name = "GFX_goal_continuous_reduce_training_time"
 	texturefile = "gfx/interface/goals/goal_continuous_reduce_training_time.dds"			

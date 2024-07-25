@@ -844,7 +844,7 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_the_model_province_of_india
-		icon = GFX_
+		icon = GFX_goal_model_province_of_india
 		x = 0
 		y = 2
 		relative_position_id = BHU_mopping_out_disloyalty
@@ -922,7 +922,7 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_searching_for_the_rebels
-		icon = focus_From_Mountains_to_Cities
+		icon = GFX_goal_searching_for_the_rebels
 		x = -2
 		y = 1
 		relative_position_id = BHU_reports_from_our_men

@@ -40,6 +40,14 @@ country_event = {
 					add_core_of = PAK
 				}
 			}
+			PAK = {
+				add_state_core = 220
+				transfer_state = 220
+				add_state_core = 926
+				transfer_state = 926
+				add_state_core = 1475
+				transfer_state = 1475
+			}
 		}
 		
 		set_global_flag = indian_wars
