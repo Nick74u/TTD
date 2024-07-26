@@ -265,6 +265,9 @@ azad_hind_victory = {
 			AZH = {
 				puppet = NEP
 			}
+			NEP = {
+				set_cosmetic_tag = NEP_MIL
+			}
 		}
 	}
 	if = {
@@ -349,6 +352,7 @@ azad_hind_victory = {
 		add_ideas = {
 			KIR_Forced_Union
 			KIR_ROI_Remains
+			KIR_Indepence_Nothing_but_Name
 		}	
 		set_capital = {
 		    state = 441
