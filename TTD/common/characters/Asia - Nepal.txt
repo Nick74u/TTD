@@ -36,14 +36,14 @@ characters = {
 			ai_will_do = { factor = 0 }
 		}
 		country_leader = {
-			desc = ""
+			desc = "POLITICS_NEP_BIRENDRA_BIR_BIKRAM_SHAH_WHOLESOME_DESC"
 			expire = "1999.1.1"
 			ideology = paternalism_semi_constitutional_monarchy_subtype
 			traits = {}
 			id = -1
 		}
 		country_leader = {
-			desc = ""
+			desc = "POLITICS_NEP_BIRENDRA_BIR_BIKRAM_SHAH_DESC"
 			expire = "1999.1.1"
 			ideology = despotism_aristocratic_conservatism_subtype
 			traits = {}
