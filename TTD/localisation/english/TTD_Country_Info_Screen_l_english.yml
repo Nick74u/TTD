@@ -40,14 +40,14 @@ CountryInfo_tab_name_country: "Country Overview"
  
  ## DD
  NEP_CountryInfo_Content.1: "Triumph"
- NEP_CountryInfo_Content.1_desc: "Placeholder"
+ NEP_CountryInfo_Content_desc.1: "Placeholder"
  NEP_CountryInfo_Content.2: "Tragedy"
- NEP_CountryInfo_Content.2_desc: "Placeholder"
+ NEP_CountryInfo_Content_desc.2: "Placeholder"
  NEP_CountryInfo_Content.3: "Dreams"
- NEP_CountryInfo_Content.3_desc: "Placeholder"
+NEP_CountryInfo_Content_desc.3: "Placeholder"
  
  ## RT
  NEP_CountryInfo_Content.4: "Brutality"
- NEP_CountryInfo_Content.4_desc: "Placeholder"
+ NEP_CountryInfo_Content_desc.4: "Placeholder"
  NEP_CountryInfo_Content.5: "Silence"
- NEP_CountryInfo_Content.5_desc: "Placeholder"
+ NEP_CountryInfo_Content_desc.5: "Placeholder"

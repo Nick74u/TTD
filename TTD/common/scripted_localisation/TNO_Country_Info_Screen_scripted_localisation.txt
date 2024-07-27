@@ -5923,6 +5923,7 @@ defined_text = {
 			}
 			localization_key = NEP_CountryInfo_Content_desc.5
 		}
+	}
 
 # X. Functionality
 defined_text = {

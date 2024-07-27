@@ -16,12 +16,16 @@ SpriteTypes = {
 		texturefile = "gfx/interface/ideas/national_spirits/Asia/NEP/idea_NEP_Dictatorship_With_the_Face_of_Democracy.dds"
 	}
 	SpriteType = {
-		name = "GFX_idea_SOA_indian_wars"
-		texturefile = "gfx/interface/ideas/national_spirits/Asia/idea_SOA_indian_wars.dds"
+		name = "GFX_idea_NEP_battle_for_everest"
+		texturefile = "gfx/interface/ideas/national_spirits/Asia/NEP/idea_NEP_battle_for_everest.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_NEP_everest_committee"
 		texturefile = "gfx/interface/ideas/national_spirits/Asia/NEP/idea_NEP_everest_committee.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOA_indian_wars"
+		texturefile = "gfx/interface/ideas/national_spirits/Asia/idea_SOA_indian_wars.dds"
 	}
 }
 
