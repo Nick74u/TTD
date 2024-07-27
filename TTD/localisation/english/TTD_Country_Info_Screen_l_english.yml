@@ -7,10 +7,12 @@ TNO_COUNTRY_INFO_BUTTON_TT: "§YDestiny lies ahead.§!"
 
  TNO_COUNTRY_INFO_BUTTON_TEXT_BHU: "Jai Bhutan!"
  
+ TNO_COUNTRY_INFO_BUTTON_TEXT_NEP: "Nēpālakō Lāgi!"
+ 
 ### COUNTRY OPENING ###
 CountryInfo_tab_name_country: "Country Overview"
  
- ### Bhutan
+### Bhutan
   BHU_CountryInfo_Folder.101: "Calcutta Calling"
   BHU_CountryInfo_Folder.102: "An Underground Resistance"
  
@@ -18,16 +20,34 @@ CountryInfo_tab_name_country: "Country Overview"
   BHU_CountryInfo_Content.1: "The End of WW2"
   BHU_CountryInfo_Content_desc.1: "When the Second World War ended and with the total change of the world order, Bhutan was relatively unchanged due to its isolationist and landlocked land that they own.\n The mountains would be the natural defense of Bhutan since time immemorial, and the Druk Gyalpo knows it"
   BHU_CountryInfo_Content.2: "Bose's Flight East"
-  BHU_CountryInfo_Content_desc.2: "When the Afghna-Indian war resulted in a humiliating lost for the Republic of India and Subhas Chandra Bose getting all the blame for it, he then fled east with his other contemporaries collectively called the Azad Hind which is aligned to Sphere.\n\n Bhutan has a new neighbor down south and only the years following it, they will know what their attitude is towards the fledging state of Bhutan"
+  BHU_CountryInfo_Content_desc.2: "When the Hindu-Afghan war resulted in a humiliating lost for the Republic of India and Subhas Chandra Bose getting all the blame for it, he then fled east with his other contemporaries collectively called the Azad Hind which is aligned to Sphere.\n\n Bhutan has a new neighbor down south and only the years following it, they will know what their attitude is towards the fledging state of Bhutan"
   BHU_CountryInfo_Content.3: "Invasion"
   BHU_CountryInfo_Content_desc.3: "This took a while"
-  BHU_CountryInfo_Content.4: "Tragedy"
+  BHU_CountryInfo_Content.4: "Conversion"
   BHU_CountryInfo_Content_desc.4: "This took a while"
   BHU_CountryInfo_Content.5: "Desperation"
   BHU_CountryInfo_Content_desc.5: "This took a while"
  
   # 102
   BHU_CountryInfo_Content.6: "The Monarchy"
-  BHU_CountryInfo_Content_desc.6: "Although hope is mutually lost among the populace, a small group of rebels known locally as the Tantangyigogrgolbyas still fights valiently as if the 1956 invasion is still ongoing. Led by the former king of the Bhutan, Jigme Dorji Wangchuck, the resistance group seeks to reinstate the great Kingdom of Bhutan under a Constitutional monarchy with the Wangchuck Dynasty reascending to the throne to the throne.\n\nMainly operating in the former Azad Hind controlled region of Western Arunachal, the small, yet effective militia are no strangers to terror attacks, political assasinations and raids against members of the military cabinet, acting as a major contributing factor towards Kanwal Singh Dalal's paranoia and oppressive regime.\n\nWith resistance cells spanning from Gangtok in the west to Rta Dbang in the east, the Tantangyigogrgolbyas grows ever slowly, paving an uncertain future for the Military District of the Autonomous Province of Bhutan."
+  BHU_CountryInfo_Content_desc.6: "Although hope is mutually lost among the populace, a small group of rebels known locally as the Bhotamuzh still fights valiently as if the 1959 invasion is still ongoing. Led by the former king of the Bhutan, Jigme Dorji Wangchuck, the resistance group seeks to reinstate the great Kingdom of Bhutan under a Constitutional monarchy with the Wangchuck Dynasty reascending to the throne to the throne.\n\nMainly operating in the former Azad Hind controlled region of Western Arunachal, the small, yet effective militia are no strangers to terror attacks, political assasinations and raids against members of the military cabinet, acting as a major contributing factor towards Kanwal Singh Dalal's paranoia and oppressive regime.\n\nWith resistance cells spanning from Gangtok in the west to Rta Dbang in the east, the Bhotamuzh grows ever slowly, paving an uncertain future for the Military District of the Autonomous Province of Bhutan."
   BHU_CountryInfo_Content.7: "The Theocracy"
   BHU_CountryInfo_Content_desc.7: "The Theocracy"
+  
+ ### NEPAL
+ NEP_CountryInfo_Folder.101: "Democratic Dreams"
+ NEP_CountryInfo_Folder.102: "Royal Tyranny"
+ 
+ ## DD
+ NEP_CountryInfo_Content.1: "Triumph"
+ NEP_CountryInfo_Content.1_desc: "Placeholder"
+ NEP_CountryInfo_Content.2: "Tragedy"
+ NEP_CountryInfo_Content.2_desc: "Placeholder"
+ NEP_CountryInfo_Content.3: "Dreams"
+ NEP_CountryInfo_Content.3_desc: "Placeholder"
+ 
+ ## RT
+ NEP_CountryInfo_Content.4: "Brutality"
+ NEP_CountryInfo_Content.4_desc: "Placeholder"
+ NEP_CountryInfo_Content.5: "Silence"
+ NEP_CountryInfo_Content.5_desc: "Placeholder"
