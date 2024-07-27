@@ -166,7 +166,7 @@ ideas = {
 			
 			allowed = { always = no }
 			allowed_civil_war = { always = yes } #{ #has_government = yes }
-			picture = idea_NEP_battle_for_everest
+			picture = NEP_battle_for_everest
 			removal_cost = -1
 			
 			modifier = {
@@ -191,7 +191,7 @@ ideas = {
 			
 			allowed = { always = no }
 			allowed_civil_war = { always = yes } #{ #has_government = yes }
-			picture = idea_NEP_everest_committee
+			picture = NEP_everest_committee
 			removal_cost = -1
 			
 			modifier = {

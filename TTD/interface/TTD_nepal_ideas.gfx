@@ -19,6 +19,10 @@ SpriteTypes = {
 		name = "GFX_idea_SOA_indian_wars"
 		texturefile = "gfx/interface/ideas/national_spirits/Asia/idea_SOA_indian_wars.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_NEP_everest_committee"
+		texturefile = "gfx/interface/ideas/national_spirits/Asia/NEP/idea_NEP_everest_committee.dds"
+	}
 }
 
 
