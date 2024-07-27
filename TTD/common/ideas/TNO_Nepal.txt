@@ -186,6 +186,18 @@ ideas = {
 			picture = NEP_Second_Sat_Salko_Kranti
 			removal_cost = -1
 		}
+		NEP_everest_committee = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea NEP_everest_committee" }
+			
+			allowed = { always = no }
+			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			picture = NEP_Second_Sat_Salko_Kranti
+			removal_cost = -1
+			
+			modifier = {
+				custom_modifier_tooltip = NEP_everest_committee
+			}
+		}
 	}
 }
 	

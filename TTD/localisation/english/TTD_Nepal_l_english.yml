@@ -87,8 +87,11 @@ POLITICS_KESHAR_RAYAMAJHI_DESC: "Known far and wide throughout South Asia, Kesha
  NEP_battle_for_everest_desc: "we are fighting over everest with tibet"
  NEP_victors_of_everest: "Victors of the Struggle for Everest"
  NEP_victors_of_everest_desc: "We climbed it faster"
+ NEP_everest_committee: "The Joint Nepali Mountain Research Committee"
+ NEP_everest_committee_desc: "The Himalayan Mountain range is a place for the largest peaks in the entire world. A lot of Asian Civilizations were created or shaped by them. Yet for what they are, we still know little about them. But that is a word of the past. Our Newly formed research committee will investigate and document every single crack, cave and peak - Optimally, of course."
 #########ToolTips###
  NEP_dictatorship_face_democracy_tt:0 ""
  NEP_Second_Sat_Salko_Kranti_tt:0 "The 1951 Kranti spelt the end of the Rana dynasty. Will this happen to the Shah's? or is it a distant memory, doomed to be stuck in past?"
  NEP_Between_Two_Worlds_tt:0 "Our Nation sits between the §BRepubic of India§! in the West, and the §GAzad Hind Government§! in the East, we are a vital part of the Subcontinent and serve as a major trading partner for §Bboth§! §Gsides§! !"
  NEP_kathmandu_catastrophe_tt:0 ""Gunshots echoed throughout the streets for too long, it was utter chaos." - Bystander of the Kathmandu Catastrophe."
+ NEP_everest_committee_tt:0 "§YFor as long as the committee is content with their conditions, the peaks of the Himalayas will forever be in our sights!§!"
