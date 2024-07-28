@@ -71,9 +71,6 @@ ideas = {
 			picture = NEP_Between_Two_Worlds
 			removal_cost = -1
 
-            modifier = {
-				custom_modifier_tooltip = NEP_Between_Two_Worlds_tt
-			}
 			targeted_modifier = {
 				tag = IND
 				trade_opinion_factor = 0.75
@@ -81,6 +78,9 @@ ideas = {
 			targeted_modifier = {	
 				tag = AZH
 				trade_opinion_factor = 0.75
+			}
+			modifier = {
+				custom_modifier_tooltip = NEP_Between_Two_Worlds_tt
 			}
 		}
 		NEP_Kathmandu_Catastrophe = {
@@ -92,9 +92,9 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				custom_modifier_tooltip = NEP_kathmandu_catastrophe_tt
 				stability_factor = -0.40
 				war_support_factor = -0.1
+				custom_modifier_tooltip = NEP_kathmandu_catastrophe_tt
 			}
 		}
 		NEP_Congressional_Violence = {
