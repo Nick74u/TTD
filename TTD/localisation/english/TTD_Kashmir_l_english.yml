@@ -1,8 +1,13 @@
 ﻿l_english:
  ### Country Names ###
- KIR: "Jammu and Kashmir"
- KIR_DEF: "the Mandate of Jammu and Kashmir"
- KIR_ADJ: "Kashmiri"
+ KIR: "North Indian Reconstruction Zone"
+ KIR_DEF: "the Reconstruction Zone in Jammu and Kashmir"
+ KIR_ADJ: "North Indian"
+ 
+ ### COSMETICS ####
+ KIR_JK: "Jammu and Kashmir"
+ KIR_JK_DEF: "the Autonomous States of Jammu and Kashmir"
+ KIR_JK_ADJ: "Jammuo-Kashmiri"
  
  ### Parties ###
  KIR_communist_party: "CPI Remnants"
