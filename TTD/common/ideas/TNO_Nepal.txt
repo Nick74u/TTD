@@ -80,7 +80,7 @@ ideas = {
 				trade_opinion_factor = 0.75
 			}
 			modifier = {
-				custom_modifier_tooltip = NEP_Between_Two_Worlds_tt
+				free_production_units_modifier = 3
 			}
 		}
 		NEP_Kathmandu_Catastrophe = {

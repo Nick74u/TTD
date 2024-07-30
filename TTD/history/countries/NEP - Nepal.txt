@@ -24,7 +24,8 @@ set_politics = {
 
 set_popularities = {
 	communist = 16
-	progressivism = 30
+	progressivism = 23
+	liberalism = 7
 	despotism = 54
 }
 
@@ -32,8 +33,8 @@ add_ideas = {
 	#STARTING
 	NEP_Dictatorship_With_the_Face_of_Democracy
 	NEP_Congressional_riots
-	NEP_Second_Sat_Salko_Kranti
-	#NEP_Between_Two_Worlds
+	#NEP_Second_Sat_Salko_Kranti
+	NEP_Between_Two_Worlds
 	NEP_everest_committee
 	#MINISTERS
 	NEP_Birendra_Bir_Bikram_Shah_hog
