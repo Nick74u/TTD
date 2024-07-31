@@ -74,7 +74,7 @@
   ####NEPAL EVENTS
   TTD_nepal_news.1.t: "[Get_newspaper_header]Chaos in Kathmandu - Nepalese King Abdicates"
   TTD_nepal_news.1.d: "Oh crud"
-  TTD_nepal_news.1.a: "The Winds of Change Breeze Through the Himalayas"
+  TTD_nepal_news.1.a: "Nepal's 50 days has just begun"
   TTD_nepal_news.2.t: "[Get_newspaper_header]Nepal Joins the Great Indian War"
   TTD_nepal_news.2.d: "blah blah blah theyre in the war on AZH sid"
   TTD_nepal_news.2.a: "I Could NOT care less"
@@ -107,7 +107,7 @@
   TTD_pak_news.5.t: "[Get_newspaper_header]Pakistan Movement Rises up in Hazara"
   TTD_pak_news.5.d: ""
   TTD_pak_news.5.a: ""
-  TTD_pak_news.6.t: "[Get_newspaper_header]Afghanistan Invades the Pakistan State"
+  TTD_pak_news.6.t: "[Get_newspaper_header]Afghanistan Invades the Pakistani State"
   TTD_pak_news.6.d: ""
   TTD_pak_news.6.a: ""
   TTD_pak_news.7.t: "[Get_newspaper_header]The Quelled Rebellion"
