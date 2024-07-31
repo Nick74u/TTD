@@ -1,5 +1,10 @@
 ﻿l_english:
 
+ #### COSMETIC FOR LARP
+ AZH_BENGAL: "Republic of Bengal"
+ AZH_BENGAL_DEF: "the Republic of Bangladesh"
+ AZH_BENGAL_ADJ: "Bengali"
+
  ### Characters ###
  AZH_Lakshmi_Sahgal_hog_desc: "§YHead of Government\nPremier§!"
  AZH_John_Thivy_eco_desc: "§YEconomy Minister\nMinister of Home Affairs§!"
