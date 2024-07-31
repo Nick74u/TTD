@@ -1836,7 +1836,7 @@ on_actions = {
 				add_to_array = { lore_entries = 363 }
 		    }
 			#Biratnagar Koshi Province
-			1901 = {
+			1903 = {
 				add_to_array = { global.state_with_lore = THIS.id }
 				add_to_array = { lore_entries = 364 }
 			}
