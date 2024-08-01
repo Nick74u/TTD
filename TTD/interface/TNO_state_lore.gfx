@@ -1236,7 +1236,11 @@ spritetypes = {
 	spritetype = {
 		name = "GFX_state_lore_img_364"
 		texturefile = "gfx/interface/state_lore/images/state_lore_img_364.dds"
-
+	}
+	spritetype = {
+		name = "GFX_state_lore_img_365"
+		texturefile = "gfx/interface/state_lore/images/state_lore_img_365.dds"
+	}
 	### WINTER IMAGES GO HERE ###
 	spritetype = {
 		name = "GFX_state_lore_winter_img_12"

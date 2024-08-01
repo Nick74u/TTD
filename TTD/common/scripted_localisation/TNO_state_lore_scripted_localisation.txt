@@ -2195,6 +2195,12 @@ defined_text = {
 		}
 		localization_key = state_lore_name.364
 	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 365 }
+		}
+		localization_key = state_lore_name.365
+	}
 }
 
 ###################
@@ -4387,6 +4393,12 @@ defined_text = {
 		}
 		localization_key = state_lore_initials.364
 	}
+	text = {
+		trigger = {
+			check_variable = { lore_entries_onscreen^sl_i = 365 }
+		}
+		localization_key = state_lore_initials.365
+	}
 }
 
 ######################
@@ -6577,5 +6589,11 @@ defined_text = {
 			check_variable = { selected_lore = 364 }
 		}
 		localization_key = state_lore_desc.364
+	}
+	text = {
+		trigger = {
+			check_variable = { selected_lore = 365 }
+		}
+		localization_key = state_lore_desc.365
 	}
 }

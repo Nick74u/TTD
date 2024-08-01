@@ -58,24 +58,26 @@
 
 ####### Minister Descs ##########
     #### MONARCHY MAHENDRA ####
-    NEP_Birendra_Bir_Bikram_Shah_hog_desc: "§YSuccessor to the Throne\nSemi-Constitutional Monarchy§!\n--------------\n§L§!"
-    NEP_Surya_Bahadur_Thapa_eco_desc: "§YMinister of Economic and Trade Affairs\nFree-Market Conservatism§!\n--------------\n§L§!"
-    NEP_Tulsi_Giri_for_desc: "§YMinister of Foreign Relations\nOligarchy§!\n--------------\n§L§!"
-    NEP_Kaiser_Shumsher_Jang_Bahadur_Rana_sec_desc: "§YMinister of Defence and Security Affairs\nStratocracy§!\n--------------\n§L§!"
+    NEP_Birendra_Bir_Bikram_Shah_hog_desc: "§YSuccessor to the Throne\nSemi-Constitutional Monarchy\n(Paternalism)§!\n--------------\n"
+    NEP_Surya_Bahadur_Thapa_eco_desc: "§YMinister of Economic and Trade Affairs\nFree-Market Conservatism\n(Conservatism)§!\n--------------\n"
+    NEP_Tulsi_Giri_for_desc: "§YMinister of Foreign Relations\nOligarchy\n(Paternalism)§!\n--------------\n§L§!"
+    NEP_Kaiser_Shumsher_Jang_Bahadur_Rana_sec_desc: "§YMinister of Defence and Security Affairs\nStratocracy\n(Paternalism)§!\n--------------\n"
     #### MONARCHY BIRENDRA TBD ####
-    #### NEPALI CONGRESS MP/BP KOIRALA TBF ####
-    #NEP_Bp_Koirala_hog_desc: "§YHead of Government\nEastern Progressivism§!\n--------------\n§L§!"
-    #NEP_Mp_Koirala_hog_desc: "§YHead of Government\nReformed Socialism§!\n--------------\n§L§!"
-    #NEP_Tp_Acharya_hog_desc: "§YHead of Government\nProgressive Liberalism§!\n--------------\n§L§!"
-    
-########Ideas##################
- NEP_Dictatorship_With_the_Face_of_Democracy: "Illusion of Democracy"
+    #### NEPALI CONGRESS MP/BP KOIRALA TBF ####                                                                                         ###################################
+    #NEP_Bp_Koirala_hog_desc: "§YHead of Government\nSocial Democracy\n(Progressivism)§!\n--------------\n§L§!"                         #  So, you might be wondering...  #
+    #NEP_Mp_Koirala_hog_desc: "§YHead of Government\nReformist Socialism\n(Progressivism)§!\n--------------\n§L§!"                      #  Yes, There is 3 possible HoGs  #
+    #NEP_Tp_Acharya_hog_desc: "§YHead of Government\nProgressive Liberalism\n(Liberalism)§!\n--------------\n§L§!"                      #  They're all Important.         #
+    #NEP_Rishikesh_Shah_for_desc: "§YMinister of Foreign Relations\nUtopian Socialism\n(Progressivism)§!\n--------------\n§L§!"         ###################################
+    #NEP_Padma_Bahadura_Khatri_eco_desc: "§YMinister of Economic Affairs\nNatural Conservatism\n(Conservatism)§!\n--------------\n§L§!"
+
+ ########Ideas##################
+ NEP_Dictatorship_With_the_Face_of_Democracy: "Illusion of Democracy" #Starting nat spirit
  NEP_Dictatorship_With_the_Face_of_Democracy_desc: "Since the 1961 coup, Nepal's Panchayat system has been known to hold regular elections, however, unbeknownst to almost everybody outside of the government, these elections are corrupt playgrounds for high level politicians and members of the royal family to gain influence and presitge within the government. Nepal's political corruption stends further than anyone could imagine as the 'elections' are directly ordered by the king himself.\n\nNepal's 'democratic' elections began after the coup as a promise directly to Azad Hind and the Republic of India, two nations who both supplied the Congress in the 1951 revoution. Nepal now meticulously runs these corrupt elections, something which both Indian governments are unaware of. Despite this illusion of democracy, Nepal's populace are beggining to sow the seeds for a democratic future through the thoughts of political pluralism and freedom. A future where every Nepali may live in peace and harmony under a truly democratic regime."
- NEP_Congressional_riots: "Congressional Riots"
+ NEP_Congressional_riots: "Congressional Riots" # Starting nat spirit
  NEP_Congressional_riots_desc: "Following the royal coup in 1961 and the dissolution of the Nepali multiparty system, the leftists, who call themselves the Nepali Congress have been rioting and mobbing the streets of Kathmandu and other major cities. Despite King Mahendra's efforts to quell the riots in late 1961, the Nepali Congress simply will not stop until they are the ones under control of the nation. Since the end of 1961, the Congress have mostly retreated from the streets with the current protests being a meer shadow of what they used to be.\n\nMany high ups within the King's government debate what the current intentions of the Congress are,\n\nbut those amongst the §Rrebellious populace§! are sure to know their §Rtrue intentions...§!"
  NEP_Raja_Mahendra: "Raja Mahendra"
  NEP_Raja_Mahendra_desc: ""
- NEP_Second_Sat_Salko_Kranti: "A Second Kranti?"
+ NEP_Second_Sat_Salko_Kranti: "A Second Kranti?" # Not used anymore
  NEP_Second_Sat_Salko_Kranti_desc: "The echoes of the 1951 uprising against the Rana regime still linger, but this time, the hatred is being channeled towards is the Shah monarchy. Years of dissatisfaction with royal rule, marked by nepotism and neglect, have fuelled a growing movement of anti monarchists, all with one main goal, the dissolution of the Kingdom. The authoritarian regime responds with repression, but for every arrest, public execution or disappearance, three more join the cause. \n\nAs the Kingdom teeters on the edge of change, the outcome lies in the hands of the people. The streets of Kathmandu reverberate with the chants of protesters, their voices echoing the collective yearning for freedom and justice. Despite the Raja's attempts to quash dissent, the flame of resistance burns brighter with each act of brutality, igniting hope in the hearts of the oppressed."
  NEP_Monarchist_Unrest1: "Monarchist Opposition - Insignificant"
  NEP_Monarchist_Unrest1_desc: ""
@@ -85,7 +87,7 @@
  NEP_Monarchist_Unrest3_desc: ""
  NEP_Legacy_of_Transtitional_Authority: "Legacy of the Transitional Government"
  NEP_Legacy_of_Transtitional_Authority_desc: ""
- NEP_Between_Two_Worlds: "Careful Neutrality"
+ NEP_Between_Two_Worlds: "Careful Neutrality" # Starting nat spirit
  NEP_Between_Two_Worlds_desc: "During the Great Indian Schism, Nepal was cautious in its alignment, preferring to secure cordal relations with both the Delhi and Kolkata government over choosing a side. Both India's import important goods for their civillian and military markets, allowing the nation of Nepal to grow its economy almost twice as fast as it would if there was only 1 India. The promise of Nepalese democracy to both Boes and Nehru has already layed the path for Nepal's future partnerships and economic opportunities with the nation two most powerful neighbours."
  NEP_Congressional_Violence: "Congressional Violence"
  NEP_Congressional_Violence_desc: "Following the royal coup in 1961 and the dissolution of the Nepali multiparty system, the leftists, who call themselves the Nepali Congress have been rioting and mobbing the streets of Kathmandu and other major cities. Despite King Mahendra's efforts to quell the riots in late 1961, the Nepali Congress simply will not stop until they are the ones under control of the nation.\n\nMany high ups within the King's government debate what the current intentions of the Congress are,\n\nbut those amongst the §Rdissidential populace§! are sure to know their §Rtrue intentions...§!" # Placeholder
@@ -103,11 +105,11 @@
  NEP_battle_for_everest_desc: "we are fighting over everest with tibet"
  NEP_victors_of_everest: "Victors of the Struggle for Everest"
  NEP_victors_of_everest_desc: "We climbed it faster"
- NEP_everest_committee: "The Joint Nepali Mountain Research Committee"
+ NEP_everest_committee: "The Joint Nepali Mountain Research Committee" # Starting nat spirit
  NEP_everest_committee_desc: "The Himalayan Mountain range is a place for the largest peaks in the entire world. A lot of Asian Civilizations were created or shaped by them. Yet for what they are, we still know little about them. But that is a word of the past. Our Newly formed research committee will investigate and document every single crack, cave and peak - Optimally, of course."
 
 #########ToolTips###
- NEP_dictatorship_face_democracy_tt:0 "§Y--------------\nIf the Nepali Congress, or, to a certain extent, anyone who believes Nepal is democractic is to ever find out the truth about Nepal's elections,§! §eour nation would surely fall into a crisis...§!"
+ NEP_dictatorship_face_democracy_tt:0 "§Y--------------\n§VIf the Nepali Congress, or, to a certain extent, anyone who believes Nepal is democractic is to ever find out the truth about Nepal's elections, our nation would surely fall into a crisis...§!"
  NEP_Second_Sat_Salko_Kranti_tt:0 "--------------\nThe 1951 Kranti spelt the end of the Rana dynasty. Will this happen to the Shah's? or is it a distant memory, doomed to be stuck in past?"
  NEP_Between_Two_Worlds_tt:0 "Our Nation sits between the §BRepubic of India§! in the West, and the §GAzad Hind Government§! in the East, we are a vital part of the Subcontinent and serve as a major trading partner for §Bboth§! §Gsides§! !"
  NEP_kathmandu_catastrophe_tt:0 "§e"Gunshots echoed throughout the streets for too long, it was utter chaos." - Bystander of the Kathmandu Catastrophe.§!"
