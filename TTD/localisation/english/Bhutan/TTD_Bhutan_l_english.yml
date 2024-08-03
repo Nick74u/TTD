@@ -34,7 +34,7 @@
  BHU_in_azad_hind_vision: "In Azad Hind's Vision"
  BHU_in_azad_hind_vision_desc: "As expected, Kolkata has been made aware of our invasion of Bhutan.\n\nThankfully, they didn't condemn or arrest us for invading Bhutan without orders to do so.\n\nInstead,they have sent orders to make sure we will secure control over Bhutan with minimal support in order to not put weight over their finances.\n\nIt's better than nothing I suppose"
  BHU_the_chained_dragon: "The Chained Dragon"
- BHU_the_chained_dragon_desc: ""No matter what I do, there's always a report on my desk every single week about rebel sabotage or how they burned down yet another truck. When will this just end?"\n\n Despite being de-facto masters of Bhutan, it doesn't mean the populace will accept their fate.\nThey have resorted to joining with their king, who has managed to escape our grasp, and simply refusing to collaborate.\n\nKanwal's regime will have to face a bumpy ride to secure their grip over the land of the Thunder Dragon"
+ BHU_the_chained_dragon_desc: "Despite being de-facto masters of Bhutan, it doesn't mean the populace will accept their fate.\nThey have resorted to joining with their king, who has managed to escape our grasp, and simply refusing to collaborate.\n\nKanwal's regime will have to face a bumpy ride to secure their grip over the land of the Thunder Dragon"
  BHU_build_from_the_ground_up: "Build From The Ground Up"
  BHU_build_from_the_ground_up_desc: "After a proper survey of every town and city of Bhutan\n\nIt is safe to say that they completely have little to no factories.\n\nImporting machinery from our brothers down south or from the Sphere will greatly boost productivity"
  BHU_The_Bhutanese_Renaissance: "The Bhutanese Renaissance"
@@ -149,7 +149,7 @@ BHU_Laws_ministry_of_economic_affairs_desc:0 "Cardozo's burger joint"
   BHU_mtsho_border_war:0 "We must prepare for the upcoming skirmishes"
   BHU_azad_hind_approves: "Azad Hind gave the greenlight to our war plans"
   TTD_BHU_garrison_number_tt: "Current Garrison strength is [?Meter_garrison_bar_value]"
-  TTD_BHU_garrison_Info_tt: "Kanwal Singh Dalal and his garrison are directly supplied with all of the essentials for their survival within the harsh foreign nation of Bhutan. The junta receives a monthly convoy from the Kolkata government in order to prepare the £GFX_BHU_bhutan_texticon §xProvince of Bhutan§! for statehood in £BHU_Azadhind_texticon §nAzad Hind§!, a tedious process which requires the total elimination of Bhutanese nationalism and hope for self determination. Though Singh is supplied straight from one of the most influential nations in South Asia, him and his garrison still find themselves and most importantly their supplies being harrassed by the Bhotamuzh almost monthly as their supply convoys are required to travel through harsh Himalayan terrain.\n\nThe fate of Bhutan's integration lies not only within the choices of the junta but also that of the resistance.."
+  TTD_BHU_garrison_Info_tt: "Kanwal Singh Dalal and his garrison are directly supplied with all of the essentials for their survival within the harsh foreign nation of Bhutan. The junta receives a monthly convoy from the Kolkata government in order to prepare the £GFX_BHU_bhutan_texticon §xProvince of Bhutan§! §Ffor statehood in§! £BHU_Azadhind_texticon §nAzad Hind§!, §Fa tedious process which requires the total elimination of Bhutanese nationalism and hope for self determination. Though Singh is supplied straight from one of the most influential nations in South Asia, him and his garrison still find themselves and most importantly their supplies being harrassed by the Bhotamuzh almost monthly as their supply convoys are required to travel through harsh Himalayan terrain.\n\nThe fate of Bhutan's integration lies not only within the choices of the junta but also that of the resistance..§!"
   BHU_road_lv2_upgrade_tt: "We will receive an §Gupgrade§! for securing the roads..."
   ####FACTION NAME###
   Azad_Front:0 "Indian Liberation Front"
@@ -170,7 +170,7 @@ BHU_Laws_ministry_of_economic_affairs_desc:0 "Cardozo's burger joint"
   
    #morale
    BHU_wangchuck_trouble_morale_increase_tt: "Our Garrison Morale will increase by §G[?Wangchuck_causes_trouble_morale_temp|2]%§!"
-   BHU_wangchuck_trouble_morale_decrease_tt: "Our Garrison  Morale will decrease by §R[?Wangchuck_causes_trouble_morale_temp|2]%§!"
+   BHU_wangchuck_trouble_morale_decrease_tt: "Our Garrison Morale will decrease by §R[?Wangchuck_causes_trouble_morale_temp|2]%§!"
    
   
 
@@ -181,12 +181,12 @@ BHU_Laws_ministry_of_economic_affairs_desc:0 "Cardozo's burger joint"
    BHU_garrison_check: "The State of our Garrison will affect our §Rsecurity status...§!"
    BHU_morale_changes_each_month: "Depending on how much £GFX_BHU_bhutan_supplies §RSupply§! we have, the Garrison's §YMorale§! will §Gincrease§! or §Rdecrease§!"
    garrison_decision_2: "Our Garrison Morale will increase by §G5%!§!"
-   garrison_decision_1: "Our Garrison Supply will increase by §G15%!§!"
+   garrison_decision_1: "Our Garrison £GFX_BHU_bhutan_supplies Supply will increase by §G15%!§!"
    BHU_garrison_text_up: "§OTotal Bhutan Garrison Strength§!"
    BHU_unlocks_garrison_gui: "Unlocks the §OState of the Garrison§! GUI in the £decision_icon_small §Ydecisions§! tab."
    BHU_supply_number: "£GFX_BHU_bhutan_supplies §RSupply§! is currently: §W[?Meter_garrison_bar_supply_value|2]%§! "
    BHU_morale_number: "§YMorale§! is currently: §W[?Meter_garrison_bar_morale_value|2]%§!"
-   BHU_convoy_arrival: "Convoy will arrive, giving us £GFX_BHU_bhutan_supplies §RSupply§! by §G[?convoy_supply_arrival|2]%!§!"
+   BHU_convoy_arrival: "£GFX_motorized_texticon Convoy will arrive, giving us £GFX_BHU_bhutan_supplies §RSupply§! by §G[?convoy_supply_arrival|2]%!§!"
    TTD_BHU_garrison_supply_desc_tt: "The bread and butter of any army is how well supplied they are. Logistics is the key to victory, and in our case, the way to pacify Bhutan"
    TTD_BHU_garrison_morale_desc_tt: "No army can win a battle without its men, and not only that, they also must be enthusiastic and able to perform their duty"
    

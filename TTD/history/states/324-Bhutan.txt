@@ -13,15 +13,14 @@ state={
 			thermoelectric_plant = 1
 
 		}
-		victory_points = {
-			8010 10 
-		}
+		victory_points = { 8010 10 }
+		victory_points = { 16383 5 }
 		add_core_of = BHU
 
 	}
 
 	provinces={
-		8010 
+		8010 16382 16383 16384
 	}
 	manpower=176472
 	buildings_max_level_factor=1.000

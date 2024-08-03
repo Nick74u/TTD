@@ -38,6 +38,6 @@ bhutan_debug_rich_decision: "Make Bhutan the richest country in the world"
  ##ECONOMY MODIFIER
  BHU_economy_status_change_decrease_tt: "§RDecreases§! Economic §GGrowth§! by §R[?BHU_gdp_growth_modifier_temp|2]%§!.\n"
  BHU_economy_status_change_increase_tt: "§GIncreases§! Economic GDP §GGrowth§! by §G[?BHU_gdp_growth_modifier_temp|2]%§!.\n"
- BHU_convoy_supply_change_decrease_tt: "§RDecreases§! Monthly Convoy §RSupply§! by §R[?convoy_supply_arrival_temp|2]%§!.\n"
- BHU_convoy_supply_change_increase_tt: "§GIncreases§! Monthly Convoy §RSupply§! by §G[?convoy_supply_arrival_temp|2]%§!.\n"
+ BHU_convoy_supply_change_decrease_tt: "§RDecreases§! £GFX_motorized_texticon Monthly Convoy £GFX_BHU_bhutan_supplies §RSupply§! by §R[?convoy_supply_arrival_temp|2]%§!.\n"
+ BHU_convoy_supply_change_increase_tt: "§GIncreases§! £GFX_motorized_texticon Monthly Convoy £GFX_BHU_bhutan_supplies §RSupply§! by §G[?convoy_supply_arrival_temp|2]%§!.\n"
  BHU_road_number_text_gui: "Current Anti-Insurgency Reduction Point: §G[?BHU_attacking_the_resistance]§!"

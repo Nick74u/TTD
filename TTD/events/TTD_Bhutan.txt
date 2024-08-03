@@ -100,7 +100,17 @@ country_event = { #Welcoming the Japanese
 		}
 	}
 }
-
+country_event = { #a
+	id = bhutan_focus_event.11
+	title = bhutan_focus_event.11.t
+	desc = bhutan_focus_event.11.d
+	is_triggered_only = yes
+	
+	option = { # sup Makoto
+		name = bhutan_focus_event.11.a
+		
+	}
+}
 
 country_event = {
 	id = bhutan_border_skirmish.1
