@@ -83,7 +83,7 @@ country_event = { # Who Climbs everest?
 	option = {
 		name = NEP_ever.2.a
 			random_list = {
-				50 = {
+				70 = {
 					NEP = { # Im definately not biased - Nah, *50/50s the randomlist
 						country_event = {
 						days = 3
@@ -91,7 +91,7 @@ country_event = { # Who Climbs everest?
 						}
 					}
 				}
-				50 = {
+				30 = {
 					TIB = {
 						country_event = {
 						days = 3
@@ -114,6 +114,7 @@ country_event = { # We climbed everest!
 	option = {
 		name = NEP_ever.3.a
 		add_ideas = NEP_victors_of_everest
+		remove_ideas = NEP_battle_for_everest
 		hidden_effect = {
 			every_country = {
 				limit = { is_ai = no }
@@ -237,6 +238,7 @@ country_event = { # Coup or no coup?
 	
 	option = { # Congress Coups/King Finds out
 		name = NEP_skeleton.5.a
+		1903 = { set_demilitarized_zone = yes }
 		random_list = {
 			80 = {
 				NEP = {
@@ -276,10 +278,10 @@ country_event = {
 		}
 		remove_ideas = NEP_Kathmandu_Catastrophe
 		remove_ideas = NEP_Congressional_Crisis
-		swap_ideas = {
-			remove_idea = NEP_Second_Sat_Salko_Kranti
-			add_idea = NEP_Second_Kranti
+		remove_ideas = NEP_Dictatorship_With_the_Face_of_Democracy
+		add_ideas = NEP_Second_Kranti
 		}
+		1903 = { set_demilitarized_zone = no }
 		set_cosmetic_tag = NEP_REP
 		hidden_effect = {
 			set_popularities = {
@@ -440,6 +442,7 @@ country_event = { # BP Koirala is now chill wit the king
 		set_politics = {
 			ruling_party = paternalism
 		}
+		1903 = { set_demilitarized_zone = no }
 		hidden_effect = {
 			set_popularities = {
 				communist = 9
@@ -463,6 +466,7 @@ country_event = { # Bad Negotiations
 	
 	option = { # Nothing rlly happens bc everyone already hates the king
 		name = NEP_GIWM.3.a
+		1903 = { set_demilitarized_zone = no }
 	}
 }
 
