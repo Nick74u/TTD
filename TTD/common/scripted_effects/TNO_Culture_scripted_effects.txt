@@ -1642,6 +1642,7 @@ TNO_setup_cultures = {
 	#Gurkha
 	set_variable = { 1341.nationality = 604 }
 	set_variable = { 1900.nationality = 604 }
+	set_variable = { 1901.nationality = 604 }
 	set_variable = { 1902.nationality = 604 }
 	set_variable = { 1903.nationality = 604 }
 	

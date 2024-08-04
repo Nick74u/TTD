@@ -1,0 +1,13 @@
+spriteTypes = {
+
+	# Follow the rule GFX_culture_<variable value of the culture> #
+	spriteType = {
+		name = "GFX_culture_604"
+		texturefile = "gfx/interface/culture/culture_indian_gurkhali.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_605"
+		texturefile = "gfx/interface/culture/culture_indian_doteli.dds"
+	}	
+	##USE NATIONALITY_MAKERGUI IN USEFUL PYTHON PROGRAMS TO IMPLEMENT CULTURES##
+}

@@ -280,7 +280,7 @@ country_event = {
 		remove_ideas = NEP_Congressional_Crisis
 		remove_ideas = NEP_Dictatorship_With_the_Face_of_Democracy
 		add_ideas = NEP_Second_Kranti
-		}
+		
 		1903 = { set_demilitarized_zone = no }
 		set_cosmetic_tag = NEP_REP
 		hidden_effect = {
