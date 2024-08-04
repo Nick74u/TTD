@@ -84,7 +84,7 @@ characters = {
 			allowed = { original_tag = NEP }
 			traits = {
 				foreign_minister
-				for_biased_intellectual
+				for_general_staffer
 			}
 			ledger = civilian
 			cost = -1
