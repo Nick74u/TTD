@@ -135,8 +135,8 @@ on_actions = {
 					add_to_array = { CountryInfo_array_main = 4 }
 					add_to_array = { CountryInfo_array_main = 5 }
 					
-					add_to_array = { CountryInfo_folder_country_101 = 4 }
-					add_to_array = { CountryInfo_folder_country_101 = 5 }
+					add_to_array = { CountryInfo_folder_country_102 = 4 }
+					add_to_array = { CountryInfo_folder_country_102 = 5 }
 				}
 				if = {
 					limit = {
