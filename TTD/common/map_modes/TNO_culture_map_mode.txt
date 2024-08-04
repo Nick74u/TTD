@@ -5941,12 +5941,22 @@ scripted_map_modes = {
 				else_if = {
 					limit = {
 						FROM = {
-							check_variable = { nationality = 604 } #Gorkha
+							check_variable = { nationality = 604 } #Gurkha
 						}
 					}
-					set_temp_variable = { red = 0.96 }
+					set_temp_variable = { red = 0.66 }
 					set_temp_variable = { green = 0.123 }
 					set_temp_variable = { blue = 0.272 }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 605 } #Doteli
+						}
+					}
+					set_temp_variable = { red = 0.71 }
+					set_temp_variable = { green = 0.115 }
+					set_temp_variable = { blue = 0.267 }
 				}
 				else = {
 					set_temp_variable = { red = 0.001 }

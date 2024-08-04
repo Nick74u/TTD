@@ -3927,4 +3927,10 @@ defined_text = {
 		}
 		localization_key = var_nationality.604
 	}
+	text = {
+		trigger = {
+			check_variable = { nationality = 605 }
+		}
+		localization_key = var_nationality.605
+	}
 }

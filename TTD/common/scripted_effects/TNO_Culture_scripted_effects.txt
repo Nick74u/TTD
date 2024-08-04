@@ -1633,14 +1633,20 @@ TNO_setup_cultures = {
 	set_variable = { 2019.nationality = 215 }
 
 	#Nepalese
-	set_variable = { 323.nationality = 216 }
-	set_variable = { 1341.nationality = 216 }
-	set_variable = { 1900.nationality = 216 }
-	set_variable = { 1902.nationality = 216 }
-	set_variable = { 1903.nationality = 216 }
+	#set_variable = { 323.nationality = 216 }
+	#set_variable = { 1341.nationality = 216 }
+	#set_variable = { 1900.nationality = 216 }
+	#set_variable = { 1902.nationality = 216 }
+	#set_variable = { 1903.nationality = 216 }
 	
-	#Gorkha/Gurkha
-	set_variable = { 1901.nationality = 604 }
+	#Gurkha
+	set_variable = { 1341.nationality = 604 }
+	set_variable = { 1900.nationality = 604 }
+	set_variable = { 1902.nationality = 604 }
+	set_variable = { 1903.nationality = 604 }
+	
+	#Doteli
+	set_variable = { 323.nationality = 605 }
 
 	#Dayak
 	set_variable = { 334.nationality = 217 }

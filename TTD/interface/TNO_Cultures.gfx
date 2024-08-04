@@ -2412,7 +2412,11 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_culture_604"
-		texturefile = "gfx/interface/culture/culture_indian_gorkhan.dds"
-	}		
+		texturefile = "gfx/interface/culture/culture_indian_gurkhali.dds"
+	}
+	spriteType = {
+		name = "GFX_culture_605"
+		texturefile = "gfx/interface/culture/culture_indian_doteli.dds"
+	}	
 	##USE NATIONALITY_MAKERGUI IN USEFUL PYTHON PROGRAMS TO IMPLEMENT CULTURES##
 }
