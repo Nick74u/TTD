@@ -5958,6 +5958,46 @@ scripted_map_modes = {
 					set_temp_variable = { green = 0.115 }
 					set_temp_variable = { blue = 0.267 }
 				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 606 } #Sikkimese
+						}
+					}
+					set_temp_variable = { red = 0.91 }
+					set_temp_variable = { green = 0.125 }
+					set_temp_variable = { blue = 0.267 }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 607 } # Lhotshampa
+						}
+					}
+					set_temp_variable = { red = 0.646 }
+					set_temp_variable = { green = 0.502 }
+					set_temp_variable = { blue = 0.449 }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 608 } # Sharchop
+						}
+					}
+					set_temp_variable = { red = 0.656 }
+					set_temp_variable = { green = 0.542 }
+					set_temp_variable = { blue = 0.443 }
+				}
+				else_if = {
+					limit = {
+						FROM = {
+							check_variable = { nationality = 609 } # Gurkha, Maithili minority
+						}
+					}
+					set_temp_variable = { red = 0.53 }
+					set_temp_variable = { green = 0.115 }
+					set_temp_variable = { blue = 0.272 }
+				}
 				else = {
 					set_temp_variable = { red = 0.001 }
 					set_temp_variable = { green = 0.001 }

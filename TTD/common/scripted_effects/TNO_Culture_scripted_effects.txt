@@ -1625,12 +1625,12 @@ TNO_setup_cultures = {
 	set_variable = { 1755.nationality = 214 }
 	set_variable = { 1756.nationality = 214 }
 
-	#Bhutanese
+	#Ngalop
 	set_variable = { 324.nationality = 215 }
-	set_variable = { 2016.nationality = 215 }
-	set_variable = { 2017.nationality = 215 }
-	set_variable = { 2018.nationality = 215 }
-	set_variable = { 2019.nationality = 215 }
+	#set_variable = { 2016.nationality = 215 }
+	#set_variable = { 2017.nationality = 215 }
+	#set_variable = { 2018.nationality = 215 }
+	#set_variable = { 2019.nationality = 215 }
 
 	#Nepalese
 	#set_variable = { 323.nationality = 216 }
@@ -1640,14 +1640,28 @@ TNO_setup_cultures = {
 	#set_variable = { 1903.nationality = 216 }
 	
 	#Gurkha
-	set_variable = { 1341.nationality = 604 }
+	#set_variable = { 1341.nationality = 604 }
 	set_variable = { 1900.nationality = 604 }
 	set_variable = { 1901.nationality = 604 }
 	set_variable = { 1902.nationality = 604 }
-	set_variable = { 1903.nationality = 604 }
+	#set_variable = { 1903.nationality = 604 }
+	
+	#Sikkimese
+	set_variable = { 1341.nationality = 606 }
 	
 	#Doteli
 	set_variable = { 323.nationality = 605 }
+	
+	#Lhotshampa
+	set_variable = { 2018.nationality = 607 }
+	
+	#Sharchop
+	set_variable = { 2016.nationality = 608 }
+	set_variable = { 2017.nationality = 608 }
+	set_variable = { 2019.nationality = 608 }
+	
+	#Gurkhali, Maithili Minority
+	set_variable = { 1903.nationality = 609 }
 
 	#Dayak
 	set_variable = { 334.nationality = 217 }
