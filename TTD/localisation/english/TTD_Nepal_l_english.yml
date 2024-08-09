@@ -60,9 +60,9 @@
 ####### Minister Descs ##########
     #### MONARCHY MAHENDRA ####
     NEP_Birendra_Bir_Bikram_Shah_hog_desc: "§YSuccessor to the Throne\nSemi-Constitutional Monarchy\n(Paternalism)§!\n--------------\n"
-    NEP_Surya_Bahadur_Thapa_eco_desc: "§YMinister of Economic and Trade Affairs\nFree-Market Conservatism\n(Conservatism)§!\n--------------\n"
-    NEP_Tulsi_Giri_for_desc: "§YMinister of Foreign Relations\nOligarchy\n(Paternalism)§!\n--------------\n"
-    NEP_Kaiser_Shumsher_Jang_Bahadur_Rana_sec_desc: "§YMinister of Defence and Security Affairs\nStratocracy\n(Paternalism)§!\n--------------\n"
+    NEP_Surya_Bahadur_Thapa_eco_desc: "§YMinister of Economic and Trade Affairs\nAuthoritarian Developmentalism\n(Paternalism)§!\n--------------\n"
+    NEP_Tulsi_Giri_for_desc: "§YMinister of Foreign Relations\nAristocratic Conservatism\n(Despotism)§!\n--------------\n"
+    NEP_Kaiser_Shumsher_Jang_Bahadur_Rana_sec_desc: "§YMinister of Defence and Security Affairs\nMilitary Junta\n(Despotism)§!\n--------------\n"
     #### MONARCHY BIRENDRA TBD ####
     #### NEPALI CONGRESS MP/BP KOIRALA TBF ####                                                                                         ###################################
     #NEP_Bp_Koirala_hog_desc: "§YHead of Government\nSocial Democracy\n(Progressivism)§!\n--------------\n§L§!"                         #  So, you might be wondering...  #
@@ -108,7 +108,7 @@
  NEP_victors_of_everest_desc: "We climbed it faster"
  NEP_everest_committee: "The Joint Nepali Himmalayan Mountain Research Committee" # Starting nat spirit
  NEP_everest_committee_desc: "The Himalayan Mountain range is a place for the largest peaks in the entire world. A lot of Asian Civilizations were created or shaped by them. Yet for what they are, we still know little about them. But that is a word of the past. Our Newly formed research committee will investigate and document every single crack, cave and peak - Optimally, of course."
-
+ 
 #########ToolTips###
  NEP_dictatorship_face_democracy_tt:0 "--------------\nIf the Nepali Congress, or, to a certain extent, anyone who believes Nepal is democractic is to ever find out the truth about Nepal's elections, §Vour nation would surely fall into a crisis...§!"
  NEP_Second_Sat_Salko_Kranti_tt:0 "--------------\nThe 1951 Kranti spelt the end of the Rana dynasty. Will this happen to the Shah's? or is it a distant memory, doomed to be stuck in past?"
