@@ -9,6 +9,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				admin_efficiency_monthly_rate = 0.01
 				custom_modifier_tooltip = NEP_dictatorship_face_democracy_tt
 			}
 		}
@@ -23,6 +24,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.10
 				gdp_growth_modifier = -0.75
+				poverty_monthly_rate = -0.02
+				taxable_population_factor = -0.04
 			}
 		}
 		NEP_Raja_Mahendra = {
@@ -80,6 +83,7 @@ ideas = {
 				trade_opinion_factor = 0.75
 			}
 			modifier = {
+				trade_opinion_factor = 0.1
 				free_production_units_modifier = 3
 			}
 		}

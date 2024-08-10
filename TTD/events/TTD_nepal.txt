@@ -1,48 +1,13 @@
-﻿### The Beautiful Nation of Nepal ###
+﻿#####################################
+###								  ###
+###	The Beautiful Nation of Nepal ###
+###								  ###
+#####################################
 add_namespace = NEP_skeleton
 add_namespace = NEP_GIWM # Monarchist Path
 add_namespace = NEP_GIW # Leftist Path
 add_namespace = NEP_elec # Elections
 add_namespace = NEP_ever # Mt everest skeleton
-
-country_event = { # Start of Political scandal
-	id = NEP_skeleton.8
-	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_skeleton.8" }
-	title = NEP_skeleton.8.t
-	desc = NEP_skeleton.8.d
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = {
-		name = NEP_skeleton.8.a
-		add_ideas = NEP_political_scandal
-		hidden_effect = {
-			country_event = {
-				id = NEP_ever.1
-				days = 428
-			}
-			country_event = {
-				id = NEP_skeleton.9
-				days = 70
-			}
-		}
-	}
-}
-
-country_event = { # End of Political scandal - Nepal is now out of a security minister
-	id = NEP_skeleton.9
-	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_skeleton.9" }
-	title = NEP_skeleton.9.t
-	desc = NEP_skeleton.9.d
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	option = {
-		name = NEP_skeleton9.a
-		remove_ideas = NEP_political_scandal
-		remove_ideas = NEP_Kaiser_Shumsher_Jang_Bahadur_Rana_sec # He got popped, he was also a REALLY good field marshal so Nepal lost that
-	}
-}
 
 country_event = { # Tibet does some illeagal stuff/the battle for everest
 	id = NEP_ever.1

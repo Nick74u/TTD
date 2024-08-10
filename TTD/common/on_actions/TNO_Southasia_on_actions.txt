@@ -17,7 +17,7 @@ on_actions = {
 				country_event = { id = pakistan.1 days = 624 } #SOP initiate
 			}
 			NEP = {
-				country_event = { id = NEP_skeleton.8 days = 21 } # Rana scandal begins
+				country_event = { id = NEP_ever.1 days = 21 } # Rana scandal begins
 			}
 		}
 	}
