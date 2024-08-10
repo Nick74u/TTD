@@ -43,7 +43,7 @@
  NEP_despotism_party: "Shah Dynasty"
  NEP_despotism_party_long: "Shah Dynasty"
  NEP_fascism_party: "NPTA"
- NEP_fascism_party_long: "Nēpālamā pāna-tibbatavādī āndōlana"
+ NEP_fascism_party_long: "Nēpālamā Pāna-Tibbatavādī āndōlana"
  
  ### Characters ###
  NEP_BP_Koirala: "Bishweshwar 'B.P.' Koirala"
@@ -59,10 +59,10 @@
 
 ####### Minister Descs ##########
     #### MONARCHY MAHENDRA ####
-    NEP_Birendra_Bir_Bikram_Shah_hog_desc: "§YSuccessor to the Throne\nSemi-Constitutional Monarchy\n(Paternalism)§!\n--------------\n"
+    NEP_Birendra_Bir_Bikram_Shah_hog_desc: "§YHeir of King Mahendra\nAbsolute Monarchy\n(Despotism)§!\n--------------\n"
     NEP_Surya_Bahadur_Thapa_eco_desc: "§YMinister of Economic and Trade Affairs\nAuthoritarian Developmentalism\n(Paternalism)§!\n--------------\n"
-    NEP_Tulsi_Giri_for_desc: "§YMinister of Foreign Relations\nAristocratic Conservatism\n(Despotism)§!\n--------------\n"
-    NEP_Kaiser_Shumsher_Jang_Bahadur_Rana_sec_desc: "§YMinister of Defence and Security Affairs\nMilitary Junta\n(Despotism)§!\n--------------\n"
+    NEP_Tulsi_Giri_for_desc: "§YPrime Minister and Head of Foreign Relations\nAristocratic Conservatism\n(Despotism)§!\n--------------\n"
+    NEP_Kaiser_Shumsher_Jang_Bahadur_Rana_sec_desc: "§YHis Excellency Field Marshal\nMinister of Defense and Internal Security\nStratocracy\n(Paternalism)§!\n--------------\n"
     #### MONARCHY BIRENDRA TBD ####
     #### NEPALI CONGRESS MP/BP KOIRALA TBF ####                                                                                         ###################################
     #NEP_Bp_Koirala_hog_desc: "§YHead of Government\nSocial Democracy\n(Progressivism)§!\n--------------\n§L§!"                         #  So, you might be wondering...  #
