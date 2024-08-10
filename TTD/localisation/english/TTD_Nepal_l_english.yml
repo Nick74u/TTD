@@ -72,7 +72,7 @@
     #NEP_Padma_Bahadura_Khatri_eco_desc: "§YMinister of Economic Affairs\nNatural Conservatism\n(Conservatism)§!\n--------------\n§L§!"
 
  ########Ideas##################
- NEP_Dictatorship_With_the_Face_of_Democracy: "Illusion of Democracy" #Starting nat spirit
+ NEP_Dictatorship_With_the_Face_of_Democracy: "Democratic Illusion - Perceivable" #Starting nat spirit
  NEP_Dictatorship_With_the_Face_of_Democracy_desc: "Since the 1961 coup, Nepal's Panchayat system has been known to hold regular elections, however, unbeknownst to almost everybody outside of the government, these elections are corrupt playgrounds for high level politicians and members of the royal family to gain influence and presitge within the government. Nepal's political corruption stends further than anyone could imagine as the 'elections' are directly ordered by the king himself.\n\nNepal's 'democratic' elections began after the coup as a promise directly to Azad Hind and the Republic of India, two nations who both supplied the Congress in the 1951 revoution. Nepal now meticulously runs these corrupt elections, something which both Indian governments are unaware of. Despite this illusion of democracy, Nepal's populace are beggining to sow the seeds for a democratic future through the thoughts of political pluralism and freedom. A future where every Nepali may live in peace and harmony under a truly democratic regime."
  NEP_Congressional_riots: "Congressional Riots" # Starting nat spirit
  NEP_Congressional_riots_desc: "Following the royal coup in 1961 and the dissolution of the Nepali multiparty system, the leftists, who call themselves the Nepali Congress have been rioting and mobbing the streets of Kathmandu and other major cities. Despite King Mahendra's efforts to quell the riots in late 1961, the Nepali Congress simply will not stop until they are the ones under control of the nation. Since the end of 1961, the Congress have mostly retreated from the streets with the current protests being a meer shadow of what they used to be.\n\nMany high ups within the King's government debate what the current intentions of the Congress are,\n\nbut those amongst the §Rrebellious populace§! are sure to know their §Rtrue intentions...§!"
@@ -117,4 +117,9 @@
  NEP_everest_committee_tt:0 "§Y--------------\nFor as long as the committee is content with their conditions, the peaks of the Himalayas will forever be in our sights!§!"
  NEP_riots_stop_tt:0 "§eThe riots have stopped... But at what cost?§!"
  NEP_anger_roi_tt:0 "§YThis will greatly anger the Delhi Government§!" # Giving AZH mil access
+ NEP_everest_committee_mountaineering_tt:0 "Mountaineering Professionalism Monthly Change: §G+0.03§!"
+ NEP_leftist_opinion_tt:0 "Nepali Congress Monthly Opinion Change: §R-0.03§!"
+ NEP_leftist_opinion_five_tt:0 "Nepali Congress Monthly Opinion Change: §R-0.05§!"
  
+ ### TRRAITS ###
+ last_king_of_east: "The Last King of the East"

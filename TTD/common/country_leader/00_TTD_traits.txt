@@ -11,4 +11,15 @@ leader_traits = {
 
 		ai_will_do = { factor = 1 }
 	}
+	last_king_of_east = {
+		random = no
+		war_support_factor = 0.10
+		admin_efficiency_monthly_rate = 0.04
+		custom_modifier_tooltip = NEP_leftist_opinion_tt
+		despotism_acceptance = 33.33
+		paternalism_acceptance = 33.33
+		despotism_drift = 0.03
+		
+		ai_will_do = { factor = 1 }
+	}
 }

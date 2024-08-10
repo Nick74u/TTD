@@ -10,7 +10,7 @@ characters = {
 			desc = "POLITICS_MAHENDRA_BIR_BIKRAM_SHAH_DESC"
 			expire = "1999.1.1"
 			ideology = despotism_aristocratic_conservatism_subtype
-			traits = {}
+			traits = { last_king_of_east }
 			id = -1
 		}
 	}
