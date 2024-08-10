@@ -223,10 +223,18 @@ bookmarks = {
 
 		"MEX" = {
 			minor = yes
-			history = ""
+			history = "MEX_THENEWORDER_DESC"
 			ideology = paternalism
-			ideas = {}
-			focuses = {}
+			ideas = {
+				MEX_the_imperfect_dictatorship_initial
+				MEX_mexican_miracle_startscreen
+				MEX_the_leviathan_4
+			}
+			focuses = {
+				MEX_visiting_the_east
+				MEX_the_olympic_dream
+				MEX_a_friendly_visit
+			}
 		}
 
 		"SAF" = {
@@ -404,6 +412,23 @@ bookmarks = {
 				GNG_chief_executive_ibuka
 			}
 		}
+
+		"BHU" = {
+			minor = yes
+			history = "BHU_THENEWORDER_DESC"
+			ideology = despotism
+			ideas = {
+				BHU_Under_the_Azad_Hind_boot 
+				BHU_a_general_and_his_army 
+				BHU_A_Dragon_Restless
+			}
+			focuses = {
+			    BHU_tighten_the_leash
+				BHU_the_model_province_of_india
+				BHU_bhutan_age
+			}
+		}
+
 		"YUN" = {
 			minor = yes
 			history = "YUN_THENEWORDER_DESC"
@@ -417,22 +442,6 @@ bookmarks = {
 				YUN_evict_he_yingqin
 				YUN_xinan_insurgency
 				YUN_we_are_not_enemies
-			}
-		}
-	
-        "BHU" = {
-			minor = yes
-			history = "BHU_THENEWORDER_DESC"
-			ideology = despotism
-			ideas = {
-				BHU_Under_the_Azad_Hind_boot 
-				BHU_a_general_and_his_army 
-				BHU_A_Dragon_Restless
-			}
-			focuses = {
-			    BHU_tighten_the_leash
-				BHU_the_model_province_of_india
-				BHU_bhutan_age
 			}
 		}
 		## CPS ##
@@ -606,7 +615,7 @@ bookmarks = {
 		## TRIUM ##
 		"ZZZ" = { minor = yes history = "" }
 
-		"ARG" = { minor = yes history = "" }
+		"ARG" = { minor = yes history = "ARG_THENEWORDER_DESC" }
 
 		"ZZZ" = { minor = yes history = "" }
 		## TRIUM ##

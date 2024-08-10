@@ -142,27 +142,27 @@ TNO_nation_specific_slider_values_initialize = {
 		set_variable = { econ_consumer_goods_minimal_pct = 0 }
 		set_variable = { econ_consumer_goods_maximal_pct = 100 }
 	}
-    BHU = {
-		set_variable = { econ_army_expenditures_minimal_pct = 0 }
-		set_variable = { econ_army_expenditures_maximal_pct = 100 }
+	BHU = {
+		set_variable = { econ_army_expenditures_minimal_pct = 1 }
+		set_variable = { econ_army_expenditures_maximal_pct = 75 }
 
 		set_variable = { econ_naval_expenditures_minimal_pct = 0 }
-		set_variable = { econ_naval_expenditures_maximal_pct = 100 }
+		set_variable = { econ_naval_expenditures_maximal_pct = 0 }
 
 		set_variable = { econ_nuclear_expenditures_minimal_pct = 0 }
-		set_variable = { econ_nuclear_expenditures_maximal_pct = 100 }
+		set_variable = { econ_nuclear_expenditures_maximal_pct = 0 }
 
-		set_variable = { econ_research_expenditures_minimal_pct = 0 }
-		set_variable = { econ_research_expenditures_maximal_pct = 100 }
+		set_variable = { econ_research_expenditures_minimal_pct = 10 }
+		set_variable = { econ_research_expenditures_maximal_pct = 65 }
 
-		set_variable = { econ_social_expenditures_minimal_pct = 0 }
-		set_variable = { econ_social_expenditures_maximal_pct = 100 }
+		set_variable = { econ_social_expenditures_minimal_pct = 15 }
+		set_variable = { econ_social_expenditures_maximal_pct = 45 }
 
-		set_variable = { econ_admin_expenditures_minimal_pct = 0 }
-		set_variable = { econ_admin_expenditures_maximal_pct = 100 }
+		set_variable = { econ_admin_expenditures_minimal_pct = 5 }
+		set_variable = { econ_admin_expenditures_maximal_pct = 50 }
 
-		set_variable = { econ_consumer_goods_minimal_pct = 0 }
-		set_variable = { econ_consumer_goods_maximal_pct = 100 }
+		set_variable = { econ_consumer_goods_minimal_pct = 20 }
+		set_variable = { econ_consumer_goods_maximal_pct = 65 }
 	}
 	MGN = {
 		set_variable = { econ_research_expenditures_minimal_pct = 60 }
@@ -181,6 +181,20 @@ TNO_nation_specific_slider_values_initialize = {
 
 		set_variable = { econ_admin_expenditures_minimal_pct = 15 }
 		set_variable = { econ_admin_expenditures_maximal_pct = 55 }
+	}
+	
+	MEX = {
+		set_variable = { econ_army_expenditures_minimal_pct = 15 }
+		set_variable = { econ_army_expenditures_maximal_pct = 40 }
+		set_variable = { econ_army_expenditures_slider_pct = 20 }
+		
+		set_variable = { econ_naval_expenditures_minimal_pct = 15 }
+		set_variable = { econ_naval_expenditures_maximal_pct = 35 }
+		set_variable = { econ_naval_expenditures_slider_pct = 20 }
+
+		set_variable = { econ_research_expenditures_minimal_pct = 0 }
+		set_variable = { econ_research_expenditures_maximal_pct = 50 }
+		set_variable = { econ_research_expenditures_slider_pct = 20 }
 	}
 }
 
@@ -974,7 +988,7 @@ calculate_debt_effect_on_GDP_growth = {
 		}
 		set_temp_variable = { temp_debt_effect = 0 }
 	}
-	clamp_temp_variable = { var = temp_debt_effect max = 0 }
+	clamp_temp_variable = { var = temp_debt_effect min = -800 max = 0 } # -8x modifier on GDP growth at worst
 	divide_temp_variable = { temp_debt_effect = 100 }
 	set_variable = { debt_effect_base_display = temp_debt_effect }
 

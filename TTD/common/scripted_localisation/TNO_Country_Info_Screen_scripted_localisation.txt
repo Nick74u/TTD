@@ -4234,6 +4234,18 @@ defined_text = {
 		}
 		localization_key = "[Get_ContentLoc_desc_MEX]"
 	}
+	text = {
+		trigger = {
+			original_tag = BHU
+		}
+		localization_key = "[Get_ContentLoc_desc_BHU]"
+	}
+	text = {
+		trigger = {
+			original_tag = NEP
+		}
+		localization_key = "[Get_ContentLoc_desc_NEP]"
+	}
 }
 
 	## Content_ScriptedLoc_desc_GER

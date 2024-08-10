@@ -201,7 +201,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				custom_modifier_tooltip = NEP_everest_committee_mountaineering_tt
+				custom_modifier_tooltip = NEP_everest_committee_mountaineering_tt #No effect for now
 				custom_modifier_tooltip = NEP_everest_committee_tt
 			}
 		}

@@ -1,0 +1,13 @@
+leader_traits = {
+
+	bhutans_warden = {
+		random = no
+		political_power_factor = 0.15
+		stability_factor = -0.1
+		command_power_gain = 0.05
+		army_org = 3
+
+		ai_will_do = { factor = 1 }
+	}
+	
+}

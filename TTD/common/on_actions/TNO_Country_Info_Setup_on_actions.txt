@@ -92,7 +92,7 @@ on_actions = {
 					add_to_array = { CountryInfo_folder_country_102 = 8 }
 					add_to_array = { CountryInfo_folder_country_102 = 9 }
 				}
-				if = {
+				else_if = {
 					limit = {
 						original_tag = BHU
 					}
@@ -116,7 +116,7 @@ on_actions = {
 					add_to_array = { CountryInfo_folder_country_102 = 6 }
 					add_to_array = { CountryInfo_folder_country_102 = 7 }
 				}
-				if = {
+				else_if = {
 					limit = {
 						original_tag = NEP
 					}
@@ -138,7 +138,7 @@ on_actions = {
 					add_to_array = { CountryInfo_folder_country_102 = 4 }
 					add_to_array = { CountryInfo_folder_country_102 = 5 }
 				}
-				if = {
+				else_if = {
 					limit = {
 						original_tag = BRG
 					}

@@ -28,7 +28,7 @@ characters = {
 			allowed = { original_tag = NEP }
 			traits = {
 				head_of_government
-				hog_happy_amateur
+				hog_reformist_monarch
 			}
 			ledger = civilian
 			cost = -1
@@ -63,7 +63,7 @@ characters = {
 			allowed = { original_tag = NEP }
 			traits = {
 				economy_minister
-				eco_laissez_faire_capitalist
+				eco_right_wing_economist
 			}
 			ledger = civilian
 			cost = -1
@@ -84,7 +84,7 @@ characters = {
 			allowed = { original_tag = NEP }
 			traits = {
 				foreign_minister
-				for_general_staffer
+				for_prime_minister_monarchy
 			}
 			ledger = civilian
 			cost = -1
@@ -105,7 +105,7 @@ characters = {
 			allowed = { original_tag = NEP }
 			traits = {
 				security_minister
-				sec_silent_lawyer
+				
 			}
 			ledger = civilian
 			cost = -1

@@ -40,7 +40,7 @@ characters = {
 			allowed = { original_tag = BHU }
 			traits = {
 				economy_minister
-				eco_military_entrepreneur
+				
 			}
 			ledger = civilian
 			cost = -1
@@ -92,7 +92,7 @@ characters = {
 			allowed = { original_tag = BHU }
 			traits = {
 				security_minister
-				for_iron_fisted_brute
+				
 			}
 			
 			ledger = civilian
@@ -150,7 +150,7 @@ characters = {
 			allowed = { original_tag = BHU }
 			traits = {
 				head_of_government
-				sec_back_stabber
+				
 			}
 			ledger = civilian
 			cost = -1

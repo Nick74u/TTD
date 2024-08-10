@@ -4379,10 +4379,6 @@ defined_text = {
 		localization_key = econ_sphere_name_WOL
 	}
 	text = {
-		trigger = { check_variable = { ECON_SPHERE_LEADER = IND } }
-		localization_key = econ_sphere_name_IND
-	}
-	text = {
 		trigger = {
 			OR = {
 				check_variable = { ECON_SPHERE_LEADER = FFR }
@@ -4479,10 +4475,6 @@ defined_text = {
 		localization_key = econ_sphere_name_long_WOL
 	}
 	text = {
-		trigger = { check_variable = { ECON_SPHERE_LEADER = IND } }
-		localization_key = econ_sphere_name_long_IND
-	}
-	text = {
 		trigger = {
 			OR = {
 				check_variable = { ECON_SPHERE_LEADER = FFR }
@@ -4577,10 +4569,6 @@ defined_text = {
 	text = {
 		trigger = { check_variable = { ECON_SPHERE_LEADER = WOL } }
 		localization_key = econ_sphere_name_tab_WOL
-	}
-	text = {
-		trigger = { check_variable = { ECON_SPHERE_LEADER = IND } }
-		localization_key = econ_sphere_name_tab_IND
 	}
 	text = {
 		trigger = {
@@ -4809,12 +4797,6 @@ defined_text = {
 			check_variable = { ECON_SPHERE_LEADER = WOL }
 		}
 		localization_key = "GFX_econ_sphere_icon_WOL"
-	}
-	text = {
-		trigger = {
-			check_variable = { ECON_SPHERE_LEADER = IND }
-		}
-		localization_key = "GFX_econ_sphere_icon_IND"
 	}
 	text = {
 		trigger = {
@@ -5486,6 +5468,10 @@ defined_text = {
 	text = {
 		trigger = { check_variable = { TNO_economy_subtype = token:Econ_Subtype_Crown_Credit_Corporatism } }
 		localization_key = Econ_Subtype_Crown_Credit_Corporatism_desc
+	}
+	text = {
+		trigger = { check_variable = { TNO_economy_subtype = token:Econ_Subtype_Stabilizing_Development } }
+		localization_key = Econ_Subtype_Stabilizing_Development_desc
 	}
 	text = {
 		trigger = {

@@ -433,7 +433,32 @@ guiTypes = {
 			pdx_tooltip = "ENG_get_law_tooltip"
 		}
 	}
-    containerWindowType = {
+
+	containerWindowType = {
+		name = "TNO_UKR_assorted_laws"
+
+		iconType = {
+			name = "rectangle"
+			spriteType = "GFX_assorted_laws_rectangle"
+			alwaystransparent = yes
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "law_name"
+			position = { x = 0 y = 0 }
+			font = "aldrich_24_outline"
+			text = [GetAssortedLawsUKR]
+			maxWidth = 320
+			format = center
+			maxHeight = 84
+			vertical_alignment = center
+			text_color_code = W
+			pdx_tooltip = "UKR_get_law_tooltip"
+		}
+	}
+	containerWindowType = {
 		name = "TTD_BHU_assorted_laws"
 
 		iconType = {
@@ -458,11 +483,12 @@ guiTypes = {
 		}
 	}
 	containerWindowType = {
-		name = "TNO_UKR_assorted_laws"
+		name = "TNO_MEX_assorted_laws"
 
 		iconType = {
 			name = "rectangle"
 			spriteType = "GFX_assorted_laws_rectangle"
+			pdx_tooltip = "[GetAssortedLawsDescMEX]"
 			alwaystransparent = yes
 			position = { x = 0 y = 0 }
 			Orientation = "UPPER_LEFT"
@@ -472,13 +498,13 @@ guiTypes = {
 			name = "law_name"
 			position = { x = 0 y = 0 }
 			font = "aldrich_24_outline"
-			text = [GetAssortedLawsUKR]
+			text = [GetAssortedLawsMEX]
 			maxWidth = 320
 			format = center
 			maxHeight = 84
 			vertical_alignment = center
 			text_color_code = W
-			pdx_tooltip = "UKR_get_law_tooltip"
+			pdx_tooltip = "MEX_get_law_tooltip"
 		}
 	}
 }

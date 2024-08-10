@@ -155,12 +155,17 @@ TNO_Spheres_init = {
 		limit = {
 			OR = {
 				tag = ARG
-				tag = TDF
 				tag = PAR
 				tag = STC
 			}
 		}
 		set_variable = { ECON_SPHERE_LEADER = ARG }
+	}
+
+	### Mexican Sphere
+	MEX = {
+		set_country_flag = HAS_ECON_SPHERE
+		set_variable = { ECON_SPHERE_LEADER = MEX }
 	}
 	### INDIA SPHERE##
 	#IND = { set_country_flag = HAS_ECON_SPHERE }

@@ -1765,11 +1765,6 @@ on_actions = {
 				add_to_array = { lore_entries = 351 }
 			}
 
-			#Tlaxcala
-			1414 = {
-				add_to_array = { global.state_with_lore = THIS.id }
-				add_to_array = { lore_entries = 352 }
-			}
 
 			#Ciudad Obregon
 			483 = {
@@ -1823,7 +1818,6 @@ on_actions = {
 			350 = {
 				add_to_array = { global.state_with_lore = THIS.id }
 				add_to_array = { lore_entries = 361 }
-				
 			}
 			#Thimphu
 			324 = {
