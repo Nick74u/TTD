@@ -1,33 +1,40 @@
 leader_traits = {
 	hog_reformist_monarch = { # Birendra
 		stability_factor = 0.05
-		poverty_monthly_rate = 0.02
-		admin_efficiency_monthly_rate = -0.03
+		admin_efficiency_monthly_rate = -0.01
 	}
 	
 	for_prime_minister_monarchy = { # Tulsi Giri
-		custom_modifier_tooltip = NEP_leftist_opinion_five_tt
-		admin_efficiency_monthly_rate = 0.02
 		political_power_gain = 0.1
+		custom_modifier_tooltip = NEP_leftist_opinion_five_tt
 	}
 	eco_right_wing_economist = { #Serya Bahdur Thapa or whatever his namke is
 		consumer_goods_use_modifier = 0.1
 		gdp_growth_modifier = 0.15
+		poverty_monthly_rate = 0.02
 	}
 	
-	sec_rana_remnant = {
+	sec_rana_remnant = { Kaisher Shamshurf Dir Rana or smth
 		experience_gain_army_factor = 0.05
 		army_core_attack_factor = 0.05	
 	}
 	last_king_of_east = {
 		random = no
 		war_support_factor = 0.10
-		admin_efficiency_monthly_rate = 0.04
-		custom_modifier_tooltip = NEP_leftist_opinion_tt #remind me if ever we go full fledge nepal content, to actually make this have effect -Totalsand
+		admin_efficiency_monthly_rate = 0.02
+		custom_modifier_tooltip = NEP_monarchy_pop_opinion_tt #remind me if ever we go full fledge nepal content, to actually make this have effect -Totalsand | Ok - Shadoww
 		despotism_acceptance = 33.33
 		paternalism_acceptance = 33.33
 		despotism_drift = 0.03
 		
 		ai_will_do = { factor = 1 }
+	}
+	
+	one_of_four_martyrs = { # Tanka Prasad Acharya
+		random = no
+		stability_factor = 0.05
+		liberalism_drift = 0.1
+		poverty_monthly_rate = 0.01
+		NEP_nkpp_coalition_unity_tt
 	}
 }

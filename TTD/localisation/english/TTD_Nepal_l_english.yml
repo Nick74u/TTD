@@ -2,20 +2,20 @@
 ### Country Names ###
  NEP: "Kingdom of Nepal"
  NEP_DEF: "The Kingdom of Nepal"
- NEP_ADJ: "Nepali"
+ NEP_ADJ: "Nepalese"
   
 ### Cosmetics ### 
  NEP_REP: "Republic of Nepal"
  NEP_REP_DEF: "The Socialist Federal Republic of Nepal"
- NEP_REP_ADJ: "Nepali"
+ NEP_REP_ADJ: "Nepalese"
  
  NEP_CON: "Kingdom of Nepal"
  NEP_CON_DEF: "The Constitutional Kingdom of Nepal"
- NEP_CON_ADJ: "Nepali"                                 
+ NEP_CON_ADJ: "Nepalese"                                 
  
  NEP_MIL: "District of Nepal"                        
  NEP_MIL_DEF: "The Military Occupation Zone of Nepal" 
- NEP_MIL_ADJ: "Nepali"
+ NEP_MIL_ADJ: "Nepalese"
  
  NEP_HIM: "Himalaya"
  NEP_HIM_DEF: "The Himalayan Federation
@@ -23,7 +23,7 @@
 
  NEP_PRN: "People's Republic of Nepal"
  NEP_PRN_DEF: "The People's Republic of Nepal"
- NEP_PRN_ADJ: "Nepali"
+ NEP_PRN_ADJ: "Nepalese"
  
  ### Parties ###
  NEP_communist_party: "NKP"
@@ -65,11 +65,13 @@
     NEP_Kaiser_Shumsher_Jang_Bahadur_Rana_sec_desc: "§YHis Excellency Field Marshal\nMinister of Defense and Internal Security\nStratocracy\n(Paternalism)§!\n--------------\n"
     #### MONARCHY BIRENDRA TBD ####
     #### NEPALI CONGRESS MP/BP KOIRALA TBF ####                                                                                         ###################################
-    #NEP_Bp_Koirala_hog_desc: "§YHead of Government\nSocial Democracy\n(Progressivism)§!\n--------------\n§L§!"                         #  So, you might be wondering...  #
-    #NEP_Mp_Koirala_hog_desc: "§YHead of Government\nReformist Socialism\n(Progressivism)§!\n--------------\n§L§!"                      #  Yes, There is 3 possible HoGs  #
-    #NEP_Tp_Acharya_hog_desc: "§YHead of Government\nProgressive Liberalism\n(Liberalism)§!\n--------------\n§L§!"                      #  They're all Important.         #
-    #NEP_Rishikesh_Shah_for_desc: "§YMinister of Foreign Relations\nUtopian Socialism\n(Progressivism)§!\n--------------\n§L§!"         ###################################
-    #NEP_Padma_Bahadura_Khatri_eco_desc: "§YMinister of Economic Affairs\nNatural Conservatism\n(Conservatism)§!\n--------------\n§L§!"
+    NEP_BP_Koirala_hog_desc: "§YHead of Government\nSocial Democracy\n(Progressivism)§!\n--------------\n§L§!"                         #  So, you might be wondering...  #
+    NEP_MP_Koirala_hog_desc: "§YHead of Government\nReformist Socialism\n(Progressivism)§!\n--------------\n§L§!"                      #  Yes, There is 3 possible HoGs  #
+    NEP_TP_Acharya_hog_desc: "§YHead of Government\nProgressive Liberalism\n(Liberalism)§!\n--------------\n§L§!"                      #  They're all Important.         #
+    NEP_Rishikesh_Shah_for_desc: "§YMinister of Foreign Relations\nUtopian Socialism\n(Progressivism)§!\n--------------\n§L§!"         ###################################
+    NEP_Padma_Bahadura_Khatri_eco_desc: "§YMinister of Economic Affairs\nNatural Conservatism\n(Conservatism)§!\n--------------\n§L§!"
+    NEP_TP_Acharya_sec_desc: ""§YMinister of National Security\nSocial Democracy\n(Progressivism)§!\n--------------\n§L§!"
+    NEP_MP_Koirala_sec_desc: "§YMinister of National Security\nReformist Socialism\n(Progressivism)§!\n--------------\n§L§!"
 
  ########Ideas##################
  NEP_Dictatorship_With_the_Face_of_Democracy: "Democratic Illusion - Perceivable" #Starting nat spirit
@@ -100,7 +102,7 @@
  NEP_Second_Kranti_desc: "Revolution time!!!!"
  NEP_memory_kathmandu: "Memories of Kathmandu"
  NEP_memory_kathmandu_desc: "Lots of people died. we are sad but they forgive us"
- NEP_political_scandal: "Rana Scheme"
+ NEP_political_scandal: "Rana Scheme" # Deleted because it makes ZERO sense
  NEP_political_scandal_desc: "The Gorkha Parishad are the last remnants of the Rana regime and we have reason to believe that one of the members of the sovreign king himself's cabinet is siphoning government and civillian funds into the GP in secret. If this ends up being true, Kaiser Shumsher Jung Bahadur Rana would be facing the §Rdeath Penalty§! at the least..."
  NEP_battle_for_everest: "The Battle for Everest"
  NEP_battle_for_everest_desc: "we are fighting over everest with tibet"
@@ -120,6 +122,9 @@
  NEP_everest_committee_mountaineering_tt:0 "Mountaineering Professionalism Monthly Change: §G+0.03§!"
  NEP_leftist_opinion_tt:0 "Nepali Congress Monthly Opinion Change: §R-0.03§!"
  NEP_leftist_opinion_five_tt:0 "Nepali Congress Monthly Opinion Change: §R-0.05§!"
+ NEP_monarchy_control_tt:0 "Monarchy Monthly Control Change: §R-0.02§!"
+ NEP_nkpp_coalition_unity_tt:0 "NKPP Coalition Monthly Unity Change: §G+0.02§!"
  
  ### TRRAITS ###
  last_king_of_east: "The Last King of the East"
+ one_of_four_martyrs: "One of the Four Martyrs of Nepal"

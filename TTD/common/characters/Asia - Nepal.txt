@@ -117,8 +117,22 @@ characters = {
 		name = NEP_BP_Koirala
 		portraits = {
 			civilian = {
+				small = "gfx/leaders/NEP/Portrait_Nepal_BP_Koirala.dds" # PLACEHOLDER
 				large = "gfx/leaders/NEP/Portrait_Nepal_BP_Koirala.dds"
 			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = NEP_BP_Koirala_hog
+			allowed = { original_tag = NEP }
+			traits = {
+				head_of_government
+				
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
 		}
 		country_leader = {
 			desc = "POLITICS_BP_KOIRALA_DESC"
@@ -147,16 +161,130 @@ characters = {
 		name = NEP_TP_Acharya
 		portraits = {
 			civilian = {
+				small = "gfx/leaders/Portrait_Mr_Placeholder_the_Third.dds" # PLACEHOLDER
 				large = "gfx/leaders/Portrait_Mr_Placeholder_the_Third.dds"
 				
 			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = NEP_TP_Acharya_hog
+			allowed = { original_tag = NEP }
+			traits = {
+				head_of_government
+				
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = NEP_TP_Acharya_sec
+			allowed = { original_tag = NEP }
+			traits = {
+				security_minister
+				
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
 		}
 		country_leader = {
 			desc = "POLITICS_TP_ACHARYA_DESC"
 			expire = "1999.1.1"
 			ideology = liberalism_progressive_liberalism_subtype
+			traits = { one_of_four_martyrs }
+			id = -1
+		}
+	}
+	NEP_MP_Koirala = {
+		name = NEP_MP_Koirala
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/NEP/Portrait_MP_Koirala.dds" # PLACEHOLDER
+				large = "gfx/leaders/NEP/Portrait_MP_Koirala.dds"
+			
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = NEP_MP_Koirala_hog
+			allowed = { original_tag = NEP }
+			traits = {
+				head_of_government
+				
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+		advisor = {
+			slot = security_minister
+			idea_token = NEP_MP_Koirala_sec
+			allowed = { original_tag = NEP }
+			traits = {
+				security_minister
+				
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+		country_leader = {
+			desc = "POLITICS_MP_KOIRALA_DESC"
+			expire = "1999.1.1"
+			ideology = socialist_reformist_socialism_subtype
 			traits = {}
 			id = -1
+		}
+	}
+	NEP_Rishikesh_Shah = {
+		name = NEP_Rishikesh_Shah
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/NEP/portrait_Rishikesh_Shah.dds" # PLACEHOLder
+				large = "gfx/leaders/NEP/portrait_Rishikesh_Shah.dds"
+			
+			}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = NEP_Rishikesh_Shah_for
+			allowed = { original_tag = NEP }
+			traits = {
+				foreign_minister
+				
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
+		}
+	}
+	NEP_Padma_Bahadura_Khatri = {
+		name = NEP_Padma_Bahadura_Khatri
+		portraits = {
+			civilian = {
+				small = "gfx/leaders/Portrait_Mr_Placeholder_the_Third.dds" # PLACEHOLDER
+			}
+		}
+		advisor = {
+			slot = economy_minister
+			idea_token = NEP_Padma_Bahadura_Khatri_eco
+			allowed = { original_tag = NEP }
+			traits = {
+				economy_minister
+				
+			}
+			ledger = civilian
+			cost = -1
+			can_be_fired = no
+			ai_will_do = { factor = 0 }
 		}
 	}
 }
