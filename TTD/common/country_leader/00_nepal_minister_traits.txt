@@ -14,7 +14,7 @@ leader_traits = {
 		poverty_monthly_rate = 0.02
 	}
 	
-	sec_rana_remnant = { Kaisher Shamshurf Dir Rana or smth
+	sec_rana_remnant = { # Kaisher Shamshurf Dir Rana or smth
 		experience_gain_army_factor = 0.05
 		army_core_attack_factor = 0.05	
 	}
@@ -22,7 +22,7 @@ leader_traits = {
 		random = no
 		war_support_factor = 0.10
 		admin_efficiency_monthly_rate = 0.02
-		custom_modifier_tooltip = NEP_monarchy_pop_opinion_tt #remind me if ever we go full fledge nepal content, to actually make this have effect -Totalsand
+		custom_modifier_tooltip = NEP_monarchy_control_tt #remind me if ever we go full fledge nepal content, to actually make this have effect -Totalsand
 		despotism_acceptance = 33.33
 		paternalism_acceptance = 33.33
 		despotism_drift = 0.03
