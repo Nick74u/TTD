@@ -59,12 +59,12 @@
 
 ####### Minister Descs ##########
     #### MONARCHY MAHENDRA ####
-    NEP_Birendra_Bir_Bikram_Shah_hog_desc: "§YHeir of King Mahendra\nAbsolute Monarchy\n(Despotism)§!\n--------------\n"
+    NEP_Birendra_Bir_Bikram_Shah_hog_desc: "§YHeir to the Nepalese Throne\nAbsolute Monarchy\n(Despotism)§!\n--------------\nBirendra Bir Bikram Shah Dev has had his life easy. Born on December 28, 1945 to the then heir to the throne, Mahendra Bir Bikram Shah Dev, Birendra has lived a life of prestige and luxury. Educated in Eton College in England, he embodies a blend of traditional Nepali values and modern education. Birendra's exposure to international environments is seen as vital in shaping his future reign, embodying the type of king Nepal needs to bring itself closer to the global stage.\n\nWithin the kingdom, Prince Birendra is admired for his dedication to the people of Nepal. His passion for preserving Nepali culture make him a beloved figure and as he prepares for his future responsibilities, there is a strong sense of optimism surrounding his potential in leading Nepal to the regional power it has been graciously destined to be."
     NEP_Surya_Bahadur_Thapa_eco_desc: "§YMinister of Economic and Trade Affairs\nAuthoritarian Developmentalism\n(Paternalism)§!\n--------------\n"
-    NEP_Tulsi_Giri_for_desc: "§YPrime Minister and Head of Foreign Relations\nAristocratic Conservatism\n(Despotism)§!\n--------------\n"
+    NEP_Tulsi_Giri_for_desc: "§YPrime Minister of Nepal\nHead of Foreign Relations\nAristocratic Conservatism\n(Despotism)§!\n--------------\n"
     NEP_Kaiser_Shumsher_Jang_Bahadur_Rana_sec_desc: "§YHis Excellency Field Marshal\nMinister of Defense and Internal Security\nStratocracy\n(Paternalism)§!\n--------------\n"
     #### MONARCHY BIRENDRA TBD ####
-    #### NEPALI CONGRESS MP/BP KOIRALA TBF ####                                                                                         ###################################
+    #### NEPALI CONGRESS MP/BP KOIRALA TBF ####                                                                                        ###################################
     NEP_BP_Koirala_hog_desc: "§YHead of Government\nSocial Democracy\n(Progressivism)§!\n--------------\n§L§!"                         #  So, you might be wondering...  #
     NEP_MP_Koirala_hog_desc: "§YHead of Government\nReformist Socialism\n(Progressivism)§!\n--------------\n§L§!"                      #  Yes, There is 3 possible HoGs  #
     NEP_TP_Acharya_hog_desc: "§YHead of Government\nProgressive Liberalism\n(Liberalism)§!\n--------------\n§L§!"                      #  They're all Important.         #
@@ -110,6 +110,10 @@
  NEP_victors_of_everest_desc: "We climbed it faster"
  NEP_everest_committee: "The Joint Nepali Himmalayan Mountain Research Committee" # Starting nat spirit
  NEP_everest_committee_desc: "The Himalayan Mountain range is a place for the largest peaks in the entire world. A lot of Asian Civilizations were created or shaped by them. Yet for what they are, we still know little about them. But that is a word of the past. Our Newly formed research committee will investigate and document every single crack, cave and peak - Optimally, of course."
+ NEP_Dictatorship_With_the_Face_of_Democracy1: "Democratic Illusion - Transparent"
+ NEP_Dictatorship_With_the_Face_of_Democracy2: "Democratic Illusion - Faltered"
+ NEP_Dictatorship_With_the_Face_of_Democracy4: "Democratic Illusion - Deceptive"
+ NEP_Dictatorship_With_the_Face_of_Democracy5: "Democratic Illusion - Indistinguishable"
  
 #########ToolTips###
  NEP_dictatorship_face_democracy_tt:0 "--------------\nIf the Nepali Congress, or, to a certain extent, anyone who believes Nepal is democractic is to ever find out the truth about Nepal's elections, §Vour nation would surely fall into a crisis...§!"

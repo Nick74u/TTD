@@ -21,7 +21,6 @@ leader_traits = {
 	last_king_of_east = {
 		random = no
 		war_support_factor = 0.10
-		admin_efficiency_monthly_rate = 0.02
 		custom_modifier_tooltip = NEP_monarchy_control_tt #remind me if ever we go full fledge nepal content, to actually make this have effect -Totalsand
 		despotism_acceptance = 33.33
 		paternalism_acceptance = 33.33
