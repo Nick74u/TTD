@@ -244,6 +244,14 @@ country_event = {
 		remove_ideas = NEP_Kathmandu_Catastrophe
 		remove_ideas = NEP_Congressional_Crisis
 		remove_ideas = NEP_Dictatorship_With_the_Face_of_Democracy
+		remove_ideas = NEP_Birendra_Bir_Bikram_Shah_hog
+		remove_ideas = NEP_Surya_Bahadur_Thapa_eco
+		remove_ideas = NEP_Tulsi_Giri_for
+		remove_ideas = NEP_Kaiser_Shumsher_Jang_Bahadur_Rana_sec
+		add_ideas = NEP_MP_Koirala_hog
+		add_ideas = NEP_Rishikesh_Shah_for
+		add_ideas = NEP_Padma_Bahadura_Khatri_eco
+		add_ideas = NEP_TP_Acharya_sec
 		add_ideas = NEP_Second_Kranti
 		
 		1903 = { set_demilitarized_zone = no }
@@ -278,9 +286,8 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	
-	option = { # SIGMA BIHRENDRA STAYS IN POWER!!!!!
+	option = { # SIGMA BIRENDRA STAYS IN POWER!!!!!
 		name = NEP_skeleton.7.a
-		add_ideas = NEP_Birendra_Bir_Bikram_Shah_hog         #WHY ARE YOU ADDING THIS!?!??! he is already hog | IVE GOT NO IDEA WHAT I AM DOING
 		hidden_effect = {
 			set_popularities = {
 				communist = 9

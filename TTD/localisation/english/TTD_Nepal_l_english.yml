@@ -35,7 +35,7 @@
  NEP_progressivism_2_party: "INC Remnants"
  NEP_progressivism_2_party_long: "Indian National Congress Remnants" # FOR POST TOTAL AZH
  NEP_liberalism_party: "NPP"
- NEP_liberalism_party_long: "Nēpāla prajā pariṣada"
+ NEP_liberalism_party_long: "Nēpāla Prajā Pariṣada"
  NEP_paternalism_party: "GP"
  NEP_paternalism_party_long: "Gorkha Parishad"
  NEP_paternalism_2_party: "Subhasist Movement"
@@ -48,6 +48,9 @@
  ### Characters ###
  NEP_BP_Koirala: "Bishweshwar 'B.P.' Koirala"
  NEP_TP_Acharya: "Tanka Prasad Acharya"
+ NEP_MP_Koirala: "M.P. Koirala"
+ NEP_Rishikesh_Shah: "Rishikesh Shah"
+ NEP_Padma_Bahadura_Khatri: "Padma Bahadura Khatri"
 
 ### Leader Descs ###
  POLITICS_BP_KOIRALA_DESC: "Bishweshwar Prasad Koirala, the first democratically elected president of Nepal. The only man who can say truly he is the sovereign leader of Nepal. Born in 1914 during his family's exile in Bihar, India, Koirala's early thoughts and political views were shaped mainly by his father's involvement in India's independence movement, molding his view on social rights from a young age.\n\nReturning to Nepal in the late 1930s after his education in India, Koirala co-founded the Nēpālī Kāngrēsa (Nepali Congress) in 1946 alongside his 2 Brothers and a member of the Rana family living in exile in Calcutta. This proved a pivotal moment in Nepal's path toward liberalism. Koirala's advocacy for more western and liberal principles led to imprisonment by the corrupt Rana oligarchy in 1947, though he was released following Nepal's 1951 uprising against the same government which had imprisoned him.\n\nIn his first election in 1959, Koirala became easily the most favoured candidate since he championed democracy, equality and modernization. He also gained international respect due to his pro western and OFN views despite being a country in Asia. His tenure was cut short in 1960 when King Mahendra staged a royal coup d'état, halting democratic progress and gaining progress toward imprisoning Koirala alongside other leaders.\n\nThroughout, Koirala's literary contributions, including novels like "Sumnima" and "Tin Ghumti,", he reflected his deep rooted understanding and love for Nepali society yep also acknowledging its need for reform. As of now, his legacy stands as a beacon of hope for Nepal's continued journey towards democratization and social justice, inspiring those within the Nepali populace to support him in his strive for freedom and equity."
