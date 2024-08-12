@@ -14,6 +14,18 @@ spriteTypes = {
 		name = "GFX_idea_AZH_Leela_Roy"
 		texturefile = "gfx/interface/ideas/ministers/AZH/AZH_minister_Leela_Roy.dds"
 	}
+	spriteType = { ###Nepal###
+		name = "GFX_idea_NEP_BP_Koirala"
+		texturefile = "gfx/interface/ideas/ministers/NEP/NEP_minister_BP_Koirala.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_NEP_MP_Koirala"
+		texturefile = "gfx/interface/ideas/ministers/NEP/NEP_minister_MP_Koirala.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_NEP_Rishikesh_Shah"
+		texturefile = "gfx/interface/ideas/ministers/NEP/NEP_minister_Rishikesh_Shah.dds"
+	}
 	spriteType = { ###Ceylon###
 		name = "GFX_idea_CYL_EJ_Cooray"
 		texturefile = "gfx/interface/ideas/ministers/CYL/CYL_minister_EJ_Cooray.dds"

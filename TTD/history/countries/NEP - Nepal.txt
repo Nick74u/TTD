@@ -12,7 +12,7 @@ recruit_character = NEP_BP_Koirala
 recruit_character = NEP_Keshar_Jung_Rayamajhi
 recruit_character = NEP_TP_Acharya
 recruit_character = NEP_MP_Koirala
-recruit_character = NEP_Padma_Bahadura_Khatrir
+recruit_character = NEP_Padma_Bahadura_Khatri
 recruit_character = NEP_Rishikesh_Shah
 
 

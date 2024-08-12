@@ -117,7 +117,7 @@ characters = {
 		name = NEP_BP_Koirala
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/NEP/Portrait_Nepal_BP_Koirala.dds" # PLACEHOLDER
+				small = "GFX_idea_NEP_BP_Koirala" 
 				large = "gfx/leaders/NEP/Portrait_Nepal_BP_Koirala.dds"
 			}
 		}
@@ -204,7 +204,7 @@ characters = {
 		name = NEP_MP_Koirala
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/NEP/Portrait_MP_Koirala.dds" # PLACEHOLDER
+				small = "GFX_idea_NEP_MP_Koirala"
 				large = "gfx/leaders/NEP/Portrait_MP_Koirala.dds"
 			
 			}
@@ -247,7 +247,7 @@ characters = {
 		name = NEP_Rishikesh_Shah
 		portraits = {
 			civilian = {
-				small = "gfx/leaders/NEP/portrait_Rishikesh_Shah.dds" # PLACEHOLder
+				small = "GFX_idea_NEP_Rishikesh_Shah" 
 				large = "gfx/leaders/NEP/portrait_Rishikesh_Shah.dds"
 			
 			}

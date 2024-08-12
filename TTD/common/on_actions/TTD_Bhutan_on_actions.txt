@@ -6,11 +6,11 @@ on_actions = {
 				    add_dynamic_modifier = { modifier = BHU_rough_himalayan_terrain }
 			    }  
             }				
-		    #NEP = {
-		        #every_owned_state = {
-		   	    	#add_dynamic_modifier = { modifier = BHU_rough_himalayan_terrain }
-				#}
-			#}
+		    NEP = {
+		        every_owned_state = {
+		   	    	add_dynamic_modifier = { modifier = BHU_rough_himalayan_terrain }
+				}
+			}
 			SIK = {
 		        every_owned_state = {
 		   	    	add_dynamic_modifier = { modifier = BHU_rough_himalayan_terrain }

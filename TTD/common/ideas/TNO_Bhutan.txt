@@ -4,7 +4,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_Under_the_Azad_Hind_boot" }
 
 			allowed = { always = no }
-			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			allowed_civil_war = { always = yes }
 			picture = BHU_transitional_military_occupation
 			removal_cost = -1
 
@@ -16,7 +16,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_A_Dragon_Restless" }
 
 			allowed = { always = no }
-			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			allowed_civil_war = { always = yes } 
 			picture = BHU_bhotamuzh_resistance
 			removal_cost = -1
 
@@ -29,7 +29,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_The_hunt_for_wangchuk" }
 
 			allowed = { always = no }
-			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			allowed_civil_war = { always = yes }
 			picture = BHU_transitional_military_occupation
 			removal_cost = -1
 
@@ -42,7 +42,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_a_general_and_his_army" }
 
 			allowed = { always = no }
-			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			allowed_civil_war = { always = yes }
 			picture = BHU_rogue_general
 			removal_cost = -1
 
@@ -56,7 +56,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_The_Northern_Frontier" }
 
 			allowed = { always = no }
-			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			allowed_civil_war = { always = yes } 
 			picture = BHU_Northern_frontier
 			removal_cost = -1
 
@@ -70,7 +70,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_INA_0" }
 
 			allowed = { always = no }
-			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			allowed_civil_war = { always = yes }
 			picture = BHU_transitional_military_occupation
 			removal_cost = -1
 
@@ -84,7 +84,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_INA_1" }
 
 			allowed = { always = no }
-			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			allowed_civil_war = { always = yes }
 			picture = BHU_transitional_military_occupation
 			removal_cost = -1
 
@@ -98,8 +98,8 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_INA_2" }
 
 			allowed = { always = no }
-			allowed_civil_war = { always = yes } #{ #has_government = yes }
-			picture = BHU_transitional_military_occupation
+			allowed_civil_war = { always = yes } 
+			picture = BHU_INA_keepingorder
 			removal_cost = -1
 
 			modifier = {
@@ -112,7 +112,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_INA_3" }
 
 			allowed = { always = no }
-			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			allowed_civil_war = { always = yes }
 			picture = BHU_transitional_military_occupation
 			removal_cost = -1
 
@@ -126,7 +126,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_INA_3" }
 
 			allowed = { always = no }
-			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			allowed_civil_war = { always = yes }
 			picture = BHU_transitional_military_occupation
 			removal_cost = -1
 
@@ -140,7 +140,7 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_Transitional_Military_Occupation" }
 
 			allowed = { always = no }
-			allowed_civil_war = { always = yes } #{ #has_government = yes }
+			allowed_civil_war = { always = yes } 
 			picture = BHU_transitional_military_occupation
 			removal_cost = -1
 

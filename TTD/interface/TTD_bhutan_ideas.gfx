@@ -7,4 +7,8 @@ spriteTypes = {
 		name = "GFX_idea_BHU_rogue_general"
 		texturefile = "gfx/interface/ideas/national_spirits/Asia/BHU/idea_BHU_rogue_general.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_BHU_INA_keepingorder"
+		texturefile = "gfx/interface/ideas/national_spirits/Asia/BHU/idea_BHU_INA2.dds"
+	}
 }

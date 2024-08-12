@@ -1,0 +1,10 @@
+##############################
+# Bhutan custom modifiers #
+##############################
+
+BHU_min_convoy_supply_arrival = {
+	color_type = good
+	value_type = percentage_in_hundred
+	precision = 1
+	category = country
+}

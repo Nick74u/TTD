@@ -157,8 +157,8 @@ BHU_Laws_ministry_of_economic_affairs_desc:0 "Cardozo's burger joint"
   
   ###TRAITS###
    bhutans_warden: "Bhutan's Warden"
-   
-
+   sec_convoy_patroller: "Convoy Patroller"
+   BHU_min_convoy_supply_arrival: "Convoy Supply Arrival"
    BHU_garrison_text_insuff: "Our Garrison is near collapse, with a percentage of §R[?Meter_garrison_bar_value|2]%§!"
    BHU_garrison_text_low: "Our Garrison is low, with a percentage of §R[?Meter_garrison_bar_value|2]%§!"
    BHU_garrison_text_aver: "Our Garrison is just enough, with a percentage of §W[?Meter_garrison_bar_value|2]%§!"

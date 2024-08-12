@@ -92,7 +92,7 @@ characters = {
 			allowed = { original_tag = BHU }
 			traits = {
 				security_minister
-				
+				sec_convoy_patroller
 			}
 			
 			ledger = civilian
