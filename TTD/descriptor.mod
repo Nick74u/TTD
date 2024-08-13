@@ -8,5 +8,5 @@ dependencies={
 }
 picture="thumbnail.png"
 replace_path="common/bookmarks"
-supported_version="Bolivar v1.14.4.44c7"
+supported_version="1.14.*"
 path="C:/Users/Admin/Documents/Paradox Interactive/Hearts of Iron IV/mod/TTD"

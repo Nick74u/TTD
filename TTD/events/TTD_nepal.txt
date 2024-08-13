@@ -8,6 +8,7 @@ add_namespace = NEP_GIWM # Monarchist Path
 add_namespace = NEP_GIW # Leftist Path
 add_namespace = NEP_elec # Elections
 add_namespace = NEP_ever # Mt everest skeleton
+add_namespace = NEP_flavor # Flavor
 
 country_event = { # Tibet does some illeagal stuff/the battle for everest
 	id = NEP_ever.1
@@ -99,10 +100,7 @@ country_event = { # Congressional Riots goes worse
 	desc = NEP_skeleton.1.d
 	
 	fire_only_once = yes
-	trigger = {
-	    tag = NEP
-	    has_global_flag = azad_war
-	}
+	is_triggered_only
 	
 	
 	option = {
@@ -598,6 +596,27 @@ country_event = { # Elections
 					days = 1
 				}
 			}
+		}
+	}
+}
+country_event = {
+	id = NEP_flavor.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event NEP_flavor.1" }
+	title = NEP_flavor.1.t
+	desc = NEP_flavor.1.d
+	fire_only_once = yes
+	
+	trigger = {
+	    tag = NEP
+	    has_global_flag = azad_war
+	}
+	
+	option = {
+		name = NEP_flavor.1.a
+		
+		country_event = {
+			id = NEP_skeleton.1
+			days = 7
 		}
 	}
 }
