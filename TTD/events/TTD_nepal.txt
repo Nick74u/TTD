@@ -177,6 +177,9 @@ country_event = { # Soooooo, the king abdicated
 		promote_character = NEP_Birendra_Bir_Bikram_Shah 
 	
 		hidden_effect = {
+		1903 = { set_demilitarized_zone = yes }
+		1900 = { set_demilitarized_zone = yes }
+		323 = { set_demilitarized_zone = yes }
 	
 			country_event = {
 				id = NEP_skeleton.5
@@ -203,7 +206,6 @@ country_event = { # Coup or no coup?
 	
 	option = { # Congress Coups/King Finds out
 		name = NEP_skeleton.5.a
-		1903 = { set_demilitarized_zone = yes }
 		random_list = {
 			80 = {
 				NEP = {
@@ -241,6 +243,7 @@ country_event = {
 			last_election = 1959.4.3 # 1959 Nepali general elections
 			election_frequency = 84
 		}
+		hidden_effect = {
 		remove_ideas = NEP_Kathmandu_Catastrophe
 		remove_ideas = NEP_Congressional_Crisis
 		remove_ideas = NEP_Dictatorship_With_the_Face_of_Democracy
@@ -255,8 +258,9 @@ country_event = {
 		add_ideas = NEP_Second_Kranti
 		
 		1903 = { set_demilitarized_zone = no }
+		1900 = { set_demilitarized_zone = no }
+		323 = { set_demilitarized_zone = no }
 		set_cosmetic_tag = NEP_REP
-		hidden_effect = {
 			set_popularities = {
 				communist = 13
 				socialist = 16

@@ -1,12 +1,12 @@
 state={
-	id=1889
-	name="STATE_1889"
+	id=1893
+	name="STATE_1893"
 	provinces={
-		8044 15994 15995 7975
+		10813 13484
 	}
 	history={
 		owner = AFG
-		victory_points = { 15995 1 }
+		victory_points = { 10813 1 }
 		buildings = {
 			infrastructure = 2
 		}
@@ -14,7 +14,7 @@ state={
 		add_claim_by = IND
 		add_claim_by = AZH
 	}
-	manpower=88465
+	manpower=76596
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=wasteland
 }
