@@ -100,7 +100,7 @@ country_event = { # Congressional Riots goes worse
 	desc = NEP_skeleton.1.d
 	
 	fire_only_once = yes
-	is_triggered_only
+	is_triggered_only = yes
 	
 	
 	option = {

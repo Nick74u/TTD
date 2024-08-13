@@ -929,6 +929,13 @@ guiTypes = {
 			pdx_tooltip = "BOOKMARK_BHUTAN_BLOCKER"
 			pdx_tooltip_delayed = "BOOKMARK_BHUTAN_BLOCKER_DELAYED"
 		}
+		iconType = { # Nepal BLOCKED ENTRY
+			name = "countries_blocker_sphere_2_2_entry"
+			position = { x = 855 y = 325 }
+			spriteType = "GFX_country_selection_screen_blocker"
+			pdx_tooltip = "BOOKMARK_NEPAL_BLOCKER"
+			pdx_tooltip_delayed = "BOOKMARK_NEPAL_BLOCKER_DELAYED"
+		}
 		# Triumvirate
 		iconType = { # GREECE BLOCKED ENTRY
 			name = "countries_blocker_triumvirate_1_2_entry"
@@ -956,11 +963,7 @@ guiTypes = {
 			spriteType = "GFX_country_selection_clickcover_singleentry"
 		}
 
-		iconType = {
-			name = "countries_clickcover_sphere_2"
-			position = { x = 855 y = 284 }
-			spriteType = "GFX_country_selection_clickcover_singleentry"
-		}
+		
 
 		## Info
 		instantTextBoxType = {
