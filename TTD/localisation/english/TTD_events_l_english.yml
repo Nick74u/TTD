@@ -36,7 +36,19 @@
   bhutan_border_skirmish.3.t: "we won"
   bhutan_border_skirmish.3.d: "totally not scripted to win "
   bhutan_border_skirmish.3.a: "of course"
- 
+  
+  bhutan_garrison.1.t:0 "Armory Raid"
+  bhutan_garrison.1.d:0 "It can't be explained in full detail on how it happened, but the Bhotamuzh managed to seize some of our rifles and quickly stashed it and ran away to the mountains"
+  bhutan_garrison.1.a:0 "We were caught with our pants down"
+  
+  bhutan_garrison.2.t:0 "Skirmishes between Men"
+  bhutan_garrison.2.d:0 "The echoes of the Mountain doesn't always remain silent.\n\nAt dusk, reports have flooded in near an isolated village where our men fought against a nearby resistance cell"
+  bhutan_garrison.2.a:0 "Signs of bad times"
+  
+  bhutan_garrison.3.t:0 "The Mind that takes a toll"
+  bhutan_garrison.3.d:0 "PLACEHOLDER"
+  bhutan_garrison.3.a:0 "PLACEHOLDER"
+  
   bhutan_civil_war.1.t: "A Call for the masses"
   bhutan_civil_war.1.d: ""It's time we rise up against the occupiers of our beloved country, it's time to shake off the chains on which we were imprisoned, it's time, for our beloved country to be free!" \n\nReports indicate a total collapse of order from the eastern provinces of Bhutan, the rebels have occupied some small towns and are now mobilizing their militia."
   bhutan_civil_war.1.a: "Those traitors will all be hanged"

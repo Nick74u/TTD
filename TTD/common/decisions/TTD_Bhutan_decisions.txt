@@ -310,7 +310,7 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 			add_to_variable = { Meter_garrison_bar_morale_value = 5 }
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 350
+				amount = 100
 				producer = AZH
 			}
 			add_to_variable = { BHU_garrison_dirty_variable = .1 } 

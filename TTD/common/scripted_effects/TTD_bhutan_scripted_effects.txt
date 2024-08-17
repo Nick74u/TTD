@@ -27,156 +27,176 @@ BHU_convoy_supply_change = {
 	}
 }
 BHU_wangchuck_causes_trouble_roll_change = {
-hidden_effect = {
-	if = {
-		limit = {
-			check_variable = {
-				BHU_attacking_the_resistance > 0
-			}
-			not = {
-				has_country_flag = BHU_mtsho_obtained
-			}
-			has_country_flag = BHU_attacking_the_resistance
-		}
-		random_list = {
-				33.3 = {
-					set_variable = { Wangchuck_causes_trouble_supply_temp = -5 } 
-			
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					BHU_attacking_the_resistance > 0
 				}
-				33.3 = {
-					set_variable = { Wangchuck_causes_trouble_supply_temp = -3 } 
-					
+				not = {
+					has_country_flag = BHU_mtsho_obtained
 				}
-				33.4 = {
-					set_variable = { Wangchuck_causes_trouble_supply_temp = -2 }	
-				}
-			}
-
-		random_list = {
-			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = 1 } 
-				
-			}
-			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -3 } 
-						
-			}
-			33.4 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -4 }
-										
-			}
-		}
-		add_to_variable = { BHU_attacking_the_resistance = -1 } 
-	}
-	else_if = {
-		limit = {
-			check_variable = {
-				BHU_attacking_the_resistance > 0
-			}
-			has_country_flag = BHU_mtsho_obtained
-			has_country_flag = BHU_attacking_the_resistance
-		}
-		random_list = {
-			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -12 } 
-
-			}
-			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -11 } 
-
-			}
-			33.4 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -10 }
-					
-			}
-		}
-		random_list = {
-			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -6 } 
-
-			}
-			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -7 } 
-
-			}
-			33.4 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -8 }
-				
-			}	
-		}
-		add_to_variable = { BHU_attacking_the_resistance = -1 } 
-	}
-	if = {
-		limit = {
-			not = {
 				has_country_flag = BHU_attacking_the_resistance
 			}
-			check_variable = {
-				BHU_attacking_the_resistance = 0
-			}
-			has_country_flag = BHU_mtsho_obtained
-		}
-		random_list = {
-			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -15 } 
+			random_list = {
+					33.3 = {
+						set_variable = { Wangchuck_causes_trouble_supply_temp = -5 } 
 				
+					}
+					33.3 = {
+						set_variable = { Wangchuck_causes_trouble_supply_temp = -3 } 
+						
+					}
+					33.4 = {
+						set_variable = { Wangchuck_causes_trouble_supply_temp = -2 }	
+					}
+				}
+
+			random_list = {
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_morale_temp = 1 } 
+					
+				}
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_morale_temp = -3 } 
+							
+				}
+				33.4 = {
+					set_variable = { Wangchuck_causes_trouble_morale_temp = -4 }
+											
+				}
 			}
-			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -13 } 
-			
+			add_to_variable = { BHU_attacking_the_resistance = -1 } 
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					BHU_attacking_the_resistance > 0
+				}
+				has_country_flag = BHU_mtsho_obtained
+				has_country_flag = BHU_attacking_the_resistance
 			}
-			33.4 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -11 }
+			random_list = {
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_supply_temp = -12 } 
+
+				}
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_supply_temp = -11 } 
+
+				}
+				33.4 = {
+					set_variable = { Wangchuck_causes_trouble_supply_temp = -10 }
+						
+				}
+			}
+			random_list = {
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_morale_temp = -6 } 
+
+				}
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_morale_temp = -7 } 
+
+				}
+				33.4 = {
+					set_variable = { Wangchuck_causes_trouble_morale_temp = -8 }
+					
+				}	
+			}
+			add_to_variable = { BHU_attacking_the_resistance = -1 } 
+		}
+		if = {
+			limit = {
+				not = {
+					has_country_flag = BHU_attacking_the_resistance
+				}
+				check_variable = {
+					BHU_attacking_the_resistance = 0
+				}
+				has_country_flag = BHU_mtsho_obtained
+			}
+			random_list = {
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_supply_temp = -15 } 
+					
+				}
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_supply_temp = -13 } 
 				
+				}
+				33.4 = {
+					set_variable = { Wangchuck_causes_trouble_supply_temp = -11 }
+					
+				}
+			}
+			random_list = {
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_morale_temp = -8 } 
+
+				}
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_morale_temp = -9 } 
+
+				}
+				33.4 = {
+					set_variable = { Wangchuck_causes_trouble_morale_temp = -10 }	
+				}
+			}		
+		}	
+		else_if = {
+			limit = {
+				check_variable = {
+					BHU_attacking_the_resistance < 1
+				}
+			}
+			random_list = {
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_supply_temp = -9 } 
+
+				}
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_supply_temp = -7 } 
+
+				}
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_supply_temp = -6 }				
+				}
+			}
+			random_list = {
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_morale_temp = -4 } 
+				}
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_morale_temp = -3 } 
+				}
+				33.3 = {
+					set_variable = { Wangchuck_causes_trouble_morale_temp = -2 }		
+				}
 			}
 		}
+		add_to_variable = { BHU_garrison_dirty_variable = .1 }
 		random_list = {
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -8 } 
-
+				country_event = {
+					days = 1
+					id = bhutan_garrison.1
+				}
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -9 } 
-
-			}
-			33.4 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -10 }	
-			}
-		}		
-	}	
-	else_if = {
-		limit = {
-			check_variable = {
-				BHU_attacking_the_resistance < 1
-			}
-		}
-		random_list = {
-			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -9 } 
-
+				country_event = {
+					days = 1
+					id = bhutan_garrison.2
+				}
 			}
 			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -7 } 
-
-			}
-			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_supply_temp = -6 }				
-			}
-		}
-		random_list = {
-			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -4 } 
-			}
-			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -3 } 
-			}
-			33.3 = {
-				set_variable = { Wangchuck_causes_trouble_morale_temp = -2 }		
+				country_event = {
+					days = 1
+					id = bhutan_garrison.3
+				}
 			}
 		}
 	}
-}
-	add_to_variable = { BHU_garrison_dirty_variable = .1 } 
 }
 BHU_wangchuck_causes_trouble_supply_change = {
 	add_to_variable = { Meter_garrison_bar_supply_value = Wangchuck_causes_trouble_supply_temp }

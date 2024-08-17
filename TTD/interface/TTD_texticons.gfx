@@ -15,4 +15,9 @@ spriteTypes = {
 		texturefile = "gfx/texticons/BHU_texticon_supplies.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_BHU_bhutan_morale"
+		texturefile = "gfx/texticons/BHU_texticon_morale.dds"
+		legacy_lazy_load = no
+	}
 }

@@ -169,23 +169,23 @@ BHU_Laws_ministry_of_economic_affairs_desc:0 "Cardozo's burger joint"
    BHU_wangchuck_trouble_supply_decrease_tt: "Our Garrison £GFX_BHU_bhutan_supplies Supply will decrease by §R[?Wangchuck_causes_trouble_supply_temp|2]%§!"
   
    #morale
-   BHU_wangchuck_trouble_morale_increase_tt: "Our Garrison Morale will increase by §G[?Wangchuck_causes_trouble_morale_temp|2]%§!"
-   BHU_wangchuck_trouble_morale_decrease_tt: "Our Garrison Morale will decrease by §R[?Wangchuck_causes_trouble_morale_temp|2]%§!"
+   BHU_wangchuck_trouble_morale_increase_tt: "Our Garrison £GFX_BHU_bhutan_morale Morale will increase by §G[?Wangchuck_causes_trouble_morale_temp|2]%§!"
+   BHU_wangchuck_trouble_morale_decrease_tt: "Our Garrison £GFX_BHU_bhutan_morale Morale will decrease by §R[?Wangchuck_causes_trouble_morale_temp|2]%§!"
    
   
 
   
-   BHU_atr_garrison: "Our Garrison Morale will decrease by §R15%!§!\n\nBut for §GOne Month§!, we will actively protect the roads which will hinder §Oresistance activity§!"
-   BHU_atr_garrison_2: "Our Garrison Morale will decrease by §R15%!§!\n\nBut for §GOne and a Half Month§!, we will actively protect the roads which will hinder §Oresistance activity§!"
+   BHU_atr_garrison: "Our Garrison £GFX_BHU_bhutan_morale Morale will decrease by §R15%!§!\n\nBut for §GOne Month§!, we will actively protect the roads which will hinder §Oresistance activity§!"
+   BHU_atr_garrison_2: "Our Garrison £GFX_BHU_bhutan_morale Morale will decrease by §R15%!§!\n\nBut for §GOne and a Half Month§!, we will actively protect the roads which will hinder §Oresistance activity§!"
    BHU_attacking_the_resistance: "Protecting the Roads"
    BHU_garrison_check: "The State of our Garrison will affect our §Rsecurity status...§!"
    BHU_morale_changes_each_month: "Depending on how much £GFX_BHU_bhutan_supplies §RSupply§! we have, the Garrison's §YMorale§! will §Gincrease§! or §Rdecrease§!"
-   garrison_decision_2: "Our Garrison Morale will increase by §G5%!§!"
+   garrison_decision_2: "Our Garrison £GFX_BHU_bhutan_morale Morale will increase by §G5%!§!"
    garrison_decision_1: "Our Garrison £GFX_BHU_bhutan_supplies Supply will increase by §G15%!§!"
    BHU_garrison_text_up: "§OTotal Bhutan Garrison Strength§!"
    BHU_unlocks_garrison_gui: "Unlocks the §OState of the Garrison§! GUI in the £decision_icon_small §Ydecisions§! tab."
    BHU_supply_number: "£GFX_BHU_bhutan_supplies §RSupply§! is currently: §W[?Meter_garrison_bar_supply_value|2]%§! "
-   BHU_morale_number: "§YMorale§! is currently: §W[?Meter_garrison_bar_morale_value|2]%§!"
+   BHU_morale_number: "£GFX_BHU_bhutan_morale §YMorale§! is currently: §W[?Meter_garrison_bar_morale_value|2]%§!"
    BHU_convoy_arrival: "£GFX_motorized_texticon Convoy will arrive, giving us £GFX_BHU_bhutan_supplies §RSupply§! by §G[?convoy_supply_arrival|2]%!§!"
    TTD_BHU_garrison_supply_desc_tt: "The bread and butter of any army is how well supplied they are. Logistics is the key to victory, and in our case, the way to pacify Bhutan"
    TTD_BHU_garrison_morale_desc_tt: "No army can win a battle without its men, and not only that, they also must be enthusiastic and able to perform their duty"

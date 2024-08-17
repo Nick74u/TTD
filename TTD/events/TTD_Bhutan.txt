@@ -3,6 +3,7 @@
 ###########################
 
 add_namespace = bhutan_flavor
+add_namespace = bhutan_garrison
 add_namespace = bhutan_focus_event
 add_namespace = bhutan_border_skirmish
 add_namespace = bhutan_civil_war
@@ -19,7 +20,47 @@ country_event = {    ####Temp flavor chain
 		ai_chance = { factor = 90 }
 	}
 }
-
+country_event = {    ####them rebels stole guns
+	id = bhutan_garrison.1
+	title = bhutan_garrison.1.t
+	desc = bhutan_garrison.1.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = bhutan_garrison.1.a
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -50
+		}
+	}
+}
+country_event = {    ####them rebels killed some men
+	id = bhutan_garrison.2
+	title = bhutan_garrison.2.t
+	desc = bhutan_garrison.2.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = bhutan_garrison.2.a
+		add_manpower = -40
+		
+	}
+}
+country_event = {    ####them rebels lowered morale
+	id = bhutan_garrison.3
+	title = bhutan_garrison.3.t
+	desc = bhutan_garrison.3.d
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = bhutan_garrison.3.a
+		set_variable = { Wangchuck_causes_trouble_morale_temp = -2 }
+		BHU_wangchuck_causes_trouble_morale_change = yes
+	}
+}
 
 country_event = {
 	id = bhutan_focus_event.1
@@ -106,7 +147,7 @@ country_event = { #a
 	desc = bhutan_focus_event.11.d
 	is_triggered_only = yes
 	
-	option = { # sup Makoto
+	option = { # 
 		name = bhutan_focus_event.11.a
 		
 	}
