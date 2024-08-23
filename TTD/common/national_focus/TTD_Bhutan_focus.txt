@@ -154,7 +154,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_build_from_the_ground_up
-		cost = 4.34
+		cost = 2
 		
 		prerequisite = { focus = BHU_build_from_the_ground_up }
 		available = {
@@ -164,7 +164,7 @@ focus_tree = {
 		bypass = {
 
 		}
-
+		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
@@ -179,7 +179,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = BHU_The_Bhutanese_Renaissance
-		cost = 2.24
+		cost = 1
 		
 		prerequisite = { focus = BHU_The_Bhutanese_Renaissance }
 		available = {
@@ -204,7 +204,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = BHU_The_Bhutanese_Renaissance
-		cost = 2.24
+		cost = 1
 		
 		prerequisite = { focus = BHU_The_Bhutanese_Renaissance }
 		available = {
@@ -227,7 +227,7 @@ focus_tree = {
 	    id = BHU_laying_the_groundworks
 		icon = focus_From_Mountains_to_Cities
 		x = -2
-		y = 1
+		y = 2
 		relative_position_id = BHU_a_road_map_for_the_future
 		cost = 2.89
 		
@@ -256,6 +256,8 @@ focus_tree = {
 			custom_effect_tooltip = BHU_unlocks_bhutan_maps_gui
 			set_country_flag = BHU_laying_the_groundworks
 		    set_country_flag = BHU_map_gui_show
+			set_country_flag = init_focus_done
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 	
@@ -265,7 +267,7 @@ focus_tree = {
 		x = -12
 		y = 1
 		relative_position_id = BHU_laying_the_groundworks
-		cost = 1.45
+		cost = 2
 		
 		mutually_exclusive = { focus = BHU_kanwal_gamble }
 		prerequisite = { focus = BHU_laying_the_groundworks }
@@ -275,8 +277,8 @@ focus_tree = {
 			
 		}
 		
-		bypass = {
-
+		allow_branch = {
+			has_country_flag = init_focus_done
 		}
 
 		cancel_if_invalid = yes
@@ -297,7 +299,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = BHU_laying_the_groundworks
-		cost = 1.45
+		cost = 2
 		
 		mutually_exclusive = { focus = BHU_the_phone_to_hell }
 		prerequisite = { focus = BHU_laying_the_groundworks }
@@ -306,8 +308,8 @@ focus_tree = {
 			
 		}
 		
-		bypass = {
-
+		allow_branch = {
+			has_country_flag = init_focus_done
 		}
 
 		cancel_if_invalid = yes
@@ -328,7 +330,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_the_phone_to_hell
-		cost = 1.45
+		cost = 2
 		
 		prerequisite = { focus = BHU_the_phone_to_hell }
 		available = {
@@ -353,7 +355,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_kanwal_gamble
-		cost = 1.45
+		cost = 2
 		
 		cancelable = no
 		prerequisite = { focus = BHU_kanwal_gamble }
@@ -380,7 +382,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = BHU_tactics_for_a_troublesome_land
-		cost = 1.45
+		cost = 2
 		
 		
 		prerequisite = { focus = BHU_tactics_for_a_troublesome_land }
@@ -406,7 +408,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = BHU_homegrown_supplies
-		cost = 2.88
+		cost = 2
 		
 		
 		prerequisite = { focus = BHU_homegrown_supplies }
@@ -433,7 +435,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = BHU_tactics_for_a_troublesome_land
-		cost = 1.45
+		cost = 2
 		
 		
 		prerequisite = { focus = BHU_tactics_for_a_troublesome_land }
@@ -461,7 +463,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = BHU_a_train_to_kolkata
-		cost = 1.45
+		cost = 2
 		
 		prerequisite = { focus = BHU_a_train_to_kolkata }
 		available = {
@@ -488,7 +490,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = BHU_a_train_to_kolkata
-		cost = 1.45
+		cost = 2
 		
 		prerequisite = { focus = BHU_a_train_to_kolkata }
 		available = {
@@ -513,7 +515,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = BHU_coordinating_with_the_convoy
-		cost = 2.88
+		cost = 2
 		
 		prerequisite = { focus = BHU_coordinating_with_the_convoy }
 		prerequisite = { focus = BHU_showcasing_our_troubles }
@@ -540,7 +542,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = BHU_extending_the_hilda
-		cost = 1.45
+		cost = 2
 		
 		prerequisite = {
 				
@@ -572,7 +574,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = BHU_tighten_the_leash
-		cost = 1.45
+		cost = 2
 		
 		
 		prerequisite = { focus = BHU_tighten_the_leash }
@@ -600,7 +602,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = BHU_tighten_the_leash
-		cost = 1.45
+		cost = 2
 		
 		
 		prerequisite = { focus = BHU_tighten_the_leash }
@@ -630,7 +632,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = BHU_bhutan_needs_you
-		cost = 1.45
+		cost = 1
 		
 		
 		prerequisite = { focus = BHU_bhutan_needs_you }
@@ -665,8 +667,8 @@ focus_tree = {
 
 		}
 		
-		bypass = {
-
+		allow_branch = {
+			has_country_flag = init_focus_done
 		}
 
 		cancel_if_invalid = yes
@@ -684,7 +686,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = BHU_the_ministry_of_economic_affairs
-		cost = 1.45
+		cost = 2
 		
 		
 		prerequisite = { focus = BHU_the_ministry_of_economic_affairs }
@@ -771,7 +773,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = BHU_a_minor_headache
-		cost = 1.45
+		cost = 1
 		
 		
 		prerequisite = { focus = BHU_a_minor_headache }
@@ -797,7 +799,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = BHU_a_minor_headache
-		cost = 1.45
+		cost = 2
 		
 		
 		prerequisite = { focus = BHU_a_minor_headache focus = BHU_a_fresh_breeze }
@@ -823,7 +825,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = BHU_a_fresh_breeze
-		cost = 1.45
+		cost = 1
 		
 		
 		prerequisite = { focus = BHU_a_fresh_breeze }
@@ -849,7 +851,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = BHU_mopping_out_disloyalty
-		cost = 1.45
+		cost = 2
 		
 		
 		prerequisite = { focus = BHU_mopping_out_disloyalty }
@@ -876,15 +878,15 @@ focus_tree = {
 		x = 8
 		y = 1
 		relative_position_id = BHU_laying_the_groundworks
-		cost = 2.89
+		cost = 2
 		
 		prerequisite = { focus = BHU_laying_the_groundworks }
 		available = {
 
 		}
 		
-		bypass = {
-
+		allow_branch = {
+			has_country_flag = init_focus_done
 		}
 
 		cancel_if_invalid = yes
@@ -901,7 +903,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_the_countryside_on_fire
-		cost = 2.89
+		cost = 3
 		
 		prerequisite = { focus = BHU_the_countryside_on_fire }
 		available = {
@@ -927,7 +929,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = BHU_reports_from_our_men
-		cost = 2.89
+		cost = 2
 		
 		prerequisite = { focus = BHU_reports_from_our_men }
 		available = {
@@ -952,7 +954,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = BHU_reports_from_our_men
-		cost = 2.89
+		cost = 2
 		
 		prerequisite = { focus = BHU_reports_from_our_men }
 		available = {
@@ -977,7 +979,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_searching_for_the_rebels
-		cost = 2.89
+		cost = 2
 		
 		prerequisite = { focus = BHU_searching_for_the_rebels }
 		available = {
@@ -1002,7 +1004,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_weapons_from_ahof
-		cost = 2.89
+		cost = 2
 		
 		prerequisite = { focus = BHU_weapons_from_ahof }
 		available = {
@@ -1027,7 +1029,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_the_loyalist_network
-		cost = 2.89
+		cost = 2
 		
 		prerequisite = { focus = BHU_the_loyalist_network }
 		available = {
@@ -1052,7 +1054,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_a_curfew_in_the_east
-		cost = 2.89
+		cost = 2
 		
 		prerequisite = { focus = BHU_a_curfew_in_the_east }
 		available = {
@@ -1080,7 +1082,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = BHU_securing_our_roads
-		cost = 2
+		cost = 3
 		
 		prerequisite = {  focus = BHU_securing_our_roads }
 		prerequisite = { focus = BHU_a_bounty_on_the_head }	
@@ -1112,7 +1114,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BHU_enforcing_the_mcmahon_line
-		cost = 2
+		cost = 1
 		
 		prerequisite = {  focus = BHU_enforcing_the_mcmahon_line }
 		
@@ -1161,7 +1163,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = BHU_the_model_province_of_india
-		cost = 3.65
+		cost = 4.34
 		
 		
 		prerequisite = {  focus = BHU_the_model_province_of_india }
@@ -1193,7 +1195,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = BHU_dream_over_the_thimphu_valley
-		cost = 1.45
+		cost = 2
 		
 		
 		prerequisite = { focus = BHU_dream_over_the_thimphu_valley }

@@ -57,7 +57,7 @@ add_ideas = {
 	#POLITICAL
 	tno_political_parties_one_party_state
 	tno_religious_rights_suppression_of_churches
-	tno_trade_unions_illegal
+	tno_trade_unions_state_controlled
 	tno_immigration_quota_immigration
 	tno_slavery_penal_labor
 	tno_public_meetings_outlawed

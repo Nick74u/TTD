@@ -461,31 +461,6 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 			factor = 5000
 		}
 	}
-	BHU_monthly_garrison_check = {		
-
-		icon = GFX_decision_generic_document		
-		
-		days_mission_timeout = 30	
-		is_good = yes
-		activation = {
-			always = no
-		}
-		available = {		
-			always = no
-		}
-		fire_only_once = yes	
-		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.ssssssss
-			tag = BHU
-			has_country_flag = BHU_show_garrison_gui
-		}
-		timeout_effect = {	
-			BHU_calculate_garrison = yes
-			activate_mission = BHU_monthly_garrison_check
-		}
-		complete_effect = {		#The effects to execute once the envelope icon is clicked.
-			custom_effect_tooltip = "BHU_garrison_check"
-		}
-	}	
 	BHU_monthly_convoy_arrival = {		
 
 		icon = GFX_decision_generic_document		
@@ -548,6 +523,31 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 		complete_effect = {		#The effects to execute once the envelope icon is clicked.
 			
 			
+		}
+	}	
+	BHU_monthly_garrison_check = {		
+
+		icon = GFX_decision_generic_document		
+		
+		days_mission_timeout = 30	
+		is_good = yes
+		activation = {
+			always = no
+		}
+		available = {		
+			always = no
+		}
+		fire_only_once = yes	
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.ssssssss
+			tag = BHU
+			has_country_flag = BHU_show_garrison_gui
+		}
+		timeout_effect = {	
+			BHU_calculate_garrison = yes
+			activate_mission = BHU_monthly_garrison_check
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = "BHU_garrison_check"
 		}
 	}	
 }
