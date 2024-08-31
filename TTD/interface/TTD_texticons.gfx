@@ -20,4 +20,14 @@ spriteTypes = {
 		texturefile = "gfx/texticons/BHU_texticon_morale.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_bookmark_NEP"
+		texturefile = "gfx/texticons/bookmarks/texticon_bookmark_NEP.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_bookmark_BHU"
+		texturefile = "gfx/texticons/bookmarks/texticon_bookmark_BHU.dds"
+		legacy_lazy_load = no
+	}
 }

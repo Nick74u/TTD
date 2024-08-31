@@ -607,7 +607,7 @@ bookmarks = {
 		## CPS ##
 		"ZZZ" = { minor = yes history = "" }
 
-		"ZZZ" = { minor = yes history = "" }
+		"NEP" = { minor = yes history = "" }
 		
 		"ZZZ" = { minor = yes history = "" }
 		## CPS ##

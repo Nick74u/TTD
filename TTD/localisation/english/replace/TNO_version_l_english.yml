@@ -1,6 +1,6 @@
 ﻿l_english:
  # Format - TNO vMajorVersion.ContentUpdate.PatchNumber(Hotfix Letter) - Content Update Name
- tno_current_version:0 "TSJ v0.0.1 - §YNever§! §OReleasing§!"
+ tno_current_version:0 "TSJ v0.0.1 - §YNever§! §OReleasing§! §YDev Build§!"
  # Format - Date of most recent update - Hotfix Or Patch Contents
  tno_current_version_date:0 "§YAugust 9th, 2024 - So Far From God§!"
 

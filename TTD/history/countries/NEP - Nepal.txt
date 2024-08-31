@@ -16,7 +16,7 @@ recruit_character = NEP_Padma_Bahadura_Khatri
 recruit_character = NEP_Rishikesh_Shah
 
 
-oob = "NEP_1962"
+oob = "TTD_NEP"
 set_country_flag = tno_playable_country
 set_politics = {
 	ruling_party = despotism

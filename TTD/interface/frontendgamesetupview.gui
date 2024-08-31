@@ -929,6 +929,11 @@ guiTypes = {
 			pdx_tooltip = "BOOKMARK_BHUTAN_BLOCKER"
 			pdx_tooltip_delayed = "BOOKMARK_BHUTAN_BLOCKER_DELAYED"
 		}
+		iconType = {
+			name = "countries_clickcover_sphere_2"
+			position = { x = 800 y = 325 }
+			spriteType = "GFX_country_selection_clickcover_singleentry"
+		}
 		iconType = { # Nepal BLOCKED ENTRY
 			name = "countries_blocker_sphere_2_2_entry"
 			position = { x = 855 y = 325 }

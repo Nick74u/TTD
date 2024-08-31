@@ -1,0 +1,36 @@
+﻿division_template = {
+	name = "Nepali Royal Guard"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+units = {
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 16379 # capital
+		division_template = "Nepali Royal Guard"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 16379 # capital
+		division_template = "Nepali Royal Guard"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+}
