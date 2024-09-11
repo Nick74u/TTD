@@ -18,4 +18,18 @@ on_actions = {
 			}
 		}
 	}
+	on_monthly_BHU = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = BHU_show_garrison_gui
+				}
+				add_to_variable = { Meter_garrison_bar_supply_value = convoy_supply_arrival }
+				BHU_add_garrison_var = yes
+				BHU_garrison_morale_monthly_change = yes
+				BHU_garrison_morale_change = yes
+				BHU_calculate_garrison = yes
+			}
+		}
+	}
 }

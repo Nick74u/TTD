@@ -14,7 +14,7 @@ state={
 
 		}
 		victory_points = { 8010 10 }
-		victory_points = { 16383 5 }
+		victory_points = { 16383 15 }
 		add_core_of = BHU
 
 	}

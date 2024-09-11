@@ -35,7 +35,7 @@ set_popularities = {
 }
 
 
-set_stability = .98
+set_stability = .55
 country_lock_all_division_template = yes
 complete_national_focus = BHU_removing_the_rubble
 complete_national_focus = BHU_in_azad_hind_vision
@@ -45,7 +45,7 @@ add_ideas = {
 	#DIPLO
 	Sphere_Coequal
 	#STARTING
-	BHU_Under_the_Azad_Hind_boot
+	BHU_a_burden
 	BHU_A_Dragon_Restless
 	BHU_a_general_and_his_army
 	BHU_The_Northern_Frontier

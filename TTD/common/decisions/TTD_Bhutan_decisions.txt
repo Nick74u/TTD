@@ -258,6 +258,23 @@ bhutan_meeting_category = {
 }
 bhutan_garrison_category = {		#Name of category that descisions will appear under, decisions MUST have a category to work properly.
 	
+	BHU_garrison_check = {		
+
+		icon = GFX_decision_generic_document		
+		
+		activation = {
+			always = no
+		}
+		available = {		
+			always = no
+		}
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.ssssssss
+			tag = BHU
+			has_country_flag = BHU_show_garrison_gui
+		}
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+		}
+	}	
 	BHU_garrison_decision_1 = {		#ID of the decision, must not contain spaces!
 
 		icon = GFX_decision_generic_document		#The left side icon to show for this decision.
@@ -405,32 +422,6 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 			factor = 5000
 		}
 	}
-	bhutan_garrison_morale_changes_decision = {		
-		icon = GFX_decision_generic_document		
-		
-		days_mission_timeout = 30	
-		is_good = no
-		activation = {
-			always = no
-		}
-		available = {		
-			always = no
-		}
-		fire_only_once = yes	
-		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.ssssssss
-			tag = BHU
-			has_country_flag = BHU_show_garrison_gui
-		}
-		timeout_effect = {	
-			BHU_garrison_morale_monthly_change = yes
-			BHU_garrison_morale_change = yes
-			
-			activate_mission = bhutan_garrison_morale_changes_decision
-		}
-		complete_effect = {		#The effects to execute once the envelope icon is clicked.
-			custom_effect_tooltip = "BHU_morale_changes_each_month"
-		}
-	}	
 	BHU_secure_cona = {
 
 		icon = GFX_decision_generic_document
@@ -461,32 +452,6 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 			factor = 5000
 		}
 	}
-	BHU_monthly_convoy_arrival = {		
-
-		icon = GFX_decision_generic_document		
-		
-		days_mission_timeout = 30	
-		is_good = yes
-		activation = {
-			always = no
-		}
-		available = {		
-			always = no
-		}
-		fire_only_once = yes	
-		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.ssssssss
-			tag = BHU
-			has_country_flag = BHU_show_garrison_gui
-		}
-		timeout_effect = {	
-			add_to_variable = { Meter_garrison_bar_supply_value = convoy_supply_arrival }
-			custom_effect_tooltip = "BHU_convoy_arrival"
-			BHU_add_garrison_var = yes
-			activate_mission = BHU_monthly_convoy_arrival
-		}
-		complete_effect = {		#The effects to execute once the envelope icon is clicked.
-		}
-	}	
 	BHU_wangchuck_causes_trouble = {		
 
 		icon = GFX_decision_generic_document		
@@ -525,29 +490,5 @@ bhutan_garrison_category = {		#Name of category that descisions will appear unde
 			
 		}
 	}	
-	BHU_monthly_garrison_check = {		
-
-		icon = GFX_decision_generic_document		
-		
-		days_mission_timeout = 30	
-		is_good = yes
-		activation = {
-			always = no
-		}
-		available = {		
-			always = no
-		}
-		fire_only_once = yes	
-		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.ssssssss
-			tag = BHU
-			has_country_flag = BHU_show_garrison_gui
-		}
-		timeout_effect = {	
-			BHU_calculate_garrison = yes
-			activate_mission = BHU_monthly_garrison_check
-		}
-		complete_effect = {		#The effects to execute once the envelope icon is clicked.
-			custom_effect_tooltip = "BHU_garrison_check"
-		}
-	}	
+	
 }

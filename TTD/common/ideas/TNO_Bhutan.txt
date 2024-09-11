@@ -1,7 +1,7 @@
 ideas = {
 	country = {
-		BHU_Under_the_Azad_Hind_boot = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_Under_the_Azad_Hind_boot" }
+		BHU_a_burden = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_a_burden" }
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
@@ -10,6 +10,8 @@ ideas = {
 
 			modifier = {
 				custom_modifier_tooltip = BHU_Transitional_Military_Occupation_tt
+				free_production_units_modifier = 3
+				misc_income_modifier = 0.01
 			}
 		}
 		BHU_A_Dragon_Restless = {
@@ -49,8 +51,7 @@ ideas = {
 			modifier = {
 				custom_modifier_tooltip = BHU_no_hope_in_the_east_tt
 				stability_weekly_factor = 0.002
-				free_production_units_modifier = 3
-				misc_income_modifier = 0.01
+				
 			}
 		}
 		BHU_The_Northern_Frontier = {
