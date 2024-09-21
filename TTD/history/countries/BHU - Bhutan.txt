@@ -1,4 +1,4 @@
-capital = 324
+capital = 2020
 
 # Vacant
 recruit_character = BHU_Generic_Vacant

@@ -152,6 +152,19 @@ country_event = { #a
 		
 	}
 }
+country_event = { #Change capital to Thimphu
+	id = bhutan_focus_event.12
+	title = bhutan_focus_event.12.t
+	desc = bhutan_focus_event.12.d
+	is_triggered_only = yes
+	
+	option = { # 
+		name = bhutan_focus_event.12.a
+		set_capital = {
+			state = 324
+		}
+	}
+}
 
 country_event = {
 	id = bhutan_border_skirmish.1

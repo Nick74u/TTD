@@ -3,7 +3,7 @@ capital = 1349
 # Vacant
 recruit_character = AZH_Generic_Vacant
 
-recruit_character = AZH_Subhas_Chandra_Bose_patsub
+recruit_character = AZH_Subhas_Chandra_Bose
 recruit_character = AZH_Lakshmi_Sahgal
 recruit_character = AZH_John_Thivy
 recruit_character = AZH_Mohan_Singh
@@ -249,10 +249,7 @@ add_ideas = {
 	AZH_The_Language_Problem
 	AZH_What_Is_Subhasism
 	#MINISTERS
-	AZH_Mohan_Singh_sec
-	AZH_John_Thivy_eco
-	AZH_Leela_Roy_for
-	AZH_Lakshmi_Sahgal_hog
+	
 	#POLITICAL
 	tno_political_parties_controlled_opposition
 	tno_religious_rights_state_atheism

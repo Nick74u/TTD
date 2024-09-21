@@ -515,7 +515,7 @@
  STATE_322: "Mnga' Ris"
  STATE_322_chi: "Ngari"
  STATE_323: "Doti"
- STATE_324: "Punakha"
+ STATE_324: "Thimphu"
  STATE_325: "Kunming"
  STATE_326: "Hong Kong"
  STATE_326_gng_jap: "Honkon"
@@ -2686,7 +2686,8 @@
  STATE_2016: "Bumthang"
  STATE_2017: "Trashiyangtse"
  STATE_2018: "Chukha"
-  STATE_2019: "Trashigang"
+ STATE_2019: "Trashigang"
+ STATE_2020: "Punakha"
 
  ##Dynamic state names for KKKmerica no I'm not gonna put them in order fuck imperialism
  STATE_629_kkk: "THE 50TH STATE, HAWAII"

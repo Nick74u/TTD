@@ -1627,6 +1627,7 @@ TNO_setup_cultures = {
 
 	#Ngalop
 	set_variable = { 324.nationality = 215 }
+	set_variable = { 2020.nationality = 215 }
 	#set_variable = { 2016.nationality = 215 }
 	#set_variable = { 2017.nationality = 215 }
 	#set_variable = { 2018.nationality = 215 }

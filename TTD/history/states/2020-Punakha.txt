@@ -1,0 +1,26 @@
+state={
+	id=2020
+	name="STATE_2020"
+	
+	history={
+		owner = BHU
+		buildings = {
+			infrastructure = 2
+			thermoelectric_plant = 1
+
+		}
+		victory_points = {
+			16383 15 
+		}
+		add_core_of = BHU
+
+	}
+	
+	provinces={
+		16383 16384
+	}
+	manpower=5431
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

@@ -1,12 +1,14 @@
 ﻿l_english:
 ##BHUTAN
- state_lore_initials.362: "THI"
- state_lore_name.362: "Thimphu"
- state_lore_desc.362: "Standing atop one of the many grand plateaus of the Himalayan mountain ranges, there sits a city of the valleys and skies. Thimphu was established as a city around the 1640s with its name meaning "to sink and to fly" as reference to the Thimphu valley it was encased in.\n\nThe great city remained a staple trading hub in the region and an example for the surrounding mountain cities to follow. Following many difficult invasions, the region found itself at a crossroad between the Indians and Tibetans, with both being vastly differant cultures, both seeking to take control of the strategically important city.\n\nIn modern times, the large town proves to be one of the most prominent examples of what ancient Himalayan society and culture looked like. despite the oppressive regimes which have harboured its natural glory, Thimphu stands tall and proud, facing and defeating all challenges thrown at it."
+ state_lore_initials.362: "PNK"
+ state_lore_name.362: "Punakha"
+ state_lore_desc.362: "Once home to the Druk Gyalpo, now the base of operations of Kanwal's Regime."
  
- state_lore_initials.366: "PNK"
- state_lore_name.366: "Punakha"
- state_lore_desc.366: "Once home to the Druk Gyalpo, now the base of operations of Kanwal's Regime."
+ state_lore_initials.366: "THI"
+ state_lore_name.366: "Thimphu"
+ state_lore_desc.366: "Standing atop one of the many grand plateaus of the Himalayan mountain ranges, there sits a city of the valleys and skies. Thimphu was established as a city around the 1640s with its name meaning "to sink and to fly" as reference to the Thimphu valley it was encased in.\n\nThe great city remained a staple trading hub in the region and an example for the surrounding mountain cities to follow. Following many difficult invasions, the region found itself at a crossroad between the Indians and Tibetans, with both being vastly differant cultures, both seeking to take control of the strategically important city.\n\nIn modern times, the large town proves to be one of the most prominent examples of what ancient Himalayan society and culture looked like. despite the oppressive regimes which have harboured its natural glory, Thimphu stands tall and proud, facing and defeating all challenges thrown at it."
+ 
+
 ##NEPAL! NEPAL! NEPAL!
  state_lore_initials.363: "KTH"
  state_lore_name.363: "Kathmandu"
