@@ -86,6 +86,51 @@ bhutan_debug_category = {
 		
 	}
 }
+bhutan_desk_category = {		
+	bhutan_desk_help = {		
+
+		icon = GFX_decision_generic_document		
+		
+		available = {	
+			always = no
+		}
+		
+
+		visible = {		
+			
+		}
+		cost = 0		
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			custom_effect_tooltip = "desk_help_tt"
+		}
+
+	}	
+	bhutan_increase_progress_decision = {		
+
+		icon = GFX_decision_generic_document		
+		
+		available = {		
+			has_country_flag = active_task
+		}
+		
+		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
+		days_re_enable = 1	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
+
+		visible = {		#Conditions to make this decision visible, can be left blank to make it always appear.
+			
+		}
+		cost = 30		#The cost to execute the decision, by default its political power.
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			set_temp_variable = { BHU_desk_task_added_progress = 50 }
+			BHU_add_desk_task_var = yes
+		}
+		ai_will_do = {	#Modifiers for the AI to decide when to execute the decision.
+			factor = 75		
+		}
+	}	
+}
 bhutan_poverty_category = {		
 	bhutan_poverty_decision = {		
 

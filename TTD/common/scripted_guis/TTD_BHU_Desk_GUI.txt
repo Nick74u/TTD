@@ -1,0 +1,130 @@
+scripted_gui = {
+	TTD_BHU_Desk_GUI = {
+		window_name = "TTD_BHU_Desk_GUI"
+		context_type = decision_category
+		dirty = BHU_desk_dirty_variable
+
+		visible = {
+			always = yes
+			tag = BHU
+		}
+
+		effects = {
+			Desk_1_category_frame_click = {
+				
+				if = {
+					limit = {
+						has_country_flag = BHU_Desk_available_selected
+					}
+					clr_country_flag = BHU_Desk_available_selected
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = BHU_Desk_log_selected
+					}
+					clr_country_flag = BHU_Desk_log_selected
+				}
+				set_country_flag = BHU_Desk_active_selected
+				add_to_variable = { BHU_desk_dirty_variable = 0.01 }
+				log = "Bhutan Frame 1 clicked"
+			}
+			Desk_2_category_frame_click = {
+				
+				if = {
+					limit = {
+						has_country_flag = BHU_Desk_active_selected
+					}
+					clr_country_flag = BHU_Desk_active_selected
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = BHU_Desk_log_selected
+					}
+					clr_country_flag = BHU_Desk_log_selected
+				}
+				set_country_flag = BHU_Desk_available_selected
+				add_to_variable = { BHU_desk_dirty_variable = 0.01 }
+				log = "Bhutan Frame 2 clicked"
+			}
+			Desk_3_category_frame_click = {
+				
+				if = {
+					limit = {
+						has_country_flag = BHU_Desk_active_selected
+					}
+					clr_country_flag = BHU_Desk_active_selected
+				}
+				
+				else_if = {
+					limit = {
+						has_country_flag = BHU_Desk_available_selected
+					}
+					clr_country_flag = BHU_Desk_available_selected
+				}
+				set_country_flag = BHU_Desk_log_selected
+				add_to_variable = { BHU_desk_dirty_variable = 0.01 }
+				log = "Bhutan Frame 3 clicked"
+			}
+			BHU_desk_available_task_1_click = {
+				country_event = {
+					id = bhutan_desk_task_event.0
+				}
+			}
+			BHU_desk_available_task_2_click = {
+				country_event = {
+					id = bhutan_desk_task_event.1
+				}
+			}
+		}
+
+		triggers = {
+			###ACTIVE TAB CATEGORY
+			BHU_desk_task_progress_bar_visible = {
+				has_country_flag = BHU_Desk_active_selected
+			}
+			BHU_desk_task_progress_bar_frame_visible = {
+				has_country_flag = BHU_Desk_active_selected
+			}
+			BhutanDeskTaskName_visible = {
+				has_country_flag = BHU_Desk_active_selected
+			}
+			BhutanDeskTaskDesc_visible = {
+				has_country_flag = BHU_Desk_active_selected
+			}
+			###AVAILABLE TAB CATEGORY
+			BhutanDeskTaskAvailableName_visible = {
+				has_country_flag = BHU_Desk_available_selected
+			}
+			BhutanDeskTaskAvailableDesc_visible = {
+				has_country_flag = BHU_Desk_available_selected
+			}
+			BHU_desk_available_task_1_blocked_visible = {
+				check_variable = { BHU_desk_task > 0 }
+				has_country_flag = BHU_Desk_available_selected
+			}
+			BHU_desk_available_task_2_blocked_visible = {
+				check_variable = { BHU_desk_task > 0 }
+				has_country_flag = BHU_Desk_available_selected
+			}
+			BHU_desk_available_task_1_visible = {
+				check_variable = { BHU_desk_task = 0 }
+				has_country_flag = BHU_Desk_available_selected
+			}
+			BHU_desk_available_task_2_visible = {
+				check_variable = { BHU_desk_task = 0 }
+				has_country_flag = BHU_Desk_available_selected
+			}
+		}
+		properties = {
+			Desk_frame_vacant_image = {
+				image = "[BHU_desk_image]"
+			}
+			
+		}
+		properties = {
+			BHU_desk_task_progress_bar = { frame = BHU_desk_task_current_progress }
+		}
+	}
+}

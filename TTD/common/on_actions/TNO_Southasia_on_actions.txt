@@ -6,6 +6,7 @@ on_actions = {
 				country_event = { id = bhutan_flavor.1 days = 4 }		# Introduction
 				BHU_dynamic_modifiers_setup = yes
 				BHU_calculate_garrison = yes
+				set_variable = { BHU_desk_task = 0 }
 			}
 			AZH = {
 				country_event = { id = azad_event.1 days = 1342 }		# Azad-India War

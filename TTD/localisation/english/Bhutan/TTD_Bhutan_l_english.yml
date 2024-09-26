@@ -193,3 +193,45 @@ BHU_Laws_ministry_of_economic_affairs_desc:0 "Cardozo's burger joint"
    TTD_BHU_garrison_supply_desc_tt: "The bread and butter of any army is how well supplied they are. Logistics is the key to victory, and in our case, the way to pacify Bhutan"
    TTD_BHU_garrison_morale_desc_tt: "No army can win a battle without its men, and not only that, they also must be enthusiastic and able to perform their duty"
    
+   
+   #DESK GUI
+
+   Alert_desk_task_ongoing: "The Commander's Desk is active!"
+   Alert_desk_task_ongoing_Desc: "We are able to influence a task"
+   BHU_desk_tt: "The Commander's Desk"
+   BHU_desk_bottom_gui_tt: "Open The Commander's Desk GUI"
+   BHU_desk_category_1_name: "§YActive§!"
+   BHU_desk_category_2_name: "§GAvailable§!"
+   BHU_desk_category_3_name: "§gLog§!"
+   bhutan_desk_help: "§OCommander's Desk Guide§!"
+   desk_help_tt: "Goodluck Finding Out!"
+   BHU_desk_mountain_expertise_tt: "Check our current Mountaineering Expertise"
+   bhutan_desk_category: "Commander's Desk"
+   bhutan_desk_progress_bar_tt: "Current Progress: §W[?BHU_desk_task_current_progress|2]%§!"
+   BHU_desk_vacant_name: "NO ONGOING TASK"
+   BHU_desk_train_mountaineers_name: "Train Mountaineers"
+   BHU_desk_train_construct: "Construction Projects"
+   BHU_add_desk_tab_tt: "A new §Gtask§! will be assigned to our Commander's Desk"
+   BHU_desk_task_progress_change: "Progress will advance by §W[?BHU_desk_task_added_progress|2]%§!"
+   BHU_Desk_task_Name: "[GetTaskName]"
+   BHU_Desk_task_Desc: "[GetTaskDesc]"
+   BHU_Desk_task_available_text: "[GetAvailableStatus]"
+   
+   BHU_desk_task_name_0: "No Active Task"
+   BHU_desk_task_desc_0: "For better or for worse, Kanwal Singh has no immediate task he must attend to. As time goes on, new situations will appear that require our intervention..."
+   BHU_desk_task_name_1: "Training the INA for Mountain Warfare"
+   BHU_desk_task_desc_1: "We are undergoing a massive task to improve the expertise of our comrades who are stationed here. Success will bring upon us a batch of trained soldiers who are capable of navigating the Himalayan Mountains"
+   BHU_desk_task_name_2: "Bhutan Progress Initiative"
+   BHU_desk_task_desc_2: "In this desolate wasteland we acquired, it is our duty to develop and see it prosper. Our top advisers have given us a wide array of projects we can do in order to develop the Bhutanese Economy"
+   
+   
+   BHU_desk_task_blocked_available_category_text: "§RTHERE IS CURRENTLY AN ONGOING TASK!§!"
+   BHU_desk_task_available_category_text: "Select a task above!"
+   available_blocked_tt: "WE ARE BLOCKED FROM ACTIVATING ANOTHER TASK!"
+   available_task_1_tt: "Click to initiate "Train Mountaineers" task!"
+   available_task_2_tt: "Click to initiate "Construction Projects" task!"
+   
+   ##########DESK EVENTS
+   bhutan_desk_task_event.2.t: "Completion on the latest Task"
+   bhutan_desk_task_event.2.d: "With our excellent planning, we have been able to finish a Task"
+   bhutan_desk_task_event.2.a: "A cheers to us!"

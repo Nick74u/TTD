@@ -1,0 +1,10 @@
+
+BHU_desk_mountaineers_active = {
+	OR = {
+		check_variable = { BHU_desk_task_id = token:BHU_trainmountaineers }
+		AND = {
+			is_in_array = { BHU_desk_guis = token:BHU_trainmountaineers }
+			is_ai = yes
+		}
+	}
+}

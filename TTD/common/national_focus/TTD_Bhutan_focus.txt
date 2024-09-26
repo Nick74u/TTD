@@ -243,10 +243,11 @@ focus_tree = {
 
 		completion_reward = {
 			custom_effect_tooltip = BHU_build_from_the_ground_up_tt	
+			set_country_flag = BHU_allow_desk
 			add_ideas = BHU_leap_forward
 			country_event = {
-			id = bhutan_focus_event.2
-			hours = 6
+				id = bhutan_focus_event.2
+				hours = 6
 			}
 			set_temp_variable = { gdp_growth_temp = 0.2 }
 	    	econ_gdp_growth_change = yes
@@ -456,7 +457,7 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_coordinating_with_the_convoy
-		icon = focus_From_Mountains_to_Cities
+		icon = GFX_goal_BHU_coordinating_with_the_convoy
 		x = -2
 		y = 1
 		relative_position_id = BHU_a_train_to_kolkata
@@ -891,7 +892,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
+			TTD_add_BHU_desk_task_train_mountaineers = yes
 		}
 	}
 	focus = {
@@ -1075,7 +1076,7 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_enforcing_the_mcmahon_line
-		icon = focus_From_Mountains_to_Cities
+		icon = GFX_goal_BHU_enforcing_the_mcmahon_line
 		x = -2
 		y = 1
 		relative_position_id = BHU_securing_our_roads

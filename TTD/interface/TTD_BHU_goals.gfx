@@ -80,6 +80,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_BHU_securing_our_roads.dds"			
 	}	
 	SpriteType = {
+		name = "GFX_goal_BHU_enforcing_the_mcmahon_line"
+		texturefile = "gfx/interface/goals/focus_BHU_enforcing_the_mcmahon_line.dds"			
+	}	
+	SpriteType = {
+		name = "GFX_goal_BHU_coordinating_with_the_convoy"
+		texturefile = "gfx/interface/goals/focus_BHU_coordinating_with_the_convoy.dds"			
+	}	
+	SpriteType = {
 	name = "GFX_goal_continuous_reduce_training_time"
 	texturefile = "gfx/interface/goals/goal_continuous_reduce_training_time.dds"			
 	}	

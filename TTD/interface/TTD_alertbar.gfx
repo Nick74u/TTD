@@ -1,0 +1,8 @@
+spriteTypes = {
+	#|=====[ ASIA ]=====|#
+	# Bhutan alerts
+	spriteType = {
+		name = "GFX_TNO_Alert_desk_task_ongoing"
+		texturefile = "gfx/interface/alerts/TNO_BHU_Desk_Alert.dds"
+	}
+}

@@ -1,0 +1,8 @@
+
+defined_text = {
+	name = Get_BHU_desk_task
+	text = {
+		trigger = { check_variable = { active_desk_task = token:BHU_trainmountaineers } }
+		localization_key = "TNO_Indonesian_Civil_War_GUI"
+	}
+}

@@ -1,0 +1,12 @@
+ideas = {
+	#################################################
+	#                  Dummy Ideas                  #
+	#################################################
+
+	#|=====[ Bhutan ]=====|#
+	hidden_ideas = {
+		Alert_desk_task_ongoing = {}
+		Alert_desk_task_ongoing_Desc = {}
+	}
+}
+

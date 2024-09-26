@@ -7,7 +7,64 @@ add_namespace = bhutan_garrison
 add_namespace = bhutan_focus_event
 add_namespace = bhutan_border_skirmish
 add_namespace = bhutan_civil_war
+add_namespace = bhutan_desk_task_event
 
+country_event = {    ####Add Train Mountaineers Task
+	id = bhutan_desk_task_event.0
+	title = bhutan_desk_task_event.0.t
+	desc = bhutan_desk_task_event.0.d
+	
+	is_triggered_only = yes
+	immediate = {
+		TTD_add_BHU_desk_task_train_mountaineers = yes
+	}
+	option = { # paperwork!
+		name = bhutan_desk_task_event.0.a
+		
+	}
+}
+country_event = {    ####Add Construct Task
+	id = bhutan_desk_task_event.1
+	title = bhutan_desk_task_event.1.t
+	desc = bhutan_desk_task_event.1.d
+	
+	is_triggered_only = yes
+	immediate = {
+		TTD_add_BHU_desk_task_construct = yes
+	}
+	option = { # paperwork!
+		name = bhutan_desk_task_event.1.a
+		
+
+	}
+}
+country_event = {    ####Desk Task Finished!
+	id = bhutan_desk_task_event.2
+	title = bhutan_desk_task_event.2.t
+	desc = bhutan_desk_task_event.2.d
+	
+	is_triggered_only = yes
+	
+	option = { # paperwork!
+		name = bhutan_desk_task_event.2.a
+		if = {
+			limit = {
+				has_country_flag = BHU_train_mountaineers
+			}
+			add_manpower = 450
+			clr_country_flag = BHU_train_mountaineers
+		}
+		else_if = {
+			limit = {
+				has_country_flag = BHU_construct
+			}
+			set_temp_variable = { temp_econ_GDP_boost_percentage = 0.004 }
+			econ_GDP_boost_once_percentage = yes
+			clr_country_flag = BHU_construct
+		}
+		BHU_clean_desk_task_var = yes
+	}
+}
 country_event = {    ####Temp flavor chain
 	id = bhutan_flavor.1
 	title = bhutan_flavor.1.t

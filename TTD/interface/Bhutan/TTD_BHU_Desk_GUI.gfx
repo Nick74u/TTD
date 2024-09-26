@@ -1,0 +1,56 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_BHU_desk_Outline_frame"
+		texturefile = "gfx/interface/bhutan_gui/desk/desk_Outline_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_Desk_frame"
+		texturefile = "gfx/interface/bhutan_gui/desk/desk_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_three_category_frame"
+		texturefile = "gfx/interface/bhutan_gui/desk/desk_three_category_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_Mountain_expertise"
+		texturefile = "gfx/interface/bhutan_gui/desk/BHU_Mountain_expertise.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_three_category_Outline_frame"
+		texturefile = "gfx/interface/bhutan_gui/desk/desk_three_category_Outline_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_vacant_image"
+		texturefile = "gfx/interface/bhutan_gui/desk/desk_vacant.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_train_mountaineers_image"
+		texturefile = "gfx/interface/bhutan_gui/desk/desk_train_mountaineers.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_construct_image"
+		texturefile = "gfx/interface/bhutan_gui/desk/desk_construct.dds"
+	}
+		spriteType = {
+		name = "GFX_BHU_train_mountaineers__grayed_image"
+		texturefile = "gfx/interface/bhutan_gui/desk/desk_train_mountaineers_grayed.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_construct_grayed_image"
+		texturefile = "gfx/interface/bhutan_gui/desk/desk_construct_grayed.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_desk_progressbar_frame"
+		texturefile = "gfx/interface/bhutan_gui/desk/BHU_desk_progressbar_frame.dds"
+	}
+	progressbartype = {
+		name = "GFX_BHU_desk_progress_bar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/bhutan_gui/desk/BHU_desk_progress.dds"
+		textureFile2 = "gfx/interface/bhutan_gui/desk/BHU_desk_progress_empty.dds"
+		size = { x = 360 y = 42 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	
+}

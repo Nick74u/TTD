@@ -1,0 +1,11 @@
+ideas = {
+	#################################################
+	#                  Dummy Ideas                  #
+	#################################################
+
+	hidden_ideas = {
+		BHU_trainmountaineers = {} # Train Mountaineers
+		BHU_hunttherebels = {} # Hunt the Bhotamuzh
+	}
+}
+

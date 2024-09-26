@@ -115,3 +115,127 @@ defined_text = {
 		localization_key = BHU_road_number_text_gui
 	}
 }
+
+##Bhutan Desk GUI
+
+######ACTIVE CATEGORY
+defined_text = {
+	name = BHU_desk_category_1
+	text = {
+		localization_key = BHU_desk_category_1_name
+	}
+}
+defined_text = {
+	name = BHU_desk_category_2
+	text = {
+		localization_key = BHU_desk_category_2_name
+	}
+}
+defined_text = {
+	name = BHU_desk_category_3
+	text = {
+		localization_key = BHU_desk_category_3_name
+	}
+}
+defined_text = {
+	name = BHU_desk_image_text
+	text = {
+        trigger = {
+            check_variable = { BHU_desk_task = 0 }
+        }
+        localization_key = "BHU_desk_vacant_name"
+    }
+	text = {
+        trigger = {
+            check_variable = { BHU_desk_task = 1 }
+        }
+        localization_key = "BHU_desk_train_mountaineers_name"
+    }
+	text = {
+        trigger = {
+            check_variable = { BHU_desk_task = 2 }
+        }
+        localization_key = "BHU_desk_train_construct"
+    }
+}
+defined_text = {
+    name = BHU_desk_image
+    
+    text = {
+        trigger = {
+            check_variable = { BHU_desk_task = 0 }
+        }
+        localization_key = "GFX_BHU_vacant_image"
+    }
+    text = {
+        trigger = {
+            check_variable = { BHU_desk_task = 1 }
+        }
+        localization_key = "GFX_BHU_train_mountaineers_image"
+    }
+	text = {
+        trigger = {
+            check_variable = { BHU_desk_task = 2 }
+        }
+        localization_key = "GFX_BHU_construct_image"
+    }
+}
+defined_text = {
+	name = GetTaskName
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_task = 0 }
+		}
+		localization_key = BHU_desk_task_name_0
+	}
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_task = 1 }
+		}
+		localization_key = BHU_desk_task_name_1
+	}
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_task = 2 }
+		}
+		localization_key = BHU_desk_task_name_2
+	}
+}
+defined_text = {
+	name = GetTaskDesc
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_task = 0 }
+		}
+		localization_key = BHU_desk_task_desc_0
+	}
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_task = 1 }
+		}
+		localization_key = BHU_desk_task_desc_1
+	}
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_task = 2 }
+		}
+		localization_key = BHU_desk_task_desc_2
+	}
+}
+
+######AVAILABLE CATEGORY
+defined_text = {
+	name = GetAvailableStatus
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_task > 0 }
+		}
+		localization_key = BHU_desk_task_blocked_available_category_text
+	}
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_task = 0 }
+		}
+		localization_key = BHU_desk_task_available_category_text
+	}
+}

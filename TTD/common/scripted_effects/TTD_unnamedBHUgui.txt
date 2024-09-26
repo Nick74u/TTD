@@ -1,0 +1,63 @@
+
+TTD_add_BHU_desk_task = {
+	set_variable = { BHU_desk_task_current_progress = 0 }
+	set_country_flag = active_task
+	custom_effect_tooltip = BHU_add_desk_tab_tt
+	#if = {
+	#	limit = { NOT = { is_in_array = { BHU_desk_active_task = BHU_task } } }
+	#	add_to_array = { BHU_desk_task = BHU_task }
+	#
+	#	set_variable = { BHU_desk_task_id = BHU_task }
+	#	clear_array = BHU_desk_guis
+	#	add_to_array = { BHU_desk_guis = BHU_desk_task_id }
+	#}
+	set_temp_variable = { alert_id = token:Alert_desk_task_ongoing }
+	add_TNO_alert_unless_exists = yes
+}
+
+BHU_add_desk_task_var= {
+	clamp_variable = {
+		var = BHU_desk_task_added_progress
+		min = 0
+		max = 100
+	}
+	custom_effect_tooltip = BHU_desk_task_progress_change
+	add_to_variable = { BHU_desk_task_current_progress = BHU_desk_task_added_progress }
+	BHU_check_desk_task_var = yes
+}	
+BHU_check_desk_task_var= {
+	if = {
+		limit = {
+			check_variable = { BHU_desk_task_current_progress = 100 }
+		}
+
+		BHU = {
+			country_event = {
+				id = bhutan_desk_task_event.2
+			}
+		}
+	}
+	log = "Checked BHU_var"
+	add_to_variable = { BHU_desk_dirty_variable = 0.01 }
+}	
+BHU_clean_desk_task_var= {
+	set_variable = { BHU_desk_task_current_progress = 0 }
+	set_variable = { BHU_desk_task = 0 }
+	add_to_variable = { BHU_desk_dirty_variable = 0.01 }
+}	
+####BHUTAN DESK TASKS
+
+TTD_add_BHU_desk_task_train_mountaineers = {
+	set_variable = { BHU_desk_task = 1 }
+	set_country_flag = BHU_train_mountaineers
+	add_to_variable = { BHU_desk_dirty_variable = 0.01 }
+	TTD_add_BHU_desk_task = yes
+	log = "BHU = Added desk_task Train Mountaineers"
+}
+TTD_add_BHU_desk_task_construct = {
+	set_variable = { BHU_desk_task = 2 }
+	set_country_flag = BHU_construct
+	add_to_variable = { BHU_desk_dirty_variable = 0.01 }
+	TTD_add_BHU_desk_task = yes
+	log = "BHU = Added desk_task Construct"
+}

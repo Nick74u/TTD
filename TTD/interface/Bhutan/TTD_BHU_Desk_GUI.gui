@@ -1,0 +1,203 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TTD_BHU_Desk_GUI"
+		size = { width = 220 height = 600 }
+		position = { x = 0 y = 0 }
+		Orientation = center
+		Origo = center
+		orientation = center
+		click_to_front = no
+		
+		iconType = {
+			name = "Desk_Outline"
+			spriteType = "GFX_BHU_desk_Outline_frame"
+			position = { x = 35 y = 0 } 
+		}
+		containerWindowType = {
+			name = "TTD_BHU_Desk_GUI_desk_frame_window"
+			size = { width = 220 height = 603 }
+			position = { x = 0 y = 40 }
+		
+			iconType = {
+				name = "Desk_frame_image"
+				spriteType = "GFX_BHU_Desk_frame"
+				position = { x = 150 y = -30 } 
+			}
+			iconType = {
+				name = "Desk_frame_vacant_image"
+				spriteType = "GFX_BHU_vacant_image"
+				position = { x = 150 y = -30 } 
+			}
+		}
+		
+		instantTextBoxType = {
+			name = "BhutanDeskVacantImageName"
+			position = { x = 165 y = 55 }
+			maxWidth = 250
+			maxHeight = 24
+			font = "aldrich_24_outline"
+			text = [BHU_desk_image_text]
+		}
+		containerWindowType = {
+			name = "BHU_desk_category_1_box"
+			position = { x = 17 y = 90 }
+			
+			buttonType = {
+				name = "Desk_1_category_frame"
+				spriteType = "GFX_BHU_three_category_frame"
+				position = { x = 35 y = 35 } 
+			}
+			instantTextBoxType = {
+				name = "BhutanDesk1Name"
+				position = { x = -85 y = 45 }
+				maxWidth = 345
+				maxHeight = 20
+				format = center 
+				font = "aldrich_24_outline"
+				text = [BHU_desk_category_1]
+			}
+			
+		}
+		containerWindowType = {
+			name = "BHU_desk_category_2_box"
+			position = { x = 17 y = 90 }
+			
+			buttonType = {
+				name = "Desk_2_category_frame"
+				spriteType = "GFX_BHU_three_category_frame"
+				position = { x = 200 y = 35 } 
+			}
+			instantTextBoxType = {
+				name = "BhutanDesk2Name"
+				position = { x = 80 y = 45 }
+				maxWidth = 345
+				maxHeight = 20
+				format = center 
+				font = "aldrich_24_outline"
+				text = [BHU_desk_category_2]
+			}
+			
+		}
+		containerWindowType = {
+			name = "BHU_desk_category_3_box"
+			position = { x = 17 y = 90 }
+			
+			buttonType = {
+				name = "Desk_3_category_frame"
+				spriteType = "GFX_BHU_three_category_frame"
+				position = { x = 350 y = 35 } 
+			}
+			instantTextBoxType = {
+				name = "BhutanDesk3Name"
+				position = { x = 385 y = 45 }
+				maxWidth = 345
+				maxHeight = 20
+				font = "aldrich_24_outline"
+				text = [BHU_desk_category_3]
+			}
+			
+		}
+		buttonType = {
+			name = "Mountain_expertise_button"
+			spriteType = "GFX_BHU_Mountain_expertise"
+			position = { x = 435 y = 35 } 
+			pdx_tooltip = BHU_desk_mountain_expertise_tt
+		}
+		containerWindowType = {
+			name = "TTD_BHU_Desk_GUI_three_category_outline_window"
+			size = { width = 220 height = 603 }
+			
+			position = { x = 0 y = 40 }
+		
+			iconType = {
+				name = "Desk_active_Outline"
+				spriteType = "GFX_BHU_three_category_Outline_frame"
+				position = { x = 60 y = 135 } 
+			}
+		}
+		containerWindowType = {
+			name = "TTD_BHU_Desk_GUI_three_category_active_window"
+			size = { width = 220 height = 603 }
+			position = { x = 0 y = 40 }
+		
+			containerWindowType = {
+				name = "TTD_BHU_Desk_GUI_progressbar_window"
+				size = { width = 188 height = 14 }
+				position = { x = 0 y = -60 }
+				
+				iconType = {
+					name = "BHU_desk_task_progress_bar"
+					spriteType = "GFX_BHU_desk_progress_bar"
+					position = { x = 85 y = 225 }
+				}
+				iconType = {
+					name = "BHU_desk_task_progress_bar_frame"
+					spriteType = "GFX_BHU_desk_progressbar_frame"
+					position = { x = 85 y = 225 }
+					pdx_tooltip = bhutan_desk_progress_bar_tt
+				}
+			}
+			instantTextBoxType = {
+				name = "BhutanDeskTaskName"
+				position = { x = 80 y = 215 }
+				maxWidth = 345
+				maxHeight = 20
+				format = center 
+				font = "aldrich_24_outline"
+				text = "BHU_Desk_task_Name"
+			}
+			instantTextBoxType = {
+				name = "BhutanDeskTaskDesc"
+				position = { x = 80 y = 300 }
+				font = "aldrich_16_outline"
+				format = left
+				maxHeight = 300
+				maxWidth = 350
+				scrollbarType = standardtext_slider
+				text = "BHU_Desk_task_Desc"
+			}
+			
+		}
+		
+		containerWindowType = {
+			name = "TTD_BHU_Desk_GUI_three_category_available_window"
+			size = { width = 220 height = 603 }
+			
+			position = { x = 0 y = 40 }
+			
+			instantTextBoxType = {
+				name = "BhutanDeskTaskAvailableName"
+				position = { x = 80 y = 480 }
+				maxWidth = 345
+				maxHeight = 20
+				format = center 
+				font = "aldrich_24_outline"
+				text = "BHU_Desk_task_available_text"
+			}
+			iconType = {
+				name = "BHU_desk_available_task_1_blocked"
+				spriteType = "GFX_BHU_train_mountaineers__grayed_image"
+				position = { x = 150 y = 150 }
+				pdx_tooltip = available_blocked_tt
+			}
+			iconType = {
+				name = "BHU_desk_available_task_2_blocked"
+				spriteType = "GFX_BHU_construct_grayed_image"
+				position = { x = 150 y = 350 }
+				pdx_tooltip = available_blocked_tt
+			}
+			buttonType = {
+				name = "BHU_desk_available_task_1"
+				spriteType = "GFX_BHU_train_mountaineers_image"
+				position = { x = 150 y = 150 }
+				pdx_tooltip = available_task_1_tt
+			}
+			buttonType = {
+				name = "BHU_desk_available_task_2"
+				spriteType = "GFX_BHU_construct_image"
+				position = { x = 150 y = 350 }
+				pdx_tooltip = available_task_2_tt
+			}
+		}
+	}
+}
