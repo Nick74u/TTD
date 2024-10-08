@@ -11,4 +11,8 @@ spriteTypes = {
 		name = "GFX_idea_BHU_INA_keepingorder"
 		texturefile = "gfx/interface/ideas/national_spirits/Asia/BHU/idea_BHU_INA2.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_BHU_INA_shattered"
+		texturefile = "gfx/interface/ideas/national_spirits/Asia/BHU/idea_BHU_INA0.dds"
+	}
 }

@@ -7,6 +7,7 @@ BHU_dynamic_modifiers_setup = {
 	set_variable = { convoy_supply_arrival = 10 }
 	add_to_variable = { convoy_supply_arrival = this.modifier@BHU_min_convoy_supply_arrival }
 	BHU_add_garrison_var = yes
+	set_country_flag = BHU_Desk_active_selected
 }
 BHU_convoy_supply_change = {
 	add_to_variable = { convoy_supply_arrival = convoy_supply_arrival_temp }

@@ -77,6 +77,35 @@ scripted_gui = {
 					id = bhutan_desk_task_event.1
 				}
 			}
+			BHU_desk_available_task_3_click = {
+				country_event = {
+					id = bhutan_desk_task_event.2
+				}
+			}
+			Desk_Available_Special_frame_click = {
+				
+				if = {
+					limit = {
+						has_country_flag = BHU_Desk_Generic_selected
+					}
+					clr_country_flag = BHU_Desk_Generic_selected
+				}
+				set_country_flag = BHU_Desk_Special_selected
+				add_to_variable = { BHU_desk_dirty_variable = 0.01 }
+				log = "Bhutan Special clicked"
+			}
+			Desk_Available_Generic_frame_click = {
+				
+				if = {
+					limit = {
+						has_country_flag = BHU_Desk_Special_selected
+					}
+					clr_country_flag = BHU_Desk_Special_selected
+				}
+				set_country_flag = BHU_Desk_Generic_selected
+				add_to_variable = { BHU_desk_dirty_variable = 0.01 }
+				log = "Bhutan Generic clicked"
+			}
 		}
 
 		triggers = {
@@ -100,23 +129,57 @@ scripted_gui = {
 			BhutanDeskTaskAvailableDesc_visible = {
 				has_country_flag = BHU_Desk_available_selected
 			}
-			BHU_desk_available_task_1_blocked_visible = {
-				check_variable = { BHU_desk_task > 0 }
+			Desk_Available_Generic_frame_visible = {
 				has_country_flag = BHU_Desk_available_selected
 			}
-			BHU_desk_available_task_2_blocked_visible = {
-				check_variable = { BHU_desk_task > 0 }
+			Desk_Available_Special_frame_visible = {
 				has_country_flag = BHU_Desk_available_selected
 			}
-			BHU_desk_available_task_1_visible = {
-				check_variable = { BHU_desk_task = 0 }
+			BhutanDeskGenericName_visible = {
 				has_country_flag = BHU_Desk_available_selected
 			}
-			BHU_desk_available_task_2_visible = {
-				check_variable = { BHU_desk_task = 0 }
+			BhutanDeskSpecialName_visible = {
 				has_country_flag = BHU_Desk_available_selected
 			}
+			
+			BHU_task_generic_list_visible = {
+			
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Generic_selected
+			}
+			BHU_list_image_dyn_visible = {
+			
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Generic_selected
+			}
+			task_list_start_button_frame_visible = {
+				
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Generic_selected
+			}
+			task_list_start_button_visible = {
+			
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Generic_selected
+				NOT = {
+					has_country_flag = active_task
+					check_variable = { BHU_task_cooldown > 0 }
+				}
+			}
+			BhutanTaskListStartName_visible = {
+				
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Generic_selected
+			}
+			BhutanTaskListName_visible = {
+			
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Generic_selected
+			}
+			
 		}
+		#AVAILABLE SECTION
+		
 		properties = {
 			Desk_frame_vacant_image = {
 				image = "[BHU_desk_image]"
@@ -125,6 +188,87 @@ scripted_gui = {
 		}
 		properties = {
 			BHU_desk_task_progress_bar = { frame = BHU_desk_task_current_progress }
+		}
+		effects = {
+			task_list_start_button_click = {
+				TTD_start_desk_task = yes
+				log = "Desk task Initiated"
+			}
+		}
+		dynamic_lists = {
+			BHU_task_generic_list = {
+					#The array to use. Will call a gui for each index.
+					array = task_list
+
+					#value of the current array index. Optional. Default value is v.
+					value = v
+
+					#current array index. Optional. Default value is i.
+					index = i
+					
+					#This will change the scope to the value if yes
+					change_scope = no
+
+					#The GUI drawn for each index
+					entry_container = BHU_gentask_Array
+			}
+		}
+		properties = {
+			BHU_list_image_dyn = {
+				image = "[BHU_Desk_Get_Task]"
+			}
+			
+		}
+	}
+	BHU_gentask_Array = {
+	
+		context_type = decision_category
+
+		window_name = "BHU_desk_generic_task_list_Window"
+		
+		visible = {
+			has_country_flag = BHU_Desk_Generic_selected
+			has_country_flag = BHU_Desk_available_selected
+		}
+
+		
+		
+		triggers = {
+			BHU_list_image_dyn_visible = {
+			
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Generic_selected
+			}
+			task_list_start_button_frame_visible = {
+				
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Generic_selected
+			}
+			task_list_start_button_visible = {
+			
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Generic_selected
+				NOT = {
+					has_country_flag = active_task
+					check_variable = { BHU_task_cooldown > 0 }
+				}
+			}
+			BhutanTaskListStartName_visible = {
+				
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Generic_selected
+			}
+			BhutanTaskListName_visible = {
+			
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Generic_selected
+			}
+		}
+		effects = {
+			task_list_start_button_click = {
+				TTD_start_desk_task = yes
+				log = "Desk task Initiated"
+			}
 		}
 	}
 }

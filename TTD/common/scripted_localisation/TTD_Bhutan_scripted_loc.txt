@@ -157,6 +157,12 @@ defined_text = {
         }
         localization_key = "BHU_desk_train_construct"
     }
+	text = {
+        trigger = {
+            check_variable = { BHU_desk_task = 3 }
+        }
+        localization_key = "BHU_desk_land_survey"
+    }
 }
 defined_text = {
     name = BHU_desk_image
@@ -179,6 +185,12 @@ defined_text = {
         }
         localization_key = "GFX_BHU_construct_image"
     }
+	text = {
+        trigger = {
+            check_variable = { BHU_desk_task = 3 }
+        }
+        localization_key = "GFX_BHU_land_survey_image"
+    }
 }
 defined_text = {
 	name = GetTaskName
@@ -199,6 +211,12 @@ defined_text = {
 			check_variable = { BHU_desk_task = 2 }
 		}
 		localization_key = BHU_desk_task_name_2
+	}
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_task = 3 }
+		}
+		localization_key = BHU_desk_task_name_3
 	}
 }
 defined_text = {
@@ -221,6 +239,12 @@ defined_text = {
 		}
 		localization_key = BHU_desk_task_desc_2
 	}
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_task = 3 }
+		}
+		localization_key = BHU_desk_task_desc_3
+	}
 }
 
 ######AVAILABLE CATEGORY
@@ -228,14 +252,35 @@ defined_text = {
 	name = GetAvailableStatus
 	text = {
 		trigger = {
-			check_variable = { BHU_desk_task > 0 }
+			AND = {
+				check_variable = { BHU_desk_task > 0 }
+			}	
 		}
 		localization_key = BHU_desk_task_blocked_available_category_text
 	}
 	text = {
 		trigger = {
 			check_variable = { BHU_desk_task = 0 }
+			check_variable = { BHU_task_cooldown = 0 }
 		}
 		localization_key = BHU_desk_task_available_category_text
+	}
+	text = {
+		trigger = {
+			check_variable = { BHU_task_cooldown > 0 } 
+		}
+		localization_key = BHU_desk_task_cooldown_category_text
+	}
+}
+defined_text = {
+	name = BHU_desk_category_Generic
+	text = {
+		localization_key = BHU_desk_category_Generic_name
+	}
+}
+defined_text = {
+	name = BHU_desk_category_Special
+	text = {
+		localization_key = BHU_desk_category_Special_name
 	}
 }

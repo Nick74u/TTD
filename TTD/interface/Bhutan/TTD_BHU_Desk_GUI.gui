@@ -165,6 +165,34 @@ guiTypes = {
 			
 			position = { x = 0 y = 40 }
 			
+			buttonType = {
+				name = "Desk_Available_Generic_frame"
+				spriteType = "GFX_BHU_three_category_frame"
+				position = { x = 175 y = 150 } 
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name = "BhutanDeskGenericName"
+				position = { x = 175 y = 150 }
+				maxWidth = 345
+				maxHeight = 20
+				font = "aldrich_24_outline"
+				text = [BHU_desk_category_Generic]
+			}
+			buttonType = {
+				name = "Desk_Available_Special_frame"
+				spriteType = "GFX_BHU_three_category_frame"
+				position = { x = 300 y = 150 } 
+				scale = 0.8
+			}
+			instantTextBoxType = {
+				name = "BhutanDeskSpecialName"
+				position = { x = 300 y = 150 }
+				maxWidth = 345
+				maxHeight = 20
+				font = "aldrich_24_outline"
+				text = [BHU_desk_category_Special]
+			}
 			instantTextBoxType = {
 				name = "BhutanDeskTaskAvailableName"
 				position = { x = 80 y = 480 }
@@ -174,30 +202,82 @@ guiTypes = {
 				font = "aldrich_24_outline"
 				text = "BHU_Desk_task_available_text"
 			}
-			iconType = {
-				name = "BHU_desk_available_task_1_blocked"
-				spriteType = "GFX_BHU_train_mountaineers__grayed_image"
-				position = { x = 150 y = 150 }
-				pdx_tooltip = available_blocked_tt
-			}
-			iconType = {
-				name = "BHU_desk_available_task_2_blocked"
-				spriteType = "GFX_BHU_construct_grayed_image"
-				position = { x = 150 y = 350 }
-				pdx_tooltip = available_blocked_tt
-			}
-			buttonType = {
-				name = "BHU_desk_available_task_1"
-				spriteType = "GFX_BHU_train_mountaineers_image"
-				position = { x = 150 y = 150 }
-				pdx_tooltip = available_task_1_tt
-			}
-			buttonType = {
-				name = "BHU_desk_available_task_2"
-				spriteType = "GFX_BHU_construct_image"
-				position = { x = 150 y = 350 }
-				pdx_tooltip = available_task_2_tt
-			}
+			
+			
+			#### GENERIC SECTION
+			
+			containerWindowType = {
+				name = "Example_Container_For_Grid"
+				Orientation = center
+				size = {width=350 height=200}
+				position = {x=-20 y=-50}
+				verticalScrollbar = "right_vertical_slider_intel"
+				scroll_wheel_factor = 40
+				smooth_scrolling = yes
+							
+				background = {
+					name = "Background"
+					quadTextureSprite = "GFX_tiled_window_transparent"
+				}
+					
+				gridBoxType = {
+					name = "BHU_task_generic_list"
+					position = { x = 0 y = 0}
+					#The size of the gridbox
+					size = { width = 100%% height = 100%% }
+					Orientation = upper_left
+					#The slot size
+					slotsize = {width=400 height=50 }
+					format = "UPPER_LEFT"
+					#the maximum horizontal gui elements
+					max_slots_horizontal = 1
+					#the maximum vertical gui elements
+					#max_slots_vertical = 1
+				}
+			}				
+		}		
+	}
+	containerWindowType = {
+		name = "BHU_gentask_Array"
+		size = {width=400 height=60}
+
+		iconType = {
+			name ="BHU_list_image_dyn"
+			quadTextureSprite ="GFX_BHU_three_category_frame"
+			position = { x=0 y=0 }
+			scale = 0.4
+		}
+		iconType = {
+			name ="task_list_start_button_frame"
+			quadTextureSprite ="GFX_BHU_three_category_frame"
+			position = { x=245 y=0 }
+			scale = 0.8	
+		}
+		buttonType = {
+			name ="task_list_start_button"
+			quadTextureSprite ="GFX_BHU_three_category_frame"
+			position = { x=245 y=0 }
+			scale = 0.8
+					
+		}
+		instantTextBoxType = {
+			name = "BhutanTaskListStartName"
+			position = { x = 210 y = 5 }
+			maxWidth = 150
+			maxHeight = 50
+			format = center 
+			font = "aldrich_24_outline"
+			text = "BHU_Desk_task_list_start_text_status"
+		}
+		instantTextBoxType = {
+			name = "BhutanTaskListName"
+			position = { x = 100 y = 0 }
+			maxWidth = 150
+			maxHeight = 50
+			format = center 
+			font = "aldrich_24_outline"
+			text = "BHU_Desk_task_list_text"
 		}
 	}
+	
 }

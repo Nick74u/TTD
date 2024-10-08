@@ -6,3 +6,90 @@ defined_text = {
 		localization_key = "TNO_Indonesian_Civil_War_GUI"
 	}
 }
+
+defined_text = {
+	name = BHU_Desk_Get_Task
+	text = {
+		trigger = {
+			check_variable = { v = 0 }
+		}
+		localization_key = "GFX_BHU_train_mountaineers_image"
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 1 }
+		}
+		localization_key = "GFX_BHU_construct_image"
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 2 }
+		}
+		localization_key = "GFX_BHU_land_survey_image"
+	}
+	
+	##BLOCKED SECTION
+	text = {
+		trigger = {
+			check_variable = { v = 0 }
+			check_variable = { BHU_task_cooldown > 0 }  
+		}
+		localization_key = "GFX_BHU_train_mountaineers__grayed_image"
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 1 }
+			check_variable = { BHU_task_cooldown > 0 }  
+		}
+		localization_key = "GFX_BHU_construct_grayed_image"
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 2 }
+			check_variable = { BHU_task_cooldown > 0 }  
+		}
+		localization_key = "GFX_BHU_land_survey_grayed_image"
+	}
+}
+defined_text = {
+	name = BHU_Desk_Get_Tasklist_name
+	text = {
+		trigger = {
+			check_variable = { v = 0 }
+		}
+		localization_key = BHU_desk_train_mountaineers_name
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 1 }
+		}
+		localization_key = BHU_desk_train_construct
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 2 }
+		}
+		localization_key = BHU_desk_land_survey
+	}
+}
+defined_text = {
+	name = GetTaskAvailabilityStatus
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = active_task
+			}
+			check_variable = { BHU_task_cooldown = 0 }   
+		}
+		localization_key = BHU_Desk_task_list_start_text
+	}
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { BHU_task_cooldown > 0 }   
+				has_country_flag = active_task
+			}
+		}
+		localization_key = BHU_Desk_task_list_start_blocked_text
+	}
+}

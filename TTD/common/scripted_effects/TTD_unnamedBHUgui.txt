@@ -33,7 +33,7 @@ BHU_check_desk_task_var= {
 
 		BHU = {
 			country_event = {
-				id = bhutan_desk_task_event.2
+				id = bhutan_desk_task_event.25
 			}
 		}
 	}
@@ -41,12 +41,38 @@ BHU_check_desk_task_var= {
 	add_to_variable = { BHU_desk_dirty_variable = 0.01 }
 }	
 BHU_clean_desk_task_var= {
+	clr_country_flag = active_task
 	set_variable = { BHU_desk_task_current_progress = 0 }
 	set_variable = { BHU_desk_task = 0 }
 	add_to_variable = { BHU_desk_dirty_variable = 0.01 }
 }	
 ####BHUTAN DESK TASKS
-
+TTD_start_desk_task = {
+	if = {
+		limit = {
+			check_variable = { BHU_desk_task = 0 } #train Mountaineers
+		}
+		country_event = { 
+			id = bhutan_desk_task_event.0
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { BHU_desk_task = 1 } ####Add Construct Task
+		}
+		country_event = { 
+			id = bhutan_desk_task_event.1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { BHU_desk_task = 2 } ####Add Land Survey Task
+		}
+		country_event = { 
+			id = bhutan_desk_task_event.2 
+		}
+	}
+}
 TTD_add_BHU_desk_task_train_mountaineers = {
 	set_variable = { BHU_desk_task = 1 }
 	set_country_flag = BHU_train_mountaineers
@@ -60,4 +86,11 @@ TTD_add_BHU_desk_task_construct = {
 	add_to_variable = { BHU_desk_dirty_variable = 0.01 }
 	TTD_add_BHU_desk_task = yes
 	log = "BHU = Added desk_task Construct"
+}
+TTD_add_BHU_desk_task_land_survey = {
+	set_variable = { BHU_desk_task = 3 }
+	set_country_flag = BHU_land_survey
+	add_to_variable = { BHU_desk_dirty_variable = 0.01 }
+	TTD_add_BHU_desk_task = yes
+	log = "BHU = Added desk_task land_survey"
 }

@@ -1,0 +1,92 @@
+focus_tree = {
+	id = freebhutan_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = FBH
+		}
+	}
+	
+
+	default = no
+
+	
+	focus = {
+	    id = FBH_our_opportunity
+		icon = GFX_
+		x = 2
+		y = 1
+		cost = 1
+		completion_reward = {
+		    add_political_power = 100
+	    }
+	}
+
+    focus = {
+		id = FBH_we_will_not_waste
+		icon = GFX_
+		prerequisite = { focus = FBH_our_opportunity }
+		relative_position_id = FBH_our_opportunity
+		x = -1
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+					
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		    add_war_support = 0.3
+			add_stability = -0.2
+		}
+	}
+	
+	focus = {
+		id = FBH_with_our_comrades_in_tow
+		icon = GFX_
+		prerequisite = { focus = FBH_our_opportunity }
+		relative_position_id = FBH_our_opportunity
+		x = 1
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+					
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+		    add_manpower = 2723
+			add_equipment_to_stockpile = {
+			    type = infantry_equipment_1
+				amount = 100
+			}
+		}
+	}
+}

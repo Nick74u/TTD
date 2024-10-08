@@ -73,7 +73,7 @@ ideas = {
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
-			picture = BHU_transitional_military_occupation
+			picture = BHU_INA_shattered
 			removal_cost = -1
 
 			modifier = {
@@ -87,7 +87,7 @@ ideas = {
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
-			picture = BHU_transitional_military_occupation
+			picture = BHU_INA_keepingorder
 			removal_cost = -1
 
 			modifier = {
@@ -115,7 +115,7 @@ ideas = {
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
-			picture = BHU_transitional_military_occupation
+			picture = BHU_INA_keepingorder
 			removal_cost = -1
 
 			modifier = {
@@ -129,24 +129,13 @@ ideas = {
 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
-			picture = BHU_transitional_military_occupation
+			picture = BHU_INA_keepingorder
 			removal_cost = -1
 
 			modifier = {
 				stability_factor = 0.5
 				war_support_factor = 0.10
 				army_cost_modifier = 0.15
-			}
-		}
-		BHU_leap_forward = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea BHU_Transitional_Military_Occupation" }
-
-			allowed = { always = no }
-			allowed_civil_war = { always = yes } 
-			picture = BHU_transitional_military_occupation
-			removal_cost = -1
-
-			modifier = {
 			}
 		}
 	}

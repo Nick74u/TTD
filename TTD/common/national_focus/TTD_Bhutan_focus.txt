@@ -83,6 +83,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			
+			add_to_array = { task_list = 1 }
+			add_to_array = { task_list = 2 }
 			set_country_flag = BHU_show_garrison_gui
 			custom_effect_tooltip = BHU_unlocks_garrison_gui
 			hidden_effect = {
@@ -244,7 +247,6 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = BHU_build_from_the_ground_up_tt	
 			set_country_flag = BHU_allow_desk
-			add_ideas = BHU_leap_forward
 			country_event = {
 				id = bhutan_focus_event.2
 				hours = 6

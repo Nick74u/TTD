@@ -23,7 +23,7 @@ bhutan_desk_category = {		#ID of categoryss
 		#has_country_flag = BHU_allow_desk
 	}
 	scripted_gui = TTD_BHU_Desk_GUI
-
+	
 	visible = {		
 	 #  has_country_flag = BHU_allow_desk
 	}

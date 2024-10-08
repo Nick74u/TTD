@@ -38,15 +38,30 @@ country_event = {    ####Add Construct Task
 
 	}
 }
-country_event = {    ####Desk Task Finished!
+country_event = {    ####Add Land Survey Task
 	id = bhutan_desk_task_event.2
 	title = bhutan_desk_task_event.2.t
 	desc = bhutan_desk_task_event.2.d
 	
 	is_triggered_only = yes
-	
+	immediate = {
+		TTD_add_BHU_desk_task_land_survey = yes
+	}
 	option = { # paperwork!
 		name = bhutan_desk_task_event.2.a
+		
+
+	}
+}
+country_event = {    ####Desk Task Finished!
+	id = bhutan_desk_task_event.25
+	title = bhutan_desk_task_event.25.t
+	desc = bhutan_desk_task_event.25.d
+	
+	is_triggered_only = yes
+	
+	option = { # paperwork!
+		name = bhutan_desk_task_event.25.a
 		if = {
 			limit = {
 				has_country_flag = BHU_train_mountaineers
@@ -62,7 +77,52 @@ country_event = {    ####Desk Task Finished!
 			econ_GDP_boost_once_percentage = yes
 			clr_country_flag = BHU_construct
 		}
+		else_if = {
+			limit = {
+				has_country_flag = BHU_land_survey
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			clr_country_flag = BHU_land_survey
+		}
+		hidden_effect = {
+			set_variable = { BHU_task_cooldown = 31 }
+			country_event = { id = bhutan_desk_task_event.26 }
+		}
 		BHU_clean_desk_task_var = yes
+	}
+}
+country_event = { # cooldown tick
+	id = bhutan_desk_task_event.26
+	immediate = {
+		if = {
+			limit = { 
+				check_variable = { 
+					BHU_task_cooldown > 0 
+				} 
+			}
+			subtract_from_variable = { BHU_task_cooldown = 1 }
+			country_event = { id = bhutan_desk_task_event.26 days = 1 }
+		}
+		add_to_variable = { BHU_desk_dirty_variable = 0.01 }
+		log = "[GetDateText]: [Root.GetName]: event bhutan_desk_task_event.26"
+	}
+
+	title = "Super Secret"
+	desc = "Not to be seen"
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = bhutan_desk_task_event.26
 	}
 }
 country_event = {    ####Temp flavor chain
@@ -432,11 +492,13 @@ country_event = {
 		    load_oob = "TTD_FBH_1962"
 			add_ideas = FBH_our_last_chance
 			fill_empty_minister_nochecks = yes
+			load_focus_tree = freebhutan_focus
+			econ_initialize_credit_rating_system = yes
+            initiate_display_vars = yes
 		}
 		remove_ideas = {
 			BHU_A_Dragon_Restless
 			BHU_The_hunt_for_wangchuck
-			BHU_The_Neverending_war_in_the_East
 		}
 		country_lock_all_division_template = no
 		hidden_effect = {

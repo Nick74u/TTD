@@ -31,13 +31,21 @@ spriteTypes = {
 		name = "GFX_BHU_construct_image"
 		texturefile = "gfx/interface/bhutan_gui/desk/desk_construct.dds"
 	}
-		spriteType = {
+	spriteType = {
+		name = "GFX_BHU_land_survey_image"
+		texturefile = "gfx/interface/bhutan_gui/desk/desk_land_survey.dds"
+	}
+	spriteType = {
 		name = "GFX_BHU_train_mountaineers__grayed_image"
 		texturefile = "gfx/interface/bhutan_gui/desk/desk_train_mountaineers_grayed.dds"
 	}
 	spriteType = {
 		name = "GFX_BHU_construct_grayed_image"
 		texturefile = "gfx/interface/bhutan_gui/desk/desk_construct_grayed.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_land_survey_grayed_image"
+		texturefile = "gfx/interface/bhutan_gui/desk/desk_land_survey_grayed.dds"
 	}
 	spriteType = {
 		name = "GFX_BHU_desk_progressbar_frame"

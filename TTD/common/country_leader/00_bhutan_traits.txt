@@ -10,7 +10,7 @@ leader_traits = {
 	sec_convoy_patroller = {
 		random = no
 		BHU_min_convoy_supply_arrival = 5
-
+		political_power_gain = 0.10
 	}
 	
 }
