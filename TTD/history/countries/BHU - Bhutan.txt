@@ -12,7 +12,7 @@ recruit_character = BHU_Dasho_Kesang
 recruit_character = BHU_Lhendup_Dorji
 recruit_character = BHU_Jigme_Dorji_Wangchuck
 recruit_character = BHU_Makoto_Matsutani
-add_manpower = 40000
+add_manpower = 4626
 
 set_variable = { 
 	BHU_garrison_road_lvl = 1

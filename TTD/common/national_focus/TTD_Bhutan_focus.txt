@@ -894,7 +894,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			TTD_add_BHU_desk_task_train_mountaineers = yes
+			add_to_array = { task_list = 3 }
 		}
 	}
 	focus = {

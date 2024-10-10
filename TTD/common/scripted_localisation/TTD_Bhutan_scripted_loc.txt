@@ -163,6 +163,12 @@ defined_text = {
         }
         localization_key = "BHU_desk_land_survey"
     }
+	text = {
+        trigger = {
+            check_variable = { BHU_desk_task = 4 }
+        }
+        localization_key = "BHU_desk_push_production"
+    }
 }
 defined_text = {
     name = BHU_desk_image
@@ -191,6 +197,12 @@ defined_text = {
         }
         localization_key = "GFX_BHU_land_survey_image"
     }
+	text = {
+        trigger = {
+            check_variable = { BHU_desk_task = 4 }
+        }
+        localization_key = "GFX_BHU_push_production_image"
+    }
 }
 defined_text = {
 	name = GetTaskName
@@ -218,6 +230,12 @@ defined_text = {
 		}
 		localization_key = BHU_desk_task_name_3
 	}
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_task = 4 }
+		}
+		localization_key = BHU_desk_task_name_4
+	}
 }
 defined_text = {
 	name = GetTaskDesc
@@ -244,6 +262,12 @@ defined_text = {
 			check_variable = { BHU_desk_task = 3 }
 		}
 		localization_key = BHU_desk_task_desc_3
+	}
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_task = 4 }
+		}
+		localization_key = BHU_desk_task_desc_4
 	}
 }
 

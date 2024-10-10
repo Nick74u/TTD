@@ -32,4 +32,14 @@ on_actions = {
 			}
 		}
 	}
+	on_weekly_BHU = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = active_task
+				}
+				BHU_add_desk_task_weekly_var = yes
+			}
+		}
+	}
 }

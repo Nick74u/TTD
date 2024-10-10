@@ -14,15 +14,20 @@ TTD_add_BHU_desk_task = {
 	set_temp_variable = { alert_id = token:Alert_desk_task_ongoing }
 	add_TNO_alert_unless_exists = yes
 }
-
+BHU_add_desk_task_weekly_var= {
+	custom_effect_tooltip = BHU_desk_task_weekly_progress_change
+	set_variable = { BHU_desk_task_added_progress = BHU_desk_task_weekly_progress }
+	BHU_add_desk_task_var = yes
+}	
 BHU_add_desk_task_var= {
+	
+	custom_effect_tooltip = BHU_desk_task_progress_change
+	add_to_variable = { BHU_desk_task_current_progress = BHU_desk_task_added_progress }
 	clamp_variable = {
-		var = BHU_desk_task_added_progress
+		var = BHU_desk_task_current_progress
 		min = 0
 		max = 100
 	}
-	custom_effect_tooltip = BHU_desk_task_progress_change
-	add_to_variable = { BHU_desk_task_current_progress = BHU_desk_task_added_progress }
 	BHU_check_desk_task_var = yes
 }	
 BHU_check_desk_task_var= {
@@ -50,7 +55,7 @@ BHU_clean_desk_task_var= {
 TTD_start_desk_task = {
 	if = {
 		limit = {
-			check_variable = { BHU_desk_task = 0 } #train Mountaineers
+			check_variable = { v = 0 } #train Mountaineers
 		}
 		country_event = { 
 			id = bhutan_desk_task_event.0
@@ -58,7 +63,7 @@ TTD_start_desk_task = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { BHU_desk_task = 1 } ####Add Construct Task
+			check_variable = { v = 1 } ####Add Construct Task
 		}
 		country_event = { 
 			id = bhutan_desk_task_event.1
@@ -66,10 +71,18 @@ TTD_start_desk_task = {
 	}
 	else_if = {
 		limit = {
-			check_variable = { BHU_desk_task = 2 } ####Add Land Survey Task
+			check_variable = { v = 2 } ####Add Land Survey Task
 		}
 		country_event = { 
 			id = bhutan_desk_task_event.2 
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = { v = 3 } ####Add push production Task
+		}
+		country_event = { 
+			id = bhutan_desk_task_event.3
 		}
 	}
 }
@@ -93,4 +106,11 @@ TTD_add_BHU_desk_task_land_survey = {
 	add_to_variable = { BHU_desk_dirty_variable = 0.01 }
 	TTD_add_BHU_desk_task = yes
 	log = "BHU = Added desk_task land_survey"
+}
+TTD_add_BHU_desk_push_production_survey = {
+	set_variable = { BHU_desk_task = 4 }
+	set_country_flag = BHU_push_production
+	add_to_variable = { BHU_desk_dirty_variable = 0.01 }
+	TTD_add_BHU_desk_task = yes
+	log = "BHU = Added desk_task push_production"
 }

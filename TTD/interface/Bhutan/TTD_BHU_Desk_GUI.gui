@@ -214,9 +214,9 @@ guiTypes = {
 				verticalScrollbar = "right_vertical_slider_intel"
 				scroll_wheel_factor = 40
 				smooth_scrolling = yes
-							
+				autohide_scrollbars = yes
 				background = {
-					name = "Background"
+					name = "BHU_Background"
 					quadTextureSprite = "GFX_tiled_window_transparent"
 				}
 					
@@ -240,7 +240,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "BHU_gentask_Array"
 		size = {width=400 height=60}
-
+		autohide_scrollbars = yes
 		iconType = {
 			name ="BHU_list_image_dyn"
 			quadTextureSprite ="GFX_BHU_three_category_frame"

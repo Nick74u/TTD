@@ -27,7 +27,12 @@ defined_text = {
 		}
 		localization_key = "GFX_BHU_land_survey_image"
 	}
-	
+	text = {
+		trigger = {
+			check_variable = {v = 3 }
+		}
+		localization_key = "GFX_BHU_push_production_image"
+	}
 	##BLOCKED SECTION
 	text = {
 		trigger = {
@@ -70,6 +75,12 @@ defined_text = {
 			check_variable = {v = 2 }
 		}
 		localization_key = BHU_desk_land_survey
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 3 }
+		}
+		localization_key = BHU_desk_push_production
 	}
 }
 defined_text = {

@@ -25,6 +25,7 @@ scripted_gui = {
 					}
 					clr_country_flag = BHU_Desk_log_selected
 				}
+				 clear_array = task_list_display_array
 				set_country_flag = BHU_Desk_active_selected
 				add_to_variable = { BHU_desk_dirty_variable = 0.01 }
 				log = "Bhutan Frame 1 clicked"
@@ -44,6 +45,11 @@ scripted_gui = {
 					}
 					clr_country_flag = BHU_Desk_log_selected
 				}
+				 clear_array = task_list_display_array
+                for_each_loop = {
+                    array = task_list
+                    add_to_array = { task_list_display_array = v }
+                }
 				set_country_flag = BHU_Desk_available_selected
 				add_to_variable = { BHU_desk_dirty_variable = 0.01 }
 				log = "Bhutan Frame 2 clicked"
@@ -63,6 +69,7 @@ scripted_gui = {
 					}
 					clr_country_flag = BHU_Desk_available_selected
 				}
+				 clear_array = task_list_display_array
 				set_country_flag = BHU_Desk_log_selected
 				add_to_variable = { BHU_desk_dirty_variable = 0.01 }
 				log = "Bhutan Frame 3 clicked"
@@ -147,6 +154,11 @@ scripted_gui = {
 				has_country_flag = BHU_Desk_available_selected
 				has_country_flag = BHU_Desk_Generic_selected
 			}
+			BHU_Background_visible = {
+			
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Generic_selected
+			}
 			BHU_list_image_dyn_visible = {
 			
 				has_country_flag = BHU_Desk_available_selected
@@ -198,7 +210,7 @@ scripted_gui = {
 		dynamic_lists = {
 			BHU_task_generic_list = {
 					#The array to use. Will call a gui for each index.
-					array = task_list
+					array = task_list_display_array
 
 					#value of the current array index. Optional. Default value is v.
 					value = v
@@ -259,6 +271,11 @@ scripted_gui = {
 				has_country_flag = BHU_Desk_Generic_selected
 			}
 			BhutanTaskListName_visible = {
+			
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Generic_selected
+			}
+			BHU_Background_visible = {
 			
 				has_country_flag = BHU_Desk_available_selected
 				has_country_flag = BHU_Desk_Generic_selected
