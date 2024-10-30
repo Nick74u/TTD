@@ -5,7 +5,9 @@ BHU_dynamic_modifiers_setup = {
 	set_variable = { Meter_garrison_bar_supply_value = 50 }
 	set_variable = { Meter_garrison_bar_morale_value = 50 }
 	set_variable = { convoy_supply_arrival = 10 }
+	set_variable = { BHU_desk_task_weekly_progress = 3 }
 	add_to_variable = { convoy_supply_arrival = this.modifier@BHU_min_convoy_supply_arrival }
+	add_to_variable = { BHU_desk_task_weekly_progress = this.modifier@BHU_desk_task_weekly_progress_adv }
 	BHU_add_garrison_var = yes
 	set_country_flag = BHU_Desk_active_selected
 }
@@ -461,6 +463,9 @@ bhutan_war_wang_win = {
 			paternalism = 45
 			despotism = 24
 		}
+	}
+	FBH = {
+		country_event = { id = freebhutan.0 days = 1342 }		
 	}
 	hidden_effect = {
 		every_country = {

@@ -150,6 +150,7 @@ characters = {
 			allowed = { original_tag = BHU }
 			traits = {
 				head_of_government
+				hog_administrative_kingpin
 				
 			}
 			ledger = civilian
@@ -195,14 +196,7 @@ characters = {
 				large = "gfx/leaders/BHU/Portrait_Bhutan_Jigme_Dorji_Wangchuck.dds"
 			}
 		}
-		field_marshal = {
-			traits = { }
-			skill = 2
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 1
-		}
+		
 		country_leader = {
 			desc = "POLITICS_JIGME_DORJI_WANGCHUCK_DESC"
 			expire = "1999.1.1"

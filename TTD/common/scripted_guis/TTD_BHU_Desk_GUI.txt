@@ -25,8 +25,11 @@ scripted_gui = {
 					}
 					clr_country_flag = BHU_Desk_log_selected
 				}
-				 clear_array = task_list_display_array
+				clear_array = task_list_display_array
 				set_country_flag = BHU_Desk_active_selected
+				
+				clear_array = task_log_display_array
+				clear_array = special_task_list_display_array
 				add_to_variable = { BHU_desk_dirty_variable = 0.01 }
 				log = "Bhutan Frame 1 clicked"
 			}
@@ -45,11 +48,14 @@ scripted_gui = {
 					}
 					clr_country_flag = BHU_Desk_log_selected
 				}
-				 clear_array = task_list_display_array
-                for_each_loop = {
-                    array = task_list
-                    add_to_array = { task_list_display_array = v }
-                }
+				
+				clr_country_flag = BHU_Desk_Generic_selected
+				clr_country_flag = BHU_Desk_Special_selected
+				clear_array = task_list_display_array
+                
+				clear_array = special_task_list_display_array
+				clear_array = task_log_display_array
+				
 				set_country_flag = BHU_Desk_available_selected
 				add_to_variable = { BHU_desk_dirty_variable = 0.01 }
 				log = "Bhutan Frame 2 clicked"
@@ -69,25 +75,18 @@ scripted_gui = {
 					}
 					clr_country_flag = BHU_Desk_available_selected
 				}
-				 clear_array = task_list_display_array
+				
+				clear_array = task_list_display_array
 				set_country_flag = BHU_Desk_log_selected
+				clear_array = special_task_list_display_array
+				clear_array = task_log_display_array
+                for_each_loop = {
+                    array = task_log
+                    add_to_array = { task_log_display_array = v }
+                }
+				
 				add_to_variable = { BHU_desk_dirty_variable = 0.01 }
 				log = "Bhutan Frame 3 clicked"
-			}
-			BHU_desk_available_task_1_click = {
-				country_event = {
-					id = bhutan_desk_task_event.0
-				}
-			}
-			BHU_desk_available_task_2_click = {
-				country_event = {
-					id = bhutan_desk_task_event.1
-				}
-			}
-			BHU_desk_available_task_3_click = {
-				country_event = {
-					id = bhutan_desk_task_event.2
-				}
 			}
 			Desk_Available_Special_frame_click = {
 				
@@ -97,7 +96,13 @@ scripted_gui = {
 					}
 					clr_country_flag = BHU_Desk_Generic_selected
 				}
+
 				set_country_flag = BHU_Desk_Special_selected
+				for_each_loop = {
+                    array = special_task_list
+                    add_to_array = { special_task_list_display_array = v }
+                }
+				clear_array = task_list_display_array
 				add_to_variable = { BHU_desk_dirty_variable = 0.01 }
 				log = "Bhutan Special clicked"
 			}
@@ -109,6 +114,11 @@ scripted_gui = {
 					}
 					clr_country_flag = BHU_Desk_Special_selected
 				}
+				for_each_loop = {
+                    array = task_list
+                    add_to_array = { task_list_display_array = v }
+                }
+				clear_array = special_task_list_display_array
 				set_country_flag = BHU_Desk_Generic_selected
 				add_to_variable = { BHU_desk_dirty_variable = 0.01 }
 				log = "Bhutan Generic clicked"
@@ -132,6 +142,10 @@ scripted_gui = {
 			###AVAILABLE TAB CATEGORY
 			BhutanDeskTaskAvailableName_visible = {
 				has_country_flag = BHU_Desk_available_selected
+				OR = {
+					has_country_flag = BHU_Desk_Generic_selected
+					has_country_flag = BHU_Desk_Special_selected
+				}
 			}
 			BhutanDeskTaskAvailableDesc_visible = {
 				has_country_flag = BHU_Desk_available_selected
@@ -148,13 +162,22 @@ scripted_gui = {
 			BhutanDeskSpecialName_visible = {
 				has_country_flag = BHU_Desk_available_selected
 			}
+			BhutanDeskTaskAvailableChoose_visible = {
+				has_country_flag = BHU_Desk_available_selected
+				NOT = {
+					OR = {
+						has_country_flag = BHU_Desk_Generic_selected
+						has_country_flag = BHU_Desk_Special_selected
+					}
+				}
+			}
 			
 			BHU_task_generic_list_visible = {
 			
 				has_country_flag = BHU_Desk_available_selected
 				has_country_flag = BHU_Desk_Generic_selected
 			}
-			BHU_Background_visible = {
+			BHU_gentask_Background_visible = {
 			
 				has_country_flag = BHU_Desk_available_selected
 				has_country_flag = BHU_Desk_Generic_selected
@@ -188,7 +211,45 @@ scripted_gui = {
 				has_country_flag = BHU_Desk_available_selected
 				has_country_flag = BHU_Desk_Generic_selected
 			}
+			##SPECIAL 
+			BHU_special_list_image_dyn_visible = {
 			
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Special_selected
+			}
+			special_task_list_start_button_frame_visible = {
+			
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Special_selected
+			}
+			special_task_list_start_button_visible = {
+			
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Special_selected
+			}
+			BhutanSpecialTaskListStartName_visible = {
+			
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Special_selected
+			}
+			BhutanSpecialTaskListName_visible = {
+			
+				has_country_flag = BHU_Desk_available_selected
+				has_country_flag = BHU_Desk_Special_selected
+			}
+			#LOG SECTION
+			BHU_log_Background_visible = {
+			
+				has_country_flag = BHU_Desk_log_selected
+			}
+			BHU_list_log_image_dyn_visible = {
+			
+				has_country_flag = BHU_Desk_log_selected
+			}
+			BHU_task_log_list_visible = {
+			
+				has_country_flag = BHU_Desk_log_selected
+			}
 		}
 		#AVAILABLE SECTION
 		
@@ -203,8 +264,12 @@ scripted_gui = {
 		}
 		effects = {
 			task_list_start_button_click = {
-				TTD_start_desk_task = yes
+				TTD_start_genericdesk_task = yes
 				log = "Desk task Initiated"
+			}
+			special_task_list_start_button_click = {
+				TTD_start_specialdesk_task = yes
+				log = "Special Desk task Initiated"
 			}
 		}
 		dynamic_lists = {
@@ -224,68 +289,51 @@ scripted_gui = {
 					#The GUI drawn for each index
 					entry_container = BHU_gentask_Array
 			}
+			BHU_task_special_list = {
+					#The array to use. Will call a gui for each index.
+					array = special_task_list_display_array
+
+					#value of the current array index. Optional. Default value is v.
+					value = v
+
+					#current array index. Optional. Default value is i.
+					index = i
+					
+					#This will change the scope to the value if yes
+					change_scope = no
+
+					#The GUI drawn for each index
+					entry_container = BHU_specialtask_Array
+			}
+			BHU_task_log_list = {
+					#The array to use. Will call a gui for each index.
+					array = task_log_display_array
+
+					#value of the current array index. Optional. Default value is v.
+					value = v
+
+					#current array index. Optional. Default value is i.
+					index = i
+					
+					#This will change the scope to the value if yes
+					change_scope = no
+
+					#The GUI drawn for each index
+					entry_container = BHU_log_Array
+			}
 		}
 		properties = {
 			BHU_list_image_dyn = {
 				image = "[BHU_Desk_Get_Task]"
 			}
+			BHU_special_list_image_dyn = {
+				image = "[BHU_Desk_Get_SpecialTask]"
+			}
+			BHU_list_log_image_dyn = {
+				image = "[BHU_Desk_Get_CompletedTask]"
+			}
 			
 		}
 	}
-	BHU_gentask_Array = {
 	
-		context_type = decision_category
-
-		window_name = "BHU_desk_generic_task_list_Window"
-		
-		visible = {
-			has_country_flag = BHU_Desk_Generic_selected
-			has_country_flag = BHU_Desk_available_selected
-		}
-
-		
-		
-		triggers = {
-			BHU_list_image_dyn_visible = {
-			
-				has_country_flag = BHU_Desk_available_selected
-				has_country_flag = BHU_Desk_Generic_selected
-			}
-			task_list_start_button_frame_visible = {
-				
-				has_country_flag = BHU_Desk_available_selected
-				has_country_flag = BHU_Desk_Generic_selected
-			}
-			task_list_start_button_visible = {
-			
-				has_country_flag = BHU_Desk_available_selected
-				has_country_flag = BHU_Desk_Generic_selected
-				NOT = {
-					has_country_flag = active_task
-					check_variable = { BHU_task_cooldown > 0 }
-				}
-			}
-			BhutanTaskListStartName_visible = {
-				
-				has_country_flag = BHU_Desk_available_selected
-				has_country_flag = BHU_Desk_Generic_selected
-			}
-			BhutanTaskListName_visible = {
-			
-				has_country_flag = BHU_Desk_available_selected
-				has_country_flag = BHU_Desk_Generic_selected
-			}
-			BHU_Background_visible = {
-			
-				has_country_flag = BHU_Desk_available_selected
-				has_country_flag = BHU_Desk_Generic_selected
-			}
-		}
-		effects = {
-			task_list_start_button_click = {
-				TTD_start_desk_task = yes
-				log = "Desk task Initiated"
-			}
-		}
-	}
 }

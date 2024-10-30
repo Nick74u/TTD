@@ -88,7 +88,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_BHU_coordinating_with_the_convoy.dds"			
 	}	
 	SpriteType = {
-	name = "GFX_goal_continuous_reduce_training_time"
-	texturefile = "gfx/interface/goals/goal_continuous_reduce_training_time.dds"			
+		name = "GFX_goal_BHU_meet_with_monasteries"
+		texturefile = "gfx/interface/goals/focus_BHU_meet_with_monasteries.dds"			
 	}	
 }

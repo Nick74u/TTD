@@ -439,9 +439,9 @@ bookmarks = {
 				BHU_A_Dragon_Restless
 			}
 			focuses = {
-			    BHU_tighten_the_leash
-				BHU_the_model_province_of_india
-				BHU_bhutan_age
+			    BHU_a_train_to_kolkata
+				BHU_the_chained_dragon
+				BHU_enforcing_the_mcmahon_line
 			}
 		}
 		## CPS ##

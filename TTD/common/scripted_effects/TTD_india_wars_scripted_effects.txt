@@ -43,16 +43,7 @@ india_war_start = {
 		load_oob = "IND_1962"
 
 		add_ideas = SOA_indian_wars
-		add_ideas = IND_indian_war_momentum
-		SOA_calculate_momentum_var = yes
-	}
-	PAK = {
-		add_ideas = PAK_indian_war_momentum
-		SOA_calculate_momentum_var = yes
-	}
-	AZH = {
-		add_ideas = AZH_indian_war_momentum
-		SOA_calculate_momentum_var = yes
+		
 	}
 }
 India_war_azad_leaning = { #DOES NOTHING 
@@ -387,40 +378,4 @@ azad_hind_victory = {
 			days = 1
 		}
 	}
-}
-
-
-
-#MOMENTUM
-SOA_calculate_momentum_var = {
-	# indian_war level is 1 - surrender_progress (i.e. 1 at start of war - 0 when capitulated)
-	set_variable = { indian_war_level = THIS.surrender_progress }
-	multiply_variable = { indian_war_level = -1 }
-	add_to_variable = { indian_war_level = 1 }
-
-	# org modifier lerp +20% to -20%
-	set_variable = { indian_war_org_modifier = indian_war_level }
-	multiply_variable = { indian_war_org_modifier = 0.4 }
-	add_to_variable = { indian_war_org_modifier = -0.2 }
-
-	# reinforce rate modifier lerp +3% to -3%
-	set_variable = { indian_war_reinforce_modifier = indian_war_org_modifier }
-	multiply_variable = { indian_war_reinforce_modifier = 3 }
-	multiply_variable = { indian_war_reinforce_modifier = 0.05 }
-
-	# terrain modifier lerp +40% to -40%
-	set_variable = { indian_war_terrain_modifier = indian_war_org_modifier }
-	multiply_variable = { indian_war_terrain_modifier = 2 }
-
-	# att/def modifier lerp +10% to -10%
-	set_variable = { indian_war_combat_modifier = indian_war_org_modifier }
-	multiply_variable = { indian_war_combat_modifier = 0.5 }
-
-	# movement and recovery speed modifier lerp +20% to -20%
-	set_variable = { indian_war_fast_modifier = indian_war_org_modifier }
-
-
-
-	log = " indian_war [THIS.GetName] LEVEL = [?indian_war_level], org = [?indian_war_org_modifier], def = [?indian_war_combat_modifier]"
-	force_update_dynamic_modifier = yes
 }

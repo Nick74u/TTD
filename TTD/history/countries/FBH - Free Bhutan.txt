@@ -3,6 +3,7 @@ capital = 324
 # Vacant
 recruit_character = FBH_Generic_Vacant
 recruit_character = FBH_Jigme_Dorji_Wangchuck
+recruit_character = FBH_Jigme_Singye_Wangchuck
 add_manpower = 40000
 
 

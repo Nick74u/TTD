@@ -32,12 +32,10 @@ set_popularities = {
 	paternalism_2 = 23
 	ultranationalism = 12
 }
-
+set_research_slots = 1
 
 set_stability = .55
 country_lock_all_division_template = yes
-complete_national_focus = BHU_removing_the_rubble
-complete_national_focus = BHU_in_azad_hind_vision
 set_variable = { TNO_economy_type = token:Econ_Type_Planned }
 set_variable = { BHU_map_selected_province = 0 }
 add_ideas = {
@@ -117,12 +115,6 @@ set_technology = {
 	radio = 1
 	building_construction_1 = 1
 	administration_construction_1 = 1
-	ww2_destroyer = 1
-	ww2_cruiser = 1
-	ww2_battleship = 1
-	ww2_submarine = 1
-	ww2_carrier = 1
-	# infantry_equipment_0 = 1
 	infantry_weapons_1 = 1
 	night_vision_1 = 1
 	
@@ -133,7 +125,7 @@ set_technology = {
 	basic_infantry_equipment = 1
 	support_weapons = 1
 	motorized_infantry = 1
-	marines = 1
+
 	#
 	tech_mountaineers = 1
 	#
@@ -165,14 +157,11 @@ set_technology = {
 
 	motorized_rocket_unit = 1
 	tech_special_forces = 1
-	specialist_weapons1 = 1
-	specialist_training1 = 1
 	artillery_1950 = 1
 	artillery_1950_soft_attack = 1
 	antiair_1950 = 1
 	antiair_1950_air_attack = 1
 	tech_engineers2 = 1
-	marines2 = 1
 	tech_recon = 1
 	tech_recon2 = 1
 	tech_military_police = 1
@@ -233,7 +222,7 @@ set_technology = {
 	social_construction_1 = 1
 
 	resource_extraction_methods = 1
-	excavation0 = 1
+
 
 
 	helicopter_engines = 1
@@ -245,8 +234,43 @@ set_technology = {
 	building_construction_1 = 1
 	production_unit_gain_1 = 1
 	administration_construction_1 = 1
-	excavation1 = 1
 	military_construction_1 = 1
 	prison_construction_1 = 1
 	very_early_helicopter = 1
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		NSB_APC_1945 = 1
+		NSB_APC_1950 = 1
+		NSB_IFV_1945 = 1
+		NSB_IFV_1945_modules_1 = 1
+		NSB_IFV_1945_modules_2 = 1
+		NSB_IFV_1950 = 1
+		NSB_IFV_1950_modules_1 = 1
+		NSB_IFV_1950_modules_2 = 1
+		NSB_MBT_1945 = 1
+		NSB_MBT_1945_modules_1 = 1
+		NSB_MBT_1945_modules_2 = 1
+		NSB_MBT_1950 = 1
+		NSB_MBT_1950_modules_1 = 1
+		NSB_MBT_1950_modules_2 = 1
+		NSB_AC_1945 = 1
+		NSB_AC_1950 = 1
+		NSB_Armour_1 = 1
+		NSB_Armour_2 = 1
+		NSB_Engine_1 = 1
+		NSB_Engine_2 = 1
+
+		NSB_artillery_1945 = 1
+		NSB_artillery_1950 = 1
+		NSB_artillery_MODULE = 1
+		NSB_artillery_1950_SA = 1
+
+		NSB_antiair_1945 = 1
+		NSB_antiair_1950 = 1
+		NSB_antiair_MODULE = 1
+	}
 }

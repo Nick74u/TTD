@@ -8,10 +8,9 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { # attack!
+	option = {
 		name = sikkim.1.a
 		kill_country_leader = yes
 		
-		ai_chance = { factor = 90 }
 	}
 }

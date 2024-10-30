@@ -1,0 +1,37 @@
+﻿###########################
+# TTD_Bhutan Events
+###########################
+
+add_namespace = freebhutan
+
+
+country_event = {    
+	id = freebhutan.0
+	title = freebhutan.0.t
+	desc = freebhutan.0.d
+	fire_only_once = yes
+	trigger = {
+	    tag = FBH
+	    has_war = no
+		date > 1970.07.03
+	}
+	
+	mean_time_to_happen = {
+	    days = 4
+    }
+	
+	option = { 
+		name = freebhutan.0.a
+		FBH = {
+			kill_country_leader = yes
+		}
+		every_country = {
+			limit = { is_ai = no }
+			news_event = {
+				id = TTD_bhutan_news.5
+				hours = 1
+			}
+		}
+		
+	}
+}

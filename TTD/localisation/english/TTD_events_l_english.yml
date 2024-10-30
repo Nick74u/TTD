@@ -138,4 +138,6 @@
   TTD_bhutan_news.4.t: "[Get_newspaper_header]A Free Bhutan"
   TTD_bhutan_news.4.d: "they going to get invaded later again"
   TTD_bhutan_news.4.a: "whats the point lol"
- 
+  TTD_bhutan_news.5.t: "[Get_newspaper_header]Bhutanese King Dies, Son Ascends the Throne"
+  TTD_bhutan_news.5.d: "News from the distant Himalayan land of Bhutan has emerged, beloved king, Jigme Dorji Wangchuck, has died.\n\nA day of national mourning has been announced and his successor, his son Jigme Singye Wangchuck, will have his coronation within the following week.\n\nThis is grieving news for Bhutan as they have lost their freedom fighter who has managed to assert for independence and instituted reforms for his beloved kingdom."
+  TTD_bhutan_news.5.a: "And the decade ends for Bhutan..."

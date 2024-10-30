@@ -1,12 +1,19 @@
-
+####### GENERIC TASKS
 defined_text = {
-	name = Get_BHU_desk_task
+	name = GetTaskAdded
 	text = {
-		trigger = { check_variable = { active_desk_task = token:BHU_trainmountaineers } }
-		localization_key = "TNO_Indonesian_Civil_War_GUI"
+		trigger = {
+			check_variable = { BHU_desk_task_array_temp = 0 }
+		}
+		localization_key = BHU_desk_add_0
+	}
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_task_array_temp = 1 }
+		}
+		localization_key = BHU_desk_add_1
 	}
 }
-
 defined_text = {
 	name = BHU_Desk_Get_Task
 	text = {
@@ -83,6 +90,36 @@ defined_text = {
 		localization_key = BHU_desk_push_production
 	}
 }
+### SPECIAL TASKS
+defined_text = {
+	name = GetSpecialTaskAdded
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_special_task_array_temp = 0 }
+		}
+		localization_key = BHU_special_task_desk_add_0
+	}
+}
+defined_text = {
+	name = BHU_Desk_Get_SpecialTask
+	text = {
+		trigger = {
+			check_variable = { v = 0 }
+		}
+		localization_key = "GFX_BHU_sp_research_facilities_image"
+	}
+}
+
+## SPECIAL
+defined_text = {
+	name = BHU_Desk_Get_Special_Tasklist_name
+	text = {
+		trigger = {
+			check_variable = { v = 0 }
+		}
+		localization_key = BHU_desk_special_research_facilities
+	}
+}
 defined_text = {
 	name = GetTaskAvailabilityStatus
 	text = {
@@ -102,5 +139,34 @@ defined_text = {
 			}
 		}
 		localization_key = BHU_Desk_task_list_start_blocked_text
+	}
+}
+
+######LOG 
+defined_text = {
+	name = BHU_Desk_Get_CompletedTask
+	text = {
+		trigger = {
+			check_variable = { v = 0 }
+		}
+		localization_key = "GFX_BHU_train_mountaineers_image"
+	}
+	text = {
+		trigger = {
+			check_variable = { v = 1 }
+		}
+		localization_key = "GFX_BHU_construct_image"
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 2 }
+		}
+		localization_key = "GFX_BHU_land_survey_image"
+	}
+	text = {
+		trigger = {
+			check_variable = {v = 3 }
+		}
+		localization_key = "GFX_BHU_push_production_image"
 	}
 }

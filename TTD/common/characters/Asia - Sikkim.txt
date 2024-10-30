@@ -51,19 +51,4 @@ characters = {
 			id = -1
 		}
 	}
-	SIK_Kashiraj_Pradhan = {
-		name = SIK_Kashiraj_Pradhan
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/SIK/Portrait_Kashiraj_Pradhan.dds"
-			}
-		}
-		country_leader = {
-			desc = ""
-			expire = "1999.1.1"
-			ideology = socialist_reformist_socialism_subtype
-			traits = { }
-			id = -1
-		}
-	}
 }

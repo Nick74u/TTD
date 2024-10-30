@@ -40,6 +40,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/bhutan_gui/desk/desk_push_production.dds"
 	}
 	spriteType = {
+		name = "GFX_BHU_sp_research_facilities_image"
+		texturefile = "gfx/interface/bhutan_gui/desk/desk_sp_research_facilities.dds"
+	}
+	spriteType = {
 		name = "GFX_BHU_train_mountaineers__grayed_image"
 		texturefile = "gfx/interface/bhutan_gui/desk/desk_train_mountaineers_grayed.dds"
 	}

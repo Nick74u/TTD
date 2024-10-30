@@ -202,12 +202,21 @@ guiTypes = {
 				font = "aldrich_24_outline"
 				text = "BHU_Desk_task_available_text"
 			}
+			instantTextBoxType = {
+				name = "BhutanDeskTaskAvailableChoose"
+				position = { x = 80 y = 250 }
+				maxWidth = 345
+				maxHeight = 20
+				format = center 
+				font = "aldrich_24_outline"
+				text = "BHU_Desk_task_available_choose_text"
+			}
 			
 			
 			#### GENERIC SECTION
 			
 			containerWindowType = {
-				name = "Example_Container_For_Grid"
+				name = "BHU_Container_For_GenTask_grid"
 				Orientation = center
 				size = {width=350 height=200}
 				position = {x=-20 y=-50}
@@ -216,8 +225,9 @@ guiTypes = {
 				smooth_scrolling = yes
 				autohide_scrollbars = yes
 				background = {
-					name = "BHU_Background"
+					name = "BHU_gentask_Background"
 					quadTextureSprite = "GFX_tiled_window_transparent"
+					alwaystransparent = yes
 				}
 					
 				gridBoxType = {
@@ -234,8 +244,76 @@ guiTypes = {
 					#the maximum vertical gui elements
 					#max_slots_vertical = 1
 				}
+			}
+			containerWindowType = {
+				name = "BHU_Container_For_SpecialTask_grid"
+				Orientation = center
+				size = {width=350 height=200}
+				position = {x=-20 y=-50}
+				verticalScrollbar = "right_vertical_slider_intel"
+				scroll_wheel_factor = 40
+				smooth_scrolling = yes
+				autohide_scrollbars = yes
+				background = {
+					name = "BHU_specialtask_Background"
+					quadTextureSprite = "GFX_tiled_window_transparent"
+					alwaystransparent = yes
+				}
+					
+				gridBoxType = {
+					name = "BHU_task_special_list"
+					position = { x = 0 y = 0}
+					#The size of the gridbox
+					size = { width = 100%% height = 100%% }
+					Orientation = upper_left
+					#The slot size
+					slotsize = {width=400 height=50 }
+					format = "UPPER_LEFT"
+					#the maximum horizontal gui elements
+					max_slots_horizontal = 1
+					#the maximum vertical gui elements
+					#max_slots_vertical = 1
+				}
 			}				
-		}		
+		}	
+	    containerWindowType = {
+			name = "TTD_BHU_Desk_GUI_three_category_log_window"
+			size = { width = 220 height = 603 }
+			
+			position = { x = 0 y = 40 }
+			
+			
+			containerWindowType = {
+				name = "BHU_Container_For_log_grid"
+				Orientation = center
+				size = {width=375 height=300}
+				position = {x=-35 y=-125}
+				verticalScrollbar = "right_vertical_slider_intel"
+				scroll_wheel_factor = 40
+				smooth_scrolling = yes
+				autohide_scrollbars = yes
+				background = {
+					name = "BHU_log_Background"
+					quadTextureSprite = "GFX_tiled_window_transparent"
+					alwaystransparent = yes
+				}
+					
+				gridBoxType = {
+					name = "BHU_task_log_list"
+					position = { x = 0 y = 0}
+					#The size of the gridbox
+					size = { width = 100%% height = 100%% }
+					Orientation = upper_left
+					#The slot size
+					slotsize = {width=400 height=50 }
+					format = "UPPER_LEFT"
+					#the maximum horizontal gui elements
+					max_slots_horizontal = 1
+					#the maximum vertical gui elements
+					#max_slots_vertical = 1
+				}
+			}				
+		}
 	}
 	containerWindowType = {
 		name = "BHU_gentask_Array"
@@ -277,6 +355,60 @@ guiTypes = {
 			format = center 
 			font = "aldrich_24_outline"
 			text = "BHU_Desk_task_list_text"
+		}
+	}
+	containerWindowType = {
+		name = "BHU_specialtask_Array"
+		size = {width=400 height=60}
+		autohide_scrollbars = yes
+		iconType = {
+			name ="BHU_special_list_image_dyn"
+			quadTextureSprite ="GFX_BHU_three_category_frame"
+			position = { x=0 y=0 }
+			scale = 0.4
+		}
+		iconType = {
+			name ="special_task_list_start_button_frame"
+			quadTextureSprite ="GFX_BHU_three_category_frame"
+			position = { x=245 y=0 }
+			scale = 0.8	
+		}
+		buttonType = {
+			name ="special_task_list_start_button"
+			quadTextureSprite ="GFX_BHU_three_category_frame"
+			position = { x=245 y=0 }
+			scale = 0.8
+					
+		}
+		instantTextBoxType = {
+			name = "BhutanSpecialTaskListStartName"
+			position = { x = 210 y = 5 }
+			maxWidth = 150
+			maxHeight = 50
+			format = center 
+			font = "aldrich_24_outline"
+			text = "BHU_Desk_task_list_start_text_status"
+		}
+		instantTextBoxType = {
+			name = "BhutanSpecialTaskListName"
+			position = { x = 100 y = 0 }
+			maxWidth = 150
+			maxHeight = 50
+			format = center 
+			font = "aldrich_24_outline"
+			text = "BHU_Desk_specialtask_list_text"
+		}
+	}
+	
+	containerWindowType = {
+		name = "BHU_log_Array"
+		size = {width=400 height=60}
+		autohide_scrollbars = yes
+		iconType = {
+			name ="BHU_list_log_image_dyn"
+			quadTextureSprite ="GFX_BHU_three_category_frame"
+			position = { x=0 y=0 }
+			scale = 0.4
 		}
 	}
 	

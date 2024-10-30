@@ -7,7 +7,9 @@ on_actions = {
 				BHU_dynamic_modifiers_setup = yes
 				BHU_calculate_garrison = yes
 				set_variable = { BHU_desk_task = 0 }
-				set_variable = { BHU_desk_task_weekly_progress = 6 }
+				set_variable = { BHU_total_gen_task = 1 }
+				set_variable = { BHU_total_spec_task = 0 }
+				
 				add_to_array = { task_list = 0 }
 			}
 			AZH = {
@@ -21,18 +23,6 @@ on_actions = {
 			}
 			NEP = {
 				country_event = { id = NEP_ever.1 days = 21 } # Rana scandal begins
-			}
-		}
-	}
-	on_state_control_changed = {
-		effect = {
-			if = {
-				limit = {
-					has_global_flag = azad_war
-					original_tag = IND
-				}
-				SOA_calculate_momentum_var = yes
-				FROM = { SOA_calculate_momentum_var = yes }
 			}
 		}
 	}

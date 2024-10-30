@@ -116,6 +116,51 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = BHU_morale_monthly_display
+	text = {
+		trigger = {
+			check_variable = {
+					Meter_garrison_bar_supply_value < 20
+				}
+		}
+		localization_key = BHU_morale_display_20
+	}
+	text = {
+		trigger = {
+			check_variable = {
+					Meter_garrison_bar_supply_value < 40
+				}
+		}
+		localization_key = BHU_morale_display_40
+	}
+	text = {
+		trigger = {
+			check_variable = {
+					Meter_garrison_bar_supply_value < 60
+				}
+		}
+		localization_key = BHU_morale_display_60
+	}
+	text = {
+		trigger = {
+			check_variable = {
+					Meter_garrison_bar_supply_value < 80
+				}
+		}
+		localization_key = BHU_morale_display_80
+	}
+	text = {
+		trigger = {
+			check_variable = {
+					Meter_garrison_bar_supply_value < 100
+				}
+		}
+		localization_key = BHU_morale_display_100
+	}
+}
+
+
 ##Bhutan Desk GUI
 
 ######ACTIVE CATEGORY
@@ -169,6 +214,12 @@ defined_text = {
         }
         localization_key = "BHU_desk_push_production"
     }
+	text = {
+        trigger = {
+            check_variable = { BHU_desk_task = 15 }
+        }
+        localization_key = "BHU_desk_special_research_facilities"
+    }
 }
 defined_text = {
     name = BHU_desk_image
@@ -203,6 +254,12 @@ defined_text = {
         }
         localization_key = "GFX_BHU_push_production_image"
     }
+	text = {
+        trigger = {
+            check_variable = { BHU_desk_task = 15 }
+        }
+        localization_key = "GFX_BHU_sp_research_facilities_image"
+    }
 }
 defined_text = {
 	name = GetTaskName
@@ -236,6 +293,12 @@ defined_text = {
 		}
 		localization_key = BHU_desk_task_name_4
 	}
+	text = {
+        trigger = {
+            check_variable = { BHU_desk_task = 15 }
+        }
+        localization_key = "BHU_special_desk_task_name_1"
+    }
 }
 defined_text = {
 	name = GetTaskDesc
@@ -268,6 +331,12 @@ defined_text = {
 			check_variable = { BHU_desk_task = 4 }
 		}
 		localization_key = BHU_desk_task_desc_4
+	}
+	text = {
+		trigger = {
+			check_variable = { BHU_desk_task = 15 }
+		}
+		localization_key = BHU_special_desk_task_desc_1
 	}
 }
 

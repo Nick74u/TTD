@@ -52,6 +52,8 @@ spriteTypes = {
 		name = "GFX_news_event_bhutancwstart"
 		texturefile = "gfx/event_pictures/Asia/GFX_news_event_bhutancwstart.dds"
 	}
+	
+	### BHUTAN
 	spriteType = {
 		name = "GFX_news_event_govsuccess"
 		texturefile = "gfx/event_pictures/Asia/GFX_news_event_govsuccess.dds"
@@ -59,6 +61,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_news_event_rebsuccess"
 		texturefile = "gfx/event_pictures/Asia/GFX_news_event_rebsuccess.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_jigme_singye_takes_the_throne"
+		texturefile = "gfx/event_pictures/Asia/GFX_news_event_jigme_singye_takes_the_throne.dds"
 	}
 	
 	

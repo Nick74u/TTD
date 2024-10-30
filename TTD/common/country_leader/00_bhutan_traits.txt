@@ -6,11 +6,16 @@ leader_traits = {
 		stability_factor = -0.1
 		command_power_gain = 0.05
 		army_org = 3
+		BHU_min_convoy_supply_arrival = 3
+	}
+	hog_administrative_kingpin = {
+		random = no
+		BHU_desk_task_weekly_progress_adv = 5
+		political_power_gain = 0.15
 	}
 	sec_convoy_patroller = {
 		random = no
-		BHU_min_convoy_supply_arrival = 5
-		political_power_gain = 0.10
+		BHU_min_convoy_supply_arrival = 2
 	}
 	
 }

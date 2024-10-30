@@ -22,4 +22,19 @@ characters = {
 			id = -1
 		}
 	}
+	FBH_Jigme_Singye_Wangchuck = {
+		name = FBH_Jigme_Singye_Wangchuck
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BHU/Portrait_Bhutan_Jigme_Singye_Wangchuck.dds"
+			}
+		}
+		country_leader = {
+			desc = ""
+			expire = "1999.1.1"
+			ideology = paternalism_subtype
+			traits = {}
+			id = -1
+		}
+	}
 }

@@ -412,3 +412,16 @@ news_event = { # Resistance wins
 		name = TTD_bhutan_news.4.a
 	}
 }
+news_event = { # Singye takes over
+	id = TTD_bhutan_news.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TTD_bhutan_news.5" }
+	title = TTD_bhutan_news.5.t
+	desc = TTD_bhutan_news.5.d
+	picture = GFX_news_event_jigme_singye_takes_the_throne
+
+	is_triggered_only = yes
+
+	option = {
+		name = TTD_bhutan_news.5.a
+	}
+}

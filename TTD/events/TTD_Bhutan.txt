@@ -18,7 +18,7 @@ country_event = {    ####Add Train Mountaineers Task
 	immediate = {
 		TTD_add_BHU_desk_task_train_mountaineers = yes
 	}
-	option = { # paperwork!
+	option = {
 		name = bhutan_desk_task_event.0.a
 		
 	}
@@ -32,7 +32,7 @@ country_event = {    ####Add Construct Task
 	immediate = {
 		TTD_add_BHU_desk_task_construct = yes
 	}
-	option = { # paperwork!
+	option = { 
 		name = bhutan_desk_task_event.1.a
 		
 
@@ -47,7 +47,7 @@ country_event = {    ####Add Land Survey Task
 	immediate = {
 		TTD_add_BHU_desk_task_land_survey = yes
 	}
-	option = { # paperwork!
+	option = { 
 		name = bhutan_desk_task_event.2.a
 		
 
@@ -62,10 +62,24 @@ country_event = {    ####Add push production Task
 	immediate = {
 		TTD_add_BHU_desk_push_production_survey = yes
 	}
-	option = { # paperwork!
+	option = { 
 		name = bhutan_desk_task_event.3.a
 		
 
+	}
+}
+country_event = {    ####Add Research Facilities Task
+	id = bhutan_desk_task_event.15
+	title = bhutan_desk_task_event.15.t
+	desc = bhutan_desk_task_event.15.d
+	
+	is_triggered_only = yes
+	immediate = {
+		TTD_add_BHU_desk_research_facilities = yes
+	}
+	option = {
+		name = bhutan_desk_task_event.15.a
+		
 	}
 }
 country_event = {    ####Desk Task Finished!
@@ -75,52 +89,10 @@ country_event = {    ####Desk Task Finished!
 	
 	is_triggered_only = yes
 	
-	option = { # paperwork!
+	option = {
 		name = bhutan_desk_task_event.25.a
-		if = {
-			limit = {
-				has_country_flag = BHU_train_mountaineers
-			}
-			add_manpower = 450
-			clr_country_flag = BHU_train_mountaineers
-		}
-		else_if = {
-			limit = {
-				has_country_flag = BHU_construct
-			}
-			set_temp_variable = { temp_econ_GDP_boost_percentage = 0.004 }
-			econ_GDP_boost_once_percentage = yes
-			clr_country_flag = BHU_construct
-		}
-		else_if = {
-			limit = {
-				has_country_flag = BHU_land_survey
-			}
-			random_owned_controlled_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_extra_state_shared_building_slots = 1
-			}
-			clr_country_flag = BHU_land_survey
-		}
-		else_if = {
-			limit = {
-				has_country_flag = BHU_push_production
-			}
-			add_timed_idea = {
-				idea = BHU_push_production_spirit
-				days = 45
-			}
-			clr_country_flag = BHU_push_production
-		}
-		hidden_effect = {
-			set_variable = { BHU_task_cooldown = 31 }
-			country_event = { id = bhutan_desk_task_event.26 }
-		}
-		BHU_clean_desk_task_var = yes
+		
+		BHU_desk_task_results = yes
 	}
 }
 country_event = { # cooldown tick
@@ -211,7 +183,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { # paperwork!
+	option = {
 		name = bhutan_focus_event.1.a
 		ai_chance = { factor = 90 }
 	}
@@ -223,7 +195,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { # paperwork!
+	option = { 
 		name = bhutan_focus_event.2.a
 		custom_effect_tooltip = BHU_poverty
 		set_country_flag = BHU_tackle_poverty
@@ -283,13 +255,13 @@ country_event = { #Welcoming the Japanese
 		}
 	}
 }
-country_event = { #a
+country_event = { 
 	id = bhutan_focus_event.11
 	title = bhutan_focus_event.11.t
 	desc = bhutan_focus_event.11.d
 	is_triggered_only = yes
 	
-	option = { # 
+	option = { #
 		name = bhutan_focus_event.11.a
 		
 	}
@@ -300,7 +272,7 @@ country_event = { #Change capital to Thimphu
 	desc = bhutan_focus_event.12.d
 	is_triggered_only = yes
 	
-	option = { # 
+	option = { 
 		name = bhutan_focus_event.12.a
 		set_capital = {
 			state = 324
@@ -343,7 +315,7 @@ country_event = {
 	picture = GFX_Kolkata_building
 	is_triggered_only = yes
 	
-	option = { # paperwork!
+	option = { 
 		name = bhutan_border_skirmish.2.a
 		custom_effect_tooltip = BHU_mtsho_border_war
 		set_country_flag = BHU_azad_hind_approves
@@ -357,7 +329,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	option = { # attack!
+	option = {
 		name = bhutan_border_skirmish.3.a
 		transfer_state = 1962
 		set_country_flag = BHU_mtsho_obtained
@@ -395,7 +367,7 @@ country_event = {
 	mean_time_to_happen = {
 	    days = 4
     }
-	option = { # paperwork!
+	option = {
 		
 		name = bhutan_civil_war.0.a
 		ai_chance = { factor = 90 }
@@ -419,7 +391,7 @@ country_event = {
 	trigger = {
 	    tag = BHU
 	}
-	option = { # paperwork!
+	option = { 
 		name = bhutan_civil_war.1.a
 		ai_chance = { factor = 90 }
 		country_event = {
@@ -442,7 +414,7 @@ country_event = {
 	trigger = {
 	    tag = BHU
 	}
-	option = { # paperwork!
+	option = { 
 		name = bhutan_civil_war.2.a
 		ai_chance = { factor = 90 }
 		country_event = {
@@ -474,7 +446,7 @@ country_event = {
 	trigger = {
 	    tag = BHU
 	}
-	option = { # paperwork!
+	option = {
 		name = bhutan_civil_war.3.a
 		ai_chance = { factor = 90 }
 		FBH = { 
@@ -520,6 +492,7 @@ country_event = {
 			load_focus_tree = freebhutan_focus
 			econ_initialize_credit_rating_system = yes
             initiate_display_vars = yes
+			
 		}
 		remove_ideas = {
 			BHU_A_Dragon_Restless

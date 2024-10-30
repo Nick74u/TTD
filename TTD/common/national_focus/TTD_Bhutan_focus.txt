@@ -13,61 +13,11 @@ focus_tree = {
 	default = no
 	
 	focus = {
-	    id = BHU_removing_the_rubble
-		icon = GFX_goal_removing_the_rubble
-		x = 7
-		y = 0
-		
-		cost = 0.724
-		
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = BHU_removing_rubble_tt	
-		}
-	}
-	focus = {
-	    id = BHU_in_azad_hind_vision
-		icon = GFX_goal_in_azad_hind_vision
-		x = 0
-		y = 1
-		relative_position_id = BHU_removing_the_rubble
-		cost = 0.724
-		prerequisite = { focus = BHU_removing_the_rubble }
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			custom_effect_tooltip = BHU_modernize_bhutan_tt
-		}
-	}
-	focus = {
 	    id = BHU_the_chained_dragon
 		icon = GFX_goal_a_chained_dragon
-		x = 0
-		y = 1
-		relative_position_id = BHU_in_azad_hind_vision
-		
-		prerequisite = { focus = BHU_in_azad_hind_vision }
+		x = 7
+		y = 0
+	
 		cost = 2.24
 		
 		available = {
@@ -83,9 +33,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			
-			add_to_array = { task_list = 1 }
-			add_to_array = { task_list = 2 }
+			set_temp_variable = { BHU_desk_task_array_temp = 0 }
+			TTD_add_BHU_generic_desk_task_array = yes
 			set_country_flag = BHU_show_garrison_gui
 			custom_effect_tooltip = BHU_unlocks_garrison_gui
 			hidden_effect = {
@@ -170,6 +119,8 @@ focus_tree = {
 
 		completion_reward = {
 			TNO_improve_research_facilities_low = yes
+			set_temp_variable = { BHU_desk_special_task_array_temp = 0 }
+			TTD_add_BHU_special_desk_task_array = yes
 		}
 	}
 	focus = {
@@ -224,9 +175,9 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_laying_the_groundworks
-		icon = focus_From_Mountains_to_Cities
+		icon = GFX_goal_removing_the_rubble
 		x = -2
-		y = 2
+		y = 1
 		relative_position_id = BHU_a_road_map_for_the_future
 		cost = 2.89
 		
@@ -255,7 +206,7 @@ focus_tree = {
 	    	econ_gdp_growth_change = yes
 			custom_effect_tooltip = BHU_unlocks_bhutan_maps_gui
 			set_country_flag = BHU_laying_the_groundworks
-		    set_country_flag = BHU_map_gui_show
+		    #set_country_flag = BHU_map_gui_show
 			set_country_flag = init_focus_done
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -269,7 +220,6 @@ focus_tree = {
 		relative_position_id = BHU_laying_the_groundworks
 		cost = 2
 		
-		mutually_exclusive = { focus = BHU_kanwal_gamble }
 		prerequisite = { focus = BHU_laying_the_groundworks }
 
 		
@@ -295,13 +245,12 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_kanwal_gamble
-		icon = GFX_goal_kanwal_gamble
+		icon = GFX_goal_in_azad_hind_vision
 		x = -6
 		y = 1
 		relative_position_id = BHU_laying_the_groundworks
 		cost = 2
 		
-		mutually_exclusive = { focus = BHU_the_phone_to_hell }
 		prerequisite = { focus = BHU_laying_the_groundworks }
 		
 		available = {
@@ -351,7 +300,7 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_tactics_for_a_troublesome_land
-		icon = focus_From_Mountains_to_Cities
+		icon = GFX_goal_kanwal_gamble
 		x = 0
 		y = 1
 		relative_position_id = BHU_kanwal_gamble
@@ -378,7 +327,7 @@ focus_tree = {
 	}
 	focus = {
 	    id = BHU_homegrown_supplies
-		icon = focus_From_Mountains_to_Cities
+		icon = GFX_goal_BHU_meet_with_monasteries
 		x = -2
 		y = 1
 		relative_position_id = BHU_tactics_for_a_troublesome_land
@@ -544,11 +493,8 @@ focus_tree = {
 		relative_position_id = BHU_extending_the_hilda
 		cost = 2
 		
-		prerequisite = {
-				
-			focus =	BHU_reaching_out_a_hand_to_the_locals
-			focus =	BHU_extending_the_hilda
-		}
+		prerequisite = { focus = BHU_reaching_out_a_hand_to_the_locals }
+		prerequisite = { focus = BHU_extending_the_hilda }
 		
 		available = {
 			
@@ -894,7 +840,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_to_array = { task_list = 3 }
+			set_temp_variable = { BHU_desk_task_array_temp = 1 }
+			TTD_add_BHU_generic_desk_task_array = yes
 		}
 	}
 	focus = {
@@ -1238,8 +1185,8 @@ focus_tree = {
 				set_temp_variable = { BHU_production_units_to_GDP_ratio_modifier_temp = 0.020 }
 			}
 			BHU_economy_status_change = yes
-			load_focus_tree = BHU_Kanwal_tree_2
-			mark_focus_tree_layout_dirty = yes
+			#load_focus_tree = BHU_Kanwal_tree_2
+			#mark_focus_tree_layout_dirty = yes
 		}
 	}
 }
