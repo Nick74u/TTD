@@ -1,0 +1,37 @@
+﻿  l_english:
+########Ideas##################
+    BHU_TOW_title: "BHUTANESE TUG OF WAR"
+    BHU_TOW_info: "§gIn the desolate silence of the Bhutanese mountains lies a shadow war fought between the §OBhotamuzh§! and the §GINA§!. Every 2 weeks new reports of switching allegiance and manpower losses bringing a silence to an area\n\nThe two factions fight to win the §gcontrol§! and §Rhearts§! of the §OBhut§!§Ganese§! people.\n\n Only time will tell when the §OBhotamuzh§! finally rises up.\n\n Maybe in a time of §Rcrisis§! they will eventually....§!"
+    BHU_TOW_state_control: "§GFaction§! §gState§! §YControl§!"
+    BHU_TOW_state_control_tt: "Control Breakdown:\n§GINA Control: [?BHU_map_v:BHU_INA_state_control|2]§!\n§YBhotamuzh Control: [?BHU_map_v:BHU_BHZ_state_control|2]§!\n§gContested Control: [?BHU_map_v:BHU_contested_state_control|2]§!\n-------\nPopularity Breakdown:\n§GINA Popularity: [?BHU_map_v:BHU_INA_state_popularity|2]§!\n§YBhotamuzh Popularity: [?BHU_map_v:BHU_BHZ_state_popularity|2]§!"
+    BHU_TOW_map_tt: "§F§Y[?BHU_map_v.GetName]§!\n§GClick§! to view decisions on this state.§!\n§Y[?BHU_map_v.GetName]§!: [?BHU_map_v.GetStateStatus]"
+    BHU_TOW_map_locked_tt: "The Disastrous Tibetan occupation of Arunachal Pradesh has made it clear they are our enemies. Irredentism will be stoked as we march towards the reclamation of our rightful land"
+    
+    BHU_TOW_state_status: "§gStatus§!"
+    BHU_TOW_state_status_current: "§Y[?BHU_map_selected_state.GetName]§!: [?BHU_map_selected_state.GetStateStatus]"
+    
+    BHU_TOW_INA_occupied: "§GINA Controlled§!"
+    BHU_TOW_contested_occupied: "§gContested§!"
+    BHU_TOW_BHZ_occupied: "§OBhotamuzh Controlled§!"
+    
+    BHU_TOW_state_popularity: "[GetFactionPopularity]: Popularity"
+    
+    BHU_TOW_action_1_tt:0 "[?BHU_map_selected_state.GetName]\n[!]\n§YEffects:§!\n[!test_1_click]"
+    BHU_TOW_action_2_tt:0 "[?BHU_map_selected_state.GetName]\n[!]\n§YEffects:§!\n[!test_2_click]"
+    
+    BHU_TOW_timer_number:0 "Days until next phase tick:\n[?BHU_TOW_phase_tick]"
+    BHU_TOW_INA_control_increase_tt: "Increase §GINA Control§! by: [?BHU_map_v:BHU_INA_state_control_temp]"
+    BHU_TOW_BHZ_control_increase_tt: "Increase §OBhotamuzh§! Control by: [?BHU_map_v:BHU_BHZ_state_control_temp]"
+    BHU_TOW_CON_control_increase_tt: "Increase §gContested§! Control by: [?BHU_map_v:BHU_contested_state_control_temp]"
+    bhutan_map_category_desc: "Selected State: §Y[?BHU_map_selected_state.GetName]§!\nSelected Faction: §Y[GetFactionPopularity]§!"
+    BHU_bhz_faction: "Select Actions for the Bhotamuzh"
+    
+    BHU_TOW_popularity_0: "§gNONE SELECTED§!"
+    BHU_TOW_popularity_1: "§GINA§!"
+    BHU_TOW_popularity_2: "§OBhotamuzh§!"
+    
+    BHU_TOW_INA_popularity_increase_tt: "§GINA§! Popularity will §Gincrease§! by: [?BHU_map_v:BHU_INA_state_popularity_temp] "
+    BHU_TOW_INA_popularity_decrease_tt: "§GINA§! Popularity will §Rdecrease§! by: [?BHU_map_v:BHU_INA_state_popularity_temp]"
+    
+    BHU_TOW_BHZ_popularity_increase_tt: "§OBhotamuzh§! Popularity will §Gincrease§! by: [?BHU_map_v:BHU_BHZ_state_popularity_temp] "
+    BHU_TOW_BHZ_popularity_decrease_tt: "§OBhotamuzh§! Popularity will §Rdecrease§! by: [?BHU_map_v:BHU_BHZ_state_popularity_temp]"

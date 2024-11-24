@@ -18,11 +18,11 @@ guiTypes = {
 			name = "BHU_Map_GUI_Assets"
 			size = { width = 0 height = 0 }
 			position = { x = 0 y = 0 }
-			#iconType = {
-	    	#	name = "Bhutan_Map_outline"
-	    	#	spriteType = "GFX_BHU_Map_Outline"
-	    	#	position = { x = 0 y = 35 } 
-	    	#}
+			iconType = {
+	    		name = "Bhutan_Map_outline"
+	    		spriteType = "GFX_BHU_Map_Outline"
+	    		position = { x = 0 y = 35 } 
+	    	}
 	    	iconType = {
 	    		name = "Bhutan_Thimphu_outline"
 	    		spriteType = "GFX_BHU_Thimphu_Outline"

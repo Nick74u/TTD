@@ -1,0 +1,196 @@
+scripted_gui = {
+	TNO_BHU_Influence_OpenButtonContainer = {
+		window_name = "TNO_BHU_Influence_AccessButton"
+		context_type = player_context
+		parent_window_token = politics_tab
+
+		visible = {
+			tag = BHU
+		}
+
+		effects = {
+			TNO_BHU_Influence_OpenButton_click = {
+				if = {
+					limit = { NOT = { has_country_flag = TNO_BHU_Influence_GUI_Open } }
+					set_country_flag = TNO_BHU_Influence_GUI_Open
+				}
+				else_if = {
+					limit = { has_country_flag = TNO_BHU_Influence_GUI_Open }
+					clr_country_flag = TNO_BHU_Influence_GUI_Open
+				}
+				clr_country_flag = gui_alert_visible
+				BHU_TOW_update_state_control = yes
+			}
+			
+		}
+
+		triggers = {
+			gui_alert_visible = {
+				has_country_flag = gui_alert_visible
+			}
+		}
+	}
+
+
+	TNO_BHU_Influence_Scripted_GUI = {
+		context_type = player_context
+		window_name = "TNO_BHU_Influence_GUI"
+		dirty = BHU_TOW_dirty_var
+
+		visible = {
+			has_country_flag = TNO_BHU_Influence_GUI_Open
+		}
+
+		dynamic_lists = {
+			BHU_map_layout = {
+				array = BHU_map_array
+				entry_container = TNO_BHU_Tug_Of_War_GUI_Map_Entry
+				value = BHU_map_v
+				index = BHU_map_i
+			}
+		}
+
+		triggers = {
+			BHU_map_button_visible = {
+				set_temp_variable = { BHU_map_button_y = BHU_state_y^BHU_map_i }
+				subtract_from_temp_variable = { BHU_map_button_y = 1 }
+
+				set_temp_variable = { BHU_map_button_x = BHU_state_x^BHU_map_i }
+				subtract_from_temp_variable = { BHU_map_button_x = 1 }
+
+				set_temp_variable = { BHU_blocked_state_icon_y = BHU_state_y^BHU_map_i }
+				add_to_temp_variable = { BHU_blocked_state_icon_y = 1 }
+
+				set_temp_variable = { BHU_blocked_state_icon_x = BHU_state_x^BHU_map_i }
+
+
+				if = {
+					limit = {
+						check_variable = { BHU_map_selected_state = bhu_map_v }
+					}
+					set_temp_variable = { BHU_state_button_frame = 2 }
+				}
+				else = {
+					set_temp_variable = { BHU_state_button_frame = 1 }
+				}
+
+			}
+			BHU_map_button_click_enabled = {
+				var:BHU_map_v = { is_owned_by = BHU }
+			}
+
+			state_1962_locked_visible = {
+				NOT = {
+					has_country_flag = BHU_mtsho_obtained
+				}
+			}
+			BHU_map_icon_visible = {
+				var:BHU_map_v = { is_owned_by = BHU }
+			}
+			BHU_TugOfWar_Bar_INA_popularity_visible = {
+				check_variable = { BHU_TOW_selected_faction = 1 }
+			}
+			BHU_TugOfWar_Bar_BHZ_popularity_visible = {
+				check_variable = { BHU_TOW_selected_faction = 2 }
+			}
+			BHU_locked_map_icon_visible = {
+				NOT = {
+					var:BHU_map_v = { is_owned_by = BHU }
+				}
+				
+			}
+			BHU_TugOfWar_Bar_Contested_visible = {
+				set_temp_variable = { CNT_bar_x = 0 }
+				add_to_temp_variable = { CNT_bar_x = BHU_map_selected_state:BHU_INA_state_control }
+				multiply_temp_variable = { CNT_bar_x = 3.71 }
+				add_to_temp_variable = { CNT_bar_x = 3 }
+			}
+			BHU_TugOfWar_Bar_BHZ_Control_visible = {
+				set_temp_variable = { BHZ_bar_x = 0 }
+				add_to_temp_variable = { BHZ_bar_x = BHU_map_selected_state:BHU_INA_state_control }
+				add_to_temp_variable = { BHZ_bar_x = BHU_map_selected_state:BHU_contested_state_control }
+				multiply_temp_variable = { BHZ_bar_x = 3.71 }
+				add_to_temp_variable = { BHZ_bar_x = 3 }
+			}
+			
+		}
+
+		effects = {
+			TNO_BHU_influence_close_button_click = {
+				clr_country_flag = TNO_BHU_Influence_GUI_Open
+			}
+			BHU_map_button_click = {
+				set_variable = { BHU_map_selected_state = bhu_map_v }
+				add_to_variable = { BHU_TOW_dirty_var = 0.01 }
+			}
+			azad_button_click = {
+				set_variable = { BHU_TOW_selected_faction = 1 }
+				add_to_variable = { BHU_TOW_dirty_var = 0.01 }
+			}
+			bhz_button_click = {
+				set_variable = { BHU_TOW_selected_faction = 2 }
+				add_to_variable = { BHU_TOW_dirty_var = 0.01 }
+			}
+			test_1_click = {
+				var:BHU_map_selected_state = {
+					set_temp_variable = { BHU_BHZ_state_control_temp = 5 }
+					BHU_TOW_calc_state_control = yes
+					
+				}
+				BHU_TOW_update_state_control = yes
+
+			}
+			test_2_click = {
+				var:BHU_map_selected_state = {
+					set_temp_variable = { BHU_INA_state_control_temp = 5 }
+					BHU_TOW_calc_state_control = yes
+				}
+				BHU_TOW_update_state_control = yes
+			}
+			
+		}
+
+		properties = {
+			BHU_map_icon = {
+				frame = bhu_map_v:gui_display_frame
+				image = "GFX_BHU_TugOfWar_State_[?bhu_map_v]"
+				x = BHU_state_x^BHU_map_i
+				y = BHU_state_y^BHU_map_i
+			}
+			BHU_locked_map_icon = {
+				image = "GFX_BHU_TugOfWar_State_Blocked_[?bhu_map_v]"
+				x = BHU_blocked_state_icon_x
+				y = BHU_blocked_state_icon_y
+				
+			}
+			BHU_map_button = {
+				frame = BHU_state_button_frame
+				image = "GFX_BHU_TugOfWar_State_Selected_[?bhu_map_v]"
+				x = BHU_map_button_x
+				y = BHU_map_button_y
+			}
+
+			#UPH_Influence_GUI_top_progressbar = { frame = 39 }
+
+			BHU_TugOfWar_Bar_INA_Control = { frame = BHU_map_selected_state:BHU_INA_state_control }
+			BHU_TugOfWar_Bar_BHZ_Control = { 
+				frame = BHU_map_selected_state:BHU_BHZ_state_control 
+				x = BHZ_bar_x
+			}
+			BHU_TugOfWar_Bar_Contested = { 
+				frame = BHU_map_selected_state:BHU_contested_state_control 
+				x = CNT_bar_x
+			}
+			
+			BHU_TugOfWar_Bar_INA_popularity = { frame = BHU_map_selected_state:BHU_INA_state_popularity }
+			BHU_TugOfWar_Bar_BHZ_popularity = { 
+				frame = BHU_map_selected_state:BHU_BHZ_state_popularity 
+			}
+			BHU_TugOfWar_Bar_Contested = { 
+				frame = BHU_map_selected_state:BHU_contested_state_control 
+				x = CNT_bar_x
+			}
+			#UPH_Influence_GUI_Bar_Opinion = { frame = 57 }
+		}		
+	}
+}

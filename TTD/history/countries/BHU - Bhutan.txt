@@ -8,10 +8,12 @@ recruit_character = BHU_Ian_Cardozo
 recruit_character = BHU_Khaled_Mosharraf
 recruit_character = BHU_Piru_Singh
 recruit_character = BHU_Hussain_Muhammad_Ershad
+recruit_character = BHU_Mirza_Ahmad_Ispahani
+recruit_character = BHU_Muhammad_Hamidullah_Khan
 recruit_character = BHU_Dasho_Kesang
-recruit_character = BHU_Lhendup_Dorji
 recruit_character = BHU_Jigme_Dorji_Wangchuck
 recruit_character = BHU_Makoto_Matsutani
+
 add_manpower = 4626
 
 set_variable = { 
@@ -20,6 +22,9 @@ set_variable = {
 load_focus_tree = TTD_Bhutan_focus
 oob = "TTD_BHU_1962"
 set_country_flag = tno_playable_country
+set_country_flag = gui_alert_visible
+set_country_flag = country_has_gui
+
 set_politics = {
 	ruling_party = paternalism
 	last_election = "1962.1.1"

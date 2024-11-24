@@ -1,0 +1,241 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TNO_BHU_Influence_AccessButton"
+		size = { width = 220 height = 128 }
+		position = { x = 0 y = 289 }
+
+		buttonType = {
+			name = "TNO_BHU_Influence_OpenButton"
+			quadTextureSprite = "TNO_BHU_Open_Influence_GUI"
+			scale = 0.68
+			position = { x = 238 y = 36 }
+			
+			clicksound = click_default
+			oversound = ui_menu_over
+		}
+
+		iconType = {
+			name = "gui_alert"
+			spriteType = "GFX_gui_alert"
+			position = { x=189 y=-16 }
+		}
+	}
+
+	containerWindowType = {
+		name = "TNO_BHU_Influence_GUI"
+		size = { width = 999 height = 845 }
+		position = { x = 538 y = 77 }
+		show_sound = open_sub_window
+		moveable = yes
+		clipping = no
+
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_1b_no_border"
+		}
+		iconType = {
+			name = "BHU_Influence_GUI_CRT_Borders"
+			spriteType = "GFX_BHU_Influence_GUI_CRT_Borders"
+			position = { x = 13 y = 17 }
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "TNO_BHU_Influence_GUI_Title"
+			position = { x = 15 y = -6 }
+			font = "vt323_72_WT_outline"
+			text = "BHU_TOW_title"
+			maxWidth = 865
+			maxHeight = 58
+			format = center
+			fixedsize = yes
+		}
+
+		iconType = {
+			name = "TNO_BHU_influence_info_tab"
+			spriteType = "GFX_Japan_Internal_GUI_Info_Tab"
+			position = { x = -124 y = 23 }
+			orientation = UPPER_RIGHT
+			pdx_tooltip = "BHU_TOW_info"
+		}
+
+		buttonType = {
+			name = "TNO_BHU_influence_close_button"
+			position = { x = -70 y = 22 }
+			quadTextureSprite = "GFX_Kartenhaus_CloseButton"
+			orientation = UPPER_RIGHT
+			clicksound = click_close
+			shortcut = "ESCAPE"
+		}
+
+		
+		containerWindowType = {
+				name = "group_influence_container"
+				position = { x = 550 y = 250 }
+				
+				icontype = {
+					name = "frame"
+					spritetype = "GFX_BHU_TugOfWar_bar_frame"
+					pdx_tooltip = BHU_TOW_state_control_tt
+				}
+				
+				instantTextBoxType = {
+					name = "container_title"
+					position = { x = 15 y = 50 }
+					format = center
+					maxWidth = 350
+					font = "aldrich_20_outline"
+					text = "BHU_TOW_state_control"
+				}
+
+				iconType = {
+					name = "BHU_TugOfWar_Bar_INA_Control"
+					position = { x = 3 y = 2 }
+					spriteType = "GFX_BHU_TugOfWar_Bar_INA_Control"
+				}
+				iconType = {
+					name = "BHU_TugOfWar_Bar_Contested"
+					position = { x = 3 y = 2 }
+					quadTextureSprite = "GFX_BHU_TugOfWar_Bar_Contested"
+				}
+				iconType = {
+					name = "BHU_TugOfWar_Bar_BHZ_Control"
+					position = { x = 3 y = 2 }
+					quadTextureSprite = "GFX_BHU_TugOfWar_Bar_BHZ_Control"
+				}
+				
+						
+			}
+		containerWindowType = {
+				name = "group_popularity_container"
+				position = { x = 550 y = 330 }
+				
+				icontype = {
+					name = "frame"
+					spritetype = "GFX_BHU_TugOfWar_bar_frame"
+					pdx_tooltip = BHU_TOW_state_control_tt
+				}
+				
+				instantTextBoxType = {
+					name = "container_popularity_title"
+					position = { x = 15 y = 50 }
+					format = center
+					maxWidth = 350
+					font = "aldrich_20_outline"
+					text = "BHU_TOW_state_popularity"
+				}
+				
+				iconType = {
+					name = "BHU_TugOfWar_Bar_INA_popularity"
+					position = { x = 3 y = 2 }
+					spriteType = "GFX_BHU_TugOfWar_Bar_INA_Control"
+				}
+				iconType = {
+					name = "BHU_TugOfWar_Bar_BHZ_popularity"
+					position = { x = 3 y = 2 }
+					quadTextureSprite = "GFX_BHU_TugOfWar_Bar_BHZ_Control"
+				}
+			
+			}
+				
+		containerWindowType = {
+			name = "faction_buttons"
+			position = { x = 0 y = 550 }
+
+			buttonType = {
+				name = "azad_button"
+				spriteType = "GFX_BHU_azad"
+				position = { x = 85 y = -15 }
+				pdx_tooltip = BHU_azad_faction
+			}
+			
+			buttonType = {
+				name = "bhz_button"
+				spriteType = "GFX_BHU_bhz"
+				position = { x = 15 y = 80 }
+				pdx_tooltip = BHU_bhz_faction
+			}
+			
+			buttonType = {
+				name = "test_1"
+				spriteType = "GFX_BHU_azad_selected"
+				position = { x = 400 y = 100 }
+				pdx_tooltip = "BHU_TOW_action_1_tt"
+			}
+			buttonType = {
+				name = "test_2"
+				spriteType = "GFX_BHU_azad_selected"
+				position = { x = 500 y = 100 }
+				pdx_tooltip = "BHU_TOW_action_2_tt"
+			}
+		}
+		
+		gridboxtype = {
+			name = "BHU_map_layout"
+			position = { x = 25 y = 300 }
+		}
+		
+		containerWindowType = {
+			name = "status_section"
+			position = { x = 55 y = 200 }
+			
+
+			instantTextBoxType = {
+				name = "status_title"
+				position = { x = 15 y = 50 }
+				maxWidth = 345
+				maxHeight = 20
+				format = center
+				font = "aldrich_36_outline"
+				text = "BHU_TOW_state_status"
+			}
+			instantTextBoxType = {
+				name = "status_text"
+				position = { x = 15 y = 85 }
+				maxWidth = 345
+				maxHeight = 20
+				format = center
+				font = "aldrich_20_outline"
+				text = "BHU_TOW_state_status_current"
+			}
+			instantTextBoxType = {
+				name = "phase_clock_text"
+				position = { x = -280 y = -60 }
+				maxWidth = 999
+				maxHeight = 40
+				format = center
+				font = "aldrich_36_outline"
+				text = "BHU_TOW_timer_number"
+			}
+		}
+		icontype = {
+					name = "state_1962_locked"
+					position = { x = 291 y = 335 }
+					spritetype = "GFX_BHU_TugOfWar_State_Blocked_1962"
+					pdx_tooltip = BHU_TOW_map_locked_tt
+				}
+	}
+	containerWindowType = {
+		name = "TNO_BHU_Tug_Of_War_GUI_Map_Entry"
+		iconType = {
+			name = "BHU_map_icon"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "BHU_locked_map_icon"
+
+
+			
+			pdx_tooltip_delayed = BHU_TOW_state_control_tt
+		}
+		buttontype = {
+			name = "BHU_map_button"
+			spriteType = "GFX_blank"
+			pdx_tooltip = BHU_TOW_map_tt
+			pdx_tooltip_delayed = BHU_TOW_state_control_tt
+		}
+	}
+	
+	
+}

@@ -8,5 +8,5 @@ dependencies={
 }
 picture="thumbnail.png"
 replace_path="common/bookmarks"
-supported_version="1.14.*"
+supported_version="1.15.*"
 path="C:/Users/Admin/Documents/Paradox Interactive/Hearts of Iron IV/mod/TTD"

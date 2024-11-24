@@ -1,0 +1,448 @@
+BHU_map_setup = {
+	clear_array = BHU_map_array
+	clear_array = BHU_state_x
+	clear_array = BHU_state_y
+
+			add_to_array = { BHU_map_array = 324 }
+			add_to_array = { BHU_state_x = 28 }
+			add_to_array = { BHU_state_y = 28 }
+			
+			324 = {
+				set_variable = { BHU_INA_state_control = 65 }
+				set_variable = { BHU_contested_state_control = 25 }
+				set_variable = { BHU_BHZ_state_control = 10 }
+					
+				set_variable = { BHU_BHZ_state_popularity = 15 }
+				set_variable = { BHU_INA_state_popularity = 10 }
+			}
+
+			add_to_array = { BHU_map_array = 2020 }
+			add_to_array = { BHU_state_x = 95 }
+			add_to_array = { BHU_state_y = 39 }
+				
+			2020 = {
+				set_variable = { BHU_INA_state_control = 90 }
+				set_variable = { BHU_contested_state_control = 7 }
+				set_variable = { BHU_BHZ_state_control = 3 }
+						
+				set_variable = { BHU_BHZ_state_popularity = 10 }
+				set_variable = { BHU_INA_state_popularity = 10 }
+			}
+
+			add_to_array = { BHU_map_array = 2018 }
+			add_to_array = { BHU_state_x = -2 }
+			add_to_array = { BHU_state_y = 105 }
+				
+			2018 = {
+					
+				set_variable = { BHU_INA_state_control = 75 }
+				set_variable = { BHU_contested_state_control = 15 }
+				set_variable = { BHU_BHZ_state_control = 10 }
+						
+				set_variable = { BHU_BHZ_state_popularity = 15 }
+				set_variable = { BHU_INA_state_popularity = 10 }
+			}
+				
+			add_to_array = { BHU_map_array = 2016 }
+			add_to_array = { BHU_state_x = 120 }
+			add_to_array = { BHU_state_y = 59 }
+				
+			2016 = {
+				set_variable = { BHU_INA_state_control = 25 }
+				set_variable = { BHU_contested_state_control = 50 }
+				set_variable = { BHU_BHZ_state_control = 25 }
+					
+					
+				set_variable = { BHU_BHZ_state_popularity = 15 }
+				set_variable = { BHU_INA_state_popularity = 10 }
+			}
+
+			add_to_array = { BHU_map_array = 2017 }
+			add_to_array = { BHU_state_x = 186 }
+			add_to_array = { BHU_state_y = 55 }
+				
+			2017 = {
+				set_variable = { BHU_INA_state_control = 10 }
+				set_variable = { BHU_contested_state_control = 60 }
+				set_variable = { BHU_BHZ_state_control = 30 }
+					
+					
+				set_variable = { BHU_BHZ_state_popularity = 15 }
+				set_variable = { BHU_INA_state_popularity = 10 }
+			}
+				
+			add_to_array = { BHU_map_array = 2019 }
+			add_to_array = { BHU_state_x = 210 }
+			add_to_array = { BHU_state_y = 120 }
+				
+			2019 = {
+				set_variable = { BHU_INA_state_control = 5 }
+				set_variable = { BHU_contested_state_control = 40 }
+				set_variable = { BHU_BHZ_state_control = 55 }
+					
+					
+				set_variable = { BHU_BHZ_state_popularity = 15 }
+				set_variable = { BHU_INA_state_popularity = 10 }
+			}
+	BHU_TOW_update_state_control = yes
+}
+BHU_activate_cona = {
+	add_to_array = { BHU_map_array = 1962 }
+	add_to_array = { BHU_state_x = 267 }
+	add_to_array = { BHU_state_y = 35 }
+				
+	1962 = {
+		set_variable = { BHU_INA_state_control = 0 }
+		set_variable = { BHU_contested_state_control = 0 }
+		set_variable = { BHU_BHZ_state_control = 100 }
+					
+					
+		set_variable = { BHU_BHZ_state_popularity = 65 }
+		set_variable = { BHU_INA_state_popularity = 10 }
+	}
+}
+BHU_TOW_calc_state_control = {
+	
+	
+	if = { ##Checks what type of var was given
+		limit = {
+			check_variable = {
+				BHU_INA_state_control_temp > 0
+			}
+		}
+		add_to_variable = { BHU_INA_state_control = BHU_INA_state_control_temp }
+		set_temp_variable = { BHU_state_control_reducer = BHU_INA_state_control_temp }
+		custom_effect_tooltip = BHU_TOW_INA_control_increase_tt
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				BHU_BHZ_state_control_temp > 0
+			}
+		}
+		add_to_variable = { BHU_BHZ_state_control = BHU_BHZ_state_control_temp }
+		set_temp_variable = { BHU_state_control_reducer = BHU_BHZ_state_control_temp }
+		custom_effect_tooltip = BHU_TOW_BHZ_control_increase_tt
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				BHU_contested_state_control_temp > 0
+			}
+		}
+		add_to_variable = { BHU_contested_state_control = BHU_contested_state_control_temp }
+		set_temp_variable = { BHU_state_control_reducer = BHU_contested_state_control_temp }
+		custom_effect_tooltip = BHU_TOW_CON_control_increase_tt
+	}
+	###Check if contested is alive
+	if = {
+		limit = {
+			check_variable = {
+				BHU_contested_state_control > 0
+			}
+			
+		}
+		subtract_from_variable = { BHU_contested_state_control = BHU_state_control_reducer }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = {
+					BHU_contested_state_control = 0
+				}
+				check_variable = {
+					BHU_BHZ_state_control_temp > 0
+				}
+			}
+			NOT = {
+			
+				check_variable = {
+					BHU_INA_state_control = 0
+				}
+			}
+		}
+		log = "BHZ state control increased"
+		subtract_from_variable = { BHU_INA_state_control = BHU_state_control_reducer }
+	}
+	else_if = {
+		limit = {
+			AND = {
+				check_variable = {
+					BHU_contested_state_control = 0
+				}
+				check_variable = {
+					BHU_INA_state_control_temp > 0
+				}
+			}
+			NOT = {
+				check_variable = {
+					BHU_BHZ_state_control = 0
+				}
+			}
+		}
+		log = "INA state control increased"
+		subtract_from_variable = { BHU_BHZ_state_control = BHU_state_control_reducer }
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				BHU_contested_state_control_temp > 0
+			}
+		}
+		random_list = {
+			50 = {
+				subtract_from_variable = { BHU_BHZ_state_control = BHU_state_control_reducer }
+			}
+			50 = {
+				subtract_from_variable = { BHU_INA_state_control = BHU_state_control_reducer }
+			}
+		}	
+		log = "Contested state control increased"
+	}
+	BHU_TOW_clamp_var = yes
+	log = "Changed [?BHU_map_v.GetName] INA[?BHU_map_v:BHU_INA_state_control_temp] BHZ:[?BHU_map_v:BHU_BHZ_state_control_temp] CON:[?BHU_map_v:BHU_contested_state_control_temp]"
+
+}
+BHU_TOW_clamp_var = {
+	###MAGIC VAR CLAMPER 5000
+
+		set_temp_variable = { BHU_state_control_clamper_INA = 100 }
+		subtract_from_temp_variable = { BHU_state_control_clamper_INA = BHU_BHZ_state_control }
+		subtract_from_temp_variable = { BHU_state_control_clamper_INA = BHU_contested_state_control }
+		clamp_variable = {
+			var = BHU_INA_state_control
+			min = 0
+			max = BHU_state_control_clamper_INA
+		}
+		set_temp_variable = { BHU_state_control_clamper_BHZ = 100 }
+		subtract_from_temp_variable = { BHU_state_control_clamper_BHZ = BHU_INA_state_control }
+		subtract_from_temp_variable = { BHU_state_control_clamper_BHZ = BHU_contested_state_control }
+		clamp_variable = {
+			var = BHU_BHZ_state_control
+			min = 0
+			max = BHU_state_control_clamper_BHZ
+		}
+		set_temp_variable = { BHU_state_control_clamper_CON = 100 }
+		subtract_from_temp_variable = { BHU_state_control_clamper_CON = BHU_BHZ_state_control }
+		subtract_from_temp_variable = { BHU_state_control_clamper_CON = BHU_INA_state_control }
+		clamp_variable = {
+			var = BHU_contested_state_control
+			min = 0
+			max = BHU_state_control_clamper_CON
+		}
+		clamp_variable = {
+			var = BHU_INA_state_popularity
+			min = 0
+			max = 100
+		}
+		
+		clamp_variable = {
+			var = BHU_BHZ_state_popularity
+			min = 0
+			max = 100
+		}
+		
+
+	BHU_TOW_clamp_var_total = yes
+}
+BHU_TOW_clamp_var_total = {
+
+	set_temp_variable = { total_state_control = 0 }
+	add_to_temp_variable = { total_state_control = BHU_INA_state_control }
+	add_to_temp_variable = { total_state_control = BHU_BHZ_state_control }
+	add_to_temp_variable = { total_state_control = BHU_contested_state_control }
+	if = {
+		limit = {
+			check_variable = {
+				total_state_control = 100
+			}
+		}
+		BHU_TOW_update_state_control = yes
+	}
+	else = {
+		log = "error encountered in tallying"
+	}
+}
+BHU_TOW_update_state_control = {
+	
+	
+	for_each_loop = {
+				array = BHU_map_array
+				var:v = {
+					if = {
+						limit = {
+							AND = {
+								check_variable = { BHU_INA_state_control > BHU_BHZ_state_control }
+								check_variable = { BHU_INA_state_control > BHU_contested_state_control }
+							}
+							
+						}
+						set_variable = { BHU_controlling_group = 2 }
+
+						set_variable = { gui_display_frame = BHU_controlling_group }
+						multiply_variable = { gui_display_frame = 1000 }
+
+						set_temp_variable = { gui_display_frame_add = BHU_INA_state_control }
+						subtract_from_temp_variable = { gui_display_frame_add = BHU_BHZ_state_control }
+						subtract_from_temp_variable = { gui_display_frame_add = BHU_contested_state_control }
+						divide_temp_variable = { gui_display_frame_add = BHU_INA_state_control }
+						multiply_temp_variable = { gui_display_frame_add = 100 }
+
+						add_to_variable = { gui_display_frame = gui_display_frame_add }										
+					}
+					else_if = {
+						limit = {
+							AND = {
+								check_variable = { BHU_contested_state_control > BHU_INA_state_control }
+								check_variable = { BHU_contested_state_control > BHU_BHZ_state_control }
+							}
+						}
+						set_variable = { BHU_controlling_group = 3 }
+
+						set_variable = { gui_display_frame = BHU_controlling_group }
+						multiply_variable = { gui_display_frame = 1000 }
+
+						set_temp_variable = { gui_display_frame_add = BHU_contested_state_control }
+						subtract_from_temp_variable = { gui_display_frame_add = BHU_INA_state_control }
+						subtract_from_temp_variable = { gui_display_frame_add = BHU_BHZ_state_control }
+						divide_temp_variable = { gui_display_frame_add = BHU_contested_state_control }
+						multiply_temp_variable = { gui_display_frame_add = 100 }
+
+						add_to_variable = { gui_display_frame = gui_display_frame_add }				
+					}
+					else_if = {
+						limit = {
+							AND = {
+								check_variable = { BHU_BHZ_state_control > BHU_INA_state_control }
+								check_variable = { BHU_BHZ_state_control > BHU_contested_state_control }
+							}
+						}
+						set_variable = { BHU_controlling_group = 4 }
+
+						set_variable = { gui_display_frame = BHU_controlling_group }
+						multiply_variable = { gui_display_frame = 1000 }
+
+						set_temp_variable = { gui_display_frame_add = BHU_BHZ_state_control }
+						subtract_from_temp_variable = { gui_display_frame_add = BHU_INA_state_control }
+						subtract_from_temp_variable = { gui_display_frame_add = BHU_contested_state_control }
+						divide_temp_variable = { gui_display_frame_add = BHU_BHZ_state_control }
+						multiply_temp_variable = { gui_display_frame_add = 100 }
+
+						add_to_variable = { gui_display_frame = gui_display_frame_add }				
+					}			
+				}
+		}
+	
+}
+BHU_TOW_state_control_randomizer = {
+	
+	
+	BHU = {
+		set_temp_variable = { temp_state_control_limit = 100 }
+		random_list = {
+			50 = {
+				add_to_temp_variable = { temp_state_control_limit = BHU_contested_state_control }
+
+			}
+			35 = {
+				add_to_temp_variable = { temp_state_control_limit = BHU_BHZ_state_popularity }
+
+			}
+			15 = {
+				add_to_temp_variable = { temp_state_control_limit = BHU_INA_state_popularity }
+			}
+		}
+		divide_temp_variable = { temp_state_control_limit = 5 }
+		set_temp_variable_to_random = {
+			var = temp_state_control
+			min = 0
+			max = temp_state_control_limit
+			integer = yes
+		}
+		random_list = {
+			50 = {
+				add_to_temp_variable = { BHU_contested_state_control_2_temp = temp_state_control }
+				random_owned_state = {
+					set_temp_variable = { BHU_contested_state_control_temp = BHU_contested_state_control_2_temp }
+					BHU_TOW_calc_state_control = yes
+				}
+
+			}
+			35 = {
+				add_to_temp_variable = { BHU_BHZ_state_popularity_temp = temp_state_control }
+					random_owned_state = {
+					set_temp_variable = { BHU_BHZ_state_control_temp = BHU_BHZ_state_popularity_temp }
+					BHU_TOW_calc_state_control = yes
+				}
+
+			}
+			15 = {
+				add_to_temp_variable = { BHU_INA_state_popularity_temp = temp_state_control }
+				random_owned_state = {
+					set_temp_variable = { BHU_INA_state_control_temp = BHU_INA_state_popularity_temp }
+					BHU_TOW_calc_state_control = yes
+				}
+			}
+		}
+		set_variable = { BHU_TOW_phase_tick = 16 }
+		country_event = { id = bhutan_TOW.1 days = 1 }
+	}
+	
+}
+BHU_TOW_popularity_change_INA = {
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BHU_INA_state_popularity_temp = 0
+				}
+			}
+			
+		}
+		set_temp_variable = { BHU_INA_state_popularity_temp_scrpeffct = BHU_INA_state_popularity_temp }
+	}
+	
+	add_to_variable = { BHU_INA_state_popularity = BHU_INA_state_popularity_temp_scrpeffct }
+	
+	if = {
+		limit = {
+			check_variable = {
+				BHU_INA_state_popularity_temp_scrpeffct < 0
+			}
+		}
+		multiply_temp_variable = { BHU_INA_state_popularity_temp_scrpeffct = -1 }
+		custom_effect_tooltip = BHU_TOW_INA_popularity_decrease_tt
+		
+	}
+	else = { custom_effect_tooltip = BHU_TOW_INA_popularity_increase_tt }
+	
+	BHU_TOW_clamp_var = yes
+}
+BHU_TOW_popularity_change_BHZ = {
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					BHU_BHZ_state_popularity_temp = 0
+				}
+			}
+			
+		}
+		set_temp_variable = { BHU_BHZ_state_popularity_temp_scrpeffct = BHU_BHZ_state_popularity_temp }
+	}
+	
+	add_to_variable = { BHU_BHZ_state_popularity = BHU_BHZ_state_popularity_temp_scrpeffct }
+	
+	if = {
+		limit = {
+			check_variable = {
+				BHU_BHZ_state_popularity_temp_scrpeffct < 0
+			}
+		}
+		multiply_temp_variable = { BHU_BHZ_state_popularity_temp_scrpeffct = -1 }
+		custom_effect_tooltip = BHU_TOW_BHZ_popularity_decrease_tt
+		
+	}
+	else = { custom_effect_tooltip = BHU_TOW_BHZ_popularity_increase_tt }
+	BHU_TOW_clamp_var = yes
+}

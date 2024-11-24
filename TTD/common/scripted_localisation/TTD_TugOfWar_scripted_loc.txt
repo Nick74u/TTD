@@ -1,0 +1,29 @@
+
+defined_text = {
+	name = GetStateStatus
+	text = {
+		trigger = {
+			check_variable = { BHU_controlling_group = 2 }
+		}
+		localization_key = "BHU_TOW_INA_occupied"
+	}
+	text = {
+		trigger = {
+			check_variable = { BHU_controlling_group = 3 }
+		}
+		localization_key = "BHU_TOW_contested_occupied"
+	}
+	text = {
+		trigger = {
+			check_variable = {BHU_controlling_group = 4 }
+		}
+		localization_key = "BHU_TOW_BHZ_occupied"
+	}
+}
+defined_text = {
+	name = GetFactionPopularity
+	text = {
+		
+		localization_key = "BHU_TOW_popularity_[?BHU_TOW_selected_faction]"
+	}
+}

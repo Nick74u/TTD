@@ -455,6 +455,7 @@ bhutan_war_wang_win = {
 		every_owned_state = {
 			remove_core_of = BHU
 		}
+		promote_character = FBH_Jigme_Dorji_Wangchuck_2
 		set_popularities = {
 			communist = 3
 			socialist = 8
@@ -462,6 +463,10 @@ bhutan_war_wang_win = {
 			conservatism = 15
 			paternalism = 45
 			despotism = 24
+		}
+		set_politics = {
+			ruling_party = paternalism
+			
 		}
 	}
 	FBH = {
@@ -526,12 +531,94 @@ BHU_failure_chance_increase_med = {
 	add_to_variable = { BHU_meeting_success_var = -3.21 }
 	BHU_update_meeting_var = yes
 }
-
-## Misc Laws
-# v corresponds to a scripted loc entry you set yourself. Put an entry for your own tag in [GetAssortedLawsBHU]
-# set_temp_variable = { v = VAR }
-BHU_add_uncategorised_law = {
-	add_to_array = { TNO_assorted_laws_display = v }
-	custom_effect_tooltip = BHU_add_uncategorised_law_tt
-	misc_law_array_fix_scrollbar = yes
+BHU_civ_war_start = {
+	for_each_loop = {
+		array = BHU_map_array
+		var:v = {
+			if = {
+				limit = {
+					check_variable = { BHU_INA_state_control > BHU_BHZ_state_control }
+				}
+				set_variable = { BHU_civ_owner = 1}
+			}
+			else_if = {
+				limit = {
+						check_variable = { BHU_BHZ_state_control > BHU_INA_state_control }
+				}
+				set_variable = { BHU_civ_owner = 2 }
+			}			
+		}
+	}
+	add_to_variable = { BHU_TOW_dirty_var = 0.01 }
+	
+	every_owned_state = {
+        limit = {
+            check_variable = {
+                BHU_civ_owner = 1
+            }
+		}
+		transfer_state_to = BHU
+	}
+	every_owned_state = {
+        limit = {
+            check_variable = {
+                BHU_civ_owner = 2
+            }
+		}
+        transfer_state_to = FBH
+		add_core_of = FBH
+    }
+	FBH = { 
+			set_cosmetic_tag = FBH_REB
+		    hidden_effect = {
+				transfer_state = 1962
+				set_capital = {
+				    state = 1962
+				}
+				1962 = {
+		            set_demilitarized_zone = no
+				}
+				2016 = {
+		            set_demilitarized_zone = no
+				}
+		        2017 = {
+		            set_demilitarized_zone = no
+				}
+		        2019 = {
+		            set_demilitarized_zone = no
+				}
+		        2018 = {
+		            set_demilitarized_zone = no
+				}
+			}
+		}
+		FBH = {
+		    declare_war_on = {
+			    target = BHU
+				type = civil_war
+			}
+		}
+		FBH = {
+		    load_oob = "TTD_FBH_1962"
+			add_ideas = FBH_our_last_chance
+			fill_empty_minister_nochecks = yes
+			load_focus_tree = freebhutan_focus
+			econ_initialize_credit_rating_system = yes
+            initiate_display_vars = yes
+			
+		}
+		remove_ideas = {
+			BHU_A_Dragon_Restless
+			BHU_The_hunt_for_wangchuck
+		}
+		country_lock_all_division_template = no
+		hidden_effect = {
+			every_country = {
+				limit = { is_ai = no }
+				news_event = {
+					id = TTD_bhutan_news.2
+					hours = 1
+				}
+			}
+		}
 }

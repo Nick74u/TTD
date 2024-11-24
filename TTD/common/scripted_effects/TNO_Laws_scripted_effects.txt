@@ -7171,122 +7171,81 @@ tno_laws_clear = { #Wipes all laws, good for major changes, ex. Serbian Civil Wa
 #
 
 misc_law_array_startup = {
-	clear_array = TNO_assorted_laws_display
-
-	add_to_array = { TNO_assorted_laws_display = 1 }
-	add_to_array = { TNO_assorted_laws_display = 2 }
-	add_to_array = { TNO_assorted_laws_display = 3 }
-	add_to_array = { TNO_assorted_laws_display = 4 }
-	add_to_array = { TNO_assorted_laws_display = 5 }
-	add_to_array = { TNO_assorted_laws_display = 6 }
-	add_to_array = { TNO_assorted_laws_display = 7 }
-	add_to_array = { TNO_assorted_laws_display = 8 }
-}
-
-misc_law_array_fix_scrollbar = {
-	while_loop_effect = {
-		limit = {
-			is_in_array = { TNO_assorted_laws_display = -1 }
-		}
-		remove_from_array = { TNO_assorted_laws_display = -1 }
-	}
-	
-	set_temp_variable = { temp_modulo = TNO_assorted_laws_display^num }
-	modulo_temp_variable = { temp_modulo = 2 }
-
-	if = {
-		limit = { check_variable = { temp_modulo = 1 } }
-		add_to_array = { TNO_assorted_laws_display = -1 }
-	}
-	add_to_array = { TNO_assorted_laws_display = -1 }
-	add_to_array = { TNO_assorted_laws_display = -1 }
-}
-
-#For Tags that have special misc laws only
-
-misc_law_array_startup_special = {
 	if = {
 		limit = {
 			tag = GNG
 		}
-		clear_array = TNO_assorted_laws_display
-		set_variable = { GNG_basic_law_var = 0 }
-		set_variable = { GNG_census_ordinance_var = 0 }
-		set_variable = { GNG_japan_sofa_var = 0 }
-		set_variable = { GNG_labor_standards_var = 0 }
-		set_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 1 }
-		add_to_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 2 }
-		add_to_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 3 }
-		add_to_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 4 }
+		add_to_array = { TNO_assorted_laws = token:GNG_basic_law }
+		add_to_array = { TNO_assorted_laws = token:GNG_census_ordinance_law }
+		add_to_array = { TNO_assorted_laws = token:GNG_japan_sofa_law }
+		add_to_array = { TNO_assorted_laws = token:GNG_labor_standards_law }
 	}
 	else_if = {
 		limit = {
 			tag = ENG
 		}
-		clear_array = TNO_assorted_laws_display
-		set_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 1 }
-		add_to_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 2 }
-		add_to_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 3 }
-		add_to_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 4 }
-		add_to_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 5 }
-		add_to_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 6 }
-		add_to_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 7 }
-	}
-	else_if = {
-		limit = {
-			tag = BHU
-		}
-		clear_array = TNO_assorted_laws_display
-		set_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 1 }
-		add_to_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 2 }
-		add_to_temp_variable = { v = 1 }
+		add_to_array = { TNO_assorted_laws = token:ENG_Abolished_Parliament_Act_law }
+		add_to_array = { TNO_assorted_laws = token:ENG_Renounced_War_law }
+		add_to_array = { TNO_assorted_laws = token:ENG_BPP_Constitution_law }
+		add_to_array = { TNO_assorted_laws = token:ENG_Conlcuded_Deportations_law }
+		add_to_array = { TNO_assorted_laws = token:ENG_Speculation_Ban_law }
+		add_to_array = { TNO_assorted_laws = token:ENG_Monopoly_Ban_law }
+		add_to_array = { TNO_assorted_laws = token:ENG_Partified_Civil_Service_law }
 	}
 	else_if = {
 		limit = {
 			tag = UKR
 		}
-		clear_array = TNO_assorted_laws_display
-		set_variable = { UKR_GPO_law_var = 0 }
-		set_variable = { UKR_UNC_law_var = 0 }
-		set_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 1 }
-		add_to_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 2 }
-		add_to_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 3 }
-		add_to_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 4 }
-		add_to_temp_variable = { v = 1 }
-		add_to_array = { TNO_assorted_laws_display = 5 }
+		add_to_array = { TNO_assorted_laws = token:UKR_GPO_law }
+		add_to_array = { TNO_assorted_laws = token:UKR_UNC_law }
+		add_to_array = { TNO_assorted_laws = token:UKR_Bandenbekampfung_law }
+		add_to_array = { TNO_assorted_laws = token:UKR_National_Symbols_Forbidden_law }
+		add_to_array = { TNO_assorted_laws = token:UKR_Land_Management_Company_Ukraine_law }
 	}
 	else_if = {
 		limit = {
 			tag = UKS
 		}
-		clear_array = TNO_assorted_laws_display
 	}
-	#else_if = {
-	#	limit = {
-	#		tag = BOV
-	#	}
-	#	clear_array = TNO_assorted_laws_display
-	#}
+	# Mexico
+	else_if = {
+		limit = {
+			tag = MEX
+		}
+		add_to_array = { TNO_assorted_laws = token:MEX_current_constitution_law }
+		add_to_array = { TNO_assorted_laws = token:MEX_estrada_doctrine_law }
+		add_to_array = { TNO_assorted_laws = token:MEX_article_130_law }
+		add_to_array = { TNO_assorted_laws = token:MEX_article_27_law }
+		add_to_array = { TNO_assorted_laws = token:MEX_penal_article_145_law }
+		add_to_array = { TNO_assorted_laws = token:MEX_the_corporatist_system_law }
+	}
+	else_if = {
+		limit = {
+			tag = BHU
+		}
+		add_to_array = { TNO_assorted_laws = token:BHU_Laws_Archaic_Province_System }
+		add_to_array = { TNO_assorted_laws = token:BHU_Laws_Inexistent_Central_Economy }
+		
+	}
+	# Global Generic
+	else = {
+		add_to_array = { TNO_assorted_laws = token:pollution_law }
+		add_to_array = { TNO_assorted_laws = token:safety_law }
+		add_to_array = { TNO_assorted_laws = token:child_labor_law }
+		add_to_array = { TNO_assorted_laws = token:refugees_law }
+		add_to_array = { TNO_assorted_laws = token:minorities_law }
+		add_to_array = { TNO_assorted_laws = token:racial_integration_law }
+		add_to_array = { TNO_assorted_laws = token:women_law }
+		add_to_array = { TNO_assorted_laws = token:lgbt_rights_law }
+	}
 }
 
-debug_stuff_lmao = {
-	set_temp_variable = { v = 68 }
-	GNG_add_uncategorised_law = yes
+TNO_add_assorted_law = {
+	add_to_array = { TNO_assorted_laws = temp_law }
+	custom_effect_tooltip = TNO_add_assorted_law_tt
+}
+
+TNO_remove_assorted_law = {
+	remove_from_array = { TNO_assorted_laws = temp_law }
+	custom_effect_tooltip = TNO_remove_assorted_law_tt
 }

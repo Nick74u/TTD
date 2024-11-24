@@ -583,7 +583,7 @@ defined_text = {
 	## Bhutan
 	text = {
 		trigger = { tag = BHU }
-		localization_key = "GFX_TNO_OpeningScreen_Poster_Guangdong"
+		localization_key = "GFX_TNO_OpeningScreen_Poster_Bhutan"
 	}
 	## Nepal
 	text = {

@@ -1,5 +1,9 @@
 spriteTypes = {
 	spriteType = {
+		name = "GFX_BHU_Map_Outline"
+		texturefile = "gfx/interface/bhutan_gui/BHU_map_outline.dds"
+	}
+	spriteType = {
 		name = "GFX_BHU_Thimphu_Outline"
 		texturefile = "gfx/interface/bhutan_gui/BHU_Thimphu_outline.dds"
 	}
@@ -71,8 +75,219 @@ spriteTypes = {
 		transparencecheck = yes
 	}
 	spriteType = {
+		name = "GFX_BHU_bhz"
+		texturefile = "gfx/interface/bhutan_gui/BHU_GUI_BHZ.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
 		name = "GFX_BHU_azad_selected"
 		texturefile = "gfx/interface/bhutan_gui/BHU_GUI_AZD_selected.dds"
 		transparencecheck = yes
+	}
+	
+	###############
+	
+	spriteType = {
+		name = "GFX_BHU_Open_Influence_GUI"
+		texturefile = "gfx/interface/bhutan_gui/tugofwar/BHU_Open_Influence_GUI.dds"
+		
+	}
+	spriteType = {
+		name = GFX_BHU_Influence_GUI_CRT_Borders
+		texturefile = "gfx/interface/bhutan_gui/tugofwar/crt_borders.dds"
+	}
+	spriteType = {
+		name = "GFX_BHU_TugOfWar_bar_frame"
+		texturefile = "gfx/interface/bhutan_gui/tugofwar/bar_frame.dds"
+		transparencecheck = yes
+	}
+
+	progressbartype = {
+		name = "GFX_BHU_TugOfWar_Bar_INA_Control"
+		textureFile1 = "gfx/interface/bhutan_gui/tugofwar/ina_bar.dds"
+		textureFile2 = "gfx/interface/blank.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = {
+			x = 371
+			y = 43
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_BHU_TugOfWar_Bar_Contested"
+		textureFile1 = "gfx/interface/bhutan_gui/tugofwar/contested_bar.dds"
+		textureFile2 = "gfx/interface/blank.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = {
+			x = 371
+			y = 43
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_BHU_TugOfWar_Bar_BHZ_Control"
+		textureFile1 = "gfx/interface/bhutan_gui/tugofwar/bhz_bar.dds"
+		textureFile2 = "gfx/interface/blank.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = {
+			x = 371
+			y = 43
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	
+	##########MAP
+	
+	progressbartype = {
+		name = "GFX_BHU_TugOfWar_State_324"
+		textureFile1 = "gfx/interface/bhutan_gui/tugofwar/state_324.dds"
+		textureFile2 = "gfx/interface/bhutan_gui/tugofwar/colors.dds"
+		color = { 0.010 0.0 0.0 0.10 }
+		colortwo = { 0.078 0.104 1 1 }
+		size = {
+			x = 160
+			y = 117
+		}
+		effectFile = "gfx/FX/gng_map_fill.lua"
+		steps = 10000
+	}
+	
+	spriteType = {
+		name = "GFX_BHU_TugOfWar_State_Selected_324"
+		texturefile = "gfx/interface/bhutan_gui/tugofwar/state_324_outline.dds"
+		transparencecheck = yes
+		noofframes = 2
+	}
+	
+	progressbartype = {
+		name = "GFX_BHU_TugOfWar_State_2018"
+		textureFile1 = "gfx/interface/bhutan_gui/tugofwar/state_2018.dds"
+		textureFile2 = "gfx/interface/bhutan_gui/tugofwar/colors.dds"
+		color = { 0.010 0.0 0.0 0.10 }
+		colortwo = { 0.078 0.104 1 1 }
+		size = {
+			x = 168
+			y = 110
+		}
+		effectFile = "gfx/FX/gng_map_fill.lua"
+		steps = 10000
+	}
+	
+	spriteType = {
+		name = "GFX_BHU_TugOfWar_State_Selected_2018"
+		texturefile = "gfx/interface/bhutan_gui/tugofwar/state_2018_outline.dds"
+		transparencecheck = yes
+		noofframes = 2
+	}
+	progressbartype = {
+		name = "GFX_BHU_TugOfWar_State_2016"
+		textureFile1 = "gfx/interface/bhutan_gui/tugofwar/state_2016.dds"
+		textureFile2 = "gfx/interface/bhutan_gui/tugofwar/colors.dds"
+		color = { 0.010 0.0 0.0 0.10 }
+		colortwo = { 0.078 0.104 1 1 }
+		size = {
+			x = 122
+			y = 154
+		}
+		effectFile = "gfx/FX/gng_map_fill.lua"
+		steps = 10000
+	}
+	
+	spriteType = {
+		name = "GFX_BHU_TugOfWar_State_Selected_2016"
+		texturefile = "gfx/interface/bhutan_gui/tugofwar/state_2016_outline.dds"
+		transparencecheck = yes
+		noofframes = 2
+	}
+	progressbartype = {
+		name = "GFX_BHU_TugOfWar_State_2017"
+		textureFile1 = "gfx/interface/bhutan_gui/tugofwar/state_2017.dds"
+		textureFile2 = "gfx/interface/bhutan_gui/tugofwar/colors.dds"
+		color = { 0.010 0.0 0.0 0.10 }
+		colortwo = { 0.078 0.104 1 1 }
+		size = {
+			x = 113
+			y = 137
+		}
+		effectFile = "gfx/FX/gng_map_fill.lua"
+		steps = 10000
+	}
+	
+	spriteType = {
+		name = "GFX_BHU_TugOfWar_State_Selected_2017"
+		texturefile = "gfx/interface/bhutan_gui/tugofwar/state_2017_outline.dds"
+		transparencecheck = yes
+		noofframes = 2
+	}
+	progressbartype = {
+		name = "GFX_BHU_TugOfWar_State_2019"
+		textureFile1 = "gfx/interface/bhutan_gui/tugofwar/state_2019.dds"
+		textureFile2 = "gfx/interface/bhutan_gui/tugofwar/colors.dds"
+		color = { 0.010 0.0 0.0 0.10 }
+		colortwo = { 0.078 0.104 1 1 }
+		size = {
+			x = 123
+			y = 89
+		}
+		effectFile = "gfx/FX/gng_map_fill.lua"
+		steps = 10000
+	}
+	
+	spriteType = {
+		name = "GFX_BHU_TugOfWar_State_Selected_2019"
+		texturefile = "gfx/interface/bhutan_gui/tugofwar/state_2019_outline.dds"
+		transparencecheck = yes
+		noofframes = 2
+	}
+	progressbartype = {
+		name = "GFX_BHU_TugOfWar_State_2020"
+		textureFile1 = "gfx/interface/bhutan_gui/tugofwar/state_2020.dds"
+		textureFile2 = "gfx/interface/bhutan_gui/tugofwar/colors.dds"
+		color = { 0.010 0.0 0.0 0.10 }
+		colortwo = { 0.078 0.104 1 1 }
+		size = {
+			x = 91
+			y = 106
+		}
+		effectFile = "gfx/FX/gng_map_fill.lua"
+		steps = 10000
+	}
+	
+	spriteType = {
+		name = "GFX_BHU_TugOfWar_State_Selected_2020"
+		texturefile = "gfx/interface/bhutan_gui/tugofwar/state_2020_outline.dds"
+		transparencecheck = yes
+		noofframes = 2
+	}
+	
+	progressbartype = {
+		name = "GFX_BHU_TugOfWar_State_1962"
+		textureFile1 = "gfx/interface/bhutan_gui/tugofwar/state_1962.dds"
+		textureFile2 = "gfx/interface/bhutan_gui/tugofwar/colors.dds"
+		color = { 0.010 0.0 0.0 0.10 }
+		colortwo = { 0.078 0.104 1 1 }
+		size = {
+			x = 199
+			y = 165
+		}
+		effectFile = "gfx/FX/gng_map_fill.lua"
+		steps = 10000
+	}
+	spriteType = {
+		name = "GFX_BHU_TugOfWar_State_Blocked_1962"
+		texturefile = "gfx/interface/bhutan_gui/tugofwar/state_1962_blocked.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_BHU_TugOfWar_State_Selected_1962"
+		texturefile = "gfx/interface/bhutan_gui/tugofwar/state_1962_outline.dds"
+		transparencecheck = yes
+		noofframes = 2
 	}
 }

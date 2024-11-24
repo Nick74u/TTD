@@ -5,6 +5,9 @@ on_actions = {
 		        every_owned_state = {
 				    add_dynamic_modifier = { modifier = BHU_rough_himalayan_terrain }
 			    }  
+				BHU_map_setup = yes
+				country_event = { id = bhutan_TOW.1 days = 1 }
+				set_variable = { BHU_TOW_phase_tick = 16 }
             }				
 		    NEP = {
 		        every_owned_state = {

@@ -8,6 +8,7 @@ add_namespace = bhutan_focus_event
 add_namespace = bhutan_border_skirmish
 add_namespace = bhutan_civil_war
 add_namespace = bhutan_desk_task_event
+add_namespace = bhutan_TOW
 
 country_event = {    ####Add Train Mountaineers Task
 	id = bhutan_desk_task_event.0
@@ -279,7 +280,38 @@ country_event = { #Change capital to Thimphu
 		}
 	}
 }
-
+country_event = { #kanwal leaves his post
+	id = bhutan_focus_event.15
+	title = bhutan_focus_event.15.t
+	desc = bhutan_focus_event.15.d
+	is_triggered_only = yes
+	
+	option = { 
+		name = bhutan_focus_event.15.a
+		promote_character = BHU_Muhammad_Hamidullah_Khan
+		set_popularities = {
+			despotism = 25
+			paternalism = 65
+			paternalism_2 = 10
+		}
+	}
+	option = { 
+		name = bhutan_focus_event.15.b
+		promote_character = BHU_Mirza_Ahmad_Ispahani
+		set_politics = {
+			ruling_party = conservatism
+			last_election = "1962.1.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+		set_popularities = {
+			despotism = 18
+			paternalism = 24
+			paternalism_2 = 23
+			conservatism = 35
+		}
+	}
+}
 country_event = {
 	id = bhutan_border_skirmish.1
 	title = bhutan_border_skirmish.1.t
@@ -334,6 +366,7 @@ country_event = {
 		transfer_state = 1962
 		set_country_flag = BHU_mtsho_obtained
 		custom_effect_tooltip = Bhu_mtsho_intensify
+		BHU_activate_cona = yes
 		AZH = { 
 		    country_event = {
 		        days = 8
@@ -449,66 +482,44 @@ country_event = {
 	option = {
 		name = bhutan_civil_war.3.a
 		ai_chance = { factor = 90 }
-		FBH = { 
-			set_cosmetic_tag = FBH_REB
-		    hidden_effect = {
-			    add_state_core = 2019
-			    add_state_core = 2018
-			    add_state_core = 2017
-			    add_state_core = 2016
-			    add_state_core = 324
-			    add_state_core = 1962
-				transfer_state = 1962
-				set_capital = {
-				    state = 1962
-				}
-				1962 = {
-		            set_demilitarized_zone = no
-				}
-				2016 = {
-		            set_demilitarized_zone = no
-				}
-		        2017 = {
-		            set_demilitarized_zone = no
-				}
-		        2019 = {
-		            set_demilitarized_zone = no
-				}
-		        2018 = {
-		            set_demilitarized_zone = no
-				}
-			}
-		}
-		FBH = {
-		    declare_war_on = {
-			    target = BHU
-				type = civil_war
-			}
-		}
-		FBH = {
-		    load_oob = "TTD_FBH_1962"
-			add_ideas = FBH_our_last_chance
-			fill_empty_minister_nochecks = yes
-			load_focus_tree = freebhutan_focus
-			econ_initialize_credit_rating_system = yes
-            initiate_display_vars = yes
-			
-		}
-		remove_ideas = {
-			BHU_A_Dragon_Restless
-			BHU_The_hunt_for_wangchuck
-		}
-		country_lock_all_division_template = no
-		hidden_effect = {
-			every_country = {
-				limit = { is_ai = no }
-				news_event = {
-					id = TTD_bhutan_news.2
-					hours = 1
-				}
-			}
-		}
+		BHU_civ_war_start = yes
 	}
 }
 
 
+country_event = { # phase tick
+	id = bhutan_TOW.1
+	immediate = {
+		if = {
+			limit = { 
+				check_variable = { 
+					BHU_TOW_phase_tick > 0 
+				} 
+			}
+			subtract_from_variable = { BHU_TOW_phase_tick = 1 }
+			country_event = { id = bhutan_TOW.1 days = 1 }
+		}
+		else_if = {
+			limit = { 
+				check_variable = { 
+					BHU_TOW_phase_tick = 0 
+				} 
+			}
+			BHU_TOW_state_control_randomizer = yes
+		}
+		add_to_variable = { BHU_TOW_dirty_var = 0.01 }
+		log = "[GetDateText]: [Root.GetName]: event bhutan_TOW.1"
+	}
+
+	title = "Super Secret"
+	desc = "Not to be seen"
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = bhutan_TOW.1
+		
+	}
+}

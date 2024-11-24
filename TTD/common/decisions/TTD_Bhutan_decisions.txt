@@ -111,6 +111,107 @@ bhutan_debug_category = {
 		
 	}
 }
+bhutan_map_category = {		
+	bhutan_map_1_decision = {		
+
+		icon = GFX_decision_generic_document		
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {		
+			
+		}
+		cost = 0		
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			var:BHU_map_selected_state = {
+				set_temp_variable = { BHU_INA_state_control_temp = 5 }
+				BHU_TOW_calc_state_control = yes
+					
+			}
+			BHU_TOW_update_state_control = yes
+			add_to_variable = { BHU_TOW_dirty_var = 0.01 }
+		}
+	}	
+	bhutan_map_2_decision = {		
+
+		icon = GFX_decision_generic_document		
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {		
+			
+		}
+		cost = 0		
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			var:BHU_map_selected_state = {
+				set_temp_variable = { BHU_INA_state_control_temp = 2 }
+				BHU_TOW_calc_state_control = yes
+					
+			}
+			BHU_TOW_update_state_control = yes
+			add_to_variable = { BHU_TOW_dirty_var = 0.01 }
+		}
+	}	
+	bhutan_map_3_decision = {		
+
+		icon = GFX_decision_generic_document		
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {		
+			
+		}
+		cost = 0		
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			var:BHU_map_selected_state = {
+				set_temp_variable = { BHU_INA_state_popularity_temp = 2 }
+				BHU_TOW_popularity_change_INA = yes
+			}
+			add_to_variable = { BHU_TOW_dirty_var = 0.01 }
+		}
+	}
+	bhutan_map_4_decision = {		
+
+		icon = GFX_decision_generic_document		
+		
+		available = {		
+		}
+		
+		fire_only_once = no		
+		days_re_enable = 1	
+
+		visible = {		
+			
+		}
+		cost = 0		
+
+		complete_effect = {		#The effects to execute once the envelope icon is clicked.
+			var:BHU_map_selected_state = {
+				set_temp_variable = { BHU_INA_state_popularity_temp = 2 }
+				set_temp_variable = { BHU_BHZ_state_popularity_temp = -2 }
+				BHU_TOW_popularity_change_INA = yes
+				BHU_TOW_popularity_change_BHZ = yes
+					
+			}
+			add_to_variable = { BHU_TOW_dirty_var = 0.01 }
+		}
+	}
+}
 bhutan_desk_category = {		
 	bhutan_desk_help = {		
 
@@ -209,52 +310,6 @@ bhutan_investment_category = {
 			factor = 75		
 		}
 	}	
-}
-bhutan_provinces_category = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
-	BHU_click_on_a_state_to_see_more_actions = {
-		icon = GFX_decision_GNG_regions
-		visible = {
-			check_variable = { BHU_map_selected_province = 0 }
-		}
-		available = {
-			hidden_trigger = { always = no }
-		}
-	}
-	BHU_click_on_a_group_to_see_more_actions = {
-		icon = GFX_decision_GNG_regions
-		visible = {
-			check_variable = { BHU_map_selected_province = 0 }
-			check_variable = { GNG_map_group_select = 0 }
-			NOT = { check_variable = { GNG_map_selected_state = 0 } }
-		}
-		available = {
-			hidden_trigger = { always = no }
-		}
-	}
-	BHU_provinces_decision = {		#ID of the decision, must not contain spaces!
-
-		icon = GFX_decision_generic_document		#The left side icon to show for this decision.
-		
-		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
-		}
-		
-		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
-		days_re_enable = 5	#The amount of days of days it will take for the decision to reappear. Not valid if fire_only_once is set to yes
-
-		visible = {		
-			has_country_flag = BHU_map_gui_show
-		}		
-
-		cost = 0		
-
-		complete_effect = {		
-			add_political_power = 20
-		}
-
-		ai_will_do = {	
-			factor = 0			
-		}
-	}
 }
 bhutan_meeting_category = {		
 	bhutan_demand_investment_decision = {		

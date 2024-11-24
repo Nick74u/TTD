@@ -2,43 +2,6 @@
 #                   Misc Laws                   #
 #################################################
 
-defined_text = {
-	name = GetAssortedLawsBHU
-	text = { # Archaic Province System
-		trigger = { check_variable = { v = 1 } }
-		localization_key = "BHU_Laws_Archaic_Province_System"
-	}
-	text = { # Inexistent Central Economy
-		trigger = { check_variable = { v = 2 } }
-		localization_key = "BHU_Laws_Inexistent_Central_Economy"
-	}
-	text = { # Ministry of Economic Affairs
-		trigger = { check_variable = { v = 3 } }
-		localization_key = "BHU_Laws_ministry_of_economic_affairs"
-	}
-}
-
-defined_text = {
-	name = GetAssortedLawsDescBHU
-	text = { # Archaic Province System
-		trigger = { 
-			check_variable = { v = 1 }
-		}
-		localization_key = BHU_Laws_Archaic_Province_System_desc
-	}
-	text = { # Inexistent Central Economy
-		trigger = {
-			check_variable = { v = 2 }
-		}
-		localization_key = BHU_Laws_Inexistent_Central_Economy_desc
-	}
-	text = { # Ministry of Economic Affairs
-		trigger = {
-			check_variable = { v = 3 }
-		}
-		localization_key = BHU_Laws_ministry_of_economic_affairs_desc
-	}
-}
 
 defined_text = {
 	name = BHU_garrison_text
